@@ -4,8 +4,6 @@
 
 BurOCRazia è un'applicazione locale e deterministica per il riconoscimento prudente di documenti amministrativi italiani. Riceve PDF, DOCX, TXT e immagini, estrae il testo, usa OCR locale quando necessario e confronta il contenuto con un catalogo SQLite installato sul computer.
 
-> **Nota sul nome:** BurOCRazia incorpora `OCR`, acronimo di *Optical Character Recognition* (riconoscimento ottico dei caratteri), una tecnologia centrale del progetto. La versione `0.6.1` non usa LLM né IA generativa: il riconoscimento si basa su OCR locale, regole deterministiche, metadati e un catalogo tracciabile.
-
 [English version](README_EN.md)
 
 ## Obiettivo
