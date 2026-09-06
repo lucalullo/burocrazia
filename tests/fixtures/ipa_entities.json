@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "result": {
+    "total": 10452,
+    "records": [
+      {
+        "Codice_IPA": "agid",
+        "Denominazione_ente": "Agenzia per l'Italia Digitale",
+        "Tipologia": "Agenzie ed enti per il digitale",
+        "Sito_istituzionale": "https://www.agid.gov.it/"
+      },
+      {
+        "Codice_IPA": "c_test",
+        "Denominazione_ente": "Comune di Test",
+        "Tipologia": "Comuni e loro Consorzi e Associazioni",
+        "Sito_istituzionale": "https://www.comune.test.example/"
+      },
+      {
+        "Codice_IPA": "",
+        "Denominazione_ente": "Riga senza codice",
+        "Tipologia": "Comuni",
+        "Sito_istituzionale": "https://example.test/"
+      },
+      {
+        "Codice_IPA": "AGID",
+        "Denominazione_ente": "Duplicato nello stesso batch",
+        "Tipologia": "Duplicato",
+        "Sito_istituzionale": "javascript:alert(1)"
+      }
+    ]
+  }
+}

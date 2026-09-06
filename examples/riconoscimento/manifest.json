@@ -1,0 +1,38 @@
+[
+  {
+    "file": "01_documento_sr211.txt",
+    "synthetic": true,
+    "sha256": "455380e02b2862c629d2b3acf3b4e5bfc93b1a25ea1f6abd323429dc64b48048",
+    "expected": {
+      "match_type": "DOCUMENT_MATCH",
+      "document_id": 11,
+      "entity": "INPS",
+      "version": "1.0"
+    },
+    "catalog_version": "2026.09.03-imported",
+    "rules_version": "deterministic-2"
+  },
+  {
+    "file": "02_famiglia_730_2024.txt",
+    "synthetic": true,
+    "sha256": "f81abad8e848d0c601da0b954a323bc24bebde45508e62917ddb47aed7990662",
+    "expected": {
+      "match_type": "FAMILY_MATCH",
+      "family_id": 13,
+      "entity": "Agenzia delle Entrate",
+      "version": "2024"
+    },
+    "catalog_version": "2026.09.03-imported",
+    "rules_version": "deterministic-2"
+  },
+  {
+    "file": "03_sconosciuto.txt",
+    "synthetic": true,
+    "sha256": "490e51f970ea93d0b957d9af789099c390b1b7ddcd78dd30e80bfae398510845",
+    "expected": {
+      "match_type": "NO_MATCH"
+    },
+    "catalog_version": "2026.09.03-imported",
+    "rules_version": "deterministic-2"
+  }
+]

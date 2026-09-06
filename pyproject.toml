@@ -1,0 +1,11 @@
+[project]
+name = "burocrazia"
+version = "0.6.1"
+description = "Riconoscimento locale e deterministico di documenti amministrativi italiani"
+requires-python = ">=3.12,<3.13"
+authors = [{name = "Luca Lullo"}]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

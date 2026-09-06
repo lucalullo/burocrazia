@@ -1,0 +1,46 @@
+{
+  "documents": [
+    {
+      "codice": "DEMO-PKG-01",
+      "data_rilevazione": "2026-09-05",
+      "ente": "Comune dimostrativo BurOCRazia",
+      "key": "demo-document",
+      "parole_chiave": [
+        "biblioteca dimostrativa",
+        "DEMO-PKG-01"
+      ],
+      "source_key": "demo-source",
+      "stato_verifica": "demo",
+      "titolo_ufficiale": "Richiesta sintetica di accesso alla biblioteca dimostrativa",
+      "versione": "demo-1"
+    }
+  ],
+  "entities": [],
+  "explanations": [],
+  "families": [],
+  "provenance": [
+    {
+      "acquired_at": "2026-09-05",
+      "acquisition_method": "local_package_demo",
+      "document_key": "demo-document",
+      "key": "demo-provenance",
+      "last_seen_at": "2026-09-05",
+      "source_key": "demo-source",
+      "source_status": "demo"
+    }
+  ],
+  "sources": [
+    {
+      "ambito": "dimostrazione",
+      "attiva": false,
+      "ente": "Comune dimostrativo BurOCRazia",
+      "key": "demo-source",
+      "livello": "locale",
+      "metodo_acquisizione": "local_package_demo",
+      "nome_fonte": "Fonte sintetica locale",
+      "note": "Fonte interamente sintetica; nessun ente reale.",
+      "stato_verifica": "demo",
+      "tipo_ente": "demo"
+    }
+  ]
+}

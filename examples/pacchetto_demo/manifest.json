@@ -1,0 +1,36 @@
+{
+  "catalog_schema_version": 1,
+  "catalog_version": "demo-1",
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "demo": true,
+  "files": [
+    {
+      "path": "records.json",
+      "sha256": "f8885556a4ac3c8d1d0053d4a4a16b473ef57c666fe7a54d8667acb239bb04a2",
+      "size_bytes": 1220
+    },
+    {
+      "path": "resources/demo.txt",
+      "sha256": "ed8e882bdbbbdb06bf1a13e6da4aaa64b362809526d7be0bc887c6e52657c1b0",
+      "size_bytes": 217
+    }
+  ],
+  "format_version": 1,
+  "package_id": "burocrazia-demo",
+  "package_version": "1.0.0",
+  "producer": "BurOCRazia — esempio sintetico",
+  "resources": [
+    {
+      "acquired_at": "2026-09-05",
+      "document_key": "demo-document",
+      "media_type": "text/plain",
+      "path": "resources/demo.txt",
+      "provenance": "Creato appositamente per dimostrare l'importazione. Nessun documento ufficiale.",
+      "reuse_conditions": "Materiale sintetico riutilizzabile per prove e dimostrazioni.",
+      "source_key": "demo-source",
+      "title": "Esempio sintetico — non ufficiale",
+      "verification_status": "demo",
+      "version": "demo-1"
+    }
+  ]
+}

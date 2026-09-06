@@ -1,0 +1,152 @@
+[
+  {
+    "ente": "Indice delle Pubbliche Amministrazioni (IPA)",
+    "source_id": 1,
+    "classificazione": "FACILE",
+    "metodo": "api",
+    "priorità": "alta",
+    "stato": "operativo",
+    "note": "API Open Data ufficiale verificata; inventario enti, non modulistica.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "INPS",
+    "source_id": 2,
+    "classificazione": "FACILE",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "operativo",
+    "note": "Endpoint metadati ufficiale derivato dalla pagina registrata.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "INAIL",
+    "source_id": 3,
+    "classificazione": "FACILE",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "operativo",
+    "note": "Pagina pubblica verificata con link diretti a PDF e DOC; solo metadati.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "Agenzia delle Entrate",
+    "source_id": 4,
+    "classificazione": "FACILE",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "operativo",
+    "note": "Raccolta ufficiale Tutti i modelli verificata; solo metadati e URL istituzionali.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "Ministero del Lavoro",
+    "source_id": 5,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "media",
+    "stato": "operativo",
+    "note": "Pagina ufficiale dedicata verificata; parser coperto da fixture offline.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "Ministero dell'Interno",
+    "source_id": 6,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "media",
+    "stato": "pianificato",
+    "note": "Raccolta tematica pubblica; serve delimitare i soli record documentali.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "source_id": 7,
+    "classificazione": "MANUALE",
+    "metodo": "da_studiare",
+    "priorità": "alta",
+    "stato": "famiglie_disponibili",
+    "note": "Procedure e moduli distribuiti nelle singole schede; quattro famiglie ufficiali censite.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "Ministero della Giustizia",
+    "source_id": 8,
+    "classificazione": "MANUALE",
+    "metodo": "da_studiare",
+    "priorità": "bassa",
+    "stato": "da_studiare",
+    "note": "Moduli distribuiti tra servizi e siti degli uffici giudiziari.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "Ministero della Salute",
+    "source_id": 9,
+    "classificazione": "MANUALE",
+    "metodo": "da_studiare",
+    "priorità": "bassa",
+    "stato": "da_studiare",
+    "note": "Moduli distribuiti nelle schede dei singoli servizi.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "Ministero delle Imprese e del Made in Italy",
+    "source_id": 10,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "media",
+    "stato": "pianificato",
+    "note": "Modulistica raggiungibile dalle tipologie di procedimento.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "Agenzia delle Entrate-Riscossione",
+    "source_id": 11,
+    "classificazione": "BLOCCATO",
+    "metodo": "pagina_html_manuale",
+    "priorità": "alta",
+    "stato": "blocco_http_403_con_fallback_manuale",
+    "note": "Il 403 è rispettato; disponibile importazione di HTML salvato con provenienza ADER verificabile.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "Dipartimento della Funzione Pubblica",
+    "source_id": 12,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "media",
+    "stato": "pianificato",
+    "note": "Pagina ufficiale sulla modulistica standardizzata, struttura da validare.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "ACI / PRA",
+    "source_id": 13,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "media",
+    "stato": "pianificato",
+    "note": "Pagina ufficiale dei modelli PRA; parser specifico ancora assente.",
+    "importatore_esistente": false
+  },
+  {
+    "ente": "Garante per la protezione dei dati personali",
+    "source_id": 14,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "operativo",
+    "note": "Pagina ufficiale con modulistica e servizi telematici separati dal parser.",
+    "importatore_esistente": true
+  },
+  {
+    "ente": "Ispettorato Nazionale del Lavoro",
+    "source_id": 15,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "operativo",
+    "note": "Sezioni ufficiali per lavoratori e datori; dettagli consultati sequenzialmente.",
+    "importatore_esistente": true
+  }
+]

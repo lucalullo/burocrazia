@@ -1,0 +1,42 @@
+{
+  "modelPath": "/conf/inps-site/settings/dam/cfm/models/modulo",
+  "totResult": 4,
+  "items": [
+    {
+      "paginaDettaglio": "/content/inps-site/it/it/moduli/dettaglio-moduli.moduli.ap17.html",
+      "title": "AP17",
+      "description": "Domanda di prestazione di prova",
+      "metadata": {"dataDiPubblicazione": 1722470400000},
+      "elements": {
+        "codice": {"value": "AP17"},
+        "titolo": {"value": "Domanda di prestazione di prova"},
+        "descrizione": {"value": "Descrizione ufficiale pubblicata da INPS."},
+        "versione": {"value": "2.0"},
+        "filepdf": {"value": "/content/dam/inps-site/moduli/ap17/AP17.pdf"},
+        "aree": {"value": ["aree:previdenza"]},
+        "datapubblicazione": {"value": 1722470400000}
+      }
+    },
+    {
+      "paginaDettaglio": "/content/inps-site/it/it/moduli/dettaglio-moduli.moduli.senza-codice.html",
+      "description": "Modulo senza metadati facoltativi",
+      "elements": {
+        "titolo": {"value": "Modulo senza metadati facoltativi"}
+      }
+    },
+    {
+      "paginaDettaglio": "https://example.org/modulo-esterno.html",
+      "title": "EXT1",
+      "elements": {
+        "codice": {"value": "EXT1"},
+        "titolo": {"value": "Modulo su dominio esterno"}
+      }
+    },
+    {
+      "title": "NO-TITLE",
+      "elements": {
+        "codice": {"value": "NO-TITLE"}
+      }
+    }
+  ]
+}

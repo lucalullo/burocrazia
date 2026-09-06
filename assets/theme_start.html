@@ -1,0 +1,12 @@
+<script>
+(() => {
+  // Script statico locale: imposta il tema scuro solo alla prima apertura.
+  // Il selettore visibile nell'app conserva poi la scelta nel parametro dell'URL.
+  const url = new URL(window.location.href);
+  const options = url.searchParams.getAll("embed_options");
+  if (!options.includes("dark_theme") && !options.includes("light_theme")) {
+    url.searchParams.append("embed_options", "dark_theme");
+    window.location.replace(url.href);
+  }
+})();
+</script>

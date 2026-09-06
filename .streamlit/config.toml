@@ -1,0 +1,33 @@
+[server]
+address = "127.0.0.1"
+headless = true
+port = 8501
+maxUploadSize = 20
+fileWatcherType = "none"
+enableStaticServing = false
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "127.0.0.1"
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[theme]
+base = "dark"
+font = "sans-serif"
+
+[theme.light]
+primaryColor = "#116B62"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F6F5"
+textColor = "#19332F"
+
+[theme.dark]
+primaryColor = "#57CDB6"
+backgroundColor = "#0E171A"
+secondaryBackgroundColor = "#18262A"
+textColor = "#E8F2EF"
