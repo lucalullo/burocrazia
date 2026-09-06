@@ -4,8 +4,6 @@
 
 BurOCRazia is a local, deterministic application for cautious recognition of Italian administrative documents. It accepts PDF, DOCX, TXT and image files, extracts text, uses local OCR when needed, and compares the content against a SQLite catalog installed on the user's computer.
 
-> **About the name:** BurOCRazia embeds `OCR`, short for *Optical Character Recognition*, a core technology used by the project. Version `0.6.1` does not use LLMs or generative AI: recognition is based on local OCR, deterministic rules, metadata and a traceable catalog.
-
 [Versione italiana](README.md)
 
 ## Goal
