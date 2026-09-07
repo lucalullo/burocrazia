@@ -14,9 +14,9 @@ BurOCRazia nasce per rispondere a una domanda semplice:
 
 Il sistema prova a identificare il documento senza forzare una risposta quando le evidenze non sono sufficienti. I tre esiti possibili sono:
 
-- `DOCUMENT_MATCH` — documento specifico riconosciuto;
-- `FAMILY_MATCH` — famiglia documentale riconosciuta, ma documento/versione specifici non confermati;
-- `NO_MATCH` — evidenze insufficienti per un'identificazione affidabile.
+- `DOCUMENT_MATCH` - documento specifico riconosciuto;
+- `FAMILY_MATCH` - famiglia documentale riconosciuta, ma documento/versione specifici non confermati;
+- `NO_MATCH` - evidenze insufficienti per un'identificazione affidabile.
 
 Un `NO_MATCH` corretto è preferibile a un falso positivo.
 
@@ -100,10 +100,10 @@ Il punteggio interno mostrato nell'interfaccia è un indicatore del motore e **n
 
 La navigazione principale comprende:
 
-- **Riconosci** — carica e analizza un documento;
-- **Catalogo** — consulta i record installati;
-- **Fonti e provenienza** — consulta le informazioni di origine;
-- **Revisione editoriale** — strumenti per la manutenzione dei contenuti.
+- **Riconosci** - carica e analizza un documento;
+- **Catalogo** - consulta i record installati;
+- **Fonti e provenienza** - consulta le informazioni di origine;
+- **Revisione editoriale** - strumenti per la manutenzione dei contenuti.
 
 La barra laterale mostra anche un selettore **Chiaro / Scuro** e un riepilogo compatto del catalogo locale.
 
