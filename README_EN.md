@@ -14,9 +14,9 @@ BurOCRazia is designed to answer a simple question:
 
 The system tries to identify the document without forcing an answer when the available evidence is insufficient. It can return three outcomes:
 
-- `DOCUMENT_MATCH` — a specific document is recognized;
-- `FAMILY_MATCH` — a document family is recognized, but the exact document/version is not confirmed;
-- `NO_MATCH` — there is not enough evidence for a reliable identification.
+- `DOCUMENT_MATCH` - a specific document is recognized;
+- `FAMILY_MATCH` - a document family is recognized, but the exact document/version is not confirmed;
+- `NO_MATCH` - there is not enough evidence for a reliable identification.
 
 A correct `NO_MATCH` is preferred over a false positive.
 
@@ -100,10 +100,10 @@ The internal score shown by the interface is an engine diagnostic and **is not a
 
 The main navigation includes:
 
-- **Recognize** — upload and analyze a document;
-- **Catalog** — browse installed records;
-- **Sources and provenance** — inspect origin information;
-- **Editorial review** — maintain local content.
+- **Recognize** - upload and analyze a document;
+- **Catalog** - browse installed records;
+- **Sources and provenance** - inspect origin information;
+- **Editorial review** - maintain local content.
 
 The sidebar also includes a visible **Light / Dark** appearance selector and a compact local-catalog summary.
 
