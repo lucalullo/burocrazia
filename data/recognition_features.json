@@ -1,0 +1,1682 @@
+{
+  "schema_version": 1,
+  "version": "round3-1",
+  "generator": "python -m benchmarks.build_recognition_features",
+  "split": "official_development_v2",
+  "independent": false,
+  "policy": "Eight sparse stem tokens from first 800 characters; require explicit matching issuer, no version conflict, unique technical candidate and unchanged catalog record. Tokens are technical derivatives, not official metadata or editorial verification.",
+  "features": [
+    {
+      "document_id": 609,
+      "catalog_fingerprint": "998b7a8db6ed902165171074d3ec0d031bb8e69dbb497137a59d526c95766f29",
+      "anchor_tokens": [
+        "2013",
+        "agisce",
+        "antico",
+        "corruz",
+        "marco",
+        "minghe",
+        "qualif",
+        "traspa"
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/127902/A.1+Modulo+richiesta+accesso+civico+al+RPCT.pdf/38456e1f-e009-e5c1-d782-4f4c01a38268?t=1739631415153",
+      "file_sha256": "a8751783340746b544ee1b6e968f5e29999c343c68649f1526163664e2836496",
+      "development_case": "OR2-013",
+      "acquired_at": "2026-10-11T10:32:30.007593+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1219,
+      "catalog_fingerprint": "6ef67001ce5efd98021c85138c82f4ee2472e54d6d4ccfeb9ed9fa64eb189360",
+      "anchor_tokens": [
+        "483",
+        "appost",
+        "avvale",
+        "facolt",
+        "negli",
+        "nello",
+        "spazio",
+        "sullor"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-3-Dichiarazione-sostitutiva-per-marca-da-bollo_new.pdf",
+      "file_sha256": "d58f9ff87c04788c3936728cf4130aae09ece230cf427f24bb71a701909b41d3",
+      "development_case": "OR2-016",
+      "acquired_at": "2026-10-11T11:42:26.953846+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 548,
+      "catalog_fingerprint": "28e20e466e7dee7d41de9efc954c033ec33aca27d368583377109f4999563708",
+      "anchor_tokens": [
+        "2825",
+        "2910",
+        "5444",
+        "equipo",
+        "iil",
+        "lrc",
+        "src",
+        "vigila"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_EQUIPOLLENZA.pdf",
+      "file_sha256": "d9e5841c2ae49f80111a52bb4385e2ab45ae19ab27217ecdf277c0c478e38ea1",
+      "development_case": "OR2-019",
+      "acquired_at": "2026-10-11T11:42:31.932846+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 522,
+      "catalog_fingerprint": "9ec6cf06511ac295927db969f4d23cca0264b3d87e358559c79f7b9ef38e32e5",
+      "anchor_tokens": [
+        "allinc",
+        "conto",
+        "minore",
+        "minori",
+        "motivi",
+        "poter",
+        "rinunc",
+        "tutore"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriRinuncia_incarico_tutore.pdf",
+      "file_sha256": "f32d2f58690d8ee735e1f14be4588b07517b5928789fc64ef388e07a69b2f58d",
+      "development_case": "OR2-021",
+      "acquired_at": "2026-10-11T11:42:33.314912+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1046,
+      "catalog_fingerprint": "052cd719a9475f3dc71bc94c7f17f69e325f4537bf845e8ea8c8c34df9b58414",
+      "anchor_tokens": [
+        "144",
+        "449",
+        "altro",
+        "bordo",
+        "offici",
+        "pan",
+        "prove",
+        "rateaz"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2017/01/Mod%20retribuzioni%20settore%20navigazione%20-%20certificati%20diversi%20nave%20e%20ruolo%20unico.pdf",
+      "file_sha256": "75252dc3f8cc56636af2d1ef93ebf407b4a6330a2d84ec8ef305c9d1cebbff28",
+      "development_case": "OR2-022",
+      "acquired_at": "2026-10-11T11:42:36.255118+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1215,
+      "catalog_fingerprint": "a3aa330b7f2c0e2fefc2b6d194b9a0e9a62c1b29c393b58e09d39e2b0fd62683",
+      "anchor_tokens": [
+        "abilit",
+        "allisp",
+        "conduz",
+        "domici",
+        "duplic",
+        "pag",
+        "patent",
+        "vapore"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-29-2-Istanza-duplicato-formato-word-patentino-generatori-vapore_new-1.pdf",
+      "file_sha256": "23b5650a730c18fea32b753f0640c467d705acf62e0e62a5061c9c3d42937e0b",
+      "development_case": "OR2-023",
+      "acquired_at": "2026-10-11T11:42:39.989622+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 93,
+      "catalog_fingerprint": "b8d1b85c259095795fec73c001b45c667cffafa6d42173ff3a15994d03c5dfc9",
+      "anchor_tokens": [
+        "2011",
+        "assolv",
+        "autent",
+        "avveni",
+        "impost",
+        "luoghi",
+        "necess",
+        "spett"
+      ],
+      "official_url": "https://www.lavoro.gov.it/temi-e-priorita-salute-e-sicurezza/focus/ma-dichiarazione-sostitutiva-marca-da-bollo.pdf",
+      "file_sha256": "5b824fe2d9115e8347df14b24bc36bb082fd202b779a0d756dbf428e32fd47ed",
+      "development_case": "OR2-024",
+      "acquired_at": "2026-10-11T11:42:41.437961+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 581,
+      "catalog_fingerprint": "3ec18a83183e9993a5a38ed2a34619238f4ad03840a22486cdc50dc4073fc707",
+      "anchor_tokens": [
+        "abbrev",
+        "analis",
+        "asi",
+        "biblio",
+        "difesa",
+        "incumb",
+        "spazia",
+        "srs"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/Allegato_4_-_Piano_di_protezione.pdf",
+      "file_sha256": "a1c336c5aea33b7f654eede8404cd94f819122e4e7ea4cb111f2c0481d62450e",
+      "development_case": "OR2-025",
+      "acquired_at": "2026-10-11T11:42:42.793741+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 468,
+      "catalog_fingerprint": "05637d7b15acfafa4850d140acd5428ed8099c9caab7c68940ab744189a4d1af",
+      "anchor_tokens": [
+        "accett",
+        "danni",
+        "decadu",
+        "figli",
+        "irrepe",
+        "laffid",
+        "laltro",
+        "risarc"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/MinoriAutorizzazione_per_accettare_risarcimento_danni.pdf",
+      "file_sha256": "101778c0831f48c763f5bd60f4d01a785e15d69634fc66b9ed78ec19c58beae9",
+      "development_case": "OR2-027",
+      "acquired_at": "2026-10-11T11:42:44.436091+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 135,
+      "catalog_fingerprint": "f28f729f94151fb9e4e82afa47011097717ab47c0f9b744923bef5a253a7f85c",
+      "anchor_tokens": [
+        "1970",
+        "300",
+        "arbitr",
+        "colleg",
+        "commin",
+        "discip",
+        "impugn",
+        "rag"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-14-Istanza-costituzione-collegio-conciliazione-arbitrato_new.pdf",
+      "file_sha256": "61c9fd52d0af69bd1fdabed958d730ac648e537abc3ce1fb4e0b9337d5f76187",
+      "development_case": "OR2-029",
+      "acquired_at": "2026-10-11T11:42:53.418829+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 290,
+      "catalog_fingerprint": "f0b93d1d2b4b9da5f1fb440e94908b127c7604c3af6f5a67a42289b5b2c9be44",
+      "anchor_tokens": [
+        "avere",
+        "cortes",
+        "lassoc",
+        "lente",
+        "linizi",
+        "lucro",
+        "ottenu",
+        "penden"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+      "file_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+      "development_case": "OR2-030",
+      "acquired_at": "2026-10-11T11:42:54.919992+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1026,
+      "catalog_fingerprint": "f1c45fcab466327d00a637d407a3b1d081524d6f44621bf06ab346842c3e3701",
+      "anchor_tokens": [
+        "aiuto",
+        "giovan",
+        "html",
+        "ingr",
+        "mac",
+        "macchi",
+        "marina",
+        "mot"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/10/mod_quadro_t2,0.pdf",
+      "file_sha256": "b83ab6c583a7430698bb7bd73ea86d0038992083e9093f8d66766f120be0e942",
+      "development_case": "OR2-034",
+      "acquired_at": "2026-10-11T11:43:00.698746+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 158,
+      "catalog_fingerprint": "e74b9a062526f640bc8284a108ab0128a3a6a3e8d641ec113ababe95e58651ef",
+      "anchor_tokens": [
+        "1967",
+        "977",
+        "allimp",
+        "minori",
+        "nello",
+        "ottobr",
+        "quale",
+        "spetta"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-10-Istanza-autorizzazione-minori-lavoro-spettacolo.pdf",
+      "file_sha256": "186767f16e15418dad3db924cb12c0d6e02dacfa6b395270282783ae4f83dc75",
+      "development_case": "OR2-035",
+      "acquired_at": "2026-10-11T11:43:01.513153+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 258,
+      "catalog_fingerprint": "392ae787899a7b93b229e83e2735e1b2d3ab9ff15fa8b9c2ac5088b475ba6ad9",
+      "anchor_tokens": [
+        "aree",
+        "bienni",
+        "cigs",
+        "crisi",
+        "dgammo",
+        "div3",
+        "fir",
+        "nellul"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/CIGS%20-%20presentazione%20istanze%20imprese%20operanti%20in%20aree%20di%20crisi%20industriale%20complessa/AS-10-modulo-istanza-CIGS.pdf",
+      "file_sha256": "34f27f71d8c2559e4bb3ffab3a5bc051390a1556ab94e32a46afb90b1c9c0f3b",
+      "development_case": "OR2-036",
+      "acquired_at": "2026-10-11T11:43:03.172164+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 405,
+      "catalog_fingerprint": "e6967ac37ad915dbefd802ed335e60fd4d2e19069515f36fec3228f5df5ef9b4",
+      "anchor_tokens": [
+        "cointe",
+        "esting",
+        "libret",
+        "paria",
+        "perche",
+        "quota",
+        "rispar",
+        "saldo"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/19adsestinguerelibrettodirisparmio_2.pdf",
+      "file_sha256": "1e282e799088d39e797b719ff08f97395156affaa2172d2c728eb17cca4fad84",
+      "development_case": "OR2-039",
+      "acquired_at": "2026-10-11T11:43:06.155656+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 908,
+      "catalog_fingerprint": "a9ede1630df265fe329baf654280a738b2a0888d680a325144541a646a17b641",
+      "anchor_tokens": [
+        "1973",
+        "19731",
+        "311",
+        "confed",
+        "form",
+        "lege",
+        "riscos",
+        "stipul"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2021/11/Contributi%20associativi%20Facsimile%20istanza%20stipula%20convenzione%20legge%20311-1973%20(1).pdf",
+      "file_sha256": "c87769b343ef86573ffdc4a3e482a7761071c007530b2ee7e08730e042f123bc",
+      "development_case": "OR2-040",
+      "acquired_at": "2026-10-11T11:43:12.155111+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1220,
+      "catalog_fingerprint": "bb2b0141cbec5308b3319ab8763e8a944a65571984fce8155b8921bc6456ebab",
+      "anchor_tokens": [
+        "183",
+        "2010",
+        "410",
+        "concil",
+        "dove",
+        "far",
+        "perven",
+        "tentat"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-21-1-Istanza-tentativo-conciliazione-lavoratore.pdf",
+      "file_sha256": "4f0d44daf741c2d52a9e9ddde94c13c64632eea845bacf06abdf5f33558a7733",
+      "development_case": "OR2-041",
+      "acquired_at": "2026-10-11T11:43:12.704969+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 559,
+      "catalog_fingerprint": "61be9dedc0f0527cfe5a3fc0d00a757f51b5ac426ae429a4a2f6e0854f446753",
+      "anchor_tokens": [
+        "candid",
+        "compe",
+        "confor",
+        "corsi",
+        "desti",
+        "div06",
+        "navi",
+        "radiop"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/digitale/All._a_Mod_5_-_Modelli_relativi_a_procedura_rev_13-3-25.pdf",
+      "file_sha256": "cac1d1083881e04a663f049e4e0b236cf7ed5d030d8423238acba5d51e70ee95",
+      "development_case": "OR2-043",
+      "acquired_at": "2026-10-11T11:43:16.167886+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 499,
+      "catalog_fingerprint": "f6f206d9122ddb37f7b8a563fd3bf9b5dc4f8253369d0a5f1f12ea1466d1cd68",
+      "anchor_tokens": [
+        "concor",
+        "espong",
+        "imposs",
+        "incomp",
+        "insana",
+        "intoll",
+        "ormai",
+        "proseg"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Ricorso_per_Separazione_consensuale.pdf",
+      "file_sha256": "70b55bea09eb7333446d65a27fdf6c513ed1615768ff1a75b3854a8e8b622bf4",
+      "development_case": "OR2-045",
+      "acquired_at": "2026-10-11T11:43:17.588128+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1191,
+      "catalog_fingerprint": "e3c0518b39ee53c7bfdf0cd28923313c20fb35c10b8f75c3ebc1ebc219deb351",
+      "anchor_tokens": [
+        "2006",
+        "223",
+        "244",
+        "248",
+        "341",
+        "aver",
+        "bisest",
+        "conv"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/Mod%20autocertificazione%20riduzione%20edile.pdf",
+      "file_sha256": "9ec33f4b32981f95765d11690b12d500fc07eafb7b6f6b82721bf0bec99e3fa2",
+      "development_case": "OR2-046",
+      "acquired_at": "2026-10-11T11:43:19.350257+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 139,
+      "catalog_fingerprint": "2d2f2fd2c5688856d7bfad696c8b37e4c12544edfab5d48077ddd486e7894315",
+      "anchor_tokens": [
+        "183",
+        "410",
+        "conci",
+        "convoc",
+        "esperi",
+        "srt",
+        "tentat",
+        "venga"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-21-Istanza-tentativo-conciliazione-datore-lavoro.pdf",
+      "file_sha256": "0e5325917cb7b3fd852b825613851f0e8cb97beff20ba182d91f5da5c6a8bbab",
+      "development_case": "OR2-047",
+      "acquired_at": "2026-10-11T11:43:19.821764+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1119,
+      "catalog_fingerprint": "785b6ce1ccb305355e340bd4b660cab13cd9d5153afe1c8d20cbe571796eecf5",
+      "anchor_tokens": [
+        "1124",
+        "1965",
+        "2026",
+        "asl",
+        "connes",
+        "decess",
+        "malatt",
+        "nav"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/mod_101_RA_Nav_12012026.pdf",
+      "file_sha256": "11f2bc95eeb3875dadfb8beec1881b0be49339b85cf0eda226ddb547ceb7541c",
+      "development_case": "OR2-052",
+      "acquired_at": "2026-10-11T11:43:29.637919+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1218,
+      "catalog_fingerprint": "69494f3fdcf4c172d966e4421a32d725b711deb252bffddfd19f2e372dab25d6",
+      "anchor_tokens": [
+        "00185",
+        "avente",
+        "corruz",
+        "dato",
+        "dinieg",
+        "elemen",
+        "perife",
+        "riesam"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-2-R-riesame-accesso-civico-generalizzato_new.pdf",
+      "file_sha256": "a0e93e8dabb76fa5693f5e1f9a831242c27dbadfc3f5c95c6027ba9c18f15e78",
+      "development_case": "OR2-053",
+      "acquired_at": "2026-10-11T11:43:33.904364+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 155,
+      "catalog_fingerprint": "acd19c9675568ef6c54e7388d78606ea7094a0febe06fd6372158d9b77e41807",
+      "anchor_tokens": [
+        "977",
+        "alladi",
+        "avente",
+        "lautor",
+        "scacch",
+        "sistem",
+        "sua",
+        "turni"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-7-Istanza-autorizzazione-adibizione-minori-lavorazioni-turni-scacchi.pdf",
+      "file_sha256": "b9cacd95a8a91481541edbfcd0790b9564d908d45a38f88a8b6908fb3d78a3d0",
+      "development_case": "OR2-059",
+      "acquired_at": "2026-10-11T11:43:42.859011+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 273,
+      "catalog_fingerprint": "1d4cdf67601763875c3bc376510d80b1ecd31639e42bc433053411f97c1d9c04",
+      "anchor_tokens": [
+        "accolt",
+        "copert",
+        "delluf",
+        "flavia",
+        "immigr",
+        "proget",
+        "sanita",
+        "segret"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20nuclei%20familiari/minori-accolti-Modello-3-copertura-sanitaria.pdf",
+      "file_sha256": "edd7fb09910e2e30e33d938a7a1be842a8e619efe79bc43aca80d60cd0af528f",
+      "development_case": "OR2-060",
+      "acquired_at": "2026-10-11T11:43:45.089268+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1141,
+      "catalog_fingerprint": "c4d30e3fcac1ffbb0236007ad1e9cb8ed9fea7e6c6984aeb165a62d09f8a0d8f",
+      "anchor_tokens": [
+        "116",
+        "190",
+        "357",
+        "359",
+        "affett",
+        "decedu",
+        "lammis",
+        "mesote"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2021/09/mod_190_E_2021(1).pdf",
+      "file_sha256": "8028ea9dc419f6a1a8b2c2e2d2c8214f125ec7d9f1e11daf51b9acf41ae038d3",
+      "development_case": "OR2-064",
+      "acquired_at": "2026-10-11T11:43:51.993139+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 489,
+      "catalog_fingerprint": "c9e776485a93246530f98730654e3e9376a5f18616e5bd3d0430b1c4f4627fd1",
+      "anchor_tokens": [
+        "1948",
+        "avvien",
+        "carta",
+        "esempi",
+        "giorna",
+        "intesa",
+        "norme",
+        "period"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Registro_StampaRichiesta_iscrizione_registro_stampa.pdf",
+      "file_sha256": "c59438c2b27f4c078db7a017503ab7e395e866a5b03e96f5684a1ae772662a7a",
+      "development_case": "OR2-068",
+      "acquired_at": "2026-10-11T11:43:56.351858+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 892,
+      "catalog_fingerprint": "8b05b6378918cf019a4421b3ca3d6fb763fe69fb25730bbcc2a1f80b6474d4c2",
+      "anchor_tokens": [
+        "adempi",
+        "catego",
+        "dipend",
+        "forma",
+        "leg",
+        "piccol",
+        "svolge",
+        "telema"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084730,0.pdf",
+      "file_sha256": "d7d0e50db4862f368c7ce38e592377bfbc155e6378e3481992b3e707ed7289bb",
+      "development_case": "OR2-069",
+      "acquired_at": "2026-10-11T11:43:58.153097+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 568,
+      "catalog_fingerprint": "864c080bc6adcc8c7264279a8ad73b2f5925bdf7c7f8b6abc2207d85e07bfc51",
+      "anchor_tokens": [
+        "104",
+        "112",
+        "collet",
+        "dect",
+        "dellut",
+        "device",
+        "frq",
+        "lutili"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/digitale/Autorizzazioni_temporanee_uso_frequenze/RICHIESTA_USO_TEMPORANEO_SRD_BANDA_COLLETTIVA_RADIOMICROFONI_E_DECT_2025.docx",
+      "file_sha256": "945c34d67069f5b7d99451c08608c7edbbd373d77ba956bd4b3fde191013e969",
+      "development_case": "OR2-072",
+      "acquired_at": "2026-10-11T11:44:01.578872+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 479,
+      "catalog_fingerprint": "11c7f2fee51acc61b07f8648583af7bf8c17410b348a2a03e50c460375be5e52",
+      "anchor_tokens": [
+        "2007",
+        "231",
+        "585",
+        "antiri",
+        "delega",
+        "delles",
+        "esecuz",
+        "giurid"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Modulo_antiriciclaggio_persona_giuridica.pdf",
+      "file_sha256": "d96a57ef82feb76a07f988150e7bd1b5c5413fcd4443889f3a65c266e634658d",
+      "development_case": "OR2-073",
+      "acquired_at": "2026-10-11T11:44:02.775688+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1059,
+      "catalog_fingerprint": "8f9f40df8e81b1aec5c4dc69a0bdc9e6715b03737f08b8f9695cf54adf255b00",
+      "anchor_tokens": [
+        "128",
+        "147",
+        "absatz",
+        "als",
+        "antrag",
+        "beitra",
+        "betrie",
+        "bezeic"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/05/Riduzione%20L147-2013%20primo%20biennio%20Agricoltura-Modulo%20di%20domanda-tedesco.pdf",
+      "file_sha256": "9eec08c288dc2192a75acde42c2ac7be408291e92deadadd61ca0e0f343fec84",
+      "development_case": "OR2-074",
+      "acquired_at": "2026-10-11T11:44:04.387818+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 160,
+      "catalog_fingerprint": "ee07d22d97a105e0d3b9f2b20d8377f00ad3be7e8bf1df73f8312aca7444b406",
+      "anchor_tokens": [
+        "concil",
+        "dipend",
+        "giusti",
+        "licenz",
+        "motivo",
+        "oggett",
+        "quale",
+        "tentat"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-20-Istanza-tentativo-conciliazione-licenziamento-giustificato-motivo-oggettivo.pdf",
+      "file_sha256": "1776f85b54be085ed9658486048487ad9e0a638ca2447eb9ad507f940dd13c6b",
+      "development_case": "OR2-075",
+      "acquired_at": "2026-10-11T11:44:04.791445+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 504,
+      "catalog_fingerprint": "67d4eecdb0182269898a6379ed1c96ee1755a5c6d031e6ab9098feae4cc8e145",
+      "anchor_tokens": [
+        "430",
+        "carico",
+        "col",
+        "croce",
+        "detenu",
+        "edific",
+        "gip",
+        "gup"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/mod_r__stampato_permesso_di_colloquio_richiesto_da_interessato.docx",
+      "file_sha256": "b622a65464462b99a073fd9a04f80fe392f236fe1c5ba00d9e2389d51b118cc9",
+      "development_case": "OR2-078",
+      "acquired_at": "2026-10-11T11:44:10.960975+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 154,
+      "catalog_fingerprint": "8ad2be6ab01046e1d5d0ed25bc7bc246deb13ca526cfe4a2a015345ff7119f27",
+      "anchor_tokens": [
+        "1072",
+        "allalb",
+        "area",
+        "conduc",
+        "extrac",
+        "metrop",
+        "rivest",
+        "soprai"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/03/Modulo-INL-3-24032025-Istanza-attestato-conducente-extracomunitari_agg-edit3.pdf",
+      "file_sha256": "bbada0476aa7ff6b13245ba99a9a2bcc29b7e5d07ee4d31711add7f8e4934343",
+      "development_case": "OR2-080",
+      "acquired_at": "2026-10-11T11:44:14.886061+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 119,
+      "catalog_fingerprint": "11522e6e56ed7d53d4fbc57f50adf04599535aa069d3b9a9ac85f6feaaf8807a",
+      "anchor_tokens": [
+        "148",
+        "2015",
+        "autodi",
+        "conces",
+        "falsit",
+        "indenn",
+        "ipotes",
+        "settem"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Indennit%C3%A0%20in%20favore%20dei%20lavoratori%20del%20call-center%20anno%202019/AS-6-1-call-center-indennita-2019-modello-autodichiarazione-sositutiva.pdf",
+      "file_sha256": "d548ec20a5f697653a1d87412359f66fb93815fc32ac14826fbf5983536fdc6b",
+      "development_case": "OR2-081",
+      "acquired_at": "2026-10-11T11:44:16.719077+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 544,
+      "catalog_fingerprint": "80493c4d9b84a5bb960916cc89ee9de1437c18d05145f25254560d25154a54f1",
+      "anchor_tokens": [
+        "anche",
+        "div08",
+        "esclus",
+        "esente",
+        "prescr",
+        "radiot",
+        "rtf",
+        "sarann"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_aeronautico/Richiesta_duplicato_certificato_RTFA_rev3.pdf",
+      "file_sha256": "f0ef8c99cc58f16df05846fc333b2e8ccd728c08e2b823a0fc6775317fc62f3f",
+      "development_case": "OR2-082",
+      "acquired_at": "2026-10-11T10:40:54.326219+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 540,
+      "catalog_fingerprint": "a62520a51a2a0b1304d955981a6ef5d9ec76d19ce6138cb2f353cee4dde766c4",
+      "anchor_tokens": [
+        "allere",
+        "chiama",
+        "erede",
+        "eredit",
+        "legitt",
+        "rinunc",
+        "testam",
+        "vita"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaRinuncia_eredit.pdf",
+      "file_sha256": "342f59bb13e867a724eb07309ea0ae845a49f4351b7a69a8385a6859240fd152",
+      "development_case": "OR2-083",
+      "acquired_at": "2026-10-11T11:44:17.652647+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 159,
+      "catalog_fingerprint": "20f64b413b596fc9c997f9c7956474d8d333d87c629e73fffc3b4a818977c1f8",
+      "anchor_tokens": [
+        "370",
+        "frazio",
+        "lautor",
+        "operan",
+        "riposo",
+        "settim",
+        "spetta",
+        "sua"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-13-Istanza-autorizzazione-frazionamento-riposo-settimanale-lavoratori-spettacolo.pdf",
+      "file_sha256": "98c6c45ab4f12998e49df424371ce8694abb032adf609d44f7dbde98bf1e1eb8",
+      "development_case": "OR2-084",
+      "acquired_at": "2026-10-11T11:44:18.635715+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 127,
+      "catalog_fingerprint": "1f6192eee561869a1810f5710e6c5dafe2223df0717b55510209698be4278ccd",
+      "anchor_tokens": [
+        "allega",
+        "ammort",
+        "cassa",
+        "cigson",
+        "div",
+        "guadag",
+        "insiem",
+        "straor"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Delega%20richiesta%20CIGS/Delega-CIGS.PDF",
+      "file_sha256": "d7074232915c277a461cfe8b9cb0a4375040e936cb6ca86f170913760fa6bc14",
+      "development_case": "OR2-085",
+      "acquired_at": "2026-10-11T11:44:20.861393+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 940,
+      "catalog_fingerprint": "7966dc430fb7ba86a07165bc6f236b6e770a646e374c3b3f10bd9ba1e67c0020",
+      "anchor_tokens": [
+        "acqua",
+        "calda",
+        "circui",
+        "condom",
+        "idraul",
+        "riscal",
+        "termic",
+        "tripli"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/ucm_096364,0.pdf",
+      "file_sha256": "7e5377fa8c4a9e30f5ccafec3706409524feed2ce175daf7e6a509db4263a874",
+      "development_case": "OR2-087",
+      "acquired_at": "2026-10-11T11:44:24.234687+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 138,
+      "catalog_fingerprint": "d79e029f3d7c42ff193376130892542fd1aecf03c992f930b9690df0aa187467",
+      "anchor_tokens": [
+        "2018",
+        "conver",
+        "determ",
+        "durata",
+        "massim",
+        "piva",
+        "supera",
+        "tempo"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-19-Istanza-superamento-durata-contratto-tempo-determinato_new.pdf",
+      "file_sha256": "d39825bd81956a671ae7038f2b4de262523327dca619df308a9d1a6c4e3c3ab0",
+      "development_case": "OR2-088",
+      "acquired_at": "2026-10-11T11:44:28.643056+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 283,
+      "catalog_fingerprint": "b7276703a88b0918c2ec31981adcaf98a60aeb35b06418c0f11a1e9d5467a06d",
+      "anchor_tokens": [
+        "00192",
+        "allalb",
+        "dovra",
+        "fornov",
+        "indust",
+        "luso",
+        "oltre",
+        "quando"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Commissioni%20di%20certificazione%2C%20iscrizione%20all%27albo/Domanda-di-iscrizione-albo-commissioni-certificazione.pdf",
+      "file_sha256": "653c0d8f9a40249051a73c1aba3b0cf23fc0b40bff6b1d3cc847cc237761f4f0",
+      "development_case": "OR2-089",
+      "acquired_at": "2026-10-11T11:44:30.092950+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1155,
+      "catalog_fingerprint": "cbb6a5e566609e47c98460a0ed57a01855c81930551f81ab9c3ffa052d362304",
+      "anchor_tokens": [
+        "1124",
+        "178",
+        "1965",
+        "antici",
+        "ecc",
+        "indenn",
+        "pat",
+        "regime"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_portstg_115205,0.pdf",
+      "file_sha256": "cab5cd9514a8b49da68dc3b6817802f58b7a8f1792b9f3eba7cce7c74df6de1a",
+      "development_case": "OR2-092",
+      "acquired_at": "2026-10-11T11:44:34.032284+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 137,
+      "catalog_fingerprint": "89d63d8af143a38aea9640fffb269e0bbfe5eabc1dbb06ea2cfa6396f4b9cfcf",
+      "anchor_tokens": [
+        "162",
+        "1992",
+        "alpino",
+        "autono",
+        "soccor",
+        "speleo",
+        "trice",
+        "vedra"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-16-Istanza-pagamento-indennita-soccorso-alpino-speleologico_new.pdf",
+      "file_sha256": "01a067afdd20a952130d6a1b09b2394e12359ece5394757083ab9c013c2d78f2",
+      "development_case": "OR2-093",
+      "acquired_at": "2026-10-11T11:44:38.153691+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 124,
+      "catalog_fingerprint": "db3965db97ca8ca5b6c34f7777f66ba8f04eaa89fbc92b8f5dac60dc18aa11e4",
+      "anchor_tokens": [
+        "almeno",
+        "famigl",
+        "lospit",
+        "nulla",
+        "ospita",
+        "osta",
+        "posses",
+        "vengan"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20Enti%20e%20Associazioni/Minori-accolti-ALLEGATO-5-2019.pdf",
+      "file_sha256": "31db6c78ce3720ae4b8f9ded1dfbbfd4247888eebbcc7b8bb26fa4188ffc4e0d",
+      "development_case": "OR2-094",
+      "acquired_at": "2026-10-11T11:44:39.677552+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 546,
+      "catalog_fingerprint": "bcfa5f7999de6ead085e678367feb5de60bfbd9d9bc14b9b48d2de8b5bfa2959",
+      "anchor_tokens": [
+        "679",
+        "chiunq",
+        "gente",
+        "goc",
+        "mare",
+        "novell",
+        "rinnov",
+        "roc"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_RINNOVO_GMDSS.pdf",
+      "file_sha256": "c9b79bd50e8f685e31baed6055f5d406a697c037efe0b8bf61ce452d1d5b1fe4",
+      "development_case": "OR2-095",
+      "acquired_at": "2026-10-11T11:44:40.977834+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 506,
+      "catalog_fingerprint": "07eace4e40f2835a636101569a52ffa02085bae73ef041a453445e73e0ec3d7d",
+      "anchor_tokens": [
+        "abitaz",
+        "acquis",
+        "catast",
+        "fogl",
+        "mapp",
+        "piano",
+        "reg",
+        "tipo"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriAutorizzazione_acquisto_immobili.pdf",
+      "file_sha256": "f05ef8138d7142771238e70389a5007c8659ae5a4f3a78072637c2f7a8097478",
+      "development_case": "OR2-096",
+      "acquired_at": "2026-10-11T11:44:41.543968+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 149,
+      "catalog_fingerprint": "4031da789c064ddbe2babd2be46c8a9767ffbc95ecd6bc6124fe041f64bc8019",
+      "anchor_tokens": [
+        "2024",
+        "203",
+        "ccnl",
+        "cont",
+        "indete",
+        "inquad",
+        "mezzo",
+        "subord"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/05/Modello-comunicazione-art.-26-comma-7-bis-D.Lgs_.-n.-151-2015-2.pdf",
+      "file_sha256": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956",
+      "development_case": "OR2-098",
+      "acquired_at": "2026-10-11T11:44:44.145759+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 288,
+      "catalog_fingerprint": "bb99dd83bc16eb80e7134c8da7327c03668b6e81295958a38486410ae8e03ba3",
+      "anchor_tokens": [
+        "allesa",
+        "lesame",
+        "libera",
+        "liscri",
+        "medici",
+        "nellel",
+        "nom",
+        "sosten"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Medici%20autorizzati%2C%20esame%20abilitazione%20per%20iscrizione%20elenco/Modulo-domanda-esame-abilitazione-iscrizione-elenco-medici-autorizzati.pdf",
+      "file_sha256": "82b2c2fecd772d85e3ddcd06be2b7242761c459c4822001d0ed36037028173d6",
+      "development_case": "OR2-099",
+      "acquired_at": "2026-10-11T11:44:46.287627+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 464,
+      "catalog_fingerprint": "0b9927d77a92142d8d1e81dfffac38a8b21aa96b958062a6279d8eaf268d31e5",
+      "anchor_tokens": [
+        "acquis",
+        "chiedo",
+        "decadu",
+        "figlio",
+        "irrepe",
+        "laffid",
+        "laltro",
+        "madre"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/MinoriAutorizzazione_acquisto_immobili.pdf",
+      "file_sha256": "b67a56e3206b660e9a628c1643d7bfc4691a48a3cb5f00419aee5232710160e7",
+      "development_case": "OR2-100",
+      "acquired_at": "2026-10-11T11:44:48.316908+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 143,
+      "catalog_fingerprint": "01a54d2879927b1a54bbe8362b4088a0e21c72c59cfd8903da8a58dd2a26352c",
+      "anchor_tokens": [
+        "aspx",
+        "dedica",
+        "licenz",
+        "occorr",
+        "ove",
+        "riceve",
+        "seguir",
+        "trova"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo.pdf",
+      "file_sha256": "0b8f4336f6f19609a078eaa3716e96e1318208cc45bd24be1f6c66271e5a500c",
+      "development_case": "OR2-101",
+      "acquired_at": "2026-10-11T11:44:49.887333+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 580,
+      "catalog_fingerprint": "e36e5cbf27df42926f9beb18060156353b38b21e98138af515916ceb376ed82b",
+      "anchor_tokens": [
+        "abbrev",
+        "adiace",
+        "approc",
+        "bande",
+        "condiv",
+        "criter",
+        "metodo",
+        "proteg"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/Allegato_3_-_Modello_di_condivisione.pdf",
+      "file_sha256": "f9641392e96898dd8ff2e61ee07bf1146f746cf6a02fdc24c484e8454f4df5af",
+      "development_case": "OR2-103",
+      "acquired_at": "2026-10-11T11:44:51.531377+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 505,
+      "catalog_fingerprint": "073d5340049f2e4b23a8811aa1e883c4c3c69a9e0bf837f51bddc43bfb43ecbe",
+      "anchor_tokens": [
+        "accett",
+        "allere",
+        "chiama",
+        "dinven",
+        "erede",
+        "legitt",
+        "leredi",
+        "testam"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriAccettare_eredit_con_beneficio_inventario.pdf",
+      "file_sha256": "652d226bfd4d4c56cdbdd5cec67ed212f55c69968a6a42027358cb4fb5ffbee2",
+      "development_case": "OR2-104",
+      "acquired_at": "2026-10-11T11:44:52.209757+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 133,
+      "catalog_fingerprint": "8c0ed3362e019939d06293eac653fc411a023e4bd28f1b8252c35497a6cdc10b",
+      "anchor_tokens": [
+        "allisp",
+        "ammess",
+        "ammiss",
+        "condut",
+        "esami",
+        "pag",
+        "sos",
+        "vapore"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/INL-29-Modulo-istanza-ammissione-esami-conduttori-generatori-vapore-16082022_new.pdf",
+      "file_sha256": "c613a0b82f6bca2f3ec87ec89edf83764c16e7352ca6d672bbe7d853607cc84c",
+      "development_case": "OR2-106",
+      "acquired_at": "2026-10-11T10:33:08.431910+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 92,
+      "catalog_fingerprint": "b2ce2ac6f877abc530cd42d99c2cca29a2f23542d6559872989888f0e7a00d66",
+      "anchor_tokens": [
+        "autent",
+        "avveni",
+        "dellen",
+        "luoghi",
+        "medici",
+        "necess",
+        "nellel",
+        "spett"
+      ],
+      "official_url": "https://www.lavoro.gov.it/temi-e-priorita-salute-e-sicurezza/focus/modulo-domanda-iscrizione-elenco-medici-autorizzati.pdf-0",
+      "file_sha256": "f3aae3df0be20874b6561c664b3a6c2a50a944f7299d99d43f8f4a278c890223",
+      "development_case": "OR2-107",
+      "acquired_at": "2026-10-11T11:44:56.639308+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 497,
+      "catalog_fingerprint": "f115401b47ed07e5ac7aed90619c935507729ced0303487af8c1a39e52fa5e95",
+      "anchor_tokens": [
+        "ammort",
+        "era",
+        "lammor",
+        "posses",
+        "signor",
+        "suo",
+        "titoli",
+        "titolo"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Ricorso_per_ammortamento_titoli.pdf",
+      "file_sha256": "1af6ae9b6f5441c89bda4166989976aa05365c16e299cb67cbac4ba5334cd63e",
+      "development_case": "OR2-109",
+      "acquired_at": "2026-10-11T11:44:58.432461+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 880,
+      "catalog_fingerprint": "c41f677101724e5d5cc6d194d284b58661018a639df476f3e32fbfa266b4a18b",
+      "anchor_tokens": [
+        "appalt",
+        "cassa",
+        "dirige",
+        "duffic",
+        "durc",
+        "edile",
+        "inps",
+        "stazio"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/mod-abilitazione-durc-2021,0.pdf",
+      "file_sha256": "dacf3ebd26714e040cb0f13e413aea13067ed2d309c27c1d76cdd60e7deb15fd",
+      "development_case": "OR2-110",
+      "acquired_at": "2026-10-11T11:45:01.769282+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 140,
+      "catalog_fingerprint": "f88ad45f1b5b8b7c13e7991bac94f4c158bed9d1d59282e6cca19925ed557c39",
+      "anchor_tokens": [
+        "183",
+        "2010",
+        "412",
+        "arbitr",
+        "commis",
+        "concil",
+        "contro",
+        "deferi"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-22-Deferimento-via-arbitrale-controversia-a-commissione-di-conciliazione.pdf",
+      "file_sha256": "dfdbf73bd878b05d3d103e91bd7072b5ea119a4ed49561f506b0b67b520007dd",
+      "development_case": "OR2-111",
+      "acquired_at": "2026-10-11T11:45:03.367301+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 441,
+      "catalog_fingerprint": "3e866f8df9b0baa2dcd7a25909a8619479b6e45edf4a29dfd3ad0065fb8369a2",
+      "anchor_tokens": [
+        "allind",
+        "anno",
+        "cellul",
+        "dellin",
+        "giudic",
+        "grado",
+        "ordina",
+        "parent"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CuratelaDichiarazione_di_assenso_alla_nomina_curatore.pdf",
+      "file_sha256": "d381cc78680785454db4f4c541a03b838113b025c782dcc391f657af9fb4999c",
+      "development_case": "OR2-113",
+      "acquired_at": "2026-10-11T11:45:07.453516+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 162,
+      "catalog_fingerprint": "1a768b140e812d7676abb0c6d09e1dae1bd05b8151f313b8ca85af390e11fd3f",
+      "anchor_tokens": [
+        "177",
+        "276",
+        "ambien",
+        "appalt",
+        "confin",
+        "segg",
+        "socio",
+        "subapp"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-25-Istanza-certificazione-appalto-subappalto-ambienti-confinati.pdf",
+      "file_sha256": "bdc9d9394c49dbaba53c2236a45c7a6b6bf79c91cb5848028a8c9472eac167f9",
+      "development_case": "OR2-115",
+      "acquired_at": "2026-10-11T11:45:09.224252+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 275,
+      "catalog_fingerprint": "9daad68556a0c64447f6d65645faa3b9dad24af7cb5a2404033dfc6b4b6bc815",
+      "anchor_tokens": [
+        "accolt",
+        "approv",
+        "delluf",
+        "flavia",
+        "immigr",
+        "proget",
+        "rivolg",
+        "segret"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20nuclei%20familiari/minori-accolti-Modello-1-domanda.pdf",
+      "file_sha256": "4b68f6c2c77c827adaeb332310f49cb19843c113268c264b59b2e511161f2e82",
+      "development_case": "OR2-116",
+      "acquired_at": "2026-10-11T11:45:11.259203+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 527,
+      "catalog_fingerprint": "2c4178d3fa91560ba2b6c9c9a6eeb6d96d6e3a446df7be15c5797a98dfd6dabe",
+      "anchor_tokens": [
+        "chiedo",
+        "dovuti",
+        "eredit",
+        "incass",
+        "interd",
+        "motivi",
+        "proven",
+        "somme"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaAutorizzazione_incassare_somme.pdf",
+      "file_sha256": "896400a261b6e556b70c6d5dcf358ccea88b102cabd74bf0876fee82d422e46e",
+      "development_case": "OR2-118",
+      "acquired_at": "2026-10-11T11:45:13.150333+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1049,
+      "catalog_fingerprint": "4b0786b47ed4efc4ba19484233ad7d4a54c86ad882266f405e6414ae9fff9f6a",
+      "anchor_tokens": [
+        "aliquo",
+        "elabor",
+        "gle",
+        "gleg",
+        "gradi",
+        "isa",
+        "isar",
+        "ismp"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/12/20SM%202026%20All%202%20Modello%2020SM%202026.pdf",
+      "file_sha256": "1c282ac92ad4b860b6a17d9385d52a47042576f82d1e2d593aa9267ebed8265e",
+      "development_case": "OR2-119",
+      "acquired_at": "2026-10-11T11:45:16.208543+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1221,
+      "catalog_fingerprint": "570e4317504f3ca39954234920aeb96447785572e8e47baa05579a8261ee35e3",
+      "anchor_tokens": [
+        "183",
+        "2010",
+        "410",
+        "concil",
+        "congiu",
+        "cosi",
+        "quale",
+        "tentat"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-21-2-Istanza-tentativo-conciliazione-congiunta.pdf",
+      "file_sha256": "75f4a5bc660b2bf1fbe185ec8492c26aee143e384cebd11bf9fb5a70c04dac7f",
+      "development_case": "OR2-120",
+      "acquired_at": "2026-10-11T11:45:16.743525+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 156,
+      "catalog_fingerprint": "20e1f0222b564f07fcbeef45c1c2d530f8cb582bc6c7530197f3ff1e765107cb",
+      "anchor_tokens": [
+        "977",
+        "avente",
+        "interm",
+        "lautor",
+        "marca",
+        "riduzi",
+        "riposo",
+        "sua"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-8-Istanza-autorizzazione-riduzione-riposo-intermedio-minori.pdf",
+      "file_sha256": "148bb6354b87829980589831f53520b150a181147b0bcd4d988e6c083af2d0d2",
+      "development_case": "OR2-125",
+      "acquired_at": "2026-10-11T11:45:23.146830+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 274,
+      "catalog_fingerprint": "063092a09f6c377d9f998bb886c025640ecc25ae3ff063fda8bc636dfcb19a53",
+      "anchor_tokens": [
+        "accolt",
+        "ciascu",
+        "compon",
+        "famigl",
+        "foglio",
+        "immigr",
+        "ospita",
+        "primo"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20nuclei%20familiari/minori-accolti-Modello-2-foglio-dati.pdf",
+      "file_sha256": "f5549d532ad96669393be9a1114c08831a882a867bba08e7ac50e9b330814172",
+      "development_case": "OR2-126",
+      "acquired_at": "2026-10-11T11:45:25.183016+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 421,
+      "catalog_fingerprint": "267fedb4bf4e491e1a106476e4df7b3d9adf93e285f0b1fecd27175b2a0f035b",
+      "anchor_tokens": [
+        "acquis",
+        "bene",
+        "dellam",
+        "gia",
+        "nellam",
+        "percen",
+        "vender",
+        "vendit"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/9adsvenditaimmobili_3.pdf",
+      "file_sha256": "bf7e22899fc1cf00fceb5dae2353ee974d71906916e4cd98e5d950a98134d7df",
+      "development_case": "OR2-127",
+      "acquired_at": "2026-10-11T11:45:27.143064+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 163,
+      "catalog_fingerprint": "c0de70b1ede2604e0a69b8b2721bf0a185d567ce6c49dd94640b1b87d156997d",
+      "anchor_tokens": [
+        "1981",
+        "689",
+        "dellor",
+        "effett",
+        "ingiun",
+        "pagame",
+        "propri",
+        "rateal"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-27-Istanza-pagamento-rateale-ordinanza-ingiunzione.pdf",
+      "file_sha256": "0a1777232991c4ae0071db37d61f38ee8ec9486b659e9402d14eb290bc04c93a",
+      "development_case": "OR2-129",
+      "acquired_at": "2026-10-11T11:45:29.351802+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 292,
+      "catalog_fingerprint": "6fc6e280a45b994643bf524f7bea6b1c68aeed33294f86f353fae21050b06fa7",
+      "anchor_tokens": [
+        "124",
+        "fotost",
+        "interp",
+        "logo",
+        "rimand",
+        "salvo",
+        "tuttav",
+        "unitam"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Istanza%20di%20interpello/Modulo-per-istanza-di-interpello.pdf",
+      "file_sha256": "85002bc3c062691ce178e02f5df82800ecc68b680d2b7bdc68eadf9e5f5ed5e4",
+      "development_case": "OR2-130",
+      "acquired_at": "2026-10-11T11:45:31.274711+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 970,
+      "catalog_fingerprint": "8acc6d853b5ded9722afa49fd268944c78673871f697a496a504f2ba96546695",
+      "anchor_tokens": [
+        "dcra",
+        "dellab",
+        "durc",
+        "editab",
+        "labili",
+        "segue1",
+        "soa",
+        "ter"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2021/09/DURC%20modulo%20richiesta%20abilitazione%20SOA%20(agg29-9-21).pdf",
+      "file_sha256": "18122db25a5f0bbc916a9752f2d6c76a424e589dc6617a759120cd65252c6803",
+      "development_case": "OR2-132",
+      "acquired_at": "2026-10-11T11:45:35.837874+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 134,
+      "catalog_fingerprint": "f74b92ee83357d6db4f4b7a136897caf3336ef81e80eb1864111e97de93c97f1",
+      "anchor_tokens": [
+        "addett",
+        "bambin",
+        "donna",
+        "lavori",
+        "madri",
+        "partum",
+        "post",
+        "pregiu"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-11-1-Istanza-interdizione-senza-informativa_new.pdf",
+      "file_sha256": "9f1276c7682527493426872bc6cd8d84f1258fd4eedf1d5f9635853aa9284916",
+      "development_case": "OR2-133",
+      "acquired_at": "2026-10-11T11:45:36.458325+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 301,
+      "catalog_fingerprint": "5faa7492cad3ba5ae2beed16a6d1a121f4fdc23dbec0a47b9dc170190495c599",
+      "anchor_tokens": [
+        "117",
+        "azione",
+        "capofi",
+        "cifra",
+        "decima",
+        "due",
+        "esatta",
+        "eur"
+      ],
+      "official_url": "https://www.lavoro.gov.it/documenti/all.-1-domanda-di-anticipo.docx",
+      "file_sha256": "cf53caca03694919a5f01ba32f2872b6e09c90c7146445d6f9f0d89c14a8c8c5",
+      "development_case": "OR2-134",
+      "acquired_at": "2026-10-11T11:45:38.199847+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 545,
+      "catalog_fingerprint": "718f7ea74d7d7f5dc7d482a3766b1f747d9544701d579d95b06bf9e7c8eb5e9c",
+      "anchor_tokens": [
+        "allapp",
+        "ammess",
+        "ammiss",
+        "annull",
+        "esami",
+        "radioo",
+        "riserv",
+        "spazio"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/moduli/DOMANDA_ESAME_GOC-ROC_2024.pdf",
+      "file_sha256": "25239e5446bd4643221f1f8903a1e1f40dd912fcbedc9e5b6a47b17375ebd0f3",
+      "development_case": "OR2-135",
+      "acquired_at": "2026-10-11T11:45:39.699196+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1157,
+      "catalog_fingerprint": "6312456cb1674ec82a2f3023090520b8a4d850a4640521c64e907c4c9f5245be",
+      "anchor_tokens": [
+        "048",
+        "avvenu",
+        "circa",
+        "clinic",
+        "coniug",
+        "crm",
+        "mano",
+        "munito"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_169686,0.pdf",
+      "file_sha256": "c6388f64111c53ff1dfa508c7bea4904bd5f1f477ae794a1e14702d9a60b42b3",
+      "development_case": "OR2-137",
+      "acquired_at": "2026-10-11T11:45:43.113102+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 146,
+      "catalog_fingerprint": "bcbbbad73a607c9762fa56dfe9838fc6dbf1848ce0bb4f1cf012bb35ae5971cd",
+      "anchor_tokens": [
+        "113",
+        "151",
+        "1985",
+        "abilit",
+        "centra",
+        "funzio",
+        "profes",
+        "vedent"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-2-Istanza-certificato-abilitazione-centralinista-non-vedente-2505201_new.pdf",
+      "file_sha256": "17b5cc487f9fd8a927aa792fbde84eae42493d922b5ebb7a25571f23d22cfd84",
+      "development_case": "OR2-138",
+      "acquired_at": "2026-10-11T11:45:45.292240+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 432,
+      "catalog_fingerprint": "620aa1f9477ecd8f459240b64be1ac60b1881a6f62dc4fcc5a5c254137a8b035",
+      "anchor_tokens": [
+        "ante",
+        "appell",
+        "copie",
+        "ipotec",
+        "levent",
+        "passag",
+        "prosec",
+        "senten"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CopieRichiesta_copie_sentenza.pdf",
+      "file_sha256": "c618fa9f0aefe3378b506477c3f8b93823dc068d7493cd0cc0923075ddddb8da",
+      "development_case": "OR2-141",
+      "acquired_at": "2026-10-11T11:45:48.949150+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 925,
+      "catalog_fingerprint": "7b7c6a233c97e8178122f9eef9817c017a3a5f7d556972dddd3489a96be2788c",
+      "anchor_tokens": [
+        "1996",
+        "242",
+        "agente",
+        "annota",
+        "assunz",
+        "biol",
+        "ditte",
+        "esposi"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2017/04/ModB626-4_reader,0.pdf",
+      "file_sha256": "5a76285367d46d1cc8dfbc2dd39e3900ec22eb475d909fc5dc75cfdb22b92b69",
+      "development_case": "OR2-142",
+      "acquired_at": "2026-10-11T11:45:51.601085+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 889,
+      "catalog_fingerprint": "eff6509e951f6be76666829d886ff04cdaf1273fad6fb08c61af0fe86bf4e308",
+      "anchor_tokens": [
+        "chiedo",
+        "client",
+        "dai",
+        "labili",
+        "leggi",
+        "preced",
+        "punito",
+        "punto"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084752,0.pdf",
+      "file_sha256": "e2eae6ab7b54e21145d1a058fa3e0cda875f1499f795c637264b32159c9c0dd3",
+      "development_case": "OR2-146",
+      "acquired_at": "2026-10-11T11:45:58.507671+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 150,
+      "catalog_fingerprint": "5f26ebd6de2d0882a106850433510a64b23504bc02c863353db595a3a9c4a9a0",
+      "anchor_tokens": [
+        "citata",
+        "gravi",
+        "impren",
+        "instau",
+        "motiva",
+        "produt",
+        "revoca",
+        "sal"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/INL-33-Istanza-di-revoca-del-provvedimento-di-sospensione-1.pdf",
+      "file_sha256": "645a17fae238198df6f49a1f5e382324926763cdf5326739ea780c0f0df207a8",
+      "development_case": "OR2-147",
+      "acquired_at": "2026-10-11T11:45:59.185781+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 547,
+      "catalog_fingerprint": "a3026c45450536ea48a751f426010379c631f2e352e878aa58ed95845551d718",
+      "anchor_tokens": [
+        "679",
+        "chiunq",
+        "goc",
+        "mare",
+        "novell",
+        "radioo",
+        "rinnov",
+        "roc"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_RINNOVO_NO_GDM.pdf",
+      "file_sha256": "8bd8d9b167f012b018ac555a52b4ee4e1d7175e29c8332b751eae8110953cc2a",
+      "development_case": "OR2-149",
+      "acquired_at": "2026-10-11T11:46:02.177511+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1159,
+      "catalog_fingerprint": "eee92cc618ef480a679c0e89072a95ce99f0e117c95cbfb8c4f15073e48d0415",
+      "anchor_tokens": [
+        "073",
+        "accomp",
+        "anonim",
+        "centro",
+        "collab",
+        "egregi",
+        "esito",
+        "essend"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_169819,0.pdf",
+      "file_sha256": "c641d7c664ca3242cae46e3adbde9c851c4812cc72488360353d083aadcf13e4",
+      "development_case": "OR2-151",
+      "acquired_at": "2026-10-11T11:46:05.698459+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 132,
+      "catalog_fingerprint": "7913f6783ea5a42055892857a72649e44c11f34f7db4d0939e161a23fc332422",
+      "anchor_tokens": [
+        "00185",
+        "consid",
+        "corruz",
+        "lammin",
+        "lobbli",
+        "lomess",
+        "oggi",
+        "parzia"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-1-Istanza-accesso-civico-semplice_new.pdf",
+      "file_sha256": "25ab47fe6f1cd9bc0a912f3540cbf269a901f7721e776e929816398df42560a4",
+      "development_case": "OR2-152",
+      "acquired_at": "2026-10-11T11:46:09.086637+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 541,
+      "catalog_fingerprint": "7a17cf1e5a2da8a6ee6e2829e7511909d6512799fe316d8fc8befcbbf235fd1c",
+      "anchor_tokens": [
+        "allinc",
+        "conto",
+        "dellin",
+        "giudic",
+        "motivi",
+        "poter",
+        "rinunc",
+        "tutore"
+      ],
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaRinuncia_incarico_tutore.pdf",
+      "file_sha256": "cb6f4cfdc7759593f4cbe1ca9561500a2daf5a9b4d31c54964570a2af4908822",
+      "development_case": "OR2-154",
+      "acquired_at": "2026-10-11T11:46:12.631460+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 1043,
+      "catalog_fingerprint": "976112427b27c3bac72c794496bec0661c5625b32b16a5617db176dd6e399046",
+      "anchor_tokens": [
+        "314",
+        "asbest",
+        "avvers",
+        "ot20",
+        "reiezi",
+        "sigla",
+        "silico",
+        "tassaz"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/ucm_120024,0.pdf",
+      "file_sha256": "e4bce3b39fa9accfe009df51f1fd3e7bd7097211d7e6aa972e46f00d74c3f4c8",
+      "development_case": "OR2-155",
+      "acquired_at": "2026-10-11T11:46:14.187195+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 978,
+      "catalog_fingerprint": "d28603a0c0d536aedbd252c2a2115effce3b62488f5ff95402ffc9b2a5e98de2",
+      "anchor_tokens": [
+        "100",
+        "codest",
+        "differ",
+        "dovuta",
+        "erogat",
+        "normal",
+        "rimbor",
+        "spediz"
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_087462.pdf",
+      "file_sha256": "2c361cf33b39de3e268c7ef38f2f71ce5b18d6be91a96550cf0d34026cde8838",
+      "development_case": "OR2-159",
+      "acquired_at": "2026-10-11T11:46:20.156188+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 152,
+      "catalog_fingerprint": "9323c971779b3260c300f5a56199d1d9df8aaec65b7359add843168f3e529bb6",
+      "anchor_tokens": [
+        "241",
+        "allacc",
+        "consor",
+        "cooper",
+        "dettag",
+        "lindiv",
+        "prende",
+        "rapres"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-Istanza-accesso-documentale-redacted_new.pdf",
+      "file_sha256": "504e8c1d6055b5b70d09e6a5d8224184cbcd0f487707678375eea4dfa7e2cf1a",
+      "development_case": "OR2-160",
+      "acquired_at": "2026-10-11T11:46:29.082577+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 289,
+      "catalog_fingerprint": "d08e73e007f46649db29a2fd3c1fe416eb2ba17cb5fd8ce711a7de04bab79973",
+      "anchor_tokens": [
+        "cortes",
+        "lassoc",
+        "lente",
+        "linizi",
+        "linser",
+        "spedit",
+        "sue",
+        "tutte"
+      ],
+      "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Enti%20Pubblici/Modulo-Richiesta-Patrocinio-Ente-Pubblico.pdf",
+      "file_sha256": "c64ea462a3b541ee05370461c53ebbe9b68fd8af99e0bef77b8a3d26e8c02a2b",
+      "development_case": "OR2-161",
+      "acquired_at": "2026-10-11T11:46:30.753492+00:00",
+      "technical_only": true
+    },
+    {
+      "document_id": 551,
+      "catalog_fingerprint": "1c245f0fe4b38074dc9560fc19139bf03e41df252e412cb056faff8b4175d197",
+      "anchor_tokens": [
+        "fonte",
+        "itu",
+        "mariti",
+        "maritt",
+        "mmsi",
+        "quelle",
+        "servic",
+        "union"
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_marittimo/link-MMSI-ago25.pdf",
+      "file_sha256": "029ccdad105d3faaf5ebd496fa41c09c667809398a244cada3ada9f514d5ec6d",
+      "development_case": "OR2-162",
+      "acquired_at": "2026-10-11T11:46:32.221380+00:00",
+      "technical_only": true
+    }
+  ]
+}

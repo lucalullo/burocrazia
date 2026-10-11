@@ -22,3 +22,9 @@ def metric_label(value):
     n,d=value.get('numerator'),value.get('denominator')
     if type(n) is not int or type(d) is not int or d<=0:return 'Non definito (denominatore zero)'
     return f'{100*n/d:.2f}% ({n}/{d})'
+
+
+def headline_sections(summary):
+    """Stable release-evidence precedence; development never fills a holdout gap."""
+    return tuple((key,summary.get(key,{'status':'not_run'})) for key in
+                 ('independent_holdout','hard_negatives','real_ocr','performance'))

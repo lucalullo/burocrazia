@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "code_sha256": "32df59bd762637f6dab23649cf27fd468898e3a4e0f33bbe14d1b6a3686c509d",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "warmup": 35,
+  "iterations": 6,
+  "order": "Interleaved three engines, reverse every case/iteration",
+  "latency_ms": {
+    "baseline": {
+      "n": 210,
+      "p50": 70.6306,
+      "p95": 89.7327
+    },
+    "round2": {
+      "n": 210,
+      "p50": 67.7897,
+      "p95": 91.2482
+    },
+    "candidate": {
+      "n": 210,
+      "p50": 78.2287,
+      "p95": 106.6791
+    }
+  },
+  "ratios_to_baseline": {
+    "p50": 1.107575186958627,
+    "p95": 1.1888542303976144
+  },
+  "ratios_to_round2": {
+    "p50": 1.153990945527123,
+    "p95": 1.1691090892751859
+  },
+  "memory": {
+    "baseline": {
+      "rss_before_warm_bytes": 29167616,
+      "rss_after_warm_bytes": 30306304,
+      "rss_samples_bytes": [
+        30306304,
+        30355456,
+        30466048,
+        30425088,
+        30466048,
+        30482432,
+        30531584,
+        30605312,
+        30486528
+      ],
+      "rss_growth_after_warm_bytes": 299008,
+      "warm_python_peak_bytes": 299575,
+      "catalog_objects_bytes": 486406,
+      "technical_index_bytes": 0,
+      "index_scope": "Title/code indexes and sparse features; recursive Python object size, excluding other legacy metadata caches"
+    },
+    "round2": {
+      "rss_before_warm_bytes": 31248384,
+      "rss_after_warm_bytes": 39346176,
+      "rss_samples_bytes": [
+        39346176,
+        39374848,
+        39387136,
+        39428096,
+        39952384,
+        40161280,
+        40075264,
+        39579648,
+        40579072
+      ],
+      "rss_growth_after_warm_bytes": 1232896,
+      "warm_python_peak_bytes": 880169,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 0,
+      "index_scope": "Title/code indexes and sparse features; recursive Python object size, excluding other legacy metadata caches"
+    },
+    "candidate": {
+      "rss_before_warm_bytes": 30298112,
+      "rss_after_warm_bytes": 43208704,
+      "rss_samples_bytes": [
+        43208704,
+        43233280,
+        43155456,
+        43622400,
+        43192320,
+        43016192,
+        44228608,
+        43040768,
+        43409408
+      ],
+      "rss_growth_after_warm_bytes": 1019904,
+      "warm_python_peak_bytes": 881163,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 1281168,
+      "index_scope": "Title/code indexes and sparse features; recursive Python object size, excluding other legacy metadata caches"
+    }
+  },
+  "memory_ratios": {
+    "rss_after_warm_bytes": 1.0981678117843015,
+    "catalog_objects_bytes": 1.0,
+    "warm_python_peak_bytes": 1.0011293285721266
+  },
+  "memory_scope": "Current working set/RSS in separate fresh processes. Eight repeated warm passes; 16 MiB growth ceiling is a stability guard, not a general RAM certification.",
+  "guard_passed": true
+}

@@ -13,7 +13,9 @@ jobs:
       - run: python -m pip install -r requirements-lock.txt
       - run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ita
       - run: python -m benchmarks.evaluate --coverage --output-dir full-benchmark-results
-      - run: python -m benchmarks.files ocr --output full-benchmark-results/ocr.json
+      - run: python -m benchmarks.files ocr --manifest benchmarks/corpora/ocr_synthetic_v2.json --output full-benchmark-results/ocr.json
+        if: always()
+      - run: python -m benchmarks.ocr_gate --output full-benchmark-results/ocr-legacy.json
         if: always()
       - uses: actions/upload-artifact@v4
         if: always()

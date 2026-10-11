@@ -1,0 +1,300 @@
+{
+  "commit": "657376f2af517aac0fd0a17cc420e5051b344c25",
+  "verification": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "original_metrics_recomputed": {
+    "document_precision": {
+      "numerator": 27,
+      "denominator": 27,
+      "value": 1.0
+    },
+    "document_recall": {
+      "numerator": 27,
+      "denominator": 150,
+      "value": 0.18
+    },
+    "document_f1": {
+      "numerator": 54,
+      "denominator": 177,
+      "value": 0.3050847457627119
+    },
+    "family_precision": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "family_recall": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "family_f1": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "exact_document_coverage": {
+      "numerator": 27,
+      "denominator": 150,
+      "value": 0.18
+    },
+    "useful_coverage": {
+      "numerator": 27,
+      "denominator": 150,
+      "value": 0.18
+    },
+    "unknown_false_acceptance_rate": {
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0.0
+    },
+    "unknown_correct_rejection_rate": {
+      "numerator": 12,
+      "denominator": 12,
+      "value": 1.0
+    },
+    "supported_rejection_rate": {
+      "numerator": 123,
+      "denominator": 150,
+      "value": 0.82
+    },
+    "entity_error_rate": {
+      "numerator": 0,
+      "denominator": 27,
+      "value": 0.0
+    },
+    "version_year_error_rate": {
+      "numerator": 0,
+      "denominator": 27,
+      "value": 0.0
+    }
+  },
+  "locked_v1": {
+    "cases": 69,
+    "passed": 59,
+    "failed": 10,
+    "metrics": {
+      "document_precision": {
+        "numerator": 54,
+        "denominator": 56,
+        "value": 0.9642857142857143
+      },
+      "document_recall": {
+        "numerator": 54,
+        "denominator": 60,
+        "value": 0.9
+      },
+      "document_f1": {
+        "numerator": 108,
+        "denominator": 116,
+        "value": 0.9310344827586207
+      },
+      "family_precision": {
+        "numerator": 5,
+        "denominator": 5,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 5,
+        "denominator": 9,
+        "value": 0.5555555555555556
+      },
+      "family_f1": {
+        "numerator": 10,
+        "denominator": 14,
+        "value": 0.7142857142857143
+      },
+      "exact_document_coverage": {
+        "numerator": 54,
+        "denominator": 60,
+        "value": 0.9
+      },
+      "useful_coverage": {
+        "numerator": 59,
+        "denominator": 69,
+        "value": 0.855072463768116
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 8,
+        "denominator": 69,
+        "value": 0.11594202898550725
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 61,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 54,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 54,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 6
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 2,
+        "FAMILY_MATCH": 5,
+        "NO_MATCH": 2
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 65.681,
+      "p95": 168.8428,
+      "p99": null
+    }
+  },
+  "locked_v2": {
+    "cases": 69,
+    "passed": 69,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "document_f1": {
+        "numerator": 112,
+        "denominator": 112,
+        "value": 1.0
+      },
+      "family_precision": {
+        "numerator": 5,
+        "denominator": 5,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 5,
+        "denominator": 5,
+        "value": 1.0
+      },
+      "family_f1": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "exact_document_coverage": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "useful_coverage": {
+        "numerator": 61,
+        "denominator": 61,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 61,
+        "value": 0.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 61,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 56,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 56,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 5,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 8
+      }
+    },
+    "latency_ms": {
+      "p50": 31.031,
+      "p95": 90.3164,
+      "p99": null
+    }
+  },
+  "original_tests": {
+    "passed": 515,
+    "failed": 0,
+    "skipped": 3,
+    "seconds": 334.14,
+    "python": "3.12.10",
+    "environment": "Windows-11-10.0.26300-SP0",
+    "log_sha256": "d6154e6614bead34e2010b02fd4cb1d0edb300023dfbaeeb621d102a128b2392",
+    "commit": "9cdd96f797d705632d0b6684230ebc2487d317a3",
+    "skip_reasons": [
+      "Windows: symlink privilege unavailable",
+      "Windows: FIFO unavailable (two tests)"
+    ]
+  },
+  "code_sha256": "378f536ad5cb92077dc725c8013cb78096f1dee1b0c8d72813ce03b3764ced6b",
+  "executed_at": "2026-10-11T12:57:24.543518+00:00"
+}

@@ -2,7 +2,13 @@
 
 ## Non rilasciato — candidata 0.7.0, 11 ottobre 2026
 
-La versione software resta 0.6.1: la candidata Round 2 resta NOT READY; risultati quantitativi e gate esterni sono in `docs/BENCHMARK.md`. Nessun tag o release.
+La versione software resta 0.6.1: la candidata Round 3 resta NOT READY; risultati quantitativi e gate esterni sono in `docs/BENCHMARK.md`. Nessun tag o release.
+
+- Round 3: audit di tutti i 150 positivi ufficiali e 123 rifiuti; il campione Round 2 è development e locked v1 resta storico. Titoli in finestre, codici segmentati, vincoli espliciti di ente/versione e 88 profili tecnici riproducibili portano gli esatti da 27 a 58/150, senza accettazioni errate nel development finale;
+- conversione generale IRI→URI, diagnostica della qualità estratta e fallback OCR limitato per layer inutilizzabile; nessun trasporto operativo o cache di testo personale;
+- protocollo holdout con congelamento del runtime prima dell'acquisizione, controllo leakage e unica prima valutazione, compresi gli errori di estrazione nei denominatori; nessuna nuova identità o famiglia verificata;
+- misure alternate di latenza e processi distinti per RSS, catalogo e indici; audit dei tre gruppi identità e otto URL condivisi, senza fusioni automatiche;
+- UI con precedenza a holdout, negativi, OCR e prestazioni; CI multipiattaforma resta un gate esterno non eseguito. Limiti, raw e piano Round 4 pubblicati nella candidata.
 
 - Round 2: audit della baseline e dei dieci fallimenti locked; v1 immutato, v2 con dieci etichette motivate; 100 hard negatives sintetici e campione di 150 moduli più 12 negativi ufficiali, senza redistribuire file;
 - disambiguazione dei titoli completi rispetto ai loro sottotitoli letterali; analisi annualità per richiesta e cache dei soli metadati; riferimento full scan e test differenziale anche canonico;

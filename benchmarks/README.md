@@ -1,5 +1,24 @@
 # Valutazioni riproducibili
 
+Round 3: i file ufficiali v2 sono **official_development_v2**, già usati per sviluppare il motore; locked v1 è storico immutabile e locked v2 è sviluppo riconciliato. Nessuno dei due è un gate indipendente. La prima misura `official_holdout_v1` richiede un runtime congelato prima dell'acquisizione e non è rieseguibile per migliorare i risultati.
+
+```powershell
+python -m pytest -q
+python scripts/verify_catalog.py
+python -m benchmarks.evaluate --coverage --output-dir benchmarks/results/round3/final
+python -m benchmarks.evaluate --fast --output-dir tmp-build/release-fast
+python -m benchmarks.files ocr --manifest benchmarks/corpora/ocr_synthetic_v2.json --output benchmarks/results/round3/ocr_synthetic_v2.json
+python -m benchmarks.ocr_gate --output benchmarks/results/round3/ocr_legacy_gate.json
+python -m benchmarks.round3_performance
+python scripts/release_report.py
+```
+
+Il development e il generatore feature richiedono la cache locale verificata dei file congelati, che non è redistribuita. `round3_audit` descrive il motore Round 2 iniziale; per riprodurlo occorre quel checkout, senza sovrascrivere l'audit baseline con risultati del motore nuovo. `build_recognition_features` produce solo otto token tecnici per profilo, URL/hash/data e fingerprint catalogo; nessuna verifica editoriale viene attribuita.
+
+Protocollo holdout: `python -m benchmarks.round3_holdout plan`, poi `freeze`, poi `acquire --allow-network`, infine **una sola volta** `evaluate`. Il freeze e la prima valutazione non possono essere sovrascritti. Il controllo automatico esclude hash, URL, identità, codici/versioni e template equivalenti; le etichette provengono dagli elenchi ufficiali, non dal risultato del motore. Errori di acquisizione e obiettivi non raggiunti restano nei report; errori di estrazione del manifest restano nel denominatore. Qualunque correzione successiva richiede un nuovo ciclo e un nuovo holdout.
+
+La CI fast è offline: regressione, locked v2 e hard negatives devono passare, locked v1 viene comunque riportato. OCR completo è un workflow manuale separato. La CI remota non è stata eseguita: `pending_external_gate`. I report per fonte/formato/metodo/OCR e IC95% sono nei raw Round 3; vedere `docs/BENCHMARK.md` per le nove categorie, le metriche e i limiti.
+
 ```powershell
 python -m benchmarks.evaluate --coverage
 python -m benchmarks.evaluate --fast

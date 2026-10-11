@@ -146,3 +146,4 @@ class CatalogRecognitionResult:
     rules_version: str = ""
     catalog_revision: str = ""
     candidate_ids: tuple[int, ...] = field(default_factory=tuple)
+    pipeline_stages: tuple[tuple[str, str], ...] = field(default_factory=tuple)

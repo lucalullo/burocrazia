@@ -9,6 +9,9 @@ from functools import lru_cache
 from typing import Iterable
 
 from rapidfuzz import fuzz
+from src.title_evidence import title_windows, exact_code_candidates
+from src.text_quality import text_quality
+from src.technical_anchors import match_anchors, feature_revision
 
 from src.models import (
     AdministrativeDocument,
@@ -21,7 +24,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-4"
+RULES_VERSION = "deterministic-5"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -53,6 +56,8 @@ ENTITY_ALIASES = {
     "istituto nazionale per l assicurazione contro gli infortuni sul lavoro": "inail",
     "ader": "agenzia delle entrate riscossione",
     "ministro del lavoro e delle politiche sociali": "ministero del lavoro",
+    "tribunale ordinario di venezia": "tribunale di venezia",
+    "ispettorato territoriale del lavoro": "ispettorato nazionale del lavoro",
 }
 YEAR_PATTERN = re.compile(r"(?<!\d)((?:19|20)\d{2})(?!\d)")
 ANNUAL_MODEL_PATTERNS = {
@@ -176,15 +181,15 @@ def _is_distinctive_title(normalized_title: str) -> bool:
 def _informational_heading(text: str) -> bool:
     """A guide quoting a form is not the form; only explicit headings count."""
     lines = [normalize_text(line) for line in text[:800].splitlines() if line.strip()]
-    return any(re.match(r"^(?:circolare|manuale|guida|istruzioni|faq|domande frequenti|provvedimento|comunicato stampa|regolamento)\b", line)
-               for line in lines[:4])
+    return any(re.match(r"^(?:circolare|manuale|guida|istruzioni|faq|domande frequenti|provvedimento|comunicato|regolamento)\b", line)
+               for line in lines[:6])
 
 
 def _heading_entities(text: str, entity_names: Iterable[str]) -> frozenset[str] | None:
     """Prefer an issuer heading to entity names in references and model codes."""
     names = tuple(set(entity_names))
     for line in [line for line in text[:1000].splitlines() if line.strip()][:5]:
-        normalized = normalize_text(line)
+        normalized = re.sub(r'^(?:al|alla|allo|all|spett le|spettabile)\s+','',normalize_text(line))
         detected = _detect_entities(normalized, names)
         beginning = frozenset(e for e in detected if normalized == e or normalized.startswith(e + " "))
         if beginning:
@@ -373,13 +378,14 @@ def _score_candidate(
     identity_text: str | None = None,
     input_features: dict | None = None,
 ) -> _CandidateScore:
+    original_text = original_text[:2000]
     score = 0.0
     signals: list[str] = []
     identity_text = identity_text if identity_text is not None else normalize_text(original_text[:2000])
     features = _catalog_features(document)
 
     annual_alias_match, version_conflict = _annual_version_evidence(
-        original_text, document, normalized_text, input_features
+        original_text, document, normalized_text, None if input_features and input_features.get('reference') else input_features
     )
 
     code = features.code
@@ -392,6 +398,7 @@ def _score_candidate(
         and not (code[-1:].isdigit() and re.match(r'\s+\d{1,3}(?:\s|$)',line[match.end():]))
         for line in code_lines for match in features.code_pattern.finditer(line)
     )
+    exact_code = exact_code or bool(input_features and document.id in input_features.get('exact_code_candidates',()))
     if exact_code:
         score += WEIGHTS["exact_code"]
         signals.append("codice esatto")
@@ -400,7 +407,19 @@ def _score_candidate(
     # A privacy footer can name another authority and quote its generic forms.
     # Only the opening establishes title identity; the rest is fuzzy context.
     exact_title = bool(features.title) and f' {features.title} ' in f' {identity_text} '
-    if exact_title or annual_alias_match:
+    window_title = bool(input_features and document.id in input_features.get('title_windows',{}))
+    window_title = window_title and not version_conflict
+    technical_title = bool(input_features and document.id in input_features.get('technical_anchors',())) and not version_conflict
+    if (window_title or technical_title) and document.versione:
+        version=document.versione.strip()
+        if re.fullmatch(r'(?:19|20)\d{2}',version):
+            explicit=set(re.findall(r'\b(?:anno|annualità|annualita|versione|modello)\s*[:/-]?\s*((?:19|20)\d{2})\b',original_text,re.I))
+            supported=explicit=={version} or annual_alias_match
+        else:
+            supported=bool(re.search(r'\b(?:versione|version|revisione|rev[.]?)\s*[:=]?\s*'+re.escape(version)+r'(?!\w)',original_text,re.I))
+        window_title=window_title and supported
+        technical_title=technical_title and supported
+    if exact_title or annual_alias_match or window_title or technical_title:
         title_similarity = 100.0
     else:
         title_similarity = float(fuzz.partial_ratio(normalized_title, identity_text))
@@ -413,10 +432,11 @@ def _score_candidate(
     if title_similarity >= MIN_TITLE_SIMILARITY:
         score += WEIGHTS["title"] * title_similarity / 100.0
         signals.append("modello e versione" if annual_alias_match else "titolo")
+        if technical_title:signals.append('anchor tecnici derivati da file ufficiale development')
 
     normalized_entity = features.entity
     entity_match = normalized_entity in detected_entities
-    entity_conflict = (bool(detected_entities) and not entity_match) or _local_entity_conflict(original_text, document.ente)
+    entity_conflict = (bool(detected_entities) and not entity_match) or (len(detected_entities)>1 and not exact_code) or _local_entity_conflict(original_text, document.ente)
     if entity_match:
         score += WEIGHTS["entity"]
         signals.append("ente")
@@ -441,7 +461,7 @@ def _score_candidate(
         evidence_rank = 4 if exact_code else 3
     elif exact_code and exact_title and distinctive_title:
         evidence_rank = 4
-    elif exact_title and distinctive_title:
+    elif (exact_title or window_title or technical_title) and distinctive_title:
         evidence_rank = 3
     elif exact_code:
         evidence_rank = 2
@@ -454,12 +474,16 @@ def _score_candidate(
     else:
         evidence_rank = 0
     strong_evidence = evidence_rank > 0
+    alias_only = features.entity in {'tribunale di venezia','ispettorato nazionale del lavoro'} and not _contains_phrase(identity_text,features.entity)
+    if alias_only and not exact_code and not exact_title and not window_title and not technical_title:
+        strong_evidence=False
+        evidence_rank=0
     if not exact_code:
         title_heading = any(line == normalized_title or line.startswith(normalized_title+' ') for line in
                             (input_features['title_lines'] if input_features is not None else tuple(normalize_text(line) for line in original_text[:800].splitlines() if line.strip())[:5]))
         # A literal title in the body can describe an exemption or another
         # authority's form. Missing issuer evidence requires a title heading.
-        if (exact_title and not entity_match and not title_heading) or (not exact_title and not features.acronyms.issubset(set(identity_text.split()))):
+        if (exact_title and not entity_match and not title_heading) or (not exact_title and not window_title and not technical_title and not features.acronyms.issubset(set(identity_text.split()))):
             strong_evidence = False
             evidence_rank = 0
     annual_model = _candidate_annual_model(document)
@@ -511,7 +535,7 @@ def recognize_document(
     if not 0.0 <= min_confidence <= 100.0:
         raise ValueError("La soglia di confidenza deve essere compresa tra 0 e 100.")
 
-    normalized_text = normalize_text(text)
+    normalized_text = normalize_text(text[:2000])
     if not normalized_text:
         return RecognitionResult(recognized=False, confidence=0.0, reason="Nessun testo leggibile disponibile.")
     if _informational_heading(text):
@@ -529,15 +553,19 @@ def recognize_document(
     detected_entities = _heading_entities(text, entity_names) or _detect_entities(opening_text, entity_names)
     # Request-local only: uploaded text and its derivatives are never cached.
     input_features = dict(
-        revisions={v.casefold() for v in re.findall(r'\b(?:versione|version|revisione|rev\.)\s*[:=]?\s*(\d+(?:[.]\d+)+)\b', text, flags=re.I)},
-        annual_years=_annual_model_years(text),
-        mentions={m:_annual_model_is_mentioned(text,m) for m in ANNUAL_MODEL_PATTERNS},
+        revisions={v.casefold() for v in re.findall(r'\b(?:versione|version|revisione|rev\.)\s*[:=]?\s*(\d+(?:[.]\d+)+)\b', text[:2000], flags=re.I)},
+        annual_years=_annual_model_years(text[:2000]),
+        mentions={m:_annual_model_is_mentioned(text[:2000],m) for m in ANNUAL_MODEL_PATTERNS},
         opening_tokens=frozenset(opening_text.split()),
         code_lines=tuple(normalize_text(line) for line in text[:2000].splitlines()),
         title_lines=tuple(normalize_text(line) for line in text[:800].splitlines() if line.strip())[:5],
+        title_windows=title_windows(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in detected_entities),reference=reference_full_scan),
+        exact_code_candidates=exact_code_candidates(text,document_list,reference=reference_full_scan),
+        technical_anchors=match_anchors(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in detected_entities)),
     )
     if reference_full_scan:
-        input_features = None
+        # Reference computes the same new evidence without annual-analysis caches.
+        input_features = dict(input_features,reference=True)
     candidates = sorted(
         (
             _score_candidate(text, normalized_text, document, detected_entities, opening_text, input_features)
@@ -651,6 +679,15 @@ def _score_family(
         score += 15.0
         signals.append("ente")
 
+    # A complete, distinctive family heading plus an explicit issuer is an
+    # independent fallback signal; no version or document identity is inferred.
+    heading = any(line == normalized_family_name or line.startswith(normalized_family_name+' ')
+                  for line in (normalize_text(s) for s in original_text[:600].splitlines() if s.strip()))
+    if heading and entity_match and len(normalized_family_name.split())>=4:
+        identifying_phrase_count=max(2,identifying_phrase_count)
+        score=max(90.0,score)
+        signals.append('intestazione completa della famiglia ed ente')
+
     matched_keywords = sum(
         1
         for keyword in family.keywords
@@ -736,6 +773,7 @@ def catalog_revision(
     # text or extracted personal fields. Sorting makes the revision independent
     # of database iteration order and includes every rule-relevant field.
     catalog_signature = {
+        "technical_features": feature_revision(),
         "documents": sorted((
             (document.id, document.ente, document.codice, document.titolo_ufficiale,
              document.versione, document.parole_chiave, document.stato_verifica)
@@ -761,6 +799,11 @@ def recognize_catalog(
 ) -> CatalogRecognitionResult:
     document_list = list(documents)
     family_list = list(families)
+    quality = text_quality(text)
+    if not quality['usable']:
+        return CatalogRecognitionResult(match_type='NO_MATCH',confidence_document=0.0,confidence_family=0.0,
+            reason='Qualità del testo insufficiente per il riconoscimento.',rules_version=RULES_VERSION,
+            catalog_revision=catalog_revision(document_list,family_list),pipeline_stages=(('extraction_quality','unusable'),('decision','NO_MATCH')))
     opening = normalize_text(text[:2000])
     operational_documents = [d for d in document_list if d.stato_verifica != 'demo' or
                              bool(d.codice and _contains_phrase(opening,d.codice))]
@@ -783,6 +826,10 @@ def recognize_catalog(
         "rules_version": RULES_VERSION,
         "catalog_revision": catalog_revision(document_list, family_list),
         "candidate_ids": document_result.candidate_ids,
+        "pipeline_stages": (('extraction_quality','usable'),('exact_code_candidates','evaluated'),
+            ('entity_candidates','evaluated'),('version_year_constraints','evaluated'),
+            ('title_anchor_windows','evaluated'),('exact_document_scoring','accepted' if document_result.recognized else 'rejected'),
+            ('family_fallback','supported' if family_result.recognized else 'unsupported')),
     }
     if document_result.recognized and document_result.document is not None:
         return CatalogRecognitionResult(

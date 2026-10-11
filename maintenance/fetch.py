@@ -14,6 +14,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 from urllib.robotparser import RobotFileParser
 
 from maintenance.policy import validate_url
+from maintenance.iri import iri_to_uri
 
 USER_AGENT = "BurOCRazia-maintenance/0.7 (sequential official metadata; github.com/lucalullo/burocrazia)"
 MAX_BYTES = 8 * 1024 * 1024
@@ -73,7 +74,7 @@ class Fetcher:
         chain = []
         attempts = 0
         for _ in range(MAX_REDIRECTS + 1):
-            url = validate_url(url, source_key, ipa_site=ipa_site)
+            url = validate_url(iri_to_uri(url), source_key, ipa_site=ipa_site)
             host = urlsplit(url).netloc
             if host in self.blocked:
                 raise AcquisitionError("Fonte già bloccata in questa sessione.", url=url)
@@ -93,7 +94,7 @@ class Fetcher:
                     location = exc.headers.get("Location")
                     exc.close()
                     if status in {301, 302, 303, 307, 308} and location:
-                        url = validate_url(urljoin(url, location), source_key, ipa_site=ipa_site)
+                        url = validate_url(iri_to_uri(urljoin(url, location)), source_key, ipa_site=ipa_site)
                         chain.append(url)
                         break
                     if status in {403, 429}:
@@ -106,7 +107,7 @@ class Fetcher:
                     raise AcquisitionError(str(exc), url=url, attempts=attempts) from exc
                 else:
                     with response:
-                        final = validate_url(response.url, source_key, ipa_site=ipa_site)
+                        final = validate_url(iri_to_uri(response.url), source_key, ipa_site=ipa_site)
                         raw = response.read(MAX_BYTES + 1)
                         if len(raw) > MAX_BYTES:
                             raise AcquisitionError("Risposta oltre 8 MiB.", url=url, attempts=attempts)
@@ -136,7 +137,10 @@ class Fetcher:
             raise AcquisitionError("robots: percorso non consentito.", url=url)
 
     def fetch(self, url, source_key, *, ipa_site=None) -> Fetched:
-        url = validate_url(url, source_key, ipa_site=ipa_site)
+        original_url = url
+        url = validate_url(iri_to_uri(url), source_key, ipa_site=ipa_site)
+        if original_url in self.cached and url not in self.cached:
+            self.cached[url] = self.cached[original_url]
         if url in self.cached:
             item = self.cached[url]
             validate_url(item.final_url, source_key, ipa_site=ipa_site)

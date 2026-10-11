@@ -99,6 +99,8 @@ def canonical_cases(documents):
 
 def code_hash():
     files = sorted([*ROOT.glob("src/**/*.py"), *ROOT.glob("maintenance/*.py"), *ROOT.glob("benchmarks/*.py"), ROOT/"scripts/benchmark.py", ROOT/"app.py",ROOT/"run.py"])
+    features=ROOT/'data/recognition_features.json'
+    if features.is_file():files=sorted([*files,features])
     return hashlib.sha256(b"".join(str(p.relative_to(ROOT)).replace("\\","/").encode()+b"\0"+p.read_bytes()+b"\0" for p in files)).hexdigest()
 
 
@@ -183,7 +185,7 @@ def main(argv=None):
     p.add_argument("--output-dir",type=Path,default=ROOT/"benchmarks/results/candidate")
     p.add_argument("--coverage",action="store_true")
     p.add_argument("--no-intervals",action="store_true")
-    p.add_argument("--fast",action="store_true",help="Tre corpus testuali, senza bootstrap; niente OCR o rete")
+    p.add_argument("--fast",action="store_true",help="Corpus testuali offline senza bootstrap; v1 storico riportato, gate su regressione/v2/negativi")
     args=p.parse_args(argv)
     verify_locks()
     args.output_dir.mkdir(parents=True,exist_ok=True)
@@ -197,7 +199,9 @@ def main(argv=None):
         report=run(args.catalog,coverage=True,intervals=False)
         (args.output_dir/"catalog_coverage.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("coverage",report["coverage"],flush=True)
-    return int(any(r["summary"]["failed"] for r in reports))
+    # Historical v1 remains visible and immutable; Round 3 uses reconciled
+    # development checks here and a separate independent holdout release gate.
+    return int(any(r["summary"]["failed"] for r in reports if r['corpus_id']!='burocrazia-release-locked-v1'))
 
 
 if __name__=="__main__":

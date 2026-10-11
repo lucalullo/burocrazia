@@ -19,6 +19,7 @@ from docx.text.paragraph import Paragraph
 from lxml.etree import XMLSyntaxError
 
 from src import ocr as local_ocr
+from src.text_quality import text_quality
 
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024
 MAX_PDF_PAGES = 100
@@ -149,6 +150,9 @@ def extract_pdf(source: bytes | bytearray | BinaryIO) -> ExtractionResult:
                 _check_deadline(started)
                 page = pdf.load_page(page_number)
                 text = _normalize_extracted_text(page.get_text("text"))
+                if text and not text_quality(text)['usable']:
+                    warnings.append('Text layer PDF non utilizzabile: tentativo OCR entro i limiti esistenti.')
+                    text = ''
                 if text:
                     direct_pages += 1
                 elif page_number >= local_ocr.MAX_OCR_PAGES:

@@ -704,6 +704,7 @@ def show_theme_selector() -> None:
 
 def show_benchmark(catalog, families):
     from src.recognize import catalog_revision
+    from src.benchmark_display import headline_sections
     st.subheader("Benchmark")
     st.caption("Risultati statici; nessun test sul documento caricato.")
     summary = load_summary(Path(__file__).resolve().parent / "benchmarks/latest_summary.json")
@@ -718,6 +719,19 @@ def show_benchmark(catalog, families):
               "family_precision": "Precisione famiglia", "family_recall": "Recall famiglia", "family_f1": "F1 famiglia", "useful_coverage": "Copertura utile",
               "unknown_correct_rejection_rate": "Rifiuti corretti degli sconosciuti", "unknown_false_acceptance_rate": "False accettazioni",
               "entity_error_rate": "Errori ente", "version_year_error_rate": "Errori versione"}
+    for key,section in headline_sections(summary):
+        st.divider()
+        st.text({'independent_holdout':'Holdout ufficiale indipendente','hard_negatives':'Hard negatives',
+                 'real_ocr':'OCR reale','performance':'Performance'}[key])
+        if section.get('status')=='not_run':
+            st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')
+            continue
+        if isinstance(section.get('summary'),dict):
+            st.text('Casi: '+str(section['summary'].get('cases','non disponibile')))
+            for name,label in labels.items():st.text(label+': '+metric_label(section['summary'].get('metrics',{}).get(name)))
+        if key=='real_ocr':st.text(str(section.get('result','non disponibile')))
+        if key=='performance':st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
+    st.text('Dettagli di sviluppo e regressione: corpus non indipendenti.')
     for evaluation in summary["evaluations"]:
         st.divider()
         st.text(str(evaluation.get("name", "Valutazione")))
