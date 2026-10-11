@@ -1,11 +1,6 @@
-* text=auto
-*.py text eol=lf
-*.sh text eol=lf
-*.md text eol=lf
-*.json text eol=lf
-*.toml text eol=lf
-*.yml text eol=lf
-*.txt text eol=lf
-*.bat text eol=crlf
-*.zip binary
+# These bytes are covered by published hashes; never translate line endings.
+/benchmarks/corpora/*.json -text
+/benchmarks/manifests/*.json -text
+/maintenance/releases/** -text
+/data/baseline_v061_rows.json -text
 *.sqlite3 binary
