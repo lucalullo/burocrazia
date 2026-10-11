@@ -124,7 +124,7 @@ def update_readmes(coverage):
             text=text.replace(marker,block+marker,1)
         if '- **Benchmark**' not in text:
             text=text.replace('- **Editorial review** - maintain local content.','- **Editorial review** - maintain local content.\n- **Benchmark** - inspect static evaluation results.') if en else text.replace('- **Revisione editoriale** - strumenti per la manutenzione dei contenuti.','- **Revisione editoriale** - strumenti per la manutenzione dei contenuti.\n- **Benchmark** - consulta i risultati statici delle valutazioni.')
-        text=text.replace('The entities currently represented by real records are:','The original six issuers below are joined by MIMIT, the Department for Public Administration, Venice Court, MEF/RGS, ANAC and Unioncamere. The original issuers are:') if en else text.replace('Gli enti attualmente rappresentati dai record reali sono:','Ai sei enti originari elencati sotto si aggiungono MIMIT, Funzione Pubblica, Tribunale di Venezia, MEF/RGS, ANAC e Unioncamere. Gli enti originari sono:')
+        text=text.replace('The real document records currently cover:','The six original issuers below are joined by MIMIT, the Department for Public Administration, Venice Court, MEF/RGS, ANAC and Unioncamere. The original issuers are:') if en else text.replace('Gli enti attualmente rappresentati dai record reali sono:','Ai sei enti originari elencati sotto si aggiungono MIMIT, Funzione Pubblica, Tribunale di Venezia, MEF/RGS, ANAC e Unioncamere. Gli enti originari sono:')
         p.write_text(text,encoding='utf-8')
 
 

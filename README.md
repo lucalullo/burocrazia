@@ -37,7 +37,7 @@ Un `NO_MATCH` corretto è preferibile a un falso positivo.
 
 ## Cosa contiene questa candidata
 
-Lo snapshot distribuito con la release contiene:
+Lo snapshot distribuito con questa candidata contiene:
 
 | Contenuto | Quantità |
 | --- | ---: |

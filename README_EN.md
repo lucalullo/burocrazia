@@ -37,7 +37,7 @@ A correct `NO_MATCH` is preferred over a false positive.
 
 ## What this candidate includes
 
-The catalog snapshot distributed with this release contains:
+The catalog snapshot distributed with this candidate contains:
 
 | Content | Count |
 | --- | ---: |
@@ -55,7 +55,7 @@ The 1216 real records are present in the catalog, but they are not automatically
 
 **These numbers describe catalog coverage; they do not guarantee that every possible input file will be recognized.** Recognition depends on extraction quality and on the evidence available in the document.
 
-The real document records currently cover:
+The six original issuers below are joined by MIMIT, the Department for Public Administration, Venice Court, MEF/RGS, ANAC and Unioncamere. The original issuers are:
 
 - INPS;
 - INAIL;
