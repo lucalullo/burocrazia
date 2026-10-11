@@ -30,3 +30,7 @@ Il pacchetto riproducibile contiene `manifest.json` e `records.json`, senza file
 ## Limiti osservati
 
 Nessuna cancellazione, revoca o sostituzione automatica dello storico. Un file non scaricato non ha un hash di contenuto: gli hash delle risposte di elenco sono separati dai file. Le lingue sono classificate soltanto dove esplicitate. Non sono state verificate equivalenze sostanziali fra tribunali diversi. Mancano una revisione editoriale umana, un censimento territoriale IPA e diversi procedimenti nazionali; `SOURCES.md` elenca blocchi e raccolte manuali. Cache, staging, PDF/DOC e testo estratto non entrano in Git.
+
+## Storico Round 2
+
+Schema 610 conserva osservazioni tecniche immutabili e relazioni di sostituzione con autore/prova; nessuna sostituzione è stata dedotta. `maintenance.record_observations` rigioca offline ricevute reali in staging; `maintenance.publish_history_snapshot` confronta le righe prima della pubblicazione. `maintenance.quarantine_round2` prepara i rifiuti tecnici documentati di #429 e delle FAQ #1077/#1081/#1091. Nessuna verifica umana automatica. Il seed non sovrascrive il database operativo esistente: eventuali decisioni locali devono passare dalla revisione con autore e storico. La nuova espansione è sospesa finché i gate restano aperti.

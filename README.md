@@ -252,7 +252,7 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-La candidata del 11 ottobre 2026 è **non pronta per la release**; la versione software resta 0.6.1 in attesa dei gate 0.7.0. Regressione congelata, copertura canonica, negativi difficili, estrazione di file reali e OCR reale sono separati in [docs/BENCHMARK.md](docs/BENCHMARK.md). I conteggi sono generati dal seed con `python scripts/release_report.py`; perimetri e blocchi sono in [docs/SOURCES.md](docs/SOURCES.md). Tesseract non è disponibile nell’ambiente attuale: i risultati OCR storici sopra non sono stati riconfermati. Il benchmark release fast fallisce sul corpus locked invariato e la CI multipiattaforma remota non è stata eseguita.
+Il Round 2 resta **NOT READY**; versione software 0.6.1. Il catalogo conserva 1.216 record reali: 1.212 operativi e quattro rifiutati tecnicamente con autore/storico. V1 congelato 59/69; v2 riconciliato esplicitamente 69/69; hard negatives 100/100. Tesseract reale: 7/7 legacy e 14/14 OCR sintetici. Il campione ufficiale contiene 150 moduli attesi e 12 negativi reali; zero identificazioni errate dopo le correzioni, con recall basso. Prestazioni alternate, raw, statistica e gate residui sono in [docs/BENCHMARK.md](docs/BENCHMARK.md). CI GitHub non eseguita; release-fast conserva il fallimento v1. Ulteriore espansione rinviata.
 
 ## Test
 

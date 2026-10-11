@@ -1,6 +1,6 @@
 # Copertura della candidata
 
-Generato da `python scripts/release_report.py`. Catalogo `8db623d55bb9c17ca2488cbdd6f91b9149af872552279baae0e0e30fc2e97121`.
+Generato da `python scripts/release_report.py`. Catalogo `790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99`.
 
 | Misura | Baseline 0.6.1 | Candidata |
 |---|---:|---:|
@@ -12,7 +12,7 @@ Generato da `python scripts/release_report.py`. Catalogo `8db623d55bb9c17ca2488c
 | Inventario IPA | 2499 | 2499 |
 | Provenienza strutturale | 389 | 1216 |
 
-Crescita: 827 identità (+212.60%). Tutti i documenti restano da revisionare; nessuna spiegazione aggiunta, tre schede preesistenti conservate. Non si dichiara che ogni identità sia riconoscibile: la prova canonica è in `BENCHMARK.md`.
+Crescita: 827 identità (+212.60%). 1.212 record operativi restano da revisionare; quattro record informativi sono rifiutati con storico; nessuna spiegazione aggiunta, tre schede preesistenti conservate. Non si dichiara che ogni identità sia riconoscibile: la prova canonica è in `BENCHMARK.md`.
 
 | Ente | Record |
 |---|---:|
@@ -42,3 +42,9 @@ Crescita: 827 identità (+212.60%). Tutti i documenti restano da revisionare; ne
 Identità, risorse e famiglie sono conteggi distinti: 1078 osservazioni di risorsa; 1181 URL di risorse distinti; zero file ufficiali redistribuiti. Gruppi di possibile identità duplicata: 3; gruppi con download condiviso: 8. Questi segnali includono dati ereditati e non autorizzano cancellazioni. Nessuna revoca o sostituzione automatica.
 
 Tutte le 399 righe documentali iniziali, le 15 fonti, le 16 famiglie, i 2.499 enti, le 389 provenienze e le tre spiegazioni hanno impronte immutate. Le quattro nuove fonti restano `da_verificare`; il dominio ufficiale è verificato tecnicamente, senza attribuire una revisione umana. Record per fonte/categoria e gruppi di duplicazione sono in `coverage.json`.
+
+## Round 2
+
+Nessuna nuova identità: 1.216 record reali conservati, 1.212 operativi e 4 rifiutati (#429, #1077, #1081, #1091). Venezia conserva 143 record, 142 operativi: il file sull’obbligo di pagamento è informativo. Il controllo dei 150 file campionati non equivale a verifica integrale di tutte le 143 identità Venezia. Concentrazione catalogo: INPS 359/1216 (29,52%); nel benchmark ufficiale nessuna fonte supera il 20% dei positivi.
+
+Schema 610, 1.078 osservazioni immutabili da ricevute effettive; 232 differenze di osservazione su record già presenti, senza sovrascrivere metadati o inventare sostituzioni. I campi codice/versione/data/download restano 429/513/359/1161. Tutte le righe v0.6.1 restano invariate; tutte le righe Round 1 sono preservate salvo quattro stati rifiutati esplicitamente documentati. Nessun file ufficiale, database operativo o eseguibile Tesseract incluso nello snapshot.

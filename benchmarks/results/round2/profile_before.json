@@ -1,0 +1,313 @@
+{
+  "cases": 20,
+  "functions": [
+    {
+      "function": "recognize_catalog",
+      "line": 710,
+      "calls": 20,
+      "self_seconds": 0.0128105,
+      "cumulative_seconds": 6.596269
+    },
+    {
+      "function": "recognize_document",
+      "line": 482,
+      "calls": 20,
+      "self_seconds": 0.0086268,
+      "cumulative_seconds": 6.3861175
+    },
+    {
+      "function": "<genexpr>",
+      "line": 509,
+      "calls": 24340,
+      "self_seconds": 0.0443636,
+      "cumulative_seconds": 6.342674400000001
+    },
+    {
+      "function": "_score_candidate",
+      "line": 361,
+      "calls": 24320,
+      "self_seconds": 1.1628014,
+      "cumulative_seconds": 6.2983108
+    },
+    {
+      "function": "_candidate_annual_model",
+      "line": 209,
+      "calls": 65780,
+      "self_seconds": 0.2567804,
+      "cumulative_seconds": 3.8195923
+    },
+    {
+      "function": "_annual_version_evidence",
+      "line": 315,
+      "calls": 24320,
+      "self_seconds": 0.0912869,
+      "cumulative_seconds": 2.7921203
+    },
+    {
+      "function": "normalize_text",
+      "line": 99,
+      "calls": 162812,
+      "self_seconds": 0.4246497,
+      "cumulative_seconds": 2.3898821000000003
+    },
+    {
+      "function": "_contains_phrase",
+      "line": 135,
+      "calls": 92150,
+      "self_seconds": 0.102788,
+      "cumulative_seconds": 1.2853391
+    },
+    {
+      "function": "_annual_model_years",
+      "line": 191,
+      "calls": 66160,
+      "self_seconds": 0.2553018,
+      "cumulative_seconds": 0.8846745
+    },
+    {
+      "function": "<genexpr>",
+      "line": 193,
+      "calls": 132440,
+      "self_seconds": 0.5134486,
+      "cumulative_seconds": 0.5153507
+    },
+    {
+      "function": "catalog_revision",
+      "line": 687,
+      "calls": 20,
+      "self_seconds": 0.0003598,
+      "cumulative_seconds": 0.1145873
+    },
+    {
+      "function": "recognize_document_family",
+      "line": 628,
+      "calls": 20,
+      "self_seconds": 0.0055446,
+      "cumulative_seconds": 0.0759938
+    },
+    {
+      "function": "_is_distinctive_title",
+      "line": 165,
+      "calls": 24320,
+      "self_seconds": 0.027040500000000002,
+      "cumulative_seconds": 0.0617882
+    },
+    {
+      "function": "<genexpr>",
+      "line": 652,
+      "calls": 340,
+      "self_seconds": 0.00044940000000000003,
+      "cumulative_seconds": 0.05484000000000001
+    },
+    {
+      "function": "_score_family",
+      "line": 562,
+      "calls": 320,
+      "self_seconds": 0.0050750000000000005,
+      "cumulative_seconds": 0.054390600000000004
+    },
+    {
+      "function": "_generic_version_context",
+      "line": 291,
+      "calls": 3800,
+      "self_seconds": 0.0163536,
+      "cumulative_seconds": 0.048314300000000004
+    },
+    {
+      "function": "<genexpr>",
+      "line": 210,
+      "calls": 150120,
+      "self_seconds": 0.0335326,
+      "cumulative_seconds": 0.0335326
+    },
+    {
+      "function": "<genexpr>",
+      "line": 378,
+      "calls": 8580,
+      "self_seconds": 0.030291400000000003,
+      "cumulative_seconds": 0.030291400000000003
+    },
+    {
+      "function": "_local_entity_conflict",
+      "line": 269,
+      "calls": 1390,
+      "self_seconds": 0.0019365,
+      "cumulative_seconds": 0.029957300000000003
+    },
+    {
+      "function": "_heading_entities",
+      "line": 177,
+      "calls": 40,
+      "self_seconds": 0.0021197,
+      "cumulative_seconds": 0.0227522
+    },
+    {
+      "function": "_detect_entities",
+      "line": 142,
+      "calls": 40,
+      "self_seconds": 0.0009747000000000001,
+      "cumulative_seconds": 0.019994900000000003
+    },
+    {
+      "function": "<genexpr>",
+      "line": 577,
+      "calls": 324,
+      "self_seconds": 0.0004334,
+      "cumulative_seconds": 0.012627800000000002
+    },
+    {
+      "function": "<genexpr>",
+      "line": 696,
+      "calls": 24540,
+      "self_seconds": 0.011304400000000001,
+      "cumulative_seconds": 0.011304400000000001
+    },
+    {
+      "function": "_annual_family_alias",
+      "line": 244,
+      "calls": 320,
+      "self_seconds": 0.0005152000000000001,
+      "cumulative_seconds": 0.0101726
+    },
+    {
+      "function": "<genexpr>",
+      "line": 412,
+      "calls": 24320,
+      "self_seconds": 0.005466,
+      "cumulative_seconds": 0.005466
+    },
+    {
+      "function": "<genexpr>",
+      "line": 276,
+      "calls": 1390,
+      "self_seconds": 0.0015913000000000001,
+      "cumulative_seconds": 0.005046800000000001
+    },
+    {
+      "function": "_annual_model_is_mentioned",
+      "line": 235,
+      "calls": 100,
+      "self_seconds": 0.0002253,
+      "cumulative_seconds": 0.0032532000000000004
+    },
+    {
+      "function": "<genexpr>",
+      "line": 727,
+      "calls": 24540,
+      "self_seconds": 0.0031765,
+      "cumulative_seconds": 0.0031765
+    },
+    {
+      "function": "<genexpr>",
+      "line": 733,
+      "calls": 24540,
+      "self_seconds": 0.002912,
+      "cumulative_seconds": 0.002912
+    },
+    {
+      "function": "<genexpr>",
+      "line": 502,
+      "calls": 24340,
+      "self_seconds": 0.0027972,
+      "cumulative_seconds": 0.0027972
+    },
+    {
+      "function": "<lambda>",
+      "line": 514,
+      "calls": 24320,
+      "self_seconds": 0.0026810000000000002,
+      "cumulative_seconds": 0.0026810000000000002
+    },
+    {
+      "function": "_informational_heading",
+      "line": 170,
+      "calls": 40,
+      "self_seconds": 0.0002634,
+      "cumulative_seconds": 0.0020026
+    },
+    {
+      "function": "<genexpr>",
+      "line": 611,
+      "calls": 90,
+      "self_seconds": 8.970000000000001e-05,
+      "cumulative_seconds": 0.0019271000000000002
+    },
+    {
+      "function": "_is_incidental_reference",
+      "line": 201,
+      "calls": 120,
+      "self_seconds": 0.00025340000000000003,
+      "cumulative_seconds": 0.001806
+    },
+    {
+      "function": "<genexpr>",
+      "line": 152,
+      "calls": 40,
+      "self_seconds": 0.0001061,
+      "cumulative_seconds": 0.0017115000000000001
+    },
+    {
+      "function": "_is_plain_annual_model",
+      "line": 229,
+      "calls": 60,
+      "self_seconds": 0.00012680000000000002,
+      "cumulative_seconds": 0.0009962
+    },
+    {
+      "function": "<genexpr>",
+      "line": 173,
+      "calls": 132,
+      "self_seconds": 9.730000000000001e-05,
+      "cumulative_seconds": 0.0003957
+    },
+    {
+      "function": "<genexpr>",
+      "line": 701,
+      "calls": 340,
+      "self_seconds": 0.00018490000000000002,
+      "cumulative_seconds": 0.00018490000000000002
+    },
+    {
+      "function": "<genexpr>",
+      "line": 155,
+      "calls": 80,
+      "self_seconds": 6.97e-05,
+      "cumulative_seconds": 0.00014230000000000002
+    },
+    {
+      "function": "<genexpr>",
+      "line": 645,
+      "calls": 340,
+      "self_seconds": 7.32e-05,
+      "cumulative_seconds": 7.32e-05
+    },
+    {
+      "function": "<lambda>",
+      "line": 656,
+      "calls": 320,
+      "self_seconds": 4.4800000000000005e-05,
+      "cumulative_seconds": 4.4800000000000005e-05
+    },
+    {
+      "function": "<genexpr>",
+      "line": 158,
+      "calls": 80,
+      "self_seconds": 2.82e-05,
+      "cumulative_seconds": 2.82e-05
+    },
+    {
+      "function": "<genexpr>",
+      "line": 183,
+      "calls": 80,
+      "self_seconds": 2.2400000000000002e-05,
+      "cumulative_seconds": 2.2400000000000002e-05
+    },
+    {
+      "function": "<genexpr>",
+      "line": 536,
+      "calls": 32,
+      "self_seconds": 9e-06,
+      "cumulative_seconds": 9e-06
+    }
+  ]
+}

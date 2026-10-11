@@ -35,3 +35,5 @@ acquisition times, exclusions and resource URLs. A listing-response hash is not
 the hash of its linked document. Real-file benchmark hashes identify files kept
 only in an ignored local cache; no third-party file is licensed under this
 project's MIT License. Human editorial review remains pending.
+
+Round 2 preserves only metadata, actual acquisition receipts, hashes and technical audit decisions. The 162 official benchmark files and Tesseract binaries/language packs remain in ignored local directories. No new institutional logos or trademarks are copied. A technical rejection is explicitly attributed to Codex and is not represented as a human review or an official withdrawal.

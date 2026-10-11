@@ -1,8 +1,8 @@
 # Validazione BurOCRazia 0.6.1
 
-## Candidata successiva — 11 ottobre 2026
+## Candidata Round 2 — 11 ottobre 2026
 
-I risultati correnti sono generati in [BENCHMARK.md](BENCHMARK.md), `validation_latest.json`, `catalog_verification.json` e `release_gates.json`. La baseline locale è 453 passati/3 skip e regressione 35/35. La suite corrente aggiunge policy di acquisizione, paginazione incoerente, continuità di tutte le righe, cache differenziale e riferimenti privacy. L'OCR reale non è eseguibile qui perché Tesseract non è disponibile; il 7/7 riportato nelle sezioni successive è storico. La candidata non è pronta: il corpus locked mantiene i propri fallimenti e la CI remota Linux/macOS/Windows non è stata eseguita. Nessuna nuova verifica editoriale umana.
+Risultati correnti in `BENCHMARK.md`, `validation_latest.json` e `release_gates.json`: 515 test superati, tre skip Windows, zero fallimenti. Tesseract reale disponibile localmente: 7/7 legacy e 14/14 sintetici; nessun mock conteggiato come prova reale. Catalogo schema 610, 1.216 record reali conservati, 1.212 operativi. La candidata resta NOT READY per v1, basso recall reale e CI esterna non eseguita. Le sezioni successive conservano la storia 0.6.1.
 
 Le sezioni seguenti conservano la validazione storica 0.6.1, senza attribuirla alla candidata.
 

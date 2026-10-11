@@ -128,4 +128,9 @@ def update_readmes(coverage):
         p.write_text(text,encoding='utf-8')
 
 
-if __name__=='__main__':generate()
+if __name__=='__main__':
+    if (ROOT/'benchmarks/results/round2/final/release_locked_v2.json').exists():
+        from scripts.round2_report import generate as generate_round2
+        generate_round2()
+    else:
+        generate()

@@ -1,0 +1,1014 @@
+[
+  {
+    "fixture": {
+      "id": "R010",
+      "group": "document:165",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nRECLAMO",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    "round1": {
+      "id": "R010",
+      "group": "document:165",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 138.845,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 45.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [
+        "frasi identificative",
+        "ente",
+        "parole chiave forti"
+      ],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 30.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "garante per la protezione dei dati personali"
+    ],
+    "top_candidates": [
+      {
+        "id": 165,
+        "title": "RECLAMO",
+        "score": 95.0,
+        "rank": 0,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 166,
+        "title": "SEGNALAZIONE",
+        "score": 23.8,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "titolo di una sola parola: non distingue modulo, categoria o servizio",
+    "classification": "fixture ambigua",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online"
+  },
+  {
+    "fixture": {
+      "id": "R011",
+      "group": "document:165",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nRECLAMO",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    "round1": {
+      "id": "R011",
+      "group": "document:165",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 131.939,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 45.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [
+        "frasi identificative",
+        "ente",
+        "parole chiave forti"
+      ],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 30.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "garante per la protezione dei dati personali"
+    ],
+    "top_candidates": [
+      {
+        "id": 165,
+        "title": "RECLAMO",
+        "score": 95.0,
+        "rank": 0,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 166,
+        "title": "SEGNALAZIONE",
+        "score": 23.8,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "titolo di una sola parola: non distingue modulo, categoria o servizio",
+    "classification": "fixture ambigua",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online"
+  },
+  {
+    "fixture": {
+      "id": "R012",
+      "group": "document:166",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nSEGNALAZIONE",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    "round1": {
+      "id": "R012",
+      "group": "document:166",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 127.277,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 20.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [
+        "ente",
+        "parole chiave forti"
+      ],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 5.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "garante per la protezione dei dati personali"
+    ],
+    "top_candidates": [
+      {
+        "id": 166,
+        "title": "SEGNALAZIONE",
+        "score": 95.0,
+        "rank": 0,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 165,
+        "title": "RECLAMO",
+        "score": 23.8,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "titolo di una sola parola: non distingue modulo, categoria o servizio",
+    "classification": "fixture ambigua",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online"
+  },
+  {
+    "fixture": {
+      "id": "R013",
+      "group": "document:166",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nSEGNALAZIONE",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    "round1": {
+      "id": "R013",
+      "group": "document:166",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 120.854,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 20.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [
+        "ente",
+        "parole chiave forti"
+      ],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 5.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "garante per la protezione dei dati personali"
+    ],
+    "top_candidates": [
+      {
+        "id": 166,
+        "title": "SEGNALAZIONE",
+        "score": 95.0,
+        "rank": 0,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 165,
+        "title": "RECLAMO",
+        "score": 23.8,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "titolo di una sola parola: non distingue modulo, categoria o servizio",
+    "classification": "fixture ambigua",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online"
+  },
+  {
+    "fixture": {
+      "id": "R028",
+      "group": "document:20",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nAvvocati",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    "round1": {
+      "id": "R028",
+      "group": "document:20",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 130.762,
+      "source": "INAIL",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 0.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 0.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "inail"
+    ],
+    "top_candidates": [
+      {
+        "id": 20,
+        "title": "Avvocati",
+        "score": 95.0,
+        "rank": 0,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 896,
+        "title": "Stp - Società tra professionisti iscritta all'albo degli avvocati",
+        "score": 25.0,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "titolo di una sola parola: non distingue modulo, categoria o servizio",
+    "classification": "fixture ambigua",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/altri-moduli/abilitazione-ai-servizi-online.html"
+  },
+  {
+    "fixture": {
+      "id": "R029",
+      "group": "document:20",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "layout",
+      "text": "INAIL\n\nAvvocati",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    "round1": {
+      "id": "R029",
+      "group": "document:20",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 98.736,
+      "source": "INAIL",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 0.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 0.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "inail"
+    ],
+    "top_candidates": [
+      {
+        "id": 20,
+        "title": "Avvocati",
+        "score": 95.0,
+        "rank": 0,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 896,
+        "title": "Stp - Società tra professionisti iscritta all'albo degli avvocati",
+        "score": 25.0,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "titolo di una sola parola: non distingue modulo, categoria o servizio",
+    "classification": "fixture ambigua",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/altri-moduli/abilitazione-ai-servizi-online.html"
+  },
+  {
+    "fixture": {
+      "id": "R060",
+      "group": "family:3",
+      "category": "family",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    "round1": {
+      "id": "R060",
+      "group": "family:3",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 150.688,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 0.0,
+      "confidence_family": 65.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [
+        "frasi identificative",
+        "ente"
+      ],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 25.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "agenzia delle entrate riscossione"
+    ],
+    "top_candidates": [
+      {
+        "id": 11,
+        "title": "RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI",
+        "score": 0.0,
+        "rank": 0,
+        "signals": [
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 12,
+        "title": "CERTIFICATO DI OPZIONE CONTRIBUTIVA - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATA E ZGJEDHJES SË SKEMËS PËR PAGESËN E KONTRIBUTEVE - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI544 - IT/AL 103]",
+        "score": 0.0,
+        "rank": 0,
+        "signals": [
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "due frasi anche annidate non raggiungono soglia; ente creditore e riscossore confusi nel catalogo/fixture",
+    "classification": "expected probabilmente errato",
+    "proposed_action": "Conservare rifiuto: non attribuire automaticamente una verifica alla famiglia",
+    "official_evidence": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/index.html"
+  },
+  {
+    "fixture": {
+      "id": "R061",
+      "group": "family:4",
+      "category": "family",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    "round1": {
+      "id": "R061",
+      "group": "family:4",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 158.773,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "NO_MATCH",
+      "confidence_document": 0.0,
+      "confidence_family": 70.0,
+      "document": null,
+      "family": null,
+      "document_signals": [],
+      "family_signals": [
+        "frasi identificative",
+        "ente",
+        "parole chiave forti"
+      ],
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "document_score_margin": null,
+      "family_score_margin": 30.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": []
+    },
+    "detected_entities": [
+      "agenzia delle entrate riscossione"
+    ],
+    "top_candidates": [
+      {
+        "id": 11,
+        "title": "RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI",
+        "score": 0.0,
+        "rank": 0,
+        "signals": [
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 12,
+        "title": "CERTIFICATO DI OPZIONE CONTRIBUTIVA - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATA E ZGJEDHJES SË SKEMËS PËR PAGESËN E KONTRIBUTEVE - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI544 - IT/AL 103]",
+        "score": 0.0,
+        "rank": 0,
+        "signals": [
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "due frasi anche annidate non raggiungono soglia; ente creditore e riscossore confusi nel catalogo/fixture",
+    "classification": "expected probabilmente errato",
+    "proposed_action": "Conservare rifiuto: non attribuire automaticamente una verifica alla famiglia",
+    "official_evidence": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/index.html"
+  },
+  {
+    "fixture": {
+      "id": "R066",
+      "group": "family:10",
+      "category": "family",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      }
+    },
+    "round1": {
+      "id": "R066",
+      "group": "family:10",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 146.979,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "DOCUMENT_MATCH",
+      "confidence_document": 100.0,
+      "confidence_family": 70.0,
+      "document": {
+        "ente": "Ispettorato Nazionale del Lavoro",
+        "titolo_ufficiale": "Richiesta di intervento ispettivo",
+        "categoria": "Richieste di intervento",
+        "descrizione_ufficiale": "La richiesta d’intervento (R.I.) è il modulo per la segnalazione di violazioni in materia di lavoro, legislazione sociale e salute e sicurezza nei luoghi di lavoro.",
+        "significato_semplice": null,
+        "versione": null,
+        "data_rilevazione": "2026-08-10",
+        "stato_verifica": "da_verificare",
+        "parole_chiave": [],
+        "codice": "INL-31",
+        "fonte_url": "https://www.ispettorato.gov.it/servizi-e-modulistica/per-i-lavoratori/",
+        "download_url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo.pdf",
+        "detail_url": "https://www.ispettorato.gov.it/servizio/richiesta-di-intervento-ispettivo/",
+        "data_pubblicazione": null,
+        "source_id": 15,
+        "id": 143
+      },
+      "family": null,
+      "document_signals": [
+        "codice esatto",
+        "titolo",
+        "ente",
+        "similarità generale"
+      ],
+      "family_signals": [
+        "frasi identificative",
+        "ente",
+        "parole chiave forti"
+      ],
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "document_score_margin": 100.0,
+      "family_score_margin": 70.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": [
+        143
+      ]
+    },
+    "detected_entities": [
+      "ispettorato nazionale del lavoro"
+    ],
+    "top_candidates": [
+      {
+        "id": 143,
+        "title": "Richiesta di intervento ispettivo",
+        "score": 100.0,
+        "rank": 4,
+        "signals": [
+          "codice esatto",
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 141,
+        "title": "Potere di transigere",
+        "score": 21.9,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "fixture di famiglia contiene identità specifica presente nel catalogo",
+    "classification": "expected probabilmente errato",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.ispettorato.gov.it/servizio/richiesta-di-intervento-ispettivo/"
+  },
+  {
+    "fixture": {
+      "id": "R068",
+      "group": "family:12",
+      "category": "family",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    "round1": {
+      "id": "R068",
+      "group": "family:12",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 165.686,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    "current": {
+      "match_type": "DOCUMENT_MATCH",
+      "confidence_document": 95.0,
+      "confidence_family": 90.0,
+      "document": {
+        "ente": "Garante per la protezione dei dati personali",
+        "titolo_ufficiale": "ESERCIZIO DEI DIRITTI IN MATERIA DI PROTEZIONE DEI DATI PERSONALI",
+        "categoria": "Modulistica e servizi online",
+        "descrizione_ufficiale": null,
+        "significato_semplice": null,
+        "versione": null,
+        "data_rilevazione": "2026-08-10",
+        "stato_verifica": "da_verificare",
+        "parole_chiave": [],
+        "codice": null,
+        "fonte_url": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online",
+        "download_url": "https://www.garanteprivacy.it/garante/document?ID=1089924",
+        "detail_url": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online",
+        "data_pubblicazione": null,
+        "source_id": 14,
+        "id": 167
+      },
+      "family": null,
+      "document_signals": [
+        "titolo",
+        "ente",
+        "similarità generale"
+      ],
+      "family_signals": [
+        "frasi identificative",
+        "ente"
+      ],
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "document_score_margin": 95.0,
+      "family_score_margin": 70.0,
+      "rules_version": "deterministic-3",
+      "catalog_revision": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+      "candidate_ids": [
+        167
+      ]
+    },
+    "detected_entities": [
+      "garante per la protezione dei dati personali"
+    ],
+    "top_candidates": [
+      {
+        "id": 167,
+        "title": "ESERCIZIO DEI DIRITTI IN MATERIA DI PROTEZIONE DEI DATI PERSONALI",
+        "score": 95.0,
+        "rank": 3,
+        "signals": [
+          "titolo",
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      },
+      {
+        "id": 165,
+        "title": "RECLAMO",
+        "score": 23.8,
+        "rank": 0,
+        "signals": [
+          "ente",
+          "similarità generale"
+        ],
+        "conflicts": []
+      }
+    ],
+    "root_cause": "fixture di famiglia contiene identità specifica presente nel catalogo",
+    "classification": "expected probabilmente errato",
+    "proposed_action": "Conservare rifiuto e v1; nuova etichetta documentata in v2",
+    "official_evidence": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online"
+  }
+]
