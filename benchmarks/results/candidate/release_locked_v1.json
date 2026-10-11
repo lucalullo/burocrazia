@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "executed_at": "2026-10-11T10:39:39.573699+00:00",
+  "executed_at": "2026-10-11T10:55:19.469867+00:00",
   "corpus_id": "burocrazia-release-locked-v1",
   "split": "release_locked",
   "synthetic": true,
@@ -10,8 +10,8 @@
     "catalog_file_sha256": "8db623d55bb9c17ca2488cbdd6f91b9149af872552279baae0e0e30fc2e97121",
     "catalog_semantic_sha256": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
     "rules_version": "deterministic-3",
-    "code_sha256": "50b7621d1af436413b4fc6cab1887dc0bd3c791fc8c8f5eb91ee5dc26592df80",
-    "git_commit": "d747d0ff663bbf5ac89f5ba1de71d2cdce22018c",
+    "code_sha256": "450b65e26be1150478fe16c131ea74a5df1381b5b6df84ba31a8b521167545df",
+    "git_commit": "4f158de5ca880dd02adff7b5828821489d35bd35",
     "working_tree_dirty": true
   },
   "environment": {
@@ -114,8 +114,8 @@
       }
     },
     "latency_ms": {
-      "p50": 162.145,
-      "p95": 236.3474,
+      "p50": 138.43,
+      "p95": 202.9798,
       "p99": null
     }
   },
@@ -210,8 +210,8 @@
           }
         },
         "latency_ms": {
-          "p50": 161.6965,
-          "p95": 180.4546,
+          "p50": 142.293,
+          "p95": 182.2084,
           "p99": null
         }
       },
@@ -304,8 +304,8 @@
           }
         },
         "latency_ms": {
-          "p50": 143.591,
-          "p95": 164.8724,
+          "p50": 150.688,
+          "p95": 157.9645,
           "p99": null
         }
       },
@@ -398,8 +398,8 @@
           }
         },
         "latency_ms": {
-          "p50": 173.4895,
-          "p95": 187.5511,
+          "p50": 138.506,
+          "p95": 162.8535,
           "p99": null
         }
       },
@@ -492,8 +492,8 @@
           }
         },
         "latency_ms": {
-          "p50": 150.952,
-          "p95": 166.681,
+          "p50": 119.819,
+          "p95": 143.2826,
           "p99": null
         }
       },
@@ -586,8 +586,8 @@
           }
         },
         "latency_ms": {
-          "p50": 128.3905,
-          "p95": 297.1812,
+          "p50": 98.606,
+          "p95": 239.2635,
           "p99": null
         }
       },
@@ -680,8 +680,8 @@
           }
         },
         "latency_ms": {
-          "p50": 170.131,
-          "p95": 180.157,
+          "p50": 147.978,
+          "p95": 157.9145,
           "p99": null
         }
       },
@@ -774,8 +774,8 @@
           }
         },
         "latency_ms": {
-          "p50": 162.2365,
-          "p95": 175.7602,
+          "p50": 137.92,
+          "p95": 155.766,
           "p99": null
         }
       },
@@ -868,8 +868,8 @@
           }
         },
         "latency_ms": {
-          "p50": 194.69,
-          "p95": 209.4536,
+          "p50": 179.006,
+          "p95": 185.441,
           "p99": null
         }
       }
@@ -964,8 +964,8 @@
           }
         },
         "latency_ms": {
-          "p50": 169.1255,
-          "p95": 288.1738,
+          "p50": 139.176,
+          "p95": 221.0231,
           "p99": null
         }
       },
@@ -1058,8 +1058,8 @@
           }
         },
         "latency_ms": {
-          "p50": 167.237,
-          "p95": 204.5324,
+          "p50": 150.688,
+          "p95": 183.296,
           "p99": null
         }
       },
@@ -1152,8 +1152,8 @@
           }
         },
         "latency_ms": {
-          "p50": 161.6145,
-          "p95": 184.872,
+          "p50": 133.1715,
+          "p95": 171.0904,
           "p99": null
         }
       }
@@ -1248,8 +1248,8 @@
           }
         },
         "latency_ms": {
-          "p50": 162.521,
-          "p95": 218.1957,
+          "p50": 139.061,
+          "p95": 188.6409,
           "p99": null
         }
       },
@@ -1342,8 +1342,8 @@
           }
         },
         "latency_ms": {
-          "p50": 160.203,
-          "p95": 225.1804,
+          "p50": 133.1715,
+          "p95": 204.7492,
           "p99": null
         }
       }
@@ -1391,7 +1391,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 152.05,
+      "matching_ms": 121.286,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1422,7 +1422,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 162.145,
+      "matching_ms": 190.942,
       "source": "Agenzia delle Entrate",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1453,7 +1453,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 145.603,
+      "matching_ms": 171.067,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1484,7 +1484,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 145.155,
+      "matching_ms": 159.291,
       "source": "Agenzia delle Entrate",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1515,7 +1515,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 161.248,
+      "matching_ms": 171.534,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1546,7 +1546,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 172.594,
+      "matching_ms": 145.525,
       "source": "Agenzia delle Entrate",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1577,7 +1577,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 162.521,
+      "matching_ms": 139.061,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1608,7 +1608,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 156.382,
+      "matching_ms": 132.956,
       "source": "Agenzia delle Entrate",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1639,7 +1639,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 170.77,
+      "matching_ms": 124.089,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1670,7 +1670,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 186.886,
+      "matching_ms": 126.96,
       "source": "Agenzia delle Entrate",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1701,7 +1701,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 177.402,
+      "matching_ms": 138.845,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1732,7 +1732,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 143.321,
+      "matching_ms": 131.939,
       "source": "Garante per la protezione dei dati personali",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1763,7 +1763,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 165.846,
+      "matching_ms": 127.277,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1794,7 +1794,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 158.425,
+      "matching_ms": 120.854,
       "source": "Garante per la protezione dei dati personali",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1825,7 +1825,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 174.395,
+      "matching_ms": 152.109,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1856,7 +1856,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 184.766,
+      "matching_ms": 138.167,
       "source": "Garante per la protezione dei dati personali",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1887,7 +1887,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 172.919,
+      "matching_ms": 120.908,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1918,7 +1918,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 157.237,
+      "matching_ms": 113.203,
       "source": "Garante per la protezione dei dati personali",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -1949,7 +1949,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 174.06,
+      "matching_ms": 160.536,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -1980,7 +1980,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 190.955,
+      "matching_ms": 155.609,
       "source": "Garante per la protezione dei dati personali",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2011,7 +2011,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 153.39,
+      "matching_ms": 113.376,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2042,7 +2042,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 151.47,
+      "matching_ms": 132.189,
       "source": "INAIL",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2073,7 +2073,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 168.153,
+      "matching_ms": 121.703,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2104,7 +2104,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 149.779,
+      "matching_ms": 117.935,
       "source": "INAIL",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2135,7 +2135,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 154.014,
+      "matching_ms": 111.791,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2166,7 +2166,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 150.434,
+      "matching_ms": 138.43,
       "source": "INAIL",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2197,7 +2197,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 130.871,
+      "matching_ms": 111.684,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2228,7 +2228,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 164.882,
+      "matching_ms": 147.253,
       "source": "INAIL",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2259,7 +2259,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 148.633,
+      "matching_ms": 130.762,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2290,7 +2290,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 116.132,
+      "matching_ms": 98.736,
       "source": "INAIL",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2321,7 +2321,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 287.273,
+      "matching_ms": 219.199,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2352,7 +2352,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 305.288,
+      "matching_ms": 216.046,
       "source": "INPS",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2383,7 +2383,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 282.111,
+      "matching_ms": 211.005,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2414,7 +2414,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 253.183,
+      "matching_ms": 255.68,
       "source": "INPS",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2445,7 +2445,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 90.855,
+      "matching_ms": 75.326,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2476,7 +2476,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 91.941,
+      "matching_ms": 89.073,
       "source": "INPS",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2507,7 +2507,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 102.64,
+      "matching_ms": 89.575,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2538,7 +2538,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 108.173,
+      "matching_ms": 70.734,
       "source": "INPS",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2569,7 +2569,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 131.934,
+      "matching_ms": 86.276,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2600,7 +2600,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 124.847,
+      "matching_ms": 107.637,
       "source": "INPS",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2631,7 +2631,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 170.167,
+      "matching_ms": 155.783,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2662,7 +2662,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 168.12,
+      "matching_ms": 157.473,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2693,7 +2693,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 161.094,
+      "matching_ms": 158.356,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2724,7 +2724,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 175.979,
+      "matching_ms": 147.978,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2755,7 +2755,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 171.22,
+      "matching_ms": 150.494,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2786,7 +2786,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 179.181,
+      "matching_ms": 130.374,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2817,7 +2817,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 181.133,
+      "matching_ms": 125.994,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2848,7 +2848,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 155.5,
+      "matching_ms": 116.133,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2879,7 +2879,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 142.435,
+      "matching_ms": 128.703,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2910,7 +2910,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 170.131,
+      "matching_ms": 157.432,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -2941,7 +2941,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 157.894,
+      "matching_ms": 114.304,
       "source": "Ministero del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2972,7 +2972,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 177.472,
+      "matching_ms": 133.387,
       "source": "Ministero del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -3003,7 +3003,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 162.492,
+      "matching_ms": 138.627,
       "source": "Ministero del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3034,7 +3034,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 164.029,
+      "matching_ms": 129.842,
       "source": "Ministero del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -3065,7 +3065,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 173.668,
+      "matching_ms": 157.314,
       "source": "Ministero del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3096,7 +3096,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 157.434,
+      "matching_ms": 120.003,
       "source": "Ministero del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -3127,7 +3127,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 167.214,
+      "matching_ms": 137.213,
       "source": "Ministero del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3158,7 +3158,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 161.981,
+      "matching_ms": 139.786,
       "source": "Ministero del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -3189,7 +3189,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 157.123,
+      "matching_ms": 153.874,
       "source": "Ministero del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3220,7 +3220,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 120.863,
+      "matching_ms": 153.586,
       "source": "Ministero del Lavoro",
       "noise": "layout",
       "prefiltered_candidates": 1226
@@ -3250,7 +3250,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 123.81,
+      "matching_ms": 150.688,
       "source": "Agenzia delle Entrate-Riscossione",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3280,7 +3280,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 143.591,
+      "matching_ms": 158.773,
       "source": "Agenzia delle Entrate-Riscossione",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3310,7 +3310,7 @@
       "version_error": false,
       "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
       "conflicts": [],
-      "matching_ms": 167.237,
+      "matching_ms": 148.723,
       "source": "Agenzia delle Entrate-Riscossione",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3340,7 +3340,7 @@
       "version_error": false,
       "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
       "conflicts": [],
-      "matching_ms": 187.926,
+      "matching_ms": 116.926,
       "source": "Ministero delle Infrastrutture e dei Trasporti",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3370,7 +3370,7 @@
       "version_error": false,
       "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
       "conflicts": [],
-      "matching_ms": 194.69,
+      "matching_ms": 186.156,
       "source": "Ministero delle Infrastrutture e dei Trasporti",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3400,7 +3400,7 @@
       "version_error": false,
       "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
       "conflicts": [],
-      "matching_ms": 211.094,
+      "matching_ms": 179.006,
       "source": "Ministero delle Infrastrutture e dei Trasporti",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3430,7 +3430,7 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 147.63,
+      "matching_ms": 146.979,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3460,7 +3460,7 @@
       "version_error": false,
       "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
       "conflicts": [],
-      "matching_ms": 158.89,
+      "matching_ms": 150.67,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -3490,19 +3490,76 @@
       "version_error": false,
       "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
       "conflicts": [],
-      "matching_ms": 180.143,
+      "matching_ms": 165.686,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
     }
   ],
   "performance": {
-    "catalog_load_ms": 22.383,
+    "catalog_load_ms": 18.941,
+    "catalog_feature_prepare_ms": 818.422,
     "index_build_ms": null,
-    "index": "full_scan",
-    "peak_traced_python_bytes": 871214,
-    "memory_scope": "one recognition, Python allocations only, excludes native heap and catalog loading",
+    "index": "full_scan_with_catalog_metadata_cache",
+    "peak_traced_python_bytes": 6223306,
+    "metadata_cache_max_entries": 4096,
+    "memory_scope": "one recognition with cold catalog metadata cache, Python allocations only; excludes native heap and catalog loading",
     "catalog_size": 1226
   },
-  "bootstrap": null
+  "bootstrap": {
+    "method": "group_percentile",
+    "confidence": 0.95,
+    "repetitions": 500,
+    "seed": 20261011,
+    "groups": 39,
+    "limits": "Intervalli descrittivi del corpus pubblico; possono degenerare con zero errori e non stimano il rischio su documenti reali.",
+    "intervals": {
+      "document_precision": [
+        0.898,
+        1.0
+      ],
+      "document_recall": [
+        0.7702,
+        1.0
+      ],
+      "document_f1": [
+        0.844,
+        0.9846
+      ],
+      "family_precision": [
+        1.0,
+        1.0
+      ],
+      "family_recall": [
+        0.2,
+        0.9604
+      ],
+      "family_f1": [
+        0.3333,
+        0.9793
+      ],
+      "exact_document_coverage": [
+        0.7702,
+        1.0
+      ],
+      "useful_coverage": [
+        0.7306,
+        0.9571
+      ],
+      "unknown_false_acceptance_rate": null,
+      "unknown_correct_rejection_rate": null,
+      "supported_rejection_rate": [
+        0.0276,
+        0.2282
+      ],
+      "entity_error_rate": [
+        0.0,
+        0.0
+      ],
+      "version_year_error_rate": [
+        0.0,
+        0.0
+      ]
+    }
+  }
 }

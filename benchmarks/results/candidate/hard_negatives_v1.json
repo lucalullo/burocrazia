@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "executed_at": "2026-10-11T10:39:42.898786+00:00",
+  "executed_at": "2026-10-11T10:55:23.662612+00:00",
   "corpus_id": "burocrazia-hard-negatives-v1",
   "split": "hard_negatives",
   "synthetic": true,
@@ -10,8 +10,8 @@
     "catalog_file_sha256": "8db623d55bb9c17ca2488cbdd6f91b9149af872552279baae0e0e30fc2e97121",
     "catalog_semantic_sha256": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
     "rules_version": "deterministic-3",
-    "code_sha256": "50b7621d1af436413b4fc6cab1887dc0bd3c791fc8c8f5eb91ee5dc26592df80",
-    "git_commit": "d747d0ff663bbf5ac89f5ba1de71d2cdce22018c",
+    "code_sha256": "450b65e26be1150478fe16c131ea74a5df1381b5b6df84ba31a8b521167545df",
+    "git_commit": "4f158de5ca880dd02adff7b5828821489d35bd35",
     "working_tree_dirty": true
   },
   "environment": {
@@ -114,8 +114,8 @@
       }
     },
     "latency_ms": {
-      "p50": 134.616,
-      "p95": 181.4362,
+      "p50": 148.5535,
+      "p95": 170.7585,
       "p99": null
     }
   },
@@ -210,8 +210,8 @@
           }
         },
         "latency_ms": {
-          "p50": 155.734,
-          "p95": 155.734,
+          "p50": 177.445,
+          "p95": 177.445,
           "p99": null
         }
       },
@@ -304,8 +304,8 @@
           }
         },
         "latency_ms": {
-          "p50": 3.2065,
-          "p95": 121.2183,
+          "p50": 4.5555,
+          "p95": 133.4681,
           "p99": null
         }
       },
@@ -398,8 +398,8 @@
           }
         },
         "latency_ms": {
-          "p50": 133.604,
-          "p95": 133.604,
+          "p50": 153.985,
+          "p95": 153.985,
           "p99": null
         }
       },
@@ -492,8 +492,8 @@
           }
         },
         "latency_ms": {
-          "p50": 129.595,
-          "p95": 129.595,
+          "p50": 137.605,
+          "p95": 137.605,
           "p99": null
         }
       },
@@ -586,8 +586,8 @@
           }
         },
         "latency_ms": {
-          "p50": 167.108,
-          "p95": 167.108,
+          "p50": 152.936,
+          "p95": 152.936,
           "p99": null
         }
       },
@@ -680,8 +680,8 @@
           }
         },
         "latency_ms": {
-          "p50": 151.369,
-          "p95": 151.369,
+          "p50": 148.137,
+          "p95": 148.137,
           "p99": null
         }
       },
@@ -774,8 +774,8 @@
           }
         },
         "latency_ms": {
-          "p50": 190.636,
-          "p95": 190.636,
+          "p50": 174.305,
+          "p95": 174.305,
           "p99": null
         }
       },
@@ -868,8 +868,8 @@
           }
         },
         "latency_ms": {
-          "p50": 58.5345,
-          "p95": 105.9793,
+          "p50": 75.2145,
+          "p95": 138.5273,
           "p99": null
         }
       },
@@ -962,8 +962,8 @@
           }
         },
         "latency_ms": {
-          "p50": 121.441,
-          "p95": 155.8284,
+          "p50": 141.18,
+          "p95": 158.2236,
           "p99": null
         }
       },
@@ -1056,8 +1056,8 @@
           }
         },
         "latency_ms": {
-          "p50": 4.72,
-          "p95": 4.72,
+          "p50": 4.719,
+          "p95": 4.719,
           "p99": null
         }
       },
@@ -1150,8 +1150,8 @@
           }
         },
         "latency_ms": {
-          "p50": 155.674,
-          "p95": 155.674,
+          "p50": 148.97,
+          "p95": 148.97,
           "p99": null
         }
       },
@@ -1244,8 +1244,8 @@
           }
         },
         "latency_ms": {
-          "p50": 168.476,
-          "p95": 168.476,
+          "p50": 166.424,
+          "p95": 166.424,
           "p99": null
         }
       },
@@ -1338,8 +1338,8 @@
           }
         },
         "latency_ms": {
-          "p50": 3.451,
-          "p95": 3.451,
+          "p50": 4.582,
+          "p95": 4.582,
           "p99": null
         }
       },
@@ -1432,8 +1432,8 @@
           }
         },
         "latency_ms": {
-          "p50": 5.292,
-          "p95": 5.292,
+          "p50": 5.179,
+          "p95": 5.179,
           "p99": null
         }
       },
@@ -1526,8 +1526,8 @@
           }
         },
         "latency_ms": {
-          "p50": 170.192,
-          "p95": 170.192,
+          "p50": 151.252,
+          "p95": 151.252,
           "p99": null
         }
       },
@@ -1620,8 +1620,8 @@
           }
         },
         "latency_ms": {
-          "p50": 161.209,
-          "p95": 161.209,
+          "p50": 158.957,
+          "p95": 158.957,
           "p99": null
         }
       },
@@ -1714,8 +1714,8 @@
           }
         },
         "latency_ms": {
-          "p50": 137.122,
-          "p95": 137.122,
+          "p50": 153.564,
+          "p95": 153.564,
           "p99": null
         }
       },
@@ -1808,8 +1808,8 @@
           }
         },
         "latency_ms": {
-          "p50": 197.09,
-          "p95": 197.09,
+          "p50": 165.792,
+          "p95": 165.792,
           "p99": null
         }
       }
@@ -1904,8 +1904,8 @@
           }
         },
         "latency_ms": {
-          "p50": 134.616,
-          "p95": 181.4362,
+          "p50": 148.5535,
+          "p95": 170.7585,
           "p99": null
         }
       }
@@ -2000,8 +2000,8 @@
           }
         },
         "latency_ms": {
-          "p50": 134.616,
-          "p95": 181.4362,
+          "p50": 148.5535,
+          "p95": 170.7585,
           "p99": null
         }
       }
@@ -2048,7 +2048,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 3.574,
+      "matching_ms": 5.502,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2078,7 +2078,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 2.882,
+      "matching_ms": 4.731,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2108,7 +2108,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 2.934,
+      "matching_ms": 4.508,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2138,7 +2138,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 3.223,
+      "matching_ms": 4.603,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2168,7 +2168,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 3.19,
+      "matching_ms": 4.452,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2198,7 +2198,7 @@
       "conflicts": [
         "ente incompatibile"
       ],
-      "matching_ms": 111.251,
+      "matching_ms": 145.562,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2228,7 +2228,7 @@
       "conflicts": [
         "ente incompatibile"
       ],
-      "matching_ms": 110.387,
+      "matching_ms": 139.143,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2260,7 +2260,7 @@
         "ente della famiglia incompatibile",
         "ente incompatibile"
       ],
-      "matching_ms": 133.604,
+      "matching_ms": 153.985,
       "source": "Agenzia delle Entrate-Riscossione",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2291,7 +2291,7 @@
         "ente della famiglia incompatibile",
         "ente incompatibile"
       ],
-      "matching_ms": 155.674,
+      "matching_ms": 148.97,
       "source": "Ministero del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2323,7 +2323,7 @@
         "ente della famiglia incompatibile",
         "ente incompatibile"
       ],
-      "matching_ms": 151.369,
+      "matching_ms": 148.137,
       "source": "Comune di Torino",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2353,7 +2353,7 @@
       "conflicts": [
         "ente incompatibile"
       ],
-      "matching_ms": 170.192,
+      "matching_ms": 151.252,
       "source": "Regione Lazio",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2383,7 +2383,7 @@
       "conflicts": [
         "annualità assente, ambigua o incompatibile"
       ],
-      "matching_ms": 117.888,
+      "matching_ms": 104.352,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2411,7 +2411,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 157.242,
+      "matching_ms": 151.157,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2439,7 +2439,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 121.441,
+      "matching_ms": 141.18,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2467,7 +2467,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 153.708,
+      "matching_ms": 155.016,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2495,7 +2495,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 168.476,
+      "matching_ms": 166.424,
       "source": "Ministero della Giustizia",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2523,7 +2523,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 167.108,
+      "matching_ms": 152.936,
       "source": "Comune di Roma",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2551,7 +2551,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 161.209,
+      "matching_ms": 158.957,
       "source": "Regione Lombardia",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2581,7 +2581,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 3.451,
+      "matching_ms": 4.582,
       "source": "Ministero della Salute",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2609,7 +2609,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 155.734,
+      "matching_ms": 177.445,
       "source": "Agenzia delle Dogane e dei Monopoli",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2639,7 +2639,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 5.292,
+      "matching_ms": 5.179,
       "source": "Ministero delle Imprese e del Made in Italy",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2669,7 +2669,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 5.818,
+      "matching_ms": 4.867,
       "source": "INAIL",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2697,7 +2697,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 190.636,
+      "matching_ms": 174.305,
       "source": "Garante per la protezione dei dati personali",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2727,7 +2727,7 @@
       "conflicts": [
         "risorsa informativa"
       ],
-      "matching_ms": 4.72,
+      "matching_ms": 4.719,
       "source": "Ispettorato Nazionale del Lavoro",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2757,7 +2757,7 @@
       "conflicts": [
         "ente incompatibile"
       ],
-      "matching_ms": 197.09,
+      "matching_ms": 165.792,
       "source": "Università degli Studi di Bologna",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2787,7 +2787,7 @@
       "conflicts": [
         "annualità assente, ambigua o incompatibile"
       ],
-      "matching_ms": 142.041,
+      "matching_ms": 156.209,
       "source": "Agenzia delle Entrate",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2815,7 +2815,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 143.488,
+      "matching_ms": 160.362,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2843,7 +2843,7 @@
       "version_error": false,
       "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 135.628,
+      "matching_ms": 154.819,
       "source": "INPS",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2871,7 +2871,7 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 129.595,
+      "matching_ms": 137.605,
       "source": "Comune di Firenze",
       "noise": "clean",
       "prefiltered_candidates": 1226
@@ -2899,19 +2899,49 @@
       "version_error": false,
       "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
       "conflicts": [],
-      "matching_ms": 137.122,
+      "matching_ms": 153.564,
       "source": "Regione Veneto",
       "noise": "clean",
       "prefiltered_candidates": 1226
     }
   ],
   "performance": {
-    "catalog_load_ms": 24.122,
+    "catalog_load_ms": 19.002,
+    "catalog_feature_prepare_ms": 738.37,
     "index_build_ms": null,
-    "index": "full_scan",
-    "peak_traced_python_bytes": 866326,
-    "memory_scope": "one recognition, Python allocations only, excludes native heap and catalog loading",
+    "index": "full_scan_with_catalog_metadata_cache",
+    "peak_traced_python_bytes": 876506,
+    "metadata_cache_max_entries": 4096,
+    "memory_scope": "one recognition with cold catalog metadata cache, Python allocations only; excludes native heap and catalog loading",
     "catalog_size": 1226
   },
-  "bootstrap": null
+  "bootstrap": {
+    "method": "group_percentile",
+    "confidence": 0.95,
+    "repetitions": 500,
+    "seed": 20261011,
+    "groups": 30,
+    "limits": "Intervalli descrittivi del corpus pubblico; possono degenerare con zero errori e non stimano il rischio su documenti reali.",
+    "intervals": {
+      "document_precision": null,
+      "document_recall": null,
+      "document_f1": null,
+      "family_precision": null,
+      "family_recall": null,
+      "family_f1": null,
+      "exact_document_coverage": null,
+      "useful_coverage": null,
+      "unknown_false_acceptance_rate": [
+        0.0,
+        0.0
+      ],
+      "unknown_correct_rejection_rate": [
+        1.0,
+        1.0
+      ],
+      "supported_rejection_rate": null,
+      "entity_error_rate": null,
+      "version_year_error_rate": null
+    }
+  }
 }

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "NOT_READY",
+  "software_version": "0.6.1",
+  "target_version": "0.7.0",
+  "evaluated_commit": "4f158de5ca880dd02adff7b5828821489d35bd35",
+  "regression_35": true,
+  "unit_tests": true,
+  "sqlite_integrity": true,
+  "foreign_keys": true,
+  "new_provenance_100_percent": true,
+  "baseline_continuity": true,
+  "locked_document_precision_99": false,
+  "locked_family_precision_99": true,
+  "hard_negative_zero_acceptance": true,
+  "locked_no_entity_errors": true,
+  "locked_no_version_errors": true,
+  "official_no_entity_errors": true,
+  "real_ocr": false,
+  "cross_platform_ci": "not_run",
+  "release_fast_exit": "1: frozen release cases fail; CI deliberately retains this failure"
+}

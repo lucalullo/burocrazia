@@ -35,27 +35,27 @@ Un `NO_MATCH` corretto è preferibile a un falso positivo.
 - esecuzione sul solo loopback locale;
 - nessun invio dei documenti a LLM, API cloud o servizi esterni nel normale flusso applicativo.
 
-## Cosa contiene la v0.6.1
+## Cosa contiene questa candidata
 
 Lo snapshot distribuito con la release contiene:
 
 | Contenuto | Quantità |
 | --- | ---: |
-| Record documentali reali | 389 |
+| Record documentali reali | 1216 |
 | Record dimostrativi | 10 |
 | Famiglie documentali | 16 |
-| Enti rappresentati dai documenti reali | 6 |
+| Enti rappresentati dai documenti reali | 12 |
 | Enti IPA censiti nell'inventario | 2.499 |
-| Fonti registrate e verificate | 15 |
-| Provenienze dei documenti reali | 389/389 |
+| Fonti registrate (15 verificate pregresse, 4 da verificare) | 19 |
+| Provenienze dei documenti reali | 1216/1216 |
 | Schede esplicative | 3 |
 | Materiali ufficiali locali inclusi | 0 |
 
-I 389 record reali sono presenti nel catalogo, ma non risultano automaticamente revisionati manualmente. Le 3 schede esplicative incluse sono ancora in stato di verifica.
+I 1216 record reali sono presenti nel catalogo, ma non risultano automaticamente revisionati manualmente. Le 3 schede esplicative incluse sono ancora in stato di verifica.
 
 **Questi numeri descrivono il catalogo, non garantiscono che ogni possibile file venga riconosciuto.** Il risultato dipende dalla qualità del testo estratto e dalla presenza di evidenze sufficienti.
 
-Gli enti attualmente rappresentati dai record reali sono:
+Ai sei enti originari elencati sotto si aggiungono MIMIT, Funzione Pubblica, Tribunale di Venezia, MEF/RGS, ANAC e Unioncamere. Gli enti originari sono:
 
 - INPS;
 - INAIL;
@@ -104,6 +104,7 @@ La navigazione principale comprende:
 - **Catalogo** - consulta i record installati;
 - **Fonti e provenienza** - consulta le informazioni di origine;
 - **Revisione editoriale** - strumenti per la manutenzione dei contenuti.
+- **Benchmark** - consulta i risultati statici delle valutazioni.
 
 La barra laterale mostra anche un selettore **Chiaro / Scuro** e un riepilogo compatto del catalogo locale.
 
@@ -249,6 +250,10 @@ Questa validazione protegge le regressioni note. **Non è un benchmark indipende
 
 Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
+## Benchmark
+
+La candidata del 11 ottobre 2026 è **non pronta per la release**; la versione software resta 0.6.1 in attesa dei gate 0.7.0. Regressione congelata, copertura canonica, negativi difficili, estrazione di file reali e OCR reale sono separati in [docs/BENCHMARK.md](docs/BENCHMARK.md). I conteggi sono generati dal seed con `python scripts/release_report.py`; perimetri e blocchi sono in [docs/SOURCES.md](docs/SOURCES.md). Tesseract non è disponibile nell’ambiente attuale: i risultati OCR storici sopra non sono stati riconfermati. Il benchmark release fast fallisce sul corpus locked invariato e la CI multipiattaforma remota non è stata eseguita.
+
 ## Test
 
 ```bash
@@ -289,7 +294,7 @@ BurOCRazia/
 ## Limiti attuali
 
 - la copertura non rappresenta l'intera burocrazia italiana;
-- i 389 record reali richiedono ancora revisione editoriale;
+- i 1216 record reali richiedono ancora revisione editoriale;
 - le 3 spiegazioni incluse non sono ancora validate;
 - non sono incluse copie locali dei documenti ufficiali;
 - il catalogo può diventare obsoleto perché BurOCRazia non controlla aggiornamenti online;

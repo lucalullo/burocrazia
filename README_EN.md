@@ -35,23 +35,23 @@ A correct `NO_MATCH` is preferred over a false positive.
 - loopback-only application server;
 - no document upload to LLMs, cloud APIs or external services in the normal application flow.
 
-## What is included in v0.6.1
+## What this candidate includes
 
 The catalog snapshot distributed with this release contains:
 
 | Content | Count |
 | --- | ---: |
-| Real document records | 389 |
+| Real document records | 1216 |
 | Demo records | 10 |
 | Document families | 16 |
-| Authorities represented by real document records | 6 |
+| Authorities represented by real document records | 12 |
 | IPA entities in the local inventory | 2,499 |
-| Registered and verified source records | 15 |
-| Provenance records for real documents | 389/389 |
+| Registered sources (15 legacy verified, 4 pending) | 19 |
+| Provenance records for real documents | 1216/1216 |
 | Editorial explanation records | 3 |
 | Local copies of official materials | 0 |
 
-The 389 real records are present in the catalog, but they are not automatically considered manually reviewed. The 3 included explanation records are still pending review.
+The 1216 real records are present in the catalog, but they are not automatically considered manually reviewed. The 3 included explanation records are still pending review.
 
 **These numbers describe catalog coverage; they do not guarantee that every possible input file will be recognized.** Recognition depends on extraction quality and on the evidence available in the document.
 
@@ -104,6 +104,7 @@ The main navigation includes:
 - **Catalog** - browse installed records;
 - **Sources and provenance** - inspect origin information;
 - **Editorial review** - maintain local content.
+- **Benchmark** - inspect static evaluation results.
 
 The sidebar also includes a visible **Light / Dark** appearance selector and a compact local-catalog summary.
 
@@ -249,6 +250,10 @@ This validation protects known regressions. **It is not an independent benchmark
 
 See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
+## Benchmark
+
+The 11 October 2026 candidate is **not ready for release**; software version remains 0.6.1 pending the 0.7.0 gates. Separate frozen text regression, canonical coverage, hard negatives, real-file extraction and real OCR results are reported in [docs/BENCHMARK.md](docs/BENCHMARK.md). Counts are generated from the seed by `python scripts/release_report.py`; acquisition scope and remaining blocks are in [docs/SOURCES.md](docs/SOURCES.md). Tesseract is unavailable in the current environment; historical OCR results above have not been revalidated. The release-fast benchmark currently fails on the unchanged locked corpus, and remote cross-platform CI has not been run.
+
 ## Tests
 
 ```bash
@@ -289,7 +294,7 @@ BurOCRazia/
 ## Current limitations
 
 - coverage does not represent all Italian public administration documents;
-- all 389 real document records still require editorial review;
+- all 1216 real document records still require editorial review;
 - the 3 included explanations are not yet validated;
 - no local copies of official documents are bundled;
 - the catalog may become outdated because BurOCRazia does not check external updates;

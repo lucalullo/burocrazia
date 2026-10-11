@@ -1,0 +1,13 @@
+{
+  "passed": 488,
+  "skipped": 3,
+  "seconds": 108.79,
+  "failed": 0,
+  "environment": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.10",
+  "log_sha256": "4d01363b65a78eaef9930e0ab456ed3cbf949ed4d7317e94bb07f099023d95ee",
+  "skip_reasons": [
+    "Windows: creazione symlink senza privilegio",
+    "Windows: FIFO non disponibile (due test)"
+  ]
+}

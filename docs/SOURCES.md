@@ -2,29 +2,29 @@
 
 Acquisizione del 11/10/2026, sequenziale, senza bypass. Le date/URL/errori/tentativi e ricevute sono in `source_census.json` e nell’audit del pacchetto. I conteggi scoperti comprendono duplicati ed esclusioni. “Importati” significa nuovi record; “già presenti” conserva il record senza sostituzione. Aggiornamenti distruttivi: zero.
 
-| Fonte | Scoperti | Importati | Già presenti | Duplicati | Esclusi | Stato |
-|---|---:|---:|---:|---:|---:|---|
-| ade | 0 | 0 | 0 | 0 | 0 | blocked |
-| interno | 0 | 0 | 0 | 0 | 0 | manual |
-| mit | 0 | 0 | 0 | 0 | 0 | blocked |
-| giustizia | 159 | 143 | 0 | 14 | 2 | complete_for_declared_collection |
-| salute | 0 | 0 | 0 | 0 | 0 | blocked |
-| mimit | 472 | 42 | 0 | 2 | 428 | complete_for_declared_collection |
-| ader | 0 | 0 | 0 | 0 | 0 | blocked |
-| funzione_pubblica | 9 | 9 | 0 | 0 | 0 | complete_for_declared_collection |
-| aci | 0 | 0 | 0 | 0 | 0 | blocked |
-| adm | 0 | 0 | 0 | 0 | 0 | blocked |
-| mef | 18 | 15 | 0 | 1 | 2 | complete_for_declared_collection |
-| anac | 18 | 7 | 0 | 7 | 4 | complete_for_declared_collection |
-| agid | 0 | 0 | 0 | 0 | 0 | manual |
-| polizia | 0 | 0 | 0 | 0 | 0 | manual |
-| unioncamere | 12 | 4 | 0 | 4 | 4 | complete_for_declared_collection |
-| registro_imprese | 0 | 0 | 0 | 0 | 0 | blocked |
-| inps | 357 | 259 | 97 | 1 | 0 | complete_for_declared_collection |
-| inail | 567 | 334 | 16 | 122 | 95 | complete_for_declared_collection |
-| lavoro | 133 | 0 | 102 | 31 | 0 | complete_for_declared_collection |
-| garante_privacy | 14 | 1 | 1 | 0 | 12 | complete_for_declared_collection |
-| inl | 146 | 13 | 33 | 98 | 2 | complete_for_declared_collection |
+| Fonte | Scoperti | Importati | Aggiornati | Già presenti | Duplicati | Esclusi | Stato |
+|---|---:|---:|---:|---:|---:|---:|---|
+| ade | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| interno | 0 | 0 | 0 | 0 | 0 | 0 | manual |
+| mit | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| giustizia | 159 | 143 | 0 | 0 | 14 | 2 | complete_for_declared_collection |
+| salute | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| mimit | 472 | 42 | 0 | 0 | 2 | 428 | complete_for_declared_collection |
+| ader | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| funzione_pubblica | 9 | 9 | 0 | 0 | 0 | 0 | complete_for_declared_collection |
+| aci | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| adm | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| mef | 18 | 15 | 0 | 0 | 1 | 2 | complete_for_declared_collection |
+| anac | 18 | 7 | 0 | 0 | 7 | 4 | complete_for_declared_collection |
+| agid | 0 | 0 | 0 | 0 | 0 | 0 | manual |
+| polizia | 0 | 0 | 0 | 0 | 0 | 0 | manual |
+| unioncamere | 12 | 4 | 0 | 0 | 4 | 4 | complete_for_declared_collection |
+| registro_imprese | 0 | 0 | 0 | 0 | 0 | 0 | blocked |
+| inps | 357 | 259 | 0 | 97 | 1 | 0 | complete_for_declared_collection |
+| inail | 567 | 334 | 0 | 16 | 122 | 95 | complete_for_declared_collection |
+| lavoro | 133 | 0 | 0 | 102 | 31 | 0 | complete_for_declared_collection |
+| garante_privacy | 14 | 1 | 0 | 1 | 0 | 12 | complete_for_declared_collection |
+| inl | 146 | 13 | 0 | 33 | 98 | 2 | complete_for_declared_collection |
 
 ## Perimetri e lavoro residuo
 
