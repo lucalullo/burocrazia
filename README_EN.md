@@ -252,7 +252,7 @@ See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-First independent evaluation: **33/127 exact**, document precision **86.84%**, **five wrong acceptances**; all 50 negatives rejected. Six positive sources and 29.13% maximum concentration miss the sampling targets. Locked v2 is 68/69 (R061); release-fast exits 1. Round 3 remains **NOT READY**; software stays 0.6.1. Official development: 58/150 exact matches (38.67%), zero wrong acceptances, no useful family fallback. The first independent holdout, hard negatives, real OCR, performance/RSS and remaining gates are reported in [docs/BENCHMARK.md](docs/BENCHMARK.md). Locked v1 is historical; v2 is development. GitHub cross-platform CI remains `pending_external_gate`. No further catalog expansion, push, tag or release.
+Round 4 **NOT_READY**, software 0.6.1. Five historical acceptance errors and R061 fixed; locked v2 69/69. Fresh independent holdout v2: 17 positives, 75 negatives; exact precision 100.00% (2/2), exact recall 11.76% (2/17). Sampling/coverage gates remain unmet; no catalog expansion, push, tag or release. Cross-platform CI pending. Full evidence in [docs/ROUND4_REPORT.md](docs/ROUND4_REPORT.md).
 
 ## Tests
 

@@ -1,8 +1,8 @@
 # Validazione BurOCRazia 0.6.1
 
-## Candidata Round 3 — 11 ottobre 2026
+## Candidata Round 4 — 11 ottobre 2026
 
-Risultati correnti in `BENCHMARK.md`, `validation_latest.json` e `release_gates.json`: 547 test superati, tre skip Windows, zero fallimenti. Tesseract reale disponibile localmente: 7/7 legacy e 14/14 sintetici; nessun mock conteggiato come prova reale. Catalogo schema 610, 1.216 record reali conservati, 1.212 operativi. La candidata resta NOT READY: copertura reale insufficiente, regressione R061 del locked v2 (68/69), gate holdout da leggere nei raw e CI esterna non eseguita. V1 storico non è più un gate indipendente; v2 è sviluppo riconciliato. Il motore è congelato prima dell'acquisizione indipendente e non viene corretto dopo la prima misura. Le sezioni successive conservano la storia 0.6.1.
+584 test superati, zero fallimenti, 3 skip Windows. Locked v2 69/69; OCR reale 7/7 e 14/14. Freeze e unica valutazione holdout v2 nei raw; stato **NOT_READY**, versione 0.6.1, CI esterna pendente. Risultati e limiti correnti in `ROUND4_REPORT.md`.
 
 Le sezioni seguenti conservano la validazione storica 0.6.1, senza attribuirla alla candidata.
 

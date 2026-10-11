@@ -1,29 +1,253 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "status": "NOT_READY",
   "software_version": "0.6.1",
   "target_version": "0.7.0",
-  "independent_holdout_executed": true,
-  "holdout_positive_target": false,
-  "holdout_negative_target": true,
-  "holdout_source_target": false,
-  "holdout_concentration": false,
-  "holdout_leakage": true,
-  "holdout_document_precision": false,
-  "holdout_family_precision": false,
-  "holdout_exact_recall": false,
-  "holdout_useful_coverage": false,
-  "holdout_no_wrong_acceptance": false,
-  "holdout_no_entity_errors": false,
-  "holdout_no_version_errors": false,
-  "unit_tests": true,
-  "regression_35": true,
-  "locked_v2": false,
-  "hard_negatives": true,
-  "real_ocr": true,
-  "performance": true,
-  "catalog_integrity": true,
+  "local_gates_passed": false,
+  "checks": [
+    {
+      "name": "unit_tests",
+      "target": "0 failed",
+      "result": {
+        "passed": 584,
+        "failed": 0,
+        "skipped": 3,
+        "seconds": 605.49,
+        "python": "3.12.10",
+        "environment": "Windows-11-10.0.26300-SP0",
+        "log_sha256": "a760a3cd2be8c0f646f19f7ae8e4250cf6baa3e29e04fae7bd515b10590f9fd1",
+        "skip_reasons": [
+          "Windows: symlink senza privilegio",
+          "Windows: due FIFO non disponibili"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "regression",
+      "target": "35/35",
+      "result": 35,
+      "passed": true
+    },
+    {
+      "name": "locked_v2_R061",
+      "target": "69/69 + R061 NO_MATCH",
+      "result": 69,
+      "passed": true
+    },
+    {
+      "name": "five_historical_fixes",
+      "target": "5 safe",
+      "result": 5,
+      "passed": true
+    },
+    {
+      "name": "all_historical_wrong_accepts",
+      "target": "0",
+      "result": 0,
+      "passed": true
+    },
+    {
+      "name": "development_wrong_accepts",
+      "target": "0",
+      "result": 0,
+      "passed": true
+    },
+    {
+      "name": "development_recall_regression",
+      "target": ">= Round 3 58/150",
+      "result": 46,
+      "passed": false
+    },
+    {
+      "name": "family_stress_precision",
+      "target": ">=99.5%, macro>=99%, FP=0",
+      "result": {
+        "P": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "macro": 1.0,
+        "FP": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "family_real_evidence",
+      "target": "available official supplement measured",
+      "result": {
+        "passed": 0,
+        "cases": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "positive_sample",
+      "target": ">=200",
+      "result": 17,
+      "passed": false
+    },
+    {
+      "name": "negative_sample",
+      "target": ">=75",
+      "result": 75,
+      "passed": true
+    },
+    {
+      "name": "positive_sources",
+      "target": ">=8",
+      "result": 1,
+      "passed": false
+    },
+    {
+      "name": "positive_issuers",
+      "target": ">=8",
+      "result": 1,
+      "passed": false
+    },
+    {
+      "name": "source_concentration",
+      "target": "<=20%",
+      "result": 1.0,
+      "passed": false
+    },
+    {
+      "name": "positive_formats",
+      "target": "PDF text, scanned PDF, DOCX",
+      "result": {
+        "formats": {
+          "pdf": 17
+        },
+        "scanned": 5
+      },
+      "passed": false
+    },
+    {
+      "name": "positive_code_year_mix",
+      "target": "coded/uncoded + annual/nonannual",
+      "result": {
+        "coded": 0,
+        "annual": 0,
+        "total": 17
+      },
+      "passed": false
+    },
+    {
+      "name": "leakage",
+      "target": "0 prohibited overlaps",
+      "result": true,
+      "passed": true
+    },
+    {
+      "name": "holdout_document_precision",
+      "target": ">=99.5%",
+      "result": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "passed": true
+    },
+    {
+      "name": "holdout_family_precision",
+      "target": ">=99.5%",
+      "result": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "passed": false
+    },
+    {
+      "name": "holdout_document_recall",
+      "target": ">=75.0%",
+      "result": {
+        "numerator": 2,
+        "denominator": 17,
+        "value": 0.11764705882352941
+      },
+      "passed": false
+    },
+    {
+      "name": "holdout_useful_coverage",
+      "target": ">=90.0%",
+      "result": {
+        "numerator": 2,
+        "denominator": 17,
+        "value": 0.11764705882352941
+      },
+      "passed": false
+    },
+    {
+      "name": "holdout_wrong_accepts",
+      "target": "0",
+      "result": 0,
+      "passed": true
+    },
+    {
+      "name": "holdout_entity_error_rate",
+      "target": "0",
+      "result": 0,
+      "passed": true
+    },
+    {
+      "name": "holdout_version_year_error_rate",
+      "target": "0",
+      "result": 0,
+      "passed": true
+    },
+    {
+      "name": "hard_negatives_synthetic",
+      "target": "100/100",
+      "result": 100,
+      "passed": true
+    },
+    {
+      "name": "hard_negatives_official_v1",
+      "target": "50/50",
+      "result": 50,
+      "passed": true
+    },
+    {
+      "name": "hard_negatives_official_v2",
+      "target": "75/75",
+      "result": 75,
+      "passed": true
+    },
+    {
+      "name": "real_ocr",
+      "target": "7/7 +14/14",
+      "result": {
+        "legacy": 7,
+        "v2": 14
+      },
+      "passed": true
+    },
+    {
+      "name": "latency",
+      "target": "p50,p95 <=1.5x",
+      "result": {
+        "p50": 1.2547452398760153,
+        "p95": 1.2391092133893709
+      },
+      "passed": true
+    },
+    {
+      "name": "catalog_integrity",
+      "target": "integrity ok; FK=0; catalog unchanged",
+      "result": "ok",
+      "passed": true
+    }
+  ],
   "external_ci": "pending_external_gate",
-  "historical_locked_v1": "reported_only; not an independent release gate",
-  "local_gates_passed": false
+  "freeze": {
+    "schema_version": 1,
+    "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+    "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "frozen_at": "2026-10-11T18:39:05.085178+00:00",
+    "commit": "9458c730bf5a25440850320c5f9981f19aeaf06f",
+    "policy": "Exactly one v2 evaluation after this committed freeze. No runtime, catalog or feature edits after results. A failure stays NOT_READY; next cycle needs v3."
+  },
+  "no_runtime_changes_after_holdout": true
 }

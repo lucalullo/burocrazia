@@ -1,112 +1,119 @@
-# Benchmark — Round 3
+# Benchmark — Round 4 — NOT_READY
 
-Stato: **NOT_READY**. Software **0.6.1**, obiettivo 0.7.0. Nessun push, tag o release. Generato con `python scripts/release_report.py` da raw locali, senza eseguire riconoscimento.
+Software 0.6.1. Freeze commit `9458c730bf5a25440850320c5f9981f19aeaf06f`, runtime `fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da`. Nessun push, tag o release. Catalogo e schema 610 invariati. Il motore non cambia dopo la prima valutazione v2.
 
-La prima valutazione indipendente dopo il congelamento contiene **127 positivi e 50 negativi**, 6 fonti / 6 enti; concentrazione massima 29.13%. Esatti 33, famiglie corrette 0, accettazioni errate 5; estratti 176/177. Il campione non raggiunto resta un limite e non viene sostituito con sviluppo. Il motore non è stato corretto dopo questa misura.
+| Corpus | N | Esatti | Famiglie | Rifiuti positivi | Errati | P doc | R doc | F1 doc | P fam | R fam | F1 fam | Utile |
+|---|---:|---:|---:|---:|---:|---|---|---|---|---|---|---|
+| Development Round 3 | 162 | 58 | 0 | 92 | 0 | 100.00% (58/58) | 38.67% (58/150) | 55.77% (116/208) | n.d. (0 casi) | 0.00% (0/1) | 0.00% (0/1) | 38.67% (58/150) |
+| Development Round 4 | 162 | 46 | 0 | 104 | 0 | 100.00% (46/46) | 30.67% (46/150) | 46.94% (92/196) | n.d. (0 casi) | 0.00% (0/1) | 0.00% (0/1) | 30.67% (46/150) |
+| Holdout v1 storico originale | 177 | 33 | 0 | 89 | 5 | 86.84% (33/38) | 25.98% (33/127) | 40.00% (66/165) | n.d. (0 casi) | n.d. (0 casi) | n.d. (0 casi) | 25.98% (33/127) |
+| Holdout v1 diagnostico Round 4 | 177 | 32 | 0 | 95 | 0 | 100.00% (32/32) | 25.20% (32/127) | 40.25% (64/159) | n.d. (0 casi) | n.d. (0 casi) | n.d. (0 casi) | 25.20% (32/127) |
+| Holdout indipendente v2 | 92 | 2 | 0 | 15 | 0 | 100.00% (2/2) | 11.76% (2/17) | 21.05% (4/19) | n.d. (0 casi) | n.d. (0 casi) | n.d. (0 casi) | 11.76% (2/17) |
+| Family v1 storico | 161 | 0 | 80 | 0 | 1 | n.d. (0 casi) | n.d. (0 casi) | n.d. (0 casi) | 98.77% (80/81) | 100.00% (80/80) | 99.38% (160/161) | 100.00% (80/80) |
+| Family v3 fixture corretta | 161 | 0 | 80 | 0 | 0 | n.d. (0 casi) | n.d. (0 casi) | n.d. (0 casi) | 100.00% (80/80) | 100.00% (80/80) | 100.00% (160/160) | 100.00% (80/80) |
 
-| Corpus | N | Passati | Precisione doc. | Recall doc. | F1 doc. | Precisione fam. | Recall fam. | F1 fam. | Utile |
-|---|---:|---:|---|---|---|---|---|---|---|
-| Regressione sintetica | 35 | 35 | 100.00% (11/11) | 100.00% (11/11) | 100.00% (22/22) | 100.00% (14/14) | 87.50% (14/16) | 93.33% (28/30) | 100.00% (25/25) |
-| Locked v1 storico | 69 | 60 | 96.43% (54/56) | 90.00% (54/60) | 93.10% (108/116) | 100.00% (6/6) | 66.67% (6/9) | 80.00% (12/15) | 86.96% (60/69) |
-| Locked v2 sviluppo | 69 | 68 | 100.00% (56/56) | 100.00% (56/56) | 100.00% (112/112) | 83.33% (5/6) | 100.00% (5/5) | 90.91% (10/11) | 100.00% (61/61) |
-| Hard negatives v1 | 30 | 30 | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) |
-| Hard negatives v2 | 100 | 100 | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) |
-| Canonico metadati | 1212 | 1162 | 100.00% (1162/1162) | 95.87% (1162/1212) | 97.89% (2324/2374) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | 95.87% (1162/1212) |
-| Official development v2 | 162 | 70 | 100.00% (58/58) | 38.67% (58/150) | 55.77% (116/208) | n.d. (denominatore zero) | 0.00% (0/1) | 0.00% (0/1) | 38.67% (58/150) |
-| Holdout indipendente v1 | 177 | 83 | 86.84% (33/38) | 25.98% (33/127) | 40.00% (66/165) | n.d. (denominatore zero) | n.d. (denominatore zero) | n.d. (denominatore zero) | 25.98% (33/127) |
+Il confronto development ripristina l’etichetta ausiliaria congelata `family_id=10` di OR2-101, omessa dall’helper diagnostico. Il report iniziale è conservato con hash; osservazioni, etichette originali documento/ente/versione e motore non cambiano e non si riesegue riconoscimento. Il recall famiglia resta correttamente 0/1.
 
-Holdout: rifiuti dei positivi 70.08% (89/127); rifiuti corretti negativi 100.00% (50/50); errori ente 2.63% (1/38); errori versione 5.26% (2/38). Questi errori rimangono tali rispetto alle etichette fissate: nessuna reinterpretazione dopo la misura.
 
-## Significato dei corpus
+## Cinque errori e R061
 
-| Categoria | Scopo e provenienza | Indipendente | Limite |
-|---|---|---|---|
-| Regressione | 35 testi sintetici pubblici congelati | No | Compatibilità storica |
-| Locked v1 | 69 etichette storiche immutate | No | Ambiguità note, riportate senza blocco automatico |
-| Locked v2 | 69 etichette riconciliate con motivazioni Round 2 | No | Corpus di sviluppo, non promuove la release |
-| Hard negatives | 30 v1 e 100 v2 sintetici difficili | No | Nessuna stima del rischio reale |
-| Canonico | Una prova per ogni identità operativa, da metadati | No | Autocopertura, non lettura di moduli reali |
-| Official development | 150 positivi e 12 negativi ufficiali, URL/hash/data congelati Round 2 | No | Usato ripetutamente; sei attese improprie e un ente aggregatore documentati |
-| Holdout v1 | Nuove risorse dopo freeze, scelta metadata/SHA, esclusioni hash/URL/identità/codice/template | Sì rispetto ai file development | Etichette da elenco ufficiale, nessuna adjudication editoriale umana completa; possibili equivalenze non rilevate |
-| OCR legacy | 7 gate con Tesseract reale | No | Orientamenti, timeout, PDF vuoto/digitale e pulizia |
-| OCR v2 | 14 raster sintetici con Tesseract reale | No | Degradazioni riproducibili, non corpus di scansioni personali |
-
-Gli errori di estrazione holdout restano nel denominatore. Precisione famiglia senza accettazioni è non definita e il gate rimane non dimostrato. `official_breakdowns.json` separa fonte, formato, metodo e OCR; ogni raw contiene confusion matrix e numeratori/denominatori. Bootstrap percentile al 95% per identità: 500 repliche sviluppo, 2.000 holdout; seed fisso, intervalli descrittivi che possono degenerare con zero errori. Il gruppo esclude già le versioni/template individuati dal controllo leakage; le identità canoniche restano note al catalogo.
-
-### Intervalli Development
-
-| Metrica | Stima | IC 95% per gruppi |
-|---|---|---|
-| document_precision | 100.00% (58/58) | 100.00–100.00% |
-| document_recall | 38.67% (58/150) | 31.02–45.70% |
-| document_f1 | 55.77% (116/208) | 47.35–62.73% |
-| family_precision | n.d. (denominatore zero) | n.d. |
-| family_recall | 0.00% (0/1) | 0.00–0.00% |
-| family_f1 | 0.00% (0/1) | 0.00–0.00% |
-| useful_coverage | 38.67% (58/150) | 31.02–45.70% |
-### Intervalli Holdout
-
-| Metrica | Stima | IC 95% per gruppi |
-|---|---|---|
-| document_precision | 86.84% (33/38) | 74.29–96.88% |
-| document_recall | 25.98% (33/127) | 18.60–33.63% |
-| document_f1 | 40.00% (66/165) | 30.07–49.40% |
-| family_precision | n.d. (denominatore zero) | n.d. |
-| family_recall | n.d. (denominatore zero) | n.d. |
-| family_f1 | n.d. (denominatore zero) | n.d. |
-| useful_coverage | 25.98% (33/127) | 18.60–33.63% |
-
-## Cause e correzioni
-
-| Causa iniziale | N | Esatti prima | Esatti dopo | Famiglia dopo | Rifiuti residui |
-|---|---:|---:|---:|---:|---:|
-| code_not_present_in_document | 8 | 0 | 2 | 0 | 6 |
-| entity_not_present_or_indirect | 59 | 0 | 6 | 0 | 53 |
-| expected_identity_wrong | 6 | 0 | 0 | 0 | 6 |
-| generic_title | 1 | 0 | 1 | 0 | 0 |
-| metadata_title_not_present_in_document | 35 | 0 | 24 | 0 | 11 |
-| near_duplicate | 1 | 0 | 0 | 0 | 1 |
-| other | 27 | 27 | 24 | 0 | 3 |
-| recognizer_threshold | 2 | 0 | 1 | 0 | 1 |
-| source_metadata_wrong | 1 | 0 | 0 | 0 | 1 |
-| version_not_present | 10 | 0 | 0 | 0 | 10 |
-
-Audit iniziale completo: 150 righe, 123 opportunità di fallback. Esatti **27 → 58**, zero identificazioni errate nel development finale. Titoli in finestre limitate, codici con segmenti numerici, intestazione emittente separata dal destinatario, versioni esplicite e rifiuto di sottotipi ambigui. Soglie globali invariate. Otto URL non ASCII corretti con conversione generale IRI→URI; non dimostra l’accessibilità dei server.
-
-88 profili tecnici sparsi (otto token normalizzati ciascuno) provengono esclusivamente dal development, con URL/hash/data, fingerprint catalogo, schema e generatore deterministico; non sono metadati ufficiali né verifiche editoriali. Nessun testo personale viene cacheato. Le cache pubbliche del catalogo sono limitate; il full scan conserva il percorso di riferimento senza indici. Nessun documento ufficiale o testo estratto è redistribuito.
+I cinque errori sono ora corretti o rifiutati prudentemente; dettagli, punteggi, runner e test in `../benchmarks/results/round4/false_acceptance_audit.md`. Vincoli generali: codice completo prima del titolo generico, titoli brevi solo in intestazione, peer annuali, sottotipi esclusivi, numero allegato. R061: FAMILY_MATCH errato → NO_MATCH; locked v2 68 →69/69. Locked v1 60 →59/69: la sua etichetta storica di R061 resta incompatibile col rifiuto corretto del v2; non viene sostituita.
 
 ## Famiglie
 
-Le 16 famiglie pregresse restano operative solo se già verificate. Migliorato il riconoscimento del titolo distintivo con emittente esplicito, senza attribuire anno o versione. Il development finale non produce fallback corretti: **0**, recall delle sole attese esplicitamente etichettate **0/1**, precisione non definita. Le 123 opportunità sono in CSV; non vengono inventate nuove famiglie verificate, né riclassificate automaticamente tre prove positive e cinque negative come revisione umana. Il gap di famiglie nelle nuove fonti rimane aperto.
+16 famiglie già verificate, nessuna aggiunta. Cinque positivi e cinque negativi sintetici per famiglia, più R061: 161 casi. Due emittenti sintetici per gli ambiti trasversali. Fallback isolato separato dall’end-to-end (nei raw): la precedenza del documento esatto non è un falso positivo di famiglia. V1 e v2 conservano FR01-N4 con emittente presente, erroneamente progettato come assente; il tentativo v2 di rimozione falliva per maiuscole/minuscole. V3 rimuove davvero quella riga, con motivazione e hash separati; nessuna etichetta cambia. Non si nasconde il 98,77% storico della v1.
 
-## Estrazione e OCR
+V3: P/R/F1 100.00% (80/80) / 100.00% (80/80) / 100.00% (160/160); macro P/R/F1 1.0000/1.0000/1.0000; FP 0. Supplemento reale: 0/1, non indipendente. Le varianti sintetiche sono correlate; manca copertura reale per tutte le famiglie.
 
-Diagnostica per file: caratteri, token, rapporto stampabili, frammentazione, pagine, OCR, warning; ordine `not_measurable` quando non deducibile. Layer non utilizzabile → OCR locale entro limiti esistenti; layer valido resta digitale. Il test mock del fallback verifica il percorso ma non conta come OCR reale.
+## Holdout v2
 
-Tesseract reale: **7/7 legacy**, **14/14 v2**, residui temporanei **0**. Versione `tesseract v5.4.0.20240606`, lingue eng, ita, osd; hash traineddata e similarità testo per degradazione nei raw.
+17 positivi, 75 negativi, 1 fonti positive, 1 enti; concentrazione massima 100.00%. Fonti: `{'giustizia': 17}`. Composizione: `{'formats': {'pdf': 17}, 'coded': 0, 'annual': 0, 'scanned': 14, 'title_limits': 'Metadata descriptive/generic classes not independently human adjudicated.'}`. Campione insufficiente e nessuna indipendenza strutturale completa dimostrata. Selezione metadati/SHA prima della lettura; URL canonici, hash, identità, codici/annualità e template territoriali esclusi rispetto a sviluppo e v1 storico. Stessa fonte è correlazione accettabile dichiarata, non prova di identità. Ricevute effettive; acquisizione opt-in, allowlist/robots e limiti, nessun bypass. Errori/tentativi in `holdout_v2_acquisition.json`.
 
-## Prestazioni e memoria
+Limite del runner di acquisizione: INAIL è stata chiusa prudenzialmente dopo il diniego robots di un singolo percorso. Questo riduce il campione e **non dimostra** che gli altri percorsi INAIL siano vietati o inaccessibili. Il prossimo ciclo deve distinguere dinieghi per percorso da blocchi di host prima di acquisire il nuovo v3. ADE: 403; INPS e Garante: tre risposte non documentali ciascuno; INL e una risorsa INAIL oltre 8 MiB; MIMIT residuo duplicato/escluso e un 404. Non vengono aggiunti file dopo la prima valutazione per migliorare questo risultato.
 
-| Motore | p50 ms | p95 ms | RSS caldo byte | Picco Python caldo byte | Catalogo byte | Indici tecnici byte | Crescita RSS caldo byte |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| baseline | 74.8199 | 97.8367 | 30367744 | 299575 | 486406 | 0 | 143360 |
-| round2 | 70.7431 | 106.9926 | 39624704 | 879746 | 1383437 | 0 | 876544 |
-| candidate | 85.8425 | 118.23 | 43925504 | 881022 | 1383437 | 1281168 | 0 |
+Positivi: 12 PDF digitali, 5 con OCR, 0 DOCX; 0 con codice e 0 annuali. Il campo raw `scanned` include anche i negativi (14 file totali), non soltanto i positivi. La composizione richiesta non è raggiunta.
 
-Warmup 35, sei iterazioni alternate su 35 casi (210 per motore); ordine invertito, stesso processo per latenza, processi separati per memoria. Rapporti candidata/baseline: **p50 1.147×, p95 1.208×**, entro 1,5×. Candidata/Round 2: 1.213× / 1.105×. RSS caldo/Round 2 1.109×; catalogo 1.000×. Current working set/RSS in separate fresh processes. Eight repeated warm passes; 16 MiB growth ceiling is a stability guard, not a general RAM certification. Gli indici escludono le altre cache legacy, il picco Python non equivale a RSS.
+Estrazione: 91/92. Matching condizionato: `{'numerator': 2, 'denominator': 17, 'value': 0.11764705882352941}`; end-to-end: `{'numerator': 2, 'denominator': 17, 'value': 0.11764705882352941}`. Gli errori di estrazione restano nei denominatori; nessun file problematico escluso dopo i risultati. Errori accettati 0 (esatti 0, famiglie 0); ente 0; versione 0. Precisione famiglia senza accettazioni è non definita, non 100%.
 
-## Qualità, test e gate
+| Metrica | IC bootstrap 95% |
+|---|---|
+| document_precision | 100.00–100.00% |
+| document_recall | 0.00–29.41% |
+| family_precision | n.d. |
+| family_recall | n.d. |
+| useful_coverage | 0.00–29.41% |
+| unknown_correct_rejection_rate | 100.00–100.00% |
 
-Catalogo byte invariati: **1.216 conservati, 1.212 operativi, quattro rifiutati**, 10 demo, 19 fonti, 12 enti, 16 famiglie, 2.499 IPA, 1.216 provenienze. Integrità SQLite ok/FK zero. Tre gruppi identità e otto URL condivisi auditati in `DUPLICATES_AUDIT.md`; ambiguità residue esplicite, zero fusioni/cancellazioni automatiche. Quattro rifiuti tecnici conservano autore, motivazione, storico e provenienza, visibili nel filtro UI: non sono revoche ufficiali.
+10.000 repliche, seed 20261011, percentile per gruppi identità, descrittivo del campione; intervalli degeneri con zero errori non certificano il rischio reale. V2 fallito resta storico per il prossimo ciclo, che richiede un nuovo v3.
 
-Suite: **547 passati, 0 falliti, 3 skip**, 385.8 s; Python 3.12.10, Windows-11-10.0.26300-SP0. Release-fast esclude dal gate soltanto locked v1 storico e conserva i suoi risultati. CI YAML verificata localmente; comandi portabili eseguiti in Windows. Linux/macOS/Windows GitHub: **pending_external_gate**, nessun push richiesto o effettuato. `release_gates.json` distingue ogni requisito: non sono dichiarati pronti i gate non provati.
+## Negativi e OCR
 
-La UI presenta nell’ordine holdout indipendente, hard negatives, OCR e performance; regressioni e development seguono nei dettagli. Tutti i dati dinamici restano testo inerte. Espansione sospesa, piano in `ROUND4_PLAN.md`.
+Sintetici v1 30/30, v2 100/100; ufficiali storici 50/50; nuovi 75/75. Tesseract reale `tesseract v5.4.0.20240606`, ita/eng/osd: legacy 7/7, raster sintetici v2 14/14, residui gate 0. Non equivalgono a scansioni ufficiali o validazione editoriale.
 
-## Regressione di famiglia da risolvere
+Scansioni ufficiali positive del nuovo holdout: 0/5 riconosciute esattamente; il solo uso di Tesseract non prova accuratezza del testo o della classificazione. Negativi nuovi: 74 estratti, 1 rifiutati per limite/errore di estrazione, sempre inclusi nell’end-to-end.
 
-Il benchmark locked v2 rileva **R061**, atteso NO_MATCH, accettato erroneamente come famiglia 4 ADER. Locked v2 passa **68/69** e release-fast restituisce **1**; il fallimento non è attribuito al v1 storico. Il freeze è stato effettuato prima che arrivasse questo risultato. Il motore viene conservato durante il protocollo indipendente e la correzione passa al prossimo ciclo, con un nuovo holdout. Questo è un ulteriore blocco di release.
+## Performance e memoria
 
-Memoria candidata/baseline: RSS caldo 1.446×, oggetti catalogo 2.844×, picco Python caldo 2.941×. Rapporto indici non definito rispetto a zero byte baseline; valori assoluti e ambito nella tabella, dettagli in `memory_ratios_round3.json`.
+| Motore | p50 ms | p95 ms | RSS caldo byte | Indici byte | Crescita RSS byte |
+|---|---:|---:|---:|---:|---:|
+| baseline | 80.6229 | 107.3568 | 30732288 | 0 | 217088 |
+| round2 | 74.9871 | 102.5382 | 40271872 | 0 | 180224 |
+| candidate | 101.1612 | 133.0268 | 45760512 | 1287273 | 978944 |
 
-Acquisizione holdout in due lotti prima di qualunque lettura/classificazione: la coda positivi ha esaurito il budget senza arrivare ai negativi; un solo lotto informativo aggiuntivo, massimo 65 richieste, ha acquisito 50 negativi con 60 richieste. Manifest iniziale e hash prima/dopo conservati; selezione originale metadata/SHA, nessun ritentativo di fonti bloccate, nessun cambiamento del motore. La quota di positivi/fonti resta esplicitamente insufficiente.
+Rapporti baseline p50/p95 {'p50': 1.2547452398760153, 'p95': 1.2391092133893709}; caricamento catalogo 10.258 ms; costruzione indici 526.204 ms. Warmup 35, sei iterazioni alternate, 210 campioni/motore. RSS in processi separati, otto passaggi caldi; indici ricorsivi Python escludono cache legacy/native. Cache limitate ai metadati, nessun testo caricato. Riferimento full scan verificato sui corpus e tutte le 1.212 identità operative.
+
+Il gate usa la misura alternata isolata; le latenze diagnostiche dei corpus development/storico sono state raccolte durante altri controlli e non sono un confronto prestazionale isolato.
+
+## Test, CI e gate
+
+584 passed, 0 failed, 3 skip; 605.49 s, Python 3.12.10, Windows. Skip: symlink senza privilegio e due FIFO. SQLite integrità ok/FK zero; 1.216 record conservati, 1.212 operativi, 10 demo, 16 famiglie, 19 fonti, 12 enti, 2.499 IPA, 1.078 osservazioni, zero sostituzioni. Nessuna nuova identità, revisione umana o provenienza inventata.
+
+| Gate | Obiettivo | Risultato | Esito |
+|---|---|---|---|
+| unit_tests | 0 failed | {'passed': 584, 'failed': 0, 'skipped': 3, 'seconds': 605.49, 'python': '3.12.10', 'environment': 'Windows-11-10.0.26300-SP0', 'log_sha256': 'a760a3cd2be8c0f646f19f7ae8e4250cf6baa3e29e04fae7bd515b10590f9fd1', 'skip_reasons': ['Windows: symlink senza privilegio', 'Windows: due FIFO non disponibili']} | PASS |
+| regression | 35/35 | 35 | PASS |
+| locked_v2_R061 | 69/69 + R061 NO_MATCH | 69 | PASS |
+| five_historical_fixes | 5 safe | 5 | PASS |
+| all_historical_wrong_accepts | 0 | 0 | PASS |
+| development_wrong_accepts | 0 | 0 | PASS |
+| development_recall_regression | >= Round 3 58/150 | 46 | FAIL |
+| family_stress_precision | >=99.5%, macro>=99%, FP=0 | {'P': {'numerator': 80, 'denominator': 80, 'value': 1.0}, 'macro': 1.0, 'FP': 0} | PASS |
+| family_real_evidence | available official supplement measured | {'passed': 0, 'cases': 1} | PASS |
+| positive_sample | >=200 | 17 | FAIL |
+| negative_sample | >=75 | 75 | PASS |
+| positive_sources | >=8 | 1 | FAIL |
+| positive_issuers | >=8 | 1 | FAIL |
+| source_concentration | <=20% | 1.0 | FAIL |
+| positive_formats | PDF text, scanned PDF, DOCX | {'formats': {'pdf': 17}, 'scanned': 5} | FAIL |
+| positive_code_year_mix | coded/uncoded + annual/nonannual | {'coded': 0, 'annual': 0, 'total': 17} | FAIL |
+| leakage | 0 prohibited overlaps | True | PASS |
+| holdout_document_precision | >=99.5% | {'numerator': 2, 'denominator': 2, 'value': 1.0} | PASS |
+| holdout_family_precision | >=99.5% | {'numerator': 0, 'denominator': 0, 'value': None} | FAIL |
+| holdout_document_recall | >=75.0% | {'numerator': 2, 'denominator': 17, 'value': 0.11764705882352941} | FAIL |
+| holdout_useful_coverage | >=90.0% | {'numerator': 2, 'denominator': 17, 'value': 0.11764705882352941} | FAIL |
+| holdout_wrong_accepts | 0 | 0 | PASS |
+| holdout_entity_error_rate | 0 | 0 | PASS |
+| holdout_version_year_error_rate | 0 | 0 | PASS |
+| hard_negatives_synthetic | 100/100 | 100 | PASS |
+| hard_negatives_official_v1 | 50/50 | 50 | PASS |
+| hard_negatives_official_v2 | 75/75 | 75 | PASS |
+| real_ocr | 7/7 +14/14 | {'legacy': 7, 'v2': 14} | PASS |
+| latency | p50,p95 <=1.5x | {'p50': 1.2547452398760153, 'p95': 1.2391092133893709} | PASS |
+| catalog_integrity | integrity ok; FK=0; catalog unchanged | ok | PASS |
+
+CI esterna Linux/Windows/macOS Python 3.12: `pending_external_gate`, non eseguita. Comandi equivalenti offline verificati localmente; nessun push.
+
+```text
+python -m pytest -q
+$env:BUROCRAZIA_DB_PATH="tmp-build/temporary-ci.sqlite3"
+python scripts/init_db.py
+Remove-Item Env:BUROCRAZIA_DB_PATH
+python scripts/verify_catalog.py --db data/catalog_seed.sqlite3
+python scripts/benchmark.py --output benchmark-results.json
+python -m compileall -q src maintenance benchmarks app.py run.py
+python -m benchmarks.evaluate --fast --output-dir benchmark-release-results
+```
+
+## Limiti residui
+
+Copertura reale insufficiente e ridotta rispetto a Round 3 per i vincoli prudenti sugli emittenti/anni; cluster completi in `development_rejection_clusters.json`. Mancano riscontri robusti per titoli, codici, annualità o emittenti di molti file. Profili tecnici derivati da sviluppo non provano indipendenza né verifica editoriale. Il campione nuovo non raggiunge fonti/dimensione/concentrazione e non rappresenta adeguatamente tutti i formati e scansioni. Famiglie reali poco rappresentate; nessuna attribuzione automatica di nuove famiglie verificate. Etichette congelate da elenchi possono essere incoerenti col file e richiedono revisione separata. Versione software 0.6.1, espansione sospesa.

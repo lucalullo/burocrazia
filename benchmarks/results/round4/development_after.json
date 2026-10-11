@@ -3296,7 +3296,8 @@
         "match_type": "DOCUMENT_MATCH",
         "document_id": 143,
         "entity": "Ispettorato Nazionale del Lavoro",
-        "version": null
+        "version": null,
+        "family_id": 10
       },
       "observed": {
         "match_type": "DOCUMENT_MATCH",
@@ -5366,13 +5367,13 @@
       },
       "family_recall": {
         "numerator": 0,
-        "denominator": 0,
-        "value": null
+        "denominator": 1,
+        "value": 0.0
       },
       "family_f1": {
         "numerator": 0,
-        "denominator": 0,
-        "value": null
+        "denominator": 1,
+        "value": 0.0
       },
       "exact_document_coverage": {
         "numerator": 46,
@@ -5463,13 +5464,13 @@
         },
         "family_recall": {
           "numerator": 0,
-          "denominator": 0,
-          "value": null
+          "denominator": 1,
+          "value": 0.0
         },
         "family_f1": {
           "numerator": 0,
-          "denominator": 0,
-          "value": null
+          "denominator": 1,
+          "value": 0.0
         },
         "exact_document_coverage": {
           "numerator": 46,
@@ -5557,13 +5558,13 @@
         },
         "family_recall": {
           "numerator": 0,
-          "denominator": 0,
-          "value": null
+          "denominator": 1,
+          "value": 0.0
         },
         "family_f1": {
           "numerator": 0,
-          "denominator": 0,
-          "value": null
+          "denominator": 1,
+          "value": 0.0
         },
         "exact_document_coverage": {
           "numerator": 46,
@@ -5625,5 +5626,11 @@
       }
     }
   },
-  "corpus_id": "official_development_v2"
+  "corpus_id": "official_development_v2",
+  "label_reconciliation": {
+    "version": 2,
+    "reason": "Restore the frozen auxiliary family_id=10 on OR2-101 omitted by the diagnostic helper. No recognition rerun, changed observations, new label or engine edit.",
+    "initial_report_sha256": "7c921566ee144b442b7be87e668e05f824c9cf5db6c468b8283bf3e5eb43fec1",
+    "initial_report": "benchmarks/results/round4/development_after_initial_auxiliary_omission.json"
+  }
 }

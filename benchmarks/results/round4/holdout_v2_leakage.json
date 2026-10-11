@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "development_n": 348,
+  "holdout_n": 92,
+  "overlaps": [],
+  "duplicate_holdout_hashes": 0,
+  "suspicious_title_collisions": [],
+  "policy": "Official development file hashes, URLs, document identities, code/version and territorial template groups are excluded. Catalog metadata and canonical synthetic tests are permitted because the task is recognition of catalogued identities, not discovery of unseen identities. Cross-issuer common titles are reported, never treated as issuer evidence. Near-equivalence is conservative metadata grouping, not a proof of content independence.",
+  "corpus_id": "official_holdout_v2",
+  "prior_corpora": [
+    "official_documents_v1",
+    "official_documents_v2",
+    "official_holdout_v1_historical"
+  ],
+  "source_overlap": "Same official sources permitted and reported; file/identity/code/annual/territorial templates prohibited.",
+  "structural_similarity": "Metadata near-template grouping and byte hash checked; content/layout independence not fully established. No unsupported proof of structural independence.",
+  "related_acceptable": [
+    {
+      "source": "giustizia",
+      "reason": "Same institution, distinct identity/title/template"
+    },
+    {
+      "source": "mimit",
+      "reason": "Same institution, distinct identity/title/template"
+    }
+  ]
+}
