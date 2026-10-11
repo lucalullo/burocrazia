@@ -37,7 +37,7 @@ def build():
     write(CORPUS,corpus)
     write('benchmarks/manifests/family_release_locks_v1.json',dict(sha256={CORPUS:hashlib.sha256((ROOT/CORPUS).read_bytes()).hexdigest()}))
 
-def run(version=3):
+def run(version=3, output_dir=None):
     docs,families=catalog();corpus=read(f'benchmarks/corpora/family_release_v{version}.json');rows=[];end_to_end=[]
     for c in corpus['cases']:
         start=time.perf_counter();r=recognize_document_family(c['text'],families,known_entities=[d.ente for d in docs])
@@ -48,7 +48,8 @@ def run(version=3):
     precisions=[v['metrics']['family_precision']['value'] for v in per.values() if v['metrics']['family_precision']['value'] is not None]
     report=dict(schema_version=1,corpus_id=corpus['corpus_id'],independent=False,synthetic=True,code_sha256=code_hash(),summary=summary(rows),cases=rows,per_family=per,macro_precision=sum(precisions)/len(precisions) if precisions else None,macro_recall=sum(v['metrics']['family_recall']['value'] or 0 for v in per.values())/len(per),macro_f1=sum(v['metrics']['family_f1']['value'] or 0 for v in per.values())/len(per),end_to_end=summary(end_to_end),end_to_end_cases=end_to_end,official_evidence='No official files redistributed; this gate isolates the family fallback. Real-file fallback is measured separately in development and independent holdout.',false_positives=sum(r['observed']['match_type']=='FAMILY_MATCH' and not r['family_correct'] for r in rows))
     report['gate_passed']=report['false_positives']==0 and (report['summary']['metrics']['family_precision']['value'] or 0)>=.995 and (report['macro_precision'] or 0)>=.99
-    write(OUT+corpus['corpus_id']+'.json',report);print('Family gate:',report['summary'],'macro',report['macro_precision'],'FP',report['false_positives'],flush=True)
+    destination=OUT if output_dir is None else str(output_dir).replace('\\','/').rstrip('/')+'/'
+    write(destination+corpus['corpus_id']+'.json',report);print('Family gate:',report['summary'],'macro',report['macro_precision'],'FP',report['false_positives'],flush=True)
     return report
 
 def official_supplement():

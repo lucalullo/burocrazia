@@ -37,3 +37,15 @@ only in an ignored local cache; no third-party file is licensed under this
 project's MIT License. Human editorial review remains pending.
 
 Round 2 preserves only metadata, actual acquisition receipts, hashes and technical audit decisions. The 162 official benchmark files and Tesseract binaries/language packs remain in ignored local directories. No new institutional logos or trademarks are copied. A technical rejection is explicitly attributed to Codex and is not represented as a human review or an official withdrawal.
+
+Round 5 adds versioned deterministic content fingerprints derived from verified
+official-source files: canonical SHA-256, truncated cryptographic shingle/anchor
+hashes, hashed field names, bounded sketches, feature counts and provenance.
+These signatures contain no complete text, paragraphs, images or raster pages
+and are not substitutes for the source documents. The official files and all
+transformed or fictitiously filled representations remain in ignored local
+cache/work directories. Their inclusion in technical measurements grants no
+redistribution rights. Source URLs, actual acquisition dates, hashes and reuse
+notes are recorded in `benchmarks/manifests/official_fingerprint_cache_v1.json`.
+Fingerprint generation and matching do not confer editorial verification or
+change the historical catalog provenance. See `docs/FINGERPRINTS.md`.

@@ -120,7 +120,13 @@ def test_ui_benchmark_headline_and_rejected_history(tmp_path,monkeypatch):
     at.radio(key='main_navigation').set_value('Benchmark').run()
     assert not at.exception
     values=[e.value for e in at.text]
-    assert values.index('Holdout ufficiale indipendente')<values.index('Hard negatives')<values.index('OCR reale')<values.index('Performance')
+    # Round 5 separates product knowledge, representation robustness, family
+    # identity holdout and unknown rejection; the historical holdout is no
+    # longer the headline for known fingerprinted documents.
+    labels=['Documenti noti — file canonici','Documenti noti — rappresentazioni trasformate',
+        'Moduli compilati con dati fittizi','Famiglie — identità escluse',
+        'Documenti ufficiali sconosciuti','Hard negatives','OCR reale','Performance']
+    assert [values.index(label) for label in labels]==sorted(values.index(label) for label in labels)
     at.radio(key='main_navigation').set_value('Catalogo').run()
     at.selectbox(key='catalog_status').set_value('rifiutato').run()
     assert not at.exception and len(at.dataframe[0].value)==4

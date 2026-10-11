@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "baseline_ref": "f9e1fa06821907da53f75417555bd3cbdd50c7d0",
+  "code_sha256": "8b93a7d9eb5909c74bc111541cc9985589194d70a1391d594647969ff946240e",
+  "runtime_sha256": "75534cbc873074122cfec958847f8648fc728e6a5b5caba362df5e522a181f12",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "warmup": 35,
+  "iterations": 6,
+  "order": "Interleaved Round4 and candidate, reverse every case/iteration",
+  "latency_ms": {
+    "baseline": {
+      "n": 210,
+      "p50": 81.7499,
+      "p95": 110.7892
+    },
+    "candidate": {
+      "n": 210,
+      "p50": 91.2146,
+      "p95": 128.1624
+    }
+  },
+  "ratios_to_baseline": {
+    "p50": 1.115776288411362,
+    "p95": 1.1568131189682749
+  },
+  "ratios_to_round4": {
+    "p50": 1.115776288411362,
+    "p95": 1.1568131189682749
+  },
+  "memory": {
+    "baseline": {
+      "rss_before_warm_bytes": 31379456,
+      "rss_after_warm_bytes": 46292992,
+      "rss_samples_bytes": [
+        46292992,
+        47398912,
+        47030272,
+        46297088,
+        46321664,
+        46968832,
+        46321664,
+        47099904,
+        46419968
+      ],
+      "rss_growth_after_warm_bytes": 1105920,
+      "warm_python_peak_bytes": 881810,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 0,
+      "index_scope": "Fingerprint records/postings, title/code indexes, sparse features and safety profiles; recursive Python object size, excluding other legacy caches"
+    },
+    "candidate": {
+      "rss_before_warm_bytes": 30318592,
+      "rss_after_warm_bytes": 77123584,
+      "rss_samples_bytes": [
+        77123584,
+        77135872,
+        77340672,
+        77524992,
+        77692928,
+        76406784,
+        77152256,
+        76648448,
+        77656064
+      ],
+      "rss_growth_after_warm_bytes": 569344,
+      "warm_python_peak_bytes": 882066,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 29956932,
+      "index_scope": "Fingerprint records/postings, title/code indexes, sparse features and safety profiles; recursive Python object size, excluding other legacy caches"
+    }
+  },
+  "catalog_load_ms": 8.396399998673587,
+  "index_build_ms": 747.4167999989731,
+  "memory_ratios": {
+    "rss_after_warm_bytes": 1.6659883206512123,
+    "catalog_objects_bytes": 1.0,
+    "warm_python_peak_bytes": 1.0002903119719668
+  },
+  "memory_scope": "Current working set/RSS in separate fresh processes. Eight repeated warm passes; 16 MiB growth ceiling is a stability guard, not a general RAM certification.",
+  "guard_passed": true,
+  "fingerprints": {
+    "disk_bytes": 12188225,
+    "index_bytes": 28676242,
+    "records": 369,
+    "average_disk_bytes_per_document": 33030.42005420054,
+    "average_index_bytes_per_document": 77713.39295392953,
+    "projected_index_bytes_for_1200": 93256071.54471545,
+    "memory_scope": "Recursive Python size of canonical signature records and tuple posting lists; process RSS reported separately."
+  }
+}

@@ -13,7 +13,7 @@ sys.path.insert(0,str(ROOT))
 
 def main():
     gates=json.loads((ROOT/'docs/release_gates.json').read_text(encoding='utf-8'))
-    name='BurOCRazia-v0.7.0-RC1.zip' if gates.get('local_gates_passed') else 'BurOCRazia-v0.7.0-candidate-NOT-READY-round4.zip'
+    name='BurOCRazia-v0.7.0-RC1-round5.zip' if gates.get('local_gates_passed') else 'BurOCRazia-v0.7.0-candidate-NOT-READY-round5.zip'
     output=ROOT/'dist'/name;output.parent.mkdir(exist_ok=True)
     subprocess.run(['git','archive','--format=zip','--prefix=BurOCRazia/','-o',str(output),'HEAD'],cwd=ROOT,check=True)
     forbidden={'.git','.venv','__pycache__','.pytest_cache','cache','staging','tmp-build','work','node_modules'}
@@ -46,15 +46,16 @@ def main():
             raw=archive.read('BurOCRazia/maintenance/releases/2026-10-11/'+item['path'])
             assert len(raw)==item['size_bytes'] and hashlib.sha256(raw).hexdigest()==item['sha256']
         from benchmarks.evaluate import code_hash
-        relevant=sorted([*ROOT.glob('src/**/*.py'),*ROOT.glob('maintenance/*.py'),*ROOT.glob('benchmarks/*.py'),*ROOT.glob('data/recognition_profiles/*.json'),ROOT/'scripts/benchmark.py',ROOT/'app.py',ROOT/'run.py',ROOT/'data/recognition_features.json'])
+        relevant=sorted([*ROOT.glob('src/**/*.py'),*ROOT.glob('maintenance/*.py'),*ROOT.glob('benchmarks/*.py'),*ROOT.glob('data/recognition_profiles/*.json'),*ROOT.glob('data/document_recognition_fingerprints*.json'),ROOT/'scripts/benchmark.py',ROOT/'app.py',ROOT/'run.py',ROOT/'data/recognition_features.json'])
         for file in relevant:assert archive.read('BurOCRazia/'+file.relative_to(ROOT).as_posix())==file.read_bytes(),file.relative_to(ROOT)
-        results=json.loads(archive.read('BurOCRazia/benchmarks/results/round4/final/development_regression.json'))
-        assert results['identity']['code_sha256']==code_hash()
+        assert gates['identity']['code_sha256']==code_hash()
         from benchmarks.round4_common import runtime_hash
-        holdout=json.loads(archive.read('BurOCRazia/benchmarks/results/round4/official_holdout_v2.json'))
-        assert holdout['identity']['runtime_sha256']==runtime_hash()
-        holdout_manifest=archive.read('BurOCRazia/benchmarks/manifests/official_holdout_v2.json')
-        assert hashlib.sha256(holdout_manifest).hexdigest()==holdout['identity']['manifest_sha256']
+        assert gates['identity']['runtime_sha256']==runtime_hash()
+        from src.document_fingerprints import validate
+        fp=archive.read('BurOCRazia/data/document_recognition_fingerprints.json')
+        validate(json.loads(fp))
+        assert hashlib.sha256(fp).hexdigest()==gates['identity']['fingerprint_sha256']
+        assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[])
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())

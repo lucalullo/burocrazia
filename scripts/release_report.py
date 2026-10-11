@@ -129,7 +129,10 @@ def update_readmes(coverage):
 
 
 if __name__=='__main__':
-    if (ROOT/'benchmarks/results/round4/official_holdout_v2.json').exists():
+    if (ROOT/'benchmarks/results/round5/robustness.json').exists():
+        from scripts.round5_report import main as generate_round5
+        generate_round5()
+    elif (ROOT/'benchmarks/results/round4/official_holdout_v2.json').exists():
         from scripts.round4_report import generate as generate_round4
         generate_round4()
     elif (ROOT/'benchmarks/results/round3/official_development_v2.json').exists():

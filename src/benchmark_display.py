@@ -27,6 +27,10 @@ def metric_label(value):
 def headline_sections(summary):
     """Stable release-evidence precedence; development never fills a holdout gap."""
     values=dict(summary)
+    if values.get('benchmark_model')=='known-family-unknown-v1':
+        return tuple((key,values.get(key,{'status':'not_run'})) for key in
+            ('known_canonical','known_robustness','filled_forms','family_identity_holdout',
+             'unknown_official','hard_negatives','real_ocr','performance'))
     holdout=values.get('independent_holdout',{})
     if holdout and holdout.get('corpus_id') != 'official_holdout_v2':
         values['independent_holdout']={'status':'not_run','reason':'Round 4 richiede official_holdout_v2; v1 è storico.'}

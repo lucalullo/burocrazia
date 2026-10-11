@@ -323,7 +323,9 @@ def show_document_recognition(catalog: list[AdministrativeDocument], explanation
         st.warning("Impossibile acquisire il testo. Controlla il file o riprova con una copia leggibile.")
         st.text(str(exc))
         return
-    recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE)
+    import hashlib
+    recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE,
+        file_sha256=hashlib.sha256(uploaded_file.getvalue()).hexdigest())
     if recognition.match_type == "NO_MATCH":
         st.header("Documento non riconosciuto")
         st.text(UNKNOWN_DOCUMENT_MESSAGE)
@@ -340,6 +342,10 @@ def show_document_recognition(catalog: list[AdministrativeDocument], explanation
         linked = [item for item in explanations if item.document_id == recognition.document.id]
         show_recognized_document(recognition.document, recognition.confidence_document, linked, extraction)
     with st.expander("Segnali della decisione"):
+        method = ('File ufficiale identico' if 'official_file_sha256_exact' in recognition.document_signals
+                  else 'Firma del contenuto' if 'content_fingerprint_match' in recognition.document_signals
+                  else 'Famiglia' if recognition.match_type == 'FAMILY_MATCH' else 'Metadati')
+        st.text('Metodo: '+method)
         st.text(f"Esito: {recognition.match_type}")
         st.text("\n".join((*recognition.document_signals, *recognition.family_signals)) or "Nessun segnale sufficiente.")
         for attribute in ("reason", "catalog_revision", "rules_version", "document_score_margin", "family_score_margin", "conflicts"):
@@ -722,7 +728,12 @@ def show_benchmark(catalog, families):
     for key,section in headline_sections(summary):
         st.divider()
         st.text({'independent_holdout':'Holdout ufficiale indipendente','hard_negatives':'Hard negatives',
-                 'real_ocr':'OCR reale','performance':'Performance'}[key])
+                 'real_ocr':'OCR reale','performance':'Performance',
+                 'known_canonical':'Documenti noti — file canonici',
+                 'known_robustness':'Documenti noti — rappresentazioni trasformate',
+                 'filled_forms':'Moduli compilati con dati fittizi',
+                 'family_identity_holdout':'Famiglie — identità escluse',
+                 'unknown_official':'Documenti ufficiali sconosciuti'}[key])
         if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
         if section.get('status')=='not_run':
             st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')

@@ -252,7 +252,7 @@ See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 4 **NOT_READY**, software 0.6.1. Five historical acceptance errors and R061 fixed; locked v2 69/69. Fresh independent holdout v2: 17 positives, 75 negatives; exact precision 100.00% (2/2), exact recall 11.76% (2/17). Sampling/coverage gates remain unmet; no catalog expansion, push, tag or release. Cross-platform CI pending. Full evidence in [docs/ROUND4_REPORT.md](docs/ROUND4_REPORT.md).
+Round 5: **NOT READY**. Deterministic content fingerprints: 369/1212 (30.45%). Known canonical: 362/369, zero wrong matches. Representation robustness, family identity holdout and unknown rejection are reported separately. Local OCR; runtime offline. See [Round5 report](docs/ROUND5_REPORT.md) and [fingerprint design](docs/FINGERPRINTS.md).
 
 ## Tests
 

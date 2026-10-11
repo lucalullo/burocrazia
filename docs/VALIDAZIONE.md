@@ -61,3 +61,7 @@ Il collaudo non costituisce un benchmark indipendente su documenti reali e non c
 La rifinitura successiva modifica esclusivamente presentazione, documentazione e pulizia del repository. Il motore di riconoscimento, l'OCR, il catalogo, il database e le regole A01–A05 non vengono intenzionalmente modificati.
 
 Prima del tag pubblico è comunque consigliato un ultimo smoke test dell'interfaccia rifinita, in particolare del selettore Chiaro/Scuro.
+
+## Round 5 — verifica locale
+
+Fingerprint v1 minimizzate, lookup SHA e shortlist locale; nessuna nuova identità o migrazione SQL. Benchmark separati e gate non superati. Suite 615 test completa, zero falliti,3 skip. Vedi docs/ROUND5_REPORT.md.

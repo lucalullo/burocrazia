@@ -26,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-6"
+RULES_VERSION = "deterministic-7-fingerprint-v1"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -231,10 +231,11 @@ def _unversioned_annual_peers(documents):
         and base <= title for entity, title in annual))
 
 
-def _qualifier_conflict(title_tokens, text_tokens):
+def _qualifier_conflict(title_tokens, text_tokens, heading_tokens=None):
     for group in safety_profiles()['exclusive_qualifiers']:
         required = set(group) & title_tokens
-        observed = set(group) & text_tokens
+        observed = set(group) & (heading_tokens or set())
+        if not observed:observed = set(group) & text_tokens
         if required and observed and not required & observed:
             return True
     return False
@@ -484,7 +485,9 @@ def _score_candidate(
         technical_title = len(features.identity_tokens & input_features['identity_tokens']) >= 3
     if input_features and document.id in input_features.get('unversioned_annual_peers', ()) and input_features['identity_years']:
         version_conflict = True
-    qualifier_conflict = _qualifier_conflict(features.title_tokens, input_features['opening_tokens'] if input_features is not None else set(identity_text.split()))
+    qualifier_conflict = _qualifier_conflict(features.title_tokens,
+        input_features['opening_tokens'] if input_features is not None else set(identity_text.split()),
+        frozenset(' '.join(input_features['title_lines']).split()) if input_features is not None else None)
     annex_conflict = bool(features.annex and input_features and input_features['annexes'] and input_features['annexes'] != {features.annex})
     if qualifier_conflict:
         technical_title = window_title = False
@@ -899,6 +902,7 @@ def catalog_revision(
     # text or extracted personal fields. Sorting makes the revision independent
     # of database iteration order and includes every rule-relevant field.
     catalog_signature = {
+        "document_fingerprints": __import__('src.document_fingerprints',fromlist=['revision']).revision(),
         "technical_features": feature_revision(),
         "safety_profiles": profile_revision(),
         "documents": sorted((
@@ -923,9 +927,23 @@ def recognize_catalog(
     min_document_confidence: float = MIN_CONFIDENCE,
     min_family_confidence: float = MIN_FAMILY_CONFIDENCE,
     reference_full_scan: bool = False,
+    file_sha256: str | None = None,
+    form_field_names: Iterable[str] = (),
 ) -> CatalogRecognitionResult:
     document_list = list(documents)
     family_list = list(families)
+    from src.fingerprint_match import match as match_fingerprint
+    fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
+        field_names=form_field_names, reference=reference_full_scan)
+    if fingerprint_result is not None:
+        return CatalogRecognitionResult(match_type='DOCUMENT_MATCH',
+            confidence_document=fingerprint_result.confidence,confidence_family=0.0,
+            document=fingerprint_result.document,document_signals=fingerprint_result.matched_signals,
+            reason=fingerprint_result.reason,document_score_margin=fingerprint_result.score_margin,
+            candidate_ids=fingerprint_result.candidate_ids,rules_version=RULES_VERSION,
+            catalog_revision=catalog_revision(document_list,family_list),
+            pipeline_stages=(('file_safety','validated_by_extraction'),
+                ('fingerprint',fingerprint_result.matched_signals[0]),('entity_version_constraints','passed')))
     quality = text_quality(text)
     if not quality['usable']:
         return CatalogRecognitionResult(match_type='NO_MATCH',confidence_document=0.0,confidence_family=0.0,

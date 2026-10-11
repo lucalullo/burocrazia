@@ -1,0 +1,47 @@
+{
+  "code_sha256": "8b93a7d9eb5909c74bc111541cc9985589194d70a1391d594647969ff946240e",
+  "runtime_sha256": "75534cbc873074122cfec958847f8648fc728e6a5b5caba362df5e522a181f12",
+  "measurements": {
+    "baseline": {
+      "rss_before_warm_bytes": 31379456,
+      "rss_after_warm_bytes": 46292992,
+      "rss_samples_bytes": [
+        46292992,
+        47398912,
+        47030272,
+        46297088,
+        46321664,
+        46968832,
+        46321664,
+        47099904,
+        46419968
+      ],
+      "rss_growth_after_warm_bytes": 1105920,
+      "warm_python_peak_bytes": 881810,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 0,
+      "index_scope": "Fingerprint records/postings, title/code indexes, sparse features and safety profiles; recursive Python object size, excluding other legacy caches"
+    },
+    "candidate": {
+      "rss_before_warm_bytes": 30318592,
+      "rss_after_warm_bytes": 77123584,
+      "rss_samples_bytes": [
+        77123584,
+        77135872,
+        77340672,
+        77524992,
+        77692928,
+        76406784,
+        77152256,
+        76648448,
+        77656064
+      ],
+      "rss_growth_after_warm_bytes": 569344,
+      "warm_python_peak_bytes": 882066,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 29956932,
+      "index_scope": "Fingerprint records/postings, title/code indexes, sparse features and safety profiles; recursive Python object size, excluding other legacy caches"
+    }
+  },
+  "scope": "Current working set/RSS in separate fresh processes. Eight repeated warm passes; 16 MiB growth ceiling is a stability guard, not a general RAM certification."
+}

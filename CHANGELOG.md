@@ -72,3 +72,7 @@ Consolidamento incrementale della base v0.5.3.2:
 - workflow CI e documentazione per installazione e funzionamento offline.
 
 Nessuna verifica editoriale è stata attribuita automaticamente e nessun contenuto mancante è stato inventato.
+
+## Round 5 — candidate NOT READY
+
+Fingerprint v1 minimizzate, lookup SHA e shortlist locale; nessuna nuova identità o migrazione SQL. Benchmark separati e gate non superati. Suite 615 test completa, zero falliti,3 skip. Vedi docs/ROUND5_REPORT.md.

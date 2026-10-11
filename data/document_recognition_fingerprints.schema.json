@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "fingerprint_version",
+    "parameters",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "fingerprint_version": {
+      "const": "fingerprint-v1"
+    },
+    "parameters": {
+      "const": {
+        "normalization": "nfkc-casefold-page-boundaries-v1",
+        "shingle_size": 4,
+        "hash_algorithm": "sha256-truncated-128-domain-v1",
+        "sketch_size": 512,
+        "header_chars": 2000,
+        "header_size": 256,
+        "anchor_derivation": "line-4grams-v1"
+      }
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "acquisition_date",
+          "anchors",
+          "aware",
+          "canonical_file_sha256",
+          "catalog_binding_sha256",
+          "document_id",
+          "entity_signature_hash",
+          "extraction_method",
+          "feature_counts",
+          "fields",
+          "final_url",
+          "fingerprint_version",
+          "generated_at",
+          "header",
+          "lexical",
+          "mime_type",
+          "page_count",
+          "size_bytes",
+          "source_id",
+          "status",
+          "token_count",
+          "url",
+          "version_signature_hash"
+        ],
+        "properties": {
+          "document_id": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source_id": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "page_count": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "maximum": 100
+          },
+          "token_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "catalog_binding_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "canonical_file_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "version_signature_hash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$"
+          },
+          "entity_signature_hash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{32}$"
+          },
+          "mime_type": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "extraction_method": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "generated_at": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "acquisition_date": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "final_url": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "fingerprint_version": {
+            "const": "fingerprint-v1"
+          },
+          "status": {
+            "const": "active"
+          },
+          "lexical": {
+            "type": "array",
+            "maxItems": 512,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{32}$"
+            }
+          },
+          "aware": {
+            "type": "array",
+            "maxItems": 128,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{32}$"
+            }
+          },
+          "header": {
+            "type": "array",
+            "maxItems": 256,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{32}$"
+            }
+          },
+          "anchors": {
+            "type": "array",
+            "maxItems": 64,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{32}$"
+            }
+          },
+          "fields": {
+            "type": "array",
+            "maxItems": 128,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{32}$"
+            }
+          },
+          "feature_counts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "lexical",
+              "aware",
+              "header",
+              "anchors",
+              "fields"
+            ],
+            "properties": {
+              "lexical": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 50000
+              },
+              "aware": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 50000
+              },
+              "header": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 50000
+              },
+              "anchors": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 50000
+              },
+              "fields": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 50000
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

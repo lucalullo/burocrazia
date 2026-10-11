@@ -252,7 +252,7 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 4 **NOT_READY**, software 0.6.1. Corretti i cinque errori storici e R061; locked v2 69/69. Nuovo holdout indipendente v2: 17 positivi, 75 negativi; precisione esatta 100.00% (2/2), recall esatto 11.76% (2/17). Restano gate di campionamento/copertura non raggiunti; nessuna espansione, push, tag o release. CI multipiattaforma pendente. Prove complete in [docs/ROUND4_REPORT.md](docs/ROUND4_REPORT.md).
+Round 5: **NOT READY**. Firme deterministiche di contenuto: 369/1212 (30.45%). Canonici noti: 362/369, zero errati. Robustezza delle rappresentazioni, famiglie per identità e rifiuto degli sconosciuti sono misurati separatamente. OCR locale, runtime offline. [Rapporto Round5](docs/ROUND5_REPORT.md), [progetto fingerprint](docs/FINGERPRINTS.md).
 
 ## Test
 

@@ -1,0 +1,38 @@
+{
+  "bootstrap": "passed, separate temporary DB",
+  "catalog": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "continuity": "399 original rows unchanged",
+  "fingerprint_schema": "passed",
+  "fingerprint_sha256": "56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2",
+  "synthetic_benchmark": "35/35",
+  "compileall": "passed",
+  "external_ci": "pending_external_gate",
+  "platform": "Windows only",
+  "frozen_v1_v2_corpora_and_holdouts": "hashes unchanged",
+  "ci_yaml": "parsed successfully"
+}
