@@ -1,6 +1,7 @@
 """Keep SQLite references alive so Windows handle leaks cannot hide behind GC."""
 from contextlib import closing
 import hashlib
+import json
 from pathlib import Path
 import shutil
 import sqlite3
@@ -145,7 +146,8 @@ def test_benchmark_closes_all_handles_before_temporary_cleanup(tracked_connectio
     else:
         report = benchmark.run_benchmark(catalog_path=catalog)
         assert report["summary"]["failed"] == 0
-        assert report["catalog"] == {"documents_real": 389, "documents_demo": 10, "families": 16}
+        manifest=json.loads((database.PROJECT_ROOT/'data/catalog_manifest.json').read_text(encoding='utf-8'))
+        assert report["catalog"] == {"documents_real": manifest['real_documents'], "documents_demo": 10, "families": 16}
     state.assert_closed()
     assert len(cleaned) == 1
     if alternate_catalog:

@@ -1,0 +1,237 @@
+[
+  {
+    "key": "inps",
+    "ente": "INPS",
+    "urls": [
+      "https://www.inps.it/it/it/moduli.html"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "inail",
+    "ente": "INAIL",
+    "urls": [
+      "https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli.html"
+    ],
+    "path_prefixes": [
+      "/portale/it/atti-e-documenti/moduli-e-modelli"
+    ],
+    "forms_collection": true,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "ade",
+    "ente": "Agenzia delle Entrate",
+    "urls": [
+      "https://www.agenziaentrate.gov.it/portale/strumenti/modelli/tutti-i-modelli"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "lavoro",
+    "ente": "Ministero del Lavoro",
+    "urls": [
+      "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Pagine/Modulistica"
+    ],
+    "path_prefixes": [
+      "/strumenti-e-servizi/Modulistica/Pagine/Modulistica"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "interno",
+    "ente": "Ministero dell'Interno",
+    "urls": [
+      "https://www.interno.gov.it/it/servizi/modulistica-norme-e-pareri",
+      "https://www.interno.gov.it/it/temi/cittadinanza-e-altri-diritti-civili/cittadinanza/cittadinanza-invia-tua-domanda"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "mit",
+    "ente": "Ministero delle Infrastrutture e dei Trasporti",
+    "urls": [
+      "https://www.mit.gov.it/",
+      "https://www.ilportaledellautomobilista.it/Moduli/app"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "giustizia",
+    "ente": "Tribunale di Venezia",
+    "urls": [
+      "https://tribunale-venezia.giustizia.it/it/moduli.page"
+    ],
+    "path_prefixes": [
+      "/it/moduli.page"
+    ],
+    "forms_collection": true,
+    "scope": "Tabella Moduli per il cittadino del Tribunale di Venezia, tutte le pagine disponibili; non tutti gli uffici giudiziari.",
+    "parser": "judicial"
+  },
+  {
+    "key": "salute",
+    "ente": "Ministero della Salute",
+    "urls": [
+      "https://www.salute.gov.it/new/it/sezione/servizi-online/",
+      "https://www.salute.gov.it/new/it/tema/prevenzione-e-controllo-malattie-degli-animali/moduli/"
+    ],
+    "path_prefixes": [
+      "/new/it/servizi-online/"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "mimit",
+    "ente": "Ministero delle Imprese e del Made in Italy",
+    "urls": [
+      "https://www.mimit.gov.it/it/comunicazioni/radio/autorizzazioni-e-licenze",
+      "https://www.mimit.gov.it/it/comunicazioni/servizi-alle-imprese/autorizzazioni-e-licenze"
+    ],
+    "path_prefixes": [
+      "/it/comunicazioni/radio/",
+      "/it/comunicazioni/servizi-alle-imprese/"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "ader",
+    "ente": "Agenzia delle Entrate-Riscossione",
+    "urls": [
+      "https://www.agenziaentrateriscossione.gov.it/it/modulistica/index.html"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "funzione_pubblica",
+    "ente": "Dipartimento della Funzione Pubblica",
+    "urls": [
+      "https://www.funzionepubblica.gov.it/it/il-dipartimento/area-di-interesse/semplificazione/la-semplificazione-della-modulistica/"
+    ],
+    "path_prefixes": [
+      "/it/il-dipartimento/notizie-del-dipartimento/semplificazioni-pnrr-intesa-in-conferenza-unificata-sulla-nuova-modulistica-standardizzata/"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "aci",
+    "ente": "ACI / PRA",
+    "urls": [
+      "https://www.aci.it/servizi/guide-utili/guida-pratiche-auto/modulistica"
+    ],
+    "path_prefixes": [
+      "/approfondimento/autocertificazione-e-modulistica/"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "garante_privacy",
+    "ente": "Garante per la protezione dei dati personali",
+    "urls": [
+      "https://www.garanteprivacy.it/home/modulistica-e-servizi-online"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "inl",
+    "ente": "Ispettorato Nazionale del Lavoro",
+    "urls": [
+      "https://www.ispettorato.gov.it/servizi-e-modulistica/per-i-lavoratori/",
+      "https://www.ispettorato.gov.it/servizi-e-modulistica/per-il-datore-di-lavoro/"
+    ],
+    "path_prefixes": [
+      "/servizio/"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "adm",
+    "ente": "Agenzia delle Dogane e dei Monopoli",
+    "urls": [
+      "https://www.adm.gov.it/portale/modulistica"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "mef",
+    "ente": "Ministero dell'Economia e delle Finanze / RGS",
+    "urls": [
+      "https://revisionelegale.rgs.mef.gov.it/area-pubblica/modulistica/index.html"
+    ],
+    "path_prefixes": [],
+    "forms_collection": true,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "anac",
+    "ente": "Autorità Nazionale Anticorruzione",
+    "urls": [
+      "https://www.anticorruzione.it/-/accesso-civico-e-accesso-civico-generalizzato"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "agid",
+    "ente": "AgID",
+    "urls": [
+      "https://trasparenza.agid.gov.it/page/30/modulistica.html"
+    ],
+    "path_prefixes": [],
+    "forms_collection": true,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "polizia",
+    "ente": "Polizia di Stato",
+    "urls": [
+      "https://poliziadistato.it/articolo/1087-Passaporto/"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "unioncamere",
+    "ente": "Unioncamere",
+    "urls": [
+      "https://www.unioncamere.gov.it/amministrazione-trasparente-altri-contenuti/accesso-civico"
+    ],
+    "path_prefixes": [
+      "/amministrazione-trasparente-altri-contenuti/accesso-civico/"
+    ],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  },
+  {
+    "key": "registro_imprese",
+    "ente": "Registro Imprese",
+    "urls": [
+      "https://www.registroimprese.it/modulistica"
+    ],
+    "path_prefixes": [],
+    "forms_collection": false,
+    "scope": "Pagina ufficiale dichiarata; soli file con titolo identificabile."
+  }
+]

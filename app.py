@@ -7,6 +7,7 @@ import streamlit as st
 
 from src.catalog_metrics import catalog_summary, get_catalog_metrics
 from src.bootstrap import prepare_database
+from src.benchmark_display import load_summary, metric_label
 from src.database import DEFAULT_DB_PATH, connect_database, list_documents
 from src.explanations import (
     EXPLANATION_STATUS_REJECTED, EXPLANATION_STATUS_VERIFIED, MAX_REVIEWER_NAME_LENGTH,
@@ -26,8 +27,8 @@ from src.review import (
 )
 from src.sources import list_sources
 
-NAVIGATION_AREAS = ("BurOCRazia", "Catalogo", "Fonti", "Revisione")
-NAVIGATION_LABELS = {"BurOCRazia": "Riconosci", "Catalogo": "Catalogo", "Fonti": "Fonti e provenienza", "Revisione": "Revisione editoriale"}
+NAVIGATION_AREAS = ("BurOCRazia", "Catalogo", "Fonti", "Revisione", "Benchmark")
+NAVIGATION_LABELS = {"BurOCRazia": "Riconosci", "Catalogo": "Catalogo", "Fonti": "Fonti e provenienza", "Revisione": "Revisione editoriale", "Benchmark": "Benchmark"}
 PRELIMINARY_EXPLANATION_MESSAGE = "Spiegazione preliminare non ancora revisionata"
 VERIFIED_EXPLANATION_MESSAGE = "Spiegazione revisionata"
 NO_EXPLANATION_MESSAGE = "Documento riconosciuto, ma BurOCRazia non dispone ancora di una spiegazione."
@@ -701,6 +702,34 @@ def show_theme_selector() -> None:
     )
 
 
+def show_benchmark(catalog, families):
+    from src.recognize import catalog_revision
+    st.subheader("Benchmark")
+    st.caption("Risultati statici; nessun test sul documento caricato.")
+    summary = load_summary(Path(__file__).resolve().parent / "benchmarks/latest_summary.json")
+    st.text("Stato candidata: " + str(summary.get("status", "non disponibile")))
+    st.text("Esecuzione: " + str(summary.get("executed_at", "non disponibile")))
+    st.text("Commit valutato: " + str(summary.get("commit", "non disponibile")))
+    st.text("Catalogo testato: " + str(summary.get("catalog_semantic_sha256", "non disponibile")))
+    if summary.get("catalog_semantic_sha256") != catalog_revision(catalog, families):
+        st.warning("Il catalogo corrente differisce da quello valutato: i risultati non descrivono le modifiche locali.")
+    labels = {"document_precision": "Precisione documento", "family_precision": "Precisione famiglia",
+              "unknown_correct_rejection_rate": "Rifiuti corretti degli sconosciuti", "unknown_false_acceptance_rate": "False accettazioni",
+              "entity_error_rate": "Errori ente", "version_year_error_rate": "Errori versione"}
+    for evaluation in summary["evaluations"]:
+        st.divider()
+        st.text(str(evaluation.get("name", "Valutazione")))
+        result = evaluation["summary"]
+        st.text("Casi: " + str(result.get("cases", "non disponibile")))
+        for key, label in labels.items():
+            st.text(label + ": " + metric_label(result.get("metrics", {}).get(key)))
+        latency = result.get("latency_ms", {})
+        st.text("Latenza p50/p95 (ms): " + str(latency.get("p50")) + " / " + str(latency.get("p95")))
+    st.text("OCR reale: " + str(summary.get("ocr_status", "non eseguito")))
+    st.text("Dettagli locali: docs/BENCHMARK.md; docs/COVERAGE.md; benchmarks/results/")
+    st.info("Il benchmark non garantisce il risultato su ogni documento reale. I risultati valgono per i corpus e l'ambiente indicati.")
+
+
 def main() -> None:
     install_network_guard()
     st.set_page_config(page_title="BurOCRazia", page_icon="📄", layout="wide", menu_items={"Get help": None, "Report a Bug": None, "About": None})
@@ -731,6 +760,8 @@ def main() -> None:
             show_document_catalog(catalog, families, explanations)
         elif selected_area == "Fonti":
             show_sources_registry(sources)
+        elif selected_area == "Benchmark":
+            show_benchmark(catalog, families)
         else:
             show_explanation_review(catalog, explanations)
     except (OSError, sqlite3.Error, ValueError) as exc:

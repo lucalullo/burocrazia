@@ -1,0 +1,22 @@
+name: Benchmark completo manuale
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-lock.txt
+      - run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ita
+      - run: python -m benchmarks.evaluate --coverage --output-dir full-benchmark-results
+      - run: python -m benchmarks.files ocr --output full-benchmark-results/ocr.json
+        if: always()
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-benchmark-results
+          path: full-benchmark-results/

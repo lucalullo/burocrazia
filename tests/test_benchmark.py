@@ -12,7 +12,8 @@ def test_synthetic_corpus_preserves_catalog_and_reports_every_failure():
     before = hashlib.sha256(seed.read_bytes()).hexdigest()
     report = run_benchmark()
     assert hashlib.sha256(seed.read_bytes()).hexdigest() == before
-    assert report["catalog"] == {"documents_real": 389, "documents_demo": 10, "families": 16}
+    manifest=json.loads((PROJECT_ROOT/'data/catalog_manifest.json').read_text(encoding='utf-8'))
+    assert report["catalog"] == {"documents_real": manifest['real_documents'], "documents_demo": 10, "families": 16}
     assert report["summary"]["cases"] >= 25
     assert report["split"] == "development_regression"
     assert report["acquisition"]["evaluated"] is False

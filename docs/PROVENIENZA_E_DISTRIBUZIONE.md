@@ -29,7 +29,7 @@ Per predisporre una macchina completamente scollegata dalla rete consulta [INSTA
 
 ## Licenze
 
-Il progetto non include ancora una licenza open source propria. Prima di concedere pubblicamente diritti di riuso o modifica occorre scegliere una licenza per il codice e verificare separatamente le condizioni applicabili a dipendenze, dati e materiali eventualmente distribuiti.
+Il codice originale del progetto è distribuito con licenza MIT, presente in `LICENSE`. Dipendenze, dati e materiali di terzi conservano le proprie condizioni; la MIT del codice non concede diritti sui documenti istituzionali.
 
 Ogni dipendenza conserva la propria licenza. Il repository sorgente non incorpora automaticamente i relativi binari esterni.
 
@@ -38,3 +38,7 @@ Ogni dipendenza conserva la propria licenza. Il repository sorgente non incorpor
 La presenza di un record nel catalogo non significa che il contenuto sia stato revisionato manualmente. Le famiglie, le spiegazioni e i materiali locali mantengono il proprio stato di verifica. BurOCRazia non inventa metadati mancanti e non attribuisce verifiche automaticamente.
 
 I risultati di test e OCR della v0.6.1 sono riepilogati in [VALIDAZIONE.md](VALIDAZIONE.md).
+
+La candidata successiva aggiunge acquisizione tecnica separata dal runtime. Il pacchetto di soli metadati in `maintenance/releases/2026-10-11/` è stato applicato a una copia dello snapshot iniziale con anteprima, hash e transazione, quindi riapplicato per verificarne l'idempotenza. Le impronte di tutte le righe iniziali sono in `data/baseline_v061_rows.json`: nessuna riga pregressa è stata sostituita. Il database operativo dell'utente non viene aggiornato dal nuovo seed; l'aggiornamento richiede l'importazione esplicita del pacchetto.
+
+Le quattro nuove fonti restano `da_verificare`; la validazione tecnica dei domini non simula una revisione umana. Le categorie ricavate dalla posizione di un titolo di sezione HTML sono conservate come `derived_section_label` nell'audit, senza attribuirle a una tassonomia ufficiale del database. Il dettaglio quantitativo corrente è in [COVERAGE.md](COVERAGE.md).

@@ -21,3 +21,12 @@ jobs:
       - run: python scripts/init_db.py
       - run: python scripts/verify_catalog.py
       - run: python scripts/benchmark.py --output benchmark-results.json
+      - run: python -m compileall -q src maintenance benchmarks app.py run.py
+      - run: python -m benchmarks.evaluate --fast --output-dir benchmark-release-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: benchmarks-${{ matrix.os }}
+          path: |
+            benchmark-results.json
+            benchmark-release-results/

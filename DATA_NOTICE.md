@@ -27,3 +27,11 @@ BurOCRazia is not affiliated with, endorsed by, sponsored by or operated by the
 public administrations referenced by the project.
 
 This notice is provided for project transparency and is not legal advice.
+
+The 11 October 2026 candidate adds technically acquired institutional metadata,
+not redistributed official PDF/DOC files or automatically reviewed content.
+`maintenance/releases/2026-10-11/` records the package, listing-response hashes,
+acquisition times, exclusions and resource URLs. A listing-response hash is not
+the hash of its linked document. Real-file benchmark hashes identify files kept
+only in an ignored local cache; no third-party file is licensed under this
+project's MIT License. Human editorial review remains pending.

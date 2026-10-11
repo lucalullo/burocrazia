@@ -1,5 +1,9 @@
 # Installazione su un computer senza Internet
 
+La candidata del 11/10/2026 mantiene Python 3.12 e il lock esistente. Il normale avvio resta `python run.py`, su loopback, senza acquisizione live. Gli strumenti `maintenance/` non sono necessari all'utente finale. Il benchmark statico nell'app non scarica file né avvia test.
+
+Per il benchmark OCR reale serve Tesseract locale configurato con `BUROCRAZIA_TESSERACT_CMD`, se non nel PATH. In sua assenza il runner registra `not_run`; questo stato non equivale a un OCR superato. I file ufficiali possono essere preparati nella cache locale fuori Git; la rete del runner è abilitata soltanto con `--allow-network`. Vedere [ACQUISITION.md](ACQUISITION.md) e [BENCHMARK.md](BENCHMARK.md).
+
 Il repository funziona localmente dopo l'installazione delle dipendenze. Per un'installazione senza rete occorre preparare i componenti su un computer con **stesso sistema operativo, architettura e Python 3.12** del destinatario.
 
 ## Preparazione

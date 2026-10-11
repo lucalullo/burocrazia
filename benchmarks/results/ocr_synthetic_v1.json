@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "corpus_id": "ocr-synthetic-v1",
+  "synthetic": true,
+  "executed_at": "2026-10-11T10:46:28.935225+00:00",
+  "status": "not_run",
+  "attempts": [
+    {
+      "id": "OCR1",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "2f97cb8ca6c20999759f42d55027bf4948e1a2c05cd12433504a02d619f159b1"
+    },
+    {
+      "id": "OCR2",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "2a16bdb9716ea685180c3abccf069249c6b2de069ea4ec303df3be51335f278a"
+    },
+    {
+      "id": "OCR3",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "131fce6ca6b9ebee2bf2a946e2742b80a3362d3759cf804a69d233e0a92f40c3"
+    },
+    {
+      "id": "OCR4",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "1887b1d9b14a17b2c7589370f77f9f7ead8686ab672c68574f08dafc55cac5d1"
+    },
+    {
+      "id": "OCR5",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "21a5579a3bc883f65cb15598cea8b0848fe753aa817f267da5de25d8418d554d"
+    },
+    {
+      "id": "OCR6",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "a135f236a521eb61c3460f33d2329edc0ed013ba15e7dd9fc8dfe4d3f56dbe35"
+    },
+    {
+      "id": "OCR7",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "19fa391c8359b3644a33ac54c5f73c59f9638a2fceeee0eddcceb7ae9a7ada17"
+    },
+    {
+      "id": "OCR8",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "82667aebc4efc441323fd1761a60314ee82e553233956a81ff20e92e3502175e"
+    },
+    {
+      "id": "OCR9",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "92839d311961d81b7976277dcef2e37573c2c25597f98e4e34be139b2dd55876"
+    },
+    {
+      "id": "OCR10",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "dd233cb82ff2a5d911899acb37f0d8dec63e2c223e9e143d02a63fed2e5121dd"
+    },
+    {
+      "id": "OCR11",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "ae55d3e65469c1042905bc1ddc88d6055e1ce633927b61e471a1e8af53fdb7da"
+    },
+    {
+      "id": "OCR12",
+      "status": "not_run",
+      "reason": "Tesseract locale non disponibile",
+      "input_sha256": "e3160bcf55dd23f37938be337e3521a65056691abff837769a3d20a3b346f197"
+    }
+  ],
+  "cases": [],
+  "summary": {
+    "cases": 0,
+    "passed": 0,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    }
+  },
+  "identity": {
+    "corpus_sha256": "651f47c04550413e32568096e46723374ebdbbf3af9f564e50d1454d009154a1",
+    "catalog_semantic_sha256": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+    "code_sha256": "01d19683d4c658d76f370d48788d09afb225d9cc7c7cdc5ef5fca05200aa8a22",
+    "rules_version": "deterministic-3",
+    "git_commit": "d747d0ff663bbf5ac89f5ba1de71d2cdce22018c",
+    "catalog_file_sha256": "8db623d55bb9c17ca2488cbdd6f91b9149af872552279baae0e0e30fc2e97121"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "system": "Windows",
+    "tesseract_executable": null,
+    "pillow": "11.3.0",
+    "pymupdf": "1.28.2"
+  },
+  "limits": "Campione di convenienza; nessun testo estratto conservato. Errori di acquisizione/estrazione esclusi dalle metriche di matching e riportati negli attempts."
+}

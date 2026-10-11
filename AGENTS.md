@@ -2,6 +2,10 @@
 
 Queste istruzioni seguono la relazione R2 e la distribuzione locale 0.6.1.
 
+La candidata successiva conserva questi vincoli. La rete è ammessa soltanto negli strumenti separati `maintenance/` e nel runner ufficiale `benchmarks/files.py`, con `--allow-network` esplicito, robots e allowlist. Il runtime non li importa. I trasporti legacy restano disabilitati.
+
+Conserva i corpus congelati e i loro hash; una correzione delle etichette richiede una nuova versione motivata. Misura separatamente regressione, copertura canonica, negativi, OCR sintetico con Tesseract reale e file ufficiali. I titoli/emittenti oltre i primi 2.000 caratteri non costituiscono prove forti di identità; la cache del motore contiene soltanto metadati del catalogo.
+
 - Mantieni l'applicazione locale e deterministica: nessun LLM, API esterna, telemetria, trasporto HTTP operativo, browser automation applicativa o autenticazione cloud.
 - Conserva OCR locale, catalogo completo, identificativi, fonti, famiglie e provenienza. Non sostituire il progetto con una demo ridotta.
 - Usa `run.py` per avviare su loopback. Non riattivare gli importatori live: i parser accettano soltanto fixture o input locali; gli aggiornamenti passano da pacchetti con anteprima/hash/transazioni.

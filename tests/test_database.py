@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from datetime import UTC, datetime
+import json
+from pathlib import Path
 
 from src.database import (
     connect_database,
@@ -27,7 +29,8 @@ def test_init_script_distinguishes_total_documents_from_demo(
     init_db_script.main()
 
     output = capsys.readouterr().out
-    assert "399 documenti, di cui 10 demo" in output
+    manifest = json.loads((Path(__file__).parents[1]/'data/catalog_manifest.json').read_text(encoding='utf-8'))
+    assert f"{manifest['tables']['documents']} documenti, di cui 10 demo" in output
 
 
 def sample_document() -> AdministrativeDocument:

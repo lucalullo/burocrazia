@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "corpus_id": "burocrazia-hard-negatives-v1",
+  "split": "hard_negatives",
+  "purpose": "Casi amministrativi sintetici difficili; contenuti ufficiali reali valutati separatamente nel manifest.",
+  "synthetic": true,
+  "extraction_evaluated": false,
+  "cases": [
+    {
+      "id": "H000",
+      "group": "hard:0",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nCircolare n. 82 del 2026\nManuale per gli operatori: SR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Istruzioni tecniche per gestire il modulo.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H001",
+      "group": "hard:1",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nGUIDA ALLA COMPILAZIONE\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Versione 1.0. Questa guida descrive la domanda.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H002",
+      "group": "hard:2",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nISTRUZIONI PER LA COMPILAZIONE DEL MODELLO 730/2026\nREDDITI 2025. Guida alla dichiarazione.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H003",
+      "group": "hard:3",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nCOMUNICATO STAMPA\nCertificazione Unica 2026. Disponibili le specifiche tecniche del modello CU.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H004",
+      "group": "hard:4",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nCIRCOLARE\nF24 Semplificato. Documento informativo per gli uffici.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H005",
+      "group": "hard:5",
+      "category": "unknown",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H006",
+      "group": "hard:6",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nDenuncia dimostrativa di infortunio sul lavoro INAIL-DEMO-01",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H007",
+      "group": "hard:7",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nMODELLO 730/2026 REDDITI 2025",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H008",
+      "group": "hard:8",
+      "category": "unknown",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nCertificazione Unica 2026 Modello CU 2026",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H009",
+      "group": "hard:9",
+      "category": "unknown",
+      "source": "Comune di Torino",
+      "noise": "clean",
+      "text": "Comune di Torino\nMODELLO 730/2026 REDDITI 2025",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H010",
+      "group": "hard:10",
+      "category": "unknown",
+      "source": "Regione Lazio",
+      "noise": "clean",
+      "text": "Regione Lazio\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H011",
+      "group": "hard:11",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Versione 9.9.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H012",
+      "group": "hard:12",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR21I RINUNC1A DE1 BENEF1CIAR1 ALLA CARTA ACQUISTI",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H013",
+      "group": "hard:13",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nProtocollo SR211: comunicazione sulle aperture della biblioteca per il personale.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H014",
+      "group": "hard:14",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nFattura numero SR211 per acquisto carta e materiale di cancelleria.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H015",
+      "group": "hard:15",
+      "category": "unknown",
+      "source": "Ministero della Giustizia",
+      "noise": "clean",
+      "text": "Ministero della Giustizia\nIstanza di autorizzazione alla vendita di bene ereditario. Tribunale di Trento.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H016",
+      "group": "hard:16",
+      "category": "unknown",
+      "source": "Comune di Roma",
+      "noise": "clean",
+      "text": "Comune di Roma\nRichiesta di occupazione temporanea del suolo pubblico per trasloco.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H017",
+      "group": "hard:17",
+      "category": "unknown",
+      "source": "Regione Lombardia",
+      "noise": "clean",
+      "text": "Regione Lombardia\nIstanza di autorizzazione paesaggistica. Ufficio territoriale.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H018",
+      "group": "hard:18",
+      "category": "unknown",
+      "source": "Ministero della Salute",
+      "noise": "clean",
+      "text": "Ministero della Salute\nCircolare sulle campagne di vaccinazione. Indicazioni operative.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H019",
+      "group": "hard:19",
+      "category": "unknown",
+      "source": "Agenzia delle Dogane e dei Monopoli",
+      "noise": "clean",
+      "text": "Agenzia delle Dogane e dei Monopoli\nComunicazione di servizio sulla classificazione delle merci. Circolare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H020",
+      "group": "hard:20",
+      "category": "unknown",
+      "source": "Ministero delle Imprese e del Made in Italy",
+      "noise": "clean",
+      "text": "Ministero delle Imprese e del Made in Italy\nManuale operativo per la comunicazione di dati statistici.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H021",
+      "group": "hard:21",
+      "category": "unknown",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nGuida ai servizi online per i professionisti. Istruzioni per Avvocati.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H022",
+      "group": "hard:22",
+      "category": "unknown",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nComunicato sulla protezione dei dati personali. Informazioni per il pubblico.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H023",
+      "group": "hard:23",
+      "category": "unknown",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nGUIDA ALLA COMPILAZIONE\nINL-17 Accesso civico semplice e generalizzato.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H024",
+      "group": "hard:24",
+      "category": "unknown",
+      "source": "Università degli Studi di Bologna",
+      "noise": "clean",
+      "text": "Università degli Studi di Bologna\nRichiesta di accesso civico generalizzato relativa alle graduatorie.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H025",
+      "group": "hard:25",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nModulo F24. Indicazioni incomplete prive di sottotipo.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H026",
+      "group": "hard:26",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nRINUNCIA DEI BENEFICIARI. Frammento parziale, codice e oggetto non riportati.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H027",
+      "group": "hard:27",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR211 e CI543. Due identificativi senza titolo o contesto univoco.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H028",
+      "group": "hard:28",
+      "category": "unknown",
+      "source": "Comune di Firenze",
+      "noise": "clean",
+      "text": "Comune di Firenze\nVerbale della riunione del consiglio dei lettori. Ordine del giorno.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H029",
+      "group": "hard:29",
+      "category": "unknown",
+      "source": "Regione Veneto",
+      "noise": "clean",
+      "text": "Regione Veneto\nAtto di accertamento sulle attività di biblioteca. Nessuna tassa automobilistica.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    }
+  ]
+}

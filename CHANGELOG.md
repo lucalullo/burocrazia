@@ -1,5 +1,16 @@
 # Registro delle modifiche
 
+## Non rilasciato — candidata 0.7.0, 11 ottobre 2026
+
+La versione software resta 0.6.1: gate di precisione, OCR reale e CI multipiattaforma non ancora dimostrati. Nessun tag o release.
+
+- catalogo: 1.216 documenti reali (+827), 10 demo, 16 famiglie, 19 fonti e 2.499 enti IPA; tutte le righe preesistenti conservate;
+- manutenzione HTTPS separata e opt-in, policy domini/robots/redirect, parser offline, ricevute con hash e import tramite pacchetto transazionale;
+- riconoscimento più prudente per guide/manuali, ente nell'intestazione, riferimenti incidentali ai codici, revisioni e anni di leggi; titoli forti limitati ai primi 2.000 caratteri; demo operative soltanto con il loro codice esplicito;
+- cache limitata ai metadati del catalogo, con prova differenziale sui corpus testuali;
+- valutazioni separate, corpus congelati, benchmark ufficiale locale, generatore OCR riproducibile e pagina Benchmark statica/inerte;
+- documentazione quantitativa e workflow offline rafforzati. Risultati e gate reali in `docs/BENCHMARK.md`, senza dichiarare superato ciò che non è stato eseguito.
+
 ## 0.6.1 — 5 settembre 2026
 
 Release di consolidamento e rifinitura dell'MVP locale.

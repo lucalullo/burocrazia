@@ -1,5 +1,7 @@
 # Pacchetti locali e materiali consultabili
 
+Il formato rimane versione 1 nella candidata del 11/10/2026. `maintenance/releases/2026-10-11/manifest.json` e `records.json` formano un pacchetto di soli metadati: inserirli alla radice di uno ZIP, poi eseguire la normale anteprima e confermare il suo hash. Le altre due schede JSON sono audit/risorse osservate, non membri aggiuntivi del pacchetto. Il nuovo seed non aggiorna automaticamente il database operativo. Il pacchetto conserva gli ID iniziali, non sostituisce righe già presenti e non attribuisce stati verificati.
+
 BurOCRazia riceve aggiornamenti solo da file ZIP già presenti sul dispositivo. Non cerca nuove versioni, non scarica documenti e non esegue programmi inclusi nei pacchetti. Il catalogo resta fermo all'ultima importazione registrata. Gli URL sono dati di provenienza, consultabili come testo: non sono copie dei documenti e non vengono aperti dall'applicazione.
 
 Il pacchetto `examples/pacchetto_demo.zip` contiene **un esempio interamente sintetico**, riconoscibile da fonte, documento e materiale in stato `demo`. Non riproduce un documento ufficiale e non estende la copertura reale. I file sorgenti leggibili si trovano in `examples/pacchetto_demo/`.

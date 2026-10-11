@@ -5,6 +5,7 @@ import json
 import re
 import unicodedata
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import Iterable
 
 from rapidfuzz import fuzz
@@ -20,7 +21,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-2"
+RULES_VERSION = "deterministic-3"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -102,6 +103,35 @@ def normalize_text(text: str) -> str:
     return re.sub(r"\s+", " ", normalized).strip()
 
 
+@dataclass(frozen=True)
+class _CatalogFeatures:
+    code: str
+    title: str
+    entity: str
+    signature: str
+    years: frozenset[str]
+    code_pattern: re.Pattern | None
+    contexts: tuple
+
+
+@lru_cache(maxsize=4096)
+def _catalog_features(document: AdministrativeDocument) -> _CatalogFeatures:
+    """Cache catalog metadata only; uploaded text never enters this cache."""
+    code=normalize_text(document.codice or '')
+    title=normalize_text(document.titolo_ufficiale)
+    base=re.sub(r'\s+',' ',YEAR_PATTERN.sub(' ',title)).strip()
+    contexts=[]
+    for value in [base if _is_distinctive_title(base) else '',code if code and not YEAR_PATTERN.search(code) and len(code)>=2 else '']:
+        if value:
+            escaped=re.escape(value).replace(r'\ ',r'\s+')
+            patterns=tuple(re.compile(p) for p in [rf'(?:^|\s){escaped}\s+((?:19|20)\d{{2}})(?=\s|$)',rf'(?:^|\s)((?:19|20)\d{{2}})\s+{escaped}(?=\s|$)'])
+            contexts.append((value,patterns))
+    return _CatalogFeatures(code,title,normalize_text(document.ente),
+        normalize_text(' '.join(x for x in [document.ente,document.titolo_ufficiale,' '.join(document.parole_chiave)] if x)),
+        frozenset(YEAR_PATTERN.findall(' '.join(x for x in [document.titolo_ufficiale,document.versione] if x))),
+        re.compile(r'(?<!\w)'+re.escape(code)+r'(?!\w)') if code else None,tuple(contexts))
+
+
 def _contains_phrase(normalized_text: str, phrase: str | None) -> bool:
     normalized_phrase = normalize_text(phrase or "")
     if not normalized_phrase:
@@ -115,7 +145,7 @@ def _detect_entities(
 ) -> frozenset[str]:
     matched = {
         normalized_entity
-        for entity in entity_names
+        for entity in dict.fromkeys(entity_names)
         if (normalized_entity := normalize_text(entity))
         and _contains_phrase(normalized_text, normalized_entity)
     }
@@ -135,6 +165,27 @@ def _detect_entities(
 def _is_distinctive_title(normalized_title: str) -> bool:
     tokens = normalized_title.split()
     return len(tokens) >= 2 and len(normalized_title) >= 6
+
+
+def _informational_heading(text: str) -> bool:
+    """A guide quoting a form is not the form; only explicit headings count."""
+    lines = [normalize_text(line) for line in text[:800].splitlines() if line.strip()]
+    return any(re.match(r"^(?:circolare|manuale|guida|istruzioni|comunicato stampa|regolamento)\b", line)
+               for line in lines[:4])
+
+
+def _heading_entities(text: str, entity_names: Iterable[str]) -> frozenset[str] | None:
+    """Prefer an issuer heading to entity names in references and model codes."""
+    names = tuple(set(entity_names))
+    for line in [line for line in text[:1000].splitlines() if line.strip()][:5]:
+        normalized = normalize_text(line)
+        detected = _detect_entities(normalized, names)
+        beginning = frozenset(e for e in detected if normalized == e or normalized.startswith(e + " "))
+        if beginning:
+            return beginning
+        if re.match(r"^(?:comune di|regione|provincia di|università|universita|ministero|dipartimento|tribunale|corte di)\b", normalized):
+            return frozenset({normalized})
+    return None
 
 
 def _annual_model_years(text: str) -> dict[str, frozenset[str]]:
@@ -241,37 +292,18 @@ def _generic_version_context(
     text: str,
     document: AdministrativeDocument,
     candidate_years: frozenset[str],
+    normalized_text: str | None = None,
 ) -> tuple[frozenset[str], bool]:
-    normalized_text = normalize_text(text)
-    normalized_title = normalize_text(document.titolo_ufficiale)
-    base_title = YEAR_PATTERN.sub(" ", normalized_title)
-    base_title = re.sub(r"\s+", " ", base_title).strip()
-    base_present = _is_distinctive_title(base_title) and _contains_phrase(
-        normalized_text, base_title
-    )
+    normalized_text = normalized_text if normalized_text is not None else normalize_text(text)
     observed: set[str] = set()
-    contextual_bases: list[str] = []
-    if base_present:
-        contextual_bases.append(base_title)
-
-    normalized_code = normalize_text(document.codice or "")
-    if (
-        normalized_code
-        and not YEAR_PATTERN.search(normalized_code)
-        and len(normalized_code) >= 2
-        and _contains_phrase(normalized_text, normalized_code)
-    ):
-        contextual_bases.append(normalized_code)
-
-    for base in contextual_bases:
-        escaped_base = re.escape(base).replace(r"\ ", r"\s+")
-        for pattern in (
-            rf"(?:^|\s){escaped_base}\s+((?:19|20)\d{{2}})(?=\s|$)",
-            rf"(?:^|\s)((?:19|20)\d{{2}})\s+{escaped_base}(?=\s|$)",
-        ):
-            observed.update(re.findall(pattern, normalized_text))
-
-    model_present = bool(contextual_bases)
+    model_present = False
+    for base,patterns in _catalog_features(document).contexts:
+        if f' {base} ' in f' {normalized_text} ':
+            model_present=True
+            for pattern in patterns: observed.update(pattern.findall(normalized_text))
+    labelled = frozenset(re.findall(r"\b(?:versione|version|revisione|annualità)\s+((?:19|20)\d{2})\b", text, flags=re.I))
+    if labelled and model_present:
+        observed.update(labelled)
     if observed:
         return frozenset(observed), model_present
     if candidate_years and model_present:
@@ -283,6 +315,7 @@ def _generic_version_context(
 def _annual_version_evidence(
     text: str,
     document: AdministrativeDocument,
+    normalized_text: str | None = None,
 ) -> tuple[bool, bool]:
     """Return (consistent alias, conflict) for contextual annual models."""
     # An explicitly labelled revision is evidence of a version, unlike a date
@@ -295,10 +328,10 @@ def _annual_version_evidence(
     }
     if revisions and revisions != {(document.versione or "").strip().casefold()}:
         return False, True
-    candidate_identity = " ".join(
-        part for part in (document.titolo_ufficiale, document.versione) if part
-    )
-    candidate_years = frozenset(YEAR_PATTERN.findall(candidate_identity))
+    if _candidate_annual_model(document) is None and re.fullmatch(r"\d+(?:[.]\d+)+", document.versione or ""):
+        # A revision such as 1.2 is not the year of a cited law in the title.
+        return False, False
+    candidate_years = _catalog_features(document).years
     model = _candidate_annual_model(document)
     if model is not None:
         observed_years = _annual_model_years(text)[model]
@@ -315,7 +348,7 @@ def _annual_version_evidence(
     if not candidate_years:
         return False, False
     observed_years, model_mentioned = _generic_version_context(
-        text, document, candidate_years
+        text, document, candidate_years, normalized_text
     )
     if not observed_years:
         return False, model_mentioned
@@ -330,38 +363,45 @@ def _score_candidate(
     normalized_text: str,
     document: AdministrativeDocument,
     detected_entities: frozenset[str],
+    identity_text: str | None = None,
 ) -> _CandidateScore:
     score = 0.0
     signals: list[str] = []
+    identity_text = identity_text if identity_text is not None else normalize_text(original_text[:2000])
+    features = _catalog_features(document)
 
     annual_alias_match, version_conflict = _annual_version_evidence(
-        original_text, document
+        original_text, document, normalized_text
     )
 
-    exact_code = bool(
-        document.codice and _contains_phrase(normalized_text, document.codice)
+    code = features.code
+    exact_code = bool(code) and any(
+        not re.search(r"\b(?:protocollo|prot|fattura|importo|pagina|articolo)(?:\s+(?:n|numero))?$", normalized_text[max(0, match.start()-60):match.start()].strip())
+        for match in features.code_pattern.finditer(normalized_text)
     )
     if exact_code:
         score += WEIGHTS["exact_code"]
         signals.append("codice esatto")
 
-    normalized_title = normalize_text(document.titolo_ufficiale)
-    exact_title = _contains_phrase(normalized_text, document.titolo_ufficiale)
+    normalized_title = features.title
+    # A privacy footer can name another authority and quote its generic forms.
+    # Only the opening establishes title identity; the rest is fuzzy context.
+    exact_title = _contains_phrase(identity_text, document.titolo_ufficiale)
     if exact_title or annual_alias_match:
         title_similarity = 100.0
     else:
-        title_similarity = float(fuzz.partial_ratio(normalized_title, normalized_text))
+        title_similarity = float(fuzz.partial_ratio(normalized_title, identity_text))
         # partial_ratio alone gives 100 when only one word of a long title is
         # supplied. Require coverage of the candidate title before using it.
         title_tokens = set(normalized_title.split())
-        covered_tokens = title_tokens & set(normalized_text.split())
+        covered_tokens = title_tokens & set(identity_text.split())
         if title_tokens and len(covered_tokens) / len(title_tokens) < 0.7:
             title_similarity = min(title_similarity, MIN_TITLE_SIMILARITY - 1)
     if title_similarity >= MIN_TITLE_SIMILARITY:
         score += WEIGHTS["title"] * title_similarity / 100.0
         signals.append("modello e versione" if annual_alias_match else "titolo")
 
-    normalized_entity = normalize_text(document.ente)
+    normalized_entity = features.entity
     entity_match = normalized_entity in detected_entities
     entity_conflict = (bool(detected_entities) and not entity_match) or _local_entity_conflict(original_text, document.ente)
     if entity_match:
@@ -420,17 +460,7 @@ def _score_candidate(
         if identity_evidence:
             conflicts.append("annualità assente, ambigua o incompatibile")
 
-    signature = normalize_text(
-        " ".join(
-            part
-            for part in (
-                document.ente,
-                document.titolo_ufficiale,
-                " ".join(document.parole_chiave),
-            )
-            if part
-        )
-    )
+    signature = features.signature
     general_similarity = float(fuzz.token_set_ratio(signature, normalized_text))
     if general_similarity:
         score += WEIGHTS["general_similarity"] * general_similarity / 100.0
@@ -462,21 +492,22 @@ def recognize_document(
     normalized_text = normalize_text(text)
     if not normalized_text:
         return RecognitionResult(recognized=False, confidence=0.0, reason="Nessun testo leggibile disponibile.")
+    if _informational_heading(text):
+        return RecognitionResult(recognized=False, confidence=0.0, reason="Intestazione informativa: i riferimenti a moduli non ne provano l'identità.", conflicts=("risorsa informativa",))
 
     document_list = list(documents)
     # Anche l'ente di un record rifiutato resta noto: escludere il documento
     # operativo non deve indebolire la protezione contro un emittente errato.
-    detected_entities = _detect_entities(
-        normalized_text,
-        (
+    entity_names = (
             *(document.ente for document in document_list),
             *known_entities,
             *DISTINCT_ENTITY_NAMES,
-        ),
     )
+    opening_text = normalize_text(text[:2000])
+    detected_entities = _heading_entities(text, entity_names) or _detect_entities(opening_text, entity_names)
     candidates = sorted(
         (
-            _score_candidate(text, normalized_text, document, detected_entities)
+            _score_candidate(text, normalized_text, document, detected_entities, opening_text)
             for document in document_list
             if document.stato_verifica != "rifiutato"
         ),
@@ -565,7 +596,7 @@ def _score_family(
 
     entity_match = family_entity_match
     entity_conflict = (
-        family.ente in DISTINCT_ENTITY_NAMES
+        normalize_text(family.ente) not in {"comuni", "regioni", "comune", "regione", "enti locali", "polizia locale ente locale", "regione ente regionale"}
         and bool(detected_entities)
         and not entity_match
     )
@@ -599,25 +630,27 @@ def recognize_document_family(
     families: Iterable[DocumentFamily],
     *,
     min_confidence: float = MIN_FAMILY_CONFIDENCE,
+    known_entities: Iterable[str] = (),
 ) -> FamilyRecognitionResult:
     if not 0.0 <= min_confidence <= 100.0:
         raise ValueError("La soglia famiglia deve essere compresa tra 0 e 100.")
-    normalized_text = normalize_text(text)
+    normalized_text = normalize_text(text[:2000])
     if not normalized_text:
         return FamilyRecognitionResult(False, 0.0, reason="Nessun testo leggibile disponibile.")
+    if _informational_heading(text):
+        return FamilyRecognitionResult(False, 0.0, reason="Intestazione informativa: famiglia non attribuita.")
 
     family_list = list(families)
-    detected_entities = _detect_entities(
-        normalized_text,
-        (
+    entity_names = (
             *(family.ente for family in family_list),
+            *known_entities,
             *DISTINCT_ENTITY_NAMES,
-        ),
     )
+    detected_entities = _heading_entities(text, entity_names) or _detect_entities(normalize_text(text[:2000]), entity_names)
 
     candidates = sorted(
         (
-            _score_family(text, normalized_text, family, detected_entities)
+            _score_family(text[:2000], normalized_text, family, detected_entities)
             for family in family_list
         ),
         key=lambda candidate: candidate.score,
@@ -684,16 +717,20 @@ def recognize_catalog(
 ) -> CatalogRecognitionResult:
     document_list = list(documents)
     family_list = list(families)
+    opening = normalize_text(text[:2000])
+    operational_documents = [d for d in document_list if d.stato_verifica != 'demo' or
+                             bool(d.codice and _contains_phrase(opening,d.codice))]
     document_result = recognize_document(
         text,
-        document_list,
+        operational_documents,
         min_confidence=min_document_confidence,
-        known_entities=(family.ente for family in family_list),
+        known_entities=tuple(family.ente for family in family_list)+tuple(d.ente for d in document_list),
     )
     family_result = recognize_document_family(
         text,
         family_list,
         min_confidence=min_family_confidence,
+        known_entities=(document.ente for document in document_list),
     )
     diagnostics = {
         "document_score_margin": document_result.score_margin,
