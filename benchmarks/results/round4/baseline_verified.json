@@ -1,0 +1,311 @@
+{
+  "development": {
+    "cases": 162,
+    "passed": 70,
+    "failed": 92,
+    "metrics": {
+      "document_precision": {
+        "numerator": 58,
+        "denominator": 58,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 58,
+        "denominator": 150,
+        "value": 0.38666666666666666
+      },
+      "document_f1": {
+        "numerator": 116,
+        "denominator": 208,
+        "value": 0.5576923076923077
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "exact_document_coverage": {
+        "numerator": 58,
+        "denominator": 150,
+        "value": 0.38666666666666666
+      },
+      "useful_coverage": {
+        "numerator": 58,
+        "denominator": 150,
+        "value": 0.38666666666666666
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 92,
+        "denominator": 150,
+        "value": 0.6133333333333333
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 58,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 58,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 58,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 92
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 12
+      }
+    },
+    "latency_ms": {
+      "p50": 306.5095,
+      "p95": 416.6877,
+      "p99": 469.9481
+    }
+  },
+  "holdout_v1_historical": {
+    "cases": 177,
+    "passed": 83,
+    "failed": 94,
+    "metrics": {
+      "document_precision": {
+        "numerator": 33,
+        "denominator": 38,
+        "value": 0.868421052631579
+      },
+      "document_recall": {
+        "numerator": 33,
+        "denominator": 127,
+        "value": 0.25984251968503935
+      },
+      "document_f1": {
+        "numerator": 66,
+        "denominator": 165,
+        "value": 0.4
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 33,
+        "denominator": 127,
+        "value": 0.25984251968503935
+      },
+      "useful_coverage": {
+        "numerator": 33,
+        "denominator": 127,
+        "value": 0.25984251968503935
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 50,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 50,
+        "denominator": 50,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 89,
+        "denominator": 127,
+        "value": 0.7007874015748031
+      },
+      "entity_error_rate": {
+        "numerator": 1,
+        "denominator": 38,
+        "value": 0.02631578947368421
+      },
+      "version_year_error_rate": {
+        "numerator": 2,
+        "denominator": 38,
+        "value": 0.05263157894736842
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 38,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 89
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 50
+      }
+    },
+    "latency_ms": {
+      "p50": 335.673,
+      "p95": 446.523,
+      "p99": 485.4143
+    }
+  },
+  "catalog": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "locked_v1_final": {
+    "cases": 69,
+    "passed": 60,
+    "failed": 9,
+    "metrics": {
+      "document_precision": {
+        "numerator": 54,
+        "denominator": 56,
+        "value": 0.9642857142857143
+      },
+      "document_recall": {
+        "numerator": 54,
+        "denominator": 60,
+        "value": 0.9
+      },
+      "document_f1": {
+        "numerator": 108,
+        "denominator": 116,
+        "value": 0.9310344827586207
+      },
+      "family_precision": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 6,
+        "denominator": 9,
+        "value": 0.6666666666666666
+      },
+      "family_f1": {
+        "numerator": 12,
+        "denominator": 15,
+        "value": 0.8
+      },
+      "exact_document_coverage": {
+        "numerator": 54,
+        "denominator": 60,
+        "value": 0.9
+      },
+      "useful_coverage": {
+        "numerator": 60,
+        "denominator": 69,
+        "value": 0.8695652173913043
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 7,
+        "denominator": 69,
+        "value": 0.10144927536231885
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 62,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 54,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 54,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 6
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 2,
+        "FAMILY_MATCH": 6,
+        "NO_MATCH": 1
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 82.322,
+      "p95": 187.6486,
+      "p99": null
+    }
+  },
+  "prompt_discrepancy": "Round 3 final locked v1 is 60/69; 59/69 belongs to Round 2. Both historical raw results preserved."
+}

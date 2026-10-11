@@ -1,0 +1,2098 @@
+{
+  "schema_version": 1,
+  "corpus_id": "family_release_v3",
+  "split": "development_family_release",
+  "synthetic": true,
+  "purpose": "Five synthetic positives and five paired hard negatives per verified family; layout variants are correlated, not independent evidence. R061 permanent. No new editorial family verification.",
+  "cases": [
+    {
+      "id": "FR01-P1",
+      "group": "family:1",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 1,
+      "text": "Agenzia delle Entrate-Riscossione\nCartella di pagamento\ncartella di pagamento\nagenzia delle entrate-riscossione\nagente della riscossione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR01-P2",
+      "group": "family:1",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 1,
+      "text": "Agenzia delle Entrate-Riscossione\ncartella di pagamento\nagenzia delle entrate-riscossione\nagente della riscossione\nCartella di pagamento\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR01-P3",
+      "group": "family:1",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 1,
+      "text": "Agenzia delle Entrate-Riscossione\nagenzia delle entrate-riscossione\nagente della riscossione\nCartella di pagamento\ncartella di pagamento\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR01-P4",
+      "group": "family:1",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 1,
+      "text": "AGENZIA DELLE ENTRATE-RISCOSSIONE\nAGENTE DELLA RISCOSSIONE\nCARTELLA DI PAGAMENTO\nCARTELLA DI PAGAMENTO\nAGENZIA DELLE ENTRATE-RISCOSSIONE\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR01-P5",
+      "group": "family:1",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 1,
+      "text": "Agenzia delle Entrate-Riscossione\n\nCartella di pagamento\n\ncartella di pagamento\n\nagenzia delle entrate-riscossione\n\nagente della riscossione\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR01-N1",
+      "group": "family:1",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 1,
+      "text": "INAIL\nCartella di pagamento\ncartella di pagamento\nagenzia delle entrate-riscossione\nagente della riscossione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR01-N2",
+      "group": "family:1",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 1,
+      "text": "Agenzia delle Entrate-Riscossione\nGuida\nCartella di pagamento\ncartella di pagamento\nagenzia delle entrate-riscossione\nagente della riscossione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR01-N3",
+      "group": "family:1",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 1,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate-Riscossione\nCartella di pagamento\ncartella di pagamento\nagenzia delle entrate-riscossione\nagente della riscossione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR01-N4",
+      "group": "family:1",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 1,
+      "text": "Cartella di pagamento\ncartella di pagamento\nagente della riscossione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR01-N5",
+      "group": "family:1",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 1,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate-Riscossione\nCartella di pagamento\ncartella di pagamento\nagenzia delle entrate-riscossione\nagente della riscossione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR02-P1",
+      "group": "family:2",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 2,
+      "text": "Agenzia delle Entrate-Riscossione\nModulo di pagamento pagoPA\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR02-P2",
+      "group": "family:2",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 2,
+      "text": "Agenzia delle Entrate-Riscossione\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento\nModulo di pagamento pagoPA\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR02-P3",
+      "group": "family:2",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 2,
+      "text": "Agenzia delle Entrate-Riscossione\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento\nModulo di pagamento pagoPA\nmodulo di pagamento pagopa\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR02-P4",
+      "group": "family:2",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 2,
+      "text": "AGENZIA DELLE ENTRATE-RISCOSSIONE\nCODICE MODULO DI PAGAMENTO\nMODULO DI PAGAMENTO PAGOPA\nMODULO DI PAGAMENTO PAGOPA\nNUOVO MODULO DI PAGAMENTO PAGOPA\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR02-P5",
+      "group": "family:2",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 2,
+      "text": "Agenzia delle Entrate-Riscossione\n\nModulo di pagamento pagoPA\n\nmodulo di pagamento pagopa\n\nnuovo modulo di pagamento pagopa\n\ncodice modulo di pagamento\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR02-N1",
+      "group": "family:2",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 2,
+      "text": "INAIL\nModulo di pagamento pagoPA\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR02-N2",
+      "group": "family:2",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 2,
+      "text": "Agenzia delle Entrate-Riscossione\nGuida\nModulo di pagamento pagoPA\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR02-N3",
+      "group": "family:2",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 2,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate-Riscossione\nModulo di pagamento pagoPA\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR02-N4",
+      "group": "family:2",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 2,
+      "text": "Modulo di pagamento pagoPA\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR02-N5",
+      "group": "family:2",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 2,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate-Riscossione\nModulo di pagamento pagoPA\nmodulo di pagamento pagopa\nnuovo modulo di pagamento pagopa\ncodice modulo di pagamento",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR03-P1",
+      "group": "family:3",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 3,
+      "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR03-P2",
+      "group": "family:3",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 3,
+      "text": "Agenzia delle Entrate-Riscossione\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico\nAccertamento esecutivo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR03-P3",
+      "group": "family:3",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 3,
+      "text": "Agenzia delle Entrate-Riscossione\naccertamento esecutivo\navviso di presa in carico\nAccertamento esecutivo\navviso di accertamento esecutivo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR03-P4",
+      "group": "family:3",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 3,
+      "text": "AGENZIA DELLE ENTRATE-RISCOSSIONE\nAVVISO DI PRESA IN CARICO\nACCERTAMENTO ESECUTIVO\nAVVISO DI ACCERTAMENTO ESECUTIVO\nACCERTAMENTO ESECUTIVO\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR03-P5",
+      "group": "family:3",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 3,
+      "text": "Agenzia delle Entrate-Riscossione\n\nAccertamento esecutivo\n\navviso di accertamento esecutivo\n\naccertamento esecutivo\n\navviso di presa in carico\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR03-N1",
+      "group": "family:3",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 3,
+      "text": "INAIL\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR03-N2",
+      "group": "family:3",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 3,
+      "text": "Agenzia delle Entrate-Riscossione\nGuida\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR03-N3",
+      "group": "family:3",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 3,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR03-N4",
+      "group": "family:3",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 3,
+      "text": "Accertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR03-N5",
+      "group": "family:3",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 3,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo\navviso di presa in carico",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR04-P1",
+      "group": "family:4",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 4,
+      "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito\ncrediti previdenziali\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR04-P2",
+      "group": "family:4",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 4,
+      "text": "Agenzia delle Entrate-Riscossione\navviso di addebito inps\navviso di addebito\ncrediti previdenziali\nAvviso di addebito INPS\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR04-P3",
+      "group": "family:4",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 4,
+      "text": "Agenzia delle Entrate-Riscossione\navviso di addebito\ncrediti previdenziali\nAvviso di addebito INPS\navviso di addebito inps\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR04-P4",
+      "group": "family:4",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 4,
+      "text": "AGENZIA DELLE ENTRATE-RISCOSSIONE\nCREDITI PREVIDENZIALI\nAVVISO DI ADDEBITO INPS\nAVVISO DI ADDEBITO INPS\nAVVISO DI ADDEBITO\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR04-P5",
+      "group": "family:4",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 4,
+      "text": "Agenzia delle Entrate-Riscossione\n\nAvviso di addebito INPS\n\navviso di addebito inps\n\navviso di addebito\n\ncrediti previdenziali\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR04-N1",
+      "group": "family:4",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 4,
+      "text": "INAIL\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito\ncrediti previdenziali",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR04-N2",
+      "group": "family:4",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 4,
+      "text": "Agenzia delle Entrate-Riscossione\nGuida\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito\ncrediti previdenziali",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR04-N3",
+      "group": "family:4",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 4,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito\ncrediti previdenziali\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR04-N4",
+      "group": "family:4",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 4,
+      "text": "Avviso di addebito INPS\navviso di addebito inps\navviso di addebito\ncrediti previdenziali",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR04-N5",
+      "group": "family:4",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 4,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito\ncrediti previdenziali",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR05-P1",
+      "group": "family:5",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 5,
+      "text": "Agenzia delle Entrate-Riscossione\nAvvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR05-P2",
+      "group": "family:5",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 5,
+      "text": "Agenzia delle Entrate-Riscossione\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione\nAvvisi e solleciti\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR05-P3",
+      "group": "family:5",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 5,
+      "text": "Agenzia delle Entrate-Riscossione\npreavviso di fermo\navviso di intimazione\nAvvisi e solleciti\nsollecito di pagamento\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR05-P4",
+      "group": "family:5",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 5,
+      "text": "AGENZIA DELLE ENTRATE-RISCOSSIONE\nAVVISO DI INTIMAZIONE\nAVVISI E SOLLECITI\nSOLLECITO DI PAGAMENTO\nPREAVVISO DI FERMO\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR05-P5",
+      "group": "family:5",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_layout",
+      "target_family_id": 5,
+      "text": "Agenzia delle Entrate-Riscossione\n\nAvvisi e solleciti\n\nsollecito di pagamento\n\npreavviso di fermo\n\navviso di intimazione\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FR05-N1",
+      "group": "family:5",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 5,
+      "text": "INAIL\nAvvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR05-N2",
+      "group": "family:5",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 5,
+      "text": "Agenzia delle Entrate-Riscossione\nGuida\nAvvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR05-N3",
+      "group": "family:5",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 5,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate-Riscossione\nAvvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR05-N4",
+      "group": "family:5",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 5,
+      "text": "Avvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR05-N5",
+      "group": "family:5",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 5,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate-Riscossione\nAvvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR06-P1",
+      "group": "family:6",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 6,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nPatente di guida\npatente di guida\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR06-P2",
+      "group": "family:6",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 6,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\npatente di guida\nufficio motorizzazione civile\nPatente di guida\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR06-P3",
+      "group": "family:6",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 6,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nufficio motorizzazione civile\nPatente di guida\npatente di guida\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR06-P4",
+      "group": "family:6",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 6,
+      "text": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI\nPATENTE DI GUIDA\nPATENTE DI GUIDA\nUFFICIO MOTORIZZAZIONE CIVILE\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR06-P5",
+      "group": "family:6",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 6,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\n\npatente di guida\n\nufficio motorizzazione civile\n\nPatente di guida\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR06-N1",
+      "group": "family:6",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 6,
+      "text": "INAIL\nPatente di guida\npatente di guida\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR06-N2",
+      "group": "family:6",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 6,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nGuida\nPatente di guida\npatente di guida\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR06-N3",
+      "group": "family:6",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 6,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nMinistero delle Infrastrutture e dei Trasporti\nPatente di guida\npatente di guida\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR06-N4",
+      "group": "family:6",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 6,
+      "text": "Patente di guida\npatente di guida\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR06-N5",
+      "group": "family:6",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 6,
+      "text": "INAIL\nDestinatario Ministero delle Infrastrutture e dei Trasporti\nPatente di guida\npatente di guida\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR07-P1",
+      "group": "family:7",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 7,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nConversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR07-P2",
+      "group": "family:7",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 7,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile\nConversione patente\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR07-P3",
+      "group": "family:7",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 7,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\ndomanda di conversione\nufficio motorizzazione civile\nConversione patente\nconversione patente estera\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR07-P4",
+      "group": "family:7",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 7,
+      "text": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI\nUFFICIO MOTORIZZAZIONE CIVILE\nCONVERSIONE PATENTE\nCONVERSIONE PATENTE ESTERA\nDOMANDA DI CONVERSIONE\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR07-P5",
+      "group": "family:7",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 7,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\n\nConversione patente\n\nconversione patente estera\n\ndomanda di conversione\n\nufficio motorizzazione civile\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR07-N1",
+      "group": "family:7",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 7,
+      "text": "INAIL\nConversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR07-N2",
+      "group": "family:7",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 7,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nGuida\nConversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR07-N3",
+      "group": "family:7",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 7,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nMinistero delle Infrastrutture e dei Trasporti\nConversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR07-N4",
+      "group": "family:7",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 7,
+      "text": "Conversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR07-N5",
+      "group": "family:7",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 7,
+      "text": "INAIL\nDestinatario Ministero delle Infrastrutture e dei Trasporti\nConversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR08-P1",
+      "group": "family:8",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 8,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nPratiche motorizzazione\npratica di motorizzazione\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR08-P2",
+      "group": "family:8",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 8,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\npratica di motorizzazione\nufficio motorizzazione civile\nPratiche motorizzazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR08-P3",
+      "group": "family:8",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 8,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nufficio motorizzazione civile\nPratiche motorizzazione\npratica di motorizzazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR08-P4",
+      "group": "family:8",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 8,
+      "text": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI\nPRATICHE MOTORIZZAZIONE\nPRATICA DI MOTORIZZAZIONE\nUFFICIO MOTORIZZAZIONE CIVILE\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR08-P5",
+      "group": "family:8",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 8,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\n\npratica di motorizzazione\n\nufficio motorizzazione civile\n\nPratiche motorizzazione\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR08-N1",
+      "group": "family:8",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 8,
+      "text": "INAIL\nPratiche motorizzazione\npratica di motorizzazione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR08-N2",
+      "group": "family:8",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 8,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nGuida\nPratiche motorizzazione\npratica di motorizzazione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR08-N3",
+      "group": "family:8",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 8,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nMinistero delle Infrastrutture e dei Trasporti\nPratiche motorizzazione\npratica di motorizzazione\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR08-N4",
+      "group": "family:8",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 8,
+      "text": "Pratiche motorizzazione\npratica di motorizzazione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR08-N5",
+      "group": "family:8",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 8,
+      "text": "INAIL\nDestinatario Ministero delle Infrastrutture e dei Trasporti\nPratiche motorizzazione\npratica di motorizzazione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR09-P1",
+      "group": "family:9",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 9,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nImmatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR09-P2",
+      "group": "family:9",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 9,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile\nImmatricolazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR09-P3",
+      "group": "family:9",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 9,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nimmatricolazione del veicolo\nufficio motorizzazione civile\nImmatricolazione\ndomanda di immatricolazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR09-P4",
+      "group": "family:9",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 9,
+      "text": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI\nUFFICIO MOTORIZZAZIONE CIVILE\nIMMATRICOLAZIONE\nDOMANDA DI IMMATRICOLAZIONE\nIMMATRICOLAZIONE DEL VEICOLO\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR09-P5",
+      "group": "family:9",
+      "category": "family_positive",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "synthetic_layout",
+      "target_family_id": 9,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\n\nImmatricolazione\n\ndomanda di immatricolazione\n\nimmatricolazione del veicolo\n\nufficio motorizzazione civile\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "FR09-N1",
+      "group": "family:9",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 9,
+      "text": "INAIL\nImmatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR09-N2",
+      "group": "family:9",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 9,
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nGuida\nImmatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR09-N3",
+      "group": "family:9",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 9,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nMinistero delle Infrastrutture e dei Trasporti\nImmatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR09-N4",
+      "group": "family:9",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 9,
+      "text": "Immatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR09-N5",
+      "group": "family:9",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 9,
+      "text": "INAIL\nDestinatario Ministero delle Infrastrutture e dei Trasporti\nImmatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR10-P1",
+      "group": "family:10",
+      "category": "family_positive",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_layout",
+      "target_family_id": 10,
+      "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      }
+    },
+    {
+      "id": "FR10-P2",
+      "group": "family:10",
+      "category": "family_positive",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_layout",
+      "target_family_id": 10,
+      "text": "Ispettorato Nazionale del Lavoro\nrichiesta di intervento ispettivo\nmodulo INL 31\nRichiesta di intervento ispettivo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      }
+    },
+    {
+      "id": "FR10-P3",
+      "group": "family:10",
+      "category": "family_positive",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_layout",
+      "target_family_id": 10,
+      "text": "Ispettorato Nazionale del Lavoro\nmodulo INL 31\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      }
+    },
+    {
+      "id": "FR10-P4",
+      "group": "family:10",
+      "category": "family_positive",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_layout",
+      "target_family_id": 10,
+      "text": "ISPETTORATO NAZIONALE DEL LAVORO\nRICHIESTA DI INTERVENTO ISPETTIVO\nRICHIESTA DI INTERVENTO ISPETTIVO\nMODULO INL 31\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      }
+    },
+    {
+      "id": "FR10-P5",
+      "group": "family:10",
+      "category": "family_positive",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_layout",
+      "target_family_id": 10,
+      "text": "Ispettorato Nazionale del Lavoro\n\nrichiesta di intervento ispettivo\n\nmodulo INL 31\n\nRichiesta di intervento ispettivo\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      }
+    },
+    {
+      "id": "FR10-N1",
+      "group": "family:10",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 10,
+      "text": "INAIL\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR10-N2",
+      "group": "family:10",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 10,
+      "text": "Ispettorato Nazionale del Lavoro\nGuida\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR10-N3",
+      "group": "family:10",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 10,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nIspettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR10-N4",
+      "group": "family:10",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 10,
+      "text": "Richiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR10-N5",
+      "group": "family:10",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 10,
+      "text": "INAIL\nDestinatario Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR11-P1",
+      "group": "family:11",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 11,
+      "text": "Garante per la protezione dei dati personali\nReclamo\nreclamo al Garante\nmodello facsimile per il reclamo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR11-P2",
+      "group": "family:11",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 11,
+      "text": "Garante per la protezione dei dati personali\nreclamo al Garante\nmodello facsimile per il reclamo\nReclamo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR11-P3",
+      "group": "family:11",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 11,
+      "text": "Garante per la protezione dei dati personali\nmodello facsimile per il reclamo\nReclamo\nreclamo al Garante\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR11-P4",
+      "group": "family:11",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 11,
+      "text": "GARANTE PER LA PROTEZIONE DEI DATI PERSONALI\nRECLAMO\nRECLAMO AL GARANTE\nMODELLO FACSIMILE PER IL RECLAMO\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR11-P5",
+      "group": "family:11",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 11,
+      "text": "Garante per la protezione dei dati personali\n\nreclamo al Garante\n\nmodello facsimile per il reclamo\n\nReclamo\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR11-N1",
+      "group": "family:11",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 11,
+      "text": "INAIL\nReclamo\nreclamo al Garante\nmodello facsimile per il reclamo",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR11-N2",
+      "group": "family:11",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 11,
+      "text": "Garante per la protezione dei dati personali\nGuida\nReclamo\nreclamo al Garante\nmodello facsimile per il reclamo",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR11-N3",
+      "group": "family:11",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 11,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nGarante per la protezione dei dati personali\nReclamo\nreclamo al Garante\nmodello facsimile per il reclamo\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR11-N4",
+      "group": "family:11",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 11,
+      "text": "Reclamo\nreclamo al Garante\nmodello facsimile per il reclamo",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR11-N5",
+      "group": "family:11",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 11,
+      "text": "INAIL\nDestinatario Garante per la protezione dei dati personali\nReclamo\nreclamo al Garante\nmodello facsimile per il reclamo",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR12-P1",
+      "group": "family:12",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 12,
+      "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR12-P2",
+      "group": "family:12",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 12,
+      "text": "Garante per la protezione dei dati personali\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti\nEsercizio dei diritti privacy\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR12-P3",
+      "group": "family:12",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 12,
+      "text": "Garante per la protezione dei dati personali\nmodello per l'esercizio dei diritti\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR12-P4",
+      "group": "family:12",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 12,
+      "text": "GARANTE PER LA PROTEZIONE DEI DATI PERSONALI\nESERCIZIO DEI DIRITTI PRIVACY\nESERCIZIO DEI DIRITTI IN MATERIA DI PROTEZIONE DEI DATI PERSONALI\nMODELLO PER L'ESERCIZIO DEI DIRITTI\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR12-P5",
+      "group": "family:12",
+      "category": "family_positive",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_layout",
+      "target_family_id": 12,
+      "text": "Garante per la protezione dei dati personali\n\nesercizio dei diritti in materia di protezione dei dati personali\n\nmodello per l'esercizio dei diritti\n\nEsercizio dei diritti privacy\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "FR12-N1",
+      "group": "family:12",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 12,
+      "text": "INAIL\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR12-N2",
+      "group": "family:12",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 12,
+      "text": "Garante per la protezione dei dati personali\nGuida\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR12-N3",
+      "group": "family:12",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 12,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nGarante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR12-N4",
+      "group": "family:12",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 12,
+      "text": "Esercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR12-N5",
+      "group": "family:12",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 12,
+      "text": "INAIL\nDestinatario Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR13-P1",
+      "group": "family:13",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 13,
+      "text": "Agenzia delle Entrate\nModello 730\nmodello 730\ndichiarazione dei redditi modello 730\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR13-P2",
+      "group": "family:13",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 13,
+      "text": "Agenzia delle Entrate\nmodello 730\ndichiarazione dei redditi modello 730\nModello 730\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR13-P3",
+      "group": "family:13",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 13,
+      "text": "Agenzia delle Entrate\ndichiarazione dei redditi modello 730\nModello 730\nmodello 730\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR13-P4",
+      "group": "family:13",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 13,
+      "text": "AGENZIA DELLE ENTRATE\nMODELLO 730\nMODELLO 730\nDICHIARAZIONE DEI REDDITI MODELLO 730\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR13-P5",
+      "group": "family:13",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 13,
+      "text": "Agenzia delle Entrate\n\nmodello 730\n\ndichiarazione dei redditi modello 730\n\nModello 730\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR13-N1",
+      "group": "family:13",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 13,
+      "text": "INAIL\nModello 730\nmodello 730\ndichiarazione dei redditi modello 730",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR13-N2",
+      "group": "family:13",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 13,
+      "text": "Agenzia delle Entrate\nGuida\nModello 730\nmodello 730\ndichiarazione dei redditi modello 730",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR13-N3",
+      "group": "family:13",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 13,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate\nModello 730\nmodello 730\ndichiarazione dei redditi modello 730\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR13-N4",
+      "group": "family:13",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 13,
+      "text": "Modello 730\nmodello 730\ndichiarazione dei redditi modello 730",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR13-N5",
+      "group": "family:13",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 13,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate\nModello 730\nmodello 730\ndichiarazione dei redditi modello 730",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR14-P1",
+      "group": "family:14",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 14,
+      "text": "Agenzia delle Entrate\nCertificazione Unica\ncertificazione unica\nmodello CU\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR14-P2",
+      "group": "family:14",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 14,
+      "text": "Agenzia delle Entrate\ncertificazione unica\nmodello CU\nCertificazione Unica\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR14-P3",
+      "group": "family:14",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 14,
+      "text": "Agenzia delle Entrate\nmodello CU\nCertificazione Unica\ncertificazione unica\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR14-P4",
+      "group": "family:14",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 14,
+      "text": "AGENZIA DELLE ENTRATE\nCERTIFICAZIONE UNICA\nCERTIFICAZIONE UNICA\nMODELLO CU\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR14-P5",
+      "group": "family:14",
+      "category": "family_positive",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_layout",
+      "target_family_id": 14,
+      "text": "Agenzia delle Entrate\n\ncertificazione unica\n\nmodello CU\n\nCertificazione Unica\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      }
+    },
+    {
+      "id": "FR14-N1",
+      "group": "family:14",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 14,
+      "text": "INAIL\nCertificazione Unica\ncertificazione unica\nmodello CU",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR14-N2",
+      "group": "family:14",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 14,
+      "text": "Agenzia delle Entrate\nGuida\nCertificazione Unica\ncertificazione unica\nmodello CU",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR14-N3",
+      "group": "family:14",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 14,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nAgenzia delle Entrate\nCertificazione Unica\ncertificazione unica\nmodello CU\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR14-N4",
+      "group": "family:14",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 14,
+      "text": "Certificazione Unica\ncertificazione unica\nmodello CU",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR14-N5",
+      "group": "family:14",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 14,
+      "text": "INAIL\nDestinatario Agenzia delle Entrate\nCertificazione Unica\ncertificazione unica\nmodello CU",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR15-P1",
+      "group": "family:15",
+      "category": "family_positive",
+      "source": "Comune di Esempio Alfa",
+      "noise": "synthetic_layout",
+      "target_family_id": 15,
+      "text": "Comune di Esempio Alfa\nVerbale di violazione al Codice della Strada\nverbale di contestazione\ncodice della strada\npolizia locale\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      }
+    },
+    {
+      "id": "FR15-P2",
+      "group": "family:15",
+      "category": "family_positive",
+      "source": "Comune di Esempio Beta",
+      "noise": "synthetic_layout",
+      "target_family_id": 15,
+      "text": "Comune di Esempio Beta\nverbale di contestazione\ncodice della strada\npolizia locale\nVerbale di violazione al Codice della Strada\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      }
+    },
+    {
+      "id": "FR15-P3",
+      "group": "family:15",
+      "category": "family_positive",
+      "source": "Comune di Esempio Alfa",
+      "noise": "synthetic_layout",
+      "target_family_id": 15,
+      "text": "Comune di Esempio Alfa\ncodice della strada\npolizia locale\nVerbale di violazione al Codice della Strada\nverbale di contestazione\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      }
+    },
+    {
+      "id": "FR15-P4",
+      "group": "family:15",
+      "category": "family_positive",
+      "source": "Comune di Esempio Beta",
+      "noise": "synthetic_layout",
+      "target_family_id": 15,
+      "text": "COMUNE DI ESEMPIO BETA\nPOLIZIA LOCALE\nVERBALE DI VIOLAZIONE AL CODICE DELLA STRADA\nVERBALE DI CONTESTAZIONE\nCODICE DELLA STRADA\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      }
+    },
+    {
+      "id": "FR15-P5",
+      "group": "family:15",
+      "category": "family_positive",
+      "source": "Comune di Esempio Alfa",
+      "noise": "synthetic_layout",
+      "target_family_id": 15,
+      "text": "Comune di Esempio Alfa\n\nVerbale di violazione al Codice della Strada\n\nverbale di contestazione\n\ncodice della strada\n\npolizia locale\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      }
+    },
+    {
+      "id": "FR15-N1",
+      "group": "family:15",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 15,
+      "text": "INAIL\nVerbale di violazione al Codice della Strada\nverbale di contestazione\ncodice della strada\npolizia locale",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR15-N2",
+      "group": "family:15",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 15,
+      "text": "Comune di Esempio Alfa\nGuida\nVerbale di violazione al Codice della Strada\nverbale di contestazione\ncodice della strada\npolizia locale",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR15-N3",
+      "group": "family:15",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 15,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nComune di Esempio Alfa\nVerbale di violazione al Codice della Strada\nverbale di contestazione\ncodice della strada\npolizia locale\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR15-N4",
+      "group": "family:15",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 15,
+      "text": "Verbale di violazione al Codice della Strada\nverbale di contestazione\ncodice della strada\npolizia locale",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR15-N5",
+      "group": "family:15",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 15,
+      "text": "INAIL\nDestinatario Comune di Esempio Alfa\nVerbale di violazione al Codice della Strada\nverbale di contestazione\ncodice della strada\npolizia locale",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR16-P1",
+      "group": "family:16",
+      "category": "family_positive",
+      "source": "Regione Esempio Alfa",
+      "noise": "synthetic_layout",
+      "target_family_id": 16,
+      "text": "Regione Esempio Alfa\nAtto di accertamento tassa automobilistica regionale\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      }
+    },
+    {
+      "id": "FR16-P2",
+      "group": "family:16",
+      "category": "family_positive",
+      "source": "Regione Esempio Beta",
+      "noise": "synthetic_layout",
+      "target_family_id": 16,
+      "text": "Regione Esempio Beta\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni\nAtto di accertamento tassa automobilistica regionale\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      }
+    },
+    {
+      "id": "FR16-P3",
+      "group": "family:16",
+      "category": "family_positive",
+      "source": "Regione Esempio Alfa",
+      "noise": "synthetic_layout",
+      "target_family_id": 16,
+      "text": "Regione Esempio Alfa\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni\nAtto di accertamento tassa automobilistica regionale\natto di accertamento\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      }
+    },
+    {
+      "id": "FR16-P4",
+      "group": "family:16",
+      "category": "family_positive",
+      "source": "Regione Esempio Beta",
+      "noise": "synthetic_layout",
+      "target_family_id": 16,
+      "text": "REGIONE ESEMPIO BETA\nOMESSO O IRREGOLARE VERSAMENTO\nIRROGAZIONE DI SANZIONI\nATTO DI ACCERTAMENTO TASSA AUTOMOBILISTICA REGIONALE\nATTO DI ACCERTAMENTO\nTASSA AUTOMOBILISTICA REGIONALE\nFACSIMILE SINTETICO SENZA DATI PERSONALI.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      }
+    },
+    {
+      "id": "FR16-P5",
+      "group": "family:16",
+      "category": "family_positive",
+      "source": "Regione Esempio Alfa",
+      "noise": "synthetic_layout",
+      "target_family_id": 16,
+      "text": "Regione Esempio Alfa\n\nirrogazione di sanzioni\n\nAtto di accertamento tassa automobilistica regionale\n\natto di accertamento\n\ntassa automobilistica regionale\n\nomesso o irregolare versamento\n\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      }
+    },
+    {
+      "id": "FR16-N1",
+      "group": "family:16",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "wrong_issuer",
+      "target_family_id": 16,
+      "text": "INAIL\nAtto di accertamento tassa automobilistica regionale\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR16-N2",
+      "group": "family:16",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "instructions",
+      "target_family_id": 16,
+      "text": "Regione Esempio Alfa\nGuida\nAtto di accertamento tassa automobilistica regionale\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR16-N3",
+      "group": "family:16",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "body_only",
+      "target_family_id": 16,
+      "text": "Documento generico\nContesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. Contesto neutro. \nRegione Esempio Alfa\nAtto di accertamento tassa automobilistica regionale\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni\nFacsimile sintetico senza dati personali.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR16-N4",
+      "group": "family:16",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "missing_issuer",
+      "target_family_id": 16,
+      "text": "Atto di accertamento tassa automobilistica regionale\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "FR16-N5",
+      "group": "family:16",
+      "category": "family_negative",
+      "source": "synthetic",
+      "noise": "recipient_mention",
+      "target_family_id": 16,
+      "text": "INAIL\nDestinatario Regione Esempio Alfa\nAtto di accertamento tassa automobilistica regionale\natto di accertamento\ntassa automobilistica regionale\nomesso o irregolare versamento\nirrogazione di sanzioni",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R061",
+      "group": "family:4",
+      "category": "family",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "target_family_id": 4
+    }
+  ],
+  "supersedes": {
+    "corpus": "family_release_v2",
+    "reason": "The v2 generator used case-sensitive removal and did not remove the lowercase issuer line from FR01-N4. V1 and v2 inputs/results remain historical; v3 removes that line case-insensitively, without changing labels.",
+    "changes": [
+      "FR01-N4 text only; NO_MATCH label unchanged"
+    ]
+  }
+}

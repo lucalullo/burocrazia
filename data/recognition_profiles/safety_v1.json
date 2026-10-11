@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "version": "round4-1",
+  "purpose": "Technical recognition constraints; no editorial verification or new catalog identities.",
+  "exclusive_qualifiers": [["tutore", "curatore"], ["tutela", "curatela"]],
+  "family_context": {
+    "accertamento esecutivo": ["avviso di presa in carico"],
+    "avviso di addebito inps": ["crediti previdenziali", "titolo esecutivo"]
+  },
+  "weak_entity_prefixes": ["riferimento", "ai sensi", "destinatario", "trasmettere", "copia", "per conoscenza", "all", "alla", "allo", "al", "spettabile", "spett le"],
+  "boilerplate": ["modulistica aggiornata", "informativa privacy", "dati personali"]
+}

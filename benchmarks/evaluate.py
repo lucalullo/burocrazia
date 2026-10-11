@@ -100,7 +100,7 @@ def canonical_cases(documents):
 def code_hash():
     files = sorted([*ROOT.glob("src/**/*.py"), *ROOT.glob("maintenance/*.py"), *ROOT.glob("benchmarks/*.py"), ROOT/"scripts/benchmark.py", ROOT/"app.py",ROOT/"run.py"])
     features=ROOT/'data/recognition_features.json'
-    if features.is_file():files=sorted([*files,features])
+    if features.is_file():files=sorted([*files,features,*ROOT.glob('data/recognition_profiles/*.json')])
     return hashlib.sha256(b"".join(str(p.relative_to(ROOT)).replace("\\","/").encode()+b"\0"+p.read_bytes()+b"\0" for p in files)).hexdigest()
 
 
@@ -177,6 +177,12 @@ def verify_locks():
         for name,digest in json.loads(v2files.read_text(encoding='utf-8'))['sha256'].items():
             if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:
                 raise ValueError('Manifest file v2 congelato modificato: '+name)
+    for version in (1,2,3):
+        family=ROOT/f'benchmarks/manifests/family_release_locks_v{version}.json'
+        if family.exists():
+            for name,digest in json.loads(family.read_text(encoding='utf-8'))['sha256'].items():
+                if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:
+                    raise ValueError('Corpus famiglia congelato modificato: '+name)
 
 
 def main(argv=None):
@@ -195,6 +201,13 @@ def main(argv=None):
         (args.output_dir/(name+".json")).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print(name,report["summary"]["passed"],"/",report["summary"]["cases"],flush=True)
         reports.append(report)
+    if (ROOT/'benchmarks/corpora/family_release_v1.json').exists():
+        from benchmarks.round4_family import run as family_run
+        report=family_run()
+        (args.output_dir/'family_release_v3.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        # Mandatory permanent blocker, evaluated by the complete runtime too.
+        blocker=next(r for r in report['end_to_end_cases'] if r['id']=='R061')
+        if not report['gate_passed'] or not blocker['correct']:return 1
     if args.coverage:
         report=run(args.catalog,coverage=True,intervals=False)
         (args.output_dir/"catalog_coverage.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

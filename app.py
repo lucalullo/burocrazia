@@ -723,6 +723,7 @@ def show_benchmark(catalog, families):
         st.divider()
         st.text({'independent_holdout':'Holdout ufficiale indipendente','hard_negatives':'Hard negatives',
                  'real_ocr':'OCR reale','performance':'Performance'}[key])
+        if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
         if section.get('status')=='not_run':
             st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')
             continue

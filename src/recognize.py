@@ -12,6 +12,8 @@ from rapidfuzz import fuzz
 from src.title_evidence import title_windows, exact_code_candidates
 from src.text_quality import text_quality
 from src.technical_anchors import match_anchors, feature_revision
+from src.recognition_profiles import load as safety_profiles, revision as profile_revision
+from src.title_evidence import tokens as identity_tokens
 
 from src.models import (
     AdministrativeDocument,
@@ -24,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-5"
+RULES_VERSION = "deterministic-6"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -121,6 +123,8 @@ class _CatalogFeatures:
     keywords: tuple[str, ...]
     title_tokens: frozenset[str]
     acronyms: frozenset[str]
+    identity_tokens: frozenset[str]
+    annex: str | None
 
 
 @lru_cache(maxsize=4096)
@@ -140,7 +144,8 @@ def _catalog_features(document: AdministrativeDocument) -> _CatalogFeatures:
         frozenset(YEAR_PATTERN.findall(' '.join(x for x in [document.titolo_ufficiale,document.versione] if x))),
         re.compile(r'(?<!\w)'+re.escape(code)+r'(?!\w)') if code else None,tuple(contexts),
         tuple(normalize_text(k) for k in document.parole_chiave),frozenset(title.split()),
-        frozenset(normalize_text(k) for k in re.findall(r'\b[A-Z][A-Z0-9]{1,}\b',document.titolo_ufficiale)))
+        frozenset(normalize_text(k) for k in re.findall(r'\b[A-Z][A-Z0-9]{1,}\b',document.titolo_ufficiale)),frozenset(identity_tokens(title)),
+        (m.group(1) if (m:=re.match(r'^[A-Z][.]([1-9]\d?)\s+(?:Modulo|Modello)\b',document.titolo_ufficiale)) else None))
 
 
 def _contains_phrase(normalized_text: str, phrase: str | None) -> bool:
@@ -189,14 +194,72 @@ def _heading_entities(text: str, entity_names: Iterable[str]) -> frozenset[str] 
     """Prefer an issuer heading to entity names in references and model codes."""
     names = tuple(set(entity_names))
     for line in [line for line in text[:1000].splitlines() if line.strip()][:5]:
-        normalized = re.sub(r'^(?:al|alla|allo|all|spett le|spettabile)\s+','',normalize_text(line))
+        normalized = normalize_text(line)
+        if any(normalized.startswith(p+' ') for p in safety_profiles()['weak_entity_prefixes']):
+            continue
+        normalized = re.sub(r'^logo\s+', '', normalized)
+        for alias, canonical in ENTITY_ALIASES.items():
+            if normalized == alias or normalized.startswith(alias+' '):
+                return frozenset({canonical})
         detected = _detect_entities(normalized, names)
-        beginning = frozenset(e for e in detected if normalized == e or normalized.startswith(e + " "))
+        beginning = frozenset(e for e in detected if e not in {'comune', 'comuni', 'regione', 'regioni', 'enti locali'} and (normalized == e or normalized.startswith(e + " ")))
         if beginning:
             return beginning
         if re.match(r"^(?:comune di|regione|provincia di|università|universita|ministero|dipartimento|tribunale|corte di)\b", normalized):
             return frozenset({normalized})
     return None
+
+
+def _issuer_entities(text: str, entity_names: Iterable[str]) -> frozenset[str]:
+    heading = _heading_entities(text, entity_names)
+    if heading is not None:
+        return heading
+    # Unheaded body mentions and recipient addresses are not issuer evidence.
+    lines = [normalize_text(s) for s in text[:800].splitlines() if s.strip()][:5]
+    return frozenset(e for line in lines if len(line) <= 250
+                     and not any(line.startswith(p+' ') for p in safety_profiles()['weak_entity_prefixes'])
+                     for e in _detect_entities(line, entity_names)
+                     if line == e or line.startswith(e+' ') or line.startswith('logo '+e))
+
+
+@lru_cache(maxsize=16)
+def _unversioned_annual_peers(documents):
+    annual = [(d.ente, frozenset(identity_tokens(YEAR_PATTERN.sub('', d.titolo_ufficiale))))
+              for d in documents if re.fullmatch(r'(?:19|20)\d{2}', d.versione or '')]
+    return frozenset(d.id for d in documents if not d.versione and any(
+        entity == d.ente and len(base := frozenset(identity_tokens(d.titolo_ufficiale))) >= 4
+        and base <= title for entity, title in annual))
+
+
+def _qualifier_conflict(title_tokens, text_tokens):
+    for group in safety_profiles()['exclusive_qualifiers']:
+        required = set(group) & title_tokens
+        observed = set(group) & text_tokens
+        if required and observed and not required & observed:
+            return True
+    return False
+
+
+@lru_cache(maxsize=16)
+def _catalog_domains(documents):
+    domains = set()
+    for d in documents:
+        m = re.match(r'https://(?:www\.)?([^/:]+)', d.fonte_url or '')
+        if m:
+            domains.add((m.group(1).casefold(), normalize_text(d.ente)))
+    return tuple(sorted(domains))
+
+
+def _scope_entities(text, documents, entity_names):
+    # A recipient/reference alone is weak. It may corroborate a distinctive
+    # title window or eight independent metadata anchors, never establish an
+    # issuer score or overrule an explicit incompatible heading.
+    found = set(_detect_entities(normalize_text(text[:2000]), entity_names))
+    opening = text[:800].casefold()
+    for domain, entity in _catalog_domains(tuple(documents)):
+        if re.search(r'(?<![\w.-])(?:www\.)?'+re.escape(domain)+r'(?![\w.-])', opening):
+            found.add(entity)
+    return frozenset(found) if len(found) == 1 else frozenset()
 
 
 def _annual_model_years(text: str) -> dict[str, frozenset[str]]:
@@ -357,6 +420,13 @@ def _annual_version_evidence(
         consistent = observed_years == candidate_years
         return consistent and _is_plain_annual_model(document, model), not consistent
 
+    if re.fullmatch(r'(?:19|20)\d{2}', document.versione or ''):
+        labelled = set(re.findall(r'\b(?:anno|annualità|annualita|versione|revisione)\s*[:/-]?\s*((?:19|20)\d{2})\b', text, re.I))
+        if labelled:
+            return False, labelled != {document.versione}
+        contextual, _ = _generic_version_context(text, document, candidate_years, normalized_text)
+        return False, contextual != {document.versione}
+
     if not candidate_years:
         return False, False
     observed_years, model_mentioned = _generic_version_context(
@@ -410,6 +480,14 @@ def _score_candidate(
     window_title = bool(input_features and document.id in input_features.get('title_windows',{}))
     window_title = window_title and not version_conflict
     technical_title = bool(input_features and document.id in input_features.get('technical_anchors',())) and not version_conflict
+    if technical_title and not features.entity in detected_entities:
+        technical_title = len(features.identity_tokens & input_features['identity_tokens']) >= 3
+    if input_features and document.id in input_features.get('unversioned_annual_peers', ()) and input_features['identity_years']:
+        version_conflict = True
+    qualifier_conflict = _qualifier_conflict(features.title_tokens, input_features['opening_tokens'] if input_features is not None else set(identity_text.split()))
+    annex_conflict = bool(features.annex and input_features and input_features['annexes'] and input_features['annexes'] != {features.annex})
+    if qualifier_conflict:
+        technical_title = window_title = False
     if (window_title or technical_title) and document.versione:
         version=document.versione.strip()
         if re.fullmatch(r'(?:19|20)\d{2}',version):
@@ -459,12 +537,12 @@ def _score_candidate(
     )
     if annual_alias_match:
         evidence_rank = 4 if exact_code else 3
-    elif exact_code and exact_title and distinctive_title:
+    elif exact_code and (exact_title or window_title) and len(features.identity_tokens) >= 2:
+        evidence_rank = 5
+    elif exact_code:
         evidence_rank = 4
     elif (exact_title or window_title or technical_title) and distinctive_title:
         evidence_rank = 3
-    elif exact_code:
-        evidence_rank = 2
     elif (
         title_similarity >= MIN_STRONG_TITLE_SIMILARITY
         and distinctive_title
@@ -486,12 +564,26 @@ def _score_candidate(
         if (exact_title and not entity_match and not title_heading) or (not exact_title and not window_title and not technical_title and not features.acronyms.issubset(set(identity_text.split()))):
             strong_evidence = False
             evidence_rank = 0
+        # Two generic title words in legal instructions cannot establish a form.
+        if len(features.identity_tokens) < 3 and not title_heading and not annual_alias_match and not strong_keywords:
+            strong_evidence = False
+            evidence_rank = 0
     annual_model = _candidate_annual_model(document)
     identity_evidence = strong_evidence or bool(annual_model and (input_features['mentions'][annual_model] if input_features is not None else _annual_model_is_mentioned(original_text, annual_model)))
     if annual_model and not _is_plain_annual_model(document, annual_model) and exact_code and normalize_text(document.codice or "") == annual_model and not exact_title:
         strong_evidence = False
         evidence_rank = 0
     conflicts: list[str] = []
+    if annex_conflict:
+        strong_evidence = False
+        evidence_rank = 0
+        if identity_evidence:
+            conflicts.append('numero allegato incompatibile')
+    if qualifier_conflict:
+        strong_evidence = False
+        evidence_rank = 0
+        if identity_evidence:
+            conflicts.append('sottotipo incompatibile')
     if entity_conflict:
         score -= ENTITY_CONFLICT_PENALTY
         strong_evidence = False
@@ -550,7 +642,8 @@ def recognize_document(
             *DISTINCT_ENTITY_NAMES,
     )
     opening_text = normalize_text(text[:2000])
-    detected_entities = _heading_entities(text, entity_names) or _detect_entities(opening_text, entity_names)
+    detected_entities = _issuer_entities(text, entity_names)
+    scopes = detected_entities or _scope_entities(text, document_list, entity_names)
     # Request-local only: uploaded text and its derivatives are never cached.
     input_features = dict(
         revisions={v.casefold() for v in re.findall(r'\b(?:versione|version|revisione|rev\.)\s*[:=]?\s*(\d+(?:[.]\d+)+)\b', text[:2000], flags=re.I)},
@@ -559,9 +652,13 @@ def recognize_document(
         opening_tokens=frozenset(opening_text.split()),
         code_lines=tuple(normalize_text(line) for line in text[:2000].splitlines()),
         title_lines=tuple(normalize_text(line) for line in text[:800].splitlines() if line.strip())[:5],
-        title_windows=title_windows(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in detected_entities),reference=reference_full_scan),
+        title_windows=title_windows(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in scopes),reference=reference_full_scan),
         exact_code_candidates=exact_code_candidates(text,document_list,reference=reference_full_scan),
-        technical_anchors=match_anchors(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in detected_entities)),
+        technical_anchors=match_anchors(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in scopes)),
+        identity_tokens=frozenset(identity_tokens(text[:800])),
+        annexes=frozenset(re.findall(r'^\s*Allegato\s+(?:n[.]?\s*)?([1-9]\d?)\b',text[:300],re.I|re.M)),
+        unversioned_annual_peers=(_unversioned_annual_peers.__wrapped__ if reference_full_scan else _unversioned_annual_peers)(tuple(document_list)),
+        identity_years=frozenset(re.findall(r'\b(?:anno|annualità|annualita|versione|modello)\s*[:/-]?\s*((?:19|20)\d{2})\b',text[:2000],re.I)) or frozenset(re.findall(r'^\s*((?:19|20)\d{2})\s*$',text[:800],re.M)),
     )
     if reference_full_scan:
         # Reference computes the same new evidence without annual-analysis caches.
@@ -650,6 +747,10 @@ def _score_family(
         for phrase in strong_phrases
         if _contains_phrase(normalized_text, phrase)
     )
+    # Nested variants and the issuer's name are not independent type signals.
+    matched_phrases = tuple(p for p in matched_phrases
+                            if normalize_text(p) != normalize_text(family.ente)
+                            and not any(normalize_text(p) != normalize_text(q) and _contains_phrase(normalize_text(q), p) for q in matched_phrases))
     signals: list[str] = []
     identifying_phrase_count = len(matched_phrases)
     score = min(75.0, 25.0 * identifying_phrase_count)
@@ -666,14 +767,25 @@ def _score_family(
         signals.append("alias di famiglia con rumore OCR" if noisy_alias else "modello annuale; versione non attribuita")
 
     entity_match = family_entity_match
+    scope = normalize_text(family.ente)
+    if scope == 'polizia locale ente locale':
+        entity_match = any(e.startswith('comune di ') or e.startswith('comando polizia locale') for e in detected_entities)
+    elif scope == 'regione ente regionale':
+        entity_match = any(e.startswith('regione ') for e in detected_entities)
     entity_conflict = (
-        normalize_text(family.ente) not in {"comuni", "regioni", "comune", "regione", "enti locali", "polizia locale ente locale", "regione ente regionale"}
-        and bool(detected_entities)
+        bool(detected_entities)
         and not entity_match
     )
     if entity_conflict:
         conflicts = ("ente della famiglia incompatibile",) if identifying_phrase_count else ()
         return _FamilyCandidateScore(family, 0.0, 0, (), conflicts)
+    independent_tax_context = annual_alias and noisy_alias and not detected_entities and (
+        (normalized_family_name == 'modello 730' and _contains_phrase(normalized_text,'dichiarazione dei redditi'))
+        or (normalized_family_name == 'certificazione unica' and _contains_phrase(normalized_text,'sostituto d imposta')))
+    if not entity_match and not independent_tax_context:
+        return _FamilyCandidateScore(family, 0.0, 0, ())
+    if independent_tax_context:
+        signals.append('modello OCR e contesto fiscale indipendente; emittente non provato')
 
     if entity_match:
         score += 15.0
@@ -683,10 +795,24 @@ def _score_family(
     # independent fallback signal; no version or document identity is inferred.
     heading = any(line == normalized_family_name or line.startswith(normalized_family_name+' ')
                   for line in (normalize_text(s) for s in original_text[:600].splitlines() if s.strip()))
+    required_context = safety_profiles()['family_context'].get(normalized_family_name)
+    if required_context and not any(_contains_phrase(normalized_text, p) for p in required_context):
+        return _FamilyCandidateScore(family, 0.0, 0, (), ('contesto indipendente della famiglia assente',) if identifying_phrase_count else ())
+    if required_context and identifying_phrase_count and entity_match:
+        identifying_phrase_count += 1
+        score = max(85.0, score)
+        signals.append('contesto indipendente della famiglia')
     if heading and entity_match and len(normalized_family_name.split())>=4:
         identifying_phrase_count=max(2,identifying_phrase_count)
         score=max(90.0,score)
         signals.append('intestazione completa della famiglia ed ente')
+    elif entity_match and identifying_phrase_count >= 2:
+        score = max(85.0, score)
+    elif entity_match and identifying_phrase_count == 1 and len(set(identity_tokens(normalized_family_name))) >= 2 and len(set(identity_tokens(normalized_family_name)) & set(identity_tokens(matched_phrases[0]))) / len(set(identity_tokens(normalized_family_name))) >= .7:
+        # A distinctive type together with the issuer is sufficient only for
+        # these unversioned verified scopes; nested strings remain one signal.
+        identifying_phrase_count = 2
+        score = max(85.0, score)
 
     matched_keywords = sum(
         1
@@ -726,7 +852,7 @@ def recognize_document_family(
             *known_entities,
             *DISTINCT_ENTITY_NAMES,
     )
-    detected_entities = _heading_entities(text, entity_names) or _detect_entities(normalize_text(text[:2000]), entity_names)
+    detected_entities = _issuer_entities(text, entity_names)
 
     candidates = sorted(
         (
@@ -774,6 +900,7 @@ def catalog_revision(
     # of database iteration order and includes every rule-relevant field.
     catalog_signature = {
         "technical_features": feature_revision(),
+        "safety_profiles": profile_revision(),
         "documents": sorted((
             (document.id, document.ente, document.codice, document.titolo_ufficiale,
              document.versione, document.parole_chiave, document.stato_verifica)

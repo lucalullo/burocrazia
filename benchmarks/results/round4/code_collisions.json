@@ -1,0 +1,127 @@
+{
+  "policy": "Exact codes retain numeric segments. Shared codes require a distinctive supported subtype, coherent issuer and year; otherwise refusal.",
+  "groups": {
+    "730": [
+      {
+        "id": 49,
+        "title": "730/2026",
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      },
+      {
+        "id": 241,
+        "title": "Flusso modelli 730-4",
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    ],
+    "f24": [
+      {
+        "id": 81,
+        "title": "F24",
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      {
+        "id": 181,
+        "title": "F24 Accise",
+        "entity": "Agenzia delle Entrate",
+        "version": "2012"
+      },
+      {
+        "id": 182,
+        "title": "F24 Enti pubblici",
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      {
+        "id": 183,
+        "title": "F24 Semplificato",
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      {
+        "id": 184,
+        "title": "F24 crediti Pubbliche Amministrazioni",
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      {
+        "id": 230,
+        "title": "F24 Elementi identificativi (c.d. Elide)",
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    ],
+    "inl17": [
+      {
+        "id": 132,
+        "title": "Accesso civico semplice e generalizzato. Servizi Ufficio Relazioni con il Pubblico",
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      {
+        "id": 152,
+        "title": "Accesso documentale",
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    ],
+    "sr06": [
+      {
+        "id": 311,
+        "title": "Indennità di malattia, di cui all'articolo 8, comma 10 della legge 81 del 2017 (legge 335 del 1995)",
+        "entity": "INPS",
+        "version": "2.2"
+      },
+      {
+        "id": 621,
+        "title": "Indennità di malattia, di cui all'articolo 8, comma 10 della legge 81 del 2017",
+        "entity": "INPS",
+        "version": "2.15"
+      }
+    ],
+    "sc80": [
+      {
+        "id": 314,
+        "title": "Domestic work relationship: claim and deed of commitment for the deferred payment of contributions in the administrative phase (in Italian)",
+        "entity": "INPS",
+        "version": "2.6"
+      },
+      {
+        "id": 399,
+        "title": "Rapporto di lavoro domestico - Domanda e atto di impegno per il pagamento dilazionato di contributi in fase amministrativa",
+        "entity": "INPS",
+        "version": "2.6"
+      }
+    ],
+    "ap160": [
+      {
+        "id": 315,
+        "title": "Fondo di solidarietà bilaterale per la Filiera delle Telecomunicazioni - Domanda di assegno straordinario",
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      {
+        "id": 623,
+        "title": "Fondo di solidarietà bilaterale per la Filiera delle Telecomunicazioni - Domanda di assegno straordinario",
+        "entity": "INPS",
+        "version": "1.2"
+      }
+    ],
+    "en025": [
+      {
+        "id": 331,
+        "title": "Assegno temporaneo integrativo - Gestione Assistenza Magistrale",
+        "entity": "INPS",
+        "version": "1.6"
+      },
+      {
+        "id": 728,
+        "title": "Supplementary temporary allowance - Teachers and School Managers Assistance Scheme (in Italian)",
+        "entity": "INPS",
+        "version": "1.5"
+      }
+    ]
+  }
+}

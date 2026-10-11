@@ -1,0 +1,84 @@
+{
+  "case": {
+    "id": "R061",
+    "group": "family:4",
+    "category": "family",
+    "source": "Agenzia delle Entrate-Riscossione",
+    "noise": "clean",
+    "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito",
+    "expected": {
+      "match_type": "NO_MATCH"
+    }
+  },
+  "result": {
+    "match_type": "FAMILY_MATCH",
+    "confidence_document": 0.0,
+    "confidence_family": 95.0,
+    "document": null,
+    "family": {
+      "source_id": 11,
+      "ente": "Agenzia delle Entrate-Riscossione",
+      "nome": "Avviso di addebito INPS",
+      "categoria": "riscossione previdenziale",
+      "descrizione_ufficiale": "Atto notificato dall'INPS per la riscossione dei crediti previdenziali e avente valore di titolo esecutivo.",
+      "keywords": [
+        "crediti previdenziali",
+        "INPS"
+      ],
+      "identifying_phrases": [
+        "avviso di addebito inps",
+        "avviso di addebito"
+      ],
+      "official_url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 4
+    },
+    "document_signals": [],
+    "family_signals": [
+      "frasi identificative",
+      "ente",
+      "intestazione completa della famiglia ed ente",
+      "parole chiave forti"
+    ],
+    "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+    "conflicts": [],
+    "document_score_margin": null,
+    "family_score_margin": 55.0,
+    "rules_version": "deterministic-5",
+    "catalog_revision": "sha256:0e3f0590a33180685a4f25ada5249a84a075217c161363207f4c01fe6d3df2ab",
+    "candidate_ids": [],
+    "pipeline_stages": [
+      [
+        "extraction_quality",
+        "usable"
+      ],
+      [
+        "exact_code_candidates",
+        "evaluated"
+      ],
+      [
+        "entity_candidates",
+        "evaluated"
+      ],
+      [
+        "version_year_constraints",
+        "evaluated"
+      ],
+      [
+        "title_anchor_windows",
+        "evaluated"
+      ],
+      [
+        "exact_document_scoring",
+        "rejected"
+      ],
+      [
+        "family_fallback",
+        "supported"
+      ]
+    ]
+  }
+}

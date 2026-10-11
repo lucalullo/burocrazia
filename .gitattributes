@@ -15,3 +15,6 @@
 /benchmarks/manifests/*.json -text
 /maintenance/releases/** -text
 /data/baseline_v061_rows.json -text
+
+# Preserve the exact measured tool bytes in the committed freeze/archive.
+/benchmarks/round4_performance.py -text

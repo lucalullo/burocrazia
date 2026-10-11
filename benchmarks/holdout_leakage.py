@@ -4,6 +4,8 @@ from collections import defaultdict
 import hashlib
 import json
 import re
+from urllib.parse import urlsplit, urlunsplit, unquote, quote, parse_qsl, urlencode
+from maintenance.iri import iri_to_uri
 from src.recognize import normalize_text
 from src.title_evidence import tokens,compact_code
 
@@ -18,9 +20,16 @@ def template_key(item):
         title=re.sub(r'^(?:tutela minori|tutela|minori|curatela|amministratore di sostegno)\s*','',title)
     return tuple(sorted(set(tokens(title))))
 
+def canonical_url(value):
+    if not value:return None
+    p=urlsplit(iri_to_uri(value))
+    path=quote(unquote(p.path),safe="/:@!$&'()*+,;=-._~")
+    query=urlencode(sorted(parse_qsl(p.query,keep_blank_values=True)))
+    return urlunsplit((p.scheme,p.netloc,path,query,''))
+
 def collision(a,b):
     if a.get('sha256') and a['sha256']==b.get('sha256'):return 'same_file_hash'
-    if a.get('url') and a['url']==b.get('url'):return 'same_resource_url'
+    if a.get('url') and b.get('url') and canonical_url(a['url'])==canonical_url(b['url']):return 'same_resource_url'
     if a.get('document_id') is not None and identity_key(a)==identity_key(b):return 'same_document_identity'
     if a.get('entity')!=b.get('entity'):return None
     ac,bc=compact_code(a.get('code') or ''),compact_code(b.get('code') or '')

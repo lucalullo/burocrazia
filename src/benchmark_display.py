@@ -26,5 +26,9 @@ def metric_label(value):
 
 def headline_sections(summary):
     """Stable release-evidence precedence; development never fills a holdout gap."""
-    return tuple((key,summary.get(key,{'status':'not_run'})) for key in
+    values=dict(summary)
+    holdout=values.get('independent_holdout',{})
+    if holdout and holdout.get('corpus_id') != 'official_holdout_v2':
+        values['independent_holdout']={'status':'not_run','reason':'Round 4 richiede official_holdout_v2; v1 è storico.'}
+    return tuple((key,values.get(key,{'status':'not_run'})) for key in
                  ('independent_holdout','hard_negatives','real_ocr','performance'))

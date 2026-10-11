@@ -2,7 +2,13 @@
 
 ## Non rilasciato — candidata 0.7.0, 11 ottobre 2026
 
-La versione software resta 0.6.1: la candidata Round 3 resta NOT READY; risultati quantitativi e gate esterni sono in `docs/BENCHMARK.md`. Nessun tag o release.
+La versione software resta 0.6.1. Il Round 4 conserva i corpus precedenti e richiede una nuova valutazione indipendente; risultati correnti e gate esterni sono in `docs/BENCHMARK.md` e `docs/ROUND4_REPORT.md`. Nessun tag o release.
+
+- Round 4: audit dei cinque errori accettati, codici segmentati prioritari senza eliminare le ambiguità, titoli generici nel corpo non sufficienti, vincoli su peer annuali, sottotipi e numeri di allegato; emittente esplicito distinto da destinatari/riferimenti deboli;
+- R061 rifiutato con contesto indipendente per la famiglia di addebito; test positivi e negativi vicini, soglie globali conservate; 16 famiglie pregresse senza nuove verifiche editoriali;
+- stress famiglie con corpus v1 conservato e correzioni di fixture in v2/v3 motivate, più supplemento ufficiale disponibile; precisione sintetica separata dalla copertura reale;
+- freeze del motore dopo le verifiche locali, acquisizione ufficiale v2 separata e opt-in, controllo leakage canonico e unica valutazione con bootstrap 10.000; nessuna correzione del motore dopo i risultati;
+- nuova misura di latenza/RSS, OCR reale e matrice CI offline; UI richiede v2 per l'holdout indipendente e presenta v1 come storico. Nessuna espansione del catalogo.
 
 - Round 3: audit di tutti i 150 positivi ufficiali e 123 rifiuti; il campione Round 2 è development e locked v1 resta storico. Titoli in finestre, codici segmentati, vincoli espliciti di ente/versione e 88 profili tecnici riproducibili portano gli esatti da 27 a 58/150, senza accettazioni errate nel development finale;
 - conversione generale IRI→URI, diagnostica della qualità estratta e fallback OCR limitato per layer inutilizzabile; nessun trasporto operativo o cache di testo personale;
