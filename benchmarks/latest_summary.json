@@ -1,14 +1,218 @@
 {
   "schema_version": 1,
   "status": "NOT_READY",
-  "executed_at": "2026-10-11T12:13:18.426575+00:00",
-  "commit": "9cdd96f797d705632d0b6684230ebc2487d317a3",
+  "executed_at": "2026-10-11T13:55:56.313810+00:00",
+  "commit": "9f22ceaa9481630ef5f34b82fa6d07d976fbcf30",
   "catalog_count": 1216,
   "active_catalog_count": 1212,
-  "catalog_semantic_sha256": "sha256:2c72c144762c768c534a17371071991c1e14d2f12ed2f2cc9305303a45040997",
+  "catalog_semantic_sha256": "sha256:0e3f0590a33180685a4f25ada5249a84a075217c161363207f4c01fe6d3df2ab",
+  "independent_holdout": {
+    "status": "executed",
+    "summary": {
+      "cases": 177,
+      "passed": 83,
+      "failed": 94,
+      "metrics": {
+        "document_precision": {
+          "numerator": 33,
+          "denominator": 38,
+          "value": 0.868421052631579
+        },
+        "document_recall": {
+          "numerator": 33,
+          "denominator": 127,
+          "value": 0.25984251968503935
+        },
+        "document_f1": {
+          "numerator": 66,
+          "denominator": 165,
+          "value": 0.4
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 33,
+          "denominator": 127,
+          "value": 0.25984251968503935
+        },
+        "useful_coverage": {
+          "numerator": 33,
+          "denominator": 127,
+          "value": 0.25984251968503935
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 50,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 50,
+          "denominator": 50,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 89,
+          "denominator": 127,
+          "value": 0.7007874015748031
+        },
+        "entity_error_rate": {
+          "numerator": 1,
+          "denominator": 38,
+          "value": 0.02631578947368421
+        },
+        "version_year_error_rate": {
+          "numerator": 2,
+          "denominator": 38,
+          "value": 0.05263157894736842
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 38,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 89
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 50
+        }
+      },
+      "latency_ms": {
+        "p50": 335.673,
+        "p95": 446.523,
+        "p99": 485.4143
+      }
+    }
+  },
+  "hard_negatives": {
+    "status": "executed",
+    "summary": {
+      "cases": 100,
+      "passed": 100,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 100
+        }
+      },
+      "latency_ms": {
+        "p50": 5.4355,
+        "p95": 77.3923,
+        "p99": 84.1518
+      }
+    }
+  },
+  "real_ocr": {
+    "status": "executed",
+    "result": "Legacy 7/7; v2 14/14; residui 0"
+  },
+  "performance": {
+    "status": "executed",
+    "p50_ratio": 1.1473217686738422,
+    "p95_ratio": 1.20844223077843
+  },
+  "ocr_status": "Tesseract reale, legacy 7/7, v2 14/14",
   "evaluations": [
     {
-      "name": "burocrazia-synthetic-text-regression-2026-09-05",
+      "name": "Regressione sintetica",
       "status": "executed",
       "summary": {
         "cases": 35,
@@ -99,19 +303,19 @@
           }
         },
         "latency_ms": {
-          "p50": 32.441,
-          "p95": 45.8166,
+          "p50": 38.53,
+          "p95": 51.7406,
           "p99": null
         }
       }
     },
     {
-      "name": "burocrazia-release-locked-v1",
+      "name": "Locked v1 storico",
       "status": "executed",
       "summary": {
         "cases": 69,
-        "passed": 59,
-        "failed": 10,
+        "passed": 60,
+        "failed": 9,
         "metrics": {
           "document_precision": {
             "numerator": 54,
@@ -129,19 +333,19 @@
             "value": 0.9310344827586207
           },
           "family_precision": {
-            "numerator": 5,
-            "denominator": 5,
+            "numerator": 6,
+            "denominator": 6,
             "value": 1.0
           },
           "family_recall": {
-            "numerator": 5,
+            "numerator": 6,
             "denominator": 9,
-            "value": 0.5555555555555556
+            "value": 0.6666666666666666
           },
           "family_f1": {
-            "numerator": 10,
-            "denominator": 14,
-            "value": 0.7142857142857143
+            "numerator": 12,
+            "denominator": 15,
+            "value": 0.8
           },
           "exact_document_coverage": {
             "numerator": 54,
@@ -149,9 +353,9 @@
             "value": 0.9
           },
           "useful_coverage": {
-            "numerator": 59,
+            "numerator": 60,
             "denominator": 69,
-            "value": 0.855072463768116
+            "value": 0.8695652173913043
           },
           "unknown_false_acceptance_rate": {
             "numerator": 0,
@@ -164,13 +368,13 @@
             "value": null
           },
           "supported_rejection_rate": {
-            "numerator": 8,
+            "numerator": 7,
             "denominator": 69,
-            "value": 0.11594202898550725
+            "value": 0.10144927536231885
           },
           "entity_error_rate": {
             "numerator": 0,
-            "denominator": 61,
+            "denominator": 62,
             "value": 0.0
           },
           "version_year_error_rate": {
@@ -187,8 +391,8 @@
           },
           "FAMILY_MATCH": {
             "DOCUMENT_MATCH": 2,
-            "FAMILY_MATCH": 5,
-            "NO_MATCH": 2
+            "FAMILY_MATCH": 6,
+            "NO_MATCH": 1
           },
           "NO_MATCH": {
             "DOCUMENT_MATCH": 0,
@@ -197,19 +401,19 @@
           }
         },
         "latency_ms": {
-          "p50": 65.681,
-          "p95": 168.8428,
+          "p50": 82.322,
+          "p95": 187.6486,
           "p99": null
         }
       }
     },
     {
-      "name": "burocrazia-release-locked-v2",
+      "name": "Locked v2 sviluppo",
       "status": "executed",
       "summary": {
         "cases": 69,
-        "passed": 69,
-        "failed": 0,
+        "passed": 68,
+        "failed": 1,
         "metrics": {
           "document_precision": {
             "numerator": 56,
@@ -228,8 +432,8 @@
           },
           "family_precision": {
             "numerator": 5,
-            "denominator": 5,
-            "value": 1.0
+            "denominator": 6,
+            "value": 0.8333333333333334
           },
           "family_recall": {
             "numerator": 5,
@@ -238,8 +442,8 @@
           },
           "family_f1": {
             "numerator": 10,
-            "denominator": 10,
-            "value": 1.0
+            "denominator": 11,
+            "value": 0.9090909090909091
           },
           "exact_document_coverage": {
             "numerator": 56,
@@ -252,14 +456,14 @@
             "value": 1.0
           },
           "unknown_false_acceptance_rate": {
-            "numerator": 0,
+            "numerator": 1,
             "denominator": 8,
-            "value": 0.0
+            "value": 0.125
           },
           "unknown_correct_rejection_rate": {
-            "numerator": 8,
+            "numerator": 7,
             "denominator": 8,
-            "value": 1.0
+            "value": 0.875
           },
           "supported_rejection_rate": {
             "numerator": 0,
@@ -290,235 +494,39 @@
           },
           "NO_MATCH": {
             "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 8
+            "FAMILY_MATCH": 1,
+            "NO_MATCH": 7
           }
         },
         "latency_ms": {
-          "p50": 31.031,
-          "p95": 90.3164,
+          "p50": 85.239,
+          "p95": 180.4384,
           "p99": null
         }
       }
     },
     {
-      "name": "burocrazia-hard-negatives-v1",
-      "status": "executed",
-      "summary": {
-        "cases": 30,
-        "passed": 30,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "useful_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 30,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 30,
-            "denominator": 30,
-            "value": 1.0
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 30
-          }
-        },
-        "latency_ms": {
-          "p50": 54.781,
-          "p95": 82.6872,
-          "p99": null
-        }
-      }
-    },
-    {
-      "name": "burocrazia-hard-negatives-v2",
-      "status": "executed",
-      "summary": {
-        "cases": 100,
-        "passed": 100,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "useful_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 100,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 100,
-            "denominator": 100,
-            "value": 1.0
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 100
-          }
-        },
-        "latency_ms": {
-          "p50": 2.3175,
-          "p95": 36.5104,
-          "p99": 38.4689
-        }
-      }
-    },
-    {
-      "name": "catalog-canonical-coverage-v1",
+      "name": "Canonico metadati",
       "status": "executed",
       "summary": {
         "cases": 1212,
-        "passed": 1191,
-        "failed": 21,
+        "passed": 1162,
+        "failed": 50,
         "metrics": {
           "document_precision": {
-            "numerator": 1191,
-            "denominator": 1191,
+            "numerator": 1162,
+            "denominator": 1162,
             "value": 1.0
           },
           "document_recall": {
-            "numerator": 1191,
+            "numerator": 1162,
             "denominator": 1212,
-            "value": 0.9826732673267327
+            "value": 0.9587458745874587
           },
           "document_f1": {
-            "numerator": 2382,
-            "denominator": 2403,
-            "value": 0.9912609238451935
+            "numerator": 2324,
+            "denominator": 2374,
+            "value": 0.97893850042123
           },
           "family_precision": {
             "numerator": 0,
@@ -536,14 +544,14 @@
             "value": null
           },
           "exact_document_coverage": {
-            "numerator": 1191,
+            "numerator": 1162,
             "denominator": 1212,
-            "value": 0.9826732673267327
+            "value": 0.9587458745874587
           },
           "useful_coverage": {
-            "numerator": 1191,
+            "numerator": 1162,
             "denominator": 1212,
-            "value": 0.9826732673267327
+            "value": 0.9587458745874587
           },
           "unknown_false_acceptance_rate": {
             "numerator": 0,
@@ -556,26 +564,26 @@
             "value": null
           },
           "supported_rejection_rate": {
-            "numerator": 21,
+            "numerator": 50,
             "denominator": 1212,
-            "value": 0.017326732673267328
+            "value": 0.041254125412541254
           },
           "entity_error_rate": {
             "numerator": 0,
-            "denominator": 1191,
+            "denominator": 1162,
             "value": 0.0
           },
           "version_year_error_rate": {
             "numerator": 0,
-            "denominator": 1191,
+            "denominator": 1162,
             "value": 0.0
           }
         },
         "confusion_matrix": {
           "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 1191,
+            "DOCUMENT_MATCH": 1162,
             "FAMILY_MATCH": 0,
-            "NO_MATCH": 21
+            "NO_MATCH": 50
           },
           "FAMILY_MATCH": {
             "DOCUMENT_MATCH": 0,
@@ -589,34 +597,34 @@
           }
         },
         "latency_ms": {
-          "p50": 61.5405,
-          "p95": 113.4299,
-          "p99": 154.3081
+          "p50": 82.804,
+          "p95": 135.971,
+          "p99": 174.4915
         }
       }
     },
     {
-      "name": "official-local-v2",
+      "name": "Official development v2",
       "status": "executed",
       "summary": {
         "cases": 162,
-        "passed": 39,
-        "failed": 123,
+        "passed": 70,
+        "failed": 92,
         "metrics": {
           "document_precision": {
-            "numerator": 27,
-            "denominator": 27,
+            "numerator": 58,
+            "denominator": 58,
             "value": 1.0
           },
           "document_recall": {
-            "numerator": 27,
+            "numerator": 58,
             "denominator": 150,
-            "value": 0.18
+            "value": 0.38666666666666666
           },
           "document_f1": {
-            "numerator": 54,
-            "denominator": 177,
-            "value": 0.3050847457627119
+            "numerator": 116,
+            "denominator": 208,
+            "value": 0.5576923076923077
           },
           "family_precision": {
             "numerator": 0,
@@ -625,23 +633,23 @@
           },
           "family_recall": {
             "numerator": 0,
-            "denominator": 0,
-            "value": null
+            "denominator": 1,
+            "value": 0.0
           },
           "family_f1": {
             "numerator": 0,
-            "denominator": 0,
-            "value": null
+            "denominator": 1,
+            "value": 0.0
           },
           "exact_document_coverage": {
-            "numerator": 27,
+            "numerator": 58,
             "denominator": 150,
-            "value": 0.18
+            "value": 0.38666666666666666
           },
           "useful_coverage": {
-            "numerator": 27,
+            "numerator": 58,
             "denominator": 150,
-            "value": 0.18
+            "value": 0.38666666666666666
           },
           "unknown_false_acceptance_rate": {
             "numerator": 0,
@@ -654,26 +662,26 @@
             "value": 1.0
           },
           "supported_rejection_rate": {
-            "numerator": 123,
+            "numerator": 92,
             "denominator": 150,
-            "value": 0.82
+            "value": 0.6133333333333333
           },
           "entity_error_rate": {
             "numerator": 0,
-            "denominator": 27,
+            "denominator": 58,
             "value": 0.0
           },
           "version_year_error_rate": {
             "numerator": 0,
-            "denominator": 27,
+            "denominator": 58,
             "value": 0.0
           }
         },
         "confusion_matrix": {
           "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 27,
+            "DOCUMENT_MATCH": 58,
             "FAMILY_MATCH": 0,
-            "NO_MATCH": 123
+            "NO_MATCH": 92
           },
           "FAMILY_MATCH": {
             "DOCUMENT_MATCH": 0,
@@ -687,110 +695,11 @@
           }
         },
         "latency_ms": {
-          "p50": 323.9935,
-          "p95": 1375.1377,
-          "p99": 3037.9878
-        }
-      }
-    },
-    {
-      "name": "ocr-synthetic-v2",
-      "status": "executed",
-      "summary": {
-        "cases": 14,
-        "passed": 14,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 14,
-            "denominator": 14,
-            "value": 1.0
-          },
-          "document_recall": {
-            "numerator": 14,
-            "denominator": 14,
-            "value": 1.0
-          },
-          "document_f1": {
-            "numerator": 28,
-            "denominator": 28,
-            "value": 1.0
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 14,
-            "denominator": 14,
-            "value": 1.0
-          },
-          "useful_coverage": {
-            "numerator": 14,
-            "denominator": 14,
-            "value": 1.0
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 14,
-            "value": 0.0
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 14,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 14,
-            "value": 0.0
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 14,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          }
-        },
-        "latency_ms": {
-          "p50": 123.101,
-          "p95": 320.6619,
-          "p99": null
+          "p50": 306.5095,
+          "p95": 416.6877,
+          "p99": 469.9481
         }
       }
     }
-  ],
-  "ocr_status": "Tesseract reale tesseract v5.4.0.20240606: 7/7 legacy; 14/14 sintetici; residui gate 0"
+  ]
 }

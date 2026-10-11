@@ -1,5 +1,7 @@
 # Censimento delle fonti
 
+Round 3 non espande fonti, identità o IPA. Il campione ufficiale Round 2 è development; il nuovo holdout viene acquisito dopo il freeze con manifest, hash e controllo leakage separati. Gli esiti attuali sono in `BENCHMARK.md`: v1 storico non è più un gate indipendente; restano i limiti reali, R061 del locked v2 e la CI esterna. I censimenti seguenti conservano la provenienza Round 1/2.
+
 Round 2 riconcilia le osservazioni Round 1; non dichiara nuovi censimenti. Le sette colonne da `already_present` a `excluded_other` costituiscono una partizione delle voci osservate: la somma deve uguagliare `discovered_total`. `final_active_identities` è uno stock separato. Una risorsa PDF/DOCX o una traduzione duplicata non aumenta le identità. `updated_existing` misura sostituzioni applicate nella raccolta Round 1, non le differenze osservate né le decisioni tecniche successive.
 
 | source_key | discovered_total | already_present | new_identity | updated_existing | duplicate_resource | excluded_non_document | excluded_untrusted | excluded_other | final_active_identities |

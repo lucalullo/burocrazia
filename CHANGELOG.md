@@ -9,6 +9,7 @@ La versione software resta 0.6.1: la candidata Round 3 resta NOT READY; risultat
 - protocollo holdout con congelamento del runtime prima dell'acquisizione, controllo leakage e unica prima valutazione, compresi gli errori di estrazione nei denominatori; nessuna nuova identità o famiglia verificata;
 - misure alternate di latenza e processi distinti per RSS, catalogo e indici; audit dei tre gruppi identità e otto URL condivisi, senza fusioni automatiche;
 - UI con precedenza a holdout, negativi, OCR e prestazioni; CI multipiattaforma resta un gate esterno non eseguito. Limiti, raw e piano Round 4 pubblicati nella candidata.
+- gate testuale v2 68/69: R061 è un'accettazione di famiglia errata; il risultato è arrivato dopo il freeze ed è conservato come blocco aggiuntivo, con release-fast exit 1. Nessuna etichetta o soglia viene cambiata per rimuoverlo.
 
 - Round 2: audit della baseline e dei dieci fallimenti locked; v1 immutato, v2 con dieci etichette motivate; 100 hard negatives sintetici e campione di 150 moduli più 12 negativi ufficiali, senza redistribuire file;
 - disambiguazione dei titoli completi rispetto ai loro sottotitoli letterali; analisi annualità per richiesta e cache dei soli metadati; riferimento full scan e test differenziale anche canonico;

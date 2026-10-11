@@ -252,7 +252,7 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Il Round 2 resta **NOT READY**; versione software 0.6.1. Il catalogo conserva 1.216 record reali: 1.212 operativi e quattro rifiutati tecnicamente con autore/storico. V1 congelato 59/69; v2 riconciliato esplicitamente 69/69; hard negatives 100/100. Tesseract reale: 7/7 legacy e 14/14 OCR sintetici. Il campione ufficiale contiene 150 moduli attesi e 12 negativi reali; zero identificazioni errate dopo le correzioni, con recall basso. Prestazioni alternate, raw, statistica e gate residui sono in [docs/BENCHMARK.md](docs/BENCHMARK.md). CI GitHub non eseguita; release-fast conserva il fallimento v1. Ulteriore espansione rinviata.
+Prima misura indipendente: **33/127 esatti**, precisione documentale **86,84%**, **cinque accettazioni errate**; 50/50 negativi rifiutati. Sei fonti positive e concentrazione massima 29,13% non raggiungono gli obiettivi del campione. Locked v2 è 68/69 (R061); release-fast exit 1. Il Round 3 resta **NOT READY**; software 0.6.1. Official development: 58/150 identificazioni esatte (38,67%), zero accettazioni errate e nessun fallback utile. Prima valutazione holdout indipendente, hard negatives, OCR reale, prestazioni/RSS e gate residui sono in [docs/BENCHMARK.md](docs/BENCHMARK.md). Locked v1 è storico; v2 è sviluppo. CI GitHub multipiattaforma `pending_external_gate`. Nessuna ulteriore espansione, push, tag o release.
 
 ## Test
 

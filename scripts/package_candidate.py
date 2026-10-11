@@ -33,6 +33,9 @@ def main():
             for key,digest in values.items():
                 path=key if '/' in key else 'benchmarks/corpora/'+key
                 assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+        frozen=json.loads(archive.read('BurOCRazia/benchmarks/manifests/official_holdout_locks_v1.json'))
+        for path,digest in frozen['sha256'].items():
+            assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
         package=json.loads(archive.read('BurOCRazia/maintenance/releases/2026-10-11/manifest.json'))
         for item in package['files']:
             raw=archive.read('BurOCRazia/maintenance/releases/2026-10-11/'+item['path'])

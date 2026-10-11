@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "policy": "Immutable after the single first evaluation; fixes require a new cycle and corpus.",
+  "sha256": {
+    "benchmarks/manifests/official_holdout_v1.json": "ca460b1873c33f59b8953b092f990c857614cc9d8f8783d7970353d9dc8170e5",
+    "benchmarks/results/round3/official_holdout_v1.json": "97c31c72e52be70ae8b6aaa54fc0c8a7b13588fc15bb9094603b59d085b79485",
+    "benchmarks/results/round3/engine_freeze.json": "8e2379c4c593736282ad1cd97512fcb6b4377d4462dabd1d5eef5177e85ad020",
+    "benchmarks/results/round3/holdout_manifest_initial.json": "057316ef7451a9ab49af0c7fa74dc3584e92af2cdc1af169bf2a2a815797c28f",
+    "benchmarks/results/round3/holdout_negative_amendment.json": "15cc0a9437257c2e637c48762046c28f83f85145d4bcebacbf60659be28b5fcf"
+  }
+}

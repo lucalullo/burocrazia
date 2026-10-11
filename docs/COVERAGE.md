@@ -1,5 +1,7 @@
 # Copertura della candidata
 
+Round 3 non modifica il catalogo: 1.216 record reali conservati, 1.212 operativi, quattro rifiutati con storico/provenienza. Nessuna identità o famiglia verificata aggiunta. La copertura canonica del nuovo motore è **1.162/1.212** (prima 1.191/1.212), zero identità errate: i vincoli più prudenti introducono ulteriori rifiuti. È autocopertura sintetica dei metadati, distinta dal development ufficiale 58/150 e dal primo holdout indipendente 33/127 con cinque identificazioni errate. Non si dichiara riconoscibile ogni record censito; gate e dettagli in `BENCHMARK.md`.
+
 Generato da `python scripts/release_report.py`. Catalogo `790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99`.
 
 | Misura | Baseline 0.6.1 | Candidata |

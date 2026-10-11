@@ -1,0 +1,23 @@
+{
+  "method": "Unweighted mean over sources with a defined denominator; not pooled micro metrics.",
+  "metrics": {
+    "official_development_v2": {
+      "document_precision": 1.0,
+      "document_recall": 0.5004046587817202,
+      "document_f1": 0.5924043630320281,
+      "family_precision": null,
+      "family_recall": 0.0,
+      "family_f1": 0.0,
+      "useful_coverage": 0.5004046587817202
+    },
+    "official_holdout_v1": {
+      "document_precision": 0.9059065934065934,
+      "document_recall": 0.3765422932089599,
+      "document_f1": 0.4953117380703587,
+      "family_precision": null,
+      "family_recall": null,
+      "family_f1": null,
+      "useful_coverage": 0.3765422932089599
+    }
+  }
+}

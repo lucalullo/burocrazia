@@ -1,5 +1,7 @@
 # Acquisizione tecnica separata dal runtime
 
+Round 3: nessun aggiornamento del catalogo. La manutenzione converte IRI in URI prima della policy HTTPS, con IDNA host e percent-encoding UTF-8 di percorso/query/frammento, preservando gli escape validi; domini, redirect, robots, dimensioni, tempi e blocchi restano applicati. Otto errori ASCII Round 2 hanno test dedicati, senza promettere l'accessibilità delle risorse. Il protocollo holdout è separato e documentato in `benchmarks/README.md`.
+
 Riferimento: 11 ottobre 2026. L'applicazione avviata con `run.py` resta locale; i trasporti degli importatori legacy restano disabilitati. Nessun codice di rete di `maintenance/` viene importato dall'app. Il seed non sostituisce un database operativo già presente.
 
 ## Ripetere un censimento

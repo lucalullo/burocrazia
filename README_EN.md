@@ -252,7 +252,7 @@ See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 2 remains **NOT READY**; software version stays 0.6.1. The catalog retains 1,216 real records: 1,212 active and four technically rejected with author/history. Frozen v1 is 59/69; explicitly reconciled v2 is 69/69; hard negatives 100/100. Real Tesseract: 7/7 legacy and 14/14 synthetic OCR. The official sample contains 150 expected forms plus 12 real negatives; zero wrong identifications after safety fixes, with low recall. Paired performance, raw results, statistics and remaining gates are in [docs/BENCHMARK.md](docs/BENCHMARK.md). GitHub CI has not run; release-fast keeps its v1 failure. Further catalog expansion is deferred.
+First independent evaluation: **33/127 exact**, document precision **86.84%**, **five wrong acceptances**; all 50 negatives rejected. Six positive sources and 29.13% maximum concentration miss the sampling targets. Locked v2 is 68/69 (R061); release-fast exits 1. Round 3 remains **NOT READY**; software stays 0.6.1. Official development: 58/150 exact matches (38.67%), zero wrong acceptances, no useful family fallback. The first independent holdout, hard negatives, real OCR, performance/RSS and remaining gates are reported in [docs/BENCHMARK.md](docs/BENCHMARK.md). Locked v1 is historical; v2 is development. GitHub cross-platform CI remains `pending_external_gate`. No further catalog expansion, push, tag or release.
 
 ## Tests
 
