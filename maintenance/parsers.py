@@ -14,7 +14,7 @@ from src.importers.lavoro import parse_lavoro_html
 from src.recognize import normalize_text
 
 FILES = re.compile(r"\.(pdf|docx?|odt|rtf|xlsx?)(?:[/?#]|$)", re.I)
-EXCLUDED = re.compile(r"\b(manuale|manuali|istruzioni|guida|guide|tutorial|circolare|regolamento|normativa|comunicato|informativa|specifiche tecniche|accordo|decreto|direttiva|elenco nazionale|tabella|glossario)\b", re.I)
+EXCLUDED = re.compile(r"\b(faq|domande frequenti|manuale|manuali|istruzioni|guida|guide|tutorial|circolare|regolamento|normativa|comunicato|informativa|specifiche tecniche|accordo|decreto|direttiva|elenco nazionale|tabella|glossario)\b", re.I)
 FORM = re.compile(r"\b(modul\w*|modell\w*|istanza|domanda|richiesta|dichiarazione|certificat\w*|delega|autocertificaz\w*|scia|cila|denuncia|comunicazione|allegato)\b", re.I)
 
 

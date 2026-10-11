@@ -1,7 +1,7 @@
 {
   "catalog_version": "2026.10.11-round2-candidate",
   "source": "Acquisizione tecnica da fonti ufficiali; confronto per riga con v0.6.1; nessuna nuova revisione umana",
-  "sha256": "658b0ea235ecc7078b252ae0211e0f1c8b17dbcea3bb7c15400887c7146e4947",
+  "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
   "tables": {
     "documents": 1226,
     "sources": 19,
@@ -19,9 +19,9 @@
   "acquisition_package_sha256": "fd7844b234df9c46bb75eef65072757d23c62666af0ce3d69938c0cafeae974c",
   "history_migration": {
     "schema": 610,
-    "source_snapshot_sha256": "940de77211bae70cb37898dc321eb6f0756dcf3ea6dd7ea932097fd113ac3e4b",
+    "source_snapshot_sha256": "658b0ea235ecc7078b252ae0211e0f1c8b17dbcea3bb7c15400887c7146e4947",
     "kind": "Additive actual receipt observations; explicit technical rejection with author/history, no verification or inferred replacement"
   },
-  "rejected_documents": 1,
-  "active_real_documents": 1215
+  "rejected_documents": 4,
+  "active_real_documents": 1212
 }

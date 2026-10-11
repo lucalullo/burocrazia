@@ -39,17 +39,22 @@ def test_observations_are_append_only_and_retry_is_idempotent(tmp_path):
         with pytest.raises(ValueError):append_observation(db,**dict(kw,observer=''))
         with pytest.raises(ValueError):append_observation(db,**dict(kw,listing_sha256='invalid'))
 
-def test_confirmed_informational_record_is_retained_with_technical_rejection():
+@pytest.mark.parametrize('identifier',[429,1077,1081,1091])
+def test_confirmed_informational_record_is_retained_with_technical_rejection(identifier):
     from pathlib import Path
     from src.recognize import recognize_catalog
     from src.database import list_documents
     from src.families import list_document_families
     root=Path(__file__).resolve().parents[1]
     with connect_database(root/'data/catalog_seed.sqlite3') as db:
-        doc=db.execute('SELECT * FROM documents WHERE id=429').fetchone()
+        doc=db.execute('SELECT * FROM documents WHERE id=?',(identifier,)).fetchone()
         assert doc['stato_verifica']=='rifiutato'
-        event=db.execute("SELECT * FROM review_events WHERE entity_type='document' AND entity_id=429").fetchone()
+        event=db.execute("SELECT * FROM review_events WHERE entity_type='document' AND entity_id=?",(identifier,)).fetchone()
         assert event['reviewer']=='Codex - audit tecnico automatico Round 2' and event['decision']=='rifiutato'
         assert 'SHA-256' in event['notes'] and 'non revisione umana' in event['notes']
         result=recognize_catalog(doc['ente']+'\n'+doc['titolo_ufficiale'],list_documents(db),list_document_families(db))
-        assert not result.document or result.document.id!=429
+        assert not result.document or result.document.id!=identifier
+
+def test_faq_is_never_imported_as_a_form():
+    from maintenance.parsers import classify
+    assert classify('Faq interventi del modello OT23 /2027',collection_is_forms=True)=='other'
