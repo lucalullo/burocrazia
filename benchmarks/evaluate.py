@@ -165,6 +165,16 @@ def verify_locks():
     for name,digest in file_locks.items():
         if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:
             raise ValueError('Manifest file congelato modificato: '+name)
+    v2=ROOT/'benchmarks/manifests/corpus_locks_v2.json'
+    if v2.exists():
+        for name,digest in json.loads(v2.read_text(encoding='utf-8'))['sha256'].items():
+            if hashlib.sha256((ROOT/'benchmarks/corpora'/name).read_bytes()).hexdigest()!=digest:
+                raise ValueError('Corpus v2 congelato modificato: '+name)
+    v2files=ROOT/'benchmarks/manifests/file_corpus_locks_v2.json'
+    if v2files.exists():
+        for name,digest in json.loads(v2files.read_text(encoding='utf-8'))['sha256'].items():
+            if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:
+                raise ValueError('Manifest file v2 congelato modificato: '+name)
 
 
 def main(argv=None):
@@ -178,7 +188,7 @@ def main(argv=None):
     verify_locks()
     args.output_dir.mkdir(parents=True,exist_ok=True)
     reports=[]
-    for name in ["development_regression","release_locked_v1","hard_negatives_v1"]:
+    for name in ["development_regression","release_locked_v1","hard_negatives_v1","release_locked_v2","hard_negatives_v2"]:
         report=run(args.catalog,ROOT/"benchmarks/corpora"/(name+".json"),intervals=not (args.no_intervals or args.fast))
         (args.output_dir/(name+".json")).write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print(name,report["summary"]["passed"],"/",report["summary"]["cases"],flush=True)

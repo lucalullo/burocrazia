@@ -2,7 +2,13 @@
 
 ## Non rilasciato — candidata 0.7.0, 11 ottobre 2026
 
-La versione software resta 0.6.1: gate di precisione, OCR reale e CI multipiattaforma non ancora dimostrati. Nessun tag o release.
+La versione software resta 0.6.1: la candidata Round 2 resta NOT READY; risultati quantitativi e gate esterni sono in `docs/BENCHMARK.md`. Nessun tag o release.
+
+- Round 2: audit della baseline e dei dieci fallimenti locked; v1 immutato, v2 con dieci etichette motivate; 100 hard negatives sintetici e campione di 150 moduli più 12 negativi ufficiali, senza redistribuire file;
+- disambiguazione dei titoli completi rispetto ai loro sottotitoli letterali; analisi annualità per richiesta e cache dei soli metadati; riferimento full scan e test differenziale anche canonico;
+- Tesseract reale 5.4 con ita/eng/osd: 7/7 gate storici e 14/14 OCR sintetici, zero residui del gate; configurazione locale riproducibile con hash;
+- schema 610 aggiuntivo: 1.078 osservazioni tecniche, 232 differenze conservate senza sovrascrittura, zero sostituzioni/revisioni inventate; tutte le righe Round 1 confrontate e preservate;
+- catalogo fermo a 1.216 identità reali: l'espansione ulteriore è subordinata ai gate di qualità.
 
 - catalogo: 1.216 documenti reali (+827), 10 demo, 16 famiglie, 19 fonti e 2.499 enti IPA; tutte le righe preesistenti conservate;
 - manutenzione HTTPS separata e opt-in, policy domini/robots/redirect, parser offline, ricevute con hash e import tramite pacchetto transazionale;

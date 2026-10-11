@@ -21,6 +21,8 @@ def verify(path: Path) -> dict:
             "foreign_key_violations": [list(row) for row in db.execute("PRAGMA foreign_key_check")],
             "tables": counts,
             "real_documents": db.execute("SELECT count(*) FROM documents WHERE stato_verifica <> 'demo'").fetchone()[0],
+            "active_real_documents": db.execute("SELECT count(*) FROM documents WHERE stato_verifica NOT IN ('demo','rifiutato')").fetchone()[0],
+            "rejected_real_documents": db.execute("SELECT count(*) FROM documents WHERE stato_verifica = 'rifiutato'").fetchone()[0],
             "demo_documents": db.execute("SELECT count(*) FROM documents WHERE stato_verifica = 'demo'").fetchone()[0],
             "real_documents_without_provenance": db.execute("SELECT count(*) FROM documents d WHERE stato_verifica <> 'demo' AND NOT EXISTS (SELECT 1 FROM document_provenance p WHERE p.document_id=d.id)").fetchone()[0],
             "unverified_explanations": db.execute("SELECT count(*) FROM document_explanations WHERE verification_status <> 'verificato'").fetchone()[0],

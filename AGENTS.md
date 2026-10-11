@@ -6,6 +6,8 @@ La candidata successiva conserva questi vincoli. La rete è ammessa soltanto neg
 
 Conserva i corpus congelati e i loro hash; una correzione delle etichette richiede una nuova versione motivata. Misura separatamente regressione, copertura canonica, negativi, OCR sintetico con Tesseract reale e file ufficiali. I titoli/emittenti oltre i primi 2.000 caratteri non costituiscono prove forti di identità; la cache del motore contiene soltanto metadati del catalogo.
 
+Round 2 conserva v1 e pubblica v2 con motivazioni esplicite; non sostituire le metriche v1 con quelle v2. Schema 610: osservazioni tecniche e prove di sostituzione sono aggiuntive e immutabili; non modificano automaticamente documento, provenienza storica o stato editoriale. Le date provengono dalle ricevute effettive, senza inventare eventi precedenti. Il percorso di riferimento full scan resta disponibile per i test differenziali; nessun testo caricato entra nelle cache.
+
 - Mantieni l'applicazione locale e deterministica: nessun LLM, API esterna, telemetria, trasporto HTTP operativo, browser automation applicativa o autenticazione cloud.
 - Conserva OCR locale, catalogo completo, identificativi, fonti, famiglie e provenienza. Non sostituire il progetto con una demo ridotta.
 - Usa `run.py` per avviare su loopback. Non riattivare gli importatori live: i parser accettano soltanto fixture o input locali; gli aggiornamenti passano da pacchetti con anteprima/hash/transazioni.

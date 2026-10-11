@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "corpus_id": "ocr-synthetic-v2",
+  "synthetic": true,
+  "purpose": "Contrasti/orientamenti sintetici; motore Tesseract reale richiesto. Rasterizzazione MuPDF Helvetica.",
+  "cases": [
+    {
+      "id": "OCR1",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {},
+      "format": "PNG",
+      "noise": "upright"
+    },
+    {
+      "id": "OCR2",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "angle": 90
+      },
+      "format": "PNG",
+      "noise": "90"
+    },
+    {
+      "id": "OCR3",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "angle": 180
+      },
+      "format": "PNG",
+      "noise": "180"
+    },
+    {
+      "id": "OCR4",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "angle": 270
+      },
+      "format": "PNG",
+      "noise": "270"
+    },
+    {
+      "id": "OCR5",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "contrast": 0.35
+      },
+      "format": "PNG",
+      "noise": "contrast"
+    },
+    {
+      "id": "OCR6",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "blur": 1.2
+      },
+      "format": "PNG",
+      "noise": "blur"
+    },
+    {
+      "id": "OCR7",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {},
+      "format": "JPEG",
+      "noise": "jpeg"
+    },
+    {
+      "id": "OCR8",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "crop": true
+      },
+      "format": "PNG",
+      "noise": "crop"
+    },
+    {
+      "id": "OCR9",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "scale": 0.6
+      },
+      "format": "PNG",
+      "noise": "small"
+    },
+    {
+      "id": "OCR10",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "scale": 1.2
+      },
+      "format": "PNG",
+      "noise": "large"
+    },
+    {
+      "id": "OCR11",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {},
+      "format": "PDF",
+      "noise": "scan"
+    },
+    {
+      "id": "OCR12",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modu1o di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modu1o di prova per verifica OCR locale.",
+      "transform": {},
+      "format": "PNG",
+      "noise": "typos"
+    },
+    {
+      "id": "OCR13",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "noise": 0.05
+      },
+      "format": "PNG",
+      "noise": "seeded_noise"
+    },
+    {
+      "id": "OCR14",
+      "document_id": 1,
+      "entity": "INPS",
+      "version": "demo-0.1",
+      "text": "INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.INPS\nDomanda dimostrativa di pensione\nINPS-DEMO-01\nEsempio sintetico privo di dati personali. Modulo di prova per verifica OCR locale.",
+      "transform": {
+        "pages": 2
+      },
+      "format": "PDF",
+      "noise": "two_page_scan"
+    }
+  ]
+}

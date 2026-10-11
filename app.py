@@ -711,14 +711,19 @@ def show_benchmark(catalog, families):
     st.text("Esecuzione: " + str(summary.get("executed_at", "non disponibile")))
     st.text("Commit valutato: " + str(summary.get("commit", "non disponibile")))
     st.text("Catalogo testato: " + str(summary.get("catalog_semantic_sha256", "non disponibile")))
+    st.text("Documenti reali nel catalogo testato: " + str(summary.get("catalog_count", "non disponibile")))
     if summary.get("catalog_semantic_sha256") != catalog_revision(catalog, families):
         st.warning("Il catalogo corrente differisce da quello valutato: i risultati non descrivono le modifiche locali.")
-    labels = {"document_precision": "Precisione documento", "family_precision": "Precisione famiglia",
+    labels = {"document_precision": "Precisione documento", "document_recall": "Recall documento", "document_f1": "F1 documento",
+              "family_precision": "Precisione famiglia", "family_recall": "Recall famiglia", "family_f1": "F1 famiglia", "useful_coverage": "Copertura utile",
               "unknown_correct_rejection_rate": "Rifiuti corretti degli sconosciuti", "unknown_false_acceptance_rate": "False accettazioni",
               "entity_error_rate": "Errori ente", "version_year_error_rate": "Errori versione"}
     for evaluation in summary["evaluations"]:
         st.divider()
         st.text(str(evaluation.get("name", "Valutazione")))
+        if evaluation.get("status")=="not_run":
+            st.text("Non eseguito")
+            continue
         result = evaluation["summary"]
         st.text("Casi: " + str(result.get("cases", "non disponibile")))
         for key, label in labels.items():

@@ -1,0 +1,1110 @@
+{
+  "schema_version": 1,
+  "corpus_id": "burocrazia-hard-negatives-v2",
+  "split": "hard_negatives",
+  "purpose": "100 negativi sintetici amministrativi; 30 v1 immutati e 70 vicini derivati da intestazioni informative/enti diversi. Pubblico, non indipendente.",
+  "synthetic": true,
+  "extraction_evaluated": false,
+  "cases": [
+    {
+      "id": "H000",
+      "group": "hard:0",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nCircolare n. 82 del 2026\nManuale per gli operatori: SR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Istruzioni tecniche per gestire il modulo.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H001",
+      "group": "hard:1",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nGUIDA ALLA COMPILAZIONE\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Versione 1.0. Questa guida descrive la domanda.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H002",
+      "group": "hard:2",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nISTRUZIONI PER LA COMPILAZIONE DEL MODELLO 730/2026\nREDDITI 2025. Guida alla dichiarazione.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H003",
+      "group": "hard:3",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nCOMUNICATO STAMPA\nCertificazione Unica 2026. Disponibili le specifiche tecniche del modello CU.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H004",
+      "group": "hard:4",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nCIRCOLARE\nF24 Semplificato. Documento informativo per gli uffici.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H005",
+      "group": "hard:5",
+      "category": "unknown",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H006",
+      "group": "hard:6",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nDenuncia dimostrativa di infortunio sul lavoro INAIL-DEMO-01",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H007",
+      "group": "hard:7",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nMODELLO 730/2026 REDDITI 2025",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H008",
+      "group": "hard:8",
+      "category": "unknown",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nCertificazione Unica 2026 Modello CU 2026",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H009",
+      "group": "hard:9",
+      "category": "unknown",
+      "source": "Comune di Torino",
+      "noise": "clean",
+      "text": "Comune di Torino\nMODELLO 730/2026 REDDITI 2025",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H010",
+      "group": "hard:10",
+      "category": "unknown",
+      "source": "Regione Lazio",
+      "noise": "clean",
+      "text": "Regione Lazio\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H011",
+      "group": "hard:11",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR211 RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Versione 9.9.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H012",
+      "group": "hard:12",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR21I RINUNC1A DE1 BENEF1CIAR1 ALLA CARTA ACQUISTI",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H013",
+      "group": "hard:13",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nProtocollo SR211: comunicazione sulle aperture della biblioteca per il personale.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H014",
+      "group": "hard:14",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nFattura numero SR211 per acquisto carta e materiale di cancelleria.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H015",
+      "group": "hard:15",
+      "category": "unknown",
+      "source": "Ministero della Giustizia",
+      "noise": "clean",
+      "text": "Ministero della Giustizia\nIstanza di autorizzazione alla vendita di bene ereditario. Tribunale di Trento.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H016",
+      "group": "hard:16",
+      "category": "unknown",
+      "source": "Comune di Roma",
+      "noise": "clean",
+      "text": "Comune di Roma\nRichiesta di occupazione temporanea del suolo pubblico per trasloco.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H017",
+      "group": "hard:17",
+      "category": "unknown",
+      "source": "Regione Lombardia",
+      "noise": "clean",
+      "text": "Regione Lombardia\nIstanza di autorizzazione paesaggistica. Ufficio territoriale.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H018",
+      "group": "hard:18",
+      "category": "unknown",
+      "source": "Ministero della Salute",
+      "noise": "clean",
+      "text": "Ministero della Salute\nCircolare sulle campagne di vaccinazione. Indicazioni operative.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H019",
+      "group": "hard:19",
+      "category": "unknown",
+      "source": "Agenzia delle Dogane e dei Monopoli",
+      "noise": "clean",
+      "text": "Agenzia delle Dogane e dei Monopoli\nComunicazione di servizio sulla classificazione delle merci. Circolare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H020",
+      "group": "hard:20",
+      "category": "unknown",
+      "source": "Ministero delle Imprese e del Made in Italy",
+      "noise": "clean",
+      "text": "Ministero delle Imprese e del Made in Italy\nManuale operativo per la comunicazione di dati statistici.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H021",
+      "group": "hard:21",
+      "category": "unknown",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nGuida ai servizi online per i professionisti. Istruzioni per Avvocati.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H022",
+      "group": "hard:22",
+      "category": "unknown",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nComunicato sulla protezione dei dati personali. Informazioni per il pubblico.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H023",
+      "group": "hard:23",
+      "category": "unknown",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nGUIDA ALLA COMPILAZIONE\nINL-17 Accesso civico semplice e generalizzato.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H024",
+      "group": "hard:24",
+      "category": "unknown",
+      "source": "Università degli Studi di Bologna",
+      "noise": "clean",
+      "text": "Università degli Studi di Bologna\nRichiesta di accesso civico generalizzato relativa alle graduatorie.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H025",
+      "group": "hard:25",
+      "category": "unknown",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nModulo F24. Indicazioni incomplete prive di sottotipo.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H026",
+      "group": "hard:26",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nRINUNCIA DEI BENEFICIARI. Frammento parziale, codice e oggetto non riportati.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H027",
+      "group": "hard:27",
+      "category": "unknown",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR211 e CI543. Due identificativi senza titolo o contesto univoco.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H028",
+      "group": "hard:28",
+      "category": "unknown",
+      "source": "Comune di Firenze",
+      "noise": "clean",
+      "text": "Comune di Firenze\nVerbale della riunione del consiglio dei lettori. Ordine del giorno.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "H029",
+      "group": "hard:29",
+      "category": "unknown",
+      "source": "Regione Veneto",
+      "noise": "clean",
+      "text": "Regione Veneto\nAtto di accertamento sulle attività di biblioteca. Nessuna tassa automobilistica.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-031",
+      "group": "negative:INPS:Circolare",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nCircolare: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-032",
+      "group": "negative:INPS:Guida",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nGuida: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-033",
+      "group": "negative:INPS:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nIstruzioni: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-034",
+      "group": "negative:INPS:FAQ",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nFAQ: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-035",
+      "group": "negative:INPS:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nProvvedimento: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-036",
+      "group": "negative:INPS:Manuale",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nManuale: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-037",
+      "group": "negative:INPS:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "INPS",
+      "noise": "synthetic_informational_heading",
+      "text": "INPS\nRegolamento: Domanda di assegno per il nucleo familiare\nDocumento informativo relativo a SR16 Domanda di assegno per il nucleo familiare. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-038",
+      "group": "negative:Agenzia delle Entrate:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nCircolare: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-039",
+      "group": "negative:Agenzia delle Entrate:Guida",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nGuida: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-040",
+      "group": "negative:Agenzia delle Entrate:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nIstruzioni: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-041",
+      "group": "negative:Agenzia delle Entrate:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nFAQ: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-042",
+      "group": "negative:Agenzia delle Entrate:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nProvvedimento: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-043",
+      "group": "negative:Agenzia delle Entrate:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nManuale: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-044",
+      "group": "negative:Agenzia delle Entrate:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate\nRegolamento: Modello 730 2026\nDocumento informativo relativo a 730 2026 Modello 730 2026. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-045",
+      "group": "negative:INAIL:Circolare",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nCircolare: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-046",
+      "group": "negative:INAIL:Guida",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nGuida: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-047",
+      "group": "negative:INAIL:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nIstruzioni: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-048",
+      "group": "negative:INAIL:FAQ",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nFAQ: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-049",
+      "group": "negative:INAIL:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nProvvedimento: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-050",
+      "group": "negative:INAIL:Manuale",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nManuale: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-051",
+      "group": "negative:INAIL:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "INAIL",
+      "noise": "synthetic_informational_heading",
+      "text": "INAIL\nRegolamento: Denuncia di infortunio\nDocumento informativo relativo a  Denuncia di infortunio. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-052",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nCircolare: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-053",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Guida",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nGuida: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-054",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nIstruzioni: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-055",
+      "group": "negative:Ispettorato Nazionale del Lavoro:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nFAQ: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-056",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nProvvedimento: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-057",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nManuale: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-058",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "synthetic_informational_heading",
+      "text": "Ispettorato Nazionale del Lavoro\nRegolamento: Richiesta di intervento ispettivo\nDocumento informativo relativo a INL31 Richiesta di intervento ispettivo. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-059",
+      "group": "negative:Garante per la protezione dei dati personali:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nCircolare: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-060",
+      "group": "negative:Garante per la protezione dei dati personali:Guida",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nGuida: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-061",
+      "group": "negative:Garante per la protezione dei dati personali:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nIstruzioni: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-062",
+      "group": "negative:Garante per la protezione dei dati personali:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nFAQ: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-063",
+      "group": "negative:Garante per la protezione dei dati personali:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nProvvedimento: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-064",
+      "group": "negative:Garante per la protezione dei dati personali:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nManuale: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-065",
+      "group": "negative:Garante per la protezione dei dati personali:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "synthetic_informational_heading",
+      "text": "Garante per la protezione dei dati personali\nRegolamento: Esercizio dei diritti in materia di protezione dei dati personali\nDocumento informativo relativo a  Esercizio dei diritti in materia di protezione dei dati personali. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-066",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nCircolare: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-067",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Guida",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nGuida: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-068",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nIstruzioni: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-069",
+      "group": "negative:Agenzia delle Entrate-Riscossione:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nFAQ: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-070",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nProvvedimento: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-071",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nManuale: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-072",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "synthetic_informational_heading",
+      "text": "Agenzia delle Entrate-Riscossione\nRegolamento: Modello F24\nDocumento informativo relativo a F24 Modello F24. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-073",
+      "group": "negative:Tribunale di Roma:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nCircolare: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-074",
+      "group": "negative:Tribunale di Roma:Guida",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nGuida: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-075",
+      "group": "negative:Tribunale di Roma:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nIstruzioni: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-076",
+      "group": "negative:Tribunale di Roma:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nFAQ: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-077",
+      "group": "negative:Tribunale di Roma:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nProvvedimento: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-078",
+      "group": "negative:Tribunale di Roma:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nManuale: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-079",
+      "group": "negative:Tribunale di Roma:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Tribunale di Roma",
+      "noise": "synthetic_informational_heading",
+      "text": "Tribunale di Roma\nRegolamento: Amministratore di Sostegno-Accettazione risarcimento danni\nDocumento informativo relativo a  Amministratore di Sostegno-Accettazione risarcimento danni. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-080",
+      "group": "negative:Comune di Milano:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nCircolare: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-081",
+      "group": "negative:Comune di Milano:Guida",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nGuida: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-082",
+      "group": "negative:Comune di Milano:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nIstruzioni: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-083",
+      "group": "negative:Comune di Milano:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nFAQ: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-084",
+      "group": "negative:Comune di Milano:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nProvvedimento: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-085",
+      "group": "negative:Comune di Milano:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nManuale: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-086",
+      "group": "negative:Comune di Milano:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Comune di Milano",
+      "noise": "synthetic_informational_heading",
+      "text": "Comune di Milano\nRegolamento: Richiesta accesso civico\nDocumento informativo relativo a  Richiesta accesso civico. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-087",
+      "group": "negative:Ministero della Salute:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nCircolare: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-088",
+      "group": "negative:Ministero della Salute:Guida",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nGuida: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-089",
+      "group": "negative:Ministero della Salute:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nIstruzioni: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-090",
+      "group": "negative:Ministero della Salute:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nFAQ: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-091",
+      "group": "negative:Ministero della Salute:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nProvvedimento: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-092",
+      "group": "negative:Ministero della Salute:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nManuale: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-093",
+      "group": "negative:Ministero della Salute:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Ministero della Salute",
+      "noise": "synthetic_informational_heading",
+      "text": "Ministero della Salute\nRegolamento: Richiesta di duplicato del Certificato RTFA\nDocumento informativo relativo a  Richiesta di duplicato del Certificato RTFA. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-094",
+      "group": "negative:Autorità Nazionale Anticorruzione:Circolare",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nCircolare: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-095",
+      "group": "negative:Autorità Nazionale Anticorruzione:Guida",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nGuida: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-096",
+      "group": "negative:Autorità Nazionale Anticorruzione:Istruzioni",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nIstruzioni: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-097",
+      "group": "negative:Autorità Nazionale Anticorruzione:FAQ",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nFAQ: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-098",
+      "group": "negative:Autorità Nazionale Anticorruzione:Provvedimento",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nProvvedimento: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-099",
+      "group": "negative:Autorità Nazionale Anticorruzione:Manuale",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nManuale: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "HN2-100",
+      "group": "negative:Autorità Nazionale Anticorruzione:Regolamento",
+      "category": "administrative_near_negative",
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "synthetic_informational_heading",
+      "text": "Autorità Nazionale Anticorruzione\nRegolamento: Modulo richiesta accesso civico al RPCT\nDocumento informativo relativo a  Modulo richiesta accesso civico al RPCT. Non costituisce istanza da compilare.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    }
+  ]
+}
