@@ -1,6 +1,6 @@
 # Round 5 — NOT READY
 
-Software **0.6.1**, target 0.7.0, schema **610**, branch `codex/coverage-benchmark-v0.7.0`. Commit di riferimento al momento delle misure `f9e1fa06821907da53f75417555bd3cbdd50c7d0`; il commit locale finale include gli stessi sorgenti, identificati dai digest sotto. Nessun push, tag o release. CI esterna `pending_external_gate`.
+Software **0.6.1**, target 0.7.0, schema **610**, branch `codex/coverage-benchmark-v0.7.0`. Commit dei sorgenti validati `498c1982f8d698c068bd33e6a749b458d6c1a1db`; le misure sono state eseguite localmente prima del commit, con gli stessi sorgenti identificati dai digest sotto. Nessun push, tag o release. CI esterna `pending_external_gate`.
 
 ## 1. Catalog coverage
 
