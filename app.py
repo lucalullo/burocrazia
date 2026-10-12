@@ -324,8 +324,10 @@ def show_document_recognition(catalog: list[AdministrativeDocument], explanation
         st.text(str(exc))
         return
     import hashlib
+    from src.fingerprint_visual import visual_for_bytes
     recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE,
-        file_sha256=hashlib.sha256(uploaded_file.getvalue()).hexdigest())
+        file_sha256=hashlib.sha256(uploaded_file.getvalue()).hexdigest(),
+        visual_fingerprint=visual_for_bytes(uploaded_file.getvalue(),uploaded_file.name))
     if recognition.match_type == "NO_MATCH":
         st.header("Documento non riconosciuto")
         st.text(UNKNOWN_DOCUMENT_MESSAGE)
@@ -733,6 +735,8 @@ def show_benchmark(catalog, families):
                  'known_robustness':'Documenti noti — rappresentazioni trasformate',
                  'filled_forms':'Moduli compilati con dati fittizi',
                  'family_identity_holdout':'Famiglie — identità escluse',
+                 'fingerprint_coverage':'Copertura delle firme tecniche',
+                 'scan_ocr':'Scansioni e OCR',
                  'unknown_official':'Documenti ufficiali sconosciuti'}[key])
         if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
         if section.get('status')=='not_run':
@@ -742,7 +746,21 @@ def show_benchmark(catalog, families):
             st.text('Casi: '+str(section['summary'].get('cases','non disponibile')))
             for name,label in labels.items():st.text(label+': '+metric_label(section['summary'].get('metrics',{}).get(name)))
         if key=='real_ocr':st.text(str(section.get('result','non disponibile')))
-        if key=='performance':st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
+        if key=='fingerprint_coverage':
+            for name,label in [('operational_docs_total','Identità operative'),('file_backed_operational_docs','Identità con file'),
+                ('fingerprinted_all_operational_docs','Identità con firma'),('coverage_all','Copertura totale'),('coverage_file_backed','Copertura dei file')]:
+                value=section.get(name,'non disponibile')
+                if name.startswith('coverage_') and isinstance(value,(int,float)):value=f'{100*value:.2f}%'
+                st.text(label+': '+str(value))
+        if key=='performance':
+            if section.get('latency_ms'):
+                st.text('Latenza p50/p95 (ms): '+str(section['latency_ms'].get('p50'))+' / '+str(section['latency_ms'].get('p95')))
+                st.text('Indice fingerprint (byte): '+str(section.get('index_bytes','non disponibile')))
+            else:st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
+    if summary.get('benchmark_model')=='known-family-unknown-v2':
+        family=summary.get('family_identity_holdout',{})
+        st.text('Famiglie valutabili: '+str(family.get('families_evaluable',0))+' / 16')
+        st.text('Validazione family: '+str(family.get('capability_status','non disponibile')))
     st.text('Dettagli di sviluppo e regressione: corpus non indipendenti.')
     for evaluation in summary["evaluations"]:
         st.divider()

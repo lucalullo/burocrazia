@@ -1,0 +1,161 @@
+{
+  "seed": 20261012,
+  "selection": "Two PDF identities/source where available, then SHA(seed:id) up to 20. Fixed algorithm, no result-based selection.",
+  "calibration_identities": [
+    1055,
+    681,
+    403,
+    345,
+    661,
+    405,
+    507,
+    28
+  ],
+  "evaluation_identities": [
+    109,
+    120,
+    149,
+    159,
+    550,
+    546,
+    586,
+    591,
+    610,
+    166,
+    615,
+    601
+  ],
+  "resources": {
+    "1055": "7b7f82bc5f37f7ac4651409c3de0643708312d7130d6041216ad9973a8e58f1d",
+    "681": "03b3b796bc6b7032a50774d2ffce360184305db13325ac89569b29c1254bd6df",
+    "403": "e7eb3a33aad8ea78423e42d14adf009c8e31e38f3bae11e5add8386ed4c013d1",
+    "345": "a389899e2ac3fbdfe46ec0e43f1d4089d69f355adbea6160b2c47f41adff1883",
+    "661": "9d3d97ff0bd884ad70e5a4f27dad61659732f84757103277e11bab7232c54517",
+    "405": "1e282e799088d39e797b719ff08f97395156affaa2172d2c728eb17cca4fad84",
+    "507": "bc2bd1fb3f766c25130722bc6616659e7de290aeab1b750ac19d6a25c25eadf4",
+    "28": "29905946c83c6923d94c614856c8cbd6c727bf552a399430136bdf7624813a1b",
+    "109": "aef0fbd6c7db7a020a6ea57a46ec75841d18e8964a049395e94bda613a1584f9",
+    "120": "421325b572cbffdf36e7ba7e62714037242a17999e27ce4e7f63ca185d828ec6",
+    "149": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956",
+    "159": "98c6c45ab4f12998e49df424371ce8694abb032adf609d44f7dbde98bf1e1eb8",
+    "550": "3500858fcbc4610bbf3973b8871a81fcb910b440723ecb9f6507a1c615b9b568",
+    "546": "c9b79bd50e8f685e31baed6055f5d406a697c037efe0b8bf61ce452d1d5b1fe4",
+    "586": "ab64e018f11b95b47e77be4dc9bcf118f915bc5d1253d243de428d54994fae60",
+    "591": "1acdda1da4d40538bcde88afc057bf49e5059e4f96ceec83fc30a9ddb0665a93",
+    "610": "05814843c01143c9a35cc2d8c07133850af481755e7a7c80e1054d1a4a8a916b",
+    "166": "ebd1b2160528aa920eab3a65cf989541df28f8ffc1e5b65290d36cf7e07ac841",
+    "615": "49e68bd2832ca1a00917b4046b0fdd091cc6aeac6de1e4c23cf696f0c855545e",
+    "601": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99"
+  },
+  "transforms": [
+    [
+      "digital_exact",
+      {}
+    ],
+    [
+      "raster_200",
+      {
+        "dpi": 200
+      }
+    ],
+    [
+      "raster_150",
+      {
+        "dpi": 150
+      }
+    ],
+    [
+      "jpeg_90",
+      {
+        "dpi": 150,
+        "quality": 90
+      }
+    ],
+    [
+      "jpeg_75",
+      {
+        "dpi": 150,
+        "quality": 75
+      }
+    ],
+    [
+      "jpeg_60",
+      {
+        "dpi": 150,
+        "quality": 60
+      }
+    ],
+    [
+      "grayscale",
+      {
+        "dpi": 150,
+        "gray": true
+      }
+    ],
+    [
+      "contrast_minus20",
+      {
+        "dpi": 150,
+        "contrast": 0.8
+      }
+    ],
+    [
+      "blur_mild",
+      {
+        "dpi": 150,
+        "blur": 0.65
+      }
+    ],
+    [
+      "crop_2pct",
+      {
+        "dpi": 150,
+        "crop": 0.02
+      }
+    ],
+    [
+      "crop_5pct",
+      {
+        "dpi": 150,
+        "crop": 0.05
+      }
+    ],
+    [
+      "resize_075",
+      {
+        "dpi": 150,
+        "resize": 0.75
+      }
+    ],
+    [
+      "first_page_only",
+      {
+        "first_page_only": true
+      }
+    ],
+    [
+      "rotation_90",
+      {
+        "dpi": 150,
+        "angle": 90
+      }
+    ],
+    [
+      "rotation_180",
+      {
+        "dpi": 150,
+        "angle": 180
+      }
+    ],
+    [
+      "rotation_270",
+      {
+        "dpi": 150,
+        "angle": 270
+      }
+    ]
+  ],
+  "frozen_at": "2026-10-12T05:50:41.469107+00:00",
+  "independent_identity_generalization": false,
+  "limits": "Known identity representation evaluation; canonical fingerprints contain evaluation identities. First-page scan transforms, not all pages. No parameter fitting on evaluation identities."
+}

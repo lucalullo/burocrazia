@@ -13,7 +13,8 @@ sys.path.insert(0,str(ROOT))
 
 def main():
     gates=json.loads((ROOT/'docs/release_gates.json').read_text(encoding='utf-8'))
-    name='BurOCRazia-v0.7.0-RC1-round5.zip' if gates.get('local_gates_passed') else 'BurOCRazia-v0.7.0-candidate-NOT-READY-round5.zip'
+    round_number=gates.get('round',5)
+    name=f'BurOCRazia-v0.7.0-RC1-round{round_number}.zip' if gates.get('local_gates_passed') else f'BurOCRazia-v0.7.0-candidate-NOT-READY-round{round_number}.zip'
     output=ROOT/'dist'/name;output.parent.mkdir(exist_ok=True)
     subprocess.run(['git','archive','--format=zip','--prefix=BurOCRazia/','-o',str(output),'HEAD'],cwd=ROOT,check=True)
     forbidden={'.git','.venv','__pycache__','.pytest_cache','cache','staging','tmp-build','work','node_modules'}
@@ -54,7 +55,15 @@ def main():
         from src.document_fingerprints import validate
         fp=archive.read('BurOCRazia/data/document_recognition_fingerprints.json')
         validate(json.loads(fp))
-        assert hashlib.sha256(fp).hexdigest()==gates['identity']['fingerprint_sha256']
+        if round_number!=6:assert hashlib.sha256(fp).hexdigest()==gates['identity']['fingerprint_sha256']
+        if round_number==6:
+            from src.fingerprint_v2 import validate as validate_v2
+            fp2=archive.read('BurOCRazia/data/document_recognition_fingerprints_v2.json')
+            validate_v2(json.loads(fp2))
+            assert hashlib.sha256(fp2).hexdigest()==gates['identity']['fingerprint_sha256']
+            calibration=json.loads(archive.read('BurOCRazia/benchmarks/results/round6/fingerprint_calibration.json'))
+            assert hashlib.sha256(archive.read('BurOCRazia/data/recognition_profiles/fingerprint_v2.json')).hexdigest()==calibration['profile_sha256']
+            assert not set(calibration['calibration_identities'])&set(calibration['evaluation_identities'])
         assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[])
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())

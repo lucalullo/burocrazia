@@ -1,0 +1,410 @@
+{
+  "schema_version": 2,
+  "thresholds": {
+    "text": 0.82,
+    "chars": 0.78,
+    "anchors": 0.6,
+    "visual": 0.88,
+    "margin": 0.04,
+    "min_overlap": 20
+  },
+  "weights": {
+    "text": 0.5,
+    "chars": 0.25,
+    "anchors": 0.15,
+    "visual": 0.1
+  },
+  "objective": "Maximize correct calibration retrieval/fusion under zero wrong calibration accepts; safety vetoes remain mandatory.",
+  "constraints": [
+    "no evaluation rows read",
+    "zero wrong calibration accepts",
+    "at least two corroborating channels",
+    "margin"
+  ],
+  "calibration_identities": [
+    1055,
+    681,
+    403,
+    345,
+    661,
+    405,
+    507,
+    28
+  ],
+  "evaluation_identities": [
+    109,
+    120,
+    149,
+    159,
+    550,
+    546,
+    586,
+    591,
+    610,
+    166,
+    615,
+    601
+  ],
+  "parameters": {
+    "normalization": "nfkc-casefold-v2",
+    "hash_algorithm": "sha256-domain-64-v2",
+    "token_shingle": 3,
+    "char_ngrams": [
+      4,
+      5,
+      6
+    ],
+    "sketch_size": 192,
+    "char_size": 256,
+    "anchor_size": 64,
+    "max_chars": 16000,
+    "identity_chars": 2000,
+    "ocr_pages": 1,
+    "ocr_dpi": 144,
+    "weighted_formula": "log((N+1)/(df+1))+1",
+    "visual": "rotation-invariant-dhash-16x16-v2"
+  },
+  "frozen_at": "2026-10-12T06:00:45.375731+00:00",
+  "profile_sha256": "c5dd68e63d04a8738033f2d2df93ecf37006fb5d3cc324fd99a12d1b02705219",
+  "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+  "runtime_sha256": "20f0e290fe9c66c2cb45e1f1ebc18fcf44fccec9164bef0c1900cc877d346853",
+  "grid": [
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.78,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    }
+  ],
+  "chosen": {
+    "thresholds": {
+      "text": 0.82,
+      "chars": 0.78,
+      "anchors": 0.6,
+      "visual": 0.88,
+      "margin": 0.04,
+      "min_overlap": 20
+    },
+    "correct": 31,
+    "wrong": 0
+  },
+  "selection_limits": "Grid objective uses retrieval scores before safety veto. Calibration recognizer results also reported; safety may reduce recall. No evaluation tuning."
+}

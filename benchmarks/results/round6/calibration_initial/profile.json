@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "thresholds": {
+    "text": 0.82,
+    "chars": 0.78,
+    "anchors": 0.6,
+    "visual": 0.88,
+    "margin": 0.04,
+    "min_overlap": 20
+  },
+  "weights": {
+    "text": 0.5,
+    "chars": 0.25,
+    "anchors": 0.15,
+    "visual": 0.1
+  },
+  "objective": "Maximize correct calibration retrieval/fusion under zero wrong calibration accepts; safety vetoes remain mandatory.",
+  "constraints": [
+    "no evaluation rows read",
+    "zero wrong calibration accepts",
+    "at least two corroborating channels",
+    "margin"
+  ],
+  "calibration_identities": [
+    1055,
+    681,
+    403,
+    345,
+    661,
+    405,
+    507,
+    28
+  ],
+  "evaluation_identities": [
+    109,
+    120,
+    149,
+    159,
+    550,
+    546,
+    586,
+    591,
+    610,
+    166,
+    615,
+    601
+  ],
+  "parameters": {
+    "normalization": "nfkc-casefold-v2",
+    "hash_algorithm": "sha256-domain-64-v2",
+    "token_shingle": 3,
+    "char_ngrams": [
+      4,
+      5,
+      6
+    ],
+    "sketch_size": 192,
+    "char_size": 256,
+    "anchor_size": 64,
+    "max_chars": 16000,
+    "identity_chars": 2000,
+    "ocr_pages": 1,
+    "ocr_dpi": 144,
+    "weighted_formula": "log((N+1)/(df+1))+1",
+    "visual": "rotation-invariant-dhash-16x16-v2"
+  },
+  "frozen_at": "2026-10-12T06:00:45.375731+00:00"
+}

@@ -26,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-7-fingerprint-v1"
+RULES_VERSION = "deterministic-8-fingerprint-v2"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -903,6 +903,7 @@ def catalog_revision(
     # of database iteration order and includes every rule-relevant field.
     catalog_signature = {
         "document_fingerprints": __import__('src.document_fingerprints',fromlist=['revision']).revision(),
+        "document_fingerprints_v2": __import__('src.fingerprint_v2',fromlist=['revision']).revision(),
         "technical_features": feature_revision(),
         "safety_profiles": profile_revision(),
         "documents": sorted((
@@ -929,12 +930,19 @@ def recognize_catalog(
     reference_full_scan: bool = False,
     file_sha256: str | None = None,
     form_field_names: Iterable[str] = (),
+    visual_fingerprint: tuple[str, ...] = (),
 ) -> CatalogRecognitionResult:
     document_list = list(documents)
     family_list = list(families)
-    from src.fingerprint_match import match as match_fingerprint
-    fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
-        field_names=form_field_names, reference=reference_full_scan)
+    from src.fingerprint_v2 import public_index as fingerprint_index_v2
+    if fingerprint_index_v2().records:
+        from src.fingerprint_match_v2 import match as match_fingerprint
+        fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
+            visual=visual_fingerprint, reference=reference_full_scan)
+    else:
+        from src.fingerprint_match import match as match_fingerprint
+        fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
+            field_names=form_field_names, reference=reference_full_scan)
     if fingerprint_result is not None:
         return CatalogRecognitionResult(match_type='DOCUMENT_MATCH',
             confidence_document=fingerprint_result.confidence,confidence_family=0.0,
@@ -965,6 +973,14 @@ def recognize_catalog(
         min_confidence=min_family_confidence,
         known_entities=(document.ente for document in document_list),
     )
+    # A known template with an unreadable revision cannot become another exact
+    # version through the metadata fallback after a fingerprint refusal.
+    if document_result.recognized and document_result.document is not None:
+        version=document_result.document.versione or ''
+        if re.fullmatch(r'\d+(?:[.]\d+)+',version) and not re.search(
+            r'\b(?:versione|version|revisione|rev[.])\s*[:=]?\s*'+re.escape(version)+r'\b',text[:2000],re.I):
+            document_result=RecognitionResult(False,0.0,reason='Revisione del modello non leggibile.',
+                conflicts=('missing_model_revision',),candidate_ids=document_result.candidate_ids)
     diagnostics = {
         "document_score_margin": document_result.score_margin,
         "family_score_margin": family_result.score_margin,

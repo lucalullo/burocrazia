@@ -1,0 +1,3830 @@
+{
+  "schema_version": 2,
+  "thresholds": {
+    "text": 0.75,
+    "chars": 0.15,
+    "anchors": 0.6,
+    "visual": 0.88,
+    "margin": 0.02,
+    "min_overlap": 20
+  },
+  "weights": {
+    "text": 0.5,
+    "chars": 0.25,
+    "anchors": 0.15,
+    "visual": 0.1
+  },
+  "objective": "Maximize correct calibration retrieval/fusion under zero wrong calibration accepts; safety vetoes remain mandatory.",
+  "constraints": [
+    "no evaluation rows read",
+    "zero wrong calibration accepts",
+    "at least two corroborating channels",
+    "margin"
+  ],
+  "calibration_identities": [
+    1055,
+    681,
+    403,
+    345,
+    661,
+    405,
+    507,
+    28
+  ],
+  "evaluation_identities": [
+    109,
+    120,
+    149,
+    159,
+    550,
+    546,
+    586,
+    591,
+    610,
+    166,
+    615,
+    601
+  ],
+  "parameters": {
+    "normalization": "nfkc-casefold-v2",
+    "hash_algorithm": "sha256-domain-64-v2",
+    "token_shingle": 3,
+    "char_ngrams": [
+      4,
+      5,
+      6
+    ],
+    "sketch_size": 192,
+    "char_size": 256,
+    "anchor_size": 64,
+    "max_chars": 16000,
+    "identity_chars": 2000,
+    "ocr_pages": 1,
+    "ocr_dpi": 144,
+    "weighted_formula": "log((N+1)/(df+1))+1",
+    "visual": "rotation-invariant-dhash-16x16-v2"
+  },
+  "frozen_at": "2026-10-12T06:11:29.318656+00:00",
+  "profile_sha256": "b125d46396f0992112cc42f897698ee7fed5e076294eaa79f38c288581415c69",
+  "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+  "runtime_sha256": "4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08",
+  "grid": [
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 109,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 99,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 109,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 99,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 116,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 109,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 99,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 115,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 115,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 115,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 108,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 98,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 83,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 109,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 109,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 109,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 102,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 92,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 77,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 104,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 104,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 104,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 97,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 87,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 72,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 80,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 80,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 80,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 73,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 63,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 48,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 57,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 47,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 32,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 34,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 24,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 9,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.75,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 94,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 69,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 94,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 69,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 94,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 69,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 101,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 94,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 84,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 69,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 100,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 100,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 100,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 93,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 83,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 68,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 96,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 96,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 96,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 89,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 79,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 72,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 72,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 72,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 65,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 55,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 40,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 58,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 58,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 58,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 51,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 26,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 41,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 34,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 24,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 9,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.82,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 54,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 54,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 54,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 54,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 54,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 71,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 64,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 54,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 65,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 65,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 65,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 58,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 48,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 33,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 51,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 51,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 51,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 44,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 34,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 19,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 40,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 40,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 40,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 33,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 23,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 8,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.9,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.05,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 16,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.1,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 16,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.15,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 16,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.2,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 16,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.25,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 16,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 46,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 39,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.3,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 16,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 45,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 45,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 45,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 30,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.4,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 15,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 38,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 31,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 23,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.5,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 8,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 37,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 37,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 37,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 30,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 22,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.55,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 7,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.65,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.72,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.78,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.005,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.01,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.02,
+        "min_overlap": 20
+      },
+      "correct": 36,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.04,
+        "min_overlap": 20
+      },
+      "correct": 29,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.055,
+        "min_overlap": 20
+      },
+      "correct": 21,
+      "wrong": 0
+    },
+    {
+      "thresholds": {
+        "text": 0.95,
+        "chars": 0.9,
+        "anchors": 0.6,
+        "visual": 0.88,
+        "margin": 0.08,
+        "min_overlap": 20
+      },
+      "correct": 6,
+      "wrong": 0
+    }
+  ],
+  "chosen": {
+    "thresholds": {
+      "text": 0.75,
+      "chars": 0.15,
+      "anchors": 0.6,
+      "visual": 0.88,
+      "margin": 0.02,
+      "min_overlap": 20
+    },
+    "correct": 116,
+    "wrong": 0
+  },
+  "selection_limits": "Grid objective uses retrieval scores before safety veto. Calibration recognizer results also reported; safety may reduce recall. No evaluation tuning."
+}
