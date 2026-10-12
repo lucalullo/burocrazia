@@ -18,6 +18,7 @@ def main():
     output=ROOT/'dist'/name;output.parent.mkdir(exist_ok=True)
     subprocess.run(['git','archive','--format=zip','--prefix=BurOCRazia/','-o',str(output),'HEAD'],cwd=ROOT,check=True)
     forbidden={'.git','.venv','__pycache__','.pytest_cache','cache','staging','tmp-build','work','node_modules'}
+    prior_raw_archive_count=0;prior_raw_workspace_only=[]
     with zipfile.ZipFile(output) as archive:
         assert archive.testzip() is None
         names=archive.namelist();violations=[]
@@ -71,7 +72,16 @@ def main():
             locks=json.loads(archive.read('BurOCRazia/benchmarks/results/round8/evaluation_locks.json'))
             for path,digest in locks['sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
             baseline=json.loads(archive.read('BurOCRazia/benchmarks/results/round8/baseline/metrics.json'))
-            for path,digest in baseline['prior_raw_sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            for path,digest in baseline['prior_raw_sha256'].items():
+                member='BurOCRazia/'+path
+                if member in names:
+                    assert hashlib.sha256(archive.read(member)).hexdigest()==digest,path
+                    prior_raw_archive_count+=1
+                else:
+                    assert path.startswith(('benchmarks/results/round6/','benchmarks/results/round7/')) and path.endswith('_checkpoint.json'),path
+                    assert subprocess.run(['git','check-ignore','-q','--',path],cwd=ROOT).returncode==0,path
+                    assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+                    prior_raw_workspace_only.append(path)
             def evidence(name):return json.loads(archive.read('BurOCRazia/benchmarks/results/round8/'+name+'.json'))
             plan=evidence('robustness_v4_evaluation_plan');leak=evidence('evaluation_v4_leakage')
             assert not set(plan['calibration_identities'])&set(plan['evaluation_identities'])
@@ -126,7 +136,7 @@ def main():
                 assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
             assert locks['runtime_sha256']==gates['identity']['runtime_sha256']
         assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
-    report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[])
+    report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_scope='105 tracked R6/R7 raw files verified inside ZIP; five historically ignored development checkpoints verified unchanged locally and intentionally excluded from Git archive.')
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))

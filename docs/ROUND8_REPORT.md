@@ -147,3 +147,5 @@ Controlli mirati successivi al riepilogo UI: 75 passed; sono un sottoinsieme del
 ## Archivio
 
 `dist/BurOCRazia-v0.7.0-candidate-NOT-READY-round8.zip`. SHA256 e commit finale in `dist/package-verification.json` e nel file `.zip.sha256`, prodotti dopo il commit del rapporto. Git archive include soltanto i file tracciati. Esclusi PDF/DOCX ufficiali o compilati, cache, binari OCR, database personali, temporanei e credenziali. Stato **NOT READY**: nessun requisito senza prova viene dichiarato completato.
+
+Dei 110 raw storici R6/R7 verificati immutati, 105 sono tracciati e verificati anche nello ZIP. I 5 checkpoint di sviluppo già ignorati restano soltanto nella workspace, con SHA verificato contro la baseline: `["benchmarks/results/round6/acquisition_checkpoint.json", "benchmarks/results/round6/calibration_checkpoint.json", "benchmarks/results/round6/evaluation_checkpoint.json", "benchmarks/results/round7/calibration_checkpoint.json", "benchmarks/results/round7/evaluation_checkpoint.json"]`. Non vengono aggiunti a Git per includere temporanei nell'archivio. Il verificatore riporta separatamente le due coperture.
