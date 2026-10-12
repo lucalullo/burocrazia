@@ -7,6 +7,22 @@ from scripts.benchmark import DEFAULT_CORPUS, PROJECT_ROOT, evaluate_case, load_
 from src.models import AdministrativeDocument, CatalogRecognitionResult, DocumentFamily
 
 
+def test_revision_policy_fixture_v2_preserves_its_historical_parent():
+    current = json.loads(DEFAULT_CORPUS.read_text(encoding="utf-8"))
+    parent = PROJECT_ROOT / current["parent"]["path"]
+    assert hashlib.sha256(parent.read_bytes()).hexdigest() == current["parent"]["sha256"]
+    historical = json.loads(parent.read_text(encoding="utf-8"))
+    rows = {row["id"]: row for row in current["cases"]}
+    for original in historical["cases"]:
+        if original["id"] not in ("EX02", "EX03"):
+            assert rows[original["id"]] == original
+            continue
+        positive, missing = rows[original["id"] + "V2"], rows[original["id"] + "MISSINGREV"]
+        assert positive["text"] == original["text"] + " Versione 1.1."
+        assert positive["expected"] == original["expected"]
+        assert missing["text"] == original["text"] and missing["expected"] == {"match_type": "NO_MATCH"}
+
+
 def test_synthetic_corpus_preserves_catalog_and_reports_every_failure():
     seed = PROJECT_ROOT / "data/catalog_seed.sqlite3"
     before = hashlib.sha256(seed.read_bytes()).hexdigest()

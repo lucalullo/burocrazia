@@ -12,7 +12,13 @@ from src.fingerprint_visual import visual_for_bytes
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--worker',action='store_true');args=parser.parse_args()
     if not args.worker:
-        started=time.perf_counter();result=json.loads(subprocess.check_output([sys.executable,'-m','benchmarks.round6_performance','--worker'],text=True,cwd=ROOT))
+        started=time.perf_counter()
+        raw=subprocess.check_output([sys.executable,'-m','benchmarks.round6_performance','--worker'],text=True,cwd=ROOT)
+        # Native PDF imports may write a deprecation notice to stdout. The
+        # worker emits exactly one JSON line; do not change the measured scope.
+        records=[line for line in raw.splitlines() if line.startswith('{')]
+        if len(records)!=1:raise ValueError('Missing or ambiguous performance worker JSON')
+        result=json.loads(records[0])
         result['subprocess_wall_ms']=(time.perf_counter()-started)*1000
         write('benchmarks/results/round6/performance.json',result)
         write('benchmarks/results/round6/memory.json',dict(identity=result['identity'],fingerprints=result['fingerprints'],rss=result['rss'],scope=result['scope']))

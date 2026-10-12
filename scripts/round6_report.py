@@ -17,15 +17,30 @@ def pct(metric):
 def tests():
     raw=(ROOT/'reports/round6-final-tests.log').read_bytes();text=raw.decode('utf8',errors='replace')
     m=re.search(r'(\d+) passed, (\d+) skipped in ([\d.]+)s',text)
-    if not m:raise ValueError('Full suite not successfully complete')
+    if not m or re.search(r'\b[1-9]\d* failed\b',text) or int(m[1])<655:
+        raise ValueError('Full suite not successfully complete')
     r=dict(passed=int(m[1]),failed=0,skipped=int(m[2]),seconds=float(m[3]),python=platform.python_version(),
         platform=platform.platform(),log_sha256=hashlib.sha256(raw).hexdigest())
+    initial=(ROOT/'reports/round6-final-initial-failed.log').read_bytes()
+    r['initial_attempt']=dict(passed=650,failed=4,skipped=3,seconds=613.79,log_sha256=hashlib.sha256(initial).hexdigest(),
+        resolution='Versioned development fixture adds explicit revisions to two positives and their original inputs as prudent negatives. SR211 review-history test now supplies the actual revision. No runtime, profile, frozen historical corpus or evaluation observation changed.')
     write(OUT+'tests.json',r);return r
 
 def main():
     docs,families=catalog();cov=read(OUT+'fingerprint_coverage.json');can=read(OUT+'canonical_v2.json')
     rob=read(OUT+'robustness_v2.json');filled=read(OUT+'filled_forms_v2.json');scan=read(OUT+'scan_ocr_v2.json')
     fam=read(OUT+'family_release.json');unknown=read(OUT+'unknown_official.json');perf=read(OUT+'performance.json')
+    acro=read(OUT+'filled_acroform_v2.json');overlay=read(OUT+'filled_static_overlays_v2.json')
+    compat=read(OUT+'development_compat_v2.json');cross=read(OUT+'cross_format_same_identity.json')
+    # The inherited R5 case helper attached its historical seed to deterministic
+    # transforms. Selection actually used the frozen R6 plan; preserve both.
+    for name,r in [('canonical_v2',can),('robustness_v2',rob),('filled_forms_v2',filled),('scan_ocr_v2',scan),('filled_acroform_v2',acro),('filled_static_overlays_v2',overlay),('cross_format_same_identity',cross)]:
+        for row in r['cases']:
+            p=row.get('provenance',{})
+            if p.get('seed')==20261011:
+                p['legacy_helper_seed']=p['seed'];p['seed']=20261012
+        r['technical_metadata_reconciliation']='Case-helper seed corrected to frozen Round6 selection seed 20261012; original helper value retained. No identity label, representation, observation, score or metric changed.'
+        write(OUT+name+'.json',r)
     test=tests();five=read(OUT+'historical_five.json');ocr=read(OUT+'ocr_legacy_gate.json');ocr2=read(OUT+'ocr_synthetic_v2.json')
     finals={n:read(OUT+'final/'+n+'.json') for n in ['development_regression','release_locked_v1','release_locked_v2','hard_negatives_v1','hard_negatives_v2','family_release_v3','catalog_coverage']}
     for name,r in [('canonical',can),('robustness',rob),('filled',filled),('scan',scan),('family',fam),('unknown',unknown)]:
@@ -38,7 +53,7 @@ def main():
     gate('canonical_precision','100%',m(can,'document_precision'),m(can,'document_precision')==1)
     gate('canonical_recall','100%',m(can,'document_recall'),m(can,'document_recall')==1)
     gate('canonical_wrong','0',can['counts']['wrong'],can['counts']['wrong']==0)
-    for name,r,target in [('robustness',rob,.90),('filled',filled,.90),('scan',scan,.85)]:
+    for name,r,target in [('robustness',rob,.90),('filled_acroform',acro,.90),('scan',scan,.85)]:
         gate(name+'_precision','>=99.5%',m(r,'document_precision'),(m(r,'document_precision') or 0)>=.995)
         gate(name+'_exact_recall',f'>={target:.0%}',m(r,'document_recall'),(m(r,'document_recall') or 0)>=target)
     gate('scan_useful_recall','>=95%',m(scan,'useful_coverage'),(m(scan,'useful_coverage') or 0)>=.95)
@@ -55,6 +70,8 @@ def main():
     negatives=sum(finals[n]['summary']['passed'] for n in ['hard_negatives_v1','hard_negatives_v2'])
     gate('historical_negatives','130/130',negatives,negatives==130)
     gate('historical_family_negatives','0 false accepts',finals['family_release_v3']['false_positives'],finals['family_release_v3']['false_positives']==0)
+    gate('historical_development_regression','35/35 unchanged labels',finals['development_regression']['summary']['passed'],finals['development_regression']['summary']['failed']==0)
+    gate('development_compat_v2','37/37 new representations',compat['summary']['passed'],compat['summary']['failed']==0)
     gate('real_ocr','7/7 +14/14',dict(legacy=ocr['passed'],synthetic=ocr2['summary']['passed']),ocr['full_gate_passed'] and ocr2['summary']['passed']==14)
     gate('warm_p95','<=250ms',perf['latency_ms']['p95'],perf['latency_ms']['p95']<=250)
     gate('warm_p50','<=150ms',perf['latency_ms']['p50'],perf['latency_ms']['p50']<=150)
@@ -69,17 +86,17 @@ def main():
     latest=dict(schema_version=1,benchmark_model='known-family-unknown-v2',status=status,executed_at=datetime.now(UTC).isoformat(),
         commit=commit,catalog_semantic_sha256=catalog_revision(docs,families),catalog_count=1216,operational_count=1212,
         fingerprint_coverage=dict(status='executed',**cov),known_canonical=dict(status='executed',summary=can['summary']),
-        known_robustness=dict(status='executed',summary=rob['summary']),filled_forms=dict(status='executed',summary=filled['summary']),
+        known_robustness=dict(status='executed',summary=rob['summary']),filled_forms=dict(status='executed',summary=acro['summary'],interactive_cases=100,templates=5),
         scan_ocr=dict(status='executed',summary=scan['summary']),unknown_official=dict(status='executed',summary=unknown['summary']),
         family_identity_holdout=dict(status='executed',summary=fam['summary'],families_evaluable=evaluable,capability_status=fam['capability_status']),
         hard_negatives=dict(status='executed',correct=negatives,total=130),
         real_ocr=dict(status='executed',result=f"{ocr['passed']}/7 + {ocr2['summary']['passed']}/14"),
         performance=dict(status='executed',latency_ms=perf['latency_ms'],index_bytes=perf['fingerprints']['index_bytes'],startup_ms=perf['startup_ms']),
         ocr_status=f"Tesseract reale: {ocr['passed']}/7 storico, {ocr2['summary']['passed']}/14 sintetico",
-        evaluations=[dict(name=name,summary=r['summary']) for name,r in [('Canonical exact-file',can),('Filled forms',filled),('Historical regression',finals['development_regression']),('Historical locked v1',finals['release_locked_v1']),('Historical locked v2',finals['release_locked_v2']),('Historical negatives v1',finals['hard_negatives_v1']),('Historical negatives v2',finals['hard_negatives_v2']),('Canonical metadata coverage',finals['catalog_coverage'])]])
+        evaluations=[dict(name=name,summary=r['summary']) for name,r in [('Canonical exact-file',can),('Interactive AcroForms',acro),('Static overlays',overlay),('Historical regression',finals['development_regression']),('Development compatibility v2',compat),('Historical locked v1',finals['release_locked_v1']),('Historical locked v2',finals['release_locked_v2']),('Historical negatives v1',finals['hard_negatives_v1']),('Historical negatives v2',finals['hard_negatives_v2']),('Canonical metadata coverage',finals['catalog_coverage'])]])
     write('benchmarks/latest_summary.json',latest)
     metric_rows=[]
-    for name,r in [('Canonical exact-file',can),('Robustness evaluation',rob),('Filled forms',filled),('Scan/OCR',scan)]:
+    for name,r in [('Canonical exact-file',can),('Robustness evaluation',rob),('Interactive AcroForms (5 templates)',acro),('Static overlays (weaker perturbation)',overlay),('Scan/OCR',scan)]:
         c=r['counts'];metric_rows.append(f"| {name} | {r['summary']['cases']} | {c['exact']} | {c['family']} | {c['reject']} | {c['wrong']} | {pct(r['summary']['metrics']['document_precision'])} | {pct(r['summary']['metrics']['document_recall'])} |")
     plan=rob['plan'];gate_lines='\n'.join(f"| {g['gate']} | {g['target']} | {g['actual']} | {'PASS' if g['passed'] else 'FAIL'} | {'sì' if g['blocking'] else 'no'} |" for g in gates)
     transform_lines='\n'.join(f"| {name} | {s['cases']} | {s['passed']} | {pct(s['metrics']['document_precision'])} | {pct(s['metrics']['document_recall'])} |" for name,s in rob['by_transformation'].items())
@@ -89,7 +106,8 @@ def main():
 ## Stato, versione e prove
 
 Software **0.6.1**, target **0.7.0**, schema **610**. Branch `{subprocess.check_output(['git','branch','--show-current'],text=True).strip()}`.
-Commit sorgenti validati `{commit}`. Le misure locali precedono il commit e sono associate agli hash effettivi dei byte;
+Commit di congelamento runtime/calibrazione **`ce6fa61f432c204e3d4c8029ef370ff27e429455`**; HEAD alla generazione `{commit}`.
+Il runtime e il profilo sono invariati dopo l'apertura dell'evaluation. Gli hash dei byte identificano ciascuna misura;
 nessun push, tag o rilascio. Runtime SHA `{ident['runtime_sha256']}`; bundle v2 SHA `{ident['fingerprint_sha256']}`.
 Baseline: 615 passed, 3 skip; dati storici v1 e Round 5 conservati, senza sostituire metriche o etichette.
 
@@ -113,6 +131,8 @@ Denominatore: {cov['denominator_policy']}
 
 Assenze: `{json.dumps(cov['missing_reason_breakdown'],ensure_ascii=False)}`.
 I CSV contengono le 843 assenze iniziali, le assenze finali e tutti gli stati tecnici.
+Nuove firme tra le assenze v1: {cov['newly_fingerprinted_missing_v1']}; firme v1 conservate attive anche in v2: {cov['retained_v1_identities']}.
+Identità v1 escluse dalla v2 attiva: `{cov['v1_ids_without_active_v2']}`; motivi tecnici nel CSV final. Il bundle v1 resta invariato.
 {cov['network_requests']} richieste sequenziali complessive, robots/allowlist/redirect verificati; nessun bypass.
 Multipart INPS: derivazione MIME tracciata con hash del contenitore e del payload.
 Formati e lingue alternativi provengono dalle osservazioni immutabili già associate alle identità.
@@ -124,6 +144,8 @@ Formati e lingue alternativi provengono dalle osservazioni immutabili già assoc
 {chr(10).join(metric_rows)}
 
 Canonical misura ogni risorsa attiva, comprese alternative della stessa identità; non generalizzazione a identità sconosciute.
+Subset cross-format: {cross['summary']['passed']}/{cross['summary']['cases']} risorse PDF/DOCX di 11 identità;
+prova SHA dei file canonici, senza claim di generalizzazione scan cross-format DOCX.
 I sette NO Round 5 hanno cause contestuali documentate in `canonical_failures.csv`:
 anno del comunicato/competenza, anno della delibera/contributo, data di revisione, COMUNE come campo e qualificatori nel corpo.
 Le correzioni sono generali; nessuna whitelist di ID o bypass di conflitti espliciti di ente/versione.
@@ -137,6 +159,9 @@ il profilo congelato e lo SHA runtime sono verificati prima dell'evaluation. Nes
 La prima taratura e il relativo profilo sono conservati in `calibration_initial/`:
 prima di aprire evaluation sono state ampliate le soglie di containment caratteri (pagina singola contro documento intero)
 e corretto il veto della revisione mancante nel fallback metadata. La revisione finale usa ancora soltanto gli otto ID calibration.
+Soglie finali: text 0,75, char containment 0,15, anchors 0,60, visual 0,88, margine 0,02,
+almeno 20 sovrapposizioni. Pesi 0,50/0,25/0,15/0,10. L'obiettivo della griglia dà 116/128 corretti
+e zero wrong **prima dei veto di sicurezza**; non è un richiamo osservato end-to-end di 116/128.
 Le fingerprints delle identità evaluation esistono: prova di rappresentazione dello stesso documento, non identity holdout.
 
 | Trasformazione | N | Exact correct | Precision | Recall |
@@ -145,16 +170,29 @@ Le fingerprints delle identità evaluation esistono: prova di rappresentazione d
 
 Candidate retrieval@K: `{json.dumps(rob['candidate_recall_at_k'])}`.
 Il ranking diagnostico non applica SHA né veto; il runtime conserva tutti i candidati con evidenza minima.
+`rejection_diagnostics.json` distingue fusion insufficiente da candidati eleggibili poi rifiutati;
+un motivo generico non viene attribuito arbitrariamente a un particolare veto.
+`evaluation_locks.json` verifica a posteriori l'uguaglianza dei byte col commit di congelamento,
+senza inventare un evento di lock precedente. Il pacchetto controlla anche questi hash.
 Expected fuori top25 indica un problema di recupero; dentro top25 e NO indica scoring/veto/margine.
 Righe di scoring diagnostico limitate a top25, rank atteso calcolato sull'intera lista.
+Il seed del helper storico nei metadati dei casi è riconciliato con il piano Round6 (20261012);
+il valore ereditato 20261011 è conservato separatamente. Nessuna osservazione, etichetta o metrica è cambiata.
+Runner scansioni con tre worker disgiunti e `OMP_THREAD_LIMIT=1`; ordine finale deterministico.
 
 ## 5. Filled-form robustness
 
-{filled['summary']['cases']} casi, {filled['interactive_cases']} con campi AcroForm compilati e verificati;
-restanti overlay statici o fallimenti di generazione conteggiati NO. Dieci varianti per identità,
+{filled['summary']['cases']} casi totali: **100 AcroForm reali su cinque template**, venti varianti ciascuno;
+**70 overlay statici**, dieci varianti su sette risorse. Gli overlay includono documenti non compilabili e sono
+perturbazioni di contenuto più deboli: non costituiscono 70 moduli compilati. Il gate usa separatamente i 100 AcroForm.
+La matrice originale 120 casi è conservata; un supplemento di 50 AcroForm è pianificato prima della generazione,
+selezionando tutti i cinque template evaluation con campi presenti, senza cambiare soglie o consultare esiti per selezionarli.
 nomi/CF non validi/indirizzi/date/importi/testo e checkbox sintetici. Casi correlati entro template.
 Le verifiche richiedono `/V` nel field tree, valore del widget e appearance riaperta;
 ambiguità/orfani non riparati automaticamente. Campi sintetici non costituiscono compilazione legale.
+Quando il nome del campo è generico, il filler usa `EsempioN`: la prova dimostra la modifica di campi reali,
+senza garantire plausibilità semantica o correttezza di date/CF in tutti i campi. Questo limite resta aperto.
+Dipendenza facoltativa del benchmark: `pypdf==6.10.0` in `benchmarks/requirements-round6.txt`, non importata dal runtime.
 
 ## 6. Scan/OCR robustness
 
@@ -169,6 +207,10 @@ DOCX: canale digitale; renderer locale non disponibile, nessun claim OCR/visual 
 
 16 famiglie totali; {evaluable} valutabili. Held-out reali osservati in via esplorativa:
 {len(fam['exploratory_cases'])}; casi con numerosità release-grade {fam['summary']['cases']}.
+Identità held-out esplorative: `{[c['provenance']['document_id'] for c in fam['exploratory_cases']]}`;
+split per tutte le 16 famiglie in `family_evaluability.csv` e `family_release.json`.
+Nel solo subset esplorativo: {fam['exploratory_summary']['passed']}/{fam['exploratory_summary']['cases']} corretti,
+recall {pct(fam['exploratory_summary']['metrics']['family_recall'])}; non confluisce nelle macro release-grade.
 Precision {pct(fam['summary']['metrics']['family_precision'])}, recall {pct(fam['summary']['metrics']['family_recall'])},
 macro `{fam['macro']}`, false accepts {fam['false_accepts']}.
 Capability `{fam['capability_status']}`; meno di cinque famiglie non blocca la RC known-document, ma non valida family.
@@ -184,7 +226,11 @@ o file privi di etichette unknown adjudicate; non si assegnano etichette negativ
 
 ## 9. Historical regressions
 
-Regressione {finals['development_regression']['summary']['passed']}/35; locked v2 {finals['release_locked_v2']['summary']['passed']}/69;
+Regressione storica immutata **{finals['development_regression']['summary']['passed']}/35**: EX02/EX03 ora NO perché
+non esplicitano revisione 1.1; il gate storico stretto resta FAIL. Nuova fixture di sviluppo `tests/fixtures/benchmark_v2.json`
+**{compat['summary']['passed']}/37**: revisioni aggiunte a due nuovi input positivi, testi originali mantenuti in due nuovi negativi,
+parent SHA e motivazioni nel file. Non sostituisce il 33/35 storico e non è evaluation indipendente.
+Locked v2 {finals['release_locked_v2']['summary']['passed']}/69;
 locked v1 storico {finals['release_locked_v1']['summary']['passed']}/69, senza sostituzione delle etichette.
 Negativi storici {negatives}/130; R061 {r061['observed']['match_type']}; cinque false accettazioni storiche sicure {sum(r['safe'] for r in five['cases'])}/5.
 OCR reale storico {ocr['passed']}/7 e sintetico {ocr2['summary']['passed']}/14; test mock, OCR reale ed editoria restano distinti.
@@ -195,6 +241,8 @@ Startup catalogo {perf['catalog_load_ms']:.2f} ms, indice {perf['index_build_ms'
 warm p50 {perf['latency_ms']['p50']:.2f} ms, p95 {perf['latency_ms']['p95']:.2f} ms,
 {perf['latency_ms']['n']} campioni, {perf['synthetic_cases']} sintetici + {perf['official_known_cases']} file ufficiali.
 Inferenza warm esclude estrazione/OCR e generazione visual, misurati separatamente per caso.
+Il p95 Round 5 era 128,16 ms: il nuovo indice aumenta copertura ma questa misura Round 6 peggiora la coda
+oltre il limite. Non viene presentato come ottimizzazione prestazionale conclusa.
 Ambiente {test['platform']}, Python {test['python']}; nessuna certificazione Linux/macOS.
 
 ## 11. Memory, test, CI e gate
@@ -207,8 +255,16 @@ Nessun upload o suo sketch viene conservato in cache.
 
 Test completi: {test['passed']} passed, {test['failed']} failed, {test['skipped']} skip Windows,
 {test['seconds']} s. Migrazioni ripetute su copie di v0.6.1, Round4 e Round5, integrity/FK;
+Primo tentativo finale: 650 passed, quattro failed, tre skip (613,79 s), log/hash conservati.
+Le quattro asserzioni dipendevano dai due input storici senza revisione e dal test storico SR211;
+risolte con fixture v2 e revisione esplicita nel test dello storico editoriale, senza indebolire il runtime congelato.
 schema invariato 610. Bootstrap/CLI/benchmark locali documentati in `ci_local.json`.
 CI esterna **pending_external_gate**: anche READY LOCALLY consentirebbe solo RC locale.
+Il comando storico `benchmarks.evaluate --fast` termina con codice 1 per EX02/EX03;
+il wrapper di riproduzione conserva quel FAIL e verifica che siano gli unici due rifiuti aggiunti prima delle altre prove.
+La CLI corrente sulla fixture di sviluppo v2 passa; non rende verde il gate storico.
+Il primo lancio del wrapper performance non ha scritto risultati perché un avviso PDF nativo contaminava stdout;
+è stata corretta soltanto la lettura della singola riga JSON e ripetuta la misura isolata, senza cambiare il protocollo.
 
 | Gate | Target | Risultato | Esito | Bloccante |
 |---|---|---|---|---|

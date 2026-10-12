@@ -1,0 +1,1465 @@
+{
+  "schema_version": 2,
+  "identity": {
+    "code_sha256": "2a09688e55b286347e750e13471f7fbaf02024c29afc1202d817ef612919687e",
+    "runtime_sha256": "4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08",
+    "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+    "seed": 20261012,
+    "executed_at": "2026-10-12T06:18:22.868692+00:00"
+  },
+  "summary": {
+    "cases": 22,
+    "passed": 22,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "document_f1": {
+        "numerator": 44,
+        "denominator": 44,
+        "value": 1.0
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "useful_coverage": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 22,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 6.06,
+      "p95": 10.1624,
+      "p99": null
+    }
+  },
+  "cases": [
+    {
+      "id": "FP-495-canonical_v2_604835343351",
+      "group": "document:495",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 495,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 495,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 10.736,
+      "provenance": {
+        "canonical_sha256": "604835343351405f481363e48732d42219297f7f6d9f4ceb3da0bee9c1635b2c",
+        "canonical_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/RICHIESTA_Certificato_Europeo_ex_art_36_a__b_3.docx",
+        "source_id": 16,
+        "document_id": 495,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_604835343351",
+      "input_sha256": "604835343351405f481363e48732d42219297f7f6d9f4ceb3da0bee9c1635b2c",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 19.803300000603485,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.04749999970954377,
+      "end_to_end_ms": 30.58700000110548,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-495-canonical_v2_a85c539b7e7b",
+      "group": "document:495",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 495,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 495,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 6.992,
+      "provenance": {
+        "canonical_sha256": "a85c539b7e7b5cdecec1625188811b4a9db80205fe6d4571e022258bd73abee4",
+        "canonical_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/RICHIESTA_Certificato_Europeo_ex_art_36_a__b_3.pdf",
+        "source_id": 16,
+        "document_id": 495,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_a85c539b7e7b",
+      "input_sha256": "a85c539b7e7b5cdecec1625188811b4a9db80205fe6d4571e022258bd73abee4",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 8.182399999896006,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 80.7409999997617,
+      "end_to_end_ms": 95.91569999884086,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-496-canonical_v2_8521c67e9d93",
+      "group": "document:496",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 496,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 496,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 10.218,
+      "provenance": {
+        "canonical_sha256": "8521c67e9d9373a2dc9cc10c055390875c9e3ec0dbf203036cd4297c2ed44be3",
+        "canonical_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/RICHIESTA_Certificato_Europeo_ex_art_39_a__b_2.docx",
+        "source_id": 16,
+        "document_id": 496,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_8521c67e9d93",
+      "input_sha256": "8521c67e9d9373a2dc9cc10c055390875c9e3ec0dbf203036cd4297c2ed44be3",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 18.753600000309234,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.04840000019612489,
+      "end_to_end_ms": 29.020300000411225,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-496-canonical_v2_dcca79a9e1b1",
+      "group": "document:496",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 496,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 496,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 6.632,
+      "provenance": {
+        "canonical_sha256": "dcca79a9e1b131f816f42e9083ca9546e6dabd79d494bb6b1bad57c97b893af6",
+        "canonical_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/RICHIESTA_Certificato_Europeo_ex_art_39_a__b_3.pdf",
+        "source_id": 16,
+        "document_id": 496,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_dcca79a9e1b1",
+      "input_sha256": "dcca79a9e1b131f816f42e9083ca9546e6dabd79d494bb6b1bad57c97b893af6",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 8.766500000092492,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 79.9486000005345,
+      "end_to_end_ms": 95.34670000084589,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-914-canonical_v2_2f56e99c13a7",
+      "group": "document:914",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 914,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 914,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 9.106,
+      "provenance": {
+        "canonical_sha256": "2f56e99c13a74d634e3b8bad0a3b26c5b5bc28f74d327e1ff79cd18abca70f35",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_portstg_115200.pdf",
+        "source_id": 3,
+        "document_id": 914,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_2f56e99c13a7",
+      "input_sha256": "2f56e99c13a74d634e3b8bad0a3b26c5b5bc28f74d327e1ff79cd18abca70f35",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 6.608599999708531,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 80.38850000048114,
+      "end_to_end_ms": 96.10280000015337,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-914-canonical_v2_bff40559df2e",
+      "group": "document:914",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 914,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 914,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 7.503,
+      "provenance": {
+        "canonical_sha256": "bff40559df2e0047bac10c283e5b67896f7c173bdc5606e95c7692c81abb3121",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_portstg_115201.docx",
+        "source_id": 3,
+        "document_id": 914,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_bff40559df2e",
+      "input_sha256": "bff40559df2e0047bac10c283e5b67896f7c173bdc5606e95c7692c81abb3121",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 17.839500000263797,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.045900000259280205,
+      "end_to_end_ms": 25.38890000050742,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-915-canonical_v2_4a4dddd843f5",
+      "group": "document:915",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 915,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 915,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 8.264,
+      "provenance": {
+        "canonical_sha256": "4a4dddd843f51647e52c1c72fd630241b26abcce42b8afe195b8763696cf4524",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_portstg_115202.pdf",
+        "source_id": 3,
+        "document_id": 915,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_4a4dddd843f5",
+      "input_sha256": "4a4dddd843f51647e52c1c72fd630241b26abcce42b8afe195b8763696cf4524",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 13.507399999980407,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 83.1490999999005,
+      "end_to_end_ms": 104.92009999961738,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-915-canonical_v2_ecd2e22f5182",
+      "group": "document:915",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 915,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 915,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 9.104,
+      "provenance": {
+        "canonical_sha256": "ecd2e22f51823e7276a6f4be0c3a37f498674a2076c99e93923e0aad4700b6ed",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_portstg_115203.docx",
+        "source_id": 3,
+        "document_id": 915,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_ecd2e22f5182",
+      "input_sha256": "ecd2e22f51823e7276a6f4be0c3a37f498674a2076c99e93923e0aad4700b6ed",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 18.585699999675853,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.04439999975147657,
+      "end_to_end_ms": 27.733899999475398,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1058-canonical_v2_5f4277fc38f2",
+      "group": "document:1058",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1058,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1058,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 4.707,
+      "provenance": {
+        "canonical_sha256": "5f4277fc38f282d9baa7e2e6d3e28c5f306fc5b0f3c85f3ce6ff01cd00f1784f",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/07/Riduzione%20L147-2013%20primo%20biennio%20Agricoltura-Modulo%20di%20domanda.pdf",
+        "source_id": 3,
+        "document_id": 1058,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_5f4277fc38f2",
+      "input_sha256": "5f4277fc38f282d9baa7e2e6d3e28c5f306fc5b0f3c85f3ce6ff01cd00f1784f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 5.221599999458704,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 50.448599999981525,
+      "end_to_end_ms": 60.37739999919722,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1058-canonical_v2_f4bb1233eb26",
+      "group": "document:1058",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1058,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1058,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 3.462,
+      "provenance": {
+        "canonical_sha256": "f4bb1233eb26686a5194583a3a84612e8733d986205f1b02cd90c800f19ac4c7",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/07/Riduzione%20L147-2013%20primo%20biennio%20Agricoltura-Modulo%20di%20domanda.docx",
+        "source_id": 3,
+        "document_id": 1058,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_f4bb1233eb26",
+      "input_sha256": "f4bb1233eb26686a5194583a3a84612e8733d986205f1b02cd90c800f19ac4c7",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 10.97699999991164,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.02100000074278796,
+      "end_to_end_ms": 14.459500001066772,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1059-canonical_v2_9eec08c288dc",
+      "group": "document:1059",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1059,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1059,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 5.907,
+      "provenance": {
+        "canonical_sha256": "9eec08c288dc2192a75acde42c2ac7be408291e92deadadd61ca0e0f343fec84",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/05/Riduzione%20L147-2013%20primo%20biennio%20Agricoltura-Modulo%20di%20domanda-tedesco.pdf",
+        "source_id": 3,
+        "document_id": 1059,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_9eec08c288dc",
+      "input_sha256": "9eec08c288dc2192a75acde42c2ac7be408291e92deadadd61ca0e0f343fec84",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 5.332000000635162,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 55.33709999963321,
+      "end_to_end_ms": 66.57560000076046,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1059-canonical_v2_f37763a05c7e",
+      "group": "document:1059",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1059,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1059,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 5.217,
+      "provenance": {
+        "canonical_sha256": "f37763a05c7e430f89fa81388cb4e352f3a171ee94f617b2f41af32baa0a5a25",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/05/Riduzione%20L147-2013%20primo%20biennio%20Agricoltura-Modulo%20di%20domanda-tedesco.docx",
+        "source_id": 3,
+        "document_id": 1059,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_f37763a05c7e",
+      "input_sha256": "f37763a05c7e430f89fa81388cb4e352f3a171ee94f617b2f41af32baa0a5a25",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 22.43449999969016,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.03820000074483687,
+      "end_to_end_ms": 27.689300000929506,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1060-canonical_v2_0865d349623c",
+      "group": "document:1060",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1060,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1060,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 5.787,
+      "provenance": {
+        "canonical_sha256": "0865d349623c59c38aa2f8669f4591d9f02f879fcd11229359879bcbf0a347ba",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/05/Riduzione%20L147-2013%20primo%20biennio%20Polizze%20speciali.pdf",
+        "source_id": 3,
+        "document_id": 1060,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_0865d349623c",
+      "input_sha256": "0865d349623c59c38aa2f8669f4591d9f02f879fcd11229359879bcbf0a347ba",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 8.44520000009652,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 43.47449999931996,
+      "end_to_end_ms": 57.70709999887913,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1060-canonical_v2_72f135d835da",
+      "group": "document:1060",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1060,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1060,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 4.343,
+      "provenance": {
+        "canonical_sha256": "72f135d835da65c369a40e7f1259f7bdc920890f19868f4b57b47ac20e6b5ba5",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/05/Riduzione%20L147-2013%20primo%20biennio%20Polizze%20speciali.docx",
+        "source_id": 3,
+        "document_id": 1060,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_72f135d835da",
+      "input_sha256": "72f135d835da65c369a40e7f1259f7bdc920890f19868f4b57b47ac20e6b5ba5",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 11.149099999784085,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.023399999918183312,
+      "end_to_end_ms": 15.515600000071572,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1073-canonical_v2_82dd951a2af4",
+      "group": "document:1073",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1073,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2020"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1073,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2020"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 4.6,
+      "provenance": {
+        "canonical_sha256": "82dd951a2af40828588d877ae3053bf931d4adcb68d702996e0826a58c52c676",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2019/08/MOD%20Riduz%20tasso%20per%20prevenz%20anno%202020,0.pdf",
+        "source_id": 3,
+        "document_id": 1073,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_82dd951a2af4",
+      "input_sha256": "82dd951a2af40828588d877ae3053bf931d4adcb68d702996e0826a58c52c676",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 157.49770000002172,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 54.230200000347395,
+      "end_to_end_ms": 216.3274000004094,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1073-canonical_v2_dfad18973c2b",
+      "group": "document:1073",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1073,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2020"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1073,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2020"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 6.634,
+      "provenance": {
+        "canonical_sha256": "dfad18973c2bde42ec27bbf5bdc426d547ab2905f8bb59f2c62cfd4da4563243",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2019/08/MOD%20Riduz%20tasso%20per%20prevenz%20anno%202020.pdf,0.docx",
+        "source_id": 3,
+        "document_id": 1073,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_dfad18973c2b",
+      "input_sha256": "dfad18973c2bde42ec27bbf5bdc426d547ab2905f8bb59f2c62cfd4da4563243",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 181.4107000000149,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.0486999997519888,
+      "end_to_end_ms": 188.09309999960533,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1076-canonical_v2_1d55bf7769c7",
+      "group": "document:1076",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1076,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1076,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 4.601,
+      "provenance": {
+        "canonical_sha256": "1d55bf7769c73dced88eba1abe272d50e68157bf11248160ed0a1f484958f1db",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2020/10/MOD%20OT23%202021%20DT,0.pdf",
+        "source_id": 3,
+        "document_id": 1076,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_1d55bf7769c7",
+      "input_sha256": "1d55bf7769c73dced88eba1abe272d50e68157bf11248160ed0a1f484958f1db",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 124.37560000034864,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 54.96320000020205,
+      "end_to_end_ms": 183.9402000005066,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1076-canonical_v2_5fe2069a109d",
+      "group": "document:1076",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1076,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1076,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 5.555,
+      "provenance": {
+        "canonical_sha256": "5fe2069a109d3bc1c28ddb466e9964a8299e2643e8ada16482e1a77ef52e36cf",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2020/10/MOD%20OT23%202021%20DT.docx",
+        "source_id": 3,
+        "document_id": 1076,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_5fe2069a109d",
+      "input_sha256": "5fe2069a109d3bc1c28ddb466e9964a8299e2643e8ada16482e1a77ef52e36cf",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 232.1430000001783,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.060600000324484427,
+      "end_to_end_ms": 237.75860000114335,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1084-canonical_v2_39dfee7bb480",
+      "group": "document:1084",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1084,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1084,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 6.042,
+      "provenance": {
+        "canonical_sha256": "39dfee7bb480b257381f52eb95580742930f0feb2c1b3b279ba26af00bb3ff6f",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2025/riduzione-del-tasso-medio-per-prevenzione---anno-2024-(ot23)/All1%20OT23%202024%2015-9-2023.pdf",
+        "source_id": 3,
+        "document_id": 1084,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_39dfee7bb480",
+      "input_sha256": "39dfee7bb480b257381f52eb95580742930f0feb2c1b3b279ba26af00bb3ff6f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 79.34089999980642,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 51.7150000005131,
+      "end_to_end_ms": 137.09820000076434,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1084-canonical_v2_89e74a43e4c4",
+      "group": "document:1084",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1084,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1084,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 6.078,
+      "provenance": {
+        "canonical_sha256": "89e74a43e4c4acead8748b8ff27fd61149f43a631764061d23c55fff1d4ff5ad",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2025/riduzione-del-tasso-medio-per-prevenzione---anno-2024-(ot23)/All1%20OT23%202024%2015-9-2023.docx",
+        "source_id": 3,
+        "document_id": 1084,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_89e74a43e4c4",
+      "input_sha256": "89e74a43e4c4acead8748b8ff27fd61149f43a631764061d23c55fff1d4ff5ad",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 175.5901000005906,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.06619999930990161,
+      "end_to_end_ms": 181.73440000009577,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "FP-1085-canonical_v2_1d0e3cdc62b2",
+      "group": "document:1085",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1085,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1085,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 6.026,
+      "provenance": {
+        "canonical_sha256": "1d0e3cdc62b238accaf51bedc1297a5303581601f5620ee1f0f76b0052ee97c0",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2025/riduzione-del-tasso-medio-per-prevenzione---anno-2024-(ot23)/OT23%202024%20lingua%20tedesca%2015-9-2023.pdf",
+        "source_id": 3,
+        "document_id": 1085,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_1d0e3cdc62b2",
+      "input_sha256": "1d0e3cdc62b238accaf51bedc1297a5303581601f5620ee1f0f76b0052ee97c0",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 111.50970000016969,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 47.26170000049024,
+      "end_to_end_ms": 164.79740000067977,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/pdf"
+    },
+    {
+      "id": "FP-1085-canonical_v2_54cd561197bd",
+      "group": "document:1085",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1085,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1085,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "File ufficiale canonico identico.",
+      "conflicts": [],
+      "matching_ms": 8.757,
+      "provenance": {
+        "canonical_sha256": "54cd561197bdbc26907e66ff7017c638105ed726a2a21de514f1a04a565a6ecb",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2025/riduzione-del-tasso-medio-per-prevenzione---anno-2024-(ot23)/OT23%202024%20lingua%20tedesca%2015-9-2023.docx",
+        "source_id": 3,
+        "document_id": 1085,
+        "expected_family": null,
+        "transform_params": {},
+        "seed": 20261011
+      },
+      "representation": "canonical_v2_54cd561197bd",
+      "input_sha256": "54cd561197bdbc26907e66ff7017c638105ed726a2a21de514f1a04a565a6ecb",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 223.31149999990885,
+      "used_ocr": false,
+      "extraction_method": "docx",
+      "signals": [
+        "official_file_sha256_exact",
+        "fingerprint_v2"
+      ],
+      "candidate_rank": null,
+      "visual_ms": 0.05599999985861359,
+      "end_to_end_ms": 232.12409999996453,
+      "candidate_recall_at_k": {
+        "1": false,
+        "5": false,
+        "10": false,
+        "25": false
+      },
+      "retrieval_scores": [],
+      "canonical_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    }
+  ],
+  "identities": [
+    495,
+    496,
+    914,
+    915,
+    1058,
+    1059,
+    1060,
+    1073,
+    1076,
+    1084,
+    1085
+  ],
+  "limits": "Actual PDF/DOCX alternative resources of the same catalog identity, exact SHA recognition. Not a test of scanned DOCX rendering or cross-format text generalization.",
+  "counts": {
+    "exact": 22,
+    "family": 0,
+    "reject": 0,
+    "wrong": 0,
+    "extraction_failed": 0
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "numerator": 0,
+      "denominator": 22
+    },
+    "5": {
+      "numerator": 0,
+      "denominator": 22
+    },
+    "10": {
+      "numerator": 0,
+      "denominator": 22
+    },
+    "25": {
+      "numerator": 0,
+      "denominator": 22
+    }
+  }
+}

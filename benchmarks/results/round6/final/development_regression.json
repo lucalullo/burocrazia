@@ -1,0 +1,2757 @@
+{
+  "schema_version": 2,
+  "executed_at": "2026-10-12T06:19:01.843186+00:00",
+  "corpus_id": "burocrazia-synthetic-text-regression-2026-09-05",
+  "split": "development_regression",
+  "synthetic": true,
+  "purpose": "Regressione sintetica del classificatore testuale; casi pubblici di sviluppo, non benchmark indipendente e non misura della copertura nazionale.",
+  "identity": {
+    "corpus_sha256": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "catalog_file_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "catalog_semantic_sha256": "sha256:45576b289262d79c2e48ca1e844cd34342eee3c11d1898db8577d195a2e31149",
+    "rules_version": "deterministic-8-fingerprint-v2",
+    "code_sha256": "2a09688e55b286347e750e13471f7fbaf02024c29afc1202d817ef612919687e",
+    "git_commit": "ce6fa61f432c204e3d4c8029ef370ff27e429455",
+    "working_tree_dirty": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "system": "Windows",
+    "machine": "AMD64",
+    "rapidfuzz": "3.14.6"
+  },
+  "catalog": {
+    "real_documents": 1216,
+    "demo_documents": 10,
+    "families": 16
+  },
+  "summary": {
+    "cases": 35,
+    "passed": 33,
+    "failed": 2,
+    "metrics": {
+      "document_precision": {
+        "numerator": 9,
+        "denominator": 9,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 9,
+        "denominator": 11,
+        "value": 0.8181818181818182
+      },
+      "document_f1": {
+        "numerator": 18,
+        "denominator": 20,
+        "value": 0.9
+      },
+      "family_precision": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 14,
+        "denominator": 16,
+        "value": 0.875
+      },
+      "family_f1": {
+        "numerator": 28,
+        "denominator": 30,
+        "value": 0.9333333333333333
+      },
+      "exact_document_coverage": {
+        "numerator": 9,
+        "denominator": 11,
+        "value": 0.8181818181818182
+      },
+      "useful_coverage": {
+        "numerator": 23,
+        "denominator": 25,
+        "value": 0.92
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 2,
+        "denominator": 25,
+        "value": 0.08
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 21,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 9,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 9,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 2
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 14,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 10
+      }
+    },
+    "latency_ms": {
+      "p50": 84.058,
+      "p95": 132.8112,
+      "p99": null
+    }
+  },
+  "by": {
+    "source": {
+      "Agenzia delle Entrate": {
+        "cases": 13,
+        "passed": 13,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 9,
+            "denominator": 11,
+            "value": 0.8181818181818182
+          },
+          "family_f1": {
+            "numerator": 18,
+            "denominator": 20,
+            "value": 0.9
+          },
+          "exact_document_coverage": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 13,
+            "denominator": 13,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 13,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 13,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 4,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 9,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 41.36,
+          "p95": 127.782,
+          "p99": null
+        }
+      },
+      "Agenzia delle Entrate-Riscossione": {
+        "cases": 2,
+        "passed": 2,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 2,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 46.992,
+          "p95": 51.1104,
+          "p99": null
+        }
+      },
+      "INAIL": {
+        "cases": 1,
+        "passed": 1,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 1,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 103.866,
+          "p95": 103.866,
+          "p99": null
+        }
+      },
+      "INPS": {
+        "cases": 4,
+        "passed": 2,
+        "failed": 2,
+        "metrics": {
+          "document_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "document_f1": {
+            "numerator": 4,
+            "denominator": 6,
+            "value": 0.6666666666666666
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "useful_coverage": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 2,
+            "denominator": 4,
+            "value": 0.5
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 2,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 2
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 69.4755,
+          "p95": 1318.2126,
+          "p99": null
+        }
+      },
+      "Ispettorato Nazionale del Lavoro": {
+        "cases": 2,
+        "passed": 2,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 2,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 38.6925,
+          "p95": 39.7432,
+          "p99": null
+        }
+      },
+      "Ministero delle Infrastrutture e dei Trasporti": {
+        "cases": 1,
+        "passed": 1,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 1,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 113.74,
+          "p95": 113.74,
+          "p99": null
+        }
+      },
+      "unspecified": {
+        "cases": 12,
+        "passed": 12,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 2,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 10
+          }
+        },
+        "latency_ms": {
+          "p50": 100.345,
+          "p95": 127.6955,
+          "p99": null
+        }
+      }
+    },
+    "category": {
+      "adversarial_entity": {
+        "cases": 3,
+        "passed": 3,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 3
+          }
+        },
+        "latency_ms": {
+          "p50": 90.217,
+          "p95": 92.1673,
+          "p99": null
+        }
+      },
+      "adversarial_year": {
+        "cases": 3,
+        "passed": 3,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 3,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 123.718,
+          "p95": 132.862,
+          "p99": null
+        }
+      },
+      "ambiguous": {
+        "cases": 1,
+        "passed": 1,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 1
+          }
+        },
+        "latency_ms": {
+          "p50": 100.561,
+          "p95": 100.561,
+          "p99": null
+        }
+      },
+      "demo": {
+        "cases": 2,
+        "passed": 2,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 2,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 96.8055,
+          "p95": 103.1599,
+          "p99": null
+        }
+      },
+      "exact_real": {
+        "cases": 9,
+        "passed": 7,
+        "failed": 2,
+        "metrics": {
+          "document_precision": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 7,
+            "denominator": 9,
+            "value": 0.7777777777777778
+          },
+          "document_f1": {
+            "numerator": 14,
+            "denominator": 16,
+            "value": 0.875
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "numerator": 7,
+            "denominator": 9,
+            "value": 0.7777777777777778
+          },
+          "useful_coverage": {
+            "numerator": 7,
+            "denominator": 9,
+            "value": 0.7777777777777778
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 2,
+            "denominator": 9,
+            "value": 0.2222222222222222
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 7,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 2
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 41.364,
+          "p95": 940.683,
+          "p99": null
+        }
+      },
+      "family": {
+        "cases": 9,
+        "passed": 9,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 18,
+            "denominator": 18,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 9,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 44.099,
+          "p95": 112.7724,
+          "p99": null
+        }
+      },
+      "ocr_noise_text": {
+        "cases": 2,
+        "passed": 2,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 2,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 39.0625,
+          "p95": 39.0665,
+          "p99": null
+        }
+      },
+      "unknown": {
+        "cases": 6,
+        "passed": 6,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 6
+          }
+        },
+        "latency_ms": {
+          "p50": 112.9805,
+          "p95": 130.2365,
+          "p99": null
+        }
+      }
+    },
+    "noise": {
+      "unspecified": {
+        "cases": 35,
+        "passed": 33,
+        "failed": 2,
+        "metrics": {
+          "document_precision": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 9,
+            "denominator": 11,
+            "value": 0.8181818181818182
+          },
+          "document_f1": {
+            "numerator": 18,
+            "denominator": 20,
+            "value": 0.9
+          },
+          "family_precision": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 14,
+            "denominator": 16,
+            "value": 0.875
+          },
+          "family_f1": {
+            "numerator": 28,
+            "denominator": 30,
+            "value": 0.9333333333333333
+          },
+          "exact_document_coverage": {
+            "numerator": 9,
+            "denominator": 11,
+            "value": 0.8181818181818182
+          },
+          "useful_coverage": {
+            "numerator": 23,
+            "denominator": 25,
+            "value": 0.92
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 2,
+            "denominator": 25,
+            "value": 0.08
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 21,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 9,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 2
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 14,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 10
+          }
+        },
+        "latency_ms": {
+          "p50": 84.058,
+          "p95": 132.8112,
+          "p99": null
+        }
+      }
+    }
+  },
+  "macro_by_source": {
+    "document_precision": 1.0,
+    "document_recall": 0.875,
+    "document_f1": 0.9166666666666666,
+    "family_precision": 1.0,
+    "family_recall": 0.9545454545454546,
+    "family_f1": 0.975,
+    "exact_document_coverage": 0.875,
+    "useful_coverage": 0.9285714285714286,
+    "unknown_false_acceptance_rate": 0.0,
+    "unknown_correct_rejection_rate": 1.0,
+    "supported_rejection_rate": 0.07142857142857142,
+    "entity_error_rate": 0.0,
+    "version_year_error_rate": 0.0
+  },
+  "cases": [
+    {
+      "id": "EX01",
+      "group": "sr211",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 11,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 11,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 1535.001,
+      "source": "INPS",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX02",
+      "group": "ci543",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 13,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Revisione del modello non leggibile. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "missing_model_revision"
+      ],
+      "matching_ms": 45.503,
+      "source": "INPS",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX03",
+      "group": "ci544",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 12,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Revisione del modello non leggibile. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "missing_model_revision"
+      ],
+      "matching_ms": 49.206,
+      "source": "INPS",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX04",
+      "group": "f23",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 80,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 80,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 41.36,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX05",
+      "group": "f24_semplificato",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 183,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 183,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 41.022,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX06",
+      "group": "730_2026",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 49,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 49,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 41.366,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX07",
+      "group": "cu_2026",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 53,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 53,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 41.364,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX08",
+      "group": "inl17",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 132,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 132,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 39.86,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "EX09",
+      "group": "inl29",
+      "category": "exact_real",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 133,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 133,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 37.525,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "DE01",
+      "group": "demo_inps",
+      "category": "demo",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 89.745,
+      "source": "INPS",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "DE02",
+      "group": "demo_inail",
+      "category": "demo",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 3,
+        "entity": "INAIL",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 3,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 103.866,
+      "source": "INAIL",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA01",
+      "group": "730_2024",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 44.099,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA02",
+      "group": "730_2024",
+      "category": "adversarial_year",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 37.792,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA03",
+      "group": "730_no_year",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 43.8,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA04",
+      "group": "cu_2024",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 39.009,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA05",
+      "group": "cu_no_year",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 37.064,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA06",
+      "group": "cu_2024",
+      "category": "ocr_noise_text",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 39.067,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA07",
+      "group": "730_2024",
+      "category": "ocr_noise_text",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 39.058,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA08",
+      "group": "ader_cartella",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 42.416,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA09",
+      "group": "ader_pagopa",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 51.568,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA10",
+      "group": "verbale_sintetico",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 15,
+        "entity": "Polizia Locale / Ente locale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 100.129,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA11",
+      "group": "tassa_sintetica",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 16,
+        "entity": "Regione / Ente regionale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 111.321,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "FA12",
+      "group": "mit_pratica",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 113.74,
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "UN01",
+      "group": "ricetta",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 132.354,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "UN02",
+      "group": "biblioteca",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 123.884,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "UN03",
+      "group": "verbale_interno",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 84.058,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "UN04",
+      "group": "certificazione_generica",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 94.921,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "UN05",
+      "group": "universita_inventata",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 115.762,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "UN06",
+      "group": "agenda",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 110.199,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "AV01",
+      "group": "sr211_wrong_entity",
+      "category": "adversarial_entity",
+      "expected": {
+        "match_type": "NO_MATCH",
+        "forbidden_entities": [
+          "INPS"
+        ]
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "matching_ms": 92.384,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "AV02",
+      "group": "730_wrong_entity",
+      "category": "adversarial_entity",
+      "expected": {
+        "match_type": "NO_MATCH",
+        "forbidden_entities": [
+          "Agenzia delle Entrate"
+        ]
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 89.364,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "AV03",
+      "group": "cu_wrong_entity",
+      "category": "adversarial_entity",
+      "expected": {
+        "match_type": "NO_MATCH",
+        "forbidden_entities": [
+          "Agenzia delle Entrate"
+        ]
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Ente incompatibile con le famiglie candidate.",
+      "conflicts": [
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 90.217,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "AV04",
+      "group": "730_future",
+      "category": "adversarial_year",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2027"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 123.718,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "AV05",
+      "group": "cu_multiple_years",
+      "category": "adversarial_year",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "forbidden_document_versions": [
+          "2024",
+          "2026"
+        ]
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 133.878,
+      "source": "Agenzia delle Entrate",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "AV06",
+      "group": "f24_ambiguous",
+      "category": "ambiguous",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 100.561,
+      "source": "unspecified",
+      "noise": "unspecified",
+      "prefiltered_candidates": 1226
+    }
+  ],
+  "performance": {
+    "catalog_load_ms": 9.834,
+    "catalog_feature_prepare_ms": 386.545,
+    "index_build_ms": null,
+    "index": "full_scan_with_catalog_metadata_cache",
+    "peak_traced_python_bytes": 9027409,
+    "metadata_cache_max_entries": 4096,
+    "memory_scope": "one recognition with cold catalog metadata cache, Python allocations only; excludes native heap and catalog loading",
+    "catalog_size": 1226
+  },
+  "bootstrap": null
+}

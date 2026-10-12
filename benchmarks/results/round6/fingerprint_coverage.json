@@ -150,5 +150,12 @@
   "quarantined_resources": 28,
   "new_catalog_identities": 0,
   "network_requests": 669,
-  "denominator_policy": "A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service."
+  "denominator_policy": "A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.",
+  "retained_v1_identities": 366,
+  "newly_fingerprinted_missing_v1": 582,
+  "v1_ids_without_active_v2": [
+    152,
+    536,
+    921
+  ]
 }

@@ -24,7 +24,27 @@
   "unverified_explanations": 3,
   "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
   "bootstrap": "passed on separate temporary DB",
-  "compileall": "passed",
+  "compileall": "passed after final benchmark/report scripts",
   "frozen_rows_continuity": "passed",
-  "external_ci": "pending_external_gate"
+  "external_ci": "pending_external_gate",
+  "development_cli_v2": {
+    "passed": 37,
+    "cases": 37,
+    "corpus_sha256": "7af0365fad64bf4de70e4e4a88e3c12f6a81291111154f7e155b883c501448e1"
+  },
+  "historical_fast": {
+    "exit_code": 1,
+    "development": "33/35 unchanged labels, two prudent NO for absent semantic revisions",
+    "release_locked_v1": "59/69 historical labels",
+    "release_locked_v2": "69/69",
+    "negatives": "130/130",
+    "family": "161/161, zero FP"
+  },
+  "recognition_runtime_freeze_commit": "ce6fa61f432c204e3d4c8029ef370ff27e429455",
+  "full_tests": {
+    "passed": 655,
+    "failed": 0,
+    "skipped": 3,
+    "seconds": 581.88
+  }
 }

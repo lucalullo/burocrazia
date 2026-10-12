@@ -24,7 +24,9 @@ from src.database import connect_database, list_documents
 from src.families import list_document_families
 from src.recognize import RULES_VERSION, recognize_catalog
 
-DEFAULT_CORPUS = PROJECT_ROOT / "tests/fixtures/benchmark.json"
+# Historical v1 is immutable. V2 adds explicit semantic revisions to the two
+# positive inputs and retains their original revision-free text as negatives.
+DEFAULT_CORPUS = PROJECT_ROOT / "tests/fixtures/benchmark_v2.json"
 OUTCOMES = ("DOCUMENT_MATCH", "FAMILY_MATCH", "NO_MATCH")
 
 
@@ -154,6 +156,7 @@ def main(argv: list[str] | None = None) -> int:
         output = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
         if args.output:
             protected = {DEFAULT_CORPUS.resolve(), args.corpus.resolve(), (PROJECT_ROOT / "data/burocrazia.db").resolve(), (PROJECT_ROOT / "data/catalog_seed.sqlite3").resolve()}
+            protected.add((PROJECT_ROOT / "tests/fixtures/benchmark.json").resolve())
             if args.catalog:
                 protected.add(args.catalog.resolve())
             if args.output.resolve() in protected:

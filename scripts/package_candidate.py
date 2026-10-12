@@ -31,7 +31,7 @@ def main():
         assert not violations,violations
         manifest=json.loads(archive.read('BurOCRazia/data/catalog_manifest.json'))
         assert hashlib.sha256(archive.read('BurOCRazia/data/catalog_seed.sqlite3')).hexdigest()==manifest['sha256']
-        for locks in ['corpus_locks_v1.json','corpus_locks_v2.json','file_corpus_locks_v1.json','file_corpus_locks_v2.json','family_release_locks_v1.json','family_release_locks_v2.json','family_release_locks_v3.json']:
+        for locks in ['corpus_locks_v1.json','corpus_locks_v2.json','file_corpus_locks_v1.json','file_corpus_locks_v2.json','family_release_locks_v1.json','family_release_locks_v2.json','family_release_locks_v3.json','development_compat_locks_v2.json']:
             values=json.loads(archive.read('BurOCRazia/benchmarks/manifests/'+locks))['sha256']
             for key,digest in values.items():
                 path=key if '/' in key else 'benchmarks/corpora/'+key
@@ -64,6 +64,10 @@ def main():
             calibration=json.loads(archive.read('BurOCRazia/benchmarks/results/round6/fingerprint_calibration.json'))
             assert hashlib.sha256(archive.read('BurOCRazia/data/recognition_profiles/fingerprint_v2.json')).hexdigest()==calibration['profile_sha256']
             assert not set(calibration['calibration_identities'])&set(calibration['evaluation_identities'])
+            locks=json.loads(archive.read('BurOCRazia/benchmarks/results/round6/evaluation_locks.json'))
+            for path,digest in locks['sha256'].items():
+                assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            assert locks['runtime_sha256']==gates['identity']['runtime_sha256']
         assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[])
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())

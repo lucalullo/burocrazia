@@ -11,6 +11,7 @@ def main():
     docs,families=catalog();docs=[d for d in docs if d.stato_verifica not in ['demo','rifiutato']]
     audit=read('benchmarks/results/round6/resource_audit.json');rows=audit['cases']
     records=read_bundle()['records'];active={r['document_id'] for r in records if r['status']=='active'}
+    v1_ids={r['document_id'] for r in read('data/document_recognition_fingerprints.json')['records']}
     failures={r['document_id']:r['reason'] for r in read('benchmarks/results/round6/fingerprint_build.json')['failures']}
     quarantined={r['document_id'] for r in records if r['status']=='quarantined'}
     coverage_path=ROOT/'benchmarks/results/round6/final/catalog_coverage.json'
@@ -40,6 +41,8 @@ def main():
         new_catalog_identities=0,network_requests=audit['network_requests'],
         denominator_policy='A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.')
     report['network_requests']=audit.get('network_requests_total',audit['network_requests'])
+    report.update(retained_v1_identities=len(v1_ids&active),newly_fingerprinted_missing_v1=len(active-v1_ids),
+        v1_ids_without_active_v2=sorted(v1_ids-active))
     write('benchmarks/results/round6/fingerprint_coverage.json',report)
     fields=['document_id','source','entity','title','code','version','detail_url','download_url','operational_status',
         'expected_resource_type','fetch_attempted','final_url','http_status','content_type','bytes','classification','reason','safe_next_action','round6_status']
