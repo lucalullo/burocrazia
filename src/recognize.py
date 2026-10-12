@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 from typing import Iterable
 
-from rapidfuzz import fuzz
+from rapidfuzz import fuzz,process
 from src.title_evidence import title_windows, exact_code_candidates
 from src.text_quality import text_quality
 from src.technical_anchors import match_anchors, feature_revision
@@ -26,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-9-fingerprint-decision-v3"
+RULES_VERSION = "deterministic-10-fingerprint-decision-v4"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -487,7 +487,7 @@ def _score_candidate(
         version_conflict = True
     qualifier_conflict = _qualifier_conflict(features.title_tokens,
         input_features['opening_tokens'] if input_features is not None else set(identity_text.split()),
-        frozenset(' '.join(input_features['title_lines']).split()) if input_features is not None else None)
+        input_features['heading_tokens'] if input_features is not None and 'heading_tokens' in input_features else frozenset(' '.join(input_features['title_lines']).split()) if input_features is not None else None)
     annex_conflict = bool(features.annex and input_features and input_features['annexes'] and input_features['annexes'] != {features.annex})
     if qualifier_conflict:
         technical_title = window_title = False
@@ -570,7 +570,7 @@ def _score_candidate(
                             (input_features['title_lines'] if input_features is not None else tuple(normalize_text(line) for line in original_text[:800].splitlines() if line.strip())[:5]))
         # A literal title in the body can describe an exemption or another
         # authority's form. Missing issuer evidence requires a title heading.
-        if (exact_title and not entity_match and not title_heading) or (not exact_title and not window_title and not technical_title and not features.acronyms.issubset(set(identity_text.split()))):
+        if (exact_title and not entity_match and not title_heading) or (not exact_title and not window_title and not technical_title and not features.acronyms.issubset(input_features['opening_tokens'] if input_features is not None else set(identity_text.split()))):
             strong_evidence = False
             evidence_rank = 0
         # Two generic title words in legal instructions cannot establish a form.
@@ -607,7 +607,7 @@ def _score_candidate(
             conflicts.append("annualità assente, ambigua o incompatibile")
 
     signature = features.signature
-    general_similarity = float(fuzz.token_set_ratio(signature, normalized_text))
+    general_similarity = input_features['general_scores'][document] if input_features is not None and 'general_scores' in input_features else float(fuzz.token_set_ratio(signature, normalized_text))
     if general_similarity:
         score += WEIGHTS["general_similarity"] * general_similarity / 100.0
         signals.append("similarità generale")
@@ -632,11 +632,12 @@ def recognize_document(
     min_confidence: float = MIN_CONFIDENCE,
     known_entities: Iterable[str] = (),
     reference_full_scan: bool = False,
+    request_context=None,
 ) -> RecognitionResult:
     if not 0.0 <= min_confidence <= 100.0:
         raise ValueError("La soglia di confidenza deve essere compresa tra 0 e 100.")
 
-    normalized_text = normalize_text(text[:2000])
+    normalized_text = request_context.memo(('metadata_normalization',text[:2000]),lambda:normalize_text(text[:2000])) if request_context is not None else normalize_text(text[:2000])
     if not normalized_text:
         return RecognitionResult(recognized=False, confidence=0.0, reason="Nessun testo leggibile disponibile.")
     if _informational_heading(text):
@@ -650,8 +651,8 @@ def recognize_document(
             *known_entities,
             *DISTINCT_ENTITY_NAMES,
     )
-    opening_text = normalize_text(text[:2000])
-    detected_entities = _issuer_entities(text, entity_names)
+    opening_text = normalized_text
+    detected_entities = request_context.memo(('metadata_entities',text[:2000],frozenset(entity_names)),lambda:_issuer_entities(text,entity_names)) if request_context is not None else _issuer_entities(text,entity_names)
     scopes = detected_entities or _scope_entities(text, document_list, entity_names)
     # Request-local only: uploaded text and its derivatives are never cached.
     input_features = dict(
@@ -675,6 +676,12 @@ def recognize_document(
     else:
         input_features['local_entity_conflicts']={entity:_local_entity_conflict(text[:2000],entity) for entity in set(d.ente for d in document_list)}
         input_features['padded_text']=f' {normalized_text} '
+        input_features['heading_tokens']=frozenset(' '.join(input_features['title_lines']).split())
+        # RapidFuzz prepares the request token set once for all public catalog
+        # signatures. Scores are request-local, mathematically the same scorer;
+        # the independent full-scan path retains direct per-document calls.
+        choices={d:_catalog_features(d).signature for d in document_list if d.stato_verifica!='rifiutato'}
+        input_features['general_scores']={d:float(score) for _,score,d in process.extract_iter(normalized_text,choices,scorer=fuzz.token_set_ratio,score_cutoff=0)}
     candidates = sorted(
         (
             _score_candidate(text, normalized_text, document, detected_entities, opening_text, input_features)
@@ -849,10 +856,11 @@ def recognize_document_family(
     *,
     min_confidence: float = MIN_FAMILY_CONFIDENCE,
     known_entities: Iterable[str] = (),
+    request_context=None,
 ) -> FamilyRecognitionResult:
     if not 0.0 <= min_confidence <= 100.0:
         raise ValueError("La soglia famiglia deve essere compresa tra 0 e 100.")
-    normalized_text = normalize_text(text[:2000])
+    normalized_text = request_context.memo(('metadata_normalization',text[:2000]),lambda:normalize_text(text[:2000])) if request_context is not None else normalize_text(text[:2000])
     if not normalized_text:
         return FamilyRecognitionResult(False, 0.0, reason="Nessun testo leggibile disponibile.")
     if _informational_heading(text):
@@ -864,7 +872,7 @@ def recognize_document_family(
             *known_entities,
             *DISTINCT_ENTITY_NAMES,
     )
-    detected_entities = _issuer_entities(text, entity_names)
+    detected_entities = request_context.memo(('metadata_entities',text[:2000],frozenset(entity_names)),lambda:_issuer_entities(text,entity_names)) if request_context is not None else _issuer_entities(text,entity_names)
 
     candidates = sorted(
         (
@@ -914,6 +922,8 @@ def catalog_revision(
         "document_fingerprints": __import__('src.document_fingerprints',fromlist=['revision']).revision(),
         "document_fingerprints_v2": __import__('src.fingerprint_v2',fromlist=['revision']).revision(),
         "fingerprint_decision_v3": __import__('src.fingerprint_decision_v3',fromlist=['revision']).revision(),
+        "document_fingerprints_v3": __import__('src.fingerprint_v3',fromlist=['revision']).revision(),
+        "fingerprint_decision_v4": __import__('src.fingerprint_decision_v4',fromlist=['revision']).revision(),
         "technical_features": feature_revision(),
         "safety_profiles": profile_revision(),
         "documents": sorted((
@@ -941,12 +951,22 @@ def recognize_catalog(
     file_sha256: str | None = None,
     form_field_names: Iterable[str] = (),
     visual_fingerprint: tuple[str, ...] = (),
+    page_context=None,
+    fingerprint_diagnostics: dict | None = None,
 ) -> CatalogRecognitionResult:
     document_list = list(documents)
     family_list = list(families)
     from src.fingerprint_v2 import public_index as fingerprint_index_v2
-    fingerprint_diagnostics={}
-    if fingerprint_index_v2().records:
+    fingerprint_diagnostics={} if fingerprint_diagnostics is None else fingerprint_diagnostics
+    from src.fingerprint_v3 import public_index as fingerprint_index_v3
+    if fingerprint_index_v3().records:
+        if page_context is None:
+            from src.fingerprint_pages import RequestPages,field_signature
+            page_context=RequestPages((text,),field_set=field_signature(form_field_names))
+        from src.fingerprint_decision_v4 import match as match_fingerprint
+        fingerprint_result=match_fingerprint(text,document_list,file_sha256=file_sha256,
+            pages=page_context,field_names=form_field_names,reference=reference_full_scan,diagnostics=fingerprint_diagnostics)
+    elif fingerprint_index_v2().records:
         from src.fingerprint_match_v2 import match as match_fingerprint
         fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
             visual=visual_fingerprint, reference=reference_full_scan,diagnostics=fingerprint_diagnostics)
@@ -971,21 +991,23 @@ def recognize_catalog(
     opening = normalize_text(text[:2000])
     operational_documents = [d for d in document_list if d.stato_verifica != 'demo' or
                              bool(d.codice and _contains_phrase(opening,d.codice))]
-    document_result = recognize_document(
-        text,
-        operational_documents,
-        min_confidence=min_document_confidence,
-        known_entities=tuple(family.ente for family in family_list)+tuple(d.ente for d in document_list),
-        reference_full_scan=reference_full_scan,
-    )
-    family_result = recognize_document_family(
-        text,
-        family_list,
-        min_confidence=min_family_confidence,
-        known_entities=(document.ente for document in document_list),
-    )
+    known_entities=tuple(family.ente for family in family_list)+tuple(d.ente for d in document_list)
+    def metadata_document():
+        return recognize_document(text,operational_documents,min_confidence=min_document_confidence,
+            known_entities=known_entities,reference_full_scan=reference_full_scan,request_context=page_context)
+    def metadata_family():
+        return recognize_document_family(text,family_list,min_confidence=min_family_confidence,
+            known_entities=(d.ente for d in document_list),request_context=page_context)
+    document_key=('metadata_document',text,tuple(operational_documents),frozenset(known_entities),min_document_confidence,reference_full_scan)
+    family_key=('metadata_family',text,tuple(family_list),frozenset(d.ente for d in document_list),min_family_confidence)
+    document_result=page_context.memo(document_key,metadata_document) if page_context is not None else metadata_document()
+    family_result=page_context.memo(family_key,metadata_family) if page_context is not None else metadata_family()
     # A known template with an unreadable revision cannot become another exact
     # version through the metadata fallback after a fingerprint refusal.
+    dominant=fingerprint_diagnostics.get('dominant_content_candidate')
+    if document_result.recognized and document_result.document is not None and dominant is not None and dominant!=document_result.document.id:
+        fingerprint_diagnostics['metadata_veto']='metadata_content_conflict'
+        document_result=RecognitionResult(False,0.0,reason='Metadati in conflitto con una firma testuale dominante: identità specifica rifiutata.',conflicts=('metadata_content_conflict',),candidate_ids=document_result.candidate_ids)
     if document_result.recognized and document_result.document is not None:
         version=document_result.document.versione or ''
         from src.fingerprint_decision_v3 import metadata_revision_supported
@@ -994,7 +1016,8 @@ def recognize_catalog(
             document_result=RecognitionResult(False,0.0,reason='Revisione del modello non leggibile.',
                 conflicts=('missing_model_revision',),candidate_ids=document_result.candidate_ids)
     if not document_result.recognized and fingerprint_diagnostics:
-        document_result=__import__('dataclasses').replace(document_result,reason=document_result.reason+' [fingerprint-decision-v3:'+str(fingerprint_diagnostics.get('reason_code') or fingerprint_diagnostics.get('tier'))+']')
+        policy='fingerprint-decision-v4' if fingerprint_index_v3().records else 'fingerprint-decision-v3'
+        document_result=__import__('dataclasses').replace(document_result,reason=document_result.reason+' ['+policy+':'+str(fingerprint_diagnostics.get('reason_code') or fingerprint_diagnostics.get('tier'))+']')
     diagnostics = {
         "document_score_margin": document_result.score_margin,
         "family_score_margin": family_result.score_margin,

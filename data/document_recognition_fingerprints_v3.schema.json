@@ -1,0 +1,296 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "fingerprint_version",
+    "parameters",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "fingerprint_version": {
+      "const": "fingerprint-v3"
+    },
+    "parameters": {
+      "const": {
+        "token_hash": "sha256-domain-64-v2-compatible",
+        "char_hash": "blake2b-domain-64-v3",
+        "char_ngrams": [
+          3,
+          4,
+          5
+        ],
+        "token_size": 64,
+        "char_size": 64,
+        "anchor_size": 32,
+        "max_page_chars": 8000,
+        "max_pages": 100,
+        "ocr_dpi": 144,
+        "identity_chars": 2000,
+        "visual": "rotation-dhash64-center-tiles2x2-v3",
+        "idf": "token exact page DF; char deterministic 32768-bucket page DF; log((pages+1)/(df+1))+1",
+        "containment": "sampled canonical overlap scaled by canonical/query cardinality; capped at 1"
+      }
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 4000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "document_id",
+          "source_id",
+          "catalog_binding_sha256",
+          "canonical_file_sha256",
+          "mime_type",
+          "url",
+          "final_url",
+          "acquisition_date",
+          "size_bytes",
+          "generated_at",
+          "status",
+          "shared_kind",
+          "pages",
+          "aggregate",
+          "field_set",
+          "ocr_metadata"
+        ],
+        "properties": {
+          "document_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "catalog_binding_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "canonical_file_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "mime_type": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "final_url": {
+            "type": "string"
+          },
+          "acquisition_date": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "generated_at": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "shared",
+              "stale",
+              "quarantined"
+            ]
+          },
+          "shared_kind": {
+            "enum": [
+              "same_identity_duplicate",
+              "shared_attachment",
+              "common_form",
+              "ambiguous",
+              "unambiguous"
+            ]
+          },
+          "pages": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "number",
+                "digital",
+                "ocr",
+                "digital_count",
+                "ocr_count",
+                "chars",
+                "char_counts",
+                "anchors",
+                "visual",
+                "ocr_status"
+              ],
+              "properties": {
+                "number": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100
+                },
+                "digital": {
+                  "type": "array",
+                  "maxItems": 64,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{16}$"
+                  }
+                },
+                "ocr": {
+                  "type": "array",
+                  "maxItems": 64,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{16}$"
+                  }
+                },
+                "digital_count": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100000
+                },
+                "ocr_count": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100000
+                },
+                "chars": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "properties": {
+                    "3": {
+                      "type": "array",
+                      "maxItems": 64,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{16}$"
+                      }
+                    },
+                    "4": {
+                      "type": "array",
+                      "maxItems": 64,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{16}$"
+                      }
+                    },
+                    "5": {
+                      "type": "array",
+                      "maxItems": 64,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{16}$"
+                      }
+                    }
+                  }
+                },
+                "char_counts": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "properties": {
+                    "3": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100000
+                    },
+                    "4": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100000
+                    },
+                    "5": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100000
+                    }
+                  }
+                },
+                "anchors": {
+                  "type": "array",
+                  "maxItems": 32,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{16}$"
+                  }
+                },
+                "visual": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{16}$"
+                  },
+                  "anyOf": [
+                    {
+                      "maxItems": 0
+                    },
+                    {
+                      "minItems": 24,
+                      "maxItems": 24
+                    }
+                  ]
+                },
+                "ocr_status": {
+                  "enum": [
+                    "generated",
+                    "reused_v2_first_page",
+                    "unavailable_docx_renderer",
+                    "failed",
+                    "bounded_timeout"
+                  ]
+                }
+              }
+            }
+          },
+          "aggregate": {
+            "type": "array",
+            "maxItems": 192,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{16}$"
+            }
+          },
+          "field_set": {
+            "type": "array",
+            "maxItems": 512,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{16}$"
+            }
+          },
+          "ocr_metadata": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Public hashed canonical pages only. Runtime validator additionally enforces sorted sketches, aggregate page cap, dates, HTTPS, size, safe paths and binding rules."
+}

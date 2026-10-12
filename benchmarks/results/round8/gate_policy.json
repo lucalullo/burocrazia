@@ -1,0 +1,63 @@
+{
+  "declared_before_freeze": true,
+  "main_label_status": "confirmed",
+  "historical_safety": "Original NO_MATCH safety contracts including ambiguous labels still mandatory; historical fixture disagreements are reported unchanged and do not become confirmed ground truth.",
+  "coverage": {
+    "file_backed_denominator": 1158,
+    "operational_denominator": 1212,
+    "file_backed_min": 0.85,
+    "all_min": 0.7
+  },
+  "evaluation": {
+    "min_identities": 25,
+    "target_identities": 40,
+    "min_sources": 5,
+    "target_sources": 8,
+    "max_source_fraction": 0.3,
+    "min_representations": 350,
+    "min_scans": 200,
+    "min_valid_fills": 30,
+    "target_valid_fills": 50
+  },
+  "canonical": {
+    "precision": 1,
+    "recall": 1
+  },
+  "robustness": {
+    "precision": 0.995,
+    "recall": 0.9,
+    "max_wrong": 0.005,
+    "entity_errors": 0,
+    "version_errors": 0
+  },
+  "scan": {
+    "precision": 0.995,
+    "recall": 0.85
+  },
+  "filled": {
+    "generation_success": 0.9,
+    "precision": 0.995,
+    "recall": 0.9
+  },
+  "unknown": {
+    "correct_rejection": 0.99,
+    "require_confirmed_main_labels": true,
+    "historical_separate": true
+  },
+  "family": {
+    "min_evaluable": 5,
+    "precision": 0.99,
+    "recall": 0.8,
+    "false_accepts": 0,
+    "if_insufficient": "useful gate equals exact recall"
+  },
+  "performance": {
+    "p50_ms": 150,
+    "p95_ms": 250,
+    "preferred_p95_ms": 200,
+    "index_max_bytes": 100000000
+  },
+  "tests": "all green",
+  "ci": "external pending permits local RC only",
+  "failure": "NOT READY; never change gates or retune evaluation v4"
+}

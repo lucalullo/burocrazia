@@ -1,0 +1,6355 @@
+{
+  "cases": [
+    {
+      "id": "R8DEV-387-filled-2",
+      "group": "document:387",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "30e55320323e455fa9f61408e22db33a8c39ac1e9eafe12b152528b41b9ac77e",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 387,
+        "expected_candidate": {
+          "document_id": 387,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 1,
+          "chars": 0.9664034123237311,
+          "anchors": 1.0,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9882411943133059
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1941,
+          "candidates_text": 2239,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 387,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 1,
+            "chars": 0.9664034123237311,
+            "anchors": 1.0,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9882411943133059,
+            "max_similarity": 0.9882411943133059,
+            "top2_average": 0.9672193760309497
+          },
+          {
+            "document_id": 364,
+            "canonical_page": 3,
+            "digital": 1,
+            "ocr": 0.9254488540539731,
+            "chars": 0.9378874201258087,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9407605970440331,
+            "max_similarity": 0.9407605970440331,
+            "top2_average": 0.5203628622620485
+          },
+          {
+            "document_id": 635,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9794555982251858,
+            "chars": 0.9596778841468229,
+            "anchors": 0.48,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9078872594513879,
+            "max_similarity": 0.9078872594513879,
+            "top2_average": 0.4868028167334228
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9882411943133059
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:1.0000",
+        "chars:0.9664",
+        "visual:0.0000",
+        "anchors:1.0000"
+      ]
+    },
+    {
+      "id": "R8DEV-387-filled-1",
+      "group": "document:387",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "960ca9fd0b5e5051f7aebda24a4ff03619b76febfc98cde937ee21a5f48732a5",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 387,
+        "expected_candidate": {
+          "document_id": 387,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 1,
+          "chars": 0.9664034123237311,
+          "anchors": 1.0,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9882411943133059
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1943,
+          "candidates_text": 2238,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 387,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 1,
+            "chars": 0.9664034123237311,
+            "anchors": 1.0,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9882411943133059,
+            "max_similarity": 0.9882411943133059,
+            "top2_average": 0.9672193760309497
+          },
+          {
+            "document_id": 364,
+            "canonical_page": 3,
+            "digital": 1,
+            "ocr": 0.9254488540539731,
+            "chars": 0.9378874201258087,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9407605970440331,
+            "max_similarity": 0.9407605970440331,
+            "top2_average": 0.5203628622620485
+          },
+          {
+            "document_id": 635,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9794555982251858,
+            "chars": 0.9596778841468229,
+            "anchors": 0.48,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9078872594513879,
+            "max_similarity": 0.9078872594513879,
+            "top2_average": 0.4868028167334228
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9882411943133059
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:1.0000",
+        "chars:0.9664",
+        "visual:0.0000",
+        "anchors:1.0000"
+      ]
+    },
+    {
+      "id": "R8DEV-387-filled-3",
+      "group": "document:387",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "09b5fd56a8282731c5e597d4b082ffeb69e9da6c4ea3d087057c1e86a2d40d74",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 387,
+        "expected_candidate": {
+          "document_id": 387,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 1,
+          "chars": 0.9664034123237311,
+          "anchors": 1.0,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9882411943133059
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1937,
+          "candidates_text": 2232,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 387,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 1,
+            "chars": 0.9664034123237311,
+            "anchors": 1.0,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9882411943133059,
+            "max_similarity": 0.9882411943133059,
+            "top2_average": 0.9672193760309497
+          },
+          {
+            "document_id": 364,
+            "canonical_page": 3,
+            "digital": 1,
+            "ocr": 0.9254488540539731,
+            "chars": 0.9378874201258087,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9407605970440331,
+            "max_similarity": 0.9407605970440331,
+            "top2_average": 0.5203628622620485
+          },
+          {
+            "document_id": 635,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9794555982251858,
+            "chars": 0.9596778841468229,
+            "anchors": 0.48,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9078872594513879,
+            "max_similarity": 0.9078872594513879,
+            "top2_average": 0.4868028167334228
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9882411943133059
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:1.0000",
+        "chars:0.9664",
+        "visual:0.0000",
+        "anchors:1.0000"
+      ]
+    },
+    {
+      "id": "R8DEV-387-filled-0",
+      "group": "document:387",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "ff880b10a11867250e7e0b704b258844a14e53ba283b8b757e528f72428fe235",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 387,
+        "expected_candidate": {
+          "document_id": 387,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 1,
+          "chars": 0.9664034123237311,
+          "anchors": 1.0,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9882411943133059
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1937,
+          "candidates_text": 2232,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 387,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 1,
+            "chars": 0.9664034123237311,
+            "anchors": 1.0,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9882411943133059,
+            "max_similarity": 0.9882411943133059,
+            "top2_average": 0.9672193760309497
+          },
+          {
+            "document_id": 364,
+            "canonical_page": 3,
+            "digital": 1,
+            "ocr": 0.9254488540539731,
+            "chars": 0.9378874201258087,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9407605970440331,
+            "max_similarity": 0.9407605970440331,
+            "top2_average": 0.5203628622620485
+          },
+          {
+            "document_id": 635,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9794555982251858,
+            "chars": 0.9596778841468229,
+            "anchors": 0.48,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9078872594513879,
+            "max_similarity": 0.9078872594513879,
+            "top2_average": 0.4868028167334228
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9882411943133059
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:1.0000",
+        "chars:0.9664",
+        "visual:0.0000",
+        "anchors:1.0000"
+      ]
+    },
+    {
+      "id": "R8DEV-786-filled-0",
+      "group": "document:786",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "59cf38830c9745edbfa555fd2b508923488b141fb88145b8dccf81be8d5ac99d",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 786,
+        "expected_candidate": {
+          "document_id": 786,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.9142388897744174,
+          "chars": 1,
+          "anchors": 0.96875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9953124999999999
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 295,
+          "candidates_text": 319,
+          "candidates_visual": 0
+        },
+        "representation": "digital_pdf",
+        "candidates": [
+          {
+            "document_id": 786,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.9142388897744174,
+            "chars": 1,
+            "anchors": 0.96875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9953124999999999,
+            "max_similarity": 0.9953124999999999,
+            "top2_average": 0.9921513473464172
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.8751659855309899,
+            "ocr": 0.8044188759343733,
+            "chars": 0.9615522955036703,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.9147512961917795,
+            "max_similarity": 0.9147512961917795,
+            "top2_average": 0.823851836511217
+          },
+          {
+            "document_id": 835,
+            "canonical_page": 2,
+            "digital": 0.5943963065940808,
+            "ocr": 0.6141968207966487,
+            "chars": 0.8046892215980821,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 41,
+            "score": 0.7012396379576531,
+            "max_similarity": 0.7012396379576531,
+            "top2_average": 0.5950640766776393
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9953124999999999
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "B_digital_char_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.9142",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.9688"
+      ]
+    },
+    {
+      "id": "R8DEV-387-filled-4",
+      "group": "document:387",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 387,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.3"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "50290fbef211325faa1b6f7983446af05440864f5759d5c2cef10c1be3a19270",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 387,
+        "expected_candidate": {
+          "document_id": 387,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 1,
+          "chars": 0.9664034123237311,
+          "anchors": 1.0,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9882411943133059
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1937,
+          "candidates_text": 2232,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 387,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 1,
+            "chars": 0.9664034123237311,
+            "anchors": 1.0,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9882411943133059,
+            "max_similarity": 0.9882411943133059,
+            "top2_average": 0.9672193760309497
+          },
+          {
+            "document_id": 364,
+            "canonical_page": 3,
+            "digital": 1,
+            "ocr": 0.9254488540539731,
+            "chars": 0.9378874201258087,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9407605970440331,
+            "max_similarity": 0.9407605970440331,
+            "top2_average": 0.5203628622620485
+          },
+          {
+            "document_id": 635,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9794555982251858,
+            "chars": 0.9596778841468229,
+            "anchors": 0.48,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9078872594513879,
+            "max_similarity": 0.9078872594513879,
+            "top2_average": 0.4868028167334228
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9882411943133059
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:1.0000",
+        "chars:0.9664",
+        "visual:0.0000",
+        "anchors:1.0000"
+      ]
+    },
+    {
+      "id": "R8DEV-786-filled-2",
+      "group": "document:786",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "31608543ad42e1fd347f8dd3f645f8eab7f849135f572250c4009c182bd7f638",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 786,
+        "expected_candidate": {
+          "document_id": 786,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.9142388897744174,
+          "chars": 1,
+          "anchors": 0.96875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9953124999999999
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 295,
+          "candidates_text": 319,
+          "candidates_visual": 0
+        },
+        "representation": "digital_pdf",
+        "candidates": [
+          {
+            "document_id": 786,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.9142388897744174,
+            "chars": 1,
+            "anchors": 0.96875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9953124999999999,
+            "max_similarity": 0.9953124999999999,
+            "top2_average": 0.9921513473464172
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.8751659855309899,
+            "ocr": 0.8044188759343733,
+            "chars": 0.9615522955036703,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.9147512961917795,
+            "max_similarity": 0.9147512961917795,
+            "top2_average": 0.823851836511217
+          },
+          {
+            "document_id": 835,
+            "canonical_page": 2,
+            "digital": 0.5943963065940808,
+            "ocr": 0.6141968207966487,
+            "chars": 0.8046892215980821,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 41,
+            "score": 0.7012396379576531,
+            "max_similarity": 0.7012396379576531,
+            "top2_average": 0.5950640766776393
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9953124999999999
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "B_digital_char_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.9142",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.9688"
+      ]
+    },
+    {
+      "id": "R8DEV-786-filled-1",
+      "group": "document:786",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "1ed218b5795f4487107340ddb110e01276c7ecb36e30388dd5bc2ca5467a9b28",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 786,
+        "expected_candidate": {
+          "document_id": 786,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.9142388897744174,
+          "chars": 1,
+          "anchors": 0.96875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9953124999999999
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 295,
+          "candidates_text": 319,
+          "candidates_visual": 0
+        },
+        "representation": "digital_pdf",
+        "candidates": [
+          {
+            "document_id": 786,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.9142388897744174,
+            "chars": 1,
+            "anchors": 0.96875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9953124999999999,
+            "max_similarity": 0.9953124999999999,
+            "top2_average": 0.9921513473464172
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.8751659855309899,
+            "ocr": 0.8044188759343733,
+            "chars": 0.9615522955036703,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.9147512961917795,
+            "max_similarity": 0.9147512961917795,
+            "top2_average": 0.823851836511217
+          },
+          {
+            "document_id": 835,
+            "canonical_page": 2,
+            "digital": 0.5943963065940808,
+            "ocr": 0.6141968207966487,
+            "chars": 0.8046892215980821,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 41,
+            "score": 0.7012396379576531,
+            "max_similarity": 0.7012396379576531,
+            "top2_average": 0.5950640766776393
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9953124999999999
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "B_digital_char_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.9142",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.9688"
+      ]
+    },
+    {
+      "id": "R8DEV-786-filled-4",
+      "group": "document:786",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "c7d6eb45df92ca24083ece3d31f6538d929c39a0c7a7311c8aebea88e04838ff",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 786,
+        "expected_candidate": {
+          "document_id": 786,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.9142388897744174,
+          "chars": 1,
+          "anchors": 0.96875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9953124999999999
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 295,
+          "candidates_text": 319,
+          "candidates_visual": 0
+        },
+        "representation": "digital_pdf",
+        "candidates": [
+          {
+            "document_id": 786,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.9142388897744174,
+            "chars": 1,
+            "anchors": 0.96875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9953124999999999,
+            "max_similarity": 0.9953124999999999,
+            "top2_average": 0.9921513473464172
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.8751659855309899,
+            "ocr": 0.8044188759343733,
+            "chars": 0.9615522955036703,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.9147512961917795,
+            "max_similarity": 0.9147512961917795,
+            "top2_average": 0.823851836511217
+          },
+          {
+            "document_id": 835,
+            "canonical_page": 2,
+            "digital": 0.5943963065940808,
+            "ocr": 0.6141968207966487,
+            "chars": 0.8046892215980821,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 41,
+            "score": 0.7012396379576531,
+            "max_similarity": 0.7012396379576531,
+            "top2_average": 0.5950640766776393
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9953124999999999
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "B_digital_char_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.9142",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.9688"
+      ]
+    },
+    {
+      "id": "R8DEV-786-filled-3",
+      "group": "document:786",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 786,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "c3c3c843fd4d84ed48e8c5ac3a17df22116c8f1bde29f68bf26c93abb0268f2b",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 786,
+        "expected_candidate": {
+          "document_id": 786,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.9142388897744174,
+          "chars": 1,
+          "anchors": 0.96875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9953124999999999
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 295,
+          "candidates_text": 319,
+          "candidates_visual": 0
+        },
+        "representation": "digital_pdf",
+        "candidates": [
+          {
+            "document_id": 786,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.9142388897744174,
+            "chars": 1,
+            "anchors": 0.96875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9953124999999999,
+            "max_similarity": 0.9953124999999999,
+            "top2_average": 0.9921513473464172
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.8751659855309899,
+            "ocr": 0.8044188759343733,
+            "chars": 0.9615522955036703,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.9147512961917795,
+            "max_similarity": 0.9147512961917795,
+            "top2_average": 0.823851836511217
+          },
+          {
+            "document_id": 835,
+            "canonical_page": 2,
+            "digital": 0.5943963065940808,
+            "ocr": 0.6141968207966487,
+            "chars": 0.8046892215980821,
+            "anchors": 0.75,
+            "visual": 0.0,
+            "overlap": 41,
+            "score": 0.7012396379576531,
+            "max_similarity": 0.7012396379576531,
+            "top2_average": 0.5950640766776393
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9953124999999999
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "B_digital_char_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.9142",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.9688"
+      ]
+    },
+    {
+      "id": "R8DEV-316-filled-1",
+      "group": "document:316",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "d7c424fa4be937f286bfcaf3fca2fd1818d621ac4efc06f68c4f7b10c4c538c7",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 316,
+        "expected_candidate": {
+          "document_id": 316,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.9177585198808997,
+          "chars": 0.9767645067828504,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9731175773739976
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1417,
+          "candidates_text": 1979,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 316,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.9177585198808997,
+            "chars": 0.9767645067828504,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9731175773739976,
+            "max_similarity": 0.9731175773739976,
+            "top2_average": 0.9701525386869988
+          },
+          {
+            "document_id": 314,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          },
+          {
+            "document_id": 399,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9731175773739976
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.9178",
+        "chars:0.9768",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-316-filled-0",
+      "group": "document:316",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "af325600ef777aa15e184419a4aeb15428736874572ccd5d1f2ebe371716001f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 316,
+        "expected_candidate": {
+          "document_id": 316,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.9177585198808997,
+          "chars": 0.9767645067828504,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9731175773739976
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1417,
+          "candidates_text": 1979,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 316,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.9177585198808997,
+            "chars": 0.9767645067828504,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9731175773739976,
+            "max_similarity": 0.9731175773739976,
+            "top2_average": 0.9701525386869988
+          },
+          {
+            "document_id": 314,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          },
+          {
+            "document_id": 399,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9731175773739976
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.9178",
+        "chars:0.9768",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-316-filled-2",
+      "group": "document:316",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "350313f0013b0bae2528aa77854d752c5cb8f393263566ccd3aeb7a02df29ef9",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 316,
+        "expected_candidate": {
+          "document_id": 316,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.9177585198808997,
+          "chars": 0.9767645067828504,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9731175773739976
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1418,
+          "candidates_text": 1982,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 316,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.9177585198808997,
+            "chars": 0.9767645067828504,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9731175773739976,
+            "max_similarity": 0.9731175773739976,
+            "top2_average": 0.9701525386869988
+          },
+          {
+            "document_id": 314,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          },
+          {
+            "document_id": 399,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9731175773739976
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.9178",
+        "chars:0.9768",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-316-filled-3",
+      "group": "document:316",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "9c8c38a3cafdc111b6d0b1240ccb03435fd7f72b316b63943024545c833fa763",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 316,
+        "expected_candidate": {
+          "document_id": 316,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.9177585198808997,
+          "chars": 0.9767645067828504,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9731175773739976
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1417,
+          "candidates_text": 1979,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 316,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.9177585198808997,
+            "chars": 0.9767645067828504,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9731175773739976,
+            "max_similarity": 0.9731175773739976,
+            "top2_average": 0.9701525386869988
+          },
+          {
+            "document_id": 314,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          },
+          {
+            "document_id": 399,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9731175773739976
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.9178",
+        "chars:0.9768",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-316-filled-4",
+      "group": "document:316",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 316,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "ba33e1d03818c1ecc29c878d67840a708461b85a2b0347f4d76d929ac6c55a0f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 316,
+        "expected_candidate": {
+          "document_id": 316,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.9177585198808997,
+          "chars": 0.9767645067828504,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9731175773739976
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1417,
+          "candidates_text": 1979,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 316,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.9177585198808997,
+            "chars": 0.9767645067828504,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9731175773739976,
+            "max_similarity": 0.9731175773739976,
+            "top2_average": 0.9701525386869988
+          },
+          {
+            "document_id": 314,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          },
+          {
+            "document_id": 399,
+            "canonical_page": 1,
+            "digital": 0.4694277377786021,
+            "ocr": 0.5380553702057559,
+            "chars": 0.6598457968955233,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.584348714016311,
+            "max_similarity": 0.584348714016311,
+            "top2_average": 0.4116453247078103
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9731175773739976
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.9178",
+        "chars:0.9768",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-97-filled-0",
+      "group": "document:97",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "761dffbc769bfd1bb1f9e3ba7e2e3e5ae836330796b2688d9889ee2b51705382",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 97,
+        "expected_candidate": {
+          "document_id": 97,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.9266352038445156,
+          "chars": 0.9827691706316876,
+          "anchors": 0.71875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9517817097210907
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2375,
+          "candidates_text": 3889,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 97,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9266352038445156,
+            "chars": 0.9827691706316876,
+            "anchors": 0.71875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9517817097210907,
+            "max_similarity": 0.9517817097210907,
+            "top2_average": 0.9297281888868396
+          },
+          {
+            "document_id": 94,
+            "canonical_page": 2,
+            "digital": 0.8831952612385813,
+            "ocr": 0.8849616517610583,
+            "chars": 1,
+            "anchors": 0.5,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.8674808258805291,
+            "max_similarity": 0.8674808258805291,
+            "top2_average": 0.7647457483060404
+          },
+          {
+            "document_id": 288,
+            "canonical_page": 2,
+            "digital": 0.9031714885443526,
+            "ocr": 0.883427306783727,
+            "chars": 0.9439290512906905,
+            "anchors": 0.15625,
+            "visual": 0.0,
+            "overlap": 59,
+            "score": 0.805398412223918,
+            "max_similarity": 0.805398412223918,
+            "top2_average": 0.6346007242734342
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9517817097210907
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.9266",
+        "chars:0.9828",
+        "visual:0.0000",
+        "anchors:0.7188"
+      ]
+    },
+    {
+      "id": "R8DEV-97-filled-1",
+      "group": "document:97",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "0269cfdc743c1823f9dac18fa24c36e95456e62160a79cb943d17ef31f80db36",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 97,
+        "expected_candidate": {
+          "document_id": 97,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.9266352038445156,
+          "chars": 0.9827691706316876,
+          "anchors": 0.71875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9517817097210907
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2377,
+          "candidates_text": 3893,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 97,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9266352038445156,
+            "chars": 0.9827691706316876,
+            "anchors": 0.71875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9517817097210907,
+            "max_similarity": 0.9517817097210907,
+            "top2_average": 0.9299397507514164
+          },
+          {
+            "document_id": 94,
+            "canonical_page": 2,
+            "digital": 0.8831952612385813,
+            "ocr": 0.8849616517610583,
+            "chars": 1,
+            "anchors": 0.5,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.8674808258805291,
+            "max_similarity": 0.8674808258805291,
+            "top2_average": 0.7649331852225202
+          },
+          {
+            "document_id": 288,
+            "canonical_page": 2,
+            "digital": 0.9031714885443526,
+            "ocr": 0.883427306783727,
+            "chars": 0.9439290512906905,
+            "anchors": 0.15625,
+            "visual": 0.0,
+            "overlap": 59,
+            "score": 0.805398412223918,
+            "max_similarity": 0.805398412223918,
+            "top2_average": 0.6346007242734342
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9517817097210907
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.9266",
+        "chars:0.9828",
+        "visual:0.0000",
+        "anchors:0.7188"
+      ]
+    },
+    {
+      "id": "R8DEV-97-filled-2",
+      "group": "document:97",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "b79ed42c5b994aaf71428ff3eb70d07b5fa46969128513b478149c8c83781e37",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 97,
+        "expected_candidate": {
+          "document_id": 97,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.9266352038445156,
+          "chars": 0.9827691706316876,
+          "anchors": 0.71875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9517817097210907
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2377,
+          "candidates_text": 3891,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 97,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9266352038445156,
+            "chars": 0.9827691706316876,
+            "anchors": 0.71875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9517817097210907,
+            "max_similarity": 0.9517817097210907,
+            "top2_average": 0.9297281888868396
+          },
+          {
+            "document_id": 94,
+            "canonical_page": 2,
+            "digital": 0.8831952612385813,
+            "ocr": 0.8849616517610583,
+            "chars": 1,
+            "anchors": 0.5,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.8674808258805291,
+            "max_similarity": 0.8674808258805291,
+            "top2_average": 0.7647457483060404
+          },
+          {
+            "document_id": 288,
+            "canonical_page": 2,
+            "digital": 0.9031714885443526,
+            "ocr": 0.883427306783727,
+            "chars": 0.9439290512906905,
+            "anchors": 0.15625,
+            "visual": 0.0,
+            "overlap": 59,
+            "score": 0.805398412223918,
+            "max_similarity": 0.805398412223918,
+            "top2_average": 0.6346007242734342
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9517817097210907
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.9266",
+        "chars:0.9828",
+        "visual:0.0000",
+        "anchors:0.7188"
+      ]
+    },
+    {
+      "id": "R8DEV-97-filled-3",
+      "group": "document:97",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "8ac6ecd9a3c8c59ea1370bfc3ded0a5276934f531e6a19013a3babe0dca5453a",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 97,
+        "expected_candidate": {
+          "document_id": 97,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.9266352038445156,
+          "chars": 0.9827691706316876,
+          "anchors": 0.71875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9517817097210907
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2375,
+          "candidates_text": 3889,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 97,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9266352038445156,
+            "chars": 0.9827691706316876,
+            "anchors": 0.71875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9517817097210907,
+            "max_similarity": 0.9517817097210907,
+            "top2_average": 0.9297281888868396
+          },
+          {
+            "document_id": 94,
+            "canonical_page": 2,
+            "digital": 0.8831952612385813,
+            "ocr": 0.8849616517610583,
+            "chars": 1,
+            "anchors": 0.5,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.8674808258805291,
+            "max_similarity": 0.8674808258805291,
+            "top2_average": 0.7647457483060404
+          },
+          {
+            "document_id": 288,
+            "canonical_page": 2,
+            "digital": 0.9031714885443526,
+            "ocr": 0.883427306783727,
+            "chars": 0.9439290512906905,
+            "anchors": 0.15625,
+            "visual": 0.0,
+            "overlap": 59,
+            "score": 0.805398412223918,
+            "max_similarity": 0.805398412223918,
+            "top2_average": 0.6346007242734342
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9517817097210907
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.9266",
+        "chars:0.9828",
+        "visual:0.0000",
+        "anchors:0.7188"
+      ]
+    },
+    {
+      "id": "R8DEV-97-filled-4",
+      "group": "document:97",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 97,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "7f20affc1646cae29c7f3f127265b284d293782680e51817f04368358fa77361",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 97,
+        "expected_candidate": {
+          "document_id": 97,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.9266352038445156,
+          "chars": 0.9827691706316876,
+          "anchors": 0.71875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9517817097210907
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2375,
+          "candidates_text": 3889,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 97,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.9266352038445156,
+            "chars": 0.9827691706316876,
+            "anchors": 0.71875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9517817097210907,
+            "max_similarity": 0.9517817097210907,
+            "top2_average": 0.9297281888868396
+          },
+          {
+            "document_id": 94,
+            "canonical_page": 2,
+            "digital": 0.8831952612385813,
+            "ocr": 0.8849616517610583,
+            "chars": 1,
+            "anchors": 0.5,
+            "visual": 0.0,
+            "overlap": 56,
+            "score": 0.8674808258805291,
+            "max_similarity": 0.8674808258805291,
+            "top2_average": 0.7647457483060404
+          },
+          {
+            "document_id": 288,
+            "canonical_page": 2,
+            "digital": 0.9031714885443526,
+            "ocr": 0.883427306783727,
+            "chars": 0.9439290512906905,
+            "anchors": 0.15625,
+            "visual": 0.0,
+            "overlap": 59,
+            "score": 0.805398412223918,
+            "max_similarity": 0.805398412223918,
+            "top2_average": 0.6346007242734342
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9517817097210907
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.9266",
+        "chars:0.9828",
+        "visual:0.0000",
+        "anchors:0.7188"
+      ]
+    },
+    {
+      "id": "R8DEV-861-filled-0",
+      "group": "document:861",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "92e63d53f0a5a1bf0bad6067dfbd10a68b8016b56dbdb03fde6c276857526a69",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 861,
+        "expected_candidate": {
+          "document_id": 861,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.6374017974483348,
+          "chars": 1,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.98125
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2578,
+          "candidates_text": 6932,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 861,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.6374017974483348,
+            "chars": 1,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.98125,
+            "max_similarity": 0.98125,
+            "top2_average": 0.9718749999999999
+          },
+          {
+            "document_id": 842,
+            "canonical_page": 6,
+            "digital": 0.0444104324540926,
+            "ocr": 0.07682999871932511,
+            "chars": 0.4497653042625222,
+            "anchors": 0.03125,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.20052035585154532,
+            "max_similarity": 0.20052035585154532,
+            "top2_average": 0.18958030880289098
+          },
+          {
+            "document_id": 462,
+            "canonical_page": 2,
+            "digital": 0.022589140324296837,
+            "ocr": 0.022589140324296837,
+            "chars": 0.49025790714631273,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 1,
+            "score": 0.18288483766335786,
+            "max_similarity": 0.18288483766335786,
+            "top2_average": 0.13580404259618076
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.98125
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.6374",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-861-filled-1",
+      "group": "document:861",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "9c8a35fb97342fa28302c5c226ddb3de215cf1e29538007fcee80804387d063f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 861,
+        "expected_candidate": {
+          "document_id": 861,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.6374017974483348,
+          "chars": 1,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.98125
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2579,
+          "candidates_text": 6934,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 861,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.6374017974483348,
+            "chars": 1,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.98125,
+            "max_similarity": 0.98125,
+            "top2_average": 0.9718749999999999
+          },
+          {
+            "document_id": 842,
+            "canonical_page": 6,
+            "digital": 0.0444104324540926,
+            "ocr": 0.07682999871932511,
+            "chars": 0.4497653042625222,
+            "anchors": 0.03125,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.20052035585154532,
+            "max_similarity": 0.20052035585154532,
+            "top2_average": 0.18958030880289098
+          },
+          {
+            "document_id": 462,
+            "canonical_page": 2,
+            "digital": 0.022589140324296837,
+            "ocr": 0.022589140324296837,
+            "chars": 0.49025790714631273,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 1,
+            "score": 0.18288483766335786,
+            "max_similarity": 0.18288483766335786,
+            "top2_average": 0.13580404259618076
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.98125
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.6374",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-861-filled-2",
+      "group": "document:861",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "7310fabc7369ee73eb866657bea92bdc72d337640861004cc56ed5b78b7c09f5",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 861,
+        "expected_candidate": {
+          "document_id": 861,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.6374017974483348,
+          "chars": 1,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.98125
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2578,
+          "candidates_text": 6933,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 861,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.6374017974483348,
+            "chars": 1,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.98125,
+            "max_similarity": 0.98125,
+            "top2_average": 0.9718749999999999
+          },
+          {
+            "document_id": 842,
+            "canonical_page": 6,
+            "digital": 0.0444104324540926,
+            "ocr": 0.07682999871932511,
+            "chars": 0.4497653042625222,
+            "anchors": 0.03125,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.20052035585154532,
+            "max_similarity": 0.20052035585154532,
+            "top2_average": 0.18958030880289098
+          },
+          {
+            "document_id": 462,
+            "canonical_page": 2,
+            "digital": 0.022589140324296837,
+            "ocr": 0.022589140324296837,
+            "chars": 0.49025790714631273,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 1,
+            "score": 0.18288483766335786,
+            "max_similarity": 0.18288483766335786,
+            "top2_average": 0.13580404259618076
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.98125
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.6374",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-861-filled-3",
+      "group": "document:861",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "c55dc079a803c31a8caf6629975ad5a8edb14840fbdc79892984f3b7b212fb4f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 861,
+        "expected_candidate": {
+          "document_id": 861,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.6374017974483348,
+          "chars": 1,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.98125
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2578,
+          "candidates_text": 6932,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 861,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.6374017974483348,
+            "chars": 1,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.98125,
+            "max_similarity": 0.98125,
+            "top2_average": 0.9718749999999999
+          },
+          {
+            "document_id": 842,
+            "canonical_page": 6,
+            "digital": 0.0444104324540926,
+            "ocr": 0.07682999871932511,
+            "chars": 0.4497653042625222,
+            "anchors": 0.03125,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.20052035585154532,
+            "max_similarity": 0.20052035585154532,
+            "top2_average": 0.18958030880289098
+          },
+          {
+            "document_id": 462,
+            "canonical_page": 2,
+            "digital": 0.022589140324296837,
+            "ocr": 0.022589140324296837,
+            "chars": 0.49025790714631273,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 1,
+            "score": 0.18288483766335786,
+            "max_similarity": 0.18288483766335786,
+            "top2_average": 0.13580404259618076
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.98125
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.6374",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-847-filled-1",
+      "group": "document:847",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "984655930f0e7025557b3d8442b4e8d17ebd3be8ed5e7edf1072e2f3a15e1c42",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 847,
+        "expected_candidate": {
+          "document_id": 847,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.7138401068068019,
+          "chars": 0.9220996237844881,
+          "anchors": 0.84375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9492973683245708
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 342,
+          "candidates_text": 361,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 847,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.7138401068068019,
+            "chars": 0.9220996237844881,
+            "anchors": 0.84375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9492973683245708,
+            "max_similarity": 0.9492973683245708,
+            "top2_average": 0.9344745473539118
+          },
+          {
+            "document_id": 845,
+            "canonical_page": 1,
+            "digital": 0.6067443966892295,
+            "ocr": 0.42829666898797586,
+            "chars": 0.7245992157601069,
+            "anchors": 0.4375,
+            "visual": 0.0,
+            "overlap": 40,
+            "score": 0.6226069238606522,
+            "max_similarity": 0.6226069238606522,
+            "top2_average": 0.5163863647018777
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.23992374508820113,
+            "ocr": 0.27120918589775,
+            "chars": 0.561827008905022,
+            "anchors": 0.3125,
+            "visual": 0.0,
+            "overlap": 19,
+            "score": 0.37911904606563274,
+            "max_similarity": 0.37911904606563274,
+            "top2_average": 0.30813155469446857
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9492973683245708
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.7138",
+        "chars:0.9221",
+        "visual:0.0000",
+        "anchors:0.8438"
+      ]
+    },
+    {
+      "id": "R8DEV-847-filled-0",
+      "group": "document:847",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "f897dfeafa30fb8f8c3e1d800fb6981d53f0256a38bb3f14a439b538ea3f17b9",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 847,
+        "expected_candidate": {
+          "document_id": 847,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.7138401068068019,
+          "chars": 0.9220996237844881,
+          "anchors": 0.84375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9492973683245708
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 341,
+          "candidates_text": 360,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 847,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.7138401068068019,
+            "chars": 0.9220996237844881,
+            "anchors": 0.84375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9492973683245708,
+            "max_similarity": 0.9492973683245708,
+            "top2_average": 0.9348411409718909
+          },
+          {
+            "document_id": 845,
+            "canonical_page": 1,
+            "digital": 0.6067443966892295,
+            "ocr": 0.42829666898797586,
+            "chars": 0.7262293602275085,
+            "anchors": 0.4375,
+            "visual": 0.0,
+            "overlap": 40,
+            "score": 0.6231774744242428,
+            "max_similarity": 0.6231774744242428,
+            "top2_average": 0.516671639983673
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.23992374508820113,
+            "ocr": 0.27120918589775,
+            "chars": 0.561827008905022,
+            "anchors": 0.3125,
+            "visual": 0.0,
+            "overlap": 19,
+            "score": 0.37911904606563274,
+            "max_similarity": 0.37911904606563274,
+            "top2_average": 0.30813155469446857
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9492973683245708
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.7138",
+        "chars:0.9221",
+        "visual:0.0000",
+        "anchors:0.8438"
+      ]
+    },
+    {
+      "id": "R8DEV-847-filled-2",
+      "group": "document:847",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "2a4d18fb5a761b10725caf7bab3a37c4c3275d243600c9d91321b19aab71140e",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 847,
+        "expected_candidate": {
+          "document_id": 847,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.7138401068068019,
+          "chars": 0.9231921588837588,
+          "anchors": 0.84375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9496797556093156
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 344,
+          "candidates_text": 366,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 847,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.7138401068068019,
+            "chars": 0.9231921588837588,
+            "anchors": 0.84375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9496797556093156,
+            "max_similarity": 0.9496797556093156,
+            "top2_average": 0.9348488318538029
+          },
+          {
+            "document_id": 845,
+            "canonical_page": 1,
+            "digital": 0.6067443966892295,
+            "ocr": 0.42829666898797586,
+            "chars": 0.7254133721823093,
+            "anchors": 0.4375,
+            "visual": 0.0,
+            "overlap": 40,
+            "score": 0.622891878608423,
+            "max_similarity": 0.622891878608423,
+            "top2_average": 0.516652195435402
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.23992374508820113,
+            "ocr": 0.27120918589775,
+            "chars": 0.561827008905022,
+            "anchors": 0.3125,
+            "visual": 0.0,
+            "overlap": 19,
+            "score": 0.37911904606563274,
+            "max_similarity": 0.37911904606563274,
+            "top2_average": 0.30813155469446857
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9496797556093156
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.7138",
+        "chars:0.9232",
+        "visual:0.0000",
+        "anchors:0.8438"
+      ]
+    },
+    {
+      "id": "R8DEV-847-filled-3",
+      "group": "document:847",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "e481c608f4179f244cf5567199118723365ef2e766b6163368b97648eb777e29",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 847,
+        "expected_candidate": {
+          "document_id": 847,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.7138401068068019,
+          "chars": 0.9220996237844881,
+          "anchors": 0.84375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9492973683245708
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 341,
+          "candidates_text": 360,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 847,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.7138401068068019,
+            "chars": 0.9220996237844881,
+            "anchors": 0.84375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9492973683245708,
+            "max_similarity": 0.9492973683245708,
+            "top2_average": 0.9346576382114304
+          },
+          {
+            "document_id": 845,
+            "canonical_page": 1,
+            "digital": 0.6067443966892295,
+            "ocr": 0.42829666898797586,
+            "chars": 0.7254133721823093,
+            "anchors": 0.4375,
+            "visual": 0.0,
+            "overlap": 40,
+            "score": 0.622891878608423,
+            "max_similarity": 0.622891878608423,
+            "top2_average": 0.5165288420757631
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.23992374508820113,
+            "ocr": 0.27120918589775,
+            "chars": 0.561827008905022,
+            "anchors": 0.3125,
+            "visual": 0.0,
+            "overlap": 19,
+            "score": 0.37911904606563274,
+            "max_similarity": 0.37911904606563274,
+            "top2_average": 0.30813155469446857
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9492973683245708
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.7138",
+        "chars:0.9221",
+        "visual:0.0000",
+        "anchors:0.8438"
+      ]
+    },
+    {
+      "id": "R8DEV-847-filled-4",
+      "group": "document:847",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 847,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "37aedaabc4960ff93d89716e94237f3298c38bf4728c6825c453681369fef849",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 847,
+        "expected_candidate": {
+          "document_id": 847,
+          "canonical_page": 2,
+          "digital": 1,
+          "ocr": 0.7138401068068019,
+          "chars": 0.9220996237844881,
+          "anchors": 0.84375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9492973683245708
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 341,
+          "candidates_text": 360,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 847,
+            "canonical_page": 2,
+            "digital": 1,
+            "ocr": 0.7138401068068019,
+            "chars": 0.9220996237844881,
+            "anchors": 0.84375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9492973683245708,
+            "max_similarity": 0.9492973683245708,
+            "top2_average": 0.9346576382114304
+          },
+          {
+            "document_id": 845,
+            "canonical_page": 1,
+            "digital": 0.6067443966892295,
+            "ocr": 0.42829666898797586,
+            "chars": 0.7254133721823093,
+            "anchors": 0.4375,
+            "visual": 0.0,
+            "overlap": 40,
+            "score": 0.622891878608423,
+            "max_similarity": 0.622891878608423,
+            "top2_average": 0.5165288420757631
+          },
+          {
+            "document_id": 809,
+            "canonical_page": 2,
+            "digital": 0.23992374508820113,
+            "ocr": 0.27120918589775,
+            "chars": 0.561827008905022,
+            "anchors": 0.3125,
+            "visual": 0.0,
+            "overlap": 19,
+            "score": 0.37911904606563274,
+            "max_similarity": 0.37911904606563274,
+            "top2_average": 0.30813155469446857
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9492973683245708
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:2",
+        "digital:1.0000",
+        "ocr:0.7138",
+        "chars:0.9221",
+        "visual:0.0000",
+        "anchors:0.8438"
+      ]
+    },
+    {
+      "id": "R8DEV-816-filled-1",
+      "group": "document:816",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "bb9e2d7929246959f1e47d0da66df541ce870d9b5921e47006d02c308f1be57b",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 816,
+        "expected_candidate": {
+          "document_id": 816,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.812003477102668,
+          "chars": 0.8720469779033143,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.90365394226616
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1061,
+          "candidates_text": 1257,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 816,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.812003477102668,
+            "chars": 0.8720469779033143,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.90365394226616,
+            "max_similarity": 0.90365394226616,
+            "top2_average": 0.8967983797249848
+          },
+          {
+            "document_id": 818,
+            "canonical_page": 1,
+            "digital": 0.48726730020446607,
+            "ocr": 0.4271091747325811,
+            "chars": 0.6206042713186452,
+            "anchors": 0.40625,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.5217826450637588,
+            "max_similarity": 0.5217826450637588,
+            "top2_average": 0.377995965138092
+          },
+          {
+            "document_id": 817,
+            "canonical_page": 1,
+            "digital": 0.4800461122681529,
+            "ocr": 0.28958764677839605,
+            "chars": 0.5174618964212638,
+            "anchors": 0.34375,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.4726972198815188,
+            "max_similarity": 0.4726972198815188,
+            "top2_average": 0.3763263913001944
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.90365394226616
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8120",
+        "chars:0.8720",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-816-filled-0",
+      "group": "document:816",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "0676bd4bd2939f2b7c53751fa87128e085e18e14161cf277477fc78f0184e019",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 816,
+        "expected_candidate": {
+          "document_id": 816,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.812003477102668,
+          "chars": 0.8734074256067516,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.904130098962363
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1061,
+          "candidates_text": 1257,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 816,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.812003477102668,
+            "chars": 0.8734074256067516,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.904130098962363,
+            "max_similarity": 0.904130098962363,
+            "top2_average": 0.8970364580730863
+          },
+          {
+            "document_id": 818,
+            "canonical_page": 1,
+            "digital": 0.48726730020446607,
+            "ocr": 0.4271091747325811,
+            "chars": 0.6215724527091578,
+            "anchors": 0.40625,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.5221215085504383,
+            "max_similarity": 0.5221215085504383,
+            "top2_average": 0.37816539688143175
+          },
+          {
+            "document_id": 817,
+            "canonical_page": 1,
+            "digital": 0.4800461122681529,
+            "ocr": 0.28958764677839605,
+            "chars": 0.518269169270595,
+            "anchors": 0.34375,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.47297976537878467,
+            "max_similarity": 0.47297976537878467,
+            "top2_average": 0.3764676640488273
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.904130098962363
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8120",
+        "chars:0.8734",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-861-filled-4",
+      "group": "document:861",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 861,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "0ef1ceb837f9f4b33bb8c23047fdff6f100693255b75c585364317df83450657",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 861,
+        "expected_candidate": {
+          "document_id": 861,
+          "canonical_page": 5,
+          "digital": 1,
+          "ocr": 0.6374017974483348,
+          "chars": 1,
+          "anchors": 0.875,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.98125
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 2578,
+          "candidates_text": 6932,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 861,
+            "canonical_page": 5,
+            "digital": 1,
+            "ocr": 0.6374017974483348,
+            "chars": 1,
+            "anchors": 0.875,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.98125,
+            "max_similarity": 0.98125,
+            "top2_average": 0.9718749999999999
+          },
+          {
+            "document_id": 842,
+            "canonical_page": 6,
+            "digital": 0.0444104324540926,
+            "ocr": 0.07682999871932511,
+            "chars": 0.4497653042625222,
+            "anchors": 0.03125,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.20052035585154532,
+            "max_similarity": 0.20052035585154532,
+            "top2_average": 0.18958030880289098
+          },
+          {
+            "document_id": 462,
+            "canonical_page": 2,
+            "digital": 0.022589140324296837,
+            "ocr": 0.022589140324296837,
+            "chars": 0.49025790714631273,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 1,
+            "score": 0.18288483766335786,
+            "max_similarity": 0.18288483766335786,
+            "top2_average": 0.13580404259618076
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.98125
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:5",
+        "digital:1.0000",
+        "ocr:0.6374",
+        "chars:1.0000",
+        "visual:0.0000",
+        "anchors:0.8750"
+      ]
+    },
+    {
+      "id": "R8DEV-816-filled-2",
+      "group": "document:816",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "e11ca87650fc32106f560bef27a085e3c4d0195a001b90477b7a1c8475ea6627",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 816,
+        "expected_candidate": {
+          "document_id": 816,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.812003477102668,
+          "chars": 0.8706907617634958,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9031792666172235
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1066,
+          "candidates_text": 1265,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 816,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.812003477102668,
+            "chars": 0.8706907617634958,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9031792666172235,
+            "max_similarity": 0.9031792666172235,
+            "top2_average": 0.8965610419005166
+          },
+          {
+            "document_id": 818,
+            "canonical_page": 1,
+            "digital": 0.48475561309001,
+            "ocr": 0.4271091747325811,
+            "chars": 0.6196391013788028,
+            "anchors": 0.40625,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.520188992027586,
+            "max_similarity": 0.520188992027586,
+            "top2_average": 0.3771991386200056
+          },
+          {
+            "document_id": 817,
+            "canonical_page": 1,
+            "digital": 0.4800461122681529,
+            "ocr": 0.28958764677839605,
+            "chars": 0.5166571345294733,
+            "anchors": 0.34375,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.4724155532193921,
+            "max_similarity": 0.4724155532193921,
+            "top2_average": 0.376185557969131
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9031792666172235
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8120",
+        "chars:0.8707",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-816-filled-4",
+      "group": "document:816",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "d2de64cbb570b7467711c7c5aff6ff75eb301c0dc1f6cb439a40942619368905",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 816,
+        "expected_candidate": {
+          "document_id": 816,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.812003477102668,
+          "chars": 0.8706907617634958,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9031792666172235
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1061,
+          "candidates_text": 1257,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 816,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.812003477102668,
+            "chars": 0.8706907617634958,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9031792666172235,
+            "max_similarity": 0.9031792666172235,
+            "top2_average": 0.8965610419005166
+          },
+          {
+            "document_id": 818,
+            "canonical_page": 1,
+            "digital": 0.48475561309001,
+            "ocr": 0.4271091747325811,
+            "chars": 0.6196391013788028,
+            "anchors": 0.40625,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.520188992027586,
+            "max_similarity": 0.520188992027586,
+            "top2_average": 0.3771991386200056
+          },
+          {
+            "document_id": 817,
+            "canonical_page": 1,
+            "digital": 0.4800461122681529,
+            "ocr": 0.28958764677839605,
+            "chars": 0.5166571345294733,
+            "anchors": 0.34375,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.4724155532193921,
+            "max_similarity": 0.4724155532193921,
+            "top2_average": 0.376185557969131
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9031792666172235
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8120",
+        "chars:0.8707",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-816-filled-3",
+      "group": "document:816",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 816,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "a17f6446ff89c3ce598427cf53cf6ab99de7dc118d1b6117f44c495c3bd4f0a2",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 816,
+        "expected_candidate": {
+          "document_id": 816,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.812003477102668,
+          "chars": 0.8706907617634958,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9031792666172235
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 1061,
+          "candidates_text": 1257,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 816,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.812003477102668,
+            "chars": 0.8706907617634958,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9031792666172235,
+            "max_similarity": 0.9031792666172235,
+            "top2_average": 0.8965610419005166
+          },
+          {
+            "document_id": 818,
+            "canonical_page": 1,
+            "digital": 0.48475561309001,
+            "ocr": 0.4271091747325811,
+            "chars": 0.6196391013788028,
+            "anchors": 0.40625,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.520188992027586,
+            "max_similarity": 0.520188992027586,
+            "top2_average": 0.3771991386200056
+          },
+          {
+            "document_id": 817,
+            "canonical_page": 1,
+            "digital": 0.4800461122681529,
+            "ocr": 0.28958764677839605,
+            "chars": 0.5166571345294733,
+            "anchors": 0.34375,
+            "visual": 0.0,
+            "overlap": 32,
+            "score": 0.4724155532193921,
+            "max_similarity": 0.4724155532193921,
+            "top2_average": 0.376185557969131
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9031792666172235
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8120",
+        "chars:0.8707",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-1037-filled-0",
+      "group": "document:1037",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "48c95e09e819a1c2fad97b8f6d5fb629a19fb2865205d769ad5c0adf82dea2ad",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 1037,
+        "expected_candidate": {
+          "document_id": 1037,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.7214935555412854,
+          "chars": 0.9489712733017907,
+          "anchors": 0.78125,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9493274456556267
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 328,
+          "candidates_text": 328,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 1037,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.7214935555412854,
+            "chars": 0.9489712733017907,
+            "anchors": 0.78125,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9493274456556267,
+            "max_similarity": 0.9493274456556267,
+            "top2_average": 0.9493274456556267
+          },
+          {
+            "document_id": 23,
+            "canonical_page": 4,
+            "digital": 0.6346747902708375,
+            "ocr": 0.7077564795288728,
+            "chars": 0.7595240746283133,
+            "anchors": 0.5925925925925926,
+            "visual": 0.0,
+            "overlap": 47,
+            "score": 0.7086005547732349,
+            "max_similarity": 0.7086005547732349,
+            "top2_average": 0.7086005547732349
+          },
+          {
+            "document_id": 1039,
+            "canonical_page": 1,
+            "digital": 0.6134956699532534,
+            "ocr": 0.283049310763355,
+            "chars": 0.6248397705176444,
+            "anchors": 0.28125,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.5676292546578023,
+            "max_similarity": 0.5676292546578023,
+            "top2_average": 0.5676292546578023
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9493274456556267
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.7215",
+        "chars:0.9490",
+        "visual:0.0000",
+        "anchors:0.7812"
+      ]
+    },
+    {
+      "id": "R8DEV-1037-filled-1",
+      "group": "document:1037",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "7b7ce3492c676511b1af1be9e391fbf6fe235031d45087f24b0abc22e498b254",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 1037,
+        "expected_candidate": {
+          "document_id": 1037,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.7214935555412854,
+          "chars": 0.9489712733017907,
+          "anchors": 0.78125,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9493274456556267
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 328,
+          "candidates_text": 328,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 1037,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.7214935555412854,
+            "chars": 0.9489712733017907,
+            "anchors": 0.78125,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9493274456556267,
+            "max_similarity": 0.9493274456556267,
+            "top2_average": 0.9493274456556267
+          },
+          {
+            "document_id": 23,
+            "canonical_page": 4,
+            "digital": 0.6346747902708375,
+            "ocr": 0.7077564795288728,
+            "chars": 0.7595240746283133,
+            "anchors": 0.5925925925925926,
+            "visual": 0.0,
+            "overlap": 47,
+            "score": 0.7086005547732349,
+            "max_similarity": 0.7086005547732349,
+            "top2_average": 0.7086005547732349
+          },
+          {
+            "document_id": 1039,
+            "canonical_page": 1,
+            "digital": 0.6134956699532534,
+            "ocr": 0.283049310763355,
+            "chars": 0.6235215431536831,
+            "anchors": 0.28125,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.5671678750804159,
+            "max_similarity": 0.5671678750804159,
+            "top2_average": 0.5671678750804159
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9493274456556267
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.7215",
+        "chars:0.9490",
+        "visual:0.0000",
+        "anchors:0.7812"
+      ]
+    },
+    {
+      "id": "R8DEV-1037-filled-2",
+      "group": "document:1037",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "39868f2b37fe20156eddba184bdfad18cf21b063a43440c705aadad9399335e9",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 1037,
+        "expected_candidate": {
+          "document_id": 1037,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.7214935555412854,
+          "chars": 0.9489712733017907,
+          "anchors": 0.78125,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9493274456556267
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 328,
+          "candidates_text": 328,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 1037,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.7214935555412854,
+            "chars": 0.9489712733017907,
+            "anchors": 0.78125,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9493274456556267,
+            "max_similarity": 0.9493274456556267,
+            "top2_average": 0.9493274456556267
+          },
+          {
+            "document_id": 23,
+            "canonical_page": 4,
+            "digital": 0.6346747902708375,
+            "ocr": 0.7077564795288728,
+            "chars": 0.7595240746283133,
+            "anchors": 0.5925925925925926,
+            "visual": 0.0,
+            "overlap": 47,
+            "score": 0.7086005547732349,
+            "max_similarity": 0.7086005547732349,
+            "top2_average": 0.7086005547732349
+          },
+          {
+            "document_id": 1039,
+            "canonical_page": 1,
+            "digital": 0.6134956699532534,
+            "ocr": 0.283049310763355,
+            "chars": 0.6235215431536831,
+            "anchors": 0.28125,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.5671678750804159,
+            "max_similarity": 0.5671678750804159,
+            "top2_average": 0.5671678750804159
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9493274456556267
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.7215",
+        "chars:0.9490",
+        "visual:0.0000",
+        "anchors:0.7812"
+      ]
+    },
+    {
+      "id": "R8DEV-1037-filled-3",
+      "group": "document:1037",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "3c061174e7b54794f096f6bc5b708e0081ba72b55f33eefce9651947d947a823",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 1037,
+        "expected_candidate": {
+          "document_id": 1037,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.7214935555412854,
+          "chars": 0.9489712733017907,
+          "anchors": 0.78125,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9493274456556267
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 328,
+          "candidates_text": 328,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 1037,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.7214935555412854,
+            "chars": 0.9489712733017907,
+            "anchors": 0.78125,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9493274456556267,
+            "max_similarity": 0.9493274456556267,
+            "top2_average": 0.9493274456556267
+          },
+          {
+            "document_id": 23,
+            "canonical_page": 4,
+            "digital": 0.6346747902708375,
+            "ocr": 0.7077564795288728,
+            "chars": 0.7595240746283133,
+            "anchors": 0.5925925925925926,
+            "visual": 0.0,
+            "overlap": 47,
+            "score": 0.7086005547732349,
+            "max_similarity": 0.7086005547732349,
+            "top2_average": 0.7086005547732349
+          },
+          {
+            "document_id": 1039,
+            "canonical_page": 1,
+            "digital": 0.6134956699532534,
+            "ocr": 0.283049310763355,
+            "chars": 0.6235215431536831,
+            "anchors": 0.28125,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.5671678750804159,
+            "max_similarity": 0.5671678750804159,
+            "top2_average": 0.5671678750804159
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9493274456556267
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.7215",
+        "chars:0.9490",
+        "visual:0.0000",
+        "anchors:0.7812"
+      ]
+    },
+    {
+      "id": "R8DEV-1037-filled-4",
+      "group": "document:1037",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1037,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "9544379b9d07bbc53e6d1e62a8a79b6a033002c803fece1d852de3bfd7902d5b",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 1037,
+        "expected_candidate": {
+          "document_id": 1037,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.7214935555412854,
+          "chars": 0.9489712733017907,
+          "anchors": 0.78125,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9493274456556267
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 328,
+          "candidates_text": 328,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 1037,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.7214935555412854,
+            "chars": 0.9489712733017907,
+            "anchors": 0.78125,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9493274456556267,
+            "max_similarity": 0.9493274456556267,
+            "top2_average": 0.9493274456556267
+          },
+          {
+            "document_id": 23,
+            "canonical_page": 4,
+            "digital": 0.6346747902708375,
+            "ocr": 0.7077564795288728,
+            "chars": 0.7595240746283133,
+            "anchors": 0.5925925925925926,
+            "visual": 0.0,
+            "overlap": 47,
+            "score": 0.7086005547732349,
+            "max_similarity": 0.7086005547732349,
+            "top2_average": 0.7086005547732349
+          },
+          {
+            "document_id": 1039,
+            "canonical_page": 1,
+            "digital": 0.6134956699532534,
+            "ocr": 0.283049310763355,
+            "chars": 0.6235215431536831,
+            "anchors": 0.28125,
+            "visual": 0.0,
+            "overlap": 37,
+            "score": 0.5671678750804159,
+            "max_similarity": 0.5671678750804159,
+            "top2_average": 0.5671678750804159
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9493274456556267
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.7215",
+        "chars:0.9490",
+        "visual:0.0000",
+        "anchors:0.7812"
+      ]
+    },
+    {
+      "id": "R8DEV-257-filled-1",
+      "group": "document:257",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "82d86c1220f8fa15fbf75c95cfae2aa1686a31f476e90023b98e2bcef9f1db3f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 257,
+        "expected_candidate": {
+          "document_id": 257,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.821987049051992,
+          "chars": 0.9258596462916416,
+          "anchors": 0.9375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9646758762020746
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 275,
+          "candidates_text": 275,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 257,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.821987049051992,
+            "chars": 0.9258596462916416,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9646758762020746,
+            "max_similarity": 0.9646758762020746,
+            "top2_average": 0.9646758762020746
+          },
+          {
+            "document_id": 592,
+            "canonical_page": 8,
+            "digital": 0.0,
+            "ocr": 0,
+            "chars": 0.7363837082189082,
+            "anchors": 0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.25773429787661783,
+            "max_similarity": 0.25773429787661783,
+            "top2_average": 0.25773429787661783
+          },
+          {
+            "document_id": 552,
+            "canonical_page": 2,
+            "digital": 0.0,
+            "ocr": 0.0,
+            "chars": 0.4353208768507259,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.15236230689775407,
+            "max_similarity": 0.15236230689775407,
+            "top2_average": 0.15236230689775407
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9646758762020746
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8220",
+        "chars:0.9259",
+        "visual:0.0000",
+        "anchors:0.9375"
+      ]
+    },
+    {
+      "id": "R8DEV-257-filled-0",
+      "group": "document:257",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "a66ebab4fbf9b9bc72629872262014bf44f6890b8762f2c4b81b50f2f154ded8",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 257,
+        "expected_candidate": {
+          "document_id": 257,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.821987049051992,
+          "chars": 0.9273849504865208,
+          "anchors": 0.9375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9652097326702822
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 274,
+          "candidates_text": 274,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 257,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.821987049051992,
+            "chars": 0.9273849504865208,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9652097326702822,
+            "max_similarity": 0.9652097326702822,
+            "top2_average": 0.9652097326702822
+          },
+          {
+            "document_id": 592,
+            "canonical_page": 8,
+            "digital": 0.0,
+            "ocr": 0,
+            "chars": 0.7363837082189082,
+            "anchors": 0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.25773429787661783,
+            "max_similarity": 0.25773429787661783,
+            "top2_average": 0.25773429787661783
+          },
+          {
+            "document_id": 552,
+            "canonical_page": 2,
+            "digital": 0.0,
+            "ocr": 0.0,
+            "chars": 0.4353208768507259,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.15236230689775407,
+            "max_similarity": 0.15236230689775407,
+            "top2_average": 0.15236230689775407
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9652097326702822
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8220",
+        "chars:0.9274",
+        "visual:0.0000",
+        "anchors:0.9375"
+      ]
+    },
+    {
+      "id": "R8DEV-257-filled-2",
+      "group": "document:257",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "2e85f3c0376b1535dde482776ed5fb6e65f25080fbbb2a5f1d939d0bde60e739",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 257,
+        "expected_candidate": {
+          "document_id": 257,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.821987049051992,
+          "chars": 0.9273849504865208,
+          "anchors": 0.9375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9652097326702822
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 274,
+          "candidates_text": 274,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 257,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.821987049051992,
+            "chars": 0.9273849504865208,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9652097326702822,
+            "max_similarity": 0.9652097326702822,
+            "top2_average": 0.9652097326702822
+          },
+          {
+            "document_id": 592,
+            "canonical_page": 8,
+            "digital": 0.0,
+            "ocr": 0,
+            "chars": 0.7363837082189082,
+            "anchors": 0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.25773429787661783,
+            "max_similarity": 0.25773429787661783,
+            "top2_average": 0.25773429787661783
+          },
+          {
+            "document_id": 552,
+            "canonical_page": 2,
+            "digital": 0.0,
+            "ocr": 0.0,
+            "chars": 0.4353208768507259,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.15236230689775407,
+            "max_similarity": 0.15236230689775407,
+            "top2_average": 0.15236230689775407
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9652097326702822
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8220",
+        "chars:0.9274",
+        "visual:0.0000",
+        "anchors:0.9375"
+      ]
+    },
+    {
+      "id": "R8DEV-257-filled-3",
+      "group": "document:257",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "f534735c996b9af35b7c86df8f8f674a41b2e48ad8a68865a576861d1391477c",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 257,
+        "expected_candidate": {
+          "document_id": 257,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.821987049051992,
+          "chars": 0.9258596462916416,
+          "anchors": 0.9375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9646758762020746
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 274,
+          "candidates_text": 274,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 257,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.821987049051992,
+            "chars": 0.9258596462916416,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9646758762020746,
+            "max_similarity": 0.9646758762020746,
+            "top2_average": 0.9646758762020746
+          },
+          {
+            "document_id": 592,
+            "canonical_page": 8,
+            "digital": 0.0,
+            "ocr": 0,
+            "chars": 0.7363837082189082,
+            "anchors": 0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.25773429787661783,
+            "max_similarity": 0.25773429787661783,
+            "top2_average": 0.25773429787661783
+          },
+          {
+            "document_id": 552,
+            "canonical_page": 2,
+            "digital": 0.0,
+            "ocr": 0.0,
+            "chars": 0.4353208768507259,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.15236230689775407,
+            "max_similarity": 0.15236230689775407,
+            "top2_average": 0.15236230689775407
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9646758762020746
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8220",
+        "chars:0.9259",
+        "visual:0.0000",
+        "anchors:0.9375"
+      ]
+    },
+    {
+      "id": "R8DEV-257-filled-4",
+      "group": "document:257",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 257,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "f499ebdf1f0ffc49d6876647514a18760954dee11dae3565094ee7f2cc8cc625",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 257,
+        "expected_candidate": {
+          "document_id": 257,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.821987049051992,
+          "chars": 0.9258596462916416,
+          "anchors": 0.9375,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9646758762020746
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 274,
+          "candidates_text": 274,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 257,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.821987049051992,
+            "chars": 0.9258596462916416,
+            "anchors": 0.9375,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9646758762020746,
+            "max_similarity": 0.9646758762020746,
+            "top2_average": 0.9646758762020746
+          },
+          {
+            "document_id": 592,
+            "canonical_page": 8,
+            "digital": 0.0,
+            "ocr": 0,
+            "chars": 0.7363837082189082,
+            "anchors": 0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.25773429787661783,
+            "max_similarity": 0.25773429787661783,
+            "top2_average": 0.25773429787661783
+          },
+          {
+            "document_id": 552,
+            "canonical_page": 2,
+            "digital": 0.0,
+            "ocr": 0.0,
+            "chars": 0.4353208768507259,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 0,
+            "score": 0.15236230689775407,
+            "max_similarity": 0.15236230689775407,
+            "top2_average": 0.15236230689775407
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9646758762020746
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8220",
+        "chars:0.9259",
+        "visual:0.0000",
+        "anchors:0.9375"
+      ]
+    },
+    {
+      "id": "R8DEV-290-filled-0",
+      "group": "document:290",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "9f5e80d62bef6c740beab70060bde31e4553de3179dfd0d111916562d4417def",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 290,
+        "expected_candidate": {
+          "document_id": 290,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.8810969770315913,
+          "chars": 0.9203354629055417,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9205549120169395
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 858,
+          "candidates_text": 858,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 290,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.8810969770315913,
+            "chars": 0.9203354629055417,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9205549120169395,
+            "max_similarity": 0.9205549120169395,
+            "top2_average": 0.9205549120169395
+          },
+          {
+            "document_id": 289,
+            "canonical_page": 1,
+            "digital": 0.8411727195001532,
+            "ocr": 0.7120634757216122,
+            "chars": 0.8746913675967516,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 55,
+            "score": 0.8111033384089396,
+            "max_similarity": 0.8111033384089396,
+            "top2_average": 0.8111033384089396
+          },
+          {
+            "document_id": 1179,
+            "canonical_page": 2,
+            "digital": 0.1441255542364339,
+            "ocr": 0.13731868152893473,
+            "chars": 0.5539824029625969,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.26595661815512583,
+            "max_similarity": 0.26595661815512583,
+            "top2_average": 0.26595661815512583
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9205549120169395
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8811",
+        "chars:0.9203",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-290-filled-1",
+      "group": "document:290",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "14f9fcc45d57deb8d2e67a68a01bfc0d0b71d71f7487f66a417c79a9142d9f2d",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 290,
+        "expected_candidate": {
+          "document_id": 290,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.8810969770315913,
+          "chars": 0.9188486527877622,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9200345284757168
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 858,
+          "candidates_text": 858,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 290,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.8810969770315913,
+            "chars": 0.9188486527877622,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9200345284757168,
+            "max_similarity": 0.9200345284757168,
+            "top2_average": 0.9200345284757168
+          },
+          {
+            "document_id": 289,
+            "canonical_page": 1,
+            "digital": 0.8411727195001532,
+            "ocr": 0.7120634757216122,
+            "chars": 0.8732782959205048,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 55,
+            "score": 0.8106087633222532,
+            "max_similarity": 0.8106087633222532,
+            "top2_average": 0.8106087633222532
+          },
+          {
+            "document_id": 1179,
+            "canonical_page": 2,
+            "digital": 0.1441255542364339,
+            "ocr": 0.13731868152893473,
+            "chars": 0.5539824029625969,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.26595661815512583,
+            "max_similarity": 0.26595661815512583,
+            "top2_average": 0.26595661815512583
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9200345284757168
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8811",
+        "chars:0.9188",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-290-filled-2",
+      "group": "document:290",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "9b40f6b80d1562086a449272e0a93d7bbf5ffa1116a89946775c941fdca5293e",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 290,
+        "expected_candidate": {
+          "document_id": 290,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.8810969770315913,
+          "chars": 0.9203354629055417,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9205549120169395
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 861,
+          "candidates_text": 861,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 290,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.8810969770315913,
+            "chars": 0.9203354629055417,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9205549120169395,
+            "max_similarity": 0.9205549120169395,
+            "top2_average": 0.9205549120169395
+          },
+          {
+            "document_id": 289,
+            "canonical_page": 1,
+            "digital": 0.8411727195001532,
+            "ocr": 0.7120634757216122,
+            "chars": 0.8746913675967516,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 55,
+            "score": 0.8111033384089396,
+            "max_similarity": 0.8111033384089396,
+            "top2_average": 0.8111033384089396
+          },
+          {
+            "document_id": 1179,
+            "canonical_page": 2,
+            "digital": 0.1441255542364339,
+            "ocr": 0.13731868152893473,
+            "chars": 0.5539824029625969,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.26595661815512583,
+            "max_similarity": 0.26595661815512583,
+            "top2_average": 0.26595661815512583
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9205549120169395
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8811",
+        "chars:0.9203",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-290-filled-3",
+      "group": "document:290",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "1e2514d9471223e0739a0313351c28279b4d589042cbeeb7ca55cf6828eebc5f",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 290,
+        "expected_candidate": {
+          "document_id": 290,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.8810969770315913,
+          "chars": 0.9188486527877622,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9200345284757168
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 858,
+          "candidates_text": 858,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 290,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.8810969770315913,
+            "chars": 0.9188486527877622,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9200345284757168,
+            "max_similarity": 0.9200345284757168,
+            "top2_average": 0.9200345284757168
+          },
+          {
+            "document_id": 289,
+            "canonical_page": 1,
+            "digital": 0.8411727195001532,
+            "ocr": 0.7120634757216122,
+            "chars": 0.8732782959205048,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 55,
+            "score": 0.8106087633222532,
+            "max_similarity": 0.8106087633222532,
+            "top2_average": 0.8106087633222532
+          },
+          {
+            "document_id": 1179,
+            "canonical_page": 2,
+            "digital": 0.1441255542364339,
+            "ocr": 0.13731868152893473,
+            "chars": 0.5539824029625969,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.26595661815512583,
+            "max_similarity": 0.26595661815512583,
+            "top2_average": 0.26595661815512583
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9200345284757168
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8811",
+        "chars:0.9188",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    },
+    {
+      "id": "R8DEV-290-filled-4",
+      "group": "document:290",
+      "category": "known_official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Firma per pagina: C_unique_fields_compatible_identity; ente e versione compatibili.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "valid_filled",
+      "input_sha256": "3bd5d3063d4e12ecf5c535fe14e6f74a99c3b3b4678aaf941be1ef4ef60f940b",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "decision_diagnostics": {
+        "expected_id": 290,
+        "expected_candidate": {
+          "document_id": 290,
+          "canonical_page": 1,
+          "digital": 1,
+          "ocr": 0.8810969770315913,
+          "chars": 0.9188486527877622,
+          "anchors": 0.65625,
+          "visual": 0.0,
+          "overlap": 64,
+          "score": 0.9200345284757168
+        },
+        "expected_veto": null,
+        "counters": {
+          "candidates_initial": 858,
+          "candidates_text": 858,
+          "candidates_visual": 0
+        },
+        "representation": "filled_acroform",
+        "candidates": [
+          {
+            "document_id": 290,
+            "canonical_page": 1,
+            "digital": 1,
+            "ocr": 0.8810969770315913,
+            "chars": 0.9188486527877622,
+            "anchors": 0.65625,
+            "visual": 0.0,
+            "overlap": 64,
+            "score": 0.9200345284757168,
+            "max_similarity": 0.9200345284757168,
+            "top2_average": 0.9200345284757168
+          },
+          {
+            "document_id": 289,
+            "canonical_page": 1,
+            "digital": 0.8411727195001532,
+            "ocr": 0.7120634757216122,
+            "chars": 0.8732782959205048,
+            "anchors": 0.5625,
+            "visual": 0.0,
+            "overlap": 55,
+            "score": 0.8106087633222532,
+            "max_similarity": 0.8106087633222532,
+            "top2_average": 0.8106087633222532
+          },
+          {
+            "document_id": 1179,
+            "canonical_page": 2,
+            "digital": 0.1441255542364339,
+            "ocr": 0.13731868152893473,
+            "chars": 0.5539824029625969,
+            "anchors": 0.0,
+            "visual": 0.0,
+            "overlap": 5,
+            "score": 0.26595661815512583,
+            "max_similarity": 0.26595661815512583,
+            "top2_average": 0.26595661815512583
+          }
+        ],
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        },
+        "entity_evidence": [],
+        "version_evidence": [],
+        "margin": 0.9200345284757168
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v4",
+        "C_unique_fields_compatible_identity",
+        "canonical_page:1",
+        "digital:1.0000",
+        "ocr:0.8811",
+        "chars:0.9188",
+        "visual:0.0000",
+        "anchors:0.6562"
+      ]
+    }
+  ],
+  "wrong": []
+}

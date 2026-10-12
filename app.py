@@ -319,15 +319,21 @@ def show_document_recognition(catalog: list[AdministrativeDocument], explanation
             raise ExtractionError(f"Il file supera il limite di {MAX_UPLOAD_BYTES // (1024 * 1024)} MiB.")
         with st.spinner("Lettura locale del documento..."):
             extraction = extract_document(uploaded_file.getvalue(), uploaded_file.name, mime_type=getattr(uploaded_file, "type", None))
+            from src.fingerprint_pages import prepare
+            page_context=prepare(uploaded_file.getvalue(),uploaded_file.name,extraction)
     except ExtractionError as exc:
         st.warning("Impossibile acquisire il testo. Controlla il file o riprova con una copia leggibile.")
         st.text(str(exc))
         return
     import hashlib
-    from src.fingerprint_visual import visual_for_bytes
-    recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE,
-        file_sha256=hashlib.sha256(uploaded_file.getvalue()).hexdigest(),
-        visual_fingerprint=visual_for_bytes(uploaded_file.getvalue(),uploaded_file.name))
+    try:
+        recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE,
+            file_sha256=hashlib.sha256(uploaded_file.getvalue()).hexdigest(),
+            page_context=page_context)
+    except ExtractionError as exc:
+        st.warning('Impossibile analizzare la struttura del documento entro i limiti locali.')
+        st.text(str(exc))
+        return
     if recognition.match_type == "NO_MATCH":
         st.header("Documento non riconosciuto")
         st.text(UNKNOWN_DOCUMENT_MESSAGE)
@@ -739,10 +745,10 @@ def show_benchmark(catalog, families):
                  'scan_ocr':'Scansioni e OCR',
                  'unknown_official':'Documenti ufficiali sconosciuti'}[key])
         if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
-        if summary.get('benchmark_model')=='known-family-unknown-v3':
-            if key=='known_robustness':st.text('Nuova valutazione v3 su identità escluse dalla calibrazione; trasformazioni sintetiche di documenti noti.')
+        if summary.get('benchmark_model') in ('known-family-unknown-v3','known-family-unknown-v4'):
+            if key=='known_robustness':st.text('Valutazione '+('v4' if summary.get('benchmark_model')=='known-family-unknown-v4' else 'v3')+' su identità escluse dalla calibrazione; trasformazioni sintetiche di documenti noti.')
             if key=='unknown_official':st.text('File sconosciuti storici, usati anche nella calibrazione: nessuna nuova validazione unknown indipendente.')
-            if key=='filled_forms':st.text('Campi AcroForm interattivi con dati fittizi; nessuna validità amministrativa dei dati compilati.')
+            if key=='filled_forms':st.text('Moduli con dati fittizi: campi reali o overlay negli spazi liberi; generazione verificata separatamente dal riconoscimento.')
         if section.get('status')=='not_run':
             st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')
             continue
@@ -761,10 +767,11 @@ def show_benchmark(catalog, families):
                 st.text('Latenza p50/p95 (ms): '+str(section['latency_ms'].get('p50'))+' / '+str(section['latency_ms'].get('p95')))
                 st.text('Indice fingerprint (byte): '+str(section.get('index_bytes','non disponibile')))
             else:st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
-    if summary.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3'):
+    if summary.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4'):
         family=summary.get('family_identity_holdout',{})
         st.text('Famiglie valutabili: '+str(family.get('families_evaluable',0))+' / 16')
         st.text('Validazione family: '+str(family.get('capability_status','non disponibile')))
+        if family.get('families_evaluable',0)<5:st.text('Il richiamo utile di release coincide con il riconoscimento esatto; capacità family non sufficientemente validata.')
     st.text('Dettagli di sviluppo e regressione: corpus non indipendenti.')
     for evaluation in summary["evaluations"]:
         st.divider()

@@ -60,7 +60,18 @@ def main():
             from src.fingerprint_v2 import validate as validate_v2
             fp2=archive.read('BurOCRazia/data/document_recognition_fingerprints_v2.json')
             validate_v2(json.loads(fp2))
-            assert hashlib.sha256(fp2).hexdigest()==gates['identity']['fingerprint_sha256']
+            if round_number<8:assert hashlib.sha256(fp2).hexdigest()==gates['identity']['fingerprint_sha256']
+        if round_number==8:
+            from src.fingerprint_v3 import validate as validate_v3
+            fp3=archive.read('BurOCRazia/data/document_recognition_fingerprints_v3.json');validate_v3(json.loads(fp3))
+            assert hashlib.sha256(fp3).hexdigest()==gates['identity']['fingerprint_sha256']
+            freeze=json.loads(archive.read('BurOCRazia/benchmarks/results/round8/freeze.json'))
+            for key in ['runtime_sha256','code_sha256','fingerprint_sha256']:assert freeze[key]==gates['identity'][key]
+            for path,key in [('benchmarks/results/round8/calibration_v4.json','calibration_sha256'),('benchmarks/reference/reference_truth_v1.json','truth_sha256'),('data/recognition_profiles/fingerprint_decision_v4.json','profile_sha256')]:assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==freeze[key]
+            locks=json.loads(archive.read('BurOCRazia/benchmarks/results/round8/evaluation_locks.json'))
+            for path,digest in locks['sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            baseline=json.loads(archive.read('BurOCRazia/benchmarks/results/round8/baseline/metrics.json'))
+            for path,digest in baseline['prior_raw_sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
         if round_number==7:
             freeze=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/freeze.json'))
             for key in ['runtime_sha256','code_sha256','fingerprint_sha256']:assert freeze[key]==gates['identity'][key]

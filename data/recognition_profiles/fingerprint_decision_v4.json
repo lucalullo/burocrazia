@@ -1,0 +1,24 @@
+{
+  "rules_version": "fingerprint-decision-v4",
+  "thresholds": {
+    "digital": 0.9,
+    "ocr": 0.8,
+    "chars": 0.65,
+    "visual": 0.88,
+    "anchors": 0.25,
+    "margin": 0.04,
+    "overlap": 16,
+    "top_k": 25,
+    "field_text": 0.75,
+    "conflict_content": 0.9,
+    "conflict_chars": 0.8,
+    "conflict_anchors": 0.5,
+    "conflict_margin": 0.1
+  },
+  "settings": {
+    "char_ngram": "3",
+    "aggregation": "max",
+    "containment": true
+  },
+  "scope": "Only contaminated Round6/7 known representations, repaired historical fills, and historical development negatives."
+}

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from contextlib import closing
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from io import BytesIO
 import math
 from pathlib import Path, PurePosixPath
@@ -62,6 +62,8 @@ class ExtractionResult:
     warning: str | None = None
     total_pages: int | None = None
     ocr_pages: int = 0
+    page_texts: tuple[str, ...] = field(default=(), compare=False, repr=False)
+    page_numbers: tuple[int, ...] = field(default=(), compare=False)
 
     @property
     def ocr(self) -> bool:
@@ -141,6 +143,7 @@ def extract_pdf(source: bytes | bytearray | BinaryIO) -> ExtractionResult:
         if not pdf.page_count:
             raise NoTextFoundError("Il PDF non contiene pagine leggibili.")
         page_texts: list[str] = []
+        page_numbers: list[int] = []
         warnings: list[str] = []
         text_chars = direct_pages = ocr_pages = 0
         unread_pages: list[int] = []
@@ -180,6 +183,7 @@ def extract_pdf(source: bytes | bytearray | BinaryIO) -> ExtractionResult:
                     raise ExtractionError("Il testo estratto supera il limite di 1.000.000 di caratteri.")
                 if text:
                     page_texts.append(text)
+                    page_numbers.append(page_number + 1)
                 _check_deadline(started)
         except (ExtractionError, NoTextFoundError):
             raise
@@ -203,6 +207,7 @@ def extract_pdf(source: bytes | bytearray | BinaryIO) -> ExtractionResult:
             text=text, method="pdf_mixed" if direct_pages and ocr_pages else "pdf_text" if direct_pages else "ocr",
             used_ocr=bool(ocr_pages), pages_processed=direct_pages + ocr_pages,
             warning=_combine_warnings(warnings), total_pages=pdf.page_count, ocr_pages=ocr_pages,
+            page_texts=tuple(page_texts), page_numbers=tuple(page_numbers),
         )
 
 

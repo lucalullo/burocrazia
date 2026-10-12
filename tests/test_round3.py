@@ -126,7 +126,7 @@ def test_ui_benchmark_headline_and_rejected_history(tmp_path,monkeypatch):
     labels=['Documenti noti — file canonici','Documenti noti — rappresentazioni trasformate',
         'Moduli compilati con dati fittizi','Famiglie — identità escluse',
         'Documenti ufficiali sconosciuti','Hard negatives','OCR reale','Performance']
-    if json.loads(Path('benchmarks/latest_summary.json').read_text(encoding='utf8')).get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3'):
+    if json.loads(Path('benchmarks/latest_summary.json').read_text(encoding='utf8')).get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4'):
         labels=['Copertura delle firme tecniche','Documenti noti — rappresentazioni trasformate',
             'Documenti ufficiali sconosciuti','Scansioni e OCR','Performance']
     assert [values.index(label) for label in labels]==sorted(values.index(label) for label in labels)
