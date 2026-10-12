@@ -76,3 +76,7 @@ Nessuna verifica editoriale è stata attribuita automaticamente e nessun contenu
 ## Round 5 — candidate NOT READY
 
 Fingerprint v1 minimizzate, lookup SHA e shortlist locale; nessuna nuova identità o migrazione SQL. Benchmark separati e gate non superati. Suite 615 test completa, zero falliti,3 skip. Vedi docs/ROUND5_REPORT.md.
+
+## Round 6 — NOT READY
+
+Firme v2 e benchmark separati per copertura, canonical, robustezza, compilazione, OCR, family, unknown, regressioni, memoria e latenza. Zero nuove identità; seed/schema 610 invariati. V1 e corpus storici conservati. Tutti i dati sintetici compilati sono fittizi; nessun file ufficiale o testo OCR redistribuito. Dettagli e limiti in `docs/ROUND6_REPORT.md`.

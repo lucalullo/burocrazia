@@ -24,6 +24,11 @@ def tests():
     initial=(ROOT/'reports/round6-final-initial-failed.log').read_bytes()
     r['initial_attempt']=dict(passed=650,failed=4,skipped=3,seconds=613.79,log_sha256=hashlib.sha256(initial).hexdigest(),
         resolution='Versioned development fixture adds explicit revisions to two positives and their original inputs as prudent negatives. SR211 review-history test now supplies the actual revision. No runtime, profile, frozen historical corpus or evaluation observation changed.')
+    for key,filename in [('post_guard','round6-postguard-tests.log'),('post_report','round6-postreport-tests.log')]:
+        raw_check=(ROOT/'reports'/filename).read_bytes()
+        check=re.search(r'(\d+) passed in ([\d.]+)s',raw_check.decode('utf8'))
+        if not check or re.search(rb'\b[1-9]\d* failed\b',raw_check):raise ValueError('Post-check not passed: '+key)
+        r[key]=dict(passed=int(check[1]),seconds=float(check[2]),log_sha256=hashlib.sha256(raw_check).hexdigest(),repeated_subset=True)
     write(OUT+'tests.json',r);return r
 
 def main():
@@ -187,7 +192,8 @@ Runner scansioni con tre worker disgiunti e `OMP_THREAD_LIMIT=1`; ordine finale 
 perturbazioni di contenuto più deboli: non costituiscono 70 moduli compilati. Il gate usa separatamente i 100 AcroForm.
 La matrice originale 120 casi è conservata; un supplemento di 50 AcroForm è pianificato prima della generazione,
 selezionando tutti i cinque template evaluation con campi presenti, senza cambiare soglie o consultare esiti per selezionarli.
-nomi/CF non validi/indirizzi/date/importi/testo e checkbox sintetici. Casi correlati entro template.
+Il generatore usa nomi, CF non validi, indirizzi, date, importi, testo e checkbox sintetici quando i campi sono identificabili.
+Casi correlati entro template.
 Le verifiche richiedono `/V` nel field tree, valore del widget e appearance riaperta;
 ambiguità/orfani non riparati automaticamente. Campi sintetici non costituiscono compilazione legale.
 Quando il nome del campo è generico, il filler usa `EsempioN`: la prova dimostra la modifica di campi reali,
@@ -259,6 +265,8 @@ Primo tentativo finale: 650 passed, quattro failed, tre skip (613,79 s), log/has
 Le quattro asserzioni dipendevano dai due input storici senza revisione e dal test storico SR211;
 risolte con fixture v2 e revisione esplicita nel test dello storico editoriale, senza indebolire il runtime congelato.
 schema invariato 610. Bootstrap/CLI/benchmark locali documentati in `ci_local.json`.
+Sottoinsiemi ripetuti dopo gli ultimi aggiornamenti: {test['post_guard']['passed']} test CLI/protezione fixture;
+{test['post_report']['passed']} test UI/fingerprint dopo il nuovo riepilogo statico. Non sono nuovi test aggiunti al totale 655.
 CI esterna **pending_external_gate**: anche READY LOCALLY consentirebbe solo RC locale.
 Il comando storico `benchmarks.evaluate --fast` termina con codice 1 per EX02/EX03;
 il wrapper di riproduzione conserva quel FAIL e verifica che siano gli unici due rifiuti aggiunti prima delle altre prove.

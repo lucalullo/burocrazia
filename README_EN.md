@@ -252,7 +252,7 @@ See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 5: **NOT READY**. Deterministic content fingerprints: 369/1212 (30.45%). Known canonical: 362/369, zero wrong matches. Representation robustness, family identity holdout and unknown rejection are reported separately. Local OCR; runtime offline. See [Round5 report](docs/ROUND5_REPORT.md) and [fingerprint design](docs/FINGERPRINTS.md).
+Round 6 candidate **NOT READY**; public software remains 0.6.1. Catalog: 1,216 real identities, 1,212 operational; no new identities in this round. Fingerprint coverage: 948/1212 (78.22%); canonical 987/987; robustness 150/192. Denominators, gates and limits: [BENCHMARK.md](docs/BENCHMARK.md), [ROUND6_REPORT.md](docs/ROUND6_REPORT.md). External CI is pending.
 
 ## Tests
 

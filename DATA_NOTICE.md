@@ -49,3 +49,7 @@ redistribution rights. Source URLs, actual acquisition dates, hashes and reuse
 notes are recorded in `benchmarks/manifests/official_fingerprint_cache_v1.json`.
 Fingerprint generation and matching do not confer editorial verification or
 change the historical catalog provenance. See `docs/FINGERPRINTS.md`.
+
+## Round 6 — NOT READY
+
+Firme v2 e benchmark separati per copertura, canonical, robustezza, compilazione, OCR, family, unknown, regressioni, memoria e latenza. Zero nuove identità; seed/schema 610 invariati. V1 e corpus storici conservati. Tutti i dati sintetici compilati sono fittizi; nessun file ufficiale o testo OCR redistribuito. Dettagli e limiti in `docs/ROUND6_REPORT.md`.

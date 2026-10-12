@@ -1,126 +1,234 @@
-# Benchmark Round 5 — NOT READY
+# Benchmark Round 6 — NOT READY
 
-Software **0.6.1**, target 0.7.0, schema **610**, branch `codex/coverage-benchmark-v0.7.0`. Commit dei sorgenti validati `498c1982f8d698c068bd33e6a749b458d6c1a1db`; le misure sono state eseguite localmente prima del commit, con gli stessi sorgenti identificati dai digest sotto. Nessun push, tag o release. CI esterna `pending_external_gate`.
+## Stato, versione e prove
+
+Software **0.6.1**, target **0.7.0**, schema **610**. Branch `codex/coverage-benchmark-v0.7.0`.
+Commit di congelamento runtime/calibrazione **`ce6fa61f432c204e3d4c8029ef370ff27e429455`**; HEAD alla generazione `1e922eaa5b81d7a6c1cafccdac4c66e376226683`.
+Il runtime e il profilo sono invariati dopo l'apertura dell'evaluation. Gli hash dei byte identificano ciascuna misura;
+nessun push, tag o rilascio. Runtime SHA `4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08`; bundle v2 SHA `1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073`.
+Baseline: 615 passed, 3 skip; dati storici v1 e Round 5 conservati, senza sostituire metriche o etichette.
 
 ## 1. Catalog coverage
 
-1.216 record reali, 1.212 operativi, quattro rifiutati, 1.216 provenance; nessuna nuova fonte o identità. Snapshot invariato; integrità/FK verificati. Copertura sintetica dei metadati: {'documents_tested': 1212, 'exact': 1169, 'family_fallback': 0, 'no_match': 43, 'wrong_identity': 0, 'entity_errors': 0, 'version_errors': 0}. Non è riconoscimento di file reali.
+1.216 reali, 1.212 operativi, quattro rifiutati; **zero nuove identità**. Seed SHA `790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99`,
+integrity/FK OK e provenienze 1.216/1.216. Nessuna nuova verifica editoriale.
+Copertura da soli metadati: 1169/1212, distinta dal riconoscimento di file reali.
 
 ## 2. Fingerprint coverage
 
-Canonici disponibili 409; firme attive 369/1212 (30.45%). Target70%, preferito85%: fallito. Provenienza effettiva per ogni firma, nessun file ufficiale distribuito.
+File-backed 1158; firme attive per 948 identità;
+copertura totale 78.22%, file-backed 81.87%.
+Risorse canoniche 1015, attive 987, in quarantena 28.
+Servizi dinamici 0; metadata-only 54.
+Denominatore: A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.
 
-| Fonte | Operativi | Canonici | Firme | Bloccati | Senza download | Acquisizione fallita | Ambigui |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| inps | 359 | 0 | 0 | 0 | 0 | 359 | 0 |
-| inail | 347 | 121 | 119 | 0 | 0 | 228 | 0 |
-| ade | 122 | 0 | 0 | 90 | 32 | 0 | 0 |
-| lavoro | 102 | 91 | 72 | 0 | 0 | 28 | 2 |
-| giustizia | 142 | 110 | 100 | 0 | 0 | 40 | 2 |
-| inl | 46 | 44 | 44 | 0 | 1 | 1 | 0 |
-| mimit | 42 | 32 | 24 | 0 | 0 | 16 | 2 |
-| garante_privacy | 17 | 0 | 0 | 0 | 8 | 9 | 0 |
-| mef | 15 | 1 | 1 | 0 | 14 | 0 | 0 |
-| funzione_pubblica | 9 | 9 | 8 | 0 | 0 | 1 | 0 |
-| anac | 7 | 1 | 1 | 0 | 0 | 6 | 0 |
-| unioncamere | 4 | 0 | 0 | 0 | 0 | 4 | 0 |
+| Fonte | Operativi | File-backed | Fingerprinted identities |
+|---|---:|---:|---:|
+| inps | 359 | 359 | 351 |
+| inail | 347 | 347 | 308 |
+| ade | 122 | 90 | 0 |
+| lavoro | 102 | 102 | 74 |
+| mimit | 42 | 42 | 25 |
+| funzione_pubblica | 9 | 9 | 8 |
+| garante_privacy | 17 | 10 | 4 |
+| inl | 46 | 45 | 43 |
+| giustizia | 142 | 142 | 126 |
+| mef | 15 | 1 | 1 |
+| anac | 7 | 7 | 7 |
+| unioncamere | 4 | 4 | 1 |
 
-L’acquisizione ha riutilizzato la cache verificata e fatto 138 richieste nella prima sessione opt-in. Le ricostruzioni successive sono offline. ADE: diniego403; INPS/Garante: risposte200 non documentali; diverse fonti sono state fermate dopo tre risposte non documentali. Questa chiusura prudenziale è un limite del runner: non prova che ogni percorso successivo sia inaccessibile. I percorsi non richiesti sono riportati come acquisizione fallita, non come diniego dell’host. Nessun aggiramento. DOCX con estensione dichiarata ma contenuto legacy non valido, conflitti di emittente e allegati condivisi restano esclusi.
+Assenze: `{"shared_resource": 26, "unsupported_mime": 34, "source_changed": 19, "robots_or_policy_block": 127, "detail_page_only": 27, "extraction_failure": 24, "http_404": 1, "download_url_html": 6}`.
+I CSV contengono le 843 assenze iniziali, le assenze finali e tutti gli stati tecnici.
+Nuove firme tra le assenze v1: 582; firme v1 conservate attive anche in v2: 366.
+Identità v1 escluse dalla v2 attiva: `[152, 536, 921]`; motivi tecnici nel CSV final. Il bundle v1 resta invariato.
+669 richieste sequenziali complessive, robots/allowlist/redirect verificati; nessun bypass.
+Multipart INPS: derivazione MIME tracciata con hash del contenitore e del payload.
+Formati e lingue alternativi provengono dalle osservazioni immutabili già associate alle identità.
 
 ## 3. Canonical exact-file recognition
 
-N=369; esatti 362, famiglie 0, rifiuti 7, errati 0; precisione 100.00% (362/362); recall exact 98.10% (362/369); utile 98.10% (362/369).
+| Prova | N | Exact | Family | NO | Wrong | Precision | Exact recall |
+|---|---:|---:|---:|---:|---:|---|---|
+| Canonical exact-file | 987 | 987 | 0 | 0 | 0 | 100.00% (987/987) | 100.00% (987/987) |
+| Robustness evaluation | 192 | 150 | 0 | 42 | 0 | 100.00% (150/150) | 78.12% (150/192) |
+| Interactive AcroForms (5 templates) | 100 | 100 | 0 | 0 | 0 | 100.00% (100/100) | 100.00% (100/100) |
+| Static overlays (weaker perturbation) | 70 | 70 | 0 | 0 | 0 | 100.00% (70/70) | 100.00% (70/70) |
+| Scan/OCR | 168 | 128 | 0 | 40 | 0 | 100.00% (128/128) | 76.19% (128/168) |
+
+Canonical misura ogni risorsa attiva, comprese alternative della stessa identità; non generalizzazione a identità sconosciute.
+Subset cross-format: 22/22 risorse PDF/DOCX di 11 identità;
+prova SHA dei file canonici, senza claim di generalizzazione scan cross-format DOCX.
+I sette NO Round 5 hanno cause contestuali documentate in `canonical_failures.csv`:
+anno del comunicato/competenza, anno della delibera/contributo, data di revisione, COMUNE come campo e qualificatori nel corpo.
+Le correzioni sono generali; nessuna whitelist di ID o bypass di conflitti espliciti di ente/versione.
+Risorse in conflitto sono escluse tecnicamente e conservate nell'audit, senza revoche editoriali.
 
 ## 4. Robustness recognition
 
-N=196; esatti 48, famiglie 0, rifiuti 148, errati 0; precisione 100.00% (48/48); recall exact 24.49% (48/196); utile 24.49% (48/196).
+Calibration identities: `[1055, 681, 403, 345, 661, 405, 507, 28]`. Evaluation identities: `[109, 120, 149, 159, 550, 546, 586, 591, 610, 166, 615, 601]`.
+Split e SHA delle risorse congelati prima delle rappresentazioni. Soglie/pesi tarati solo sulle identità di calibration;
+il profilo congelato e lo SHA runtime sono verificati prima dell'evaluation. Nessuna ritara dopo i risultati.
+La prima taratura e il relativo profilo sono conservati in `calibration_initial/`:
+prima di aprire evaluation sono state ampliate le soglie di containment caratteri (pagina singola contro documento intero)
+e corretto il veto della revisione mancante nel fallback metadata. La revisione finale usa ancora soltanto gli otto ID calibration.
+Soglie finali: text 0,75, char containment 0,15, anchors 0,60, visual 0,88, margine 0,02,
+almeno 20 sovrapposizioni. Pesi 0,50/0,25/0,15/0,10. L'obiettivo della griglia dà 116/128 corretti
+e zero wrong **prima dei veto di sicurezza**; non è un richiamo osservato end-to-end di 116/128.
+Le fingerprints delle identità evaluation esistono: prova di rappresentazione dello stesso documento, non identity holdout.
+
+| Trasformazione | N | Exact correct | Precision | Recall |
+|---|---:|---:|---|---|
+| digital_exact | 12 | 12 | 100.00% (12/12) | 100.00% (12/12) |
+| raster_200 | 12 | 9 | 100.00% (9/9) | 75.00% (9/12) |
+| raster_150 | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+| jpeg_90 | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+| jpeg_75 | 12 | 9 | 100.00% (9/9) | 75.00% (9/12) |
+| jpeg_60 | 12 | 9 | 100.00% (9/9) | 75.00% (9/12) |
+| grayscale | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+| contrast_minus20 | 12 | 8 | 100.00% (8/8) | 66.67% (8/12) |
+| blur_mild | 12 | 9 | 100.00% (9/9) | 75.00% (9/12) |
+| crop_2pct | 12 | 8 | 100.00% (8/8) | 66.67% (8/12) |
+| crop_5pct | 12 | 8 | 100.00% (8/8) | 66.67% (8/12) |
+| resize_075 | 12 | 8 | 100.00% (8/8) | 66.67% (8/12) |
+| first_page_only | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+| rotation_90 | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+| rotation_180 | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+| rotation_270 | 12 | 10 | 100.00% (10/10) | 83.33% (10/12) |
+
+Candidate retrieval@K: `{"1": {"numerator": 192, "denominator": 192}, "5": {"numerator": 192, "denominator": 192}, "10": {"numerator": 192, "denominator": 192}, "25": {"numerator": 192, "denominator": 192}}`.
+Il ranking diagnostico non applica SHA né veto; il runtime conserva tutti i candidati con evidenza minima.
+`rejection_diagnostics.json` distingue fusion insufficiente da candidati eleggibili poi rifiutati;
+un motivo generico non viene attribuito arbitrariamente a un particolare veto.
+`evaluation_locks.json` verifica a posteriori l'uguaglianza dei byte col commit di congelamento,
+senza inventare un evento di lock precedente. Il pacchetto controlla anche questi hash.
+Expected fuori top25 indica un problema di recupero; dentro top25 e NO indica scoring/veto/margine.
+Righe di scoring diagnostico limitate a top25, rank atteso calcolato sull'intera lista.
+Il seed del helper storico nei metadati dei casi è riconciliato con il piano Round6 (20261012);
+il valore ereditato 20261011 è conservato separatamente. Nessuna osservazione, etichetta o metrica è cambiata.
+Runner scansioni con tre worker disgiunti e `OMP_THREAD_LIMIT=1`; ordine finale deterministico.
 
 ## 5. Filled-form robustness
 
-N=14; esatti 10, famiglie 0, rifiuti 4, errati 0; precisione 100.00% (10/10); recall exact 71.43% (10/14); utile 71.43% (10/14).
-
-Canonici: SHA riconosciuti 362/369; 7 rifiuti per vincoli su annualità/revisioni, sottotipo o interpretazione dell’emittente. Nessun errore di estrazione nel run finale. Sono identità note dal canonico, non generalizzazione indipendente.
-
-Moduli compilati: 4 casi AcroForm completati e verificati; 2 fallimenti di generazione inclusi come rifiuti. Gli altri sono overlay di dati fittizi nel margine, prova più debole della compilazione dei campi. Un’ulteriore fixture PDF AcroForm sintetica prova nomi/data/indirizzo/importo reali nei widget, riapertura dei valori e matching del contenuto, in CI. Nessun dato personale reale.
+170 casi totali: **100 AcroForm reali su cinque template**, venti varianti ciascuno;
+**70 overlay statici**, dieci varianti su sette risorse. Gli overlay includono documenti non compilabili e sono
+perturbazioni di contenuto più deboli: non costituiscono 70 moduli compilati. Il gate usa separatamente i 100 AcroForm.
+La matrice originale 120 casi è conservata; un supplemento di 50 AcroForm è pianificato prima della generazione,
+selezionando tutti i cinque template evaluation con campi presenti, senza cambiare soglie o consultare esiti per selezionarli.
+Il generatore usa nomi, CF non validi, indirizzi, date, importi, testo e checkbox sintetici quando i campi sono identificabili.
+Casi correlati entro template.
+Le verifiche richiedono `/V` nel field tree, valore del widget e appearance riaperta;
+ambiguità/orfani non riparati automaticamente. Campi sintetici non costituiscono compilazione legale.
+Quando il nome del campo è generico, il filler usa `EsempioN`: la prova dimostra la modifica di campi reali,
+senza garantire plausibilità semantica o correttezza di date/CF in tutti i campi. Questo limite resta aperto.
+Dipendenza facoltativa del benchmark: `pypdf==6.10.0` in `benchmarks/requirements-round6.txt`, non importata dal runtime.
 
 ## 6. Scan/OCR robustness
 
-Due PDF disponibili per fonte, dove possibile; 14 identità, prima pagina, 14 trasformazioni: raster150/200DPI, grigio, JPEG60/75/90, blur, contrasto, crop1%, rotazioni90/180/270, resize down/up e prima pagina digitale. Seed20261011; selezione SHA(document_id) dentro fonte prima dei risultati. Trasformazioni dopo il canonico, holdout di rappresentazioni. Nessuna trasformazione scansione DOCX.
-
-| Trasformazione | N | Exact | P | R exact | Utile |
-|---|---:|---:|---|---|---|
-| raster_150 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| raster_200 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| grayscale | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| jpeg_60 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| jpeg_75 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| jpeg_90 | 14 | 4 | 100.00% (4/4) | 28.57% (4/14) | 28.57% (4/14) |
-| blur | 14 | 4 | 100.00% (4/4) | 28.57% (4/14) | 28.57% (4/14) |
-| low_contrast | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| crop_margins | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| rotate_90 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| rotate_180 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| rotate_270 | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| resize_down_up | 14 | 3 | 100.00% (3/3) | 21.43% (3/14) | 21.43% (3/14) |
-| first_page_only | 14 | 7 | 100.00% (7/7) | 50.00% (7/14) | 50.00% (7/14) |
-
-OCR condizionato: 22.53% (41/182) exact. Errori di estrazione esclusi solo da questa tabella condizionata, sempre inclusi nel risultato end-to-end. OCR reale legacy7/7 e raster sintetico v2 14/14 restano separati. Scansioni sparse, ordine dei campi, testi brevi e versioni non leggibili limitano ancora v1; nessuna accuracy OCR annotata sul testo ufficiale è stata inventata.
+168 scansioni generate; OCR estratto con successo 168.
+Exact recall 76.19% (128/168); useful recall 76.19% (128/168).
+Ogni errore di estrazione resta nel denominatore. Prime pagine PDF a 150/200 dpi, JPEG, crop, blur,
+contrasto, resize e rotazioni. Non sono scansioni reali di utenti, manoscritti o foto da telefono.
+OCR canonico: prima pagina PDF 144 dpi, stesso Tesseract/lingue del runtime, senza persistere testo o immagini.
+DOCX: canale digitale; renderer locale non disponibile, nessun claim OCR/visual o scan cross-format per DOCX.
 
 ## 7. Family identity-holdout
 
-Famiglie testate 1, valutabili con ≥3 held-out 0; identità sviluppo 0, held-out 1. P/R/F1: n.d. / 0.00% (0/1) / 0.00% (0/1); macro {'family_precision': None, 'family_recall': 0.0, 'family_f1': 0.0}.
-
-Pattern verificati preesistenti invariati, nessun pattern nuovo costruito sulle identità held-out; SHA condivisi indivisibili e percorso exact disattivato. Split retrospettivo su file già osservati, insufficiente per generalizzazione prospettica. Target cinque famiglie non raggiunto: mancano identità/file ufficiali pertinenti. Nessuna famiglia inventata o aggiunta. Sintetici v3 161/161, macro100%, zero false accettazioni sugli81 negativi; v1/v2 storici160/161 restano invariati.
+16 famiglie totali; 0 valutabili. Held-out reali osservati in via esplorativa:
+2; casi con numerosità release-grade 0.
+Identità held-out esplorative: `[167, 143]`;
+split per tutte le 16 famiglie in `family_evaluability.csv` e `family_release.json`.
+Nel solo subset esplorativo: 1/2 corretti,
+recall 50.00% (1/2); non confluisce nelle macro release-grade.
+Precision n.d., recall n.d.,
+macro `{'family_precision': None, 'family_recall': None, 'family_f1': None}`, false accepts 0.
+Capability `not_sufficiently_validated`; meno di cinque famiglie non blocca la RC known-document, ma non valida family.
+Nessuna nuova frase imparata dalle identità held-out. Hard negatives sintetici famiglia separati: 81,
+0 false accept; non sostituiscono file ufficiali di identità nuove.
 
 ## 8. Unknown official rejection
 
-137 hash ufficiali distinti fuori dagli ambiti supportati, 137 rifiuti corretti, 0 false accettazioni; 2 fallimenti di estrazione inclusi. 100.00% (137/137). Campione storico, non nuovi sconosciuti indipendenti.
+137 SHA ufficiali storici distinti, 137 NO,
+0 accettazioni erronee; rifiuto corretto 100.00% (137/137).
+Tutti i negativi storici conservati. Zero ulteriori unknown non visti: la cache aggiuntiva contiene risorse di identità note
+o file privi di etichette unknown adjudicate; non si assegnano etichette negative automaticamente dal titolo.
 
 ## 9. Historical regressions
 
-Cinque errori v1 tutti corretti o rifiutati; R061 NO_MATCH; regressione35/35, lockedv2 69/69, hard negatives30/30+100/100. Lockedv1 59/69 conserva le etichette storiche incompatibili. Corpus v1/v2 e holdout Round3/4 non modificati; i loro risultati originali rimangono distinguibili. Il primo benchmark di rappresentazioni aveva48 exact e2 errati: il fallback metadati confondeva vendita/acquisto, con un riferimento nel corpo che annullava il sottotipo dell’intestazione. Il correttivo generale dà precedenza al qualificatore dell’intestazione rispetto ai riferimenti nel corpo; due test simmetrici lo coprono. Risultati precedenti conservati in before_transaction_fix, senza cambio di soglie. Gli artefatti iniziali con OCR impedito dal sandbox e l’esecuzione interrotta non vengono usati come misura finale. Le etichette ausiliarie ente/versione dei primi casi noti sono aggiunte dal medesimo document ID del catalogo, senza cambiare identità o osservazioni.
+Regressione storica immutata **33/35**: EX02/EX03 ora NO perché
+non esplicitano revisione 1.1; il gate storico stretto resta FAIL. Nuova fixture di sviluppo `tests/fixtures/benchmark_v2.json`
+**37/37**: revisioni aggiunte a due nuovi input positivi, testi originali mantenuti in due nuovi negativi,
+parent SHA e motivazioni nel file. Non sostituisce il 33/35 storico e non è evaluation indipendente.
+Locked v2 69/69;
+locked v1 storico 59/69, senza sostituzione delle etichette.
+Negativi storici 130/130; R061 NO_MATCH; cinque false accettazioni storiche sicure 5/5.
+OCR reale storico 7/7 e sintetico 14/14; test mock, OCR reale ed editoria restano distinti.
 
 ## 10. Performance
 
-Confronto alternato con motore Round4 `f9e1fa06821907da53f75417555bd3cbdd50c7d0`, stesso catalogo, 35 input sintetici, 210 campioni/motore. Round4 p50/p95 81.7499/110.7892ms; candidato 91.2146/128.1624ms; rapporti {'p50': 1.115776288411362, 'p95': 1.1568131189682749}. Catalog load 8.40ms, index build inclusa lettura fingerprint 747.42ms. Estrazione/OCR esclusi dalla warm inference e misurati separatamente nei raw.
+Startup catalogo 9.88 ms, indice 1667.57 ms;
+warm p50 112.96 ms, p95 799.11 ms,
+306 campioni, 35 sintetici + 16 file ufficiali.
+Inferenza warm esclude estrazione/OCR e generazione visual, misurati separatamente per caso.
+Il p95 Round 5 era 128,16 ms: il nuovo indice aumenta copertura ma questa misura Round 6 peggiora la coda
+oltre il limite. Non viene presentato come ottimizzazione prestazionale conclusa.
+Ambiente Windows-11-10.0.26300-SP0, Python 3.12.10; nessuna certificazione Linux/macOS.
 
-## 11. Memory
+## 11. Memory, test, CI e gate
 
-Fingerprint {'disk_bytes': 12188225, 'index_bytes': 28676242, 'records': 369, 'average_disk_bytes_per_document': 33030.42005420054, 'average_index_bytes_per_document': 77713.39295392953, 'projected_index_bytes_for_1200': 93256071.54471545, 'memory_scope': 'Recursive Python size of canonical signature records and tuple posting lists; process RSS reported separately.'}. RSS candidato prima/dopo warm 30318592/77123584byte, crescita su8 ripetizioni 569344byte. Scope: dimensione ricorsiva Python separata dal working set del processo, non attribuzione perfetta delle allocazioni native. Posting list in tuple riducono overhead.
+Bundle v2 27182244 byte; indice 39852804 byte.
+RSS dopo warm 286887936 byte; crescita warm 45056 byte.
+Array, posting e pesi IDF sono nella misura ricorsiva Python; RSS dell'intero processo è separato.
+V1 resta su disco per compatibilità/storico e non viene caricata nel percorso v2 operativo.
+Nessun upload o suo sketch viene conservato in cache.
 
-## Test e CI
+Test completi: 655 passed, 0 failed, 3 skip Windows,
+581.88 s. Migrazioni ripetute su copie di v0.6.1, Round4 e Round5, integrity/FK;
+Primo tentativo finale: 650 passed, quattro failed, tre skip (613,79 s), log/hash conservati.
+Le quattro asserzioni dipendevano dai due input storici senza revisione e dal test storico SR211;
+risolte con fixture v2 e revisione esplicita nel test dello storico editoriale, senza indebolire il runtime congelato.
+schema invariato 610. Bootstrap/CLI/benchmark locali documentati in `ci_local.json`.
+Sottoinsiemi ripetuti dopo gli ultimi aggiornamenti: 7 test CLI/protezione fixture;
+71 test UI/fingerprint dopo il nuovo riepilogo statico. Non sono nuovi test aggiunti al totale 655.
+CI esterna **pending_external_gate**: anche READY LOCALLY consentirebbe solo RC locale.
+Il comando storico `benchmarks.evaluate --fast` termina con codice 1 per EX02/EX03;
+il wrapper di riproduzione conserva quel FAIL e verifica che siano gli unici due rifiuti aggiunti prima delle altre prove.
+La CLI corrente sulla fixture di sviluppo v2 passa; non rende verde il gate storico.
+Il primo lancio del wrapper performance non ha scritto risultati perché un avviso PDF nativo contaminava stdout;
+è stata corretta soltanto la lettura della singola riga JSON e ripetuta la misura isolata, senza cambiare il protocollo.
 
-Suite completa: 615 passed, 3 skipped, zero failed, 600.83s. Include730/CU quasi identici, widget PDF compilati e qualificatori vendita/acquisto. Dopo il refresh dei risultati statici e dell’aspettativa UI sulle categorie Round5, controlli UI21/21. Tre skip Windows symlink/FIFO. Windows Python 3.12.10. Non è un collaudo su tre piattaforme. CI normale include schema fingerprint e fixture sintetiche, senza cache ufficiale; esecuzioni equivalenti locali registrate, CI esterna pending.
+| Gate | Target | Risultato | Esito | Bloccante |
+|---|---|---|---|---|
+| coverage_file_backed | >=85% | 0.8186528497409327 | FAIL | sì |
+| coverage_all | >=70% | 0.7821782178217822 | PASS | sì |
+| canonical_precision | 100% | 1.0 | PASS | sì |
+| canonical_recall | 100% | 1.0 | PASS | sì |
+| canonical_wrong | 0 | 0 | PASS | sì |
+| robustness_precision | >=99.5% | 1.0 | PASS | sì |
+| robustness_exact_recall | >=90% | 0.78125 | FAIL | sì |
+| filled_acroform_precision | >=99.5% | 1.0 | PASS | sì |
+| filled_acroform_exact_recall | >=90% | 1.0 | PASS | sì |
+| scan_precision | >=99.5% | 1.0 | PASS | sì |
+| scan_exact_recall | >=85% | 0.7619047619047619 | FAIL | sì |
+| scan_useful_recall | >=95% | 0.7619047619047619 | FAIL | sì |
+| family_capability_validation | >=5 evaluable families | 0 | FAIL | no |
+| unknown_rejection | >=99% | 1.0 | PASS | sì |
+| R061 | NO_MATCH | NO_MATCH | PASS | sì |
+| historical_five | 5 safe | 5 | PASS | sì |
+| historical_negatives | 130/130 | 130 | PASS | sì |
+| historical_family_negatives | 0 false accepts | 0 | PASS | sì |
+| historical_development_regression | 35/35 unchanged labels | 33 | FAIL | sì |
+| development_compat_v2 | 37/37 new representations | 37 | PASS | sì |
+| real_ocr | 7/7 +14/14 | {'legacy': 7, 'synthetic': 14} | PASS | sì |
+| warm_p95 | <=250ms | 799.1129 | FAIL | sì |
+| warm_p50 | <=150ms | 112.9562 | PASS | sì |
+| index_memory | <=100MB | 39852804 | PASS | sì |
+| tests | 0 failures | 655 | PASS | sì |
+| unchanged_catalog | 1216 identities, same seed SHA | 790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99 | PASS | sì |
 
-## Gate
+Limiti: OCR/visual solo prima pagina PDF; DOCX senza renderer; scansioni e dati compilati sintetici;
+unknown e family non sono una nuova prova prospettica; fonti bloccate/legacy non aggirate;
+nessuna nuova revisione editoriale o nuova spiegazione. Le metriche non sono una probabilità né un consiglio personalizzato.
 
-| Gate | Obiettivo | Risultato | Esito |
-|---|---|---|---|
-| catalog_provenance | 1216/1216; unchanged snapshot | 1212 | PASS |
-| fingerprint_coverage | >=70% | 0.30445544554455445 | FAIL |
-| canonical_precision | 100% | 1.0 | PASS |
-| canonical_recall | >=99% | 0.981029810298103 | FAIL |
-| robustness_precision | >=99.5% | 1.0 | PASS |
-| robustness_exact_recall | >=90% | 0.24489795918367346 | FAIL |
-| degraded_scans_useful_when_family_relevant | >=95%; N/A if no labelled pertinent family | {'value': None, 'cases': 0} | PASS |
-| family_evaluable_sample | >=5 families, >=3 held out identities when possible | 0 | FAIL |
-| family_precision | >=99% | None | FAIL |
-| family_macro_precision | >=99% | None | FAIL |
-| family_recall | >=80% | 0.0 | FAIL |
-| family_hard_negatives | 0 false accepts | 0 | PASS |
-| unknown_rejection | >=99%, target100% | 1.0 | PASS |
-| historical_five | 5 safe | 5 | PASS |
-| R061 | NO_MATCH | NO_MATCH | PASS |
-| historical_hard_negatives | 130/130 | 130 | PASS |
-| entity_errors | 0 | 0 | PASS |
-| version_errors | 0 | 0 | PASS |
-| real_ocr | 7/7 and14/14 | {'legacy': 7, 'v2': 14} | PASS |
-| performance | p50/p95 <=1.5x paired Round4; preferred p95<=150ms | {'p50': 1.115776288411362, 'p95': 1.1568131189682749} | PASS |
-| fingerprint_memory | <=100MiB index for1200 projected | {'disk_bytes': 12188225, 'index_bytes': 28676242, 'records': 369, 'average_disk_bytes_per_document': 33030.42005420054, 'average_index_bytes_per_document': 77713.39295392953, 'projected_index_bytes_for_1200': 93256071.54471545, 'memory_scope': 'Recursive Python size of canonical signature records and tuple posting lists; process RSS reported separately.'} | PASS |
-| tests | 0 failed | 615 | PASS |
-
-## Riproducibilità e archivio
-
-Runtime SHA `75534cbc873074122cfec958847f8648fc728e6a5b5caba362df5e522a181f12`; codice/bundle SHA `8b93a7d9eb5909c74bc111541cc9985589194d70a1391d594647969ff946240e`; fingerprint SHA `56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2`. Raw: `benchmarks/results/round5/`. Parametri e comandi: `docs/FINGERPRINTS.md`, `scripts/round5_full.ps1`.
-
-Archivio locale: `dist/BurOCRazia-v0.7.0-candidate-NOT-READY-round5.zip`. SHA-256 e commit finale in `dist/package-verification.json` e file `.zip.sha256`, generati dopo il commit. Non si incorpora l’hash dello ZIP nel suo stesso contenuto.
+Archivio locale: `dist/BurOCRazia-v0.7.0-candidate-NOT-READY-round6.zip`.
+SHA256 e verifica byte/lock/hygiene in `dist/package-verification.json` e nel file `.zip.sha256`,
+generati dopo il commit per evitare riferimenti circolari. Nessun cache ufficiale, database personale o documento di terzi nello ZIP.

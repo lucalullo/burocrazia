@@ -1,164 +1,202 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
+  "round": 6,
   "status": "NOT READY",
   "local_gates_passed": false,
   "external_ci": "pending_external_gate",
+  "final_release_allowed": false,
   "identity": {
-    "runtime_sha256": "75534cbc873074122cfec958847f8648fc728e6a5b5caba362df5e522a181f12",
-    "code_sha256": "8b93a7d9eb5909c74bc111541cc9985589194d70a1391d594647969ff946240e",
-    "fingerprint_sha256": "56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2",
-    "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
-    "commit": "498c1982f8d698c068bd33e6a749b458d6c1a1db"
+    "commit": "1e922eaa5b81d7a6c1cafccdac4c66e376226683",
+    "runtime_sha256": "4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08",
+    "code_sha256": "c8cb689d051327145387b59c3ab3222d44887162c4e20370290ee5b78ad25918",
+    "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+    "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
   },
   "gates": [
     {
-      "gate": "catalog_provenance",
-      "target": "1216/1216; unchanged snapshot",
-      "actual": 1212,
-      "passed": true
+      "gate": "coverage_file_backed",
+      "target": ">=85%",
+      "actual": 0.8186528497409327,
+      "passed": false,
+      "blocking": true
     },
     {
-      "gate": "fingerprint_coverage",
+      "gate": "coverage_all",
       "target": ">=70%",
-      "actual": 0.30445544554455445,
-      "passed": false
+      "actual": 0.7821782178217822,
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "canonical_precision",
       "target": "100%",
       "actual": 1.0,
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "canonical_recall",
-      "target": ">=99%",
-      "actual": 0.981029810298103,
-      "passed": false
+      "target": "100%",
+      "actual": 1.0,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "canonical_wrong",
+      "target": "0",
+      "actual": 0,
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "robustness_precision",
       "target": ">=99.5%",
       "actual": 1.0,
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "robustness_exact_recall",
       "target": ">=90%",
-      "actual": 0.24489795918367346,
-      "passed": false
+      "actual": 0.78125,
+      "passed": false,
+      "blocking": true
     },
     {
-      "gate": "degraded_scans_useful_when_family_relevant",
-      "target": ">=95%; N/A if no labelled pertinent family",
-      "actual": {
-        "value": null,
-        "cases": 0
-      },
-      "passed": true
+      "gate": "filled_acroform_precision",
+      "target": ">=99.5%",
+      "actual": 1.0,
+      "passed": true,
+      "blocking": true
     },
     {
-      "gate": "family_evaluable_sample",
-      "target": ">=5 families, >=3 held out identities when possible",
+      "gate": "filled_acroform_exact_recall",
+      "target": ">=90%",
+      "actual": 1.0,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "scan_precision",
+      "target": ">=99.5%",
+      "actual": 1.0,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "scan_exact_recall",
+      "target": ">=85%",
+      "actual": 0.7619047619047619,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "scan_useful_recall",
+      "target": ">=95%",
+      "actual": 0.7619047619047619,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "family_capability_validation",
+      "target": ">=5 evaluable families",
       "actual": 0,
-      "passed": false
-    },
-    {
-      "gate": "family_precision",
-      "target": ">=99%",
-      "actual": null,
-      "passed": false
-    },
-    {
-      "gate": "family_macro_precision",
-      "target": ">=99%",
-      "actual": null,
-      "passed": false
-    },
-    {
-      "gate": "family_recall",
-      "target": ">=80%",
-      "actual": 0.0,
-      "passed": false
-    },
-    {
-      "gate": "family_hard_negatives",
-      "target": "0 false accepts",
-      "actual": 0,
-      "passed": true
+      "passed": false,
+      "blocking": false
     },
     {
       "gate": "unknown_rejection",
-      "target": ">=99%, target100%",
+      "target": ">=99%",
       "actual": 1.0,
-      "passed": true
-    },
-    {
-      "gate": "historical_five",
-      "target": "5 safe",
-      "actual": 5,
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "R061",
       "target": "NO_MATCH",
       "actual": "NO_MATCH",
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
-      "gate": "historical_hard_negatives",
+      "gate": "historical_five",
+      "target": "5 safe",
+      "actual": 5,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "historical_negatives",
       "target": "130/130",
       "actual": 130,
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
-      "gate": "entity_errors",
-      "target": "0",
+      "gate": "historical_family_negatives",
+      "target": "0 false accepts",
       "actual": 0,
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
-      "gate": "version_errors",
-      "target": "0",
-      "actual": 0,
-      "passed": true
+      "gate": "historical_development_regression",
+      "target": "35/35 unchanged labels",
+      "actual": 33,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "development_compat_v2",
+      "target": "37/37 new representations",
+      "actual": 37,
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "real_ocr",
-      "target": "7/7 and14/14",
+      "target": "7/7 +14/14",
       "actual": {
         "legacy": 7,
-        "v2": 14
+        "synthetic": 14
       },
-      "passed": true
+      "passed": true,
+      "blocking": true
     },
     {
-      "gate": "performance",
-      "target": "p50/p95 <=1.5x paired Round4; preferred p95<=150ms",
-      "actual": {
-        "p50": 1.115776288411362,
-        "p95": 1.1568131189682749
-      },
-      "passed": true
+      "gate": "warm_p95",
+      "target": "<=250ms",
+      "actual": 799.1129,
+      "passed": false,
+      "blocking": true
     },
     {
-      "gate": "fingerprint_memory",
-      "target": "<=100MiB index for1200 projected",
-      "actual": {
-        "disk_bytes": 12188225,
-        "index_bytes": 28676242,
-        "records": 369,
-        "average_disk_bytes_per_document": 33030.42005420054,
-        "average_index_bytes_per_document": 77713.39295392953,
-        "projected_index_bytes_for_1200": 93256071.54471545,
-        "memory_scope": "Recursive Python size of canonical signature records and tuple posting lists; process RSS reported separately."
-      },
-      "passed": true
+      "gate": "warm_p50",
+      "target": "<=150ms",
+      "actual": 112.9562,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "index_memory",
+      "target": "<=100MB",
+      "actual": 39852804,
+      "passed": true,
+      "blocking": true
     },
     {
       "gate": "tests",
-      "target": "0 failed",
-      "actual": 615,
-      "passed": true
+      "target": "0 failures",
+      "actual": 655,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "unchanged_catalog",
+      "target": "1216 identities, same seed SHA",
+      "actual": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+      "passed": true,
+      "blocking": true
     }
   ]
 }

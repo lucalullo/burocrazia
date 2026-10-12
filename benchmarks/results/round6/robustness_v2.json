@@ -137,7 +137,8 @@
         "document_id": 109,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "aef0fbd6c7db7a020a6ea57a46ec75841d18e8964a049395e94bda613a1584f9",
@@ -474,7 +475,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "5667218a3cf206b9e421d69e176b47c157eefcb9241d3ad42acd3a830a897d53",
@@ -815,7 +817,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "3a9d2e3779915ed49c48788cce03ed585ecac0dd2d97e2cf4645748696e3321d",
@@ -1157,7 +1160,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "e45f1c35be0e6b620727efcc775a8ddc84d684107a29afd6200922086dee115f",
@@ -1499,7 +1503,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "7d1fd5b5c345e68219b0017178ccd3b23a36c8850211d80b2b5d7efaa2f0c984",
@@ -1841,7 +1846,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "9e5bd9b17224053cac8680a83488a41c6f854895d94957be05b96d58f9fdce81",
@@ -2183,7 +2189,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "e73ad2a3b7c73b3909bf89c6bc93cd8efdff313ad70dde091c4816478abbd57c",
@@ -2525,7 +2532,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "8f97e1f4d485b21be1ac545a420e65b3e2062c2f5476316703c71a5deecef520",
@@ -2867,7 +2875,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "987af2b4fd0aa58548ec9f4d5dc725a64bc0e6f26b6ab59d1d977ae1763da5a7",
@@ -3209,7 +3218,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "8ec744b44a286be641779de4b5f3eca47e622b85b0f3b234483c047a799d55cc",
@@ -3551,7 +3561,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "1aefc42866c6abc56e97287cf8a39396495ef7dbd32c43211662f909d9f149a9",
@@ -3893,7 +3904,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "a4500abef52bf1b29ed4366874f6603599e9eca50e5c0eaad13a62107a588a07",
@@ -4234,7 +4246,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "926c2c8f58391ca784e80c68b769339ae954a5b42c961ef58c4ea49d147b0e1c",
@@ -4576,7 +4589,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "a164d4a968cf57eca5dfcc085feebb70a81f86baa1b0fb70c4e3fee2651b494a",
@@ -4918,7 +4932,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "c6a8679aaad6cb3de244cc6ce436d382ecd014e7a5f27a36b9088e93931255d1",
@@ -5260,7 +5275,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "47675e2b679cfdd6e56b133801547ce8ad0975a066a3846fd4bfbc658ed2c802",
@@ -5599,7 +5615,8 @@
         "document_id": 120,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "421325b572cbffdf36e7ba7e62714037242a17999e27ce4e7f63ca185d828ec6",
@@ -5936,7 +5953,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "86d0a611d1804fa82f6b323b4ea9e650746d3468ec39dcb329e6541e56c866dd",
@@ -6277,7 +6295,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "55585c8da376d00dc578f93f63e8f1b9d33c08afc8b81abe046cab1d5556491c",
@@ -6619,7 +6638,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "8ccf82d5e9b8bc1e6a1addbaac27f74eadfdaad16a14e00884bf4db2ebaeae9c",
@@ -6961,7 +6981,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "d536c47499fdd3d497f99a832c4033c758312691d5f21e80ad5c0f789184a582",
@@ -7303,7 +7324,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "106e934539332e172f7913312b5694979ed75e885264b266ef899736bae68c89",
@@ -7645,7 +7667,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "8ecc869067f1586491aab149029868b1e94c74d519011dffeea70cb24e96a2e9",
@@ -7987,7 +8010,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "43635fa4ceb962b3c150307dd8affdbd58b4bf21baee49c0ad33a69453a49a19",
@@ -8329,7 +8353,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "b3a23f860c971ad998190588dbd6bfac06e087d7450ad4b3e7d309669bde8bfd",
@@ -8671,7 +8696,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "8989cb462da8344acc26b2fe4e18974d056903586a3462c3e8c5b38bee5c6c61",
@@ -9013,7 +9039,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "3ba614e666752ec5fcd453e2dffaabcc42a4d35a1e36153bc0969584e39b45a8",
@@ -9355,7 +9382,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "0683607d72144e39c5480b8abff155c62ff2bb4b007e4b9ff49582cff586556a",
@@ -9696,7 +9724,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "ab2c82b1b4dd5090eae0e9f2d935fc7819529d4d2523258112e8c0e0d73f852c",
@@ -10038,7 +10067,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "4c62cc38096d905e031db3c8990f4b64384e4c623c6af8d9ba21a643b5ad0a97",
@@ -10380,7 +10410,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "92bdb305f267f1a306c5297aed20e9af75a53a3bb15cc8bab6eecea3ab485c44",
@@ -10722,7 +10753,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "2d7b3a071f6447da64786ee1f3fd801bf68fe4f68df9f866d690e7bef0647ee4",
@@ -11061,7 +11093,8 @@
         "document_id": 149,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956",
@@ -11398,7 +11431,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "d98a5c9302885f00658df7ed665fc2ef53b29954271acab321c9967d4d2bdaa2",
@@ -11732,7 +11766,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "353cc6819e61138ee1e882d0ada1d42d3c67b972728394b3dda0af6505f33f55",
@@ -12074,7 +12109,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "b4ef6641a0aa37c02b3ccef42d95383fcf38b394cdaf762be796b443692725d1",
@@ -12416,7 +12452,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "0e11690081fb9e367062f91ff92ceb9b4214a5f4ba55a21e15761b5dc466cd60",
@@ -12751,7 +12788,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "fb77d9024803663ee1ba8d4f0f711944ebbc2db317819d21623f704b05e6b620",
@@ -13093,7 +13131,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "ab623f179c89f9f48a3177e98dc046c2553719b79db531aa59545ddc2c632099",
@@ -13435,7 +13474,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "31eaca72adcb28d02de748350a2f1e6e0f024cfdcc2011710daf8717322538fd",
@@ -13770,7 +13810,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "9468f2ffef484ce5033e13f831bf7ef8a905794b731b31e7549925e01009c6d5",
@@ -14112,7 +14153,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "3f53aabbaf2e2b4898daf4fd6ec31a78476afad492347ce481136cf5226fd6ed",
@@ -14447,7 +14489,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "2866a8ba83d4f91b10b9f7e5e4eedee5da7520d2cc99e6c273a7342ec22afd05",
@@ -14782,7 +14825,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "41b687c8991dfe450481874ce1ae15e4acbec2ffee1a6a09482c1bceb9aea5b0",
@@ -15116,7 +15160,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "797b164e3f5777078719a353089550b5ab59a45d6cd1374881247a7e52793744",
@@ -15451,7 +15496,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "c425a2093fd41ea320219bfe0d4b60618ae71d88c546558135cb075a00ff88f3",
@@ -15793,7 +15839,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "d75b540123446698390e4c04042f00e53042d15ffddea068ec1b7348cbc6db8a",
@@ -16135,7 +16182,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "54703fe261315ac4c5b90342d1092e505e0c486616f87e18c1af347e87df051b",
@@ -16474,7 +16522,8 @@
         "document_id": 159,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "98c6c45ab4f12998e49df424371ce8694abb032adf609d44f7dbde98bf1e1eb8",
@@ -16811,7 +16860,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "94e864787a6f6fa60d9b5f9d3300858fad683a6c054de3a576895b35d6c9c51d",
@@ -17152,7 +17202,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "9ef3a5dce83ea9928995622f8a53958be6f1cefb62e271fa5837094ef64f1fab",
@@ -17494,7 +17545,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "17ab21f4dec1a0851e68d9846d9347b3d1b5828952f3c3acdb85a9171abbb5a3",
@@ -17836,7 +17888,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "1627a9a0314c2171cfe30e6abacb289eddc27b2cbe408596821896c97ffb1254",
@@ -18178,7 +18231,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "e95271e800942319f7ef31d4f861878ca7f9a9c9cdd2f18956944efc40ce834e",
@@ -18517,7 +18571,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "9af6e018a42a672f7070451387f100ec7ceef2e16169f2cca29f973174ba359a",
@@ -18859,7 +18914,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "2cdff4cefeae8aa6462aa340206a1b603d6f24faba2e38e1132d611dfb15488f",
@@ -19201,7 +19257,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "6c3c8fd55a1e1e89f7b1461cc902787aa6f08846b8fea3bd56f5653fc7bdf855",
@@ -19543,7 +19600,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "c8cc2c7002a93863f3cd2cdc123d322456b4b98e17fe06e104c50f0a76f856a1",
@@ -19885,7 +19943,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "e491bbe51c25a517949b422b76e85381a7dcd8713636d7ed880cc9438d0759f2",
@@ -20227,7 +20286,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "893d38a493eced3aaf3792187b2384cde8504acb7f8fdf9d22516a1afe63fd80",
@@ -20567,7 +20627,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "f3da918772d399ac301ef125bdbc0414cb3f3addc53dc60485088023f4a5adee",
@@ -20909,7 +20970,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "f67f95a4a06d026d9b32c3bf36b66a3af656ef98b09c13ed0d945a6f32126a73",
@@ -21251,7 +21313,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "6568f3eb4286cf78d1d18010dbf2027b1768649f0d7e3fe43c630d2ca329a5c0",
@@ -21593,7 +21656,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "0741ece28da47decfe3370076306b24303e43b05856603263e85d62e65d26b96",
@@ -21932,7 +21996,8 @@
         "document_id": 550,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "3500858fcbc4610bbf3973b8871a81fcb910b440723ecb9f6507a1c615b9b568",
@@ -22269,7 +22334,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "2c64665b3daa38c74bd6be95aeb69b1a5181eb43d205861900152e36838a6b1f",
@@ -22603,7 +22669,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "67c66859e2d124602ed02125cd6cc9658fcd085ac83362eb802a657f76bbec44",
@@ -22938,7 +23005,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "271a6ad4f4d5e1f828e08f7b31676446d51e9e1027a1e0f0e5767de56d7d92e3",
@@ -23273,7 +23341,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "87e6a37d3ed419a64d6f7dc5f0d502bac4a99528ef4a2709fe974df1fab8e5ae",
@@ -23608,7 +23677,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "d8877e831472a3a0e9b15eb34592f6bca98162fbd264cc9f635eb1c4bf3a15b9",
@@ -23943,7 +24013,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "e32cc9d3bc17ab5e4e2dbb85ea86877d725a32b4c9f8bb652a4b7a9bd3eef62e",
@@ -24278,7 +24349,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "9455a7f88c278aaabd38fef17e4ebc2d4bced66732caceba7878646d7bb21516",
@@ -24613,7 +24685,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "3438973ae4d7ea328ffd52f648e1ca2dcbb031e36d9fb2987db2c64aa2596231",
@@ -24948,7 +25021,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "4ff0aecad64e163bcf1012e7d476d4c89c27356d14620ebde3889515b513a372",
@@ -25283,7 +25357,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "4c1c8f7e604395e1442ff67ce13749ed284327027cbf745c56b51f820d9eca12",
@@ -25618,7 +25693,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "3e6b390b0b12f3a904583f49fdbcd384ef9ae1fe53972a0e95ba1a3a3328a6a1",
@@ -25952,7 +26028,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "6ba54cb0a639498a1b044de2379e85789fe9fef12e9b22e72446cb8dd9ecc9d4",
@@ -26294,7 +26371,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "230bca19f5953601ceb06fda894576b627d9cf0d3714d3d486e37acf1fd6c8d6",
@@ -26629,7 +26707,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "ed209b171227bb1ba29186f64bba489f9d443c68ed1ec46ee05d2f6508e4fc7c",
@@ -26964,7 +27043,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "e7ed5ce7ac4f5cbd928d668cffc025fce4739434e858665bc609623c0aa710ad",
@@ -27296,7 +27376,8 @@
         "document_id": 546,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "c9b79bd50e8f685e31baed6055f5d406a697c037efe0b8bf61ce452d1d5b1fe4",
@@ -27633,7 +27714,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "13c839e319f0fb6b90fd31e778f382eb13b585e608e5ff2595692f6b621900ae",
@@ -27974,7 +28056,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "d51bb9cf91592274a2c34d4ca95270d5b4e9184102fb75038f47a45bcec8899d",
@@ -28316,7 +28399,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "20590094433607c1145b4d74cc5c4090e6b2ad0d810c8358504f71f39fc50ff0",
@@ -28658,7 +28742,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "a6db2dabf121d696590d24b7ccef57aef89dee2abb5eb043f4c57ec6d619cd82",
@@ -29000,7 +29085,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "114672d6fdba133eb8f3c5ac5ff0b6aa4451bb5ad762d57c1c24c710b5fb1454",
@@ -29342,7 +29428,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "9982b9cbaed58f368c10ba2371e8eddc55653563497b11869016d70b90f22004",
@@ -29684,7 +29771,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "252788f1b4fff9d2727be23b3293c993ed5550e6eeba831bf122bc42256f332b",
@@ -30026,7 +30114,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "84d76fe90116e029da091ad069c6637d24bb5ed99649999a475dd31767219068",
@@ -30368,7 +30457,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "d3c7c3344785aac32fa635e57dc75b25b3b223e8034c74b3d09625c3e461970b",
@@ -30710,7 +30800,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "a8e554ed357d4bf3afa78a349935bdb7f0b3c8b307fab84f9d6daebfca8691ae",
@@ -31052,7 +31143,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "34371523e4981574cfb45dd3be075d4e9cc06c4c5b6b2574e7d8bf4a2f7c560d",
@@ -31393,7 +31485,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "ff1262cacf2e51e233dbb0132b43642e55f6aad1437e33df3f7ef167abe8fe71",
@@ -31735,7 +31828,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "d45405a88e773babcb1d9d1ccad78ae2ae34b5a97b98cede8053e786cf3e47b4",
@@ -32077,7 +32171,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "d58e024951aa8a8ef796c5c2c33d1151e48f4616a3eb9720b7edc29dd91e7b67",
@@ -32419,7 +32514,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "54357c9031f261020f9e2b9977e2e72603cb4aab170e80ccf7ef74a9a8d980d8",
@@ -32758,7 +32854,8 @@
         "document_id": 586,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "ab64e018f11b95b47e77be4dc9bcf118f915bc5d1253d243de428d54994fae60",
@@ -33095,7 +33192,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "2ea219d9589e0828a62fd8a8bbf8398aad9d261490f6b444683acb97305b8592",
@@ -33286,7 +33384,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "9a91a660f589eb4c700c4754afdd4388e8541bf164dce79e1ab5dd63a592d71c",
@@ -33478,7 +33577,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "ed96e891dc5ff7da01b65e77e87468fc3082f4db55d35f5e6cfcd710bbec6eb6",
@@ -33670,7 +33770,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "78a21c6abe57891c8afb2875f895732ee5c42377b4158070e8ef6ff80f29de15",
@@ -33862,7 +33963,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "5bd75bf94a3e5dea6a38b0491464757ca65510bd9f4ec77a57c96c8d38e3effa",
@@ -34054,7 +34156,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "c0428ec8cac5347a5fc0dbb00a1f33af232dd1b44eba8491144674eef3228335",
@@ -34246,7 +34349,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "397b9f08487cef0d2779d39aed5c7623bf60788ed44e368194f9c481648f11e0",
@@ -34438,7 +34542,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "0c37965281d007c115e934239f46a8d96244861b21d0c3dc52655af1c73088bf",
@@ -34630,7 +34735,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "cc8027c5e9ec64fb31bc36f03ad6dd108c31ee42678691c4168f99bf6f4d5b07",
@@ -34822,7 +34928,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "07c519d568f14e33b2298e287a98e6ef00cc8d84ff31c7345f6e20749a3c5fae",
@@ -35014,7 +35121,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "a2c63c1d203acce66f9c7911bae473789d5f7dc2eccec76e059bc3ca69fdf7e9",
@@ -35183,7 +35291,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "affe2414eb384eb69daddefb24fb7cd443ed864fdfcc305cfa514b84ccf90989",
@@ -35408,7 +35517,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "2cea57e4e4db1737313fb33c07669a4541fd3d0f2039c9b10d75cd70ebc5ed8b",
@@ -35600,7 +35710,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "6df49d29d0f9cf80b76636a668688722428d7659db17aab6a5612fa4ec29adab",
@@ -35792,7 +35903,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "970ac8cc90ccf32112c4340230c03e96aa56d68cb7ae8f5360188ec894ed4037",
@@ -35970,7 +36082,8 @@
         "document_id": 591,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "1acdda1da4d40538bcde88afc057bf49e5059e4f96ceec83fc30a9ddb0665a93",
@@ -36307,7 +36420,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "ea9e9f06dae79064d4ad7e48fbbc7c18b98fb958c8c3dac7b32ae4340c82e067",
@@ -36648,7 +36762,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "128cb334616207f1c26b2a205c053d31218d811d8510545427cd460ac1b9910b",
@@ -36990,7 +37105,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "3c7daea270401dc5bc4194208592204d3992f4a9b25eae5bf7f7d72b3b9fdaa3",
@@ -37332,7 +37448,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "0cbfb57b5040a3cb2645d8a93d8aed06dadf96e89bdca34bfac0938eac6ec27b",
@@ -37674,7 +37791,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "c42be66619a1fc53deacfaba3c7b5defa279bc09d6da526e3d216416d976867e",
@@ -38009,7 +38127,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "cf74f7dfd97f478064bf9efa3774b3502b1c85633e9bc80b8e4b9fe94dc0f787",
@@ -38351,7 +38470,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "33d9e518eaed2b62e64f3101de73d26edb91b1d0b97fffec261330a12d3be790",
@@ -38686,7 +38806,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "a30c5dbf97efde56a69617832c092ee3f0323305a62a9d6f7684ace8c283c189",
@@ -39021,7 +39142,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "a6f903ff5cb5b88afb38d337a2bc9327634c989a91b52ab1e9420435ee551e5e",
@@ -39356,7 +39478,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "20723b0342e1e029323ce5dff9b2ccf74aae46d1a452d5947dd02e7203566e64",
@@ -39691,7 +39814,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "64239e8288696a7d7ed43258111f9450a1840339b833f0ad737e6518f40cf4f4",
@@ -40025,7 +40149,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "6dc0707c2fa9d0c99739dc0acd755bf73122a7e1eba8042023b635abbbdb7f64",
@@ -40367,7 +40492,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "80d6c5aea6d58090550c815b8b853ddf4229950dd7b346e7b5e31b469c65e272",
@@ -40709,7 +40835,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "363275ee092e0f4001d0585fab4c422fff2c5d9502f55f1b38ba12b454cb0749",
@@ -41051,7 +41178,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "6cf472238a1b23c8bb6ff26dd107e22aab1c696b6bb0a353279ed2fe042486d1",
@@ -41390,7 +41518,8 @@
         "document_id": 610,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "05814843c01143c9a35cc2d8c07133850af481755e7a7c80e1054d1a4a8a916b",
@@ -41727,7 +41856,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "cc0bd636e40e895577e507e3e5d2bc06a8cd8c5b1c3fce53f034ba4db310ed7d",
@@ -42068,7 +42198,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "7a7f38743c75e8fd9d223c9806ab4d66561220abe57d90b22d274862e3ee8d87",
@@ -42410,7 +42541,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "044d0fbf5c026d62485ec3f9503d017a3f95109513a0ac6950dafa1639eea25e",
@@ -42752,7 +42884,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "92a8d1ab33e7335fdd6feb8927db4e2d2878bc9389cc379b638402ffe3c2b488",
@@ -43094,7 +43227,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "ee377156846f280aea8771412de297c0fcd4943af8e54ab8e540949b089efa45",
@@ -43436,7 +43570,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "6845a159942206417c0089a94eef5c7b55095b6cfcd70b7285fd7c4f811a7836",
@@ -43778,7 +43913,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "e541010a6e6bd4ae241c8bd8803a0aafc735b02c27b7526d571beccd9e8a09b3",
@@ -44120,7 +44256,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "0dfdbbb6a07ed2bd698462717e5a31acc1c0a4fad437d7f26db000d16a716bb0",
@@ -44462,7 +44599,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "0dc8d81ba23d2b6c8f4ae5e2a8b7f123c1eaec7ab729e52788dbaaf6bef31426",
@@ -44804,7 +44942,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "55b681646cc5aca67542a92df9eb1aa14852f7803ac40591e339294d7939c253",
@@ -45146,7 +45285,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "6e51f700a84afdd2f3fe82ad20d7cc79fa67686d79a6804c62d909a10ac8d1c4",
@@ -45487,7 +45627,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "cf556a33406a7df2617a8150a3aa1f17d35539d77e58fe7f066f56214b2598e6",
@@ -45829,7 +45970,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "c45376f72c52e68555af32f808d5cd37686c1b0a5c85cd52af28237f7b94cde8",
@@ -46171,7 +46313,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "ee6c80cf30b02bb995346a5010d4b6acd475f0564bf15ae7e274880151a0128c",
@@ -46513,7 +46656,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "a850c9098191df5faa4e9d31c03d907fc685569b2562fe97ba8ea7fa955edea4",
@@ -46852,7 +46996,8 @@
         "document_id": 166,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "ebd1b2160528aa920eab3a65cf989541df28f8ffc1e5b65290d36cf7e07ac841",
@@ -47189,7 +47334,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "7db2cd9bf991175c0a2595a74765ee5034d880f4d4c55e43c1c701739eb3729d",
@@ -47530,7 +47676,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "d4047c6f25a4a0f803524fdedfb5a06a61bddefea7d7029b742f93035211b8c1",
@@ -47872,7 +48019,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "4c235dccdfebbf1dd42f20e492ed351362c44c27d71045f63ce97e2027bf33bf",
@@ -48214,7 +48362,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "6983c576d1ceb9f5850477129e0a018d3fc5570ef59c8d2a98424e575db56dc7",
@@ -48556,7 +48705,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "8e659ac03fa2e26989b454979e2e436b92064d9b262a4b50a96fdd0926ac48a5",
@@ -48898,7 +49048,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "82022e7cddbbf5e389b83e6290adec2cbdb7815fddd7d0c21b653d31f8180489",
@@ -49240,7 +49391,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "0f6a793ea3dd175a0a62e27e1f40d229bc23558c6f5eaffafcd5b583f0d4a3d2",
@@ -49582,7 +49734,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "38a9fb7558b38799177899a6d9d370d543b6f49f7323eeebd7de58fdcfa17ab1",
@@ -49924,7 +50077,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "e2eb6281ff94c959b37da17745c246643f02209aeddfaac50bebc3279375c172",
@@ -50266,7 +50420,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "780657a5da4d2d45d8b94e9d8183c57875115efec10bec097cfd0568e80851df",
@@ -50608,7 +50763,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "eb3875a7b313f2f5ef6d4a692b7299fff3928c7437d45284800bf36f28863501",
@@ -50949,7 +51105,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "6ac22f4222bd326a1ccc03e2165e8f0a495b0d5a828f890418e5405333981c44",
@@ -51291,7 +51448,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "275cd96c1e7e4d03571676c56d41399c4dcbae085ebbb191fabfbd0dbf35357f",
@@ -51633,7 +51791,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "027ee136b6f7b81fafbd22aab75b3231129cd36e8057109683be4a25a500beae",
@@ -51975,7 +52134,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "a532a62786d9fb9748d7e8360a35dd3d5e5d70b32cae4d65cbb962a1ec2ccab5",
@@ -52314,7 +52474,8 @@
         "document_id": 615,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "49e68bd2832ca1a00917b4046b0fdd091cc6aeac6de1e4c23cf696f0c855545e",
@@ -52651,7 +52812,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "fc6f4ec11e4b8be1ce0db996708d0ac132c371dfb6077d8061cc854abc56f72d",
@@ -52992,7 +53154,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "5d58fbe760c46c9bd3a5546a4038d3c949d607be4b352287892e1cc0bc07dfc5",
@@ -53334,7 +53497,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "d4e879ce3132f5ef203a29dfc339fe1db4c3aeab821079a01f3b6aed49bbfa0e",
@@ -53676,7 +53840,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "a08be385744e0f1ea017e79d271b252003de5d47485b2445e4dbe9e45485666f",
@@ -54018,7 +54183,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "828ccb6462db2e6bcdc44b33d42a2d723a76f4fbfeb29ad8899fbf71ec3de7a2",
@@ -54360,7 +54526,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "f2e96e45dd41c3a97964ad89180234c7c96cc5dc5270029c7ad68a6efb9983ec",
@@ -54702,7 +54869,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "90377e11a6d1db6bf542d7b122d8bc32ded8ffc15d4dbd63a928126082b47402",
@@ -55044,7 +55212,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "8e5fc6170527925689818a11dcce879cf6974192cdea12ce7704f38fb112210d",
@@ -55386,7 +55555,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "8cf1f4fff439eb9ccbe0caa955fa2df5b8080091b4f692d4b5bbc5796a9f8924",
@@ -55728,7 +55898,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "f0efd63844eed078e4ce643630d09c582081b54307268fbf3bc4db328f32c586",
@@ -56070,7 +56241,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "2cab25489e67a00fa6c63060e6f12bfc406528e1601f58d8c5fb348a038d6646",
@@ -56411,7 +56583,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "8ca17457b40357c0fbc8b1a2f353b98b1b6f0af551ca7682fcbe0a957d02c941",
@@ -56753,7 +56926,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "93e3749c61e957ec0853af87e54a2aeccb79ce16cfa612f47a3c964d6197c6a3",
@@ -57095,7 +57269,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "5495246daa66f27cae54bda51ce490a8880d080c272e149e33f02ce7903ccb5d",
@@ -57437,7 +57612,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "81a1eb18395c943e01533276205bd50a21ff2437670292a4cf93b3f166a0df43",
@@ -57776,7 +57952,8 @@
         "document_id": 601,
         "expected_family": null,
         "transform_params": {},
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "digital_exact",
       "input_sha256": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99",
@@ -58113,7 +58290,8 @@
         "transform_params": {
           "dpi": 200
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_200",
       "input_sha256": "5ac8be272d5603c52ca0bbc66be6c42cfa8df55d834e7e001323f30bf79e6cb4",
@@ -58454,7 +58632,8 @@
         "transform_params": {
           "dpi": 150
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "raster_150",
       "input_sha256": "db92de3b0f2fc871a73923916035288070d0984db7eeb7b6c4c4d08d47a3a6a0",
@@ -58796,7 +58975,8 @@
           "dpi": 150,
           "quality": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_90",
       "input_sha256": "f88d88c29595da18e0d087beb8640b57cd163af3aea2e684d4ab3ab2e8f06150",
@@ -59138,7 +59318,8 @@
           "dpi": 150,
           "quality": 75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_75",
       "input_sha256": "ad1f71489021035294813a44fc171e2211217842d90c2e01f79fbe3fffd4f5bc",
@@ -59480,7 +59661,8 @@
           "dpi": 150,
           "quality": 60
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "jpeg_60",
       "input_sha256": "d4fcc4936fe9bef0f5f2821530d9a245bc3f6032911a5e53dad17ba801c16676",
@@ -59822,7 +60004,8 @@
           "dpi": 150,
           "gray": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "grayscale",
       "input_sha256": "ef157f5529e7e73ee6ca637fab3717093d8f7ca5497de4f820262c37ab5ff044",
@@ -60164,7 +60347,8 @@
           "dpi": 150,
           "contrast": 0.8
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "contrast_minus20",
       "input_sha256": "87d6c7d3278fb1b2a074d66f7f272481fae06ca2b56dafaa21ce719b5505d43e",
@@ -60506,7 +60690,8 @@
           "dpi": 150,
           "blur": 0.65
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "blur_mild",
       "input_sha256": "b5dc3a5740fe16727b20f94ae79a4ebdb588ce672e4e1eda8e08b9b8531bfacb",
@@ -60848,7 +61033,8 @@
           "dpi": 150,
           "crop": 0.02
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_2pct",
       "input_sha256": "a46b98ed7e99e031090a16be8a6cfa2049398570ef8433aa4e1e151c2204411b",
@@ -61190,7 +61376,8 @@
           "dpi": 150,
           "crop": 0.05
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "crop_5pct",
       "input_sha256": "34055993652140f853a419763f9f5f47a4e0d9ed981550c30c84e51fc63c4396",
@@ -61532,7 +61719,8 @@
           "dpi": 150,
           "resize": 0.75
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "resize_075",
       "input_sha256": "4de181c920b2aa5f3a25def424434183c8e787f166654e5de1c015b805138ff1",
@@ -61873,7 +62061,8 @@
         "transform_params": {
           "first_page_only": true
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "first_page_only",
       "input_sha256": "d1f8bac376ff43d5af0c2aef89878a47867c725e2abade165eef46c5e185a852",
@@ -62215,7 +62404,8 @@
           "dpi": 150,
           "angle": 90
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_90",
       "input_sha256": "926fc6546b5b7e672a9785647c21067e5e37fa807b71d94061735020989a9236",
@@ -62557,7 +62747,8 @@
           "dpi": 150,
           "angle": 180
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_180",
       "input_sha256": "f5b2bdbf814974c2aa3d3b3b501ab4c6ad007ff76a1f5d329878fd51b9010044",
@@ -62899,7 +63090,8 @@
           "dpi": 150,
           "angle": 270
         },
-        "seed": 20261011
+        "seed": 20261012,
+        "legacy_helper_seed": 20261011
       },
       "representation": "rotation_270",
       "input_sha256": "6e9eddbaa279ff63ca9e9737694737a6dd8a254cb2eec1252bd131ae80aeb85d",
@@ -64897,5 +65089,6 @@
       "numerator": 192,
       "denominator": 192
     }
-  }
+  },
+  "technical_metadata_reconciliation": "Case-helper seed corrected to frozen Round6 selection seed 20261012; original helper value retained. No identity label, representation, observation, score or metric changed."
 }

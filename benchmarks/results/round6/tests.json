@@ -1,0 +1,29 @@
+{
+  "passed": 655,
+  "failed": 0,
+  "skipped": 3,
+  "seconds": 581.88,
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "log_sha256": "bb39cdd9e3e01b1ec43114b4daa26fb135e960e69fd2d931c6e0f10ccfcfe56b",
+  "initial_attempt": {
+    "passed": 650,
+    "failed": 4,
+    "skipped": 3,
+    "seconds": 613.79,
+    "log_sha256": "8ff28f3fc9e161bd18e72d74c7f2e4f028f2d587589d400ad65a5aa2c44e5495",
+    "resolution": "Versioned development fixture adds explicit revisions to two positives and their original inputs as prudent negatives. SR211 review-history test now supplies the actual revision. No runtime, profile, frozen historical corpus or evaluation observation changed."
+  },
+  "post_guard": {
+    "passed": 7,
+    "seconds": 4.8,
+    "log_sha256": "fd7bdffbe59eb69b3bdce8684c0c6421f069dc23f45a48dedda31e2b20502d54",
+    "repeated_subset": true
+  },
+  "post_report": {
+    "passed": 71,
+    "seconds": 7.66,
+    "log_sha256": "b3632d9324b974ab1e32b999f4143a7bced47deddd748668b14bf0ba570f088e",
+    "repeated_subset": true
+  }
+}

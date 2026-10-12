@@ -252,7 +252,7 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 5: **NOT READY**. Firme deterministiche di contenuto: 369/1212 (30.45%). Canonici noti: 362/369, zero errati. Robustezza delle rappresentazioni, famiglie per identità e rifiuto degli sconosciuti sono misurati separatamente. OCR locale, runtime offline. [Rapporto Round5](docs/ROUND5_REPORT.md), [progetto fingerprint](docs/FINGERPRINTS.md).
+Candidata Round 6 **NOT READY**, software pubblico 0.6.1. Catalogo: 1.216 identità reali, 1.212 operative, zero nuove identità nel Round 6. Copertura firme: 948/1212 (78.22%); canonical 987/987; robustness 150/192. Gate, denominatori e limiti in [BENCHMARK.md](docs/BENCHMARK.md) e [ROUND6_REPORT.md](docs/ROUND6_REPORT.md). CI esterna non eseguita.
 
 ## Test
 
