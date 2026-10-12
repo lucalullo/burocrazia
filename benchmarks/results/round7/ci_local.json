@@ -1,0 +1,62 @@
+{
+  "catalog": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "bootstrap": "passed on separate temporary database",
+  "compileall": "passed",
+  "frozen_corpora_and_round6_raw_unchanged": true,
+  "commands": [
+    {
+      "command": "python -m maintenance.build_fingerprints --validate-only",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m maintenance.build_fingerprints_v2 --validate-only",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/benchmark.py --output benchmarks/results/round7/development_cli.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/benchmark.py --corpus tests/fixtures/benchmark_v2.json --output benchmarks/results/round7/development_compat_v2.json",
+      "exit_code": 1
+    }
+  ],
+  "freeze": {
+    "commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
+    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+    "code_sha256": "f0a9547f017f63dd8d6109956fcd437a8c75bbba4f76f979432f251897807585",
+    "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
+    "seed": 2026101207,
+    "executed_at": "2026-10-12T08:32:29.138677+00:00",
+    "profile_sha256": "ebf7e4444f040afe0e560f5b04c6767f7d40cd73f2dc9a866321e8d62208e0a8",
+    "calibration_sha256": "ac7fab53652cd7218b33d62baada736ef0de51d91a8882ddafd49062f47c6064",
+    "calibration_reference_fix_sha256": "52ea8a5f62e2725ed914ef9f2e03eb9fd065c5a483c89d7f20189666518b4319"
+  },
+  "external_ci": "pending_external_gate",
+  "platform_scope": "Local Windows Python3.12 only; configured Linux/macOS/Windows matrix not executed remotely."
+}

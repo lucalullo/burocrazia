@@ -324,3 +324,9 @@ For catalog data and third-party materials, see [DATA_NOTICE.md](DATA_NOTICE.md)
 ## Author
 
 Created by [Luca Lullo](https://github.com/lucalullo).
+
+## Round 7 — NOT READY
+
+Decision policy v3 and retrieval v2 were frozen before the fresh evaluation: 372 planned attempts, 331 generated representations across 42 identities, 280 scan-like cases, and 9/50 generated AcroForms (41 generation failures). Coverage is 77.64% overall and 81.26% for documents with files. Canonical recognition is 979/979; exact recall is 49.19% for robustness, 47.86% for scans, and 14.00% for filled attempts. Failures stay in the planned denominator. Exact precision is 100% on emitted matches. Historical unknown rejection is 100.00%, using previously calibrated cases. Family recognition remains insufficiently validated (0/16 evaluable families). Recognition p95 is 444.65 ms; index size is 39832045 bytes.
+
+Filled-form visual QA found incorrect field assignments and clipped text; administrative validity and final form quality are not claimed. R6 is now development data; v3 ran once, with no subsequent tuning. 690 tests passed and 3 were skipped. External CI is pending. Public software 0.6.1, schema 610, and the 1216-document catalog are preserved. See the [full Round 7 report](docs/ROUND7_REPORT.md) for gates and limitations. No push, tag, or public release.

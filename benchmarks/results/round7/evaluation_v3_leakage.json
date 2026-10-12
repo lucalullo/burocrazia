@@ -1,0 +1,9 @@
+{
+  "identity_overlap": [],
+  "resource_sha_overlap": [],
+  "canonical_url_overlap": [],
+  "title_code_version_overlap": [],
+  "near_duplicate_rule": "Exclude same nonempty code+issuer at any version, or title ratio >=92 with compatible code and equal version; normalized exact triple also excluded.",
+  "transformation_provenance": "Every case records original resource SHA, identity, fixed seed and transform parameters; runtime hashes checked before and after.",
+  "prohibited_leakage": 0
+}

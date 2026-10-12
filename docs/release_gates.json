@@ -1,41 +1,65 @@
 {
-  "schema_version": 6,
-  "round": 6,
+  "schema_version": 7,
+  "round": 7,
   "status": "NOT READY",
   "local_gates_passed": false,
   "external_ci": "pending_external_gate",
   "final_release_allowed": false,
   "identity": {
-    "commit": "1e922eaa5b81d7a6c1cafccdac4c66e376226683",
-    "runtime_sha256": "4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08",
-    "code_sha256": "c8cb689d051327145387b59c3ab3222d44887162c4e20370290ee5b78ad25918",
-    "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+    "commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
+    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+    "code_sha256": "f0a9547f017f63dd8d6109956fcd437a8c75bbba4f76f979432f251897807585",
+    "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
+    "seed": 2026101207,
+    "executed_at": "2026-10-12T08:53:21.924326+00:00",
     "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
   },
+  "freeze_commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
   "gates": [
     {
       "gate": "coverage_file_backed",
       "target": ">=85%",
-      "actual": 0.8186528497409327,
+      "actual": 0.812607944732297,
       "passed": false,
       "blocking": true
     },
     {
       "gate": "coverage_all",
       "target": ">=70%",
-      "actual": 0.7821782178217822,
+      "actual": 0.7764026402640264,
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "canonical_precision",
+      "gate": "evaluation_minimum_generated_representations",
+      "target": ">=300",
+      "actual": 331,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "scan_minimum_cases",
+      "target": ">=200",
+      "actual": 280,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "filled_minimum_actual_generated",
+      "target": ">=50",
+      "actual": 9,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "canonical_document_precision",
       "target": "100%",
       "actual": 1.0,
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "canonical_recall",
+      "gate": "canonical_document_recall",
       "target": "100%",
       "actual": 1.0,
       "passed": true,
@@ -58,22 +82,8 @@
     {
       "gate": "robustness_exact_recall",
       "target": ">=90%",
-      "actual": 0.78125,
+      "actual": 0.49193548387096775,
       "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "filled_acroform_precision",
-      "target": ">=99.5%",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "filled_acroform_exact_recall",
-      "target": ">=90%",
-      "actual": 1.0,
-      "passed": true,
       "blocking": true
     },
     {
@@ -86,15 +96,50 @@
     {
       "gate": "scan_exact_recall",
       "target": ">=85%",
-      "actual": 0.7619047619047619,
+      "actual": 0.4785714285714286,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "filled_precision",
+      "target": ">=99.5%",
+      "actual": 1.0,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "filled_exact_recall",
+      "target": ">=90%",
+      "actual": 0.14,
       "passed": false,
       "blocking": true
     },
     {
       "gate": "scan_useful_recall",
-      "target": ">=95%",
-      "actual": 0.7619047619047619,
+      "target": ">=95% (conservative section17 gate retained)",
+      "actual": 0.4785714285714286,
       "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "retrieval_at_1",
+      "target": ">=99%",
+      "actual": 0.8897849462365591,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "retrieval_at_25",
+      "target": ">=100%",
+      "actual": 0.8897849462365591,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "unknown_historical_rejection",
+      "target": ">=99%",
+      "actual": 1.0,
+      "passed": true,
       "blocking": true
     },
     {
@@ -103,13 +148,6 @@
       "actual": 0,
       "passed": false,
       "blocking": false
-    },
-    {
-      "gate": "unknown_rejection",
-      "target": ">=99%",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": true
     },
     {
       "gate": "R061",
@@ -140,17 +178,27 @@
       "blocking": true
     },
     {
-      "gate": "historical_development_regression",
+      "gate": "historical_development",
       "target": "35/35 unchanged labels",
-      "actual": 33,
-      "passed": false,
+      "actual": 35,
+      "passed": true,
       "blocking": true
     },
     {
-      "gate": "development_compat_v2",
-      "target": "37/37 new representations",
-      "actual": 37,
+      "gate": "historical_locked_v2",
+      "target": "69/69",
+      "actual": 69,
       "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "historical_all_frozen_expectations",
+      "target": "All historical expectations green, including contradictory v2 fixture",
+      "actual": {
+        "locked_v1": 59,
+        "compat_v2": 35
+      },
+      "passed": false,
       "blocking": true
     },
     {
@@ -164,36 +212,36 @@
       "blocking": true
     },
     {
-      "gate": "warm_p95",
-      "target": "<=250ms",
-      "actual": 799.1129,
-      "passed": false,
+      "gate": "warm_p50",
+      "target": "<=150ms",
+      "actual": 76.3465,
+      "passed": true,
       "blocking": true
     },
     {
-      "gate": "warm_p50",
-      "target": "<=150ms",
-      "actual": 112.9562,
-      "passed": true,
+      "gate": "warm_p95",
+      "target": "<=250ms",
+      "actual": 444.6542,
+      "passed": false,
       "blocking": true
     },
     {
       "gate": "index_memory",
       "target": "<=100MB",
-      "actual": 39852804,
+      "actual": 39832045,
       "passed": true,
       "blocking": true
     },
     {
       "gate": "tests",
       "target": "0 failures",
-      "actual": 655,
+      "actual": 690,
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "unchanged_catalog",
-      "target": "1216 identities, same seed SHA",
+      "gate": "catalog_unchanged",
+      "target": "Original seed/schema610",
       "actual": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
       "passed": true,
       "blocking": true

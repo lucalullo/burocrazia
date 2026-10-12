@@ -20,12 +20,21 @@ def main():
     frozen=checked();docs,families=catalog()
     data={n:read(OUT+n+'.json') for n in ['canonical','robustness_v3','scan_v3','filled_v3','retrieval_v3','unknown_v3','family_release','performance','fingerprint_coverage','decision_calibration','ci_local']}
     can,rob,scan,filled,retr,unknown,fam,perf,cov,cal,ci=[data[n] for n in data]
+    available=[r for r in rob['cases'] if not r.get('generation_failed')]
+    filled_generated=sum(not r.get('generation_failed') for r in filled['cases']);generation_failed=len(rob['cases'])-len(available)
     for n in ['canonical','robustness_v3','scan_v3','filled_v3','unknown_v3']:
         assert summary(data[n]['cases'])['metrics']==data[n]['summary']['metrics'],n
     raw=(ROOT/'reports/round7-full-tests.log').read_bytes();log=raw.decode('utf8',errors='replace')
     m=re.search(r'(\d+) passed, (\d+) skipped in ([\d.]+)s',log)
     assert m and not re.search(r'\b[1-9]\d* failed\b',log),'Full suite incomplete or failed'
     tests=dict(passed=int(m[1]),failed=0,skipped=int(m[2]),seconds=float(m[3]),python=platform.python_version(),platform=platform.platform(),log_sha256=hashlib.sha256(raw).hexdigest())
+    initial=(ROOT/'reports/round7-full-initial-failed.log').read_bytes()
+    tests['initial_attempt']=dict(passed=687,failed=3,skipped=3,seconds=151.36,log_sha256=hashlib.sha256(initial).hexdigest(),resolution='Only full-scan reference diagnostics differed. Runtime production outcomes unchanged; append-only reference fix proof and complete successful rerun retained.')
+    post=(ROOT/'reports/round7-postreport-tests.log').read_bytes()
+    post_log=post.decode('utf8',errors='replace')
+    post_match=re.search(r'(\d+) passed in ([\d.]+)s',post_log)
+    assert post_match and not re.search(r'\b[1-9]\d* failed\b',post_log)
+    tests['post_report_checks']=dict(passed=int(post_match[1]),failed=0,seconds=float(post_match[2]),log_sha256=hashlib.sha256(post).hexdigest(),scope='Repeated targeted UI/benchmark/fingerprint/round7 checks after static result update; not additional distinct tests.')
     write(OUT+'tests.json',tests)
     finals={n:read(OUT+'final/'+n+'.json') for n in ['development_regression','release_locked_v1','release_locked_v2','hard_negatives_v1','hard_negatives_v2','family_release_v3','catalog_coverage']}
     compat=read(OUT+'development_compat_v2.json');ocr=read(OUT+'ocr_legacy_gate.json');ocr2=read(OUT+'ocr_synthetic_v2.json');five=read(OUT+'historical_five.json')
@@ -34,6 +43,9 @@ def main():
     def value(r,k):return r['summary']['metrics'][k]['value'] or 0
     gate('coverage_file_backed','>=85%',cov['coverage_file_backed'],cov['coverage_file_backed']>=.85)
     gate('coverage_all','>=70%',cov['coverage_all'],cov['coverage_all']>=.70)
+    gate('evaluation_minimum_generated_representations','>=300',len(available),len(available)>=300)
+    gate('scan_minimum_cases','>=200',len(scan['cases']),len(scan['cases'])>=200)
+    gate('filled_minimum_actual_generated','>=50',filled_generated,filled_generated>=50)
     for key in ['document_precision','document_recall']:gate('canonical_'+key,'100%',value(can,key),value(can,key)==1)
     gate('canonical_wrong','0',can['counts']['wrong'],can['counts']['wrong']==0)
     for n,r,target in [('robustness',rob,.9),('scan',scan,.85),('filled',filled,.9)]:
@@ -62,12 +74,17 @@ def main():
     latest=dict(schema_version=1,benchmark_model='known-family-unknown-v3',status=status,executed_at=ident['executed_at'],commit=frozen['commit'],catalog_semantic_sha256=catalog_revision(docs,families),catalog_count=1216,operational_count=1212,
         fingerprint_coverage=dict(status='executed',**cov),known_canonical=dict(status='executed',summary=can['summary']),known_robustness=dict(status='executed',summary=rob['summary']),filled_forms=dict(status='executed',summary=filled['summary'],interactive_cases=len(filled['cases']),templates=len(rob['plan']['filled_identities'])),scan_ocr=dict(status='executed',summary=scan['summary']),unknown_official=dict(status='executed',summary=unknown['summary'],scope=unknown['scope']),family_identity_holdout=dict(status='executed',summary=fam['summary'],families_evaluable=fam['families_evaluable'],capability_status=fam['capability_status']),hard_negatives=dict(status='executed',correct=neg,total=130),real_ocr=dict(status='executed',result=f"{ocr['passed']}/7 + {ocr2['summary']['passed']}/14"),performance=dict(status='executed',latency_ms=perf['latency_ms'],index_bytes=perf['fingerprints']['index_bytes'],startup_ms=perf['startup_ms']),ocr_status=f"Tesseract reale: {ocr['passed']}/7 storico, {ocr2['summary']['passed']}/14 sintetico",evaluations=[dict(name=n,summary=r['summary']) for n,r in [('Development historical35',finals['development_regression']),('Frozen compatibility37 conflict retained',compat),('Locked v1 historical',finals['release_locked_v1']),('Locked v2',finals['release_locked_v2']),('Negatives v1',finals['hard_negatives_v1']),('Negatives v2',finals['hard_negatives_v2']),('Family synthetic',finals['family_release_v3']),('Metadata canonical coverage',finals['catalog_coverage'])]])
     write('benchmarks/latest_summary.json',latest)
+    latest['filled_forms'].update(interactive_cases=filled_generated,attempted_cases=len(filled['cases']),generation_failed=len(filled['cases'])-filled_generated)
+    latest['evaluations']=[dict(name=f'AcroForm: {filled_generated} generati, {len(filled["cases"])-filled_generated} falliti su {len(filled["cases"])} tentativi',summary=filled['summary']),dict(name=f'Robustness: {len(available)} rappresentazioni disponibili e {generation_failed} generazioni fallite',summary=rob['summary']),*latest['evaluations']]
+    write('benchmarks/latest_summary.json',latest)
     # Before/after is development only, never a second fresh evaluation.
     verified=read(OUT+'calibration_runtime_verified.json')['cases'];old=read('benchmarks/results/round6/robustness_v2.json')['cases'];lookup={(r['expected']['document_id'],r['representation']):r for r in verified}
     after=[]
     for r in old:
         a=lookup[(r['expected']['document_id'],r['representation'])];after.append(dict(case_id=r['id'],document_id=r['expected']['document_id'],transform=r['representation'],before=r['observed']['match_type'],after=a['observed']['match_type'],correct_before=r['correct'],correct_after=a['correct'],reason_after=a['reason']))
     write(OUT+'decision_audit_after.json',dict(cases=after,correct_before=sum(r['correct_before'] for r in after),correct_after=sum(r['correct_after'] for r in after),scope='Round6 development replay; active-resource changes and safety quarantine included. Not independent.'))
+    rejection_counts=dict(Counter('generation_failed' if r.get('generation_failed') else 'missing_model_revision' if 'missing_model_revision' in r['conflicts'] else r['reason'].split(' [')[0] for r in rob['cases'] if r['observed']['match_type']=='NO_MATCH'))
+    write(OUT+'evaluation_diagnostics.json',dict(rejection_counts=rejection_counts,planned_cases=len(rob['cases']),actual_generated=len(available),filled_actual_generated=filled_generated,generation_failed=generation_failed,retrieval_on_available={str(k):dict(numerator=sum(r.get('candidate_recall_at_k',{}).get(str(k),False) for r in available),denominator=len(available)) for k in [1,5,10,25]},scope='Read-only post-evaluation aggregation. Frozen planned-denominator gates unchanged; available-only retrieval is diagnostic, never substituted for the declared gate. No runtime/generator correction or retry.'))
     append('docs/ROUND7_DECISION_AUDIT.md',f"## Round 7 — esito sviluppo\n\nReplay effettivo: {sum(r['correct_after'] for r in after)}/{len(after)} contro {sum(r['correct_before'] for r in after)}/{len(after)}. Decision policy v3, retrieval v2 con identica formula; il bundle attivo cambia per recuperi/quarantene. Campione R6 riclassificato development. Dettaglio per caso in `decision_audit_after.json`.\n\nA: SHA identico e vincoli; B: testo con visual o caratteri/anchor; C: contenuto eccezionale e anchor d'identità; D: family già supportata o NO. Nessuna accettazione visual-only, soglie globali prossime a zero o margine nullo. I conflitti espliciti restano veto. SUAP destinatario e sottodipartimento MIMIT sono distinti dall'emittente. La revisione mancante può essere sostenuta da codice, titolo completo nella lingua iniziale e ente, soltanto per un'unica identità/revisione.\n\nEX02/EX03 e EX02MISSINGREV/EX03MISSINGREV hanno testi identici ma expected opposti: gli hash e le etichette di entrambe le fixture restano invariati. Default CLI usa i 35 originali; la fixture37 resta visibile con i suoi fallimenti. Non esiste una decisione deterministica che soddisfi entrambe le etichette.\n")
     rows=[]
     for n,r in [('Canonical',can),('Robustness v3',rob),('Scan v3',scan),('Filled v3',filled),('Unknown storico',unknown)]:
@@ -88,6 +105,7 @@ def main():
 Software pubblico 0.6.1, candidata 0.7.0; schema 610. Nessun push, tag o release.
 Ingresso d3dd53bbc2e97047d7eadbe379c31bb920929c7b; codice sorgente sviluppo {cal['commit']}; freeze effettivo {frozen['commit']}.
 Runtime SHA `{frozen['runtime_sha256']}`; codice/runner SHA `{frozen['code_sha256']}`; bundle SHA `{frozen['fingerprint_sha256']}`.
+La calibrazione originale è immutata. `decision_calibration_reference_fix.json` attesta l'unica correzione successiva, limitata alla diagnostica full scan: ricostruisce l'hash originale dai byte Git e verifica tutti gli altri byte runtime/profilo. Nessun esito, soglia o vincolo produttivo è cambiato. Il freeze comprende anche l'hash di questa prova.
 Il commit nell'artefatto di calibrazione identifica HEAD durante lo sviluppo; profilo e runtime sono identificati dai rispettivi byte/hash, inclusi poi nel freeze.
 Il commit di distribuzione include anche i report; ZIP/hash in `dist/package-verification.json`, prodotti dopo il commit per evitare riferimenti circolari.
 
@@ -120,13 +138,15 @@ Resolver con fixture per le12 fonti, meta-refresh ufficiali e attachment senza e
 
 ## Valutazione nuova, una sola esecuzione
 
-Piano generato dopo freeze, seed2026101207; {len(rob['plan']['evaluation_identities'])} identità nuove rispetto alla calibrazione, {len(rob['cases'])} rappresentazioni, {len(scan['cases'])} scan-like, {len(filled['cases'])} compilate su {len(rob['plan']['filled_identities'])} template.
+Piano generato dopo freeze, seed2026101207; {len(rob['plan']['evaluation_identities'])} identità nuove rispetto alla calibrazione, {len(rob['cases'])} tentativi pianificati, {len(available)} rappresentazioni effettivamente generate, {len(scan['cases'])} scan-like. Compilazione: {filled_generated}/{len(filled['cases'])} PDF realmente generati su {len(rob['plan']['filled_identities'])} template; {generation_failed} fallimenti mantenuti nel denominatore. Il minimo50 compilati non è raggiunto: FAIL esplicito, senza correggere il generatore dopo l'evaluation.
 Nessun overlap ID/SHA/URL/titolo-codice-versione né quasi duplicati secondo la regola pubblicata; `evaluation_v3_leakage.json` zero leakage proibito.
 Firme canoniche note presenti per le identità evaluation: si misura generalizzazione alle rappresentazioni, non a identità sconosciute.
 Nessuna modifica del runtime, soglie, template selection o etichette dopo risultati. Piano/started/freeze e raw conservati.
+La prima preparazione del piano era terminata prima di plan/start/casi per backend AES mancante; `evaluation_environment_preflight.json` conserva la prova. Dipendenze locali già disponibili cryptography50.0.2/cffi2.1.1 aggiunte solo al benchmark ignorato; codice/seed invariati. Requisiti riproducibili in `benchmarks/requirements-round7.txt`.
 Scansioni generate dalla prima pagina, DPI150/200, JPEG90/75/60, contrasto, blur, crop, resize e rotazioni; non scansioni reali di utenti.
 Compilazione interattiva con dati fittizi: /AcroForm/Fields, /V, widget e /AP/N verificati, checkbox variate; ambiguità/fallimenti inclusi nel denominatore.
 L'associazione semantica dei campi con etichette vicine è euristica (es. luogo di nascita può ricevere data): prova di perturbazione del riconoscimento, senza validità amministrativa.
+La QA visiva di tre PDF generati, ricostruiti con SHA identico senza nuovo riconoscimento, mostra anche campi assegnati in modo errato e testo tagliato nei segmenti data. /V, widget e /AP/N coerenti non equivalgono a compilazione semanticamente o graficamente valida. Nessun PDF viene consegnato o incluso nello ZIP; limite da correggere prima di un nuovo freeze Round8.
 
 | Misura | Casi | Exact | Family | NO | Wrong | Precisione exact | Recall exact |
 |---|---:|---:|---:|---:|---:|---|---|
@@ -137,6 +157,8 @@ L'associazione semantica dei campi con etichette vicine è euristica (es. luogo 
 {transformation}
 
 Retrieval @1/5/10/25: `{json.dumps(retr['candidate_recall_at_k'],sort_keys=True)}`.
+Sulle sole331 rappresentazioni disponibili retrieval100% (331/331 anche@1); gli stessi risultati raw restano immutati. Il gate conservativo pianificato resta331/372 per i41 input non generati: non viene sostituito con il denominatore favorevole. I280 scan-like hanno retrieval@1/25 100%, ma soltanto134 exact; il problema decisionale resta distinto dal fallimento del generatore filled.
+Cause NO aggregate dai raw: `{json.dumps(rejection_counts,ensure_ascii=False,sort_keys=True)}`. Nessun tuning dopo questa lettura.
 Wrong/NO, enti/versioni, tempi estrazione/visual/matching/end-to-end sono nelle osservazioni; extraction/generation failed restano nel denominatore.
 
 ## Family, unknown e regressioni
@@ -157,9 +179,13 @@ Equivalenza testata su score/ranking e risultati completi document/entity/versio
 Bundle {perf['fingerprints']['disk_bytes']}byte; indice ricorsivo {perf['fingerprints']['index_bytes']}byte; load catalogo {perf['catalog_load_ms']:.3f}ms, build indice {perf['index_build_ms']:.3f}ms.
 RSS dopo warm {perf['rss']['after_warm_bytes']}byte; crescita successiva {perf['rss']['growth_after_warm_bytes']}byte, separata dalla misura indice.
 
+I tempi end-to-end scan-like, comprensivi di OCR reale, sono p50 {timing['scan_like']['end_to_end_ms']['p50']:.2f} ms e p95 {timing['scan_like']['end_to_end_ms']['p95']:.2f} ms su 280 casi. Provengono dai worker paralleli della singola evaluation e sono diagnostici; il gate di riconoscimento usa la misura isolata precedente. Dettaglio di estrazione, visual e matching in `phase_timings.json`.
+
 ## Test, piattaforme e gate
 
 Full suite: {tests['passed']} passed,0 failed,{tests['skipped']} skip Windows,{tests['seconds']}s. Log SHA `{tests['log_sha256']}`.
+Controllo mirato dopo aggiornamento dei riepiloghi: {tests['post_report_checks']['passed']} test passati, 0 falliti. Sono ripetizioni della suite, non test aggiuntivi da sommare ai 690.
+Il primo tentativo completo aveva687 passed,3 failed,3 skip (151.36s): soltanto stringhe diagnostiche diverse fra indice e full scan. Log/hash conservati e correzione prima della nuova evaluation; nessun expected o corpus cambiato.
 Bootstrap su database temporaneo separato, integrity/FK, snapshot/migrazioni storiche e lock verificati; seed pubblico invariato, database personale non modificato.
 CI Python3.12 Linux/Windows/macOS configurata; solo Windows eseguito localmente. Stato esterno pending_external_gate fino al push dell'utente.
 
@@ -174,13 +200,36 @@ Archivio `dist/BurOCRazia-v0.7.0-{'RC1' if ready else 'candidate-NOT-READY'}-rou
 Nessun file ufficiale, PDF compilato, testo OCR, cache, binario Tesseract, credenziale o database personale redistribuito.
 Un Round8 deve usare nuove identità evaluation dopo un nuovo freeze, senza riutilizzare v3 per rivendicare indipendenza; risolvere copertura, gate falliti e contraddizioni delle etichette con una nuova versione motivata, senza alterare lo storico.
 """
+    # Readability changes apply only to prose; hashes and evidence bytes stay intact.
+    for old,new in {
+        'canonical987':'canonical 987','robustness150':'robustness 150','scan128':'scan 128','retrieval100%':'retrieval 100%','unknown137':'unknown 137','suite655':'suite 655',
+        'lasciavano33':'lasciavano 33','i50 raw':'i 50 raw','dei42':'dei 42','dedicato:28':'dedicato: 28','ente,13':'ente, 13','score,1':'score, 1',
+        'Calibrazione320':'Calibrazione 320','storici:130':'storici: 130','hard negatives e137':'hard negatives e 137','unknown nel motore completo,81':'unknown nel motore completo, 81',
+        'gli81':'gli 81','documenti143/167':'documenti 143/167','limiti;403/429':'limiti; 403/429','denominatore1158':'denominatore 1158','gate85%':'gate 85%',
+        'ZIP;36':'ZIP; 36','PowerPoint;36':'PowerPoint; 36','le12':'le 12','i264':'i 264','più9':'più 9','seed2026101207':'seed 2026101207','minimo50':'minimo 50',
+        'cryptography50.0.2/cffi2.1.1':'cryptography 50.0.2 / cffi 2.1.1','DPI150/200':'DPI 150/200','JPEG90/75/60':'JPEG 90/75/60',
+        'sole331':'sole 331','resta331':'resta 331','i41':'i 41','I280':'I 280','soltanto134':'soltanto 134','almeno2':'almeno 2','e3 holdout':'e 3 holdout',
+        'Unknown:137':'Unknown: 137','sicurezza;0':'sicurezza; 0','preservati:35':'preservati: 35',';130 negativi':'; 130 negativi','Fixture37':'Fixture 37','ai35':'ai 35',
+        '799.1129ms':'799.1129 ms','444.6542ms':'444.6542 ms','525.8341ms':'525.8341 ms',',306':', 306','su35':'su 35','stessi16':'stessi 16','warmup51':'warmup 51',
+        '27493120byte':'27493120 byte','39832045byte':'39832045 byte','11.883ms':'11.883 ms','1517.722ms':'1517.722 ms','267243520byte':'267243520 byte','12288byte':'12288 byte',
+        'passed,0':'passed, 0','failed,3':'failed, 3','Windows,337':'Windows, 337','337.74s':'337.74 s','aveva687':'aveva 687','passed,3':'passed, 3','failed,3':'failed, 3','151.36s':'151.36 s',
+        'Python3.12':'Python 3.12','Round8':'Round 8',
+    }.items():report=report.replace(old,new)
     (ROOT/'docs/ROUND7_REPORT.md').write_bytes(report.encode())
     brief=f"""## Round 7 — {status}
 
-Decision policy v3, retrieval v2 e nuova evaluation dopo freeze: {len(rob['cases'])} rappresentazioni/{len(rob['plan']['evaluation_identities'])} identità, {len(scan['cases'])} scan-like, {len(filled['cases'])} AcroForm sintetici. Coverage {cov['coverage_all']:.2%} totale e {cov['coverage_file_backed']:.2%} con file; canonical {can['counts']['exact']}/{len(can['cases'])}; robustness recall {value(rob,'document_recall'):.2%}; scan recall {value(scan,'document_recall'):.2%}; filled recall {value(filled,'document_recall'):.2%}; unknown storico {value(unknown,'unknown_correct_rejection_rate'):.2%}; family {fam['families_evaluable']}/16 valutabili (non sufficientemente validata). p95 {perf['latency_ms']['p95']:.2f}ms; indice {perf['fingerprints']['index_bytes']}byte.
-R6 ora development; v3 una sola esecuzione, senza retuning. {tests['passed']} test passati, {tests['skipped']} skip. CI esterna pending_external_gate. Software0.6.1/schema610/catalogo1216 preservati. Report e limiti: [ROUND7_REPORT.md](docs/ROUND7_REPORT.md).
+Decision policy v3, retrieval v2 e nuova evaluation dopo freeze: {len(rob['cases'])} tentativi, {len(available)} rappresentazioni generate su {len(rob['plan']['evaluation_identities'])} identità, {len(scan['cases'])} scan-like, {filled_generated}/{len(filled['cases'])} AcroForm generati ({generation_failed} fallimenti). Copertura {cov['coverage_all']:.2%} totale e {cov['coverage_file_backed']:.2%} con file; canonical {can['counts']['exact']}/{len(can['cases'])}; richiamo robustness {value(rob,'document_recall'):.2%}, scansioni {value(scan,'document_recall'):.2%}, compilati {value(filled,'document_recall'):.2%} sul piano completo. Rifiuto unknown storico {value(unknown,'unknown_correct_rejection_rate'):.2%}; famiglie {fam['families_evaluable']}/16 valutabili, capacità non sufficientemente validata. p95 {perf['latency_ms']['p95']:.2f} ms; indice {perf['fingerprints']['index_bytes']} byte. Precisione exact 100% sui match emessi. La QA dei compilati mostra errori semantici e testo tagliato: nessuna validità amministrativa o qualità finale dei moduli rivendicata.
+
+R6 ora development; v3 una sola esecuzione, senza retuning. {tests['passed']} test passati, {tests['skipped']} saltati. CI esterna pending_external_gate. Software 0.6.1, schema 610 e catalogo di 1216 documenti preservati. Report e limiti: [ROUND7_REPORT.md](docs/ROUND7_REPORT.md).
 """
-    append('README.md',brief);append('README_EN.md',brief)
+    append('README.md',brief)
+    brief_en=f"""## Round 7 — {status}
+
+Decision policy v3 and retrieval v2 were frozen before the fresh evaluation: {len(rob['cases'])} planned attempts, {len(available)} generated representations across {len(rob['plan']['evaluation_identities'])} identities, {len(scan['cases'])} scan-like cases, and {filled_generated}/{len(filled['cases'])} generated AcroForms ({generation_failed} generation failures). Coverage is {cov['coverage_all']:.2%} overall and {cov['coverage_file_backed']:.2%} for documents with files. Canonical recognition is {can['counts']['exact']}/{len(can['cases'])}; exact recall is {value(rob,'document_recall'):.2%} for robustness, {value(scan,'document_recall'):.2%} for scans, and {value(filled,'document_recall'):.2%} for filled attempts. Failures stay in the planned denominator. Exact precision is 100% on emitted matches. Historical unknown rejection is {value(unknown,'unknown_correct_rejection_rate'):.2%}, using previously calibrated cases. Family recognition remains insufficiently validated ({fam['families_evaluable']}/16 evaluable families). Recognition p95 is {perf['latency_ms']['p95']:.2f} ms; index size is {perf['fingerprints']['index_bytes']} bytes.
+
+Filled-form visual QA found incorrect field assignments and clipped text; administrative validity and final form quality are not claimed. R6 is now development data; v3 ran once, with no subsequent tuning. {tests['passed']} tests passed and {tests['skipped']} were skipped. External CI is pending. Public software 0.6.1, schema 610, and the 1216-document catalog are preserved. See the [full Round 7 report](docs/ROUND7_REPORT.md) for gates and limitations. No push, tag, or public release.
+"""
+    append('README_EN.md',brief_en)
     append('docs/BENCHMARK.md',brief.replace('(docs/ROUND7_REPORT.md)','(ROUND7_REPORT.md)')+'\n\nCoverage, canonical, robustness, filled, scan/OCR, family, unknown e regressioni sono metriche separate. V1/v2 raw e label restano visibili; R6 evaluation è development, v3 è il solo nuovo test di rappresentazioni. Unknown è storico/calibrato, non indipendente. I gate non vengono ridefiniti quando falliscono.\n')
     append('docs/COVERAGE.md',brief.replace('(docs/ROUND7_REPORT.md)','(ROUND7_REPORT.md)')+'\n\nDenominatore con file invariato1158; tutte le acquisizioni fallite restano.14 identità con byte aggiuntivi,2 attive recuperate,9 quarantene per SHA condiviso. Unsupported reale, conflitto canonico e fonti bloccate sono distinguibili negli audit.\n')
     append('DATA_NOTICE.md','## Round 7\n\nOnly hashes, public catalog metadata, real acquisition receipts and numeric/evidence benchmark outcomes are redistributed. Official files, OCR text and filled synthetic PDFs remain ignored. No identity, source, editorial verification or historical event is invented. No private upload is cached. Runtime stays local/offline/deterministic.\n')

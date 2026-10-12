@@ -53,3 +53,7 @@ change the historical catalog provenance. See `docs/FINGERPRINTS.md`.
 ## Round 6 — NOT READY
 
 Firme v2 e benchmark separati per copertura, canonical, robustezza, compilazione, OCR, family, unknown, regressioni, memoria e latenza. Zero nuove identità; seed/schema 610 invariati. V1 e corpus storici conservati. Tutti i dati sintetici compilati sono fittizi; nessun file ufficiale o testo OCR redistribuito. Dettagli e limiti in `docs/ROUND6_REPORT.md`.
+
+## Round 7
+
+Only hashes, public catalog metadata, real acquisition receipts and numeric/evidence benchmark outcomes are redistributed. Official files, OCR text and filled synthetic PDFs remain ignored. No identity, source, editorial verification or historical event is invented. No private upload is cached. Runtime stays local/offline/deterministic.

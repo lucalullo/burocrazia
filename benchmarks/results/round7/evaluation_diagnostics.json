@@ -1,0 +1,32 @@
+{
+  "rejection_counts": {
+    "Evidenze insufficienti per identificare un documento specifico.": 96,
+    "generation_failed": 41,
+    "missing_model_revision": 40,
+    "Conflitti di ente o annualità impediscono l'identificazione specifica.": 7,
+    "Candidati specifici troppo vicini: identità ambigua.": 5
+  },
+  "planned_cases": 372,
+  "actual_generated": 331,
+  "filled_actual_generated": 9,
+  "generation_failed": 41,
+  "retrieval_on_available": {
+    "1": {
+      "numerator": 331,
+      "denominator": 331
+    },
+    "5": {
+      "numerator": 331,
+      "denominator": 331
+    },
+    "10": {
+      "numerator": 331,
+      "denominator": 331
+    },
+    "25": {
+      "numerator": 331,
+      "denominator": 331
+    }
+  },
+  "scope": "Read-only post-evaluation aggregation. Frozen planned-denominator gates unchanged; available-only retrieval is diagnostic, never substituted for the declared gate. No runtime/generator correction or retry."
+}

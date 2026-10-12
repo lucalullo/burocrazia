@@ -1,23 +1,23 @@
 {
   "schema_version": 2,
   "identity": {
-    "commit": "d3dd53bbc2e97047d7eadbe379c31bb920929c7b",
-    "runtime_sha256": "a0102b4ec2ca8d6af030229dfab696d3734316d4cb010c5c68de9a4687353147",
-    "code_sha256": "dcd2f47c75d885be50c105700a5e04fc3185e924e203b16f7506c343092467cf",
+    "commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
+    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+    "code_sha256": "f0a9547f017f63dd8d6109956fcd437a8c75bbba4f76f979432f251897807585",
     "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
     "seed": 2026101207,
-    "executed_at": "2026-10-12T07:50:28.603681+00:00"
+    "executed_at": "2026-10-12T08:41:39.015092+00:00"
   },
   "python": "3.12.10",
   "platform": "Windows-11-10.0.26300-SP0",
-  "catalog_load_ms": 11.217100000067148,
-  "index_build_ms": 1952.7785999998741,
-  "startup_ms": 1963.9956999999413,
+  "catalog_load_ms": 11.882799999511917,
+  "index_build_ms": 1517.7218999997422,
+  "startup_ms": 1529.604699999254,
   "latency_ms": {
     "n": 306,
-    "p50": 45.4438,
-    "p95": 253.226,
-    "p99": 278.8918
+    "p50": 76.3465,
+    "p95": 444.6542,
+    "p99": 525.8341
   },
   "warmup": 51,
   "synthetic_cases": 35,
@@ -29,21 +29,21 @@
     "identities": 941
   },
   "rss": {
-    "before_warm_bytes": 267689984,
-    "after_warm_bytes": 269144064,
+    "before_warm_bytes": 263462912,
+    "after_warm_bytes": 267243520,
     "samples": [
-      269144064,
-      269209600,
-      269217792,
-      269221888,
-      269221888,
-      269221888,
-      269221888
+      267243520,
+      267251712,
+      267255808,
+      267255808,
+      267186176,
+      267186176,
+      267194368
     ],
-    "growth_after_warm_bytes": 77824
+    "growth_after_warm_bytes": 12288
   },
   "scope": "Fresh process. Warm inference excludes extraction/OCR and visual generation (reported per case). Index is recursive Python records, arrays, postings, IDF weights; RSS is entire process, not additive. No upload-feature cache.",
   "gate_passed": false,
   "target_passed": true,
-  "subprocess_wall_ms": 50596.47159999986
+  "subprocess_wall_ms": 73539.34209999898
 }

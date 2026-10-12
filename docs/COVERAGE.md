@@ -50,3 +50,12 @@ Tutte le 399 righe documentali iniziali, le 15 fonti, le 16 famiglie, i 2.499 en
 Nessuna nuova identità: 1.216 record reali conservati, 1.212 operativi e 4 rifiutati (#429, #1077, #1081, #1091). Venezia conserva 143 record, 142 operativi: il file sull’obbligo di pagamento è informativo. Il controllo dei 150 file campionati non equivale a verifica integrale di tutte le 143 identità Venezia. Concentrazione catalogo: INPS 359/1216 (29,52%); nel benchmark ufficiale nessuna fonte supera il 20% dei positivi.
 
 Schema 610, 1.078 osservazioni immutabili da ricevute effettive; 232 differenze di osservazione su record già presenti, senza sovrascrivere metadati o inventare sostituzioni. I campi codice/versione/data/download restano 429/513/359/1161. Tutte le righe v0.6.1 restano invariate; tutte le righe Round 1 sono preservate salvo quattro stati rifiutati esplicitamente documentati. Nessun file ufficiale, database operativo o eseguibile Tesseract incluso nello snapshot.
+
+## Round 7 — NOT READY
+
+Decision policy v3, retrieval v2 e nuova evaluation dopo freeze: 372 tentativi, 331 rappresentazioni generate su 42 identità, 280 scan-like, 9/50 AcroForm generati (41 fallimenti). Copertura 77.64% totale e 81.26% con file; canonical 979/979; richiamo robustness 49.19%, scansioni 47.86%, compilati 14.00% sul piano completo. Rifiuto unknown storico 100.00%; famiglie 0/16 valutabili, capacità non sufficientemente validata. p95 444.65 ms; indice 39832045 byte. Precisione exact 100% sui match emessi. La QA dei compilati mostra errori semantici e testo tagliato: nessuna validità amministrativa o qualità finale dei moduli rivendicata.
+
+R6 ora development; v3 una sola esecuzione, senza retuning. 690 test passati, 3 saltati. CI esterna pending_external_gate. Software 0.6.1, schema 610 e catalogo di 1216 documenti preservati. Report e limiti: [ROUND7_REPORT.md](ROUND7_REPORT.md).
+
+
+Denominatore con file invariato1158; tutte le acquisizioni fallite restano.14 identità con byte aggiuntivi,2 attive recuperate,9 quarantene per SHA condiviso. Unsupported reale, conflitto canonico e fonti bloccate sono distinguibili negli audit.

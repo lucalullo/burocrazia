@@ -324,3 +324,9 @@ Per i dati del catalogo e i materiali di terze parti, consulta [DATA_NOTICE.md](
 ## Author
 
 Creato da [Luca Lullo](https://github.com/lucalullo).
+
+## Round 7 — NOT READY
+
+Decision policy v3, retrieval v2 e nuova evaluation dopo freeze: 372 tentativi, 331 rappresentazioni generate su 42 identità, 280 scan-like, 9/50 AcroForm generati (41 fallimenti). Copertura 77.64% totale e 81.26% con file; canonical 979/979; richiamo robustness 49.19%, scansioni 47.86%, compilati 14.00% sul piano completo. Rifiuto unknown storico 100.00%; famiglie 0/16 valutabili, capacità non sufficientemente validata. p95 444.65 ms; indice 39832045 byte. Precisione exact 100% sui match emessi. La QA dei compilati mostra errori semantici e testo tagliato: nessuna validità amministrativa o qualità finale dei moduli rivendicata.
+
+R6 ora development; v3 una sola esecuzione, senza retuning. 690 test passati, 3 saltati. CI esterna pending_external_gate. Software 0.6.1, schema 610 e catalogo di 1216 documenti preservati. Report e limiti: [ROUND7_REPORT.md](docs/ROUND7_REPORT.md).

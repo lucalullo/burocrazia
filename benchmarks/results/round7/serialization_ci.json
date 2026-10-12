@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "path": "benchmarks/results/round7/development_cli.json",
+      "before_sha256": "4ca6900bb3fae3ad10c30662af0c4df21944a502112f76d5d9076451dc2744d6",
+      "after_sha256": "6eca9f8860a31bebde1e30492198d6a49e1e73ffb47b2499152dcb8209aa1842",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/development_compat_v2.json",
+      "before_sha256": "8aa5956e7c27f78060cc1042f2db4d0a547ab8dbe166c1e1d3d08ea72901258a",
+      "after_sha256": "59fdfe0a3eddb3c9a5163e7044a59165388b9b549e10ad5980f3d77feb0d0117",
+      "observations_unchanged": true
+    }
+  ],
+  "scope": "New CLI results LF canonicalization before archive; observation values unchanged."
+}
