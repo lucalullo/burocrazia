@@ -1,3 +1,9 @@
+<!-- round10-current -->
+# Coverage Round10
+
+Coverage attuale941/1158=81.26% e941/1212=77.64%. Minimo985, delta44. 217residui auditati,47derivazioni temporanee,2candidati univoci non attivi; PDF derivati e risorse condivise esclusi dal conteggio. Dati nel pianoR10 e rapporto. Le misure Round6 seguenti restano storiche.
+<!-- /round10-current -->
+
 # Fingerprint coverage audit — Round 6
 
 A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.

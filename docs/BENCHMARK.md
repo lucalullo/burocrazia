@@ -1,3 +1,9 @@
+<!-- round10-current -->
+# Round10
+
+Round10 NOT READY. Pubblico0.6.1/schema610. Canonical979/979, NO storici verdi. Coverage941/1158=81.26%, delta44; 107unknown/7fonti, concentrazione42.06%. Recognitionp95 146.09ms. Nessun freeze/evaluationv5. Dettagli nel [rapporto Round10](ROUND10_REPORT.md).
+<!-- /round10-current -->
+
 <!-- round9-current -->
 # Round 9 — NOT READY
 

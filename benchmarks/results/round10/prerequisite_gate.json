@@ -1,0 +1,26 @@
+{
+  "blocked": [
+    "coverage_file_backed_pass",
+    "unknown_sources_pass",
+    "unknown_balance_pass"
+  ],
+  "canonical_pass": true,
+  "coverage_all_pass": true,
+  "coverage_file_backed_pass": false,
+  "historical_safety_pass": true,
+  "identity": {
+    "code_sha256": "597365a87ec73350a88346da11d314ed3a8c67e28ec8362e5d699aa22d0fba93",
+    "commit": "8c13da270fe2c4db212ca3611fb5ce0ddef7b0d8",
+    "executed_at": "2026-10-12T20:32:59.681207+00:00",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101210
+  },
+  "performance_pass": true,
+  "ready_to_freeze": false,
+  "scope": "No freeze, no v5 evaluation identity selection, no recognition on unknown_eval. Gates unchanged.",
+  "tests": "passed",
+  "unknown_balance_pass": false,
+  "unknown_count_pass": true,
+  "unknown_sources_pass": false
+}

@@ -1,0 +1,15 @@
+{
+  "converter_executable_sha256": "95016b59e08da1e6cbb02fc8f027593c076bf47df795092578afdd995306ac85",
+  "converter_version": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+  "correction": "Writer Link=0 (NEVER); Calc Link=1 (internal LM_NEVER); Field/Chart=false; explicit DisableMacrosExecution/DisableActiveContent/BlockUntrustedRefererLinks/DisablePythonRuntime=true; UserDefinedSettings=false. Initial resource audit preserved; corrected conversion repeated.",
+  "initial_issue": "Writer Link was boolean although installed schema requires integer; Calc Link=0 meant always, not never; Common/Load UpdateDocMode is not a declared configuration property.",
+  "installed_registry_sha256": "751f0274df816a1c2d4eec5fc22eb36006fcbfb0d806249d64557cf129592da0",
+  "primary_sources": [
+    "https://docs.libreoffice.org/sw/html/SwXDocumentSettings_8cxx_source.html",
+    "https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1sheet_1_1XGlobalSheetSettings.html"
+  ],
+  "profile_sha256": "76e34556dbd379ddc38de2667daffeb49a5e8f828e1a169e1c085e4cd8bb1bde",
+  "runtime_changed": false,
+  "scope": "Maintenance infrastructure correction, no scoring or recognition policy change. Profile isolation is not an OS sandbox.",
+  "status": "corrected"
+}

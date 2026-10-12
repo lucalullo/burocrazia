@@ -1,0 +1,1663 @@
+{
+  "base_registry_sha256": "2b7805bf622ccae617830a5e159f756c47132b426a24acf12f1d575e53ac8fec",
+  "cases": [
+    {
+      "case_id": "U10-b959f0e9b074ddfe",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:58:57.729715+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 580,
+            "nearest_chars": 0.6540701773148498,
+            "nearest_content_score": 0.2865097643867337,
+            "nearest_digital": 0.07015175472750794,
+            "official_sha256": "b959f0e9b074ddfeec00c79af7f2e0a960d27b9d824018f488830bc7755e52f0",
+            "opening_sha256": "22007d0102e670a92736ac3636ba8574ce8294775536b0ac144d0740d58e82b7",
+            "title_token_support": 0.6666666666666666,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:58:57.729715+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/circolare_34.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/circolare_34.pdf",
+            "sha256": "b959f0e9b074ddfeec00c79af7f2e0a960d27b9d824018f488830bc7755e52f0",
+            "size": 92406,
+            "status": 200
+          },
+          "sha256": "b959f0e9b074ddfeec00c79af7f2e0a960d27b9d824018f488830bc7755e52f0"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/circolare_34.pdf"
+    },
+    {
+      "case_id": "U10-28c37a9401c969c8",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:12.095021+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 261,
+            "nearest_chars": 0.750799150431092,
+            "nearest_content_score": 0.2627797026508822,
+            "nearest_digital": 0.0,
+            "official_sha256": "28c37a9401c969c84d2c32905483aa2c83032a3b198ba33abf8529acdff46d17",
+            "opening_sha256": "b93e467b83435bac7d67a5256880a15aff0d7087bc3be7743b1d2e620794a2a7",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 8
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:12.095021+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee%20guida_attribute_authorities.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee%20guida_attribute_authorities.pdf",
+            "sha256": "28c37a9401c969c84d2c32905483aa2c83032a3b198ba33abf8529acdff46d17",
+            "size": 1579931,
+            "status": 200
+          },
+          "sha256": "28c37a9401c969c84d2c32905483aa2c83032a3b198ba33abf8529acdff46d17"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee%20guida_attribute_authorities.pdf"
+    },
+    {
+      "case_id": "U10-3ea1606972ff4d4a",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:18.803228+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 347,
+            "nearest_chars": 0.7059367908536848,
+            "nearest_content_score": 0.26114037679878965,
+            "nearest_digital": 0.0,
+            "official_sha256": "3ea1606972ff4d4ad6214953d48391704ba49cdd5bc0fd42030561474b3610c6",
+            "opening_sha256": "e82bf1281d9ef87a65b8f355339bd8d5f04be3ccbc325a02a21982e14495848e",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 8
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:18.803228+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_identita_digitale_per_uso_professionale.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_identita_digitale_per_uso_professionale.pdf",
+            "sha256": "3ea1606972ff4d4ad6214953d48391704ba49cdd5bc0fd42030561474b3610c6",
+            "size": 239930,
+            "status": 200
+          },
+          "sha256": "3ea1606972ff4d4ad6214953d48391704ba49cdd5bc0fd42030561474b3610c6"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_identita_digitale_per_uso_professionale.pdf"
+    },
+    {
+      "case_id": "U10-7ce590c430c158ca",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:19.934973+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 630,
+            "nearest_chars": 0.7276610037173555,
+            "nearest_content_score": 0.25468135130107444,
+            "nearest_digital": 0.0,
+            "official_sha256": "7ce590c430c158caad18d8f708be7676b786649153166bcaeaf2342840c707c9",
+            "opening_sha256": "3c2231b4faa778b2fe97672aa98bd714af8ae3620743695f05b7d36828eef486",
+            "title_token_support": 0.5714285714285714,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:19.934973+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Circolare_del_6_luglio_2017_n_26.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Circolare_del_6_luglio_2017_n_26.pdf",
+            "sha256": "7ce590c430c158caad18d8f708be7676b786649153166bcaeaf2342840c707c9",
+            "size": 468228,
+            "status": 200
+          },
+          "sha256": "7ce590c430c158caad18d8f708be7676b786649153166bcaeaf2342840c707c9"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Circolare_del_6_luglio_2017_n_26.pdf"
+    },
+    {
+      "case_id": "U10-ba88fa1790f3e53c",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:26.044513+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 149,
+            "nearest_chars": 0.35539542800798973,
+            "nearest_content_score": 0.1243883998027964,
+            "nearest_digital": 0.0,
+            "official_sha256": "ba88fa1790f3e53cc8582ecd3958827cf4bd3868ff6991a31dc0ad1444bebf6c",
+            "opening_sha256": "cb998780612a6ba31a475de94855c2a200ea0cac6c214e2cbaad8d9b06ba1315",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 5
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:26.044513+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_openid_connect_in_spid.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_openid_connect_in_spid.pdf",
+            "sha256": "ba88fa1790f3e53cc8582ecd3958827cf4bd3868ff6991a31dc0ad1444bebf6c",
+            "size": 884533,
+            "status": 200
+          },
+          "sha256": "ba88fa1790f3e53cc8582ecd3958827cf4bd3868ff6991a31dc0ad1444bebf6c"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_openid_connect_in_spid.pdf"
+    },
+    {
+      "case_id": "U10-675d8efba0a2e9e1",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:29.730234+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 715,
+            "nearest_chars": 0.7212596392119075,
+            "nearest_content_score": 0.2524408737241676,
+            "nearest_digital": 0.0,
+            "official_sha256": "675d8efba0a2e9e1b4be1b176f8206bb9cb7c1be6379c7d154d283420064c808",
+            "opening_sha256": "2537dfed21194cf8973c7d583ce965fc920faa2edcbf9809da26aa2d3dcf0c1a",
+            "title_token_support": 0.8181818181818182,
+            "title_tokens_supported": 9
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:29.730234+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2025/06/CIRCOLARE-PR-STW-02.pdf",
+            "redirects": [],
+            "requested_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2025/06/CIRCOLARE-PR-STW-02.pdf",
+            "sha256": "675d8efba0a2e9e1b4be1b176f8206bb9cb7c1be6379c7d154d283420064c808",
+            "size": 290578,
+            "status": 200
+          },
+          "sha256": "675d8efba0a2e9e1b4be1b176f8206bb9cb7c1be6379c7d154d283420064c808"
+        }
+      ],
+      "source_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2025/06/CIRCOLARE-PR-STW-02.pdf"
+    },
+    {
+      "case_id": "U10-df1b5d8d64f571dd",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:31.522370+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 111,
+            "nearest_chars": 0.4060501457866718,
+            "nearest_content_score": 0.14211755102533513,
+            "nearest_digital": 0.0,
+            "official_sha256": "df1b5d8d64f571dd412549aa72597d1b819558c844c9b132d5dd3fbce7727e3b",
+            "opening_sha256": "64828bcc02fede51bcbd700d0063aa44b305b61dda60f8a21dc2ddbee38eae02",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 5
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:31.522370+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_rao_pubblico.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_rao_pubblico.pdf",
+            "sha256": "df1b5d8d64f571dd412549aa72597d1b819558c844c9b132d5dd3fbce7727e3b",
+            "size": 835905,
+            "status": 200
+          },
+          "sha256": "df1b5d8d64f571dd412549aa72597d1b819558c844c9b132d5dd3fbce7727e3b"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_rao_pubblico.pdf"
+    },
+    {
+      "case_id": "U10-9fd2699951f85246",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T19:59:36.583674+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 592,
+            "nearest_chars": 0.4128582111197876,
+            "nearest_content_score": 0.14450037389192566,
+            "nearest_digital": 0.0,
+            "official_sha256": "9fd2699951f852465c2b9cd6310c6254d25d270cfada5334e5b7343bdea171b0",
+            "opening_sha256": "e4bfc3b0cbdc212cfb0ba8204d539e92f98ca80c089c5486a8e1c7acb134ddb2",
+            "title_token_support": 0.875,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:36.583674+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_operative_fruizione_spid_minori_0.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_operative_fruizione_spid_minori_0.pdf",
+            "sha256": "9fd2699951f852465c2b9cd6310c6254d25d270cfada5334e5b7343bdea171b0",
+            "size": 604301,
+            "status": 200
+          },
+          "sha256": "9fd2699951f852465c2b9cd6310c6254d25d270cfada5334e5b7343bdea171b0"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_operative_fruizione_spid_minori_0.pdf"
+    },
+    {
+      "case_id": "U10-169af1e2f3f271b3",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:07.880283+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 552,
+            "nearest_chars": 0.6937726126686306,
+            "nearest_content_score": 0.24282041443402066,
+            "nearest_digital": 0.0,
+            "official_sha256": "169af1e2f3f271b3b1948f807de6b17001beba9f49229b607d88b0020b78fd50",
+            "opening_sha256": "0d68c6aa880b9d5b294b23685502b757f9625ee06df8b74e2fa7dbf5c22cce1b",
+            "title_token_support": 0.8571428571428571,
+            "title_tokens_supported": 6
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:07.880283+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/05/Circolare-n.-010-Congiunta-Co.Ge-DG-Precisazioni-imbarco-in-soprannumero-1.pdf",
+            "redirects": [],
+            "requested_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/05/Circolare-n.-010-Congiunta-Co.Ge-DG-Precisazioni-imbarco-in-soprannumero-1.pdf",
+            "sha256": "169af1e2f3f271b3b1948f807de6b17001beba9f49229b607d88b0020b78fd50",
+            "size": 589454,
+            "status": 200
+          },
+          "sha256": "169af1e2f3f271b3b1948f807de6b17001beba9f49229b607d88b0020b78fd50"
+        }
+      ],
+      "source_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/05/Circolare-n.-010-Congiunta-Co.Ge-DG-Precisazioni-imbarco-in-soprannumero-1.pdf"
+    },
+    {
+      "case_id": "U10-e32072b88d8f850f",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:21.817054+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 1086,
+            "nearest_chars": 0.5216644622498124,
+            "nearest_content_score": 0.18258256178743434,
+            "nearest_digital": 0.0,
+            "official_sha256": "e32072b88d8f850fc8d6c047ffe2cab1890f319f55359b9170d3ae3c6de9a448",
+            "opening_sha256": "22532dd99b37909a0f27f23205f85b901066bb6c4ce20305c1cc6ce74cdd11e8",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 6
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:21.817054+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-07/Linee-guida_di_sicurezza_sviluppo-applicazioni.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-07/Linee-guida_di_sicurezza_sviluppo-applicazioni.pdf",
+            "sha256": "e32072b88d8f850fc8d6c047ffe2cab1890f319f55359b9170d3ae3c6de9a448",
+            "size": 210070,
+            "status": 200
+          },
+          "sha256": "e32072b88d8f850fc8d6c047ffe2cab1890f319f55359b9170d3ae3c6de9a448"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-07/Linee-guida_di_sicurezza_sviluppo-applicazioni.pdf"
+    },
+    {
+      "case_id": "U10-f335c41624f353c4",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:26.927609+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 900,
+            "nearest_chars": 0.5269748741765051,
+            "nearest_content_score": 0.1844412059617768,
+            "nearest_digital": 0.0,
+            "official_sha256": "f335c41624f353c4e6faad2ebcec1d8e092f2279daf3ed75f8b8466a2936c622",
+            "opening_sha256": "2814813daeffa163d3b48996d5b141d28982c1ba20d0a3d66ac3b434793efdd8",
+            "title_token_support": 0.9166666666666666,
+            "title_tokens_supported": 11
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:26.927609+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_per_la_sottoscrizione_elettronica_di_documenti_ai_sensi_dellart.20_del_cad.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_per_la_sottoscrizione_elettronica_di_documenti_ai_sensi_dellart.20_del_cad.pdf",
+            "sha256": "f335c41624f353c4e6faad2ebcec1d8e092f2279daf3ed75f8b8466a2936c622",
+            "size": 312831,
+            "status": 200
+          },
+          "sha256": "f335c41624f353c4e6faad2ebcec1d8e092f2279daf3ed75f8b8466a2936c622"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/linee_guida_per_la_sottoscrizione_elettronica_di_documenti_ai_sensi_dellart.20_del_cad.pdf"
+    },
+    {
+      "case_id": "U10-f75bb447308472f2",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:27.844486+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 397,
+            "nearest_chars": 0.6741340475875252,
+            "nearest_content_score": 0.23594691665563378,
+            "nearest_digital": 0.0,
+            "official_sha256": "f75bb447308472f2ef7a2c953838d38bd4cdb356ff5db6d0f2542e1422138ceb",
+            "opening_sha256": "db3e207cc721eed40202543be55f2d2129a52765c83e277c65e5bd32b21d1881",
+            "title_token_support": 0.6666666666666666,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:27.844486+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/02/Circolare-n.-48-Congiunta-Co.Ge-DG-Integrazioni-imbarco-in-soprannumero.pdf",
+            "redirects": [],
+            "requested_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/02/Circolare-n.-48-Congiunta-Co.Ge-DG-Integrazioni-imbarco-in-soprannumero.pdf",
+            "sha256": "f75bb447308472f2ef7a2c953838d38bd4cdb356ff5db6d0f2542e1422138ceb",
+            "size": 302570,
+            "status": 200
+          },
+          "sha256": "f75bb447308472f2ef7a2c953838d38bd4cdb356ff5db6d0f2542e1422138ceb"
+        }
+      ],
+      "source_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/02/Circolare-n.-48-Congiunta-Co.Ge-DG-Integrazioni-imbarco-in-soprannumero.pdf"
+    },
+    {
+      "case_id": "U10-dee9230a377186c3",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:31.917108+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 353,
+            "nearest_chars": 0.7340684638979625,
+            "nearest_content_score": 0.2569239623642869,
+            "nearest_digital": 0.0,
+            "official_sha256": "dee9230a377186c35854d512833d6326d88d55a2e734f040ca2a9818fd7ef47c",
+            "opening_sha256": "06cccd63369fdd77e244d6ecef36fecbd734d209e6262f1540df257c7b256b28",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 16
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:31.917108+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_firma_elettronica_qualificata.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_firma_elettronica_qualificata.pdf",
+            "sha256": "dee9230a377186c35854d512833d6326d88d55a2e734f040ca2a9818fd7ef47c",
+            "size": 343834,
+            "status": 200
+          },
+          "sha256": "dee9230a377186c35854d512833d6326d88d55a2e734f040ca2a9818fd7ef47c"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_firma_elettronica_qualificata.pdf"
+    },
+    {
+      "case_id": "U10-41925c4dae94c5a8",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:43.988057+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 1075,
+            "nearest_chars": 0.5444601201614685,
+            "nearest_content_score": 0.19056104205651397,
+            "nearest_digital": 0.0,
+            "official_sha256": "41925c4dae94c5a8b7ab5b39be03563dc80e033705b503710792d297cd225a43",
+            "opening_sha256": "59dd8906ef2c759558cca4eddeeb509469b3511678348e1db57bd07e5c13ac9e",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:43.988057+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-05/lg-acquisizione-e-riuso-software-per-pa-docs_pubblicata.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-05/lg-acquisizione-e-riuso-software-per-pa-docs_pubblicata.pdf",
+            "sha256": "41925c4dae94c5a8b7ab5b39be03563dc80e033705b503710792d297cd225a43",
+            "size": 3456562,
+            "status": 200
+          },
+          "sha256": "41925c4dae94c5a8b7ab5b39be03563dc80e033705b503710792d297cd225a43"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-05/lg-acquisizione-e-riuso-software-per-pa-docs_pubblicata.pdf"
+    },
+    {
+      "case_id": "U10-4b23860794259f0a",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:51.720696+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 900,
+            "nearest_chars": 0.6754186630625617,
+            "nearest_content_score": 0.31310995100895916,
+            "nearest_digital": 0.12009350454079178,
+            "official_sha256": "4b23860794259f0afa58472c85666abbdb212bf4ef052c4d37bde5421b3df77b",
+            "opening_sha256": "e44020c59b5c5f09a8d7073d583eb655d464f1fa8c1b1446de86dd6de0f47fcb",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 9
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:51.720696+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-05/lg_punto_accesso_telematico_servizi_pa_3112021.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-05/lg_punto_accesso_telematico_servizi_pa_3112021.pdf",
+            "sha256": "4b23860794259f0afa58472c85666abbdb212bf4ef052c4d37bde5421b3df77b",
+            "size": 689957,
+            "status": 200
+          },
+          "sha256": "4b23860794259f0afa58472c85666abbdb212bf4ef052c4d37bde5421b3df77b"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-05/lg_punto_accesso_telematico_servizi_pa_3112021.pdf"
+    },
+    {
+      "case_id": "U10-205b47a50e868c04",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:00:59.064696+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 1056,
+            "nearest_chars": 0.6621282851521114,
+            "nearest_content_score": 0.24535074115952446,
+            "nearest_digital": 0.017836682712570957,
+            "official_sha256": "205b47a50e868c04f24dcc03128ec15e66e05082031bbe07129a16e8e0e3b5dd",
+            "opening_sha256": "1726085f9850bf738e2c149d560903a8f722b24b7b9049c2ce30e1ad1435324b",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:59.064696+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2025-05/Linee_Guida_uso_modelli_ATe.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2025-05/Linee_Guida_uso_modelli_ATe.pdf",
+            "sha256": "205b47a50e868c04f24dcc03128ec15e66e05082031bbe07129a16e8e0e3b5dd",
+            "size": 476675,
+            "status": 200
+          },
+          "sha256": "205b47a50e868c04f24dcc03128ec15e66e05082031bbe07129a16e8e0e3b5dd"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2025-05/Linee_Guida_uso_modelli_ATe.pdf"
+    },
+    {
+      "case_id": "U10-fed24c2e970686e5",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:01:04.069937+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 255,
+            "nearest_chars": 0.5660263076458936,
+            "nearest_content_score": 0.22426990619495146,
+            "nearest_digital": 0.05232139703777744,
+            "official_sha256": "fed24c2e970686e55d6b37fdb58482dfe9a2bc9867cf14d7472de421f1a2a65c",
+            "opening_sha256": "6a2dd53dd6f39313642cc33caf56192dac2f6f9110cd44776251e2c5a949ac7d",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 16
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:04.069937+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-07/Circolare_2-2019_standard_patrimonio_informativo_di_natura_giuridica.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-07/Circolare_2-2019_standard_patrimonio_informativo_di_natura_giuridica.pdf",
+            "sha256": "fed24c2e970686e55d6b37fdb58482dfe9a2bc9867cf14d7472de421f1a2a65c",
+            "size": 770247,
+            "status": 200
+          },
+          "sha256": "fed24c2e970686e55d6b37fdb58482dfe9a2bc9867cf14d7472de421f1a2a65c"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-07/Circolare_2-2019_standard_patrimonio_informativo_di_natura_giuridica.pdf"
+    },
+    {
+      "case_id": "U10-32b95106b19061a9",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:01:16.038807+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 414,
+            "nearest_chars": 0.28412639068513207,
+            "nearest_content_score": 0.09944423673979622,
+            "nearest_digital": 0.0,
+            "official_sha256": "32b95106b19061a936ef18506d79018d7ee4c60dd64b5ea6ce531e3824977bd5",
+            "opening_sha256": "6a26bbcf93a4fa548a5e1dd2ad4680b76dcbe5de2f9478903c23d84123135beb",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:16.038807+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2026-10/Linee_Guida_Sistema_IT-Wallet.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2026-10/Linee_Guida_Sistema_IT-Wallet.pdf",
+            "sha256": "32b95106b19061a936ef18506d79018d7ee4c60dd64b5ea6ce531e3824977bd5",
+            "size": 2210515,
+            "status": 200
+          },
+          "sha256": "32b95106b19061a936ef18506d79018d7ee4c60dd64b5ea6ce531e3824977bd5"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2026-10/Linee_Guida_Sistema_IT-Wallet.pdf"
+    },
+    {
+      "case_id": "U10-e0fe2db58d1e09d5",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:01:30.116156+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 100,
+            "nearest_chars": 0.47814893486908766,
+            "nearest_content_score": 0.2363654722220142,
+            "nearest_digital": 0.09115169003566712,
+            "official_sha256": "e0fe2db58d1e09d59f84de747811f2086c08fa68e19f1ea67809cfec2dbd98c9",
+            "opening_sha256": "7b1b4ba63729af288702fe68f690b65b5bb5865b5ef532665758f208d71a8ff9",
+            "title_token_support": 0.7777777777777778,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:30.116156+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Normativa_DM24-09-2012_B.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Normativa_DM24-09-2012_B.pdf",
+            "sha256": "e0fe2db58d1e09d59f84de747811f2086c08fa68e19f1ea67809cfec2dbd98c9",
+            "size": 81072,
+            "status": 200
+          },
+          "sha256": "e0fe2db58d1e09d59f84de747811f2086c08fa68e19f1ea67809cfec2dbd98c9"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Normativa_DM24-09-2012_B.pdf"
+    },
+    {
+      "case_id": "U10-ede3e4285559324e",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:01:37.936683+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 108,
+            "nearest_chars": 0.5842409203200943,
+            "nearest_content_score": 0.228061283157612,
+            "nearest_digital": 0.028403922091157986,
+            "official_sha256": "ede3e4285559324ee4bde8ef6909afd85b6aca659dc8242fc52d8165ee1dc6c2",
+            "opening_sha256": "d8649ab167fe7c499119ed372d8b7ce1c000793058ac5930322e3a735e2571eb",
+            "title_token_support": 0.7777777777777778,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:37.936683+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Normativa_DM01-10-2012.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Normativa_DM01-10-2012.pdf",
+            "sha256": "ede3e4285559324ee4bde8ef6909afd85b6aca659dc8242fc52d8165ee1dc6c2",
+            "size": 70526,
+            "status": 200
+          },
+          "sha256": "ede3e4285559324ee4bde8ef6909afd85b6aca659dc8242fc52d8165ee1dc6c2"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Normativa_DM01-10-2012.pdf"
+    },
+    {
+      "case_id": "U10-a7ed0da7ee39a98e",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:01:45.434436+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 108,
+            "nearest_chars": 0.5355452771563138,
+            "nearest_content_score": 0.21943625581216314,
+            "nearest_digital": 0.04524081761490663,
+            "official_sha256": "a7ed0da7ee39a98e45f7093ee782002d53c7b56d2fc9f90b5aecf5418fef3238",
+            "opening_sha256": "6c913941ae132260e69b496e9b54055c75248857b86a60a5842830b4f9ab5dff",
+            "title_token_support": 0.7777777777777778,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:45.434436+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Determinazione_contributo_annuale_revisori2016.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Determinazione_contributo_annuale_revisori2016.pdf",
+            "sha256": "a7ed0da7ee39a98e45f7093ee782002d53c7b56d2fc9f90b5aecf5418fef3238",
+            "size": 21331,
+            "status": 200
+          },
+          "sha256": "a7ed0da7ee39a98e45f7093ee782002d53c7b56d2fc9f90b5aecf5418fef3238"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Determinazione_contributo_annuale_revisori2016.pdf"
+    },
+    {
+      "case_id": "U10-7c12e147caae5b4a",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:03.647466+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 100,
+            "nearest_chars": 0.42767480127536833,
+            "nearest_content_score": 0.23959643330499059,
+            "nearest_digital": 0.11419550571722335,
+            "official_sha256": "7c12e147caae5b4a60e83e4ab89f72bf57a14ee2ac8f1854952f3c568c5036cb",
+            "opening_sha256": "d6a555093607ea4299c94a862602e874b91e50f7068aaf7bf898f5521d232736",
+            "title_token_support": 0.7777777777777778,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:03.647466+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/REV_COMM_decreto_9_2_2022.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/REV_COMM_decreto_9_2_2022.pdf",
+            "sha256": "7c12e147caae5b4a60e83e4ab89f72bf57a14ee2ac8f1854952f3c568c5036cb",
+            "size": 733070,
+            "status": 200
+          },
+          "sha256": "7c12e147caae5b4a60e83e4ab89f72bf57a14ee2ac8f1854952f3c568c5036cb"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/REV_COMM_decreto_9_2_2022.pdf"
+    },
+    {
+      "case_id": "U10-98c53dce0182cd7b",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:11.399165+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 930,
+            "nearest_chars": 0.5388573362698217,
+            "nearest_content_score": 0.20888380770868187,
+            "nearest_digital": 0.024760853595215765,
+            "official_sha256": "98c53dce0182cd7b96dd9176aac89eb2307aa82658dc4e376c87bfa4162dc1b8",
+            "opening_sha256": "dcf906d68923cda06b12b06bd87c1aa09c0931c0af2d472d8323e643d3f37c48",
+            "title_token_support": 0.9090909090909091,
+            "title_tokens_supported": 10
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:11.399165+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2025-06/Linee_guida_Infrastruttura_Interoperabilit%C3%A0_PDND_v2_maggio_2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2025-06/Linee_guida_Infrastruttura_Interoperabilit%C3%A0_PDND_v2_maggio_2025.pdf",
+            "sha256": "98c53dce0182cd7b96dd9176aac89eb2307aa82658dc4e376c87bfa4162dc1b8",
+            "size": 1235853,
+            "status": 200
+          },
+          "sha256": "98c53dce0182cd7b96dd9176aac89eb2307aa82658dc4e376c87bfa4162dc1b8"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2025-06/Linee_guida_Infrastruttura_Interoperabilit%C3%A0_PDND_v2_maggio_2025.pdf"
+    },
+    {
+      "case_id": "U10-0b9bcfa40ae5d62b",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:15.338879+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 900,
+            "nearest_chars": 0.7822710248110907,
+            "nearest_content_score": 0.2737948586838817,
+            "nearest_digital": 0.0,
+            "official_sha256": "0b9bcfa40ae5d62b395f8db6e586a987c784020686add260f138cf1c21458199",
+            "opening_sha256": "027708553bedd76c139c63ad6a6a1ea05e21a38bc8f9a194e96b9e8e60efb9e1",
+            "title_token_support": 0.6666666666666666,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:15.338879+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida-operativa-per-laccesso-allarea-riservata-tirocinanti.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida-operativa-per-laccesso-allarea-riservata-tirocinanti.pdf",
+            "sha256": "0b9bcfa40ae5d62b395f8db6e586a987c784020686add260f138cf1c21458199",
+            "size": 417944,
+            "status": 200
+          },
+          "sha256": "0b9bcfa40ae5d62b395f8db6e586a987c784020686add260f138cf1c21458199"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida-operativa-per-laccesso-allarea-riservata-tirocinanti.pdf"
+    },
+    {
+      "case_id": "U10-db680648f2a47e46",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:24.450581+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 552,
+            "nearest_chars": 0.47573949698491497,
+            "nearest_content_score": 0.16650882394472022,
+            "nearest_digital": 0.0,
+            "official_sha256": "db680648f2a47e46e61f4e481bbf185f492cb8e983a3f11f31bf379fe58de853",
+            "opening_sha256": "6f32495ef2162fd9e23bc77f6f2c5cf82e467dfec6e7a89b2b9f1f5313fcb972",
+            "title_token_support": 0.9,
+            "title_tokens_supported": 9
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:24.450581+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida_operativa_revisori_societa_5.2.c-appendice.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida_operativa_revisori_societa_5.2.c-appendice.pdf",
+            "sha256": "db680648f2a47e46e61f4e481bbf185f492cb8e983a3f11f31bf379fe58de853",
+            "size": 4181583,
+            "status": 200
+          },
+          "sha256": "db680648f2a47e46e61f4e481bbf185f492cb8e983a3f11f31bf379fe58de853"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida_operativa_revisori_societa_5.2.c-appendice.pdf"
+    },
+    {
+      "case_id": "U10-e5cc5c57d0c4cf05",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:29.281728+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 573,
+            "nearest_chars": 0.431005328103595,
+            "nearest_content_score": 0.15085186483625823,
+            "nearest_digital": 0.0,
+            "official_sha256": "e5cc5c57d0c4cf0526de9f848215d6c63a3e45e23b72a23772226484a806011c",
+            "opening_sha256": "5da0eea6c0e29bf9cd2f07d8c2cd6398cad1c12922504eac3b15767c150e7526",
+            "title_token_support": 0.8571428571428571,
+            "title_tokens_supported": 6
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:29.281728+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida-operativa-per-laccesso-allarea-riservata-revisori-legali-e-societa-di-revisione.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida-operativa-per-laccesso-allarea-riservata-revisori-legali-e-societa-di-revisione.pdf",
+            "sha256": "e5cc5c57d0c4cf0526de9f848215d6c63a3e45e23b72a23772226484a806011c",
+            "size": 705521,
+            "status": 200
+          },
+          "sha256": "e5cc5c57d0c4cf0526de9f848215d6c63a3e45e23b72a23772226484a806011c"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Guida-operativa-per-laccesso-allarea-riservata-revisori-legali-e-societa-di-revisione.pdf"
+    },
+    {
+      "case_id": "U10-687dc9538461e660",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:31.868341+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 1073,
+            "nearest_chars": 0.4589415967887136,
+            "nearest_content_score": 0.16062955887604974,
+            "nearest_digital": 0.0,
+            "official_sha256": "687dc9538461e66066823e59d13a5a4d841d8e43494e2ec910dccabddf6cbef2",
+            "opening_sha256": "7592fb00bba563b0e0a98045ae8efd57eaedf925e16c2408aa44967e409656cb",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 11
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:31.868341+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_tecnologie_e_standard_sicurezza_interoperabilit%C3%A0_api_sistemi_informatici.pdf",
+            "redirects": [],
+            "requested_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_tecnologie_e_standard_sicurezza_interoperabilit%C3%A0_api_sistemi_informatici.pdf",
+            "sha256": "687dc9538461e66066823e59d13a5a4d841d8e43494e2ec910dccabddf6cbef2",
+            "size": 1248649,
+            "status": 200
+          },
+          "sha256": "687dc9538461e66066823e59d13a5a4d841d8e43494e2ec910dccabddf6cbef2"
+        }
+      ],
+      "source_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_tecnologie_e_standard_sicurezza_interoperabilit%C3%A0_api_sistemi_informatici.pdf"
+    },
+    {
+      "case_id": "U10-d4ca61d7d282a675",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:42.016507+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 1060,
+            "nearest_chars": 0.6980142685498321,
+            "nearest_content_score": 0.2443049939924412,
+            "nearest_digital": 0.0,
+            "official_sha256": "d4ca61d7d282a67510a68ef022d2870d3a4018a9a96ac545eee094a149def0e8",
+            "opening_sha256": "cd0c77041973a53862f87d2ccc9e4f39d865e90b5e30afe41052f6e0608c3135",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 11
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:42.016507+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/TIR_linee_guida_tirocinio-2018.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/TIR_linee_guida_tirocinio-2018.pdf",
+            "sha256": "d4ca61d7d282a67510a68ef022d2870d3a4018a9a96ac545eee094a149def0e8",
+            "size": 763970,
+            "status": 200
+          },
+          "sha256": "d4ca61d7d282a67510a68ef022d2870d3a4018a9a96ac545eee094a149def0e8"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/TIR_linee_guida_tirocinio-2018.pdf"
+    },
+    {
+      "case_id": "U10-1e57837ca0328742",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:02:47.395591+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 900,
+            "nearest_chars": 0.7003938688752394,
+            "nearest_content_score": 0.24513785410633376,
+            "nearest_digital": 0.0,
+            "official_sha256": "1e57837ca0328742e58b3b0ef2f8b166bb9b55dc5d69e3c3b1998f495a84482d",
+            "opening_sha256": "f4b3d9c5a70cfeee34e3c3eae86af6483717d8e09c3046db699ffde8e5208740",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 11
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:47.395591+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Linee_guida_svolgimento_tirocinio_31_03_2023-finale.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Linee_guida_svolgimento_tirocinio_31_03_2023-finale.pdf",
+            "sha256": "1e57837ca0328742e58b3b0ef2f8b166bb9b55dc5d69e3c3b1998f495a84482d",
+            "size": 914959,
+            "status": 200
+          },
+          "sha256": "1e57837ca0328742e58b3b0ef2f8b166bb9b55dc5d69e3c3b1998f495a84482d"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Linee_guida_svolgimento_tirocinio_31_03_2023-finale.pdf"
+    },
+    {
+      "case_id": "U10-083d80266debdc26",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:03:22.142917+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "modulo",
+            "family_hits": [],
+            "nearest_catalog_id": 592,
+            "nearest_chars": 0.8151073422639684,
+            "nearest_content_score": 0.28528756979238895,
+            "nearest_digital": 0.0,
+            "official_sha256": "083d80266debdc26feb2eed0b96b1d9219bd5ff89d3a766d7f73199aa42b9145",
+            "opening_sha256": "dcdfe07b4e962ac8be15f9fa3cb27d46618b71076ce86838b702062fede6ae90",
+            "title_token_support": 0.8,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:22.142917+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/217772338/Modulo+di+richiesta+di+rettifica+degli+smartcig.pdf/3ee585aa-d27f-e3a7-113e-3a3ef771985c?t=1711633579820",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/217772338/Modulo+di+richiesta+di+rettifica+degli+smartcig.pdf/3ee585aa-d27f-e3a7-113e-3a3ef771985c?t=1711633579820",
+            "sha256": "083d80266debdc26feb2eed0b96b1d9219bd5ff89d3a766d7f73199aa42b9145",
+            "size": 155047,
+            "status": 200
+          },
+          "sha256": "083d80266debdc26feb2eed0b96b1d9219bd5ff89d3a766d7f73199aa42b9145"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/217772338/Modulo+di+richiesta+di+rettifica+degli+smartcig.pdf/3ee585aa-d27f-e3a7-113e-3a3ef771985c?t=1711633579820"
+    },
+    {
+      "case_id": "U10-b8fcca8fc7da6056",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:03:33.094837+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "modulo",
+            "family_hits": [],
+            "nearest_catalog_id": 149,
+            "nearest_chars": 0.681552857172167,
+            "nearest_content_score": 0.2528687114482229,
+            "nearest_digital": 0.028650422875928987,
+            "official_sha256": "b8fcca8fc7da6056191ce183d0e1f2812c5a669d5c5ce0b289a034761518a59e",
+            "opening_sha256": "ff618f4be275f6b230de7e6e27f5999a07e9168cf4980cad8c34e595a833b037",
+            "title_token_support": 0.9,
+            "title_tokens_supported": 9
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:33.094837+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/120834/Modulo+di+richiesta+di+rettifica+delle+informazioni+relative+al+CIG+acquisito+con+il+sistema+SIMOG.pdf/bacf8087-a3dd-eb97-4e70-53fd208bf821?t=1715864970513",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/120834/Modulo+di+richiesta+di+rettifica+delle+informazioni+relative+al+CIG+acquisito+con+il+sistema+SIMOG.pdf/bacf8087-a3dd-eb97-4e70-53fd208bf821?t=1715864970513",
+            "sha256": "b8fcca8fc7da6056191ce183d0e1f2812c5a669d5c5ce0b289a034761518a59e",
+            "size": 365480,
+            "status": 200
+          },
+          "sha256": "b8fcca8fc7da6056191ce183d0e1f2812c5a669d5c5ce0b289a034761518a59e"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/120834/Modulo+di+richiesta+di+rettifica+delle+informazioni+relative+al+CIG+acquisito+con+il+sistema+SIMOG.pdf/bacf8087-a3dd-eb97-4e70-53fd208bf821?t=1715864970513"
+    },
+    {
+      "case_id": "U10-d08fcc72bbcee40c",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:03:53.199739+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "delibera",
+            "family_hits": [],
+            "nearest_catalog_id": 959,
+            "nearest_chars": 0.5861118122251454,
+            "nearest_content_score": 0.24637725579348577,
+            "nearest_digital": 0.08247624302936978,
+            "official_sha256": "d08fcc72bbcee40cfff5ff24be04e56ece5058c07c8d930df05e242ec30bd82b",
+            "opening_sha256": "e519bb81976703624e5429a5f55cd174e19621a7c9d5ba16dfdf9f8ef4a96e23",
+            "title_token_support": 0.8,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:53.199739+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/404688193/Delibera+n.+176+del+15+aprile+2026.pdf/288f45c5-53ff-9a21-8c59-a467c4794dfb?t=1779901176073",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/404688193/Delibera+n.+176+del+15+aprile+2026.pdf/288f45c5-53ff-9a21-8c59-a467c4794dfb?t=1779901176073",
+            "sha256": "d08fcc72bbcee40cfff5ff24be04e56ece5058c07c8d930df05e242ec30bd82b",
+            "size": 94280,
+            "status": 200
+          },
+          "sha256": "d08fcc72bbcee40cfff5ff24be04e56ece5058c07c8d930df05e242ec30bd82b"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/404688193/Delibera+n.+176+del+15+aprile+2026.pdf/288f45c5-53ff-9a21-8c59-a467c4794dfb?t=1779901176073"
+    },
+    {
+      "case_id": "U10-6bd180a3b2f876dd",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:03.293269+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 108,
+            "nearest_chars": 0.5243874458660974,
+            "nearest_content_score": 0.23544812487281855,
+            "nearest_digital": 0.08507503763936894,
+            "official_sha256": "6bd180a3b2f876dd7d41710d1ce87d111c9d952dcf0115b4c30759d86cdf94ca",
+            "opening_sha256": "af7b83944847f11fe1f766ece4b24f2afa6d09be8cbbb1f8af6b25a7112eceed",
+            "title_token_support": 0.6666666666666666,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:03.293269+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/REV_decreto_revoca_sospens_49_PF_13012025.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/REV_decreto_revoca_sospens_49_PF_13012025.pdf",
+            "sha256": "6bd180a3b2f876dd7d41710d1ce87d111c9d952dcf0115b4c30759d86cdf94ca",
+            "size": 740875,
+            "status": 200
+          },
+          "sha256": "6bd180a3b2f876dd7d41710d1ce87d111c9d952dcf0115b4c30759d86cdf94ca"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/REV_decreto_revoca_sospens_49_PF_13012025.pdf"
+    },
+    {
+      "case_id": "U10-aa181c7c47c1a6b1",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:06.357423+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "delibera",
+            "family_hits": [],
+            "nearest_catalog_id": 737,
+            "nearest_chars": 0.8044148821925952,
+            "nearest_content_score": 0.2993592819970604,
+            "nearest_digital": 0.03562814645930419,
+            "official_sha256": "aa181c7c47c1a6b19632daa32473aefb140253687973a46007b91f99155af56a",
+            "opening_sha256": "a8d8fde83aa9180458397d992f79da35fea0913bf4957d3d752123fa12b9f39f",
+            "title_token_support": 0.8,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:06.357423+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/359218474/Delibera+n.+479+del+26+novembre+2025.pdf/01f1a62c-6dee-5aba-03f3-51e6000af97e?t=1765543187123",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/359218474/Delibera+n.+479+del+26+novembre+2025.pdf/01f1a62c-6dee-5aba-03f3-51e6000af97e?t=1765543187123",
+            "sha256": "aa181c7c47c1a6b19632daa32473aefb140253687973a46007b91f99155af56a",
+            "size": 372313,
+            "status": 200
+          },
+          "sha256": "aa181c7c47c1a6b19632daa32473aefb140253687973a46007b91f99155af56a"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/359218474/Delibera+n.+479+del+26+novembre+2025.pdf/01f1a62c-6dee-5aba-03f3-51e6000af97e?t=1765543187123"
+    },
+    {
+      "case_id": "U10-0ace7c162af5c5f0",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:13.735172+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 108,
+            "nearest_chars": 0.4718919690012604,
+            "nearest_content_score": 0.2291556100743028,
+            "nearest_digital": 0.09986184184772333,
+            "official_sha256": "0ace7c162af5c5f0ca801a6448ca8c1def1148368fb5d61c2baf6bdd4eca3d90",
+            "opening_sha256": "9a6b72bb3483c47e05805c9c2fddbeb957628b9051b44fc35690435c3dadcf0d",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 5
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:13.735172+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/MEF-893-21-cacnellati_GU032026.pdf",
+            "redirects": [],
+            "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/MEF-893-21-cacnellati_GU032026.pdf",
+            "sha256": "0ace7c162af5c5f0ca801a6448ca8c1def1148368fb5d61c2baf6bdd4eca3d90",
+            "size": 681940,
+            "status": 200
+          },
+          "sha256": "0ace7c162af5c5f0ca801a6448ca8c1def1148368fb5d61c2baf6bdd4eca3d90"
+        }
+      ],
+      "source_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/MEF-893-21-cacnellati_GU032026.pdf"
+    },
+    {
+      "case_id": "U10-e118663121416253",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:20.473239+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 1073,
+            "nearest_chars": 0.5861230670180372,
+            "nearest_content_score": 0.205143073456313,
+            "nearest_digital": 0.0,
+            "official_sha256": "e118663121416253e8247377b287b672bc2ee6793b7f61e15a148ca941a41ee1",
+            "opening_sha256": "0004fcc4461453be61d4268fb35e474f156e3d281c6fe2d7f2957482d15592b9",
+            "title_token_support": 0.9090909090909091,
+            "title_tokens_supported": 10
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:20.473239+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/359218474/Relazione+illustrativa+Linee+Guida+n.+1.2025+-+whistleblowing+canali+interni+di+segnalazione+-+del.478-26.11.2025.pdf/15bb4579-e069-520a-211a-15a2a5fbf097?t=1765537677370",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/359218474/Relazione+illustrativa+Linee+Guida+n.+1.2025+-+whistleblowing+canali+interni+di+segnalazione+-+del.478-26.11.2025.pdf/15bb4579-e069-520a-211a-15a2a5fbf097?t=1765537677370",
+            "sha256": "e118663121416253e8247377b287b672bc2ee6793b7f61e15a148ca941a41ee1",
+            "size": 1203936,
+            "status": 200
+          },
+          "sha256": "e118663121416253e8247377b287b672bc2ee6793b7f61e15a148ca941a41ee1"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/359218474/Relazione+illustrativa+Linee+Guida+n.+1.2025+-+whistleblowing+canali+interni+di+segnalazione+-+del.478-26.11.2025.pdf/15bb4579-e069-520a-211a-15a2a5fbf097?t=1765537677370"
+    },
+    {
+      "case_id": "U10-3323b17ace43304b",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:24.290069+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 101,
+            "nearest_chars": 0.4847587707747637,
+            "nearest_content_score": 0.2622554503298943,
+            "nearest_digital": 0.11955476111745392,
+            "official_sha256": "3323b17ace43304b42db0c55fed2a3d29ede13445825f2f3df26a88df39d3061",
+            "opening_sha256": "d110cf6998b27aa74a04589bd6ea4383861042a885edcd69511b408f39905f3d",
+            "title_token_support": 0.8888888888888888,
+            "title_tokens_supported": 8
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:24.290069+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/359218474/Linee+Guida+n.+1.2025+-+whistleblowing+canali+interni+di+segnalazione+-+del.478-26.11.2025.pdf/29b5c33c-e760-84f4-9ddc-8e5bdb0af6ed?t=1765535211290",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/359218474/Linee+Guida+n.+1.2025+-+whistleblowing+canali+interni+di+segnalazione+-+del.478-26.11.2025.pdf/29b5c33c-e760-84f4-9ddc-8e5bdb0af6ed?t=1765535211290",
+            "sha256": "3323b17ace43304b42db0c55fed2a3d29ede13445825f2f3df26a88df39d3061",
+            "size": 981063,
+            "status": 200
+          },
+          "sha256": "3323b17ace43304b42db0c55fed2a3d29ede13445825f2f3df26a88df39d3061"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/359218474/Linee+Guida+n.+1.2025+-+whistleblowing+canali+interni+di+segnalazione+-+del.478-26.11.2025.pdf/29b5c33c-e760-84f4-9ddc-8e5bdb0af6ed?t=1765535211290"
+    },
+    {
+      "case_id": "U10-a298067a3acc1d3b",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:33.439747+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 589,
+            "nearest_chars": 0.45226550584990666,
+            "nearest_content_score": 0.1582929270474673,
+            "nearest_digital": 0.0,
+            "official_sha256": "a298067a3acc1d3bba1bb74a16f64e957a598c9f505288617e9f1b1f46ff1dcf",
+            "opening_sha256": "7fb44142a37e9b984d9c85fb847314eedbd3f9fbdfe6650219f304850d599e13",
+            "title_token_support": 0.8888888888888888,
+            "title_tokens_supported": 8
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:33.439747+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/190203148/Relazione+illustrativa+-+Linee+guida+n.+1+-+divieto+di+pantouflage+-+del.n.493-25.09.2024.pdf/8dc1867c-85dd-84ea-6ef6-b2dc60a4c3be?t=1737365350753",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/190203148/Relazione+illustrativa+-+Linee+guida+n.+1+-+divieto+di+pantouflage+-+del.n.493-25.09.2024.pdf/8dc1867c-85dd-84ea-6ef6-b2dc60a4c3be?t=1737365350753",
+            "sha256": "a298067a3acc1d3bba1bb74a16f64e957a598c9f505288617e9f1b1f46ff1dcf",
+            "size": 626890,
+            "status": 200
+          },
+          "sha256": "a298067a3acc1d3bba1bb74a16f64e957a598c9f505288617e9f1b1f46ff1dcf"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/190203148/Relazione+illustrativa+-+Linee+guida+n.+1+-+divieto+di+pantouflage+-+del.n.493-25.09.2024.pdf/8dc1867c-85dd-84ea-6ef6-b2dc60a4c3be?t=1737365350753"
+    },
+    {
+      "case_id": "U10-db8722fe449e8892",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_v2_round10",
+      "evidence_date": "2026-10-12T20:04:36.903801+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "Additive official unknown confirmation before recognition; no catalog/editorial promotion. Split is development or reserved, not a frozen evaluation.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt and positively supported document-type/title in first2000 chars; complete catalog title/code and family scan; exact SHA and public content near duplicate excluded. No recognition predictions used.",
+            "document_type": "guida",
+            "family_hits": [],
+            "nearest_catalog_id": 261,
+            "nearest_chars": 0.6098147540355094,
+            "nearest_content_score": 0.26930366256082733,
+            "nearest_digital": 0.11060217887996074,
+            "official_sha256": "db8722fe449e8892ebd250472a31c5975c4b5543799b3b9f07cb7c97a4eab94c",
+            "opening_sha256": "a6f79ce608d5bf2aa307ca514fd86d7dbec59f08d2f43be4ace5db701214265a",
+            "title_token_support": 0.8571428571428571,
+            "title_tokens_supported": 6
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:04:36.903801+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.anticorruzione.it/documents/91439/190203148/Linee+guida+n.+1+-+divieto+di+pantouflage+-+del.n.493-25-2024.pdf/ba91a700-0dd1-8382-10ec-e3b83b57964d?t=1737365321713",
+            "redirects": [],
+            "requested_url": "https://www.anticorruzione.it/documents/91439/190203148/Linee+guida+n.+1+-+divieto+di+pantouflage+-+del.n.493-25-2024.pdf/ba91a700-0dd1-8382-10ec-e3b83b57964d?t=1737365321713",
+            "sha256": "db8722fe449e8892ebd250472a31c5975c4b5543799b3b9f07cb7c97a4eab94c",
+            "size": 450512,
+            "status": 200
+          },
+          "sha256": "db8722fe449e8892ebd250472a31c5975c4b5543799b3b9f07cb7c97a4eab94c"
+        }
+      ],
+      "source_url": "https://www.anticorruzione.it/documents/91439/190203148/Linee+guida+n.+1+-+divieto+di+pantouflage+-+del.n.493-25-2024.pdf/ba91a700-0dd1-8382-10ec-e3b83b57964d?t=1737365321713"
+    }
+  ],
+  "counts": {
+    "confirmed": 39
+  },
+  "historical_locks": {
+    "benchmarks/corpora/development_regression.json": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "benchmarks/corpora/family_release_v1.json": "324e38e404eac04a51692f1152596343946d87b1c3c12fa9ee812c478f0fd644",
+    "benchmarks/corpora/family_release_v2.json": "16705612ba31a3dfb4e6c6d520ce14ef7b14f001f56174ed6e81314676b89910",
+    "benchmarks/corpora/family_release_v3.json": "d0b6225165f933c3c08088f9283760a0af6fe9e84d844ee63ba99f8651ae17be",
+    "benchmarks/corpora/hard_negatives_v1.json": "bab77cf77153c695d62895508e07c5622ca89fa67b185d2612775dba70f873db",
+    "benchmarks/corpora/hard_negatives_v2.json": "7d9d09da26ab4b82aaba9d3e4592bb036a17051b88592c9de89f897a8aea4498",
+    "benchmarks/corpora/ocr_synthetic_v1.json": "651f47c04550413e32568096e46723374ebdbbf3af9f564e50d1454d009154a1",
+    "benchmarks/corpora/ocr_synthetic_v2.json": "d3d47e8f4113830b1d51a935128e5979b61c3337481d7b99a752ce6df24c016a",
+    "benchmarks/corpora/release_locked_v1.json": "c56081c2ae1adf1741c7e2b4f1f536fc8a6d9a4c004f3b68cd850389fe4e67d9",
+    "benchmarks/corpora/release_locked_v2.json": "58ddd13cce1243d56cf30fc24161a18549f12ea33fbbcaf0fefe309956301613",
+    "tests/fixtures/benchmark.json": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "tests/fixtures/benchmark_v2.json": "7af0365fad64bf4de70e4e4a88e3c12f6a81291111154f7e155b883c501448e1"
+  },
+  "registry_id": "reference-truth-v2-round10-addendum",
+  "schema_version": 2,
+  "unclassified_contradictions": 0
+}

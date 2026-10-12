@@ -1,0 +1,42 @@
+{
+  "additional_required": 44,
+  "coverage_all": 0.7764026402640264,
+  "coverage_file_backed": 0.812607944732297,
+  "derived_fingerprints_active": 0,
+  "derived_resource_count": 47,
+  "derived_unique_identity_candidates": [
+    422,
+    1101
+  ],
+  "file_backed": 1158,
+  "fingerprinted": 941,
+  "minimum_needed_for_85": 985,
+  "operational": 1212,
+  "recovered": 0,
+  "remaining_reasons": {
+    "Risposta oltre 8 MiB.;official_html_wrapper": 1,
+    "additional_resource_identity_not_supported": 5,
+    "additional_resource_identity_not_supported;explicit_entity_conflict": 1,
+    "derived_only_original_mime_not_supported_by_v3": 3,
+    "explicit_entity_conflict": 18,
+    "legacy_active_content_rejected": 3,
+    "legacy_conversion_failed": 1,
+    "legacy_external_relationship_rejected": 9,
+    "legacy_pdf_limits": 1,
+    "official_html_wrapper": 4,
+    "official_html_wrapper;prior_permanent_failure_no_retry": 10,
+    "official_html_wrapper;prior_permanent_failure_no_retry;supported_official_bytes": 1,
+    "official_html_wrapper;supported_official_bytes": 23,
+    "opening_identity_not_supported": 46,
+    "prior_403_429_no_retry": 90,
+    "prior_permanent_failure_no_retry;supported_official_bytes": 1
+  },
+  "residual_audited": 217,
+  "scope": "Fixed R6 denominator; 941 active unique IDs, 979 active resources. Derived-only and shared candidates excluded. No original legacy bytes represented as official PDF SHA. Runtime bundle and seed unchanged.",
+  "tiers": {
+    "1": 27,
+    "2": 63,
+    "3": 32,
+    "4": 95
+  }
+}

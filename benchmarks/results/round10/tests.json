@@ -1,0 +1,18 @@
+{
+  "failed": 0,
+  "log_sha256": "0f2023306ca44ed0eb898ed2bbf1671170ad9fa9c3ad41c587e66f80566af387",
+  "passed": 758,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "post_correction_targeted": {
+    "failed": 0,
+    "log_sha256": "f2317bd1550b555fd2439ee1eddc1d6065741ff2113740c6e2a0e3108ed60cd9",
+    "passed": 9,
+    "scope": "Profile values and timeout/provenance contracts retested after maintenance profile correction; not added a second time to full-suite count.",
+    "seconds": 0.71
+  },
+  "python": "3.12.10",
+  "seconds": 514.23,
+  "skip_reasons": "Windows: one symlink privilege and two FIFO unsupported cases; see preserved local pytest log.",
+  "skipped": 3,
+  "status": "passed"
+}

@@ -1,0 +1,1428 @@
+{
+  "branch": "codex/coverage-benchmark-v0.7.0",
+  "canonical": {
+    "cases": 979,
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 979,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "failed": 0,
+    "latency_ms": {
+      "p50": 7.5138,
+      "p95": 11.6643,
+      "p99": 12.8641
+    },
+    "metrics": {
+      "document_f1": {
+        "denominator": 1958,
+        "numerator": 1958,
+        "value": 1.0
+      },
+      "document_precision": {
+        "denominator": 979,
+        "numerator": 979,
+        "value": 1.0
+      },
+      "document_recall": {
+        "denominator": 979,
+        "numerator": 979,
+        "value": 1.0
+      },
+      "entity_error_rate": {
+        "denominator": 979,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_document_coverage": {
+        "denominator": 979,
+        "numerator": 979,
+        "value": 1.0
+      },
+      "family_f1": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "family_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "supported_rejection_rate": {
+        "denominator": 979,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "unknown_false_acceptance_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "denominator": 979,
+        "numerator": 979,
+        "value": 1.0
+      },
+      "version_year_error_rate": {
+        "denominator": 979,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    "passed": 979
+  },
+  "ci": "external_pending",
+  "coverage": {
+    "additional_required": 44,
+    "coverage_percent": 81.26079447322971,
+    "file_backed_total": 1158,
+    "fingerprinted_file_backed": 941,
+    "fixed_denominator_source": "benchmarks/results/round6/resource_audit.json",
+    "minimum_needed_for_85": 985,
+    "operational_total": 1212,
+    "scope": "Unambiguous identities only; shared resource signatures do not satisfy unique identity coverage."
+  },
+  "decision_policy": "fingerprint-decision-v5",
+  "evaluation_v5": false,
+  "fingerprint_version": "fingerprint-v3",
+  "freeze": false,
+  "head": "8c13da270fe2c4db212ca3611fb5ce0ddef7b0d8",
+  "historical": {
+    "catalog_coverage": {
+      "cases": 1212,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 1169,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 43
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 43,
+      "latency_ms": {
+        "p50": 39.4275,
+        "p95": 54.2842,
+        "p99": 66.2447
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 2381,
+          "numerator": 2338,
+          "value": 0.9819403611927762
+        },
+        "document_precision": {
+          "denominator": 1169,
+          "numerator": 1169,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 1212,
+          "numerator": 1169,
+          "value": 0.9645214521452146
+        },
+        "entity_error_rate": {
+          "denominator": 1169,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 1212,
+          "numerator": 1169,
+          "value": 0.9645214521452146
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 1212,
+          "numerator": 43,
+          "value": 0.03547854785478548
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 1212,
+          "numerator": 1169,
+          "value": 0.9645214521452146
+        },
+        "version_year_error_rate": {
+          "denominator": 1169,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 1169
+    },
+    "development_compat_v2": {
+      "cases": 37,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 11,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 14,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 12
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 66.357,
+        "p95": 71.0892,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 22,
+          "numerator": 22,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 23,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 30,
+          "numerator": 28,
+          "value": 0.9333333333333333
+        },
+        "family_precision": {
+          "denominator": 14,
+          "numerator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 16,
+          "numerator": 14,
+          "value": 0.875
+        },
+        "supported_rejection_rate": {
+          "denominator": 25,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 12,
+          "numerator": 12,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 25,
+          "numerator": 25,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 11,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 37
+    },
+    "development_regression": {
+      "cases": 35,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 9,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 2
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 14,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 10
+        }
+      },
+      "failed": 2,
+      "latency_ms": {
+        "p50": 41.16,
+        "p95": 117.6388,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 20,
+          "numerator": 18,
+          "value": 0.9
+        },
+        "document_precision": {
+          "denominator": 9,
+          "numerator": 9,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 11,
+          "numerator": 9,
+          "value": 0.8181818181818182
+        },
+        "entity_error_rate": {
+          "denominator": 21,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 11,
+          "numerator": 9,
+          "value": 0.8181818181818182
+        },
+        "family_f1": {
+          "denominator": 30,
+          "numerator": 28,
+          "value": 0.9333333333333333
+        },
+        "family_precision": {
+          "denominator": 14,
+          "numerator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 16,
+          "numerator": 14,
+          "value": 0.875
+        },
+        "supported_rejection_rate": {
+          "denominator": 25,
+          "numerator": 2,
+          "value": 0.08
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 10,
+          "numerator": 10,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 10,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 25,
+          "numerator": 23,
+          "value": 0.92
+        },
+        "version_year_error_rate": {
+          "denominator": 9,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 33
+    },
+    "family_release_v3": {
+      "cases": 161,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 80,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 81
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 1.326,
+        "p95": 4.754,
+        "p99": 4.9568
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 70,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 160,
+          "numerator": 160,
+          "value": 1.0
+        },
+        "family_precision": {
+          "denominator": 80,
+          "numerator": 80,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 80,
+          "numerator": 80,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "denominator": 80,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 81,
+          "numerator": 81,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 81,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 80,
+          "numerator": 80,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 161
+    },
+    "hard_negatives_v1": {
+      "cases": 30,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 30
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 45.4,
+        "p95": 54.3646,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 30,
+          "numerator": 30,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 30,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 30
+    },
+    "hard_negatives_v2": {
+      "cases": 100,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 100
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 6.7175,
+        "p95": 42.79,
+        "p99": 46.8751
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 100,
+          "numerator": 100,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 100,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 100
+    },
+    "release_locked_v1": {
+      "cases": 69,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 54,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 6
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 5,
+          "NO_MATCH": 2
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 10,
+      "latency_ms": {
+        "p50": 39.084,
+        "p95": 51.2984,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 116,
+          "numerator": 108,
+          "value": 0.9310344827586207
+        },
+        "document_precision": {
+          "denominator": 56,
+          "numerator": 54,
+          "value": 0.9642857142857143
+        },
+        "document_recall": {
+          "denominator": 60,
+          "numerator": 54,
+          "value": 0.9
+        },
+        "entity_error_rate": {
+          "denominator": 61,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 60,
+          "numerator": 54,
+          "value": 0.9
+        },
+        "family_f1": {
+          "denominator": 14,
+          "numerator": 10,
+          "value": 0.7142857142857143
+        },
+        "family_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 9,
+          "numerator": 5,
+          "value": 0.5555555555555556
+        },
+        "supported_rejection_rate": {
+          "denominator": 69,
+          "numerator": 8,
+          "value": 0.11594202898550725
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 69,
+          "numerator": 59,
+          "value": 0.855072463768116
+        },
+        "version_year_error_rate": {
+          "denominator": 54,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 59
+    },
+    "release_locked_v2": {
+      "cases": 69,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 56,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 5,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 8
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 39.736,
+        "p95": 60.611,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 112,
+          "numerator": 112,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 56,
+          "numerator": 56,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 56,
+          "numerator": 56,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 61,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 56,
+          "numerator": 56,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 10,
+          "numerator": 10,
+          "value": 1.0
+        },
+        "family_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "denominator": 61,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 8,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 61,
+          "numerator": 61,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 56,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 69
+    }
+  },
+  "historical_safety": [
+    {
+      "case_id": "EX02MISSINGREV",
+      "match_type": "NO_MATCH"
+    },
+    {
+      "case_id": "EX03MISSINGREV",
+      "match_type": "NO_MATCH"
+    }
+  ],
+  "identity": {
+    "code_sha256": "850ac4f0be713917ea938dd40d9d6f835176578dbb879c02c0df468002795026",
+    "commit": "8c13da270fe2c4db212ca3611fb5ce0ddef7b0d8",
+    "executed_at": "2026-10-12T19:52:32.961007+00:00",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101208
+  },
+  "libreoffice_outside_path": true,
+  "performance": {
+    "by_input_group": {
+      "historical_fixed51": {
+        "n": 306,
+        "p50": 38.8363,
+        "p95": 249.8768,
+        "p99": 338.0568
+      },
+      "historical_scans": {
+        "n": 84,
+        "p50": 97.6907,
+        "p95": 135.7979,
+        "p99": 142.7112
+      },
+      "historical_scans_wrapped_pdf": {
+        "n": 12,
+        "p50": 112.3147,
+        "p95": 119.405,
+        "p99": 125.2088
+      },
+      "representation:digital_pdf": {
+        "n": 60,
+        "p50": 72.9565,
+        "p95": 338.9603,
+        "p99": 354.4637
+      },
+      "representation:docx": {
+        "n": 6,
+        "p50": 100.5391,
+        "p95": 122.2188,
+        "p99": 124.1022
+      },
+      "representation:filled_acroform": {
+        "n": 30,
+        "p50": 159.6982,
+        "p95": 290.3276,
+        "p99": 304.5086
+      },
+      "representation:image": {
+        "n": 84,
+        "p50": 97.6907,
+        "p95": 135.7979,
+        "p99": 142.7112
+      },
+      "representation:scanned_pdf": {
+        "n": 12,
+        "p50": 112.3147,
+        "p95": 119.405,
+        "p99": 125.2088
+      },
+      "representation:unknown": {
+        "n": 210,
+        "p50": 38.0631,
+        "p95": 48.999,
+        "p99": 56.5113
+      }
+    },
+    "catalog_load_ms": 8.202400000300258,
+    "components": {
+      "anchors": {
+        "n": 67,
+        "p50": 0.0127,
+        "p95": 2.4265,
+        "p99": 3.1975
+      },
+      "candidate_retrieval": {
+        "n": 67,
+        "p50": 0.2986,
+        "p95": 1.9527,
+        "p99": 3.0936
+      },
+      "char_overlap": {
+        "n": 67,
+        "p50": 0.0646,
+        "p95": 13.9473,
+        "p99": 22.1431
+      },
+      "decision_fusion_inclusive": {
+        "n": 67,
+        "p50": 2.0209,
+        "p95": 186.7969,
+        "p99": 280.7141
+      },
+      "entity_version_checks": {
+        "n": 67,
+        "p50": 0.0082,
+        "p95": 0.0154,
+        "p99": 0.0192
+      },
+      "family_fallback": {
+        "n": 67,
+        "p50": 1.3304,
+        "p95": 9.973,
+        "p99": 11.7097
+      },
+      "input_fingerprint_generation": {
+        "n": 67,
+        "p50": 0.5958,
+        "p95": 36.9651,
+        "p99": 59.0795
+      },
+      "normalization": {
+        "n": 67,
+        "p50": 0.0152,
+        "p95": 0.2393,
+        "p99": 0.563
+      },
+      "ocr_sketch_compare": {
+        "n": 67,
+        "p50": 0.059,
+        "p95": 10.745,
+        "p99": 14.6289
+      },
+      "representation_classification": {
+        "n": 32,
+        "p50": 0.0292,
+        "p95": 0.0365,
+        "p99": 0.0377
+      },
+      "visual_compare": {
+        "n": 67,
+        "p50": 0.008,
+        "p95": 2.2758,
+        "p99": 3.2322
+      }
+    },
+    "counters": {
+      "candidates_initial": {
+        "n": 402,
+        "p50": 17.0,
+        "p95": 2401.0,
+        "p99": 2615.0
+      },
+      "candidates_text": {
+        "n": 402,
+        "p50": 17.0,
+        "p95": 3523.0,
+        "p99": 7132.0
+      },
+      "candidates_visual": {
+        "n": 402,
+        "p50": 0.0,
+        "p95": 1.0,
+        "p99": 5.0
+      },
+      "page_renders": 72
+    },
+    "cprofile": [
+      {
+        "calls": 67,
+        "cumulative_seconds": 8.7534956,
+        "file": "recognize.py",
+        "function": "recognize_catalog",
+        "line": 948,
+        "own_seconds": 0.020906900000000003
+      },
+      {
+        "calls": 374,
+        "cumulative_seconds": 6.0987007,
+        "file": "fingerprint_pages.py",
+        "function": "memo",
+        "line": 47,
+        "own_seconds": 0.0234565
+      },
+      {
+        "calls": 67,
+        "cumulative_seconds": 4.937002000000001,
+        "file": "fingerprint_decision_v5.py",
+        "function": "match",
+        "line": 24,
+        "own_seconds": 0.0022069
+      },
+      {
+        "calls": 67,
+        "cumulative_seconds": 4.9347951000000005,
+        "file": "fingerprint_decision_v4.py",
+        "function": "match",
+        "line": 36,
+        "own_seconds": 0.026543800000000003
+      },
+      {
+        "calls": 44,
+        "cumulative_seconds": 3.2032373,
+        "file": "recognize.py",
+        "function": "metadata_document",
+        "line": 1000,
+        "own_seconds": 0.005840000000000001
+      },
+      {
+        "calls": 44,
+        "cumulative_seconds": 3.1973973,
+        "file": "recognize.py",
+        "function": "recognize_document",
+        "line": 629,
+        "own_seconds": 0.5133313
+      },
+      {
+        "calls": 128799,
+        "cumulative_seconds": 2.6684465000000004,
+        "file": "~",
+        "function": "<built-in method builtins.sorted>",
+        "line": 0,
+        "own_seconds": 0.33333050000000003
+      },
+      {
+        "calls": 43,
+        "cumulative_seconds": 2.4837332,
+        "file": "fingerprint_decision_v4.py",
+        "function": "score_pages",
+        "line": 60,
+        "own_seconds": 0.0097468
+      },
+      {
+        "calls": 43,
+        "cumulative_seconds": 2.4739864000000003,
+        "file": "fingerprint_v3.py",
+        "function": "similarities",
+        "line": 177,
+        "own_seconds": 0.0695737
+      },
+      {
+        "calls": 53374,
+        "cumulative_seconds": 2.1744127,
+        "file": "recognize.py",
+        "function": "<genexpr>",
+        "line": 691,
+        "own_seconds": 0.0441731
+      },
+      {
+        "calls": 65,
+        "cumulative_seconds": 2.1551619,
+        "file": "fingerprint_v3.py",
+        "function": "page_scores",
+        "line": 155,
+        "own_seconds": 0.48487290000000005
+      },
+      {
+        "calls": 53330,
+        "cumulative_seconds": 2.1302396000000003,
+        "file": "recognize.py",
+        "function": "_score_candidate",
+        "line": 445,
+        "own_seconds": 0.6713600000000001
+      },
+      {
+        "calls": 67,
+        "cumulative_seconds": 1.1727511000000002,
+        "file": "fingerprint_pages.py",
+        "function": "queries",
+        "line": 51,
+        "own_seconds": 0.00029400000000000004
+      },
+      {
+        "calls": 156,
+        "cumulative_seconds": 1.1724571000000001,
+        "file": "fingerprint_pages.py",
+        "function": "<genexpr>",
+        "line": 52,
+        "own_seconds": 0.0006413
+      },
+      {
+        "calls": 89,
+        "cumulative_seconds": 1.1718158,
+        "file": "fingerprint_v3.py",
+        "function": "features",
+        "line": 21,
+        "own_seconds": 0.0689476
+      },
+      {
+        "calls": 201259,
+        "cumulative_seconds": 1.0476606000000002,
+        "file": "~",
+        "function": "<built-in method builtins.sum>",
+        "line": 0,
+        "own_seconds": 0.2840385
+      },
+      {
+        "calls": 15,
+        "cumulative_seconds": 0.9896844,
+        "file": "fingerprint_pages.py",
+        "function": "visual",
+        "line": 55,
+        "own_seconds": 0.013764
+      },
+      {
+        "calls": 360624,
+        "cumulative_seconds": 0.8713447000000001,
+        "file": "fingerprint_v3.py",
+        "function": "<genexpr>",
+        "line": 26,
+        "own_seconds": 0.1456629
+      },
+      {
+        "calls": 360357,
+        "cumulative_seconds": 0.7256818,
+        "file": "fingerprint_v3.py",
+        "function": "char_hash",
+        "line": 19,
+        "own_seconds": 0.4874677
+      },
+      {
+        "calls": 12,
+        "cumulative_seconds": 0.6998982,
+        "file": "fingerprint_pages.py",
+        "function": "image_signature",
+        "line": 9,
+        "own_seconds": 0.042515700000000003
+      },
+      {
+        "calls": 1602728,
+        "cumulative_seconds": 0.6225731,
+        "file": "fingerprint_v3.py",
+        "function": "<genexpr>",
+        "line": 170,
+        "own_seconds": 0.3397075
+      },
+      {
+        "calls": 170842,
+        "cumulative_seconds": 0.3933708,
+        "file": "~",
+        "function": "<method 'intersection' of 'frozenset' objects>",
+        "line": 0,
+        "own_seconds": 0.3933708
+      },
+      {
+        "calls": 73111,
+        "cumulative_seconds": 0.38848550000000004,
+        "file": "~",
+        "function": "<built-in method builtins.any>",
+        "line": 0,
+        "own_seconds": 0.0475282
+      },
+      {
+        "calls": 40528,
+        "cumulative_seconds": 0.36178360000000004,
+        "file": "recognize.py",
+        "function": "normalize_text",
+        "line": 107,
+        "own_seconds": 0.068748
+      },
+      {
+        "calls": 53330,
+        "cumulative_seconds": 0.3487967,
+        "file": "recognize.py",
+        "function": "_annual_version_evidence",
+        "line": 393,
+        "own_seconds": 0.1104012
+      },
+      {
+        "calls": 1722456,
+        "cumulative_seconds": 0.3151955,
+        "file": "~",
+        "function": "<built-in method _bisect.bisect_left>",
+        "line": 0,
+        "own_seconds": 0.3151955
+      },
+      {
+        "calls": 89270,
+        "cumulative_seconds": 0.29967160000000004,
+        "file": "__init__.py",
+        "function": "sub",
+        "line": 179,
+        "own_seconds": 0.0447769
+      },
+      {
+        "calls": 67,
+        "cumulative_seconds": 0.2694222,
+        "file": "recognize.py",
+        "function": "catalog_revision",
+        "line": 918,
+        "own_seconds": 0.0015232000000000002
+      },
+      {
+        "calls": 18912,
+        "cumulative_seconds": 0.25699160000000004,
+        "file": "recognize.py",
+        "function": "<genexpr>",
+        "line": 468,
+        "own_seconds": 0.2093807
+      },
+      {
+        "calls": 288,
+        "cumulative_seconds": 0.24249300000000001,
+        "file": "Image.py",
+        "function": "resize",
+        "line": 2215,
+        "own_seconds": 0.0015372
+      },
+      {
+        "calls": 288,
+        "cumulative_seconds": 0.23880700000000002,
+        "file": "~",
+        "function": "<method 'resize' of 'ImagingCore' objects>",
+        "line": 0,
+        "own_seconds": 0.23880700000000002
+      },
+      {
+        "calls": 48,
+        "cumulative_seconds": 0.2356571,
+        "file": "Image.py",
+        "function": "rotate",
+        "line": 2358,
+        "own_seconds": 0.00028700000000000004
+      },
+      {
+        "calls": 36,
+        "cumulative_seconds": 0.2181004,
+        "file": "Image.py",
+        "function": "transpose",
+        "line": 2972,
+        "own_seconds": 0.00015120000000000002
+      },
+      {
+        "calls": 36,
+        "cumulative_seconds": 0.21743610000000002,
+        "file": "~",
+        "function": "<method 'transpose' of 'ImagingCore' objects>",
+        "line": 0,
+        "own_seconds": 0.21743610000000002
+      },
+      {
+        "calls": 21946,
+        "cumulative_seconds": 0.1841878,
+        "file": "recognize.py",
+        "function": "_contains_phrase",
+        "line": 151,
+        "own_seconds": 0.0165717
+      },
+      {
+        "calls": 111,
+        "cumulative_seconds": 0.17723840000000002,
+        "file": "recognize.py",
+        "function": "_issuer_entities",
+        "line": 213,
+        "own_seconds": 0.0006674000000000001
+      },
+      {
+        "calls": 65,
+        "cumulative_seconds": 0.17525680000000002,
+        "file": "fingerprint_v3.py",
+        "function": "candidates",
+        "line": 132,
+        "own_seconds": 0.0104629
+      },
+      {
+        "calls": 53370,
+        "cumulative_seconds": 0.1727921,
+        "file": "recognize.py",
+        "function": "_qualifier_conflict",
+        "line": 234,
+        "own_seconds": 0.1727921
+      },
+      {
+        "calls": 89270,
+        "cumulative_seconds": 0.17063550000000002,
+        "file": "~",
+        "function": "<method 'sub' of 're.Pattern' objects>",
+        "line": 0,
+        "own_seconds": 0.17063260000000002
+      },
+      {
+        "calls": 1896,
+        "cumulative_seconds": 0.1662519,
+        "file": "__init__.py",
+        "function": "__init__",
+        "line": 595,
+        "own_seconds": 0.0025670000000000003
+      }
+    ],
+    "decision_version": "fingerprint-decision-v5",
+    "identity": {
+      "code_sha256": "850ac4f0be713917ea938dd40d9d6f835176578dbb879c02c0df468002795026",
+      "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+      "executed_at": "2026-10-12T19:39:13.442714+00:00",
+      "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+      "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+      "seed": 2026101208
+    },
+    "index": {
+      "bytes": 89725169,
+      "disk_bytes": 50850344,
+      "identities": 979,
+      "pages": 3476,
+      "resources": 1027
+    },
+    "index_build_ms": 2483.759600000667,
+    "latency_ms": {
+      "n": 402,
+      "p50": 43.0796,
+      "p95": 187.7645,
+      "p99": 322.9479
+    },
+    "ocr_end_to_end_extraction_ms": {
+      "n": 14,
+      "p50": 14993.6055,
+      "p95": 15425.669,
+      "p99": 15429.971
+    },
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.10",
+    "rss": {
+      "after_warm_bytes": 422449152,
+      "before_warm_bytes": 387149824,
+      "growth_after_warm_bytes": 181624832,
+      "samples": [
+        422449152,
+        452243456,
+        482566144,
+        513859584,
+        543604736,
+        573353984,
+        604073984
+      ]
+    },
+    "scope": "Fresh isolated process. Warm recognition excludes extraction/OCR and pre-extraction field enumeration; includes per-request text fingerprints and lazy visual rendering. No input features retained across timed requests. Fixed51 uses the same 35 synthetic+16 official inputs as R7; scan group uses fixed sorted historical scans. Component probes are non-additive, outside the latency measure; OCR e2e is reported from evaluation raw, separately. Round9 additionally measures two historical images wrapped in PDFs using their already available OCR text; OCR extraction timing is separate, before warm timing. No v5 evaluation identities selected.",
+    "startup_ms": 2491.9620000009672
+  },
+  "profile_sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe",
+  "round9_locks_verified": 57,
+  "schema": 610,
+  "software": "0.6.1",
+  "tests": {
+    "failed": 0,
+    "log_sha256": "b60c62a1c7652a89a686bcd56da2ea98e735d29a80d223e4b7801d869086c285",
+    "passed": 749,
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.10",
+    "seconds": 450.65,
+    "skipped": 3,
+    "status": "passed"
+  },
+  "unknown": {
+    "concentration": 0.6617647058823529,
+    "sources": {
+      "anac": 1,
+      "inail": 16,
+      "lavoro": 6,
+      "mimit": 45
+    },
+    "total": 68
+  },
+  "working_tree": "clean"
+}
