@@ -1,4 +1,12 @@
-# Benchmark Round 6 — NOT READY
+# Benchmark Round 7 — NOT READY
+
+<!-- round7-current-start -->
+Stato corrente: **NOT READY**. Copertura con file 81.26%; canonical 979/979; nuova robustness 183/372 (49.19%), scansioni 134/280 (47.86%), AcroForm generati 9/50 (41 fallimenti). p95 444.65 ms; 690 test passati e 3 saltati. Il [rapporto Round 7](ROUND7_REPORT.md) contiene i gate correnti, i raw v3 e i limiti. CI esterna pending_external_gate.
+
+## Archivio Round 6 — ora development
+
+Le sezioni numerate seguenti conservano la misura storica Round 6, con i suoi hash e denominatori. Non descrivono il comportamento corrente; il riepilogo Round 7 è anche in fondo a questo documento.
+<!-- round7-current-end -->
 
 ## Stato, versione e prove
 

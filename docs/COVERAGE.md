@@ -1,4 +1,12 @@
-# Copertura della candidata
+# Copertura della candidata — Round 7 NOT READY
+
+<!-- round7-current-start -->
+Stato corrente: 1216 record reali, 1212 operativi e 4 rifiutati; seed e provenienze invariati. Firme attive per 941 identità: 77.64% sul totale e 81.26% sui 1158 documenti con file. Il gate dell'85% con file fallisce. Canonical su file 979/979; autocopertura dei metadati 1169/1212, misura distinta. Dettagli nel [rapporto Round 7](ROUND7_REPORT.md) e nel riepilogo in fondo.
+
+## Archivio delle misure precedenti
+
+Le sezioni seguenti conservano i risultati Round 3 e Round 2 e non costituiscono la copertura corrente.
+<!-- round7-current-end -->
 
 Round 3 non modifica il catalogo: 1.216 record reali conservati, 1.212 operativi, quattro rifiutati con storico/provenienza. Nessuna identità o famiglia verificata aggiunta. La copertura canonica del nuovo motore è **1.162/1.212** (prima 1.191/1.212), zero identità errate: i vincoli più prudenti introducono ulteriori rifiuti. È autocopertura sintetica dei metadati, distinta dal development ufficiale 58/150 e dal primo holdout indipendente 33/127 con cinque identificazioni errate. Non si dichiara riconoscibile ogni record censito; gate e dettagli in `BENCHMARK.md`.
 

@@ -16,6 +16,21 @@ def append(path,text):
     if marker in s:s=s[:s.index(marker)].rstrip()+'\n'
     p.write_bytes((s+'\n'+text.rstrip()+'\n').encode())
 
+def current_banner(path,title,body):
+    p=ROOT/path;s=p.read_text(encoding='utf8')
+    start='<!-- round7-current-start -->';end='<!-- round7-current-end -->'
+    if start in s:
+        a=s.index(start);b=s.index(end,a)+len(end)
+        s=s[:a]+s[b:].lstrip('\n')
+    _,rest=s.split('\n',1)
+    p.write_bytes((title+'\n\n'+start+'\n'+body.rstrip()+'\n'+end+'\n\n'+rest.lstrip('\n')).encode())
+
+def benchmark_paragraph(path,text):
+    p=ROOT/path;s=p.read_text(encoding='utf8')
+    s,n=re.subn(r'(?<=## Benchmark\n\n)[^\n]+',lambda _:text,s,count=1)
+    assert n==1,path
+    p.write_bytes(s.encode())
+
 def main():
     frozen=checked();docs,families=catalog()
     data={n:read(OUT+n+'.json') for n in ['canonical','robustness_v3','scan_v3','filled_v3','retrieval_v3','unknown_v3','family_release','performance','fingerprint_coverage','decision_calibration','ci_local']}
@@ -230,8 +245,12 @@ Decision policy v3 and retrieval v2 were frozen before the fresh evaluation: {le
 Filled-form visual QA found incorrect field assignments and clipped text; administrative validity and final form quality are not claimed. R6 is now development data; v3 ran once, with no subsequent tuning. {tests['passed']} tests passed and {tests['skipped']} were skipped. External CI is pending. Public software 0.6.1, schema 610, and the 1216-document catalog are preserved. See the [full Round 7 report](docs/ROUND7_REPORT.md) for gates and limitations. No push, tag, or public release.
 """
     append('README_EN.md',brief_en)
+    benchmark_paragraph('README.md',f"Candidata Round 7 **{status}**, software pubblico 0.6.1. Catalogo: 1.216 identità reali, 1.212 operative, zero nuove identità. Copertura firme: 941/1212 ({cov['coverage_all']:.2%}), con file 941/1158 ({cov['coverage_file_backed']:.2%}); canonical 979/979; robustness 183/372 e scansioni 134/280. AcroForm generati 9/50, 41 fallimenti di generazione inclusi. p95 {perf['latency_ms']['p95']:.2f} ms. R6 è ora development. Gate, denominatori e limiti in [BENCHMARK.md](docs/BENCHMARK.md) e [ROUND7_REPORT.md](docs/ROUND7_REPORT.md). CI esterna non eseguita.")
+    benchmark_paragraph('README_EN.md',f"Round 7 candidate **{status}**; public software remains 0.6.1. Catalog: 1,216 real identities, 1,212 operational, with no new identities. Fingerprint coverage is 941/1212 ({cov['coverage_all']:.2%}) overall and 941/1158 ({cov['coverage_file_backed']:.2%}) for documents with files. Canonical recognition is 979/979; robustness is 183/372 and scans are 134/280. Only 9/50 AcroForms were generated; all 41 generation failures remain in the denominator. Recognition p95 is {perf['latency_ms']['p95']:.2f} ms. R6 is now development data. See [BENCHMARK.md](docs/BENCHMARK.md) and [ROUND7_REPORT.md](docs/ROUND7_REPORT.md) for gates and limitations. External CI is pending.")
     append('docs/BENCHMARK.md',brief.replace('(docs/ROUND7_REPORT.md)','(ROUND7_REPORT.md)')+'\n\nCoverage, canonical, robustness, filled, scan/OCR, family, unknown e regressioni sono metriche separate. V1/v2 raw e label restano visibili; R6 evaluation è development, v3 è il solo nuovo test di rappresentazioni. Unknown è storico/calibrato, non indipendente. I gate non vengono ridefiniti quando falliscono.\n')
     append('docs/COVERAGE.md',brief.replace('(docs/ROUND7_REPORT.md)','(ROUND7_REPORT.md)')+'\n\nDenominatore con file invariato1158; tutte le acquisizioni fallite restano.14 identità con byte aggiuntivi,2 attive recuperate,9 quarantene per SHA condiviso. Unsupported reale, conflitto canonico e fonti bloccate sono distinguibili negli audit.\n')
+    current_banner('docs/BENCHMARK.md',f'# Benchmark Round 7 — {status}',f"Stato corrente: **{status}**. Copertura con file {cov['coverage_file_backed']:.2%}; canonical 979/979; nuova robustness 183/372 ({value(rob,'document_recall'):.2%}), scansioni 134/280 ({value(scan,'document_recall'):.2%}), AcroForm generati 9/50 (41 fallimenti). p95 {perf['latency_ms']['p95']:.2f} ms; 690 test passati e 3 saltati. Il [rapporto Round 7](ROUND7_REPORT.md) contiene i gate correnti, i raw v3 e i limiti. CI esterna pending_external_gate.\n\n## Archivio Round 6 — ora development\n\nLe sezioni numerate seguenti conservano la misura storica Round 6, con i suoi hash e denominatori. Non descrivono il comportamento corrente; il riepilogo Round 7 è anche in fondo a questo documento.")
+    current_banner('docs/COVERAGE.md',f'# Copertura della candidata — Round 7 {status}',f"Stato corrente: 1216 record reali, 1212 operativi e 4 rifiutati; seed e provenienze invariati. Firme attive per 941 identità: {cov['coverage_all']:.2%} sul totale e {cov['coverage_file_backed']:.2%} sui 1158 documenti con file. Il gate dell'85% con file fallisce. Canonical su file 979/979; autocopertura dei metadati 1169/1212, misura distinta. Dettagli nel [rapporto Round 7](ROUND7_REPORT.md) e nel riepilogo in fondo.\n\n## Archivio delle misure precedenti\n\nLe sezioni seguenti conservano i risultati Round 3 e Round 2 e non costituiscono la copertura corrente.")
     append('DATA_NOTICE.md','## Round 7\n\nOnly hashes, public catalog metadata, real acquisition receipts and numeric/evidence benchmark outcomes are redistributed. Official files, OCR text and filled synthetic PDFs remain ignored. No identity, source, editorial verification or historical event is invented. No private upload is cached. Runtime stays local/offline/deterministic.\n')
     locked={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/OUT).rglob('*.json')) if not p.name.endswith('checkpoint.json') and p.name!='evaluation_locks.json'}
     write(OUT+'evaluation_locks.json',dict(runtime_sha256=frozen['runtime_sha256'],code_sha256=frozen['code_sha256'],sha256=locked,scope='Hashes attest immutable evidence bytes; not retrospective proof of independent selection. Prospective selection is freeze+started+plan chronology.'))

@@ -252,7 +252,7 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Candidata Round 6 **NOT READY**, software pubblico 0.6.1. Catalogo: 1.216 identità reali, 1.212 operative, zero nuove identità nel Round 6. Copertura firme: 948/1212 (78.22%); canonical 987/987; robustness 150/192. Gate, denominatori e limiti in [BENCHMARK.md](docs/BENCHMARK.md) e [ROUND6_REPORT.md](docs/ROUND6_REPORT.md). CI esterna non eseguita.
+Candidata Round 7 **NOT READY**, software pubblico 0.6.1. Catalogo: 1.216 identità reali, 1.212 operative, zero nuove identità. Copertura firme: 941/1212 (77.64%), con file 941/1158 (81.26%); canonical 979/979; robustness 183/372 e scansioni 134/280. AcroForm generati 9/50, 41 fallimenti di generazione inclusi. p95 444.65 ms. R6 è ora development. Gate, denominatori e limiti in [BENCHMARK.md](docs/BENCHMARK.md) e [ROUND7_REPORT.md](docs/ROUND7_REPORT.md). CI esterna non eseguita.
 
 ## Test
 

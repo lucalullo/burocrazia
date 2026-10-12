@@ -252,7 +252,7 @@ See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 6 candidate **NOT READY**; public software remains 0.6.1. Catalog: 1,216 real identities, 1,212 operational; no new identities in this round. Fingerprint coverage: 948/1212 (78.22%); canonical 987/987; robustness 150/192. Denominators, gates and limits: [BENCHMARK.md](docs/BENCHMARK.md), [ROUND6_REPORT.md](docs/ROUND6_REPORT.md). External CI is pending.
+Round 7 candidate **NOT READY**; public software remains 0.6.1. Catalog: 1,216 real identities, 1,212 operational, with no new identities. Fingerprint coverage is 941/1212 (77.64%) overall and 941/1158 (81.26%) for documents with files. Canonical recognition is 979/979; robustness is 183/372 and scans are 134/280. Only 9/50 AcroForms were generated; all 41 generation failures remain in the denominator. Recognition p95 is 444.65 ms. R6 is now development data. See [BENCHMARK.md](docs/BENCHMARK.md) and [ROUND7_REPORT.md](docs/ROUND7_REPORT.md) for gates and limitations. External CI is pending.
 
 ## Tests
 
