@@ -180,7 +180,7 @@ def checked():
 
 def new_plan():
     f=checked();docs,_=catalog();by={d.id:d for d in docs};excluded=set(calibration_ids());all_records=active_records()
-    cal_records=[r for r in all_records if r['document_id'] in excluded]
+    cal_records=[r for r in read_bundle()['records'] if r['document_id'] in excluded]
     shas={r['canonical_file_sha256'] for r in cal_records};urls={r['url'] for r in cal_records}|{r['final_url'] for r in cal_records}
     # Historical official unknowns also participated in development safety
     # calibration. Their bytes/URLs cannot reappear in the fresh known set.
