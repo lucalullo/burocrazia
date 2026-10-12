@@ -26,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-10-fingerprint-decision-v4"
+RULES_VERSION = "deterministic-11-fingerprint-decision-v5"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -370,6 +370,7 @@ def _generic_version_context(
     document: AdministrativeDocument,
     candidate_years: frozenset[str],
     normalized_text: str | None = None,
+    input_features: dict | None = None,
 ) -> tuple[frozenset[str], bool]:
     normalized_text = normalized_text if normalized_text is not None else normalize_text(text)
     observed: set[str] = set()
@@ -378,7 +379,7 @@ def _generic_version_context(
         if f' {base} ' in f' {normalized_text} ':
             model_present=True
             for pattern in patterns: observed.update(pattern.findall(normalized_text))
-    labelled = frozenset(re.findall(r"\b(?:versione|version|revisione|annualità)\s+((?:19|20)\d{2})\b", text, flags=re.I))
+    labelled = input_features['generic_labelled_years'] if input_features is not None and 'generic_labelled_years' in input_features else frozenset(re.findall(r"\b(?:versione|version|revisione|annualità)\s+((?:19|20)\d{2})\b", text, flags=re.I))
     if labelled and model_present:
         observed.update(labelled)
     if observed:
@@ -422,16 +423,16 @@ def _annual_version_evidence(
         return consistent and _is_plain_annual_model(document, model), not consistent
 
     if re.fullmatch(r'(?:19|20)\d{2}', document.versione or ''):
-        labelled = set(re.findall(r'\b(?:anno|annualità|annualita|versione|revisione)\s*[:/-]?\s*((?:19|20)\d{2})\b', text, re.I))
+        labelled = input_features['labelled_version_years'] if input_features is not None and 'labelled_version_years' in input_features else set(re.findall(r'\b(?:anno|annualità|annualita|versione|revisione)\s*[:/-]?\s*((?:19|20)\d{2})\b', text, re.I))
         if labelled:
             return False, labelled != {document.versione}
-        contextual, _ = _generic_version_context(text, document, candidate_years, normalized_text)
+        contextual, _ = _generic_version_context(text, document, candidate_years, normalized_text,input_features)
         return False, contextual != {document.versione}
 
     if not candidate_years:
         return False, False
     observed_years, model_mentioned = _generic_version_context(
-        text, document, candidate_years, normalized_text
+        text, document, candidate_years, normalized_text,input_features
     )
     if not observed_years:
         return False, model_mentioned
@@ -494,7 +495,7 @@ def _score_candidate(
     if (window_title or technical_title) and document.versione:
         version=document.versione.strip()
         if re.fullmatch(r'(?:19|20)\d{2}',version):
-            explicit=set(re.findall(r'\b(?:anno|annualità|annualita|versione|modello)\s*[:/-]?\s*((?:19|20)\d{2})\b',original_text,re.I))
+            explicit=input_features['labelled_identity_years'] if input_features is not None and 'labelled_identity_years' in input_features else set(re.findall(r'\b(?:anno|annualità|annualita|versione|modello)\s*[:/-]?\s*((?:19|20)\d{2})\b',original_text,re.I))
             supported=explicit=={version} or annual_alias_match
         else:
             supported=bool(re.search(r'\b(?:versione|version|revisione|rev[.]?)\s*[:=]?\s*'+re.escape(version)+r'(?!\w)',original_text,re.I))
@@ -654,6 +655,7 @@ def recognize_document(
     opening_text = normalized_text
     detected_entities = request_context.memo(('metadata_entities',text[:2000],frozenset(entity_names)),lambda:_issuer_entities(text,entity_names)) if request_context is not None else _issuer_entities(text,entity_names)
     scopes = detected_entities or _scope_entities(text, document_list, entity_names)
+    scoped_entities=tuple(d.ente for d in document_list if _catalog_features(d).entity in scopes)
     # Request-local only: uploaded text and its derivatives are never cached.
     input_features = dict(
         revisions={v.casefold() for v in re.findall(r'\b(?:versione|version|revisione|rev\.)\s*[:=]?\s*(\d+(?:[.]\d+)+)\b', text[:2000], flags=re.I)},
@@ -662,9 +664,9 @@ def recognize_document(
         opening_tokens=frozenset(opening_text.split()),
         code_lines=tuple(normalize_text(line) for line in text[:2000].splitlines()),
         title_lines=tuple(normalize_text(line) for line in text[:800].splitlines() if line.strip())[:5],
-        title_windows=title_windows(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in scopes),reference=reference_full_scan),
+        title_windows=title_windows(text,document_list,scoped_entities,reference=reference_full_scan),
         exact_code_candidates=exact_code_candidates(text,document_list,reference=reference_full_scan),
-        technical_anchors=match_anchors(text,document_list,tuple(d.ente for d in document_list if normalize_text(d.ente) in scopes)),
+        technical_anchors=match_anchors(text,document_list,scoped_entities),
         identity_tokens=frozenset(identity_tokens(text[:800])),
         annexes=frozenset(re.findall(r'^\s*Allegato\s+(?:n[.]?\s*)?([1-9]\d?)\b',text[:300],re.I|re.M)),
         unversioned_annual_peers=(_unversioned_annual_peers.__wrapped__ if reference_full_scan else _unversioned_annual_peers)(tuple(document_list)),
@@ -674,6 +676,9 @@ def recognize_document(
         # Reference computes the same new evidence without annual-analysis caches.
         input_features = dict(input_features,reference=True)
     else:
+        input_features['labelled_version_years']=frozenset(re.findall(r'\b(?:anno|annualità|annualita|versione|revisione)\s*[:/-]?\s*((?:19|20)\d{2})\b',text[:2000],re.I))
+        input_features['generic_labelled_years']=frozenset(re.findall(r'\b(?:versione|version|revisione|annualità)\s+((?:19|20)\d{2})\b',text[:2000],re.I))
+        input_features['labelled_identity_years']=frozenset(re.findall(r'\b(?:anno|annualità|annualita|versione|modello)\s*[:/-]?\s*((?:19|20)\d{2})\b',text[:2000],re.I))
         input_features['local_entity_conflicts']={entity:_local_entity_conflict(text[:2000],entity) for entity in set(d.ente for d in document_list)}
         input_features['padded_text']=f' {normalized_text} '
         input_features['heading_tokens']=frozenset(' '.join(input_features['title_lines']).split())
@@ -923,7 +928,7 @@ def catalog_revision(
         "document_fingerprints_v2": __import__('src.fingerprint_v2',fromlist=['revision']).revision(),
         "fingerprint_decision_v3": __import__('src.fingerprint_decision_v3',fromlist=['revision']).revision(),
         "document_fingerprints_v3": __import__('src.fingerprint_v3',fromlist=['revision']).revision(),
-        "fingerprint_decision_v4": __import__('src.fingerprint_decision_v4',fromlist=['revision']).revision(),
+        "fingerprint_decision_v5": __import__('src.fingerprint_decision_v5',fromlist=['revision']).revision(),
         "technical_features": feature_revision(),
         "safety_profiles": profile_revision(),
         "documents": sorted((
@@ -963,7 +968,7 @@ def recognize_catalog(
         if page_context is None:
             from src.fingerprint_pages import RequestPages,field_signature
             page_context=RequestPages((text,),field_set=field_signature(form_field_names))
-        from src.fingerprint_decision_v4 import match as match_fingerprint
+        from src.fingerprint_decision_v5 import match as match_fingerprint
         fingerprint_result=match_fingerprint(text,document_list,file_sha256=file_sha256,
             pages=page_context,field_names=form_field_names,reference=reference_full_scan,diagnostics=fingerprint_diagnostics)
     elif fingerprint_index_v2().records:
@@ -1010,13 +1015,12 @@ def recognize_catalog(
         document_result=RecognitionResult(False,0.0,reason='Metadati in conflitto con una firma testuale dominante: identità specifica rifiutata.',conflicts=('metadata_content_conflict',),candidate_ids=document_result.candidate_ids)
     if document_result.recognized and document_result.document is not None:
         version=document_result.document.versione or ''
-        from src.fingerprint_decision_v3 import metadata_revision_supported
-        if re.fullmatch(r'\d+(?:[.]\d+)+',version) and not metadata_revision_supported(text,document_result.document,operational_documents) and not re.search(
+        if re.fullmatch(r'\d+(?:[.]\d+)+',version) and not re.search(
             r'\b(?:versione|version|revisione|rev[.])\s*[:=]?\s*'+re.escape(version)+r'\b',text[:2000],re.I):
             document_result=RecognitionResult(False,0.0,reason='Revisione del modello non leggibile.',
                 conflicts=('missing_model_revision',),candidate_ids=document_result.candidate_ids)
     if not document_result.recognized and fingerprint_diagnostics:
-        policy='fingerprint-decision-v4' if fingerprint_index_v3().records else 'fingerprint-decision-v3'
+        policy='fingerprint-decision-v5' if fingerprint_index_v3().records else 'fingerprint-decision-v3'
         document_result=__import__('dataclasses').replace(document_result,reason=document_result.reason+' ['+policy+':'+str(fingerprint_diagnostics.get('reason_code') or fingerprint_diagnostics.get('tier'))+']')
     diagnostics = {
         "document_score_margin": document_result.score_margin,

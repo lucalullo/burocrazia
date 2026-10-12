@@ -1,0 +1,30 @@
+{
+  "decision_version": "fingerprint-decision-v5",
+  "engine_identity": {
+    "code_sha256": "850ac4f0be713917ea938dd40d9d6f835176578dbb879c02c0df468002795026",
+    "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+    "executed_at": "2026-10-12T19:43:02.269102+00:00",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101208
+  },
+  "evidence_sha256": {
+    "benchmarks/manifests/official_unknown_v1.json": "d1a4e6d2497bb907f463405f30c53d9fc0517cd450b97065eda69b2335083ee7",
+    "benchmarks/reference/reference_truth_v2.json": "2b7805bf622ccae617830a5e159f756c47132b426a24acf12f1d575e53ac8fec",
+    "benchmarks/results/round9/calibration_v5.json": "817cac029c2ab919ccec08831f4351e7e5eb33c8d8434cdf40289d1b7962a0a0",
+    "benchmarks/results/round9/performance.json": "14ea6163cbe5740999acf1705e0e29d961ecb95757dfff0a7b341c7b128056b3",
+    "data/recognition_profiles/fingerprint_decision_v5.json": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+  },
+  "fingerprint_version": "fingerprint-v3",
+  "prerequisites": {
+    "calibration_safety": true,
+    "canonical_safety": true,
+    "coverage_file_backed": false,
+    "coverage_operational": true,
+    "coverage_recovery_finished": true,
+    "performance_development": true,
+    "unknown_truth_adequate": false
+  },
+  "reason": "Freeze v5 non creato: coverage_file_backed, unknown_truth_adequate. Nessuna identità v5 selezionata e nessun riconoscimento v5 eseguito.",
+  "status": "not_created"
+}

@@ -240,7 +240,7 @@ def test_metadata_fallback_cannot_override_dominant_content_with_another_id(monk
     from types import SimpleNamespace
     from src.models import RecognitionResult,FamilyRecognitionResult
     import src.recognize as engine
-    import src.fingerprint_decision_v4 as decision
+    import src.fingerprint_decision_v5 as decision
     import src.fingerprint_v3 as fingerprints
     a=document();b=replace(document(9002),codice='OTHER-99')
     monkeypatch.setattr(fingerprints,'public_index',lambda:SimpleNamespace(records=[1]))

@@ -1,3 +1,7 @@
+<!-- round9-current -->
+Round 9 **NOT READY**; public version remains 0.6.1, schema 610. Two historical false accepts repaired; canonical 979/979. File coverage 81.26%; 68 confirmed unknowns from four sources, below the required size/diversity. Warm recognition p95 187.76 ms (250 ms target). No engine freeze or independent v5 evaluation. See the [Round 9 report](docs/ROUND9_REPORT.md).
+<!-- /round9-current -->
+
 # BurOCRazia
 
 **Making Italian bureaucracy easier to understand.**

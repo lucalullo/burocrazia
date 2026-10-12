@@ -1,6 +1,7 @@
 """Page-aware public signatures. Only canonical statistics enter the index cache."""
 from __future__ import annotations
 from array import array
+from bisect import bisect_left
 from collections import Counter,defaultdict
 from functools import lru_cache
 import hashlib,json,math,re,unicodedata
@@ -109,8 +110,11 @@ class FingerprintIndex:
             if r['field_set']:self.field_map[tuple(r['field_set'])].add(r['document_id'])
             for p in r['pages']:
                 q=dict(p,resource_index=rid,document_id=r['document_id']);i=len(self.pages)
-                for k in ['digital','ocr','anchors']:q[k]=array('Q',(int(h,16) for h in p[k]))
-                q['chars']={n:array('Q',(int(h,16) for h in v)) for n,v in p['chars'].items()}
+                # Immutable public integer tuples avoid repeated uint64 boxing
+                # in per-request C intersections/bisections. Weights/postings
+                # remain compact arrays. Measured complete index stays <100MB.
+                for k in ['digital','ocr','anchors']:q[k]=tuple(int(h,16) for h in p[k])
+                q['chars']={n:tuple(int(h,16) for h in v) for n,v in p['chars'].items()}
                 self.pages.append(q);record['page_indexes'].append(i)
                 for h in set(q['digital'])|set(q['ocr']):post[h].append(i)
                 for h in q['chars']['4'][:16]:cp[h].append(i)
@@ -131,7 +135,7 @@ class FingerprintIndex:
         cv=Counter(i for h in q['chars']['4'] for i in self.char_postings.get(h,()))
         return sorted({i for i,v in votes.items() if v>=3}|{i for i,v in cv.items() if v>=4})
 
-    def page_scores(self,q,ids,n='4',containment=True):
+    def page_scores_reference(self,q,ids,n='4',containment=True):
         rows=[]
         for i in ids:
             p=self.pages[i];channels=[];over=0
@@ -148,11 +152,34 @@ class FingerprintIndex:
             rows.append(dict(document_id=p['document_id'],resource_index=p['resource_index'],page_index=i,canonical_page=p['number'],digital=channels[0],ocr=channels[1],chars=char,anchors=anchor,visual=0.,overlap=over,score=score))
         return rows
 
+    def page_scores(self,q,ids,n='4',containment=True):
+        # C-level intersection skips Python membership loops and duplicate
+        # channel traversals. Sorted hits preserve the reference's summation
+        # order exactly, including float32 public IDF weights. No top-K pruning.
+        rows=[];tokens=q['tokens'];chars=q['chars'][n];anchors=q['anchors']
+        nt=len(tokens);nc=len(chars)
+        for i in ids:
+            p=self.pages[i];channels=[];over=0
+            for j,k in enumerate(('digital','ocr')):
+                hashes=p[k];hits=sorted(tokens.intersection(hashes));over=max(over,len(hits));den=self.den[i][j]
+                weights=self.page_weights[i][j]
+                score=sum(weights[bisect_left(hashes,h)] for h in hits)/den if den else 0
+                if containment and nt:score=min(1,score*max(1,p[k+'_count']/nt))
+                channels.append(score)
+            hashes=p['chars'][n];weights=self.char_weights[i][n];den=self.char_den[i][n]
+            hits=sorted(chars.intersection(hashes));char=sum(weights[bisect_left(hashes,h)] for h in hits)/den if den else 0
+            if containment and nc:char=min(1,char*max(1,p['char_counts'][n]/nc))
+            anchor=len(anchors.intersection(p['anchors']))/len(p['anchors']) if p['anchors'] else 0
+            score=.5*max(channels)+.35*char+.15*anchor
+            rows.append(dict(document_id=p['document_id'],resource_index=p['resource_index'],page_index=i,canonical_page=p['number'],digital=channels[0],ocr=channels[1],chars=char,anchors=anchor,visual=0.,overlap=over,score=score))
+        return rows
+
     def similarities(self,queries,*,n='4',aggregation='max',containment=True,reference=False,counters=None):
         aligned=defaultdict(list);initial=set();textcount=0
         for qi,q in enumerate(queries):
             ids=self.candidates(q,n,reference);initial.update(ids);textcount+=len(ids)
-            for row in self.page_scores(q,ids,n,containment):row['input_page']=qi;aligned[row['document_id']].append(row)
+            scorer=self.page_scores_reference if reference else self.page_scores
+            for row in scorer(q,ids,n,containment):row['input_page']=qi;aligned[row['document_id']].append(row)
         result=[]
         for did,rows in aligned.items():
             rows.sort(key=lambda r:(-r['score'],r['input_page'],r['canonical_page'],r['resource_index']))

@@ -745,10 +745,11 @@ def show_benchmark(catalog, families):
                  'scan_ocr':'Scansioni e OCR',
                  'unknown_official':'Documenti ufficiali sconosciuti'}[key])
         if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
-        if summary.get('benchmark_model') in ('known-family-unknown-v3','known-family-unknown-v4'):
-            if key=='known_robustness':st.text('Valutazione '+('v4' if summary.get('benchmark_model')=='known-family-unknown-v4' else 'v3')+' su identità escluse dalla calibrazione; trasformazioni sintetiche di documenti noti.')
-            if key=='unknown_official':st.text('File sconosciuti storici, usati anche nella calibrazione: nessuna nuova validazione unknown indipendente.')
+        if summary.get('benchmark_model') in ('known-family-unknown-v3','known-family-unknown-v4','known-family-unknown-v5'):
+            if key=='known_robustness':st.text('Valutazione '+summary['benchmark_model'].rsplit('-',1)[-1]+'; stato e limiti riportati sotto.')
+            if key=='unknown_official':st.text('Round 9: soltanto unknown con truth ufficiale confermata; numerosità e fonti restano gate separati.' if summary.get('benchmark_model')=='known-family-unknown-v5' else 'File sconosciuti storici, usati anche nella calibrazione: nessuna nuova validazione unknown indipendente.')
             if key=='filled_forms':st.text('Moduli con dati fittizi: campi reali o overlay negli spazi liberi; generazione verificata separatamente dal riconoscimento.')
+        if section.get('reason'):st.text(str(section['reason']))
         if section.get('status')=='not_run':
             st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')
             continue
@@ -767,7 +768,7 @@ def show_benchmark(catalog, families):
                 st.text('Latenza p50/p95 (ms): '+str(section['latency_ms'].get('p50'))+' / '+str(section['latency_ms'].get('p95')))
                 st.text('Indice fingerprint (byte): '+str(section.get('index_bytes','non disponibile')))
             else:st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
-    if summary.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4'):
+    if summary.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4','known-family-unknown-v5'):
         family=summary.get('family_identity_holdout',{})
         st.text('Famiglie valutabili: '+str(family.get('families_evaluable',0))+' / 16')
         st.text('Validazione family: '+str(family.get('capability_status','non disponibile')))

@@ -33,7 +33,7 @@ def tier(row,representation,t,*,code=False,unique_fields=False):
     if unique_fields and digital>=t['field_text'] and char>=t['chars'] and anchor>=t['anchors']:return 'C_unique_fields_compatible_identity'
     return None
 
-def match(text,documents,*,file_sha256=None,pages=None,field_names=(),reference=False,diagnostics=None):
+def match(text,documents,*,file_sha256=None,pages=None,field_names=(),reference=False,diagnostics=None,decision_profile=None,policy_version=VERSION):
     index=public_index()
     if not index.records:return None
     docs={d.id:d for d in documents if d.stato_verifica not in ['demo','rifiutato']}
@@ -54,8 +54,8 @@ def match(text,documents,*,file_sha256=None,pages=None,field_names=(),reference=
         did=next(iter(index.sha[file_sha256]));rs=[i for i,r in enumerate(index.records) if r['document_id']==did and r['canonical_file_sha256']==file_sha256 and r['status']=='active']
         if any(safe(dict(resource_index=i)) for i in rs):
             counters.update(candidates_initial=1,candidates_text=0,candidates_visual=0,page_renders=0)
-            return RecognitionResult(True,100.,docs[did],('official_file_sha256_exact','fingerprint_v3',VERSION,'A_exact_sha'), 'File ufficiale canonico identico.',score_margin=100.,candidate_ids=(did,))
-    p=profile();t=p['thresholds'];s=p['settings'];queries=request.queries()
+            return RecognitionResult(True,100.,docs[did],('official_file_sha256_exact','fingerprint_v3',policy_version,'A_exact_sha'), 'File ufficiale canonico identico.',score_margin=100.,candidate_ids=(did,))
+    p=profile() if decision_profile is None else decision_profile;t=p['thresholds'];s=p['settings'];queries=request.queries()
     if not queries or not any(len(q['tokens'])>=t['overlap'] for q in queries):return None
     def score_pages():
         counts={};base=index.similarities(queries,n=s['char_ngram'],aggregation='max',containment=s['containment'],reference=reference,counters=counts)
@@ -117,5 +117,5 @@ def match(text,documents,*,file_sha256=None,pages=None,field_names=(),reference=
     if r['status']=='shared' and not (codes=={best['document_id']} and entities):
         if diagnostics is not None:diagnostics.update(reason_code='shared_resource_ambiguous',tier='D_ambiguous')
         return None
-    signals=('content_fingerprint_match','fingerprint_v3',VERSION,choose(best),f"canonical_page:{best['canonical_page']}",*(f'{k}:{best[k]:.4f}' for k in ['digital','ocr','chars','visual','anchors']))
+    signals=('content_fingerprint_match','fingerprint_v3',policy_version,choose(best),f"canonical_page:{best['canonical_page']}",*(f'{k}:{best[k]:.4f}' for k in ['digital','ocr','chars','visual','anchors']))
     return RecognitionResult(True,min(99.,80+19*best['score']),docs[best['document_id']],signals,'Firma per pagina: '+choose(best)+'; ente e versione compatibili.',score_margin=100*(best['score']-runner),candidate_ids=tuple(r['document_id'] for r in rows if r['overlap']>=3))

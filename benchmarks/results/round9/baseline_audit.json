@@ -1,0 +1,1283 @@
+{
+  "branch": "codex/coverage-benchmark-v0.7.0",
+  "head": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+  "entry_working_tree": "clean (verified before audit files)",
+  "freeze": {
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T13:10:45.547183+00:00",
+    "calibration_sha256": "f7c8a4cccc43c0a795dc1ad71d74a9df2fa5f06b30801ee65f6423e1b5c98704",
+    "truth_sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa",
+    "profile_sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
+  },
+  "post_freeze_files": [
+    ".gitattributes",
+    "DATA_NOTICE.md",
+    "README.md",
+    "benchmarks/latest_summary.json",
+    "benchmarks/results/round8/canonical.json",
+    "benchmarks/results/round8/canonical_resource_lookup.json",
+    "benchmarks/results/round8/ci_local.json",
+    "benchmarks/results/round8/development_cli.json",
+    "benchmarks/results/round8/development_compat_cli.json",
+    "benchmarks/results/round8/evaluation_checkpoint.json",
+    "benchmarks/results/round8/evaluation_checkpoint_preserved.json",
+    "benchmarks/results/round8/evaluation_filled_visual_qa.json",
+    "benchmarks/results/round8/evaluation_interruption.json",
+    "benchmarks/results/round8/evaluation_locks.json",
+    "benchmarks/results/round8/evaluation_prepared.json",
+    "benchmarks/results/round8/evaluation_started.json",
+    "benchmarks/results/round8/evaluation_v4_leakage.json",
+    "benchmarks/results/round8/family_release.json",
+    "benchmarks/results/round8/filled_generation_audit.csv",
+    "benchmarks/results/round8/filled_v4.json",
+    "benchmarks/results/round8/fingerprint_coverage.json",
+    "benchmarks/results/round8/freeze.json",
+    "benchmarks/results/round8/historical_catalog_coverage.json",
+    "benchmarks/results/round8/historical_development_compat_v2.json",
+    "benchmarks/results/round8/historical_development_regression.json",
+    "benchmarks/results/round8/historical_family_release_v3.json",
+    "benchmarks/results/round8/historical_five.json",
+    "benchmarks/results/round8/historical_hard_negatives_v1.json",
+    "benchmarks/results/round8/historical_hard_negatives_v2.json",
+    "benchmarks/results/round8/historical_release_locked_v1.json",
+    "benchmarks/results/round8/historical_release_locked_v2.json",
+    "benchmarks/results/round8/historical_serialization_audit.json",
+    "benchmarks/results/round8/ocr_legacy_gate.json",
+    "benchmarks/results/round8/ocr_synthetic_v2.json",
+    "benchmarks/results/round8/performance.json",
+    "benchmarks/results/round8/performance_profile_components.json",
+    "benchmarks/results/round8/reconciled_truth.json",
+    "benchmarks/results/round8/retrieval_v4.json",
+    "benchmarks/results/round8/robustness_v4.json",
+    "benchmarks/results/round8/robustness_v4_evaluation_plan.json",
+    "benchmarks/results/round8/scan_failure_decomposition.csv",
+    "benchmarks/results/round8/scan_failure_decomposition.json",
+    "benchmarks/results/round8/scan_v4.json",
+    "benchmarks/results/round8/shared_resource_audit.json",
+    "benchmarks/results/round8/tests.json",
+    "benchmarks/results/round8/unknown_v4.json",
+    "docs/BENCHMARK.md",
+    "docs/ROUND8_REPORT.md",
+    "docs/release_gates.json",
+    "scripts/package_candidate.py",
+    "scripts/round8_audit_historical_serialization.py",
+    "scripts/round8_preserve_interrupted_evaluation.py",
+    "scripts/round8_report.py",
+    "scripts/round8_visual_qa_evidence.py"
+  ],
+  "post_freeze_semantic_files": [],
+  "raw_metrics": {
+    "canonical": {
+      "saved": 979,
+      "exact": 979,
+      "wrong": 0,
+      "reject": 0,
+      "recomputed": {
+        "cases": 979,
+        "passed": 979,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 979,
+            "denominator": 979,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 979,
+            "denominator": 979,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 1958,
+            "denominator": 1958,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "numerator": 979,
+            "denominator": 979,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 979,
+            "denominator": 979,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 979,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 979,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 979,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 979,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 5.491,
+          "p95": 8.053,
+          "p99": 10.7612
+        }
+      },
+      "status": "complete"
+    },
+    "robustness_v4": {
+      "saved": 50,
+      "exact": 36,
+      "wrong": 0,
+      "reject": 14,
+      "recomputed": {
+        "cases": 50,
+        "passed": 36,
+        "failed": 14,
+        "metrics": {
+          "document_precision": {
+            "numerator": 36,
+            "denominator": 36,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 36,
+            "denominator": 50,
+            "value": 0.72
+          },
+          "document_f1": {
+            "numerator": 72,
+            "denominator": 86,
+            "value": 0.8372093023255814
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 36,
+            "denominator": 50,
+            "value": 0.72
+          },
+          "useful_coverage": {
+            "numerator": 36,
+            "denominator": 50,
+            "value": 0.72
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 14,
+            "denominator": 50,
+            "value": 0.28
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 36,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 36,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 36,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 14
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 82.4534,
+          "p95": 1960.0041,
+          "p99": null
+        }
+      },
+      "status": "incomplete"
+    },
+    "scan_v4": {
+      "saved": 39,
+      "exact": 25,
+      "wrong": 0,
+      "reject": 14,
+      "recomputed": {
+        "cases": 39,
+        "passed": 25,
+        "failed": 14,
+        "metrics": {
+          "document_precision": {
+            "numerator": 25,
+            "denominator": 25,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 25,
+            "denominator": 39,
+            "value": 0.6410256410256411
+          },
+          "document_f1": {
+            "numerator": 50,
+            "denominator": 64,
+            "value": 0.78125
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 25,
+            "denominator": 39,
+            "value": 0.6410256410256411
+          },
+          "useful_coverage": {
+            "numerator": 25,
+            "denominator": 39,
+            "value": 0.6410256410256411
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 14,
+            "denominator": 39,
+            "value": 0.358974358974359
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 25,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 25,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 25,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 14
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 76.3591,
+          "p95": 1106.464,
+          "p99": null
+        }
+      },
+      "status": "incomplete"
+    },
+    "filled_v4": {
+      "saved": 5,
+      "exact": 5,
+      "wrong": 0,
+      "reject": 0,
+      "recomputed": {
+        "cases": 5,
+        "passed": 5,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 5,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 5,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 5,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 5,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 219.5901,
+          "p95": 234.9743,
+          "p99": null
+        }
+      },
+      "status": "incomplete"
+    },
+    "historical_development_compat_v2": {
+      "saved": 37,
+      "exact": 11,
+      "wrong": 2,
+      "reject": 10,
+      "recomputed": {
+        "cases": 37,
+        "passed": 35,
+        "failed": 2,
+        "metrics": {
+          "document_precision": {
+            "numerator": 11,
+            "denominator": 13,
+            "value": 0.8461538461538461
+          },
+          "document_recall": {
+            "numerator": 11,
+            "denominator": 11,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 22,
+            "denominator": 24,
+            "value": 0.9166666666666666
+          },
+          "family_precision": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 14,
+            "denominator": 16,
+            "value": 0.875
+          },
+          "family_f1": {
+            "numerator": 28,
+            "denominator": 30,
+            "value": 0.9333333333333333
+          },
+          "exact_document_coverage": {
+            "numerator": 11,
+            "denominator": 11,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 25,
+            "denominator": 25,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 2,
+            "denominator": 12,
+            "value": 0.16666666666666666
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 25,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 23,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 11,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 11,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 14,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 2,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 10
+          }
+        },
+        "latency_ms": {
+          "p50": 30.766,
+          "p95": 37.1546,
+          "p99": null
+        }
+      },
+      "status": "complete"
+    },
+    "unknown_v4": {
+      "saved": 137,
+      "exact": 0,
+      "wrong": 0,
+      "reject": 137,
+      "recomputed": {
+        "cases": 137,
+        "passed": 137,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 137,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 137,
+            "denominator": 137,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 137
+          }
+        },
+        "latency_ms": {
+          "p50": 298.8088,
+          "p95": 550.1976,
+          "p99": 681.7015
+        }
+      },
+      "status": "complete"
+    }
+  },
+  "false_accepts": [
+    {
+      "case_id": "EX02MISSINGREV",
+      "corpus": "tests/fixtures/benchmark_v2.json",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "reference_truth_status": "ambiguous",
+      "predicted_document": 13,
+      "predicted_family": null,
+      "score": 100.0,
+      "metadata_score": 100.0,
+      "runner_up": 0.0,
+      "margin": 100.0,
+      "entities": [
+        "inps"
+      ],
+      "version_evidence": [],
+      "fingerprint_channels": [
+        {
+          "document_id": 13,
+          "canonical_page": 1,
+          "digital": 0.8169046458688718,
+          "ocr": 0.6522999205107258,
+          "chars": 0.37315551143063613,
+          "anchors": 0.0,
+          "visual": 0.0,
+          "overlap": 6,
+          "score": 0.5390567519351586,
+          "max_similarity": 0.5390567519351586,
+          "top2_average": 0.5390567519351586
+        },
+        {
+          "document_id": 12,
+          "canonical_page": 1,
+          "digital": 0.5349638151394186,
+          "ocr": 0.7366143392947315,
+          "chars": 0.4017370397346641,
+          "anchors": 0.0,
+          "visual": 0.0,
+          "overlap": 6,
+          "score": 0.5089151335544981,
+          "max_similarity": 0.5089151335544981,
+          "top2_average": 0.5089151335544981
+        }
+      ],
+      "tier": "insufficient_channels",
+      "signals": [
+        "codice esatto",
+        "ente",
+        "similarità generale"
+      ],
+      "metadata_revision_inferred": true,
+      "root_cause": "Catalog-unique title/code/issuer treated as evidence of a missing revision in metadata_revision_supported; metadata fallback bypasses missing_model_revision veto.",
+      "category": "version_conflict_not_enforced"
+    },
+    {
+      "case_id": "EX03MISSINGREV",
+      "corpus": "tests/fixtures/benchmark_v2.json",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "reference_truth_status": "ambiguous",
+      "predicted_document": 12,
+      "predicted_family": null,
+      "score": 100.0,
+      "metadata_score": 100.0,
+      "runner_up": 0.0,
+      "margin": 100.0,
+      "entities": [
+        "inps"
+      ],
+      "version_evidence": [],
+      "fingerprint_channels": [
+        {
+          "document_id": 13,
+          "canonical_page": 1,
+          "digital": 0.7739096645073522,
+          "ocr": 0.6179683457470034,
+          "chars": 0.41209968564713706,
+          "anchors": 0.0,
+          "visual": 0.0,
+          "overlap": 6,
+          "score": 0.531189722230174,
+          "max_similarity": 0.531189722230174,
+          "top2_average": 0.531189722230174
+        },
+        {
+          "document_id": 12,
+          "canonical_page": 1,
+          "digital": 0.506807824868923,
+          "ocr": 0.6978451635423771,
+          "chars": 0.44366410977756865,
+          "anchors": 0.0,
+          "visual": 0.0,
+          "overlap": 6,
+          "score": 0.5042050201933376,
+          "max_similarity": 0.5042050201933376,
+          "top2_average": 0.5042050201933376
+        }
+      ],
+      "tier": "insufficient_channels",
+      "signals": [
+        "codice esatto",
+        "ente",
+        "similarità generale"
+      ],
+      "metadata_revision_inferred": true,
+      "root_cause": "Catalog-unique title/code/issuer treated as evidence of a missing revision in metadata_revision_supported; metadata fallback bypasses missing_model_revision veto.",
+      "category": "version_conflict_not_enforced"
+    }
+  ],
+  "performance": {
+    "identity": {
+      "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+      "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+      "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+      "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+      "seed": 2026101208,
+      "executed_at": "2026-10-12T18:31:35.538613+00:00"
+    },
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "catalog_load_ms": 8.659600000100909,
+    "index_build_ms": 2706.362099999751,
+    "startup_ms": 2715.021699999852,
+    "latency_ms": {
+      "n": 390,
+      "p50": 47.0724,
+      "p95": 323.0436,
+      "p99": 481.9285
+    },
+    "by_input_group": {
+      "historical_fixed51": {
+        "n": 306,
+        "p50": 43.5215,
+        "p95": 347.0361,
+        "p99": 489.9478
+      },
+      "representation:unknown": {
+        "n": 210,
+        "p50": 41.6104,
+        "p95": 53.7789,
+        "p99": 62.2559
+      },
+      "representation:digital_pdf": {
+        "n": 60,
+        "p50": 123.849,
+        "p95": 491.2924,
+        "p99": 682.9561
+      },
+      "representation:filled_acroform": {
+        "n": 30,
+        "p50": 269.2584,
+        "p95": 359.554,
+        "p99": 390.829
+      },
+      "representation:docx": {
+        "n": 6,
+        "p50": 131.0461,
+        "p95": 184.2843,
+        "p99": 198.1582
+      },
+      "historical_scans": {
+        "n": 84,
+        "p50": 114.3851,
+        "p95": 196.4671,
+        "p99": 217.0203
+      },
+      "representation:image": {
+        "n": 84,
+        "p50": 114.3851,
+        "p95": 196.4671,
+        "p99": 217.0203
+      }
+    },
+    "index": {
+      "bytes": 54455205,
+      "pages": 3476,
+      "resources": 1027,
+      "identities": 979,
+      "disk_bytes": 50850344
+    },
+    "rss": {
+      "before_warm_bytes": 324390912,
+      "after_warm_bytes": 333860864,
+      "samples": [
+        333860864,
+        337457152,
+        342155264,
+        346230784,
+        350855168,
+        354570240,
+        357433344
+      ],
+      "growth_after_warm_bytes": 23572480
+    },
+    "components": {
+      "normalization": {
+        "n": 65,
+        "p50": 0.0141,
+        "p95": 0.1873,
+        "p99": 0.322
+      },
+      "input_fingerprint_generation": {
+        "n": 65,
+        "p50": 0.5739,
+        "p95": 34.5765,
+        "p99": 56.1004
+      },
+      "candidate_retrieval": {
+        "n": 65,
+        "p50": 0.2351,
+        "p95": 2.0325,
+        "p99": 3.0522
+      },
+      "ocr_sketch_compare": {
+        "n": 65,
+        "p50": 0.0166,
+        "p95": 11.6196,
+        "p99": 17.1073
+      },
+      "char_overlap": {
+        "n": 65,
+        "p50": 0.0276,
+        "p95": 14.7666,
+        "p99": 25.4055
+      },
+      "visual_compare": {
+        "n": 65,
+        "p50": 0.0023,
+        "p95": 2.1209,
+        "p99": 2.2985
+      },
+      "decision_fusion_inclusive": {
+        "n": 65,
+        "p50": 1.6465,
+        "p95": 269.4996,
+        "p99": 378.2915
+      },
+      "family_fallback": {
+        "n": 65,
+        "p50": 1.2753,
+        "p95": 8.4636,
+        "p99": 10.2068
+      }
+    },
+    "cprofile": [
+      {
+        "file": "recognize.py",
+        "line": 943,
+        "function": "recognize_catalog",
+        "calls": 65,
+        "own_seconds": 0.0223209,
+        "cumulative_seconds": 10.5716202
+      },
+      {
+        "file": "fingerprint_pages.py",
+        "line": 47,
+        "function": "memo",
+        "calls": 370,
+        "own_seconds": 0.0237261,
+        "cumulative_seconds": 8.1688765
+      },
+      {
+        "file": "fingerprint_decision_v4.py",
+        "line": 36,
+        "function": "match",
+        "calls": 65,
+        "own_seconds": 0.0264267,
+        "cumulative_seconds": 5.7257517
+      },
+      {
+        "file": "recognize.py",
+        "line": 995,
+        "function": "metadata_document",
+        "calls": 44,
+        "own_seconds": 0.0053904,
+        "cumulative_seconds": 4.219474900000001
+      },
+      {
+        "file": "recognize.py",
+        "line": 628,
+        "function": "recognize_document",
+        "calls": 44,
+        "own_seconds": 0.5325822,
+        "cumulative_seconds": 4.2140845
+      },
+      {
+        "file": "fingerprint_decision_v4.py",
+        "line": 60,
+        "function": "score_pages",
+        "calls": 41,
+        "own_seconds": 0.008997,
+        "cumulative_seconds": 3.5438895
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 151,
+        "function": "similarities",
+        "calls": 41,
+        "own_seconds": 0.12834320000000002,
+        "cumulative_seconds": 3.5348925
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 134,
+        "function": "page_scores",
+        "calls": 63,
+        "own_seconds": 1.2546314,
+        "cumulative_seconds": 3.1447741000000002
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.sorted>",
+        "calls": 614,
+        "own_seconds": 0.12626790000000002,
+        "cumulative_seconds": 2.8439084
+      },
+      {
+        "file": "recognize.py",
+        "line": 686,
+        "function": "<genexpr>",
+        "calls": 53374,
+        "own_seconds": 0.044872100000000005,
+        "cumulative_seconds": 2.5522456
+      },
+      {
+        "file": "recognize.py",
+        "line": 444,
+        "function": "_score_candidate",
+        "calls": 53330,
+        "own_seconds": 0.6848764,
+        "cumulative_seconds": 2.5073735000000004
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.sum>",
+        "calls": 243001,
+        "own_seconds": 0.4880243,
+        "cumulative_seconds": 1.8254677000000001
+      },
+      {
+        "file": "fingerprint_pages.py",
+        "line": 51,
+        "function": "queries",
+        "calls": 65,
+        "own_seconds": 0.000273,
+        "cumulative_seconds": 1.1710583
+      },
+      {
+        "file": "fingerprint_pages.py",
+        "line": 52,
+        "function": "<genexpr>",
+        "calls": 152,
+        "own_seconds": 0.0006172,
+        "cumulative_seconds": 1.1707853000000001
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 20,
+        "function": "features",
+        "calls": 87,
+        "own_seconds": 0.0691837,
+        "cumulative_seconds": 1.1701681000000002
+      },
+      {
+        "file": "recognize.py",
+        "line": 107,
+        "function": "normalize_text",
+        "calls": 150433,
+        "own_seconds": 0.2287208,
+        "cumulative_seconds": 1.0341113
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 25,
+        "function": "<genexpr>",
+        "calls": 347928,
+        "own_seconds": 0.1454756,
+        "cumulative_seconds": 0.8778184000000001
+      },
+      {
+        "file": "fingerprint_pages.py",
+        "line": 55,
+        "function": "visual",
+        "calls": 13,
+        "own_seconds": 0.0100981,
+        "cumulative_seconds": 0.7364364
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 18,
+        "function": "char_hash",
+        "calls": 347667,
+        "own_seconds": 0.4887889,
+        "cumulative_seconds": 0.7323428000000001
+      },
+      {
+        "file": "__init__.py",
+        "line": 179,
+        "function": "sub",
+        "calls": 308820,
+        "own_seconds": 0.1409639,
+        "cumulative_seconds": 0.7290054
+      },
+      {
+        "file": "recognize.py",
+        "line": 392,
+        "function": "_annual_version_evidence",
+        "calls": 53330,
+        "own_seconds": 0.1152537,
+        "cumulative_seconds": 0.6714933000000001
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 140,
+        "function": "<genexpr>",
+        "calls": 244100,
+        "own_seconds": 0.5737621,
+        "cumulative_seconds": 0.5737621
+      },
+      {
+        "file": "fingerprint_pages.py",
+        "line": 9,
+        "function": "image_signature",
+        "calls": 10,
+        "own_seconds": 0.0319173,
+        "cumulative_seconds": 0.5442268
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 144,
+        "function": "<genexpr>",
+        "calls": 1596606,
+        "own_seconds": 0.49231240000000004,
+        "cumulative_seconds": 0.49231240000000004
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<built-in method builtins.any>",
+        "calls": 73098,
+        "own_seconds": 0.0481916,
+        "cumulative_seconds": 0.42431460000000004
+      },
+      {
+        "file": "__init__.py",
+        "line": 280,
+        "function": "_compile",
+        "calls": 423665,
+        "own_seconds": 0.22213760000000002,
+        "cumulative_seconds": 0.36447080000000004
+      },
+      {
+        "file": "recognize.py",
+        "line": 665,
+        "function": "<genexpr>",
+        "calls": 6934,
+        "own_seconds": 0.0165642,
+        "cumulative_seconds": 0.34759520000000005
+      },
+      {
+        "file": "recognize.py",
+        "line": 667,
+        "function": "<genexpr>",
+        "calls": 6934,
+        "own_seconds": 0.0164345,
+        "cumulative_seconds": 0.342187
+      },
+      {
+        "file": "__init__.py",
+        "line": 209,
+        "function": "findall",
+        "calls": 16686,
+        "own_seconds": 0.0093906,
+        "cumulative_seconds": 0.3376485
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'sub' of 're.Pattern' objects>",
+        "calls": 308820,
+        "own_seconds": 0.31485070000000004,
+        "cumulative_seconds": 0.3148536
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'findall' of 're.Pattern' objects>",
+        "calls": 16690,
+        "own_seconds": 0.3044672,
+        "cumulative_seconds": 0.3044672
+      },
+      {
+        "file": "recognize.py",
+        "line": 467,
+        "function": "<genexpr>",
+        "calls": 18912,
+        "own_seconds": 0.23600980000000002,
+        "cumulative_seconds": 0.2897459
+      },
+      {
+        "file": "recognize.py",
+        "line": 913,
+        "function": "catalog_revision",
+        "calls": 65,
+        "own_seconds": 0.0013459000000000001,
+        "cumulative_seconds": 0.24739070000000002
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 146,
+        "function": "<genexpr>",
+        "calls": 1383642,
+        "own_seconds": 0.21694680000000002,
+        "cumulative_seconds": 0.21694680000000002
+      },
+      {
+        "file": "recognize.py",
+        "line": 368,
+        "function": "_generic_version_context",
+        "calls": 7739,
+        "own_seconds": 0.0205631,
+        "cumulative_seconds": 0.18910690000000002
+      },
+      {
+        "file": "Image.py",
+        "line": 2358,
+        "function": "rotate",
+        "calls": 40,
+        "own_seconds": 0.00020260000000000002,
+        "cumulative_seconds": 0.18770330000000002
+      },
+      {
+        "file": "Image.py",
+        "line": 2215,
+        "function": "resize",
+        "calls": 240,
+        "own_seconds": 0.0010782,
+        "cumulative_seconds": 0.1843083
+      },
+      {
+        "file": "fingerprint_v3.py",
+        "line": 128,
+        "function": "candidates",
+        "calls": 63,
+        "own_seconds": 0.0108173,
+        "cumulative_seconds": 0.1822011
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<method 'resize' of 'ImagingCore' objects>",
+        "calls": 240,
+        "own_seconds": 0.18167760000000002,
+        "cumulative_seconds": 0.18167760000000002
+      },
+      {
+        "file": "recognize.py",
+        "line": 151,
+        "function": "_contains_phrase",
+        "calls": 21560,
+        "own_seconds": 0.016384700000000002,
+        "cumulative_seconds": 0.180179
+      }
+    ],
+    "counters": {
+      "candidates_initial": {
+        "n": 390,
+        "p50": 1.0,
+        "p95": 2401.0,
+        "p99": 2615.0
+      },
+      "candidates_text": {
+        "n": 390,
+        "p50": 1.0,
+        "p95": 3523.0,
+        "p99": 7132.0
+      },
+      "candidates_visual": {
+        "n": 390,
+        "p50": 0.0,
+        "p95": 1.0,
+        "p99": 5.0
+      },
+      "page_renders": 60
+    },
+    "scope": "Fresh isolated process. Warm recognition excludes extraction/OCR and pre-extraction field enumeration; includes per-request text fingerprints and lazy visual rendering. No input features retained across timed requests. Fixed51 uses the same 35 synthetic+16 official inputs as R7; scan group uses fixed sorted historical scans. Component probes are non-additive, outside the latency measure; OCR e2e is reported from evaluation raw, separately."
+  },
+  "error": {
+    "errno": 22,
+    "stage": "Path.open(wb) from Path.write_bytes in benchmarks.round3_audit.write, called at round8_evaluation checkpoint",
+    "exact_os_cause": "undetermined: original log records no winerror, lock owner, filesystem state or OS trace; attributing antivirus/locking would be conjecture",
+    "infrastructure_defect": "destructive non-atomic rewrite of entire checkpoint for each completed future, without fsync, dedupe or resume",
+    "case": "A",
+    "original_saved": 50,
+    "historical_completion_permitted": true,
+    "historical_completion_performed": false
+  }
+}

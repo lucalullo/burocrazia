@@ -27,9 +27,9 @@ def metric_label(value):
 def headline_sections(summary):
     """Stable release-evidence precedence; development never fills a holdout gap."""
     values=dict(summary)
-    if values.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4'):
+    if values.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4','known-family-unknown-v5'):
         keys=['fingerprint_coverage','known_robustness','unknown_official']
-        if values.get('benchmark_model') in ('known-family-unknown-v3','known-family-unknown-v4'):keys+=['known_canonical','filled_forms']
+        if values.get('benchmark_model') in ('known-family-unknown-v3','known-family-unknown-v4','known-family-unknown-v5'):keys+=['known_canonical','filled_forms']
         if values.get('family_identity_holdout',{}).get('families_evaluable',0)>=5:keys.append('family_identity_holdout')
         keys+=['scan_ocr','performance']
         return tuple((k,values.get(k,{'status':'not_run'})) for k in keys)

@@ -1,0 +1,1476 @@
+{
+  "by_source": {
+    "unlabelled": {
+      "cases": 37,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 11,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 14,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 12
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 66.357,
+        "p95": 71.0892,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 22,
+          "numerator": 22,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 23,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 30,
+          "numerator": 28,
+          "value": 0.9333333333333333
+        },
+        "family_precision": {
+          "denominator": 14,
+          "numerator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 16,
+          "numerator": 14,
+          "value": 0.875
+        },
+        "supported_rejection_rate": {
+          "denominator": 25,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 12,
+          "numerator": 12,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 25,
+          "numerator": 25,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 11,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 37
+    }
+  },
+  "by_transformation": {
+    "synthetic_historical": {
+      "cases": 37,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 11,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 14,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 12
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 66.357,
+        "p95": 71.0892,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 22,
+          "numerator": 22,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 23,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 11,
+          "numerator": 11,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 30,
+          "numerator": 28,
+          "value": 0.9333333333333333
+        },
+        "family_precision": {
+          "denominator": 14,
+          "numerator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 16,
+          "numerator": 14,
+          "value": 0.875
+        },
+        "supported_rejection_rate": {
+          "denominator": 25,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 12,
+          "numerator": 12,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 25,
+          "numerator": 25,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 11,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 37
+    }
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "denominator": 37,
+      "numerator": 0
+    },
+    "10": {
+      "denominator": 37,
+      "numerator": 0
+    },
+    "25": {
+      "denominator": 37,
+      "numerator": 0
+    },
+    "5": {
+      "denominator": 37,
+      "numerator": 0
+    }
+  },
+  "cases": [
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 11,
+        "entity": "INPS",
+        "match_type": "DOCUMENT_MATCH",
+        "version": "1.0"
+      },
+      "family_correct": false,
+      "group": "sr211",
+      "id": "EX01",
+      "label_status": "historical_only",
+      "matching_ms": 60.028,
+      "observed": {
+        "document_id": 11,
+        "entity": "INPS",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "1.0"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 13,
+        "entity": "INPS",
+        "match_type": "DOCUMENT_MATCH",
+        "version": "1.1"
+      },
+      "family_correct": false,
+      "group": "ci543",
+      "id": "EX02V2",
+      "label_status": "historical_only",
+      "matching_ms": 60.941,
+      "observed": {
+        "document_id": 13,
+        "entity": "INPS",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "1.1"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 12,
+        "entity": "INPS",
+        "match_type": "DOCUMENT_MATCH",
+        "version": "1.1"
+      },
+      "family_correct": false,
+      "group": "ci544",
+      "id": "EX03V2",
+      "label_status": "historical_only",
+      "matching_ms": 65.149,
+      "observed": {
+        "document_id": 12,
+        "entity": "INPS",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "1.1"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 80,
+        "entity": "Agenzia delle Entrate",
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "family_correct": false,
+      "group": "f23",
+      "id": "EX04",
+      "label_status": "historical_only",
+      "matching_ms": 64.353,
+      "observed": {
+        "document_id": 80,
+        "entity": "Agenzia delle Entrate",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 183,
+        "entity": "Agenzia delle Entrate",
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "family_correct": false,
+      "group": "f24_semplificato",
+      "id": "EX05",
+      "label_status": "historical_only",
+      "matching_ms": 62.684,
+      "observed": {
+        "document_id": 183,
+        "entity": "Agenzia delle Entrate",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 49,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "2026"
+      },
+      "family_correct": false,
+      "group": "730_2026",
+      "id": "EX06",
+      "label_status": "historical_only",
+      "matching_ms": 40.696,
+      "observed": {
+        "document_id": 49,
+        "entity": "Agenzia delle Entrate",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "2026"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 53,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "2026"
+      },
+      "family_correct": false,
+      "group": "cu_2026",
+      "id": "EX07",
+      "label_status": "historical_only",
+      "matching_ms": 38.616,
+      "observed": {
+        "document_id": 53,
+        "entity": "Agenzia delle Entrate",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "2026"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 132,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "family_correct": false,
+      "group": "inl17",
+      "id": "EX08",
+      "label_status": "historical_only",
+      "matching_ms": 40.407,
+      "observed": {
+        "document_id": 132,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "exact_real",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 133,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "family_correct": false,
+      "group": "inl29",
+      "id": "EX09",
+      "label_status": "historical_only",
+      "matching_ms": 41.5,
+      "observed": {
+        "document_id": 133,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "demo",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 1,
+        "entity": "INPS",
+        "match_type": "DOCUMENT_MATCH",
+        "version": "demo-0.1"
+      },
+      "family_correct": false,
+      "group": "demo_inps",
+      "id": "DE01",
+      "label_status": "historical_only",
+      "matching_ms": 66.287,
+      "observed": {
+        "document_id": 1,
+        "entity": "INPS",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "demo-0.1"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "demo",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "document_id": 3,
+        "entity": "INAIL",
+        "match_type": "DOCUMENT_MATCH",
+        "version": "demo-0.1"
+      },
+      "family_correct": false,
+      "group": "demo_inail",
+      "id": "DE02",
+      "label_status": "historical_only",
+      "matching_ms": 69.549,
+      "observed": {
+        "document_id": 3,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "demo-0.1"
+      },
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": true
+    },
+    {
+      "category": "family",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": "2024"
+      },
+      "family_correct": true,
+      "group": "730_2024",
+      "id": "FA01",
+      "label_status": "historical_only",
+      "matching_ms": 66.427,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "adversarial_year",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": "2024"
+      },
+      "family_correct": true,
+      "group": "730_2024",
+      "id": "FA02",
+      "label_status": "historical_only",
+      "matching_ms": 72.318,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "family_correct": true,
+      "group": "730_no_year",
+      "id": "FA03",
+      "label_status": "historical_only",
+      "matching_ms": 68.296,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": "2024"
+      },
+      "family_correct": true,
+      "group": "cu_2024",
+      "id": "FA04",
+      "label_status": "historical_only",
+      "matching_ms": 63.279,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "family_correct": true,
+      "group": "cu_no_year",
+      "id": "FA05",
+      "label_status": "historical_only",
+      "matching_ms": 66.357,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "ocr_noise_text",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": "2024"
+      },
+      "family_correct": true,
+      "group": "cu_2024",
+      "id": "FA06",
+      "label_status": "historical_only",
+      "matching_ms": 66.958,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "ocr_noise_text",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": "2024"
+      },
+      "family_correct": true,
+      "group": "730_2024",
+      "id": "FA07",
+      "label_status": "historical_only",
+      "matching_ms": 46.937,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "ader_cartella",
+      "id": "FA08",
+      "label_status": "historical_only",
+      "matching_ms": 40.285,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "ader_pagopa",
+      "id": "FA09",
+      "label_status": "historical_only",
+      "matching_ms": 51.423,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "verbale_sintetico",
+      "id": "FA10",
+      "label_status": "historical_only",
+      "matching_ms": 70.42,
+      "observed": {
+        "document_id": null,
+        "entity": "Polizia Locale / Ente locale",
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:insufficient_channels]",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "tassa_sintetica",
+      "id": "FA11",
+      "label_status": "historical_only",
+      "matching_ms": 68.515,
+      "observed": {
+        "document_id": null,
+        "entity": "Regione / Ente regionale",
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:insufficient_channels]",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "mit_pratica",
+      "id": "FA12",
+      "label_status": "historical_only",
+      "matching_ms": 66.92,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "ricetta",
+      "id": "UN01",
+      "label_status": "historical_only",
+      "matching_ms": 68.655,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:insufficient_channels] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "biblioteca",
+      "id": "UN02",
+      "label_status": "historical_only",
+      "matching_ms": 68.206,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:no_candidate] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "verbale_interno",
+      "id": "UN03",
+      "label_status": "historical_only",
+      "matching_ms": 70.782,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:no_candidate] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "certificazione_generica",
+      "id": "UN04",
+      "label_status": "historical_only",
+      "matching_ms": 68.098,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:insufficient_channels] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "universita_inventata",
+      "id": "UN05",
+      "label_status": "historical_only",
+      "matching_ms": 65.619,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "agenda",
+      "id": "UN06",
+      "label_status": "historical_only",
+      "matching_ms": 67.684,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:no_candidate] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "adversarial_entity",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "forbidden_entities": [
+          "INPS"
+        ],
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "sr211_wrong_entity",
+      "id": "AV01",
+      "label_status": "historical_only",
+      "matching_ms": 68.298,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "adversarial_entity",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "forbidden_entities": [
+          "Agenzia delle Entrate"
+        ],
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "730_wrong_entity",
+      "id": "AV02",
+      "label_status": "historical_only",
+      "matching_ms": 64.243,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "adversarial_entity",
+      "conflicts": [
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "forbidden_entities": [
+          "Agenzia delle Entrate"
+        ],
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "cu_wrong_entity",
+      "id": "AV03",
+      "label_status": "historical_only",
+      "matching_ms": 69.579,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Ente incompatibile con le famiglie candidate.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "adversarial_year",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": "2027"
+      },
+      "family_correct": true,
+      "group": "730_future",
+      "id": "AV04",
+      "label_status": "historical_only",
+      "matching_ms": 69.646,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica. [fingerprint-decision-v5:insufficient_channels]",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "adversarial_year",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "forbidden_document_versions": [
+          "2024",
+          "2026"
+        ],
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "cu_multiple_years",
+      "id": "AV05",
+      "label_status": "historical_only",
+      "matching_ms": 73.841,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Conflitti di ente o annualità impediscono l'identificazione specifica. [fingerprint-decision-v5:no_candidate]",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "ambiguous",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "f24_ambiguous",
+      "id": "AV06",
+      "label_status": "historical_only",
+      "matching_ms": 66.44,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "ambiguous",
+      "conflicts": [
+        "missing_model_revision"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "ci543",
+      "id": "EX02MISSINGREV",
+      "label_status": "ambiguous",
+      "matching_ms": 50.192,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Revisione del modello non leggibile. [fingerprint-decision-v5:insufficient_channels] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "ambiguous",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "ambiguous",
+      "conflicts": [
+        "missing_model_revision"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "ci544",
+      "id": "EX03MISSINGREV",
+      "label_status": "ambiguous",
+      "matching_ms": 48.711,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Revisione del modello non leggibile. [fingerprint-decision-v5:insufficient_channels] Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "ambiguous",
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "counts": {
+    "exact": 11,
+    "extraction_failed": 0,
+    "family": 14,
+    "reject": 12,
+    "wrong": 0
+  },
+  "identity": {
+    "code_sha256": "8b1a23ae3d4fb58139fd7d3ebf42579e399e49fa2240934073e5079e3ab4a743",
+    "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+    "executed_at": "2026-10-12T18:36:46.987106+00:00",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "runtime_sha256": "fb1236bd75a7e7ddf8c2f6b1622f9f118405f16c7dfc179d671b221487b1a9aa",
+    "seed": 2026101209
+  },
+  "schema_version": 4,
+  "scope": "Original locked expectations unchanged, historical diagnostic and safety contract; no unsupported labels promoted to confirmed.",
+  "summary": {
+    "cases": 37,
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 11,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 14,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 12
+      }
+    },
+    "failed": 0,
+    "latency_ms": {
+      "p50": 66.357,
+      "p95": 71.0892,
+      "p99": null
+    },
+    "metrics": {
+      "document_f1": {
+        "denominator": 22,
+        "numerator": 22,
+        "value": 1.0
+      },
+      "document_precision": {
+        "denominator": 11,
+        "numerator": 11,
+        "value": 1.0
+      },
+      "document_recall": {
+        "denominator": 11,
+        "numerator": 11,
+        "value": 1.0
+      },
+      "entity_error_rate": {
+        "denominator": 23,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_document_coverage": {
+        "denominator": 11,
+        "numerator": 11,
+        "value": 1.0
+      },
+      "family_f1": {
+        "denominator": 30,
+        "numerator": 28,
+        "value": 0.9333333333333333
+      },
+      "family_precision": {
+        "denominator": 14,
+        "numerator": 14,
+        "value": 1.0
+      },
+      "family_recall": {
+        "denominator": 16,
+        "numerator": 14,
+        "value": 0.875
+      },
+      "supported_rejection_rate": {
+        "denominator": 25,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "denominator": 12,
+        "numerator": 12,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "denominator": 12,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "useful_coverage": {
+        "denominator": 25,
+        "numerator": 25,
+        "value": 1.0
+      },
+      "version_year_error_rate": {
+        "denominator": 11,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    "passed": 37
+  }
+}

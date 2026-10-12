@@ -1,353 +1,252 @@
 {
-  "round": 8,
-  "status": "NOT READY",
-  "software_version": "0.6.1",
   "candidate_target": "0.7.0",
-  "schema": 610,
-  "identity": {
-    "commit": "76a8596c96a9ac4080b5b3a8a09b25e38fd5cb75",
-    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
-    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
-    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
-    "seed": 2026101208,
-    "executed_at": "2026-10-12T18:13:12.645273+00:00"
-  },
-  "freeze": {
-    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
-    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
-    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
-    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
-    "seed": 2026101208,
-    "executed_at": "2026-10-12T13:10:45.547183+00:00",
-    "calibration_sha256": "f7c8a4cccc43c0a795dc1ad71d74a9df2fa5f06b30801ee65f6423e1b5c98704",
-    "truth_sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa",
-    "profile_sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
-  },
-  "local_gates_passed": false,
+  "ci": "external_pending",
+  "freeze": null,
+  "freeze_status": "not_created",
   "gates": [
     {
-      "gate": "truth_classified",
-      "target": "0 unclassified",
-      "actual": 0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "canonical_resource_lookup",
-      "target": "100% bytes lookup",
-      "actual": 1027,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "reconciled_confirmed_truth",
-      "target": "all confirmed correct",
-      "actual": 2,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "coverage_file_backed",
-      "target": ">=85%",
-      "actual": 0.812607944732297,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "coverage_all",
-      "target": ">=70%",
-      "actual": 0.7764026402640264,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "evaluation_complete",
-      "target": "all prepared observations persisted",
-      "actual": {
-        "prepared": 356,
-        "persisted": 50,
-        "complete": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "evaluation_identities",
-      "target": ">=25, target40",
-      "actual": 6,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "evaluation_sources",
-      "target": ">=5, target8",
-      "actual": 3,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "source_concentration",
-      "target": "<=30%",
-      "actual": 0.5,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "evaluation_representations",
-      "target": ">=350",
-      "actual": 50,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "scan_representations",
-      "target": ">=200",
-      "actual": 39,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "filled_valid",
-      "target": ">=30, target50",
-      "actual": 5,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "canonical_document_precision",
-      "target": ">=100.00%",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "canonical_document_recall",
-      "target": ">=100.00%",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "robustness_document_precision",
-      "target": ">=99.50%",
-      "actual": {
-        "partial_observed": 1.0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "robustness_document_recall",
-      "target": ">=90.00%",
-      "actual": {
-        "partial_observed": 0.72,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "scan_document_precision",
-      "target": ">=99.50%",
-      "actual": {
-        "partial_observed": 1.0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "scan_document_recall",
-      "target": ">=85.00%",
-      "actual": {
-        "partial_observed": 0.6410256410256411,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "filled_document_precision",
-      "target": ">=99.50%",
-      "actual": {
-        "partial_observed": 1.0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "filled_document_recall",
-      "target": ">=90.00%",
-      "actual": {
-        "partial_observed": 1.0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "wrong_accepted",
-      "target": "<=0.5%",
-      "actual": {
-        "partial_observed": 0.0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "entity_error_rate",
-      "target": "0",
-      "actual": {
-        "partial_numerator": 0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "version_year_error_rate",
-      "target": "0",
-      "actual": {
-        "partial_numerator": 0,
-        "qualified": false
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "filled_generation",
-      "target": ">=90%",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "unknown_confirmed_main",
-      "target": ">=99%, confirmed labels",
-      "actual": null,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "unknown_historical_rejection",
-      "target": ">=99% diagnostic",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": false
-    },
-    {
+      "actual": [],
+      "blocking": true,
       "gate": "historical_safety",
-      "target": "zero historical NO false accepts and wrong identities",
-      "actual": {
-        "false_accepts": [
-          "EX02MISSINGREV",
-          "EX03MISSINGREV"
-        ],
-        "wrong_identities": []
-      },
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "historical_five",
-      "target": "5 safe",
-      "actual": 5,
       "passed": true,
-      "blocking": true
+      "target": "0 false accepts on historical NO"
     },
     {
-      "gate": "R061",
-      "target": "NO_MATCH",
+      "actual": 0,
+      "blocking": true,
+      "gate": "round8_two_false_accepts",
+      "passed": true,
+      "target": "0/2 accepted"
+    },
+    {
       "actual": "NO_MATCH",
+      "blocking": true,
+      "gate": "R061",
       "passed": true,
-      "blocking": true
+      "target": "NO_MATCH"
     },
     {
-      "gate": "real_ocr",
-      "target": "7/7 +14/14",
-      "actual": {
-        "legacy": 7,
-        "synthetic": 14
-      },
+      "actual": 0,
+      "blocking": true,
+      "gate": "truth_v2_complete",
       "passed": true,
-      "blocking": true
+      "target": "0 unclassified"
     },
     {
-      "gate": "performance_p50",
-      "target": "<=150ms",
-      "actual": 65.9726,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "performance_p95",
-      "target": "<=250ms",
-      "actual": 350.1267,
+      "actual": 68,
+      "blocking": true,
+      "gate": "unknown_confirmed_count",
       "passed": false,
-      "blocking": true
+      "target": ">=100,target150"
     },
     {
-      "gate": "index_memory",
-      "target": "<=100000000 bytes",
-      "actual": 54455205,
-      "passed": true,
-      "blocking": true
+      "actual": 4,
+      "blocking": true,
+      "gate": "unknown_sources",
+      "passed": false,
+      "target": ">=8"
     },
     {
-      "gate": "tests",
-      "target": "all green",
+      "actual": 0.6617647058823529,
+      "blocking": true,
+      "gate": "unknown_concentration",
+      "passed": false,
+      "target": "<=25%"
+    },
+    {
       "actual": {
-        "passed": 726,
-        "skipped": 3,
+        "correct": 68,
+        "false_accepts": 0,
+        "total": 68
+      },
+      "blocking": true,
+      "gate": "unknown_rejection",
+      "passed": true,
+      "target": ">=99%, no DOCUMENT/FAMILY accept"
+    },
+    {
+      "actual": 0.812607944732297,
+      "blocking": true,
+      "gate": "coverage_file_backed",
+      "passed": false,
+      "target": ">=85%"
+    },
+    {
+      "actual": 0.7764026402640264,
+      "blocking": true,
+      "gate": "coverage_all",
+      "passed": true,
+      "target": ">=70%"
+    },
+    {
+      "actual": {
+        "exact": 979,
+        "extraction_failed": 0,
+        "family": 0,
+        "reject": 0,
+        "wrong": 0
+      },
+      "blocking": true,
+      "gate": "canonical",
+      "passed": true,
+      "target": "100% P/R"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_identities",
+      "passed": false,
+      "target": ">=30"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_sources",
+      "passed": false,
+      "target": ">=6"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_representations",
+      "passed": false,
+      "target": ">=400"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_scans",
+      "passed": false,
+      "target": ">=200"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_valid_fills",
+      "passed": false,
+      "target": ">=50"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_overall",
+      "passed": false,
+      "target": "P>=99.5%,R>=90%,entity/version errors0"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_scan",
+      "passed": false,
+      "target": "P>=99.5%,R>=85%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_filled",
+      "passed": false,
+      "target": "generation>=90%,P>=99.5%,R>=90%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_retrieval_at25",
+      "passed": false,
+      "target": "100%"
+    },
+    {
+      "actual": 43.0796,
+      "blocking": true,
+      "gate": "performance_p50",
+      "passed": true,
+      "target": "<=150ms"
+    },
+    {
+      "actual": 187.7645,
+      "blocking": true,
+      "gate": "performance_p95",
+      "passed": true,
+      "target": "<=250ms"
+    },
+    {
+      "actual": 89725169,
+      "blocking": true,
+      "gate": "index_memory",
+      "passed": true,
+      "target": "<=100000000bytes"
+    },
+    {
+      "actual": {
+        "after_warm_bytes": 422449152,
+        "before_warm_bytes": 387149824,
+        "growth_after_warm_bytes": 181624832,
+        "samples": [
+          422449152,
+          452243456,
+          482566144,
+          513859584,
+          543604736,
+          573353984,
+          604073984
+        ]
+      },
+      "blocking": false,
+      "gate": "process_memory_stability",
+      "passed": false,
+      "target": "measurement only; stability not established"
+    },
+    {
+      "actual": {
         "failed": 0,
-        "seconds": 507.93,
-        "log_sha256": "23872aa1bc336c27e9987f3a11b7905e8449aa647a539e5d25d65ead7528d75f",
+        "log_sha256": "b60c62a1c7652a89a686bcd56da2ea98e735d29a80d223e4b7801d869086c285",
+        "passed": 749,
         "platform": "Windows-11-10.0.26300-SP0",
         "python": "3.12.10",
-        "post_report_checks": {
-          "passed": 75,
-          "failed": 0,
-          "seconds": 11.15,
-          "log_sha256": "53aa8566ffb6386c77be33d8b4ead2439427c2cfe3fdfede259c0aa4ac28981f",
-          "scope": "Targeted UI/static-summary checks after reporting; not additional distinct tests."
-        }
+        "seconds": 450.65,
+        "skipped": 3,
+        "status": "passed"
       },
+      "blocking": true,
+      "gate": "tests",
       "passed": true,
-      "blocking": true
+      "target": "all green"
     },
     {
-      "gate": "external_ci",
-      "target": "pending -> local RC only",
-      "actual": "pending_external_gate",
-      "passed": false,
-      "blocking": false
-    },
-    {
-      "gate": "family_validation",
-      "target": ">=5 evaluable; otherwise exact useful gate",
       "actual": 0,
+      "blocking": false,
+      "gate": "family",
       "passed": false,
-      "blocking": false
+      "target": ">=5 evaluable or experimental"
+    },
+    {
+      "actual": "external_pending",
+      "blocking": false,
+      "gate": "CI",
+      "passed": false,
+      "target": "external_pending"
     }
   ],
+  "identity": {
+    "code_sha256": "850ac4f0be713917ea938dd40d9d6f835176578dbb879c02c0df468002795026",
+    "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+    "executed_at": "2026-10-12T19:43:02.269102+00:00",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101208
+  },
+  "local_gates_passed": false,
+  "round": 9,
+  "schema": 610,
+  "software_version": "0.6.1",
+  "status": "NOT READY",
   "tests": {
-    "passed": 726,
-    "skipped": 3,
     "failed": 0,
-    "seconds": 507.93,
-    "log_sha256": "23872aa1bc336c27e9987f3a11b7905e8449aa647a539e5d25d65ead7528d75f",
+    "log_sha256": "b60c62a1c7652a89a686bcd56da2ea98e735d29a80d223e4b7801d869086c285",
+    "passed": 749,
     "platform": "Windows-11-10.0.26300-SP0",
     "python": "3.12.10",
-    "post_report_checks": {
-      "passed": 75,
-      "failed": 0,
-      "seconds": 11.15,
-      "log_sha256": "53aa8566ffb6386c77be33d8b4ead2439427c2cfe3fdfede259c0aa4ac28981f",
-      "scope": "Targeted UI/static-summary checks after reporting; not additional distinct tests."
-    }
-  },
-  "ci": "pending_external_gate"
+    "seconds": 450.65,
+    "skipped": 3,
+    "status": "passed"
+  }
 }

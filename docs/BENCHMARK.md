@@ -1,3 +1,9 @@
+<!-- round9-current -->
+# Round 9 — NOT READY
+
+Software 0.6.1/schema 610. Canonical 979/979, due falsi accept riparati; 68 unknown confermati, corpus insufficiente. Copertura file 81.26%; warm recognition p95 187.76 ms (target 250 ms). V5 non selezionata/eseguita: prerequisiti freeze non raggiunti. R8 v4 originale 50/356 immutata, solo diagnostica storica. Dettagli e gate: `docs/ROUND9_REPORT.md`.
+<!-- /round9-current -->
+
 <!-- round8-current -->
 # Benchmark Round 8 — NOT READY
 

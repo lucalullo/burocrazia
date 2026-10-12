@@ -1,0 +1,1206 @@
+{
+  "by_source": {
+    "unlabelled": {
+      "cases": 30,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 30
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 45.4,
+        "p95": 54.3646,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 30,
+          "numerator": 30,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 30,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 30
+    }
+  },
+  "by_transformation": {
+    "synthetic_historical": {
+      "cases": 30,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 30
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 45.4,
+        "p95": 54.3646,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 30,
+          "numerator": 30,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 30,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 30
+    }
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "denominator": 30,
+      "numerator": 0
+    },
+    "10": {
+      "denominator": 30,
+      "numerator": 0
+    },
+    "25": {
+      "denominator": 30,
+      "numerator": 0
+    },
+    "5": {
+      "denominator": 30,
+      "numerator": 0
+    }
+  },
+  "cases": [
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:0",
+      "id": "H000",
+      "label_status": "historical_only",
+      "matching_ms": 9.504,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:no_candidate] Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:1",
+      "id": "H001",
+      "label_status": "historical_only",
+      "matching_ms": 11.012,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:no_candidate] Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:2",
+      "id": "H002",
+      "label_status": "historical_only",
+      "matching_ms": 9.446,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:3",
+      "id": "H003",
+      "label_status": "historical_only",
+      "matching_ms": 8.042,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:4",
+      "id": "H004",
+      "label_status": "historical_only",
+      "matching_ms": 7.263,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:5",
+      "id": "H005",
+      "label_status": "historical_only",
+      "matching_ms": 48.151,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:6",
+      "id": "H006",
+      "label_status": "historical_only",
+      "matching_ms": 54.465,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:7",
+      "id": "H007",
+      "label_status": "historical_only",
+      "matching_ms": 54.242,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:8",
+      "id": "H008",
+      "label_status": "historical_only",
+      "matching_ms": 56.215,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Ente incompatibile con le famiglie candidate.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:9",
+      "id": "H009",
+      "label_status": "historical_only",
+      "matching_ms": 48.536,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:10",
+      "id": "H010",
+      "label_status": "historical_only",
+      "matching_ms": 43.169,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:11",
+      "id": "H011",
+      "label_status": "historical_only",
+      "matching_ms": 42.724,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:12",
+      "id": "H012",
+      "label_status": "historical_only",
+      "matching_ms": 45.516,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:13",
+      "id": "H013",
+      "label_status": "historical_only",
+      "matching_ms": 46.374,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:14",
+      "id": "H014",
+      "label_status": "historical_only",
+      "matching_ms": 48.389,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:15",
+      "id": "H015",
+      "label_status": "historical_only",
+      "matching_ms": 50.788,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:16",
+      "id": "H016",
+      "label_status": "historical_only",
+      "matching_ms": 45.536,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:17",
+      "id": "H017",
+      "label_status": "historical_only",
+      "matching_ms": 46.186,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:18",
+      "id": "H018",
+      "label_status": "historical_only",
+      "matching_ms": 6.021,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:19",
+      "id": "H019",
+      "label_status": "historical_only",
+      "matching_ms": 46.685,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:20",
+      "id": "H020",
+      "label_status": "historical_only",
+      "matching_ms": 6.802,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:21",
+      "id": "H021",
+      "label_status": "historical_only",
+      "matching_ms": 5.946,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:22",
+      "id": "H022",
+      "label_status": "historical_only",
+      "matching_ms": 6.324,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:23",
+      "id": "H023",
+      "label_status": "historical_only",
+      "matching_ms": 6.47,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:24",
+      "id": "H024",
+      "label_status": "historical_only",
+      "matching_ms": 45.284,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:25",
+      "id": "H025",
+      "label_status": "historical_only",
+      "matching_ms": 46.628,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:26",
+      "id": "H026",
+      "label_status": "historical_only",
+      "matching_ms": 51.78,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:27",
+      "id": "H027",
+      "label_status": "historical_only",
+      "matching_ms": 47.717,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:28",
+      "id": "H028",
+      "label_status": "historical_only",
+      "matching_ms": 44.833,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "unknown",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard:29",
+      "id": "H029",
+      "label_status": "historical_only",
+      "matching_ms": 43.933,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "representation": "synthetic_historical",
+      "truth_status": "historical_expected_preserved",
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "counts": {
+    "exact": 0,
+    "extraction_failed": 0,
+    "family": 0,
+    "reject": 30,
+    "wrong": 0
+  },
+  "identity": {
+    "code_sha256": "8b1a23ae3d4fb58139fd7d3ebf42579e399e49fa2240934073e5079e3ab4a743",
+    "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+    "executed_at": "2026-10-12T18:36:42.405452+00:00",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "runtime_sha256": "fb1236bd75a7e7ddf8c2f6b1622f9f118405f16c7dfc179d671b221487b1a9aa",
+    "seed": 2026101209
+  },
+  "schema_version": 4,
+  "scope": "Original locked expectations unchanged, historical diagnostic and safety contract; no unsupported labels promoted to confirmed.",
+  "summary": {
+    "cases": 30,
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 30
+      }
+    },
+    "failed": 0,
+    "latency_ms": {
+      "p50": 45.4,
+      "p95": 54.3646,
+      "p99": null
+    },
+    "metrics": {
+      "document_f1": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "document_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "denominator": 30,
+        "numerator": 30,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "denominator": 30,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "useful_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      }
+    },
+    "passed": 30
+  }
+}

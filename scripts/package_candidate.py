@@ -122,6 +122,31 @@ def main():
                 assert evidence(name)
             for name in ['filled_generation_audit','scan_failure_decomposition']:
                 assert archive.read('BurOCRazia/benchmarks/results/round8/'+name+'.csv')
+        if round_number==9:
+            from src.fingerprint_v3 import validate as validate_v3
+            from benchmarks.truth_v2 import validate_registry,validate_unknown
+            validate_v3(json.loads(archive.read('BurOCRazia/data/document_recognition_fingerprints_v3.json')))
+            assert hashlib.sha256(archive.read('BurOCRazia/data/document_recognition_fingerprints_v3.json')).hexdigest()==gates['identity']['fingerprint_sha256']
+            validate_registry(json.loads(archive.read('BurOCRazia/benchmarks/reference/reference_truth_v2.json')))
+            manifest9=validate_unknown(json.loads(archive.read('BurOCRazia/benchmarks/manifests/official_unknown_v1.json')))
+            assert gates['status']=='NOT READY' and gates['freeze'] is None and not gates['local_gates_passed']
+            assert 'BurOCRazia/benchmarks/results/round9/freeze.json' not in names
+            locks9=json.loads(archive.read('BurOCRazia/benchmarks/results/round9/evidence_locks.json'))
+            for path,digest in locks9['sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            for path,digest in locks9['historical_original_git_sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            prior_raw_archive_count=len(locks9['historical_original_git_sha256'])
+            for name in ['robustness_v5','scan_v5','filled_v5','retrieval_v5','evaluation_v5_leakage']:
+                r=json.loads(archive.read('BurOCRazia/benchmarks/results/round9/'+name+'.json'))
+                assert r['status']=='not_run' and r['cases']==[] and r['summary']['metrics']=={} and r['recognition_calls']==0
+            unknown9=json.loads(archive.read('BurOCRazia/benchmarks/results/round9/unknown_v1.json'))
+            assert {c['case_id'] for c in manifest9['cases']}=={c['id'] for c in unknown9['cases']}
+            latest9=json.loads(archive.read('BurOCRazia/benchmarks/latest_summary.json'))
+            for name in ['known_robustness','scan_ocr','filled_forms']:assert latest9[name]['status']=='not_run' and not latest9[name]['summary']['metrics']
+            assert archive.read('BurOCRazia/benchmarks/round8_fill.py')==subprocess.check_output(['git','show','fa2a307:benchmarks/round8_fill.py'],cwd=ROOT)
+            checkpoint9=archive.read('BurOCRazia/benchmarks/results/round8/evaluation_checkpoint.json')
+            assert checkpoint9==archive.read('BurOCRazia/benchmarks/results/round8/evaluation_checkpoint_preserved.json')
+            assert hashlib.sha256(checkpoint9).hexdigest()=='0ab7fa7827bd6c1674a518bd127131866b62a8b48195273ecbc6cbed2c2585d2'
+            for path in ['docs/ROUND9_BASELINE_AUDIT.md','docs/REFERENCE_TRUTH_V2.md','docs/ROUND9_REPORT.md','docs/BENCHMARK.md','benchmarks/results/round9/unknown_truth_audit.csv','benchmarks/results/round9/fingerprint_recovery_v2.csv','benchmarks/results/round9/historical_false_acceptance_audit.md','benchmarks/results/round9/performance_profile_v2.json','benchmarks/results/round9/calibration_v5.json','benchmarks/results/round9/tests.json']:assert archive.read('BurOCRazia/'+path),path
         if round_number==7:
             freeze=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/freeze.json'))
             for key in ['runtime_sha256','code_sha256','fingerprint_sha256']:assert freeze[key]==gates['identity'][key]
@@ -144,7 +169,8 @@ def main():
                 assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
             assert locks['runtime_sha256']==gates['identity']['runtime_sha256']
         assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
-    report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope='105 tracked historical Git blobs unchanged from the initial Round7 commit, including 18 preexisting LF Git/CRLF workspace differences with identical JSON. All 110 workspace raw hashes unchanged; five historically ignored development checkpoints intentionally excluded from Git archive. Locked corpus byte hashes verified separately without normalization.')
+    historical_scope='Original R6/R7/R8 tracked Git blobs unchanged from the Round9 baseline; evidence_locks.json lists their byte hashes. All 110 R6/R7 physical workspace hashes separately verified. Historical ignored checkpoints intentionally excluded. Locked corpus byte hashes verified without normalization.' if round_number==9 else '105 tracked historical Git blobs unchanged from the initial Round7 commit, including 18 preexisting LF Git/CRLF workspace differences with identical JSON. All 110 workspace raw hashes unchanged; five historically ignored development checkpoints intentionally excluded from Git archive. Locked corpus byte hashes verified separately without normalization.'
+    report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))

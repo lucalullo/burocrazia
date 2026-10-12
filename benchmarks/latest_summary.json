@@ -1,1663 +1,19 @@
 {
-  "schema_version": 1,
-  "benchmark_model": "known-family-unknown-v4",
-  "status": "NOT READY",
-  "software_version": "0.6.1",
+  "benchmark_model": "known-family-unknown-v5",
   "candidate_target": "0.7.0",
-  "catalog_semantic_sha256": "sha256:ba9b3eb2ca803f4e25b8d975ef7d9103f77f28b5ef79eed73ba661d18fd5a76c",
-  "release_gate": {
-    "round": 8,
-    "status": "NOT READY",
-    "software_version": "0.6.1",
-    "candidate_target": "0.7.0",
-    "schema": 610,
-    "identity": {
-      "commit": "76a8596c96a9ac4080b5b3a8a09b25e38fd5cb75",
-      "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
-      "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
-      "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
-      "seed": 2026101208,
-      "executed_at": "2026-10-12T18:13:12.645273+00:00"
-    },
-    "freeze": {
-      "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
-      "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
-      "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
-      "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
-      "seed": 2026101208,
-      "executed_at": "2026-10-12T13:10:45.547183+00:00",
-      "calibration_sha256": "f7c8a4cccc43c0a795dc1ad71d74a9df2fa5f06b30801ee65f6423e1b5c98704",
-      "truth_sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa",
-      "profile_sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
-    },
-    "local_gates_passed": false,
-    "gates": [
-      {
-        "gate": "truth_classified",
-        "target": "0 unclassified",
-        "actual": 0,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "canonical_resource_lookup",
-        "target": "100% bytes lookup",
-        "actual": 1027,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "reconciled_confirmed_truth",
-        "target": "all confirmed correct",
-        "actual": 2,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "coverage_file_backed",
-        "target": ">=85%",
-        "actual": 0.812607944732297,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "coverage_all",
-        "target": ">=70%",
-        "actual": 0.7764026402640264,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "evaluation_complete",
-        "target": "all prepared observations persisted",
-        "actual": {
-          "prepared": 356,
-          "persisted": 50,
-          "complete": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "evaluation_identities",
-        "target": ">=25, target40",
-        "actual": 6,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "evaluation_sources",
-        "target": ">=5, target8",
-        "actual": 3,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "source_concentration",
-        "target": "<=30%",
-        "actual": 0.5,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "evaluation_representations",
-        "target": ">=350",
-        "actual": 50,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "scan_representations",
-        "target": ">=200",
-        "actual": 39,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "filled_valid",
-        "target": ">=30, target50",
-        "actual": 5,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "canonical_document_precision",
-        "target": ">=100.00%",
-        "actual": 1.0,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "canonical_document_recall",
-        "target": ">=100.00%",
-        "actual": 1.0,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "robustness_document_precision",
-        "target": ">=99.50%",
-        "actual": {
-          "partial_observed": 1.0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "robustness_document_recall",
-        "target": ">=90.00%",
-        "actual": {
-          "partial_observed": 0.72,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "scan_document_precision",
-        "target": ">=99.50%",
-        "actual": {
-          "partial_observed": 1.0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "scan_document_recall",
-        "target": ">=85.00%",
-        "actual": {
-          "partial_observed": 0.6410256410256411,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "filled_document_precision",
-        "target": ">=99.50%",
-        "actual": {
-          "partial_observed": 1.0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "filled_document_recall",
-        "target": ">=90.00%",
-        "actual": {
-          "partial_observed": 1.0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "wrong_accepted",
-        "target": "<=0.5%",
-        "actual": {
-          "partial_observed": 0.0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "entity_error_rate",
-        "target": "0",
-        "actual": {
-          "partial_numerator": 0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "version_year_error_rate",
-        "target": "0",
-        "actual": {
-          "partial_numerator": 0,
-          "qualified": false
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "filled_generation",
-        "target": ">=90%",
-        "actual": 1.0,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "unknown_confirmed_main",
-        "target": ">=99%, confirmed labels",
-        "actual": null,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "unknown_historical_rejection",
-        "target": ">=99% diagnostic",
-        "actual": 1.0,
-        "passed": true,
-        "blocking": false
-      },
-      {
-        "gate": "historical_safety",
-        "target": "zero historical NO false accepts and wrong identities",
-        "actual": {
-          "false_accepts": [
-            "EX02MISSINGREV",
-            "EX03MISSINGREV"
-          ],
-          "wrong_identities": []
-        },
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "historical_five",
-        "target": "5 safe",
-        "actual": 5,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "R061",
-        "target": "NO_MATCH",
-        "actual": "NO_MATCH",
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "real_ocr",
-        "target": "7/7 +14/14",
-        "actual": {
-          "legacy": 7,
-          "synthetic": 14
-        },
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "performance_p50",
-        "target": "<=150ms",
-        "actual": 65.9726,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "performance_p95",
-        "target": "<=250ms",
-        "actual": 350.1267,
-        "passed": false,
-        "blocking": true
-      },
-      {
-        "gate": "index_memory",
-        "target": "<=100000000 bytes",
-        "actual": 54455205,
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "tests",
-        "target": "all green",
-        "actual": {
-          "passed": 726,
-          "skipped": 3,
-          "failed": 0,
-          "seconds": 507.93,
-          "log_sha256": "23872aa1bc336c27e9987f3a11b7905e8449aa647a539e5d25d65ead7528d75f",
-          "platform": "Windows-11-10.0.26300-SP0",
-          "python": "3.12.10",
-          "post_report_checks": {
-            "passed": 75,
-            "failed": 0,
-            "seconds": 11.15,
-            "log_sha256": "53aa8566ffb6386c77be33d8b4ead2439427c2cfe3fdfede259c0aa4ac28981f",
-            "scope": "Targeted UI/static-summary checks after reporting; not additional distinct tests."
-          }
-        },
-        "passed": true,
-        "blocking": true
-      },
-      {
-        "gate": "external_ci",
-        "target": "pending -> local RC only",
-        "actual": "pending_external_gate",
-        "passed": false,
-        "blocking": false
-      },
-      {
-        "gate": "family_validation",
-        "target": ">=5 evaluable; otherwise exact useful gate",
-        "actual": 0,
-        "passed": false,
-        "blocking": false
-      }
-    ],
-    "tests": {
-      "passed": 726,
-      "skipped": 3,
-      "failed": 0,
-      "seconds": 507.93,
-      "log_sha256": "23872aa1bc336c27e9987f3a11b7905e8449aa647a539e5d25d65ead7528d75f",
-      "platform": "Windows-11-10.0.26300-SP0",
-      "python": "3.12.10",
-      "post_report_checks": {
-        "passed": 75,
-        "failed": 0,
-        "seconds": 11.15,
-        "log_sha256": "53aa8566ffb6386c77be33d8b4ead2439427c2cfe3fdfede259c0aa4ac28981f",
-        "scope": "Targeted UI/static-summary checks after reporting; not additional distinct tests."
-      }
-    },
-    "ci": "pending_external_gate"
-  },
-  "fingerprint_coverage": {
-    "status": "executed",
-    "operational_docs_total": 1212,
-    "file_backed_operational_docs": 1158,
-    "fingerprinted_all_operational_docs": 941,
-    "fingerprinted_file_backed_docs": 941,
-    "metadata_only_docs": 54,
-    "dynamic_service_docs": 0,
-    "coverage_all": 0.7764026402640264,
-    "coverage_file_backed": 0.812607944732297,
-    "by_source": {
-      "ade": {
-        "operational_docs_total": 122,
-        "file_backed_operational_docs": 90,
-        "fingerprinted_all_operational_docs": 0,
-        "fingerprinted_file_backed_docs": 0,
-        "missing_reasons": {
-          "robots_or_policy_block": 122
-        }
-      },
-      "anac": {
-        "operational_docs_total": 7,
-        "file_backed_operational_docs": 7,
-        "fingerprinted_all_operational_docs": 7,
-        "fingerprinted_file_backed_docs": 7,
-        "missing_reasons": {}
-      },
-      "funzione_pubblica": {
-        "operational_docs_total": 9,
-        "file_backed_operational_docs": 9,
-        "fingerprinted_all_operational_docs": 6,
-        "fingerprinted_file_backed_docs": 6,
-        "missing_reasons": {
-          "shared_resource": 3
-        }
-      },
-      "garante_privacy": {
-        "operational_docs_total": 17,
-        "file_backed_operational_docs": 10,
-        "fingerprinted_all_operational_docs": 4,
-        "fingerprinted_file_backed_docs": 4,
-        "missing_reasons": {
-          "detail_page_only": 6,
-          "shared_resource": 2,
-          "http_404": 1,
-          "download_url_html": 4
-        }
-      },
-      "giustizia": {
-        "operational_docs_total": 142,
-        "file_backed_operational_docs": 142,
-        "fingerprinted_all_operational_docs": 126,
-        "fingerprinted_file_backed_docs": 126,
-        "missing_reasons": {
-          "shared_resource": 4,
-          "unsupported_mime": 4,
-          "canonical_identity_or_extraction_failure": 8
-        }
-      },
-      "inail": {
-        "operational_docs_total": 347,
-        "file_backed_operational_docs": 347,
-        "fingerprinted_all_operational_docs": 304,
-        "fingerprinted_file_backed_docs": 304,
-        "missing_reasons": {
-          "unsupported_mime": 18,
-          "shared_resource": 13,
-          "canonical_identity_or_extraction_failure": 2,
-          "robots_or_policy_block": 5,
-          "detail_page_only": 5
-        }
-      },
-      "inl": {
-        "operational_docs_total": 46,
-        "file_backed_operational_docs": 45,
-        "fingerprinted_all_operational_docs": 43,
-        "fingerprinted_file_backed_docs": 43,
-        "missing_reasons": {
-          "shared_resource": 1,
-          "detail_page_only": 2
-        }
-      },
-      "inps": {
-        "operational_docs_total": 359,
-        "file_backed_operational_docs": 359,
-        "fingerprinted_all_operational_docs": 351,
-        "fingerprinted_file_backed_docs": 351,
-        "missing_reasons": {
-          "shared_resource": 8
-        }
-      },
-      "lavoro": {
-        "operational_docs_total": 102,
-        "file_backed_operational_docs": 102,
-        "fingerprinted_all_operational_docs": 74,
-        "fingerprinted_file_backed_docs": 74,
-        "missing_reasons": {
-          "unsupported_mime": 24,
-          "canonical_identity_or_extraction_failure": 2,
-          "shared_resource": 2
-        }
-      },
-      "mef": {
-        "operational_docs_total": 15,
-        "file_backed_operational_docs": 1,
-        "fingerprinted_all_operational_docs": 1,
-        "fingerprinted_file_backed_docs": 1,
-        "missing_reasons": {
-          "detail_page_only": 14
-        }
-      },
-      "mimit": {
-        "operational_docs_total": 42,
-        "file_backed_operational_docs": 42,
-        "fingerprinted_all_operational_docs": 24,
-        "fingerprinted_file_backed_docs": 24,
-        "missing_reasons": {
-          "canonical_identity_or_extraction_failure": 6,
-          "shared_resource": 3,
-          "unsupported_mime": 9
-        }
-      },
-      "unioncamere": {
-        "operational_docs_total": 4,
-        "file_backed_operational_docs": 4,
-        "fingerprinted_all_operational_docs": 1,
-        "fingerprinted_file_backed_docs": 1,
-        "missing_reasons": {
-          "unsupported_mime": 3
-        }
-      }
-    },
-    "baseline_round6": {
-      "operational_docs_total": 1212,
-      "file_backed_operational_docs": 1158,
-      "fingerprinted_file_backed_docs": 948,
-      "fingerprinted_all_operational_docs": 948,
-      "dynamic_service_docs": 0,
-      "metadata_only_docs": 54,
-      "denominator_classes": {
-        "file_backed_document": 1158,
-        "metadata_only_document": 54
-      },
-      "coverage_all": 0.7821782178217822,
-      "coverage_file_backed": 0.8186528497409327,
-      "by_source": {
-        "inps": {
-          "operational_docs_total": 359,
-          "file_backed_operational_docs": 359,
-          "fingerprinted_file_backed_docs": 351,
-          "fingerprinted_all_operational_docs": 351,
-          "missing_reasons": {
-            "shared_resource": 8
-          }
-        },
-        "inail": {
-          "operational_docs_total": 347,
-          "file_backed_operational_docs": 347,
-          "fingerprinted_file_backed_docs": 308,
-          "fingerprinted_all_operational_docs": 308,
-          "missing_reasons": {
-            "shared_resource": 9,
-            "unsupported_mime": 8,
-            "source_changed": 2,
-            "robots_or_policy_block": 5,
-            "detail_page_only": 5,
-            "extraction_failure": 10
-          }
-        },
-        "ade": {
-          "operational_docs_total": 122,
-          "file_backed_operational_docs": 90,
-          "fingerprinted_file_backed_docs": 0,
-          "fingerprinted_all_operational_docs": 0,
-          "missing_reasons": {
-            "robots_or_policy_block": 122
-          }
-        },
-        "lavoro": {
-          "operational_docs_total": 102,
-          "file_backed_operational_docs": 102,
-          "fingerprinted_file_backed_docs": 74,
-          "fingerprinted_all_operational_docs": 74,
-          "missing_reasons": {
-            "source_changed": 2,
-            "extraction_failure": 13,
-            "shared_resource": 2,
-            "unsupported_mime": 11
-          }
-        },
-        "mimit": {
-          "operational_docs_total": 42,
-          "file_backed_operational_docs": 42,
-          "fingerprinted_file_backed_docs": 25,
-          "fingerprinted_all_operational_docs": 25,
-          "missing_reasons": {
-            "unsupported_mime": 8,
-            "extraction_failure": 1,
-            "shared_resource": 2,
-            "source_changed": 6
-          }
-        },
-        "funzione_pubblica": {
-          "operational_docs_total": 9,
-          "file_backed_operational_docs": 9,
-          "fingerprinted_file_backed_docs": 8,
-          "fingerprinted_all_operational_docs": 8,
-          "missing_reasons": {
-            "source_changed": 1
-          }
-        },
-        "garante_privacy": {
-          "operational_docs_total": 17,
-          "file_backed_operational_docs": 10,
-          "fingerprinted_file_backed_docs": 4,
-          "fingerprinted_all_operational_docs": 4,
-          "missing_reasons": {
-            "detail_page_only": 6,
-            "http_404": 1,
-            "download_url_html": 6
-          }
-        },
-        "inl": {
-          "operational_docs_total": 46,
-          "file_backed_operational_docs": 45,
-          "fingerprinted_file_backed_docs": 43,
-          "fingerprinted_all_operational_docs": 43,
-          "missing_reasons": {
-            "shared_resource": 1,
-            "detail_page_only": 2
-          }
-        },
-        "giustizia": {
-          "operational_docs_total": 142,
-          "file_backed_operational_docs": 142,
-          "fingerprinted_file_backed_docs": 126,
-          "fingerprinted_all_operational_docs": 126,
-          "missing_reasons": {
-            "shared_resource": 4,
-            "unsupported_mime": 4,
-            "source_changed": 8
-          }
-        },
-        "mef": {
-          "operational_docs_total": 15,
-          "file_backed_operational_docs": 1,
-          "fingerprinted_file_backed_docs": 1,
-          "fingerprinted_all_operational_docs": 1,
-          "missing_reasons": {
-            "detail_page_only": 14
-          }
-        },
-        "anac": {
-          "operational_docs_total": 7,
-          "file_backed_operational_docs": 7,
-          "fingerprinted_file_backed_docs": 7,
-          "fingerprinted_all_operational_docs": 7,
-          "missing_reasons": {}
-        },
-        "unioncamere": {
-          "operational_docs_total": 4,
-          "file_backed_operational_docs": 4,
-          "fingerprinted_file_backed_docs": 1,
-          "fingerprinted_all_operational_docs": 1,
-          "missing_reasons": {
-            "unsupported_mime": 3
-          }
-        }
-      },
-      "missing_reason_breakdown": {
-        "shared_resource": 26,
-        "unsupported_mime": 34,
-        "source_changed": 19,
-        "robots_or_policy_block": 127,
-        "detail_page_only": 27,
-        "extraction_failure": 24,
-        "http_404": 1,
-        "download_url_html": 6
-      },
-      "canonical_resources": 1015,
-      "active_resources": 987,
-      "quarantined_resources": 28,
-      "new_catalog_identities": 0,
-      "network_requests": 669,
-      "denominator_policy": "A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.",
-      "retained_v1_identities": 366,
-      "newly_fingerprinted_missing_v1": 582,
-      "v1_ids_without_active_v2": [
-        152,
-        536,
-        921
-      ]
-    },
-    "added_active_identities": [
-      175,
-      589
-    ],
-    "lost_active_identities": [
-      166,
-      584,
-      586,
-      587,
-      590,
-      1150,
-      1184,
-      1187,
-      1196
-    ],
-    "missing_reasons": {
-      "shared_resource": 36,
-      "unsupported_mime": 58,
-      "canonical_identity_or_extraction_failure": 18,
-      "robots_or_policy_block": 127,
-      "detail_page_only": 27,
-      "http_404": 1,
-      "download_url_html": 4
-    },
-    "denominator_policy": "Round6 file-backed classification preserved; new supported actual files only add. No failed/blocked file removed.",
-    "future_retrievable_gate_applied": false,
-    "recovered": 0,
-    "denominator_scope": "Fixed Round7 1212 operational / 1158 file-backed; no denominator redefinition."
-  },
-  "known_canonical": {
-    "status": "executed",
-    "summary": {
-      "cases": 979,
-      "passed": 979,
-      "failed": 0,
-      "metrics": {
-        "document_precision": {
-          "numerator": 979,
-          "denominator": 979,
-          "value": 1.0
-        },
-        "document_recall": {
-          "numerator": 979,
-          "denominator": 979,
-          "value": 1.0
-        },
-        "document_f1": {
-          "numerator": 1958,
-          "denominator": 1958,
-          "value": 1.0
-        },
-        "family_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "numerator": 0,
-          "denominator": 12,
-          "value": 0.0
-        },
-        "family_f1": {
-          "numerator": 0,
-          "denominator": 12,
-          "value": 0.0
-        },
-        "exact_document_coverage": {
-          "numerator": 979,
-          "denominator": 979,
-          "value": 1.0
-        },
-        "useful_coverage": {
-          "numerator": 979,
-          "denominator": 979,
-          "value": 1.0
-        },
-        "unknown_false_acceptance_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_correct_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "supported_rejection_rate": {
-          "numerator": 0,
-          "denominator": 979,
-          "value": 0.0
-        },
-        "entity_error_rate": {
-          "numerator": 0,
-          "denominator": 979,
-          "value": 0.0
-        },
-        "version_year_error_rate": {
-          "numerator": 0,
-          "denominator": 979,
-          "value": 0.0
-        }
-      },
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 979,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        }
-      },
-      "latency_ms": {
-        "p50": 5.491,
-        "p95": 8.053,
-        "p99": 10.7612
-      }
-    },
-    "useful_coverage_scope": "Exact document recall only; family capability insufficiently validated. Original raw benchmark metrics remain separately preserved."
-  },
-  "known_robustness": {
-    "status": "incomplete",
-    "summary": {
-      "cases": "50 osservazioni parziali — evaluation INCOMPLETA; metriche principali non disponibili",
-      "metrics": {},
-      "latency_ms": {}
-    },
-    "useful_coverage_scope": "Exact document recall only; family capability insufficiently validated. Original raw benchmark metrics remain separately preserved.",
-    "completion": {
-      "complete": false,
-      "planned": 356,
-      "persisted": 50,
-      "unavailable": 306,
-      "persisted_identity_ids": [
-        153,
-        483,
-        501,
-        541,
-        1146,
-        1189
-      ],
-      "persisted_source_counts": {
-        "3": 13,
-        "15": 13,
-        "16": 24
-      },
-      "persisted_source_concentration": 0.48,
-      "error_type": "OSError",
-      "errno": 22,
-      "failure_stage": "Writing evaluation_checkpoint.json",
-      "checkpoint_sha256": "0ab7fa7827bd6c1674a518bd127131866b62a8b48195273ecbc6cbed2c2585d2",
-      "log_sha256": "896a42c344f5cbfe907f2a598847536d1098e7abf11fd01894a628e0d6f309fd",
-      "recorded_at": "2026-10-12T13:18:44.415064+00:00",
-      "rerun": false,
-      "recognition_calls_during_preservation": 0,
-      "scope": "The single-shot runner terminated after a checkpoint write error. Its ProcessPool context awaited submitted work before exit, but results not in the saved checkpoint are unavailable. They are neither inferred nor counted as recognition failures. Saved rows are a completion-order subset and cannot represent the intended evaluation population. No rerun or post-freeze tuning performed."
-    },
-    "partial_summary": {
-      "cases": 50,
-      "passed": 36,
-      "failed": 14,
-      "metrics": {
-        "document_precision": {
-          "numerator": 36,
-          "denominator": 36,
-          "value": 1.0
-        },
-        "document_recall": {
-          "numerator": 36,
-          "denominator": 50,
-          "value": 0.72
-        },
-        "document_f1": {
-          "numerator": 72,
-          "denominator": 86,
-          "value": 0.8372093023255814
-        },
-        "family_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "exact_document_coverage": {
-          "numerator": 36,
-          "denominator": 50,
-          "value": 0.72
-        },
-        "useful_coverage": {
-          "numerator": 36,
-          "denominator": 50,
-          "value": 0.72
-        },
-        "unknown_false_acceptance_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_correct_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "supported_rejection_rate": {
-          "numerator": 14,
-          "denominator": 50,
-          "value": 0.28
-        },
-        "entity_error_rate": {
-          "numerator": 0,
-          "denominator": 36,
-          "value": 0.0
-        },
-        "version_year_error_rate": {
-          "numerator": 0,
-          "denominator": 36,
-          "value": 0.0
-        }
-      },
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 36,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 14
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        }
-      },
-      "latency_ms": {
-        "p50": 82.4534,
-        "p95": 1960.0041,
-        "p99": null
-      }
-    }
-  },
-  "scan_ocr": {
-    "status": "incomplete",
-    "summary": {
-      "cases": "39 osservazioni parziali — evaluation INCOMPLETA; metriche principali non disponibili",
-      "metrics": {},
-      "latency_ms": {}
-    },
-    "useful_coverage_scope": "Exact document recall only; family capability insufficiently validated. Original raw benchmark metrics remain separately preserved.",
-    "completion": {
-      "complete": false,
-      "planned": 356,
-      "persisted": 50,
-      "unavailable": 306,
-      "persisted_identity_ids": [
-        153,
-        483,
-        501,
-        541,
-        1146,
-        1189
-      ],
-      "persisted_source_counts": {
-        "3": 13,
-        "15": 13,
-        "16": 24
-      },
-      "persisted_source_concentration": 0.48,
-      "error_type": "OSError",
-      "errno": 22,
-      "failure_stage": "Writing evaluation_checkpoint.json",
-      "checkpoint_sha256": "0ab7fa7827bd6c1674a518bd127131866b62a8b48195273ecbc6cbed2c2585d2",
-      "log_sha256": "896a42c344f5cbfe907f2a598847536d1098e7abf11fd01894a628e0d6f309fd",
-      "recorded_at": "2026-10-12T13:18:44.415064+00:00",
-      "rerun": false,
-      "recognition_calls_during_preservation": 0,
-      "scope": "The single-shot runner terminated after a checkpoint write error. Its ProcessPool context awaited submitted work before exit, but results not in the saved checkpoint are unavailable. They are neither inferred nor counted as recognition failures. Saved rows are a completion-order subset and cannot represent the intended evaluation population. No rerun or post-freeze tuning performed."
-    },
-    "partial_summary": {
-      "cases": 39,
-      "passed": 25,
-      "failed": 14,
-      "metrics": {
-        "document_precision": {
-          "numerator": 25,
-          "denominator": 25,
-          "value": 1.0
-        },
-        "document_recall": {
-          "numerator": 25,
-          "denominator": 39,
-          "value": 0.6410256410256411
-        },
-        "document_f1": {
-          "numerator": 50,
-          "denominator": 64,
-          "value": 0.78125
-        },
-        "family_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "exact_document_coverage": {
-          "numerator": 25,
-          "denominator": 39,
-          "value": 0.6410256410256411
-        },
-        "useful_coverage": {
-          "numerator": 25,
-          "denominator": 39,
-          "value": 0.6410256410256411
-        },
-        "unknown_false_acceptance_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_correct_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "supported_rejection_rate": {
-          "numerator": 14,
-          "denominator": 39,
-          "value": 0.358974358974359
-        },
-        "entity_error_rate": {
-          "numerator": 0,
-          "denominator": 25,
-          "value": 0.0
-        },
-        "version_year_error_rate": {
-          "numerator": 0,
-          "denominator": 25,
-          "value": 0.0
-        }
-      },
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 25,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 14
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        }
-      },
-      "latency_ms": {
-        "p50": 76.3591,
-        "p95": 1106.464,
-        "p99": null
-      }
-    }
-  },
-  "filled_forms": {
-    "status": "incomplete",
-    "summary": {
-      "cases": "5 osservazioni parziali — evaluation INCOMPLETA; metriche principali non disponibili",
-      "metrics": {},
-      "latency_ms": {}
-    },
-    "generated": 50,
-    "attempted": 50,
-    "useful_coverage_scope": "Exact document recall only; family capability insufficiently validated. Original raw benchmark metrics remain separately preserved.",
-    "completion": {
-      "complete": false,
-      "planned": 356,
-      "persisted": 50,
-      "unavailable": 306,
-      "persisted_identity_ids": [
-        153,
-        483,
-        501,
-        541,
-        1146,
-        1189
-      ],
-      "persisted_source_counts": {
-        "3": 13,
-        "15": 13,
-        "16": 24
-      },
-      "persisted_source_concentration": 0.48,
-      "error_type": "OSError",
-      "errno": 22,
-      "failure_stage": "Writing evaluation_checkpoint.json",
-      "checkpoint_sha256": "0ab7fa7827bd6c1674a518bd127131866b62a8b48195273ecbc6cbed2c2585d2",
-      "log_sha256": "896a42c344f5cbfe907f2a598847536d1098e7abf11fd01894a628e0d6f309fd",
-      "recorded_at": "2026-10-12T13:18:44.415064+00:00",
-      "rerun": false,
-      "recognition_calls_during_preservation": 0,
-      "scope": "The single-shot runner terminated after a checkpoint write error. Its ProcessPool context awaited submitted work before exit, but results not in the saved checkpoint are unavailable. They are neither inferred nor counted as recognition failures. Saved rows are a completion-order subset and cannot represent the intended evaluation population. No rerun or post-freeze tuning performed."
-    },
-    "partial_summary": {
-      "cases": 5,
-      "passed": 5,
-      "failed": 0,
-      "metrics": {
-        "document_precision": {
-          "numerator": 5,
-          "denominator": 5,
-          "value": 1.0
-        },
-        "document_recall": {
-          "numerator": 5,
-          "denominator": 5,
-          "value": 1.0
-        },
-        "document_f1": {
-          "numerator": 10,
-          "denominator": 10,
-          "value": 1.0
-        },
-        "family_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "exact_document_coverage": {
-          "numerator": 5,
-          "denominator": 5,
-          "value": 1.0
-        },
-        "useful_coverage": {
-          "numerator": 5,
-          "denominator": 5,
-          "value": 1.0
-        },
-        "unknown_false_acceptance_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_correct_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "supported_rejection_rate": {
-          "numerator": 0,
-          "denominator": 5,
-          "value": 0.0
-        },
-        "entity_error_rate": {
-          "numerator": 0,
-          "denominator": 5,
-          "value": 0.0
-        },
-        "version_year_error_rate": {
-          "numerator": 0,
-          "denominator": 5,
-          "value": 0.0
-        }
-      },
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 5,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        }
-      },
-      "latency_ms": {
-        "p50": 219.5901,
-        "p95": 234.9743,
-        "p99": null
-      }
-    }
-  },
-  "unknown_official": {
-    "status": "executed",
-    "summary": {
-      "cases": 137,
-      "passed": 137,
-      "failed": 0,
-      "metrics": {
-        "document_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "document_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "document_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "exact_document_coverage": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "useful_coverage": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_false_acceptance_rate": {
-          "numerator": 0,
-          "denominator": 137,
-          "value": 0.0
-        },
-        "unknown_correct_rejection_rate": {
-          "numerator": 137,
-          "denominator": 137,
-          "value": 1.0
-        },
-        "supported_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "entity_error_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "version_year_error_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        }
-      },
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 137
-        }
-      },
-      "latency_ms": {
-        "p50": 298.8088,
-        "p95": 550.1976,
-        "p99": 681.7015
-      }
-    },
-    "scope": "137 historical official unknowns, also seen in development calibration. All historical expectations retained. No independent or officially reconciled unknown set available; historical rejection is reported separately and cannot establish confirmed main-gate precision.",
-    "release_gate_status": "unmeasured_confirmed_unknown"
-  },
-  "family_identity_holdout": {
-    "status": "executed",
-    "summary": {
-      "cases": 0,
-      "passed": 0,
-      "failed": 0,
-      "metrics": {
-        "document_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "document_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "document_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_precision": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "family_f1": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "exact_document_coverage": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "useful_coverage": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_false_acceptance_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "unknown_correct_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "supported_rejection_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "entity_error_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        },
-        "version_year_error_rate": {
-          "numerator": 0,
-          "denominator": 0,
-          "value": null
-        }
-      },
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        }
-      },
-      "latency_ms": {
-        "p50": null,
-        "p95": null,
-        "p99": null
-      }
-    },
-    "families_evaluable": 0,
-    "capability_status": "insufficiently_validated"
-  },
-  "performance": {
-    "status": "executed",
-    "latency_ms": {
-      "n": 390,
-      "p50": 65.9726,
-      "p95": 350.1267,
-      "p99": 492.3737
-    },
-    "index_bytes": 54455205
-  },
-  "ocr_status": "Tesseract reale 7/7 + 14/14",
+  "catalog_count": 1216,
+  "catalog_semantic_sha256": "sha256:f3d119945cf4cc25a602639a80887fb27baf750fffe5c4d536ef3a8a29ab7f31",
+  "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
   "evaluations": [
-    {
-      "name": "catalog_coverage",
-      "summary": {
-        "cases": 1212,
-        "passed": 1169,
-        "failed": 43,
-        "metrics": {
-          "document_precision": {
-            "numerator": 1169,
-            "denominator": 1169,
-            "value": 1.0
-          },
-          "document_recall": {
-            "numerator": 1169,
-            "denominator": 1212,
-            "value": 0.9645214521452146
-          },
-          "document_f1": {
-            "numerator": 2338,
-            "denominator": 2381,
-            "value": 0.9819403611927762
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 1169,
-            "denominator": 1212,
-            "value": 0.9645214521452146
-          },
-          "useful_coverage": {
-            "numerator": 1169,
-            "denominator": 1212,
-            "value": 0.9645214521452146
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "numerator": 43,
-            "denominator": 1212,
-            "value": 0.03547854785478548
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 1169,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 1169,
-            "value": 0.0
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 1169,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 43
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          }
-        },
-        "latency_ms": {
-          "p50": 29.3575,
-          "p95": 35.9526,
-          "p99": 42.162
-        }
-      }
-    },
-    {
-      "name": "development_compat_v2",
-      "summary": {
-        "cases": 37,
-        "passed": 35,
-        "failed": 2,
-        "metrics": {
-          "document_precision": {
-            "numerator": 11,
-            "denominator": 13,
-            "value": 0.8461538461538461
-          },
-          "document_recall": {
-            "numerator": 11,
-            "denominator": 11,
-            "value": 1.0
-          },
-          "document_f1": {
-            "numerator": 22,
-            "denominator": 24,
-            "value": 0.9166666666666666
-          },
-          "family_precision": {
-            "numerator": 14,
-            "denominator": 14,
-            "value": 1.0
-          },
-          "family_recall": {
-            "numerator": 14,
-            "denominator": 16,
-            "value": 0.875
-          },
-          "family_f1": {
-            "numerator": 28,
-            "denominator": 30,
-            "value": 0.9333333333333333
-          },
-          "exact_document_coverage": {
-            "numerator": 11,
-            "denominator": 11,
-            "value": 1.0
-          },
-          "useful_coverage": {
-            "numerator": 25,
-            "denominator": 25,
-            "value": 1.0
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 2,
-            "denominator": 12,
-            "value": 0.16666666666666666
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 10,
-            "denominator": 12,
-            "value": 0.8333333333333334
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 25,
-            "value": 0.0
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 23,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 11,
-            "value": 0.0
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 11,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 14,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 2,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 10
-          }
-        },
-        "latency_ms": {
-          "p50": 30.766,
-          "p95": 37.1546,
-          "p99": null
-        }
-      }
-    },
     {
       "name": "development_regression",
       "summary": {
         "cases": 35,
-        "passed": 35,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 11,
-            "denominator": 11,
-            "value": 1.0
-          },
-          "document_recall": {
-            "numerator": 11,
-            "denominator": 11,
-            "value": 1.0
-          },
-          "document_f1": {
-            "numerator": 22,
-            "denominator": 22,
-            "value": 1.0
-          },
-          "family_precision": {
-            "numerator": 14,
-            "denominator": 14,
-            "value": 1.0
-          },
-          "family_recall": {
-            "numerator": 14,
-            "denominator": 16,
-            "value": 0.875
-          },
-          "family_f1": {
-            "numerator": 28,
-            "denominator": 30,
-            "value": 0.9333333333333333
-          },
-          "exact_document_coverage": {
-            "numerator": 11,
-            "denominator": 11,
-            "value": 1.0
-          },
-          "useful_coverage": {
-            "numerator": 25,
-            "denominator": 25,
-            "value": 1.0
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 10,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 10,
-            "denominator": 10,
-            "value": 1.0
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 25,
-            "value": 0.0
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 23,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 11,
-            "value": 0.0
-          }
-        },
         "confusion_matrix": {
           "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 11,
+            "DOCUMENT_MATCH": 9,
             "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
+            "NO_MATCH": 2
           },
           "FAMILY_MATCH": {
             "DOCUMENT_MATCH": 0,
@@ -1670,377 +26,86 @@
             "NO_MATCH": 10
           }
         },
+        "failed": 2,
         "latency_ms": {
-          "p50": 28.426,
-          "p95": 85.3482,
+          "p50": 41.16,
+          "p95": 117.6388,
           "p99": null
-        }
-      }
-    },
-    {
-      "name": "family_release_v3",
-      "summary": {
-        "cases": 161,
-        "passed": 161,
-        "failed": 0,
+        },
         "metrics": {
+          "document_f1": {
+            "denominator": 20,
+            "numerator": 18,
+            "value": 0.9
+          },
           "document_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
+            "denominator": 9,
+            "numerator": 9,
+            "value": 1.0
           },
           "document_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_precision": {
-            "numerator": 80,
-            "denominator": 80,
-            "value": 1.0
-          },
-          "family_recall": {
-            "numerator": 80,
-            "denominator": 80,
-            "value": 1.0
-          },
-          "family_f1": {
-            "numerator": 160,
-            "denominator": 160,
-            "value": 1.0
-          },
-          "exact_document_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "useful_coverage": {
-            "numerator": 80,
-            "denominator": 80,
-            "value": 1.0
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 81,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 81,
-            "denominator": 81,
-            "value": 1.0
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 80,
-            "value": 0.0
+            "denominator": 11,
+            "numerator": 9,
+            "value": 0.8181818181818182
           },
           "entity_error_rate": {
+            "denominator": 21,
             "numerator": 0,
-            "denominator": 70,
             "value": 0.0
           },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 80,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 81
-          }
-        },
-        "latency_ms": {
-          "p50": 0.842,
-          "p95": 2.932,
-          "p99": 3.4238
-        }
-      }
-    },
-    {
-      "name": "hard_negatives_v1",
-      "summary": {
-        "cases": 30,
-        "passed": 30,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
+          "exact_document_coverage": {
+            "denominator": 11,
+            "numerator": 9,
+            "value": 0.8181818181818182
           },
           "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "useful_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
             "denominator": 30,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 30,
-            "denominator": 30,
-            "value": 1.0
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 30
-          }
-        },
-        "latency_ms": {
-          "p50": 29.882,
-          "p95": 33.7274,
-          "p99": null
-        }
-      }
-    },
-    {
-      "name": "hard_negatives_v2",
-      "summary": {
-        "cases": 100,
-        "passed": 100,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "document_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
+            "numerator": 28,
+            "value": 0.9333333333333333
           },
           "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "useful_coverage": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 100,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 100,
-            "denominator": 100,
+            "denominator": 14,
+            "numerator": 14,
             "value": 1.0
           },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
+          "family_recall": {
+            "denominator": 16,
+            "numerator": 14,
+            "value": 0.875
           },
-          "entity_error_rate": {
+          "supported_rejection_rate": {
+            "denominator": 25,
+            "numerator": 2,
+            "value": 0.08
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 10,
+            "numerator": 10,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 10,
             "numerator": 0,
-            "denominator": 0,
-            "value": null
+            "value": 0.0
+          },
+          "useful_coverage": {
+            "denominator": 25,
+            "numerator": 23,
+            "value": 0.92
           },
           "version_year_error_rate": {
+            "denominator": 9,
             "numerator": 0,
-            "denominator": 0,
-            "value": null
+            "value": 0.0
           }
         },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 100
-          }
-        },
-        "latency_ms": {
-          "p50": 4.738,
-          "p95": 30.7247,
-          "p99": 34.1185
-        }
+        "passed": 33
       }
     },
     {
       "name": "release_locked_v1",
       "summary": {
         "cases": 69,
-        "passed": 59,
-        "failed": 10,
-        "metrics": {
-          "document_precision": {
-            "numerator": 54,
-            "denominator": 56,
-            "value": 0.9642857142857143
-          },
-          "document_recall": {
-            "numerator": 54,
-            "denominator": 60,
-            "value": 0.9
-          },
-          "document_f1": {
-            "numerator": 108,
-            "denominator": 116,
-            "value": 0.9310344827586207
-          },
-          "family_precision": {
-            "numerator": 5,
-            "denominator": 5,
-            "value": 1.0
-          },
-          "family_recall": {
-            "numerator": 5,
-            "denominator": 9,
-            "value": 0.5555555555555556
-          },
-          "family_f1": {
-            "numerator": 10,
-            "denominator": 14,
-            "value": 0.7142857142857143
-          },
-          "exact_document_coverage": {
-            "numerator": 54,
-            "denominator": 60,
-            "value": 0.9
-          },
-          "useful_coverage": {
-            "numerator": 59,
-            "denominator": 69,
-            "value": 0.855072463768116
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "numerator": 8,
-            "denominator": 69,
-            "value": 0.11594202898550725
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 61,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 54,
-            "value": 0.0
-          }
-        },
         "confusion_matrix": {
           "DOCUMENT_MATCH": {
             "DOCUMENT_MATCH": 54,
@@ -2058,86 +123,86 @@
             "NO_MATCH": 0
           }
         },
+        "failed": 10,
         "latency_ms": {
-          "p50": 29.369,
-          "p95": 37.6494,
+          "p50": 39.084,
+          "p95": 51.2984,
           "p99": null
-        }
+        },
+        "metrics": {
+          "document_f1": {
+            "denominator": 116,
+            "numerator": 108,
+            "value": 0.9310344827586207
+          },
+          "document_precision": {
+            "denominator": 56,
+            "numerator": 54,
+            "value": 0.9642857142857143
+          },
+          "document_recall": {
+            "denominator": 60,
+            "numerator": 54,
+            "value": 0.9
+          },
+          "entity_error_rate": {
+            "denominator": 61,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "denominator": 60,
+            "numerator": 54,
+            "value": 0.9
+          },
+          "family_f1": {
+            "denominator": 14,
+            "numerator": 10,
+            "value": 0.7142857142857143
+          },
+          "family_precision": {
+            "denominator": 5,
+            "numerator": 5,
+            "value": 1.0
+          },
+          "family_recall": {
+            "denominator": 9,
+            "numerator": 5,
+            "value": 0.5555555555555556
+          },
+          "supported_rejection_rate": {
+            "denominator": 69,
+            "numerator": 8,
+            "value": 0.11594202898550725
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "denominator": 69,
+            "numerator": 59,
+            "value": 0.855072463768116
+          },
+          "version_year_error_rate": {
+            "denominator": 54,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "passed": 59
       }
     },
     {
       "name": "release_locked_v2",
       "summary": {
         "cases": 69,
-        "passed": 69,
-        "failed": 0,
-        "metrics": {
-          "document_precision": {
-            "numerator": 56,
-            "denominator": 56,
-            "value": 1.0
-          },
-          "document_recall": {
-            "numerator": 56,
-            "denominator": 56,
-            "value": 1.0
-          },
-          "document_f1": {
-            "numerator": 112,
-            "denominator": 112,
-            "value": 1.0
-          },
-          "family_precision": {
-            "numerator": 5,
-            "denominator": 5,
-            "value": 1.0
-          },
-          "family_recall": {
-            "numerator": 5,
-            "denominator": 5,
-            "value": 1.0
-          },
-          "family_f1": {
-            "numerator": 10,
-            "denominator": 10,
-            "value": 1.0
-          },
-          "exact_document_coverage": {
-            "numerator": 56,
-            "denominator": 56,
-            "value": 1.0
-          },
-          "useful_coverage": {
-            "numerator": 61,
-            "denominator": 61,
-            "value": 1.0
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 8,
-            "value": 0.0
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 8,
-            "denominator": 8,
-            "value": 1.0
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 61,
-            "value": 0.0
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 61,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 56,
-            "value": 0.0
-          }
-        },
         "confusion_matrix": {
           "DOCUMENT_MATCH": {
             "DOCUMENT_MATCH": 56,
@@ -2155,285 +220,479 @@
             "NO_MATCH": 8
           }
         },
-        "latency_ms": {
-          "p50": 29.412,
-          "p95": 35.8714,
-          "p99": null
-        }
-      }
-    },
-    {
-      "name": "Evaluation v4 INCOMPLETA — known_robustness; sole righe salvate, non rappresentative",
-      "summary": {
-        "cases": 50,
-        "passed": 36,
-        "failed": 14,
-        "metrics": {
-          "document_precision": {
-            "numerator": 36,
-            "denominator": 36,
-            "value": 1.0
-          },
-          "document_recall": {
-            "numerator": 36,
-            "denominator": 50,
-            "value": 0.72
-          },
-          "document_f1": {
-            "numerator": 72,
-            "denominator": 86,
-            "value": 0.8372093023255814
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 36,
-            "denominator": 50,
-            "value": 0.72
-          },
-          "useful_coverage": {
-            "numerator": 36,
-            "denominator": 50,
-            "value": 0.72
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "numerator": 14,
-            "denominator": 50,
-            "value": 0.28
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 36,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 36,
-            "value": 0.0
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 36,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 14
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          }
-        },
-        "latency_ms": {
-          "p50": 82.4534,
-          "p95": 1960.0041,
-          "p99": null
-        }
-      }
-    },
-    {
-      "name": "Evaluation v4 INCOMPLETA — scan_ocr; sole righe salvate, non rappresentative",
-      "summary": {
-        "cases": 39,
-        "passed": 25,
-        "failed": 14,
-        "metrics": {
-          "document_precision": {
-            "numerator": 25,
-            "denominator": 25,
-            "value": 1.0
-          },
-          "document_recall": {
-            "numerator": 25,
-            "denominator": 39,
-            "value": 0.6410256410256411
-          },
-          "document_f1": {
-            "numerator": 50,
-            "denominator": 64,
-            "value": 0.78125
-          },
-          "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 25,
-            "denominator": 39,
-            "value": 0.6410256410256411
-          },
-          "useful_coverage": {
-            "numerator": 25,
-            "denominator": 39,
-            "value": 0.6410256410256411
-          },
-          "unknown_false_acceptance_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "numerator": 14,
-            "denominator": 39,
-            "value": 0.358974358974359
-          },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 25,
-            "value": 0.0
-          },
-          "version_year_error_rate": {
-            "numerator": 0,
-            "denominator": 25,
-            "value": 0.0
-          }
-        },
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 25,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 14
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          }
-        },
-        "latency_ms": {
-          "p50": 76.3591,
-          "p95": 1106.464,
-          "p99": null
-        }
-      }
-    },
-    {
-      "name": "Evaluation v4 INCOMPLETA — filled_forms; sole righe salvate, non rappresentative",
-      "summary": {
-        "cases": 5,
-        "passed": 5,
         "failed": 0,
+        "latency_ms": {
+          "p50": 39.736,
+          "p95": 60.611,
+          "p99": null
+        },
         "metrics": {
+          "document_f1": {
+            "denominator": 112,
+            "numerator": 112,
+            "value": 1.0
+          },
           "document_precision": {
-            "numerator": 5,
-            "denominator": 5,
+            "denominator": 56,
+            "numerator": 56,
             "value": 1.0
           },
           "document_recall": {
-            "numerator": 5,
-            "denominator": 5,
+            "denominator": 56,
+            "numerator": 56,
             "value": 1.0
           },
-          "document_f1": {
-            "numerator": 10,
+          "entity_error_rate": {
+            "denominator": 61,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "denominator": 56,
+            "numerator": 56,
+            "value": 1.0
+          },
+          "family_f1": {
             "denominator": 10,
+            "numerator": 10,
             "value": 1.0
           },
           "family_precision": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "family_f1": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "exact_document_coverage": {
-            "numerator": 5,
             "denominator": 5,
+            "numerator": 5,
             "value": 1.0
           },
-          "useful_coverage": {
-            "numerator": 5,
+          "family_recall": {
             "denominator": 5,
+            "numerator": 5,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "denominator": 61,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 8,
+            "numerator": 8,
             "value": 1.0
           },
           "unknown_false_acceptance_rate": {
+            "denominator": 8,
             "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "unknown_correct_rejection_rate": {
-            "numerator": 0,
-            "denominator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "numerator": 0,
-            "denominator": 5,
             "value": 0.0
           },
-          "entity_error_rate": {
-            "numerator": 0,
-            "denominator": 5,
-            "value": 0.0
+          "useful_coverage": {
+            "denominator": 61,
+            "numerator": 61,
+            "value": 1.0
           },
           "version_year_error_rate": {
+            "denominator": 56,
             "numerator": 0,
-            "denominator": 5,
             "value": 0.0
           }
         },
+        "passed": 69
+      }
+    },
+    {
+      "name": "development_compat_v2",
+      "summary": {
+        "cases": 37,
         "confusion_matrix": {
           "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 5,
+            "DOCUMENT_MATCH": 11,
             "FAMILY_MATCH": 0,
             "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 14,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 12
+          }
+        },
+        "failed": 0,
+        "latency_ms": {
+          "p50": 66.357,
+          "p95": 71.0892,
+          "p99": null
+        },
+        "metrics": {
+          "document_f1": {
+            "denominator": 22,
+            "numerator": 22,
+            "value": 1.0
+          },
+          "document_precision": {
+            "denominator": 11,
+            "numerator": 11,
+            "value": 1.0
+          },
+          "document_recall": {
+            "denominator": 11,
+            "numerator": 11,
+            "value": 1.0
+          },
+          "entity_error_rate": {
+            "denominator": 23,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "denominator": 11,
+            "numerator": 11,
+            "value": 1.0
+          },
+          "family_f1": {
+            "denominator": 30,
+            "numerator": 28,
+            "value": 0.9333333333333333
+          },
+          "family_precision": {
+            "denominator": 14,
+            "numerator": 14,
+            "value": 1.0
+          },
+          "family_recall": {
+            "denominator": 16,
+            "numerator": 14,
+            "value": 0.875
+          },
+          "supported_rejection_rate": {
+            "denominator": 25,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 12,
+            "numerator": 12,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 12,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "useful_coverage": {
+            "denominator": 25,
+            "numerator": 25,
+            "value": 1.0
+          },
+          "version_year_error_rate": {
+            "denominator": 11,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "passed": 37
+      }
+    },
+    {
+      "name": "hard_negatives_v1",
+      "summary": {
+        "cases": 30,
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 30
+          }
+        },
+        "failed": 0,
+        "latency_ms": {
+          "p50": 45.4,
+          "p95": 54.3646,
+          "p99": null
+        },
+        "metrics": {
+          "document_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "document_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 30,
+            "numerator": 30,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 30,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "useful_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          }
+        },
+        "passed": 30
+      }
+    },
+    {
+      "name": "hard_negatives_v2",
+      "summary": {
+        "cases": 100,
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 100
+          }
+        },
+        "failed": 0,
+        "latency_ms": {
+          "p50": 6.7175,
+          "p95": 42.79,
+          "p99": 46.8751
+        },
+        "metrics": {
+          "document_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "document_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 100,
+            "numerator": 100,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 100,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "useful_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          }
+        },
+        "passed": 100
+      }
+    },
+    {
+      "name": "family_release_v3",
+      "summary": {
+        "cases": 161,
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 80,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 81
+          }
+        },
+        "failed": 0,
+        "latency_ms": {
+          "p50": 1.326,
+          "p95": 4.754,
+          "p99": 4.9568
+        },
+        "metrics": {
+          "document_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "document_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "denominator": 70,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "denominator": 160,
+            "numerator": 160,
+            "value": 1.0
+          },
+          "family_precision": {
+            "denominator": 80,
+            "numerator": 80,
+            "value": 1.0
+          },
+          "family_recall": {
+            "denominator": 80,
+            "numerator": 80,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "denominator": 80,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 81,
+            "numerator": 81,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 81,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "useful_coverage": {
+            "denominator": 80,
+            "numerator": 80,
+            "value": 1.0
+          },
+          "version_year_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          }
+        },
+        "passed": 161
+      }
+    },
+    {
+      "name": "catalog_coverage",
+      "summary": {
+        "cases": 1212,
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 1169,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 43
           },
           "FAMILY_MATCH": {
             "DOCUMENT_MATCH": 0,
@@ -2446,45 +705,701 @@
             "NO_MATCH": 0
           }
         },
+        "failed": 43,
         "latency_ms": {
-          "p50": 219.5901,
-          "p95": 234.9743,
-          "p99": null
-        }
+          "p50": 39.4275,
+          "p95": 54.2842,
+          "p99": 66.2447
+        },
+        "metrics": {
+          "document_f1": {
+            "denominator": 2381,
+            "numerator": 2338,
+            "value": 0.9819403611927762
+          },
+          "document_precision": {
+            "denominator": 1169,
+            "numerator": 1169,
+            "value": 1.0
+          },
+          "document_recall": {
+            "denominator": 1212,
+            "numerator": 1169,
+            "value": 0.9645214521452146
+          },
+          "entity_error_rate": {
+            "denominator": 1169,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "exact_document_coverage": {
+            "denominator": 1212,
+            "numerator": 1169,
+            "value": 0.9645214521452146
+          },
+          "family_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "denominator": 1212,
+            "numerator": 43,
+            "value": 0.03547854785478548
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "denominator": 1212,
+            "numerator": 1169,
+            "value": 0.9645214521452146
+          },
+          "version_year_error_rate": {
+            "denominator": 1169,
+            "numerator": 0,
+            "value": 0.0
+          }
+        },
+        "passed": 1169
       }
     }
   ],
-  "executed_at": "2026-10-12T18:13:12.645273+00:00",
-  "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
-  "catalog_count": 1216,
-  "operational_count": 1212,
-  "evaluation_completion": {
-    "complete": false,
-    "planned": 356,
-    "persisted": 50,
-    "unavailable": 306,
-    "persisted_identity_ids": [
-      153,
-      483,
-      501,
-      541,
-      1146,
-      1189
-    ],
-    "persisted_source_counts": {
-      "3": 13,
-      "15": 13,
-      "16": 24
+  "executed_at": "2026-10-12T19:43:02.269102+00:00",
+  "family_identity_holdout": {
+    "capability_status": "insufficiently_validated",
+    "families_evaluable": 0,
+    "status": "executed",
+    "summary": {
+      "cases": 0,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": null,
+        "p95": null,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 0
+    }
+  },
+  "filled_forms": {
+    "cases": [],
+    "completed": 0,
+    "expected_count": 0,
+    "freeze": null,
+    "identities": [],
+    "independent": null,
+    "reason": "Freeze v5 non creato: coverage_file_backed, unknown_truth_adequate. Nessuna identità v5 selezionata e nessun riconoscimento v5 eseguito.",
+    "recognition_calls": 0,
+    "sources": [],
+    "status": "not_run",
+    "summary": {
+      "cases": 0,
+      "latency_ms": {},
+      "metrics": {}
+    }
+  },
+  "fingerprint_coverage": {
+    "coverage_all": 0.7764026402640264,
+    "coverage_file_backed": 0.812607944732297,
+    "file_backed_operational_docs": 1158,
+    "fingerprinted_all_operational_docs": 941,
+    "operational_docs_total": 1212,
+    "status": "executed"
+  },
+  "known_canonical": {
+    "status": "executed",
+    "summary": {
+      "cases": 979,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 979,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 7.5138,
+        "p95": 11.6643,
+        "p99": 12.8641
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 1958,
+          "numerator": 1958,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 979,
+          "numerator": 979,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 979,
+          "numerator": 979,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 979,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 979,
+          "numerator": 979,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 12,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "supported_rejection_rate": {
+          "denominator": 979,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 979,
+          "numerator": 979,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 979,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 979
+    }
+  },
+  "known_robustness": {
+    "cases": [],
+    "completed": 0,
+    "expected_count": 0,
+    "freeze": null,
+    "identities": [],
+    "independent": null,
+    "reason": "Freeze v5 non creato: coverage_file_backed, unknown_truth_adequate. Nessuna identità v5 selezionata e nessun riconoscimento v5 eseguito.",
+    "recognition_calls": 0,
+    "sources": [],
+    "status": "not_run",
+    "summary": {
+      "cases": 0,
+      "latency_ms": {},
+      "metrics": {}
+    }
+  },
+  "ocr_status": "OCR locale reale nei test e nel development; v5 non eseguita.",
+  "performance": {
+    "index_bytes": 89725169,
+    "latency_ms": {
+      "n": 402,
+      "p50": 43.0796,
+      "p95": 187.7645,
+      "p99": 322.9479
     },
-    "persisted_source_concentration": 0.48,
-    "error_type": "OSError",
-    "errno": 22,
-    "failure_stage": "Writing evaluation_checkpoint.json",
-    "checkpoint_sha256": "0ab7fa7827bd6c1674a518bd127131866b62a8b48195273ecbc6cbed2c2585d2",
-    "log_sha256": "896a42c344f5cbfe907f2a598847536d1098e7abf11fd01894a628e0d6f309fd",
-    "recorded_at": "2026-10-12T13:18:44.415064+00:00",
-    "rerun": false,
-    "recognition_calls_during_preservation": 0,
-    "scope": "The single-shot runner terminated after a checkpoint write error. Its ProcessPool context awaited submitted work before exit, but results not in the saved checkpoint are unavailable. They are neither inferred nor counted as recognition failures. Saved rows are a completion-order subset and cannot represent the intended evaluation population. No rerun or post-freeze tuning performed."
+    "status": "executed"
+  },
+  "release_gate": {
+    "candidate_target": "0.7.0",
+    "ci": "external_pending",
+    "freeze": null,
+    "freeze_status": "not_created",
+    "gates": [
+      {
+        "actual": [],
+        "blocking": true,
+        "gate": "historical_safety",
+        "passed": true,
+        "target": "0 false accepts on historical NO"
+      },
+      {
+        "actual": 0,
+        "blocking": true,
+        "gate": "round8_two_false_accepts",
+        "passed": true,
+        "target": "0/2 accepted"
+      },
+      {
+        "actual": "NO_MATCH",
+        "blocking": true,
+        "gate": "R061",
+        "passed": true,
+        "target": "NO_MATCH"
+      },
+      {
+        "actual": 0,
+        "blocking": true,
+        "gate": "truth_v2_complete",
+        "passed": true,
+        "target": "0 unclassified"
+      },
+      {
+        "actual": 68,
+        "blocking": true,
+        "gate": "unknown_confirmed_count",
+        "passed": false,
+        "target": ">=100,target150"
+      },
+      {
+        "actual": 4,
+        "blocking": true,
+        "gate": "unknown_sources",
+        "passed": false,
+        "target": ">=8"
+      },
+      {
+        "actual": 0.6617647058823529,
+        "blocking": true,
+        "gate": "unknown_concentration",
+        "passed": false,
+        "target": "<=25%"
+      },
+      {
+        "actual": {
+          "correct": 68,
+          "false_accepts": 0,
+          "total": 68
+        },
+        "blocking": true,
+        "gate": "unknown_rejection",
+        "passed": true,
+        "target": ">=99%, no DOCUMENT/FAMILY accept"
+      },
+      {
+        "actual": 0.812607944732297,
+        "blocking": true,
+        "gate": "coverage_file_backed",
+        "passed": false,
+        "target": ">=85%"
+      },
+      {
+        "actual": 0.7764026402640264,
+        "blocking": true,
+        "gate": "coverage_all",
+        "passed": true,
+        "target": ">=70%"
+      },
+      {
+        "actual": {
+          "exact": 979,
+          "extraction_failed": 0,
+          "family": 0,
+          "reject": 0,
+          "wrong": 0
+        },
+        "blocking": true,
+        "gate": "canonical",
+        "passed": true,
+        "target": "100% P/R"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_identities",
+        "passed": false,
+        "target": ">=30"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_sources",
+        "passed": false,
+        "target": ">=6"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_representations",
+        "passed": false,
+        "target": ">=400"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_scans",
+        "passed": false,
+        "target": ">=200"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_valid_fills",
+        "passed": false,
+        "target": ">=50"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_overall",
+        "passed": false,
+        "target": "P>=99.5%,R>=90%,entity/version errors0"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_scan",
+        "passed": false,
+        "target": "P>=99.5%,R>=85%"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_filled",
+        "passed": false,
+        "target": "generation>=90%,P>=99.5%,R>=90%"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_retrieval_at25",
+        "passed": false,
+        "target": "100%"
+      },
+      {
+        "actual": 43.0796,
+        "blocking": true,
+        "gate": "performance_p50",
+        "passed": true,
+        "target": "<=150ms"
+      },
+      {
+        "actual": 187.7645,
+        "blocking": true,
+        "gate": "performance_p95",
+        "passed": true,
+        "target": "<=250ms"
+      },
+      {
+        "actual": 89725169,
+        "blocking": true,
+        "gate": "index_memory",
+        "passed": true,
+        "target": "<=100000000bytes"
+      },
+      {
+        "actual": {
+          "after_warm_bytes": 422449152,
+          "before_warm_bytes": 387149824,
+          "growth_after_warm_bytes": 181624832,
+          "samples": [
+            422449152,
+            452243456,
+            482566144,
+            513859584,
+            543604736,
+            573353984,
+            604073984
+          ]
+        },
+        "blocking": false,
+        "gate": "process_memory_stability",
+        "passed": false,
+        "target": "measurement only; stability not established"
+      },
+      {
+        "actual": {
+          "failed": 0,
+          "log_sha256": "b60c62a1c7652a89a686bcd56da2ea98e735d29a80d223e4b7801d869086c285",
+          "passed": 749,
+          "platform": "Windows-11-10.0.26300-SP0",
+          "python": "3.12.10",
+          "seconds": 450.65,
+          "skipped": 3,
+          "status": "passed"
+        },
+        "blocking": true,
+        "gate": "tests",
+        "passed": true,
+        "target": "all green"
+      },
+      {
+        "actual": 0,
+        "blocking": false,
+        "gate": "family",
+        "passed": false,
+        "target": ">=5 evaluable or experimental"
+      },
+      {
+        "actual": "external_pending",
+        "blocking": false,
+        "gate": "CI",
+        "passed": false,
+        "target": "external_pending"
+      }
+    ],
+    "identity": {
+      "code_sha256": "850ac4f0be713917ea938dd40d9d6f835176578dbb879c02c0df468002795026",
+      "commit": "fa2a307fbbb4721ecafa93e6920c909526e00a25",
+      "executed_at": "2026-10-12T19:43:02.269102+00:00",
+      "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+      "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+      "seed": 2026101208
+    },
+    "local_gates_passed": false,
+    "round": 9,
+    "schema": 610,
+    "software_version": "0.6.1",
+    "status": "NOT READY",
+    "tests": {
+      "failed": 0,
+      "log_sha256": "b60c62a1c7652a89a686bcd56da2ea98e735d29a80d223e4b7801d869086c285",
+      "passed": 749,
+      "platform": "Windows-11-10.0.26300-SP0",
+      "python": "3.12.10",
+      "seconds": 450.65,
+      "skipped": 3,
+      "status": "passed"
+    }
+  },
+  "scan_ocr": {
+    "cases": [],
+    "completed": 0,
+    "expected_count": 0,
+    "freeze": null,
+    "identities": [],
+    "independent": null,
+    "reason": "Freeze v5 non creato: coverage_file_backed, unknown_truth_adequate. Nessuna identità v5 selezionata e nessun riconoscimento v5 eseguito.",
+    "recognition_calls": 0,
+    "sources": [],
+    "status": "not_run",
+    "summary": {
+      "cases": 0,
+      "latency_ms": {},
+      "metrics": {}
+    }
+  },
+  "schema_version": 1,
+  "software_version": "0.6.1",
+  "status": "NOT READY",
+  "unknown_official": {
+    "reason": "68/100 unknown confermati; 4/8 fonti; concentrazione 66.18%. Corpus retrospettivo, insufficiente per release.",
+    "status": "measured_inadequate",
+    "summary": {
+      "cases": 68,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 68
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 234.1293,
+        "p95": 684.4062,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 68,
+          "numerator": 68,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 68,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 68
+    }
   }
 }

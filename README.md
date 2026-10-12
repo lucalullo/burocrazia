@@ -1,3 +1,7 @@
+<!-- round9-current -->
+Software 0.6.1/schema 610. Canonical 979/979, due falsi accept riparati; 68 unknown confermati, corpus insufficiente. Copertura file 81.26%; warm recognition p95 187.76 ms (target 250 ms). V5 non selezionata/eseguita: prerequisiti freeze non raggiunti. R8 v4 originale 50/356 immutata, solo diagnostica storica. Dettagli nel [rapporto Round 9](docs/ROUND9_REPORT.md). Le sezioni Round 8 seguenti sono storiche.
+<!-- /round9-current -->
+
 <!-- round8-current -->
 Round 8 **NOT READY**, software 0.6.1: copertura file 81.26%; canonical 979/979. **Evaluation v4 INCOMPLETA: 50/356 osservazioni salvate dopo errore di scrittura; nessuna ripetizione.** Sole metriche descrittive parziali: exact 36/50, scan 25/39, compilati 5/5; non qualificano i gate principali. Generazione compilati 50/50. p95 350.13 ms. Truth e gate nel [rapporto Round 8](docs/ROUND8_REPORT.md). Due accettazioni contro NO storici ambigui restano bloccanti. R6/R7 sono sviluppo; family insufficiently validated; unknown soltanto storico; CI esterna pending.
 <!-- /round8-current -->
