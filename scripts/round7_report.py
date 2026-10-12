@@ -6,7 +6,7 @@ from datetime import UTC,datetime
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from benchmarks.round3_audit import read,write,catalog
 from benchmarks.round7_recognition import checked,identity
-from benchmarks.evaluate import summary
+from benchmarks.evaluate import summary,quantile
 from src.recognize import catalog_revision
 
 OUT='benchmarks/results/round7/'
@@ -75,6 +75,10 @@ def main():
     gate_table='\n'.join(f"| {g['gate']} | {g['target']} | {g['actual']} | {'PASS' if g['passed'] else 'FAIL'} | {'sì' if g['blocking'] else 'no'} |" for g in gates)
     groups=defaultdict(list)
     for r in rob['cases']:groups[r['representation']].append(r)
+    timing={}
+    for name,rr in [('digital',[r for r in rob['cases'] if r['representation']=='digital_exact']),('scan_like',scan['cases']),('filled',filled['cases'])]:
+        timing[name]={key:dict(n=len(values),p50=quantile(values,.5),p95=quantile(values,.95),p99=quantile(values,.99)) for key in ['extraction_ms','visual_ms','matching_ms','end_to_end_ms'] for values in [[r[key] for r in rr if key in r]]}
+    write(OUT+'phase_timings.json',dict(scope='One-shot representation run, including actual OCR. Parallel workers; diagnostic end-to-end times, separate from isolated warm performance gate.',groups=timing))
     transformation='\n'.join(f"| {n} | {len(rr)} | {sum(r['correct'] for r in rr)} | {pct(summary(rr)['metrics']['document_recall'])} |" for n,rr in sorted(groups.items()))
     sources='\n'.join(f"| {n} | {v['operational_docs_total']} | {v['file_backed_operational_docs']} | {v['fingerprinted_all_operational_docs']} |" for n,v in cov['by_source'].items())
     report=f"""# Round 7 — {status}
@@ -94,7 +98,8 @@ EX02/EX03 erano i due rifiuti che lasciavano33/35; ora {finals['development_regr
 Tutti i50 raw JSON R6 sono conservati e verificati per hash, oltre ai corpus v1/v2 immutati.
 Audit dei42 NO rank1 in `docs/ROUND7_DECISION_AUDIT.md` e CSV R6 dedicato:28 ruoli ente,13 OCR score,1 canali.
 R6 ora development: replay {sum(r['correct_after'] for r in after)}/192; nessuna pretesa di indipendenza dopo il tuning.
-Calibrazione320 rappresentazioni note e {cal['results']['negative_cases']} negativi storici; obiettivo zero false accept e massimo richiamo.
+Calibrazione320 rappresentazioni note e {cal['results']['negative_cases']} controlli negativi storici:130 hard negatives e137 unknown nel motore completo,81 controlli nel solo fallback family secondo il contratto originale del corpus. Obiettivo zero false accept nell'ambito corretto e massimo richiamo exact.
+Il primo tentativo development era fallito perché trattava gli81 controlli family come negativi del motore completo e conteggiava FAMILY_MATCH come identità sbagliata. FR10-N4/FR12-N4 identificano documenti143/167 nel motore completo, ma restano NO nel fallback family. L'audit iniziale resta conservato; nessuna soglia del runtime è stata modificata per eliminare questi due esiti. La calibrazione finale verifica ogni configurazione con il runtime effettivo, riusando solo l'estrazione storica degli unknown development; la misura finale unknown riestrae i file.
 Profilo congelato `{frozen['profile_sha256']}`: `{json.dumps(cal['thresholds'],sort_keys=True)}`.
 Tier A/B/C/D e diagnostica sono request-local; nessun testo caricato, sketch o risultato personale entra nelle cache pubbliche.
 

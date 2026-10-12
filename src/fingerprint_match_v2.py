@@ -74,10 +74,13 @@ def match(text,documents,*,file_sha256=None,visual=(),index=None,reference=False
     eligible=[r for r in rows if choose(r) and safe(r['resource_index'])]
     if not eligible:
         if diagnostics is not None:
-            best=rows[0] if rows else None
+            # Decision reference scans all rows; the user-facing diagnostic
+            # describes the same indexed retrieval view in either mode.
+            diagnostic_rows=index.similarities(query,visual) if reference else rows
+            best=diagnostic_rows[0] if diagnostic_rows else None
             d=docs.get(best['document_id']) if best else None
             diagnostics.update(reason_code=safety_reason(text,d,documents,entities=entities) if d else 'no_candidate',
-                tier='D_template_uncertain' if best and choose(best) else 'insufficient_channels',candidate_ids=tuple(r['document_id'] for r in rows[:25]))
+                tier='D_template_uncertain' if best and choose(best) else 'insufficient_channels',candidate_ids=tuple(r['document_id'] for r in diagnostic_rows[:25]))
         return None
     best=eligible[0]
     # Competing supported identities remain ambiguous even if a competitor is

@@ -168,14 +168,23 @@ def calibrate():
     print('Decision calibration frozen',chosen,flush=True)
 
 def freeze():
-    cal=read(OUT+'decision_calibration.json');assert cal['runtime_sha256']==runtime_hash()
-    write(OUT+'freeze.json',dict(**identity(),profile_sha256=hashlib.sha256(PATH.read_bytes()).hexdigest(),calibration_sha256=hashlib.sha256((ROOT/OUT/'decision_calibration.json').read_bytes()).hexdigest()))
+    cal=read(OUT+'decision_calibration.json');equivalence=None
+    if cal['runtime_sha256']!=runtime_hash():
+        proof=read(OUT+'decision_calibration_reference_fix.json')
+        assert proof['runtime_sha256']==runtime_hash() and proof['original_runtime_sha256']==cal['runtime_sha256']
+        assert proof['profile_sha256']==hashlib.sha256(PATH.read_bytes()).hexdigest()==cal['profile_sha256']
+        assert proof['fingerprint_sha256']==revision()==cal['fingerprint_sha256']
+        assert proof['original_calibration_sha256']==hashlib.sha256((ROOT/OUT/'decision_calibration.json').read_bytes()).hexdigest()
+        assert proof['production_branch_changed'] is False and proof['full_tests']['failed']==0
+        equivalence=hashlib.sha256((ROOT/OUT/'decision_calibration_reference_fix.json').read_bytes()).hexdigest()
+    write(OUT+'freeze.json',dict(**identity(),profile_sha256=hashlib.sha256(PATH.read_bytes()).hexdigest(),calibration_sha256=hashlib.sha256((ROOT/OUT/'decision_calibration.json').read_bytes()).hexdigest(),calibration_reference_fix_sha256=equivalence))
     print('Evaluation code freeze recorded')
 
 def checked():
     f=read(OUT+'freeze.json')
     assert f['runtime_sha256']==runtime_hash() and f['code_sha256']==code_hash() and f['fingerprint_sha256']==revision(),'Frozen bytes changed'
     assert f['calibration_sha256']==hashlib.sha256((ROOT/OUT/'decision_calibration.json').read_bytes()).hexdigest()
+    if f.get('calibration_reference_fix_sha256'):assert f['calibration_reference_fix_sha256']==hashlib.sha256((ROOT/OUT/'decision_calibration_reference_fix.json').read_bytes()).hexdigest()
     return f
 
 def new_plan():
