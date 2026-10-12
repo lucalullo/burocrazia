@@ -87,6 +87,25 @@ def test_optimized_metadata_matches_reference_on_frozen_development_and_negative
     for c in cases:
         assert recognize_document(c['text'],docs)==recognize_document(c['text'],docs,reference_full_scan=True),c['id']
 
+def test_evaluation_refuses_restart_before_any_selection(tmp_path,monkeypatch):
+    import benchmarks.round7_recognition as b
+    monkeypatch.setattr(b,'ROOT',tmp_path);monkeypatch.setattr(b,'checked',lambda:{})
+    path=tmp_path/b.OUT/'evaluation_started.json';path.parent.mkdir(parents=True);path.write_text('{}')
+    monkeypatch.setattr(b,'new_plan',lambda:pytest.fail('Selection cannot run twice'))
+    with pytest.raises(ValueError,match='Single-shot'):b.evaluate()
+
+def test_evaluation_hash_guard_rejects_modified_runtime(tmp_path,monkeypatch):
+    import benchmarks.round7_recognition as b
+    monkeypatch.setattr(b,'read',lambda path:dict(runtime_sha256='frozen',code_sha256='code',fingerprint_sha256='fp'))
+    monkeypatch.setattr(b,'runtime_hash',lambda:'changed')
+    with pytest.raises(AssertionError,match='Frozen bytes'):b.checked()
+
+def test_evaluation_selection_requires_valid_freeze(monkeypatch):
+    import benchmarks.round7_recognition as b
+    def refuse():raise ValueError('No valid freeze')
+    monkeypatch.setattr(b,'checked',refuse);monkeypatch.setattr(b,'catalog',lambda:pytest.fail('Catalog selection happened before freeze'))
+    with pytest.raises(ValueError,match='No valid freeze'):b.new_plan()
+
 def test_frozen_fixture_expectations_are_contradictory_and_unchanged():
     from pathlib import Path
     old=json.loads(Path('tests/fixtures/benchmark.json').read_bytes())

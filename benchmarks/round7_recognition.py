@@ -27,14 +27,18 @@ def identity():return dict(commit=subprocess.check_output(['git','rev-parse','HE
 
 def case(r,name,params=None):
     docs,_=catalog();d=next(d for d in docs if d.id==r['document_id'])
+    from benchmarks.round5_recognition import family_label
     return dict(id=f'R7-{d.id}-{name}',group=f'document:{d.id}',category='known_official',
-        expected=dict(match_type='DOCUMENT_MATCH',document_id=d.id,entity=d.ente,version=d.versione),representation=name,
-        provenance=dict(document_id=d.id,canonical_sha256=r['canonical_file_sha256'],source_id=r['source_id'],seed=SEED,transform=params or {}))
+        expected=dict(match_type='DOCUMENT_MATCH',document_id=d.id,family_id=family_label(d),entity=d.ente,version=d.versione),representation=name,
+        provenance=dict(document_id=d.id,canonical_sha256=r['canonical_file_sha256'],canonical_url=r['url'],canonical_mime_type=r['mime_type'],source_id=r['source_id'],seed=SEED,transform=params or {}))
 
 def save(name,rows,**extra):
     value=dict(schema_version=3,identity=identity(),summary=summary(rows),cases=rows,**extra)
     value['counts']=dict(exact=sum(r['document_correct'] for r in rows),family=sum(r['family_correct'] for r in rows),reject=sum(r['observed']['match_type']=='NO_MATCH' for r in rows),wrong=sum(r['observed']['match_type']!='NO_MATCH' and not (r['document_correct'] or r['family_correct']) for r in rows),extraction_failed=sum(r.get('extraction_failed',False) for r in rows))
     value['candidate_recall_at_k']={str(k):dict(numerator=sum(r.get('candidate_recall_at_k',{}).get(str(k),False) for r in rows),denominator=len(rows)) for k in [1,5,10,25]}
+    value['by_transformation']={name:summary([r for r in rows if r.get('representation')==name]) for name in sorted({r.get('representation','') for r in rows})}
+    value['by_source']={name:summary([r for r in rows if str(r.get('provenance',{}).get('source_id','unlabelled'))==name]) for name in sorted({str(r.get('provenance',{}).get('source_id','unlabelled')) for r in rows})}
+    value['by_format']={name:summary([r for r in rows if r.get('provenance',{}).get('canonical_mime_type','unlabelled')==name]) for name in sorted({r.get('provenance',{}).get('canonical_mime_type','unlabelled') for r in rows})}
     write(OUT+name+'.json',value);return value
 
 def calibration_ids():
@@ -74,11 +78,19 @@ def simulate(text,visual,sha,expected):
             fallback=recognize_catalog(text,docs,families)
         finally:matcher.match=original
     outcomes=[]
-    for did in selected:
+    import src.fingerprint_decision_v3 as decision
+    original_profile=decision.profile
+    expected_case=dict(id='grid',group='development',category='known_official' if expected is not None else 'negative',expected=dict(match_type='DOCUMENT_MATCH',document_id=expected,entity=by[expected].ente,version=by[expected].versione) if expected is not None else dict(match_type='NO_MATCH'))
+    for i,did in enumerate(selected):
         kind='DOCUMENT_MATCH' if did is not None else fallback.match_type
         observed=did if did is not None else fallback.document.id if fallback.document else None
         correct=(kind=='NO_MATCH') if expected is None else kind=='DOCUMENT_MATCH' and observed==expected
-        outcomes.append(dict(correct=correct,false_accept=expected is None and kind!='NO_MATCH',wrong=expected is not None and kind!='NO_MATCH' and observed!=expected,observed=observed,match_type=kind))
+        try:
+            decision.profile=lambda:grid()[i]
+            actual_grid=recognize_catalog(text,docs,families,file_sha256=sha,visual_fingerprint=visual)
+        finally:decision.profile=original_profile
+        assert (kind,observed)==(actual_grid.match_type,actual_grid.document.id if actual_grid.document else None),'Grid/runtime mismatch'
+        outcomes.append(dict(correct=correct,false_accept=expected is None and kind!='NO_MATCH',wrong=expected is not None and kind=='DOCUMENT_MATCH' and observed!=expected,observed=observed,match_type=kind,observed_case=evaluate_case(expected_case,actual_grid)))
     return outcomes,rows[:25],actual
 
 def calibration_worker(did,verify=False):
@@ -104,21 +116,27 @@ def calibration_negatives(verify=False):
     for name in ['hard_negatives_v1','hard_negatives_v2','family_release_v3']:
         for c in read('benchmarks/corpora/'+name+'.json')['cases']:
             if c['expected']['match_type']!='NO_MATCH':continue
-            if verify:actual=recognize_catalog(c['text'],docs,families);options=[];scores=[]
+            if name=='family_release_v3':
+                from src.recognize import recognize_document_family
+                result=recognize_document_family(c['text'],families,known_entities=[d.ente for d in docs])
+                actual=CatalogRecognitionResult('FAMILY_MATCH' if result.recognized else 'NO_MATCH',0,result.confidence,family=result.family)
+                observation=evaluate_case(c,actual)
+                options=[dict(correct=observation['correct'],false_accept=not observation['correct'],wrong=False,observed=None,match_type=actual.match_type,observed_case=observation) for _ in grid()];scores=[]
+            elif verify:actual=recognize_catalog(c['text'],docs,families);options=[];scores=[]
             else:options,scores,actual=simulate(c['text'],(),None,None)
-            row=evaluate_case(c,actual);row.update(grid_results=options,retrieval_scores=scores);rows.append(row)
+            row=evaluate_case(c,actual);row.update(grid_results=options,retrieval_scores=scores,scope='isolated family fallback, unchanged corpus contract' if name=='family_release_v3' else 'full pipeline hard negative');rows.append(row)
     seen=set()
     for name in ['official_documents_v2','official_holdout_v1','official_holdout_v2']:
         manifest,values=cached_texts(name)
         for c in manifest['cases']:
             if c.get('expected_match_type')!='NO_MATCH' or c['sha256'] in seen:continue
             seen.add(c['sha256']);raw=(ROOT/'benchmarks/cache'/(c['sha256']+'.body')).read_bytes();ext=c['format']
-            try:ex=extract_document(raw,'negative.'+ext);text=ex.text;visual=visual_for_bytes(raw,'negative.'+ext)
+            try:text=values[c['id']].get('text','');visual=visual_for_bytes(raw,'negative.'+ext)
             except (ValueError,OSError,RuntimeError):text='';visual=()
             if verify:actual=recognize_catalog(text,docs,families,file_sha256=c['sha256'],visual_fingerprint=visual);options=[];scores=[]
             else:options,scores,actual=simulate(text,visual,c['sha256'],None)
             cc=dict(id=c['id'],group=c['sha256'],category='unknown_official',expected=dict(match_type='NO_MATCH'))
-            row=evaluate_case(cc,actual);row.update(grid_results=options,retrieval_scores=scores);rows.append(row)
+            row=evaluate_case(cc,actual);row.update(grid_results=options,retrieval_scores=scores,scope='Historical official extraction from ignored development cache; canonical bytes SHA checked; final unknown run re-extracts.');rows.append(row)
     return rows
 
 def calibrate():
@@ -126,23 +144,25 @@ def calibrate():
     p=read('benchmarks/results/round6/robustness_v2_plan.json');ids=p['calibration_identities']+p['evaluation_identities'];rows=[]
     with ProcessPoolExecutor(max_workers=3) as pool:
         futures={pool.submit(calibration_worker,did):did for did in ids}
-        for f in as_completed(futures):rows.extend(f.result());print('Calibration development',futures[f],len(rows),flush=True)
+        for f in as_completed(futures):
+            rows.extend(f.result());write(OUT+'calibration_checkpoint.json',dict(cases=rows));print('Calibration development',futures[f],len(rows),flush=True)
     rows.sort(key=lambda r:r['id']);negatives=calibration_negatives();options=[]
     for i,t in enumerate(grid()):
         options.append(dict(thresholds=t,exact=sum(r['grid_results'][i]['correct'] for r in rows),total=len(rows),wrong=sum(r['grid_results'][i]['wrong'] for r in rows),false_accepts=sum(r['grid_results'][i]['false_accept'] for r in negatives),negative_cases=len(negatives)))
+    write(OUT+'calibration_development_observations.json',dict(cases=rows,negative_cases=negatives,grid=options))
     safe=[o for o in options if o['wrong']==0 and o['false_accepts']==0]
     if not safe:raise ValueError('No policy satisfies zero calibration false accepts; audit before freezing')
     chosen=max(safe,key=lambda o:(o['exact'],o['thresholds']['text_visual'],o['thresholds']['visual'],o['thresholds']['char_floor']))
     p=dict(schema_version=3,rules_version=VERSION,thresholds=chosen['thresholds'],weights=dict(text=.5,chars=.25,anchors=.15,visual=.1),objective='Zero development hard-negative false accepts, then maximum exact recall; full safety and metadata fallback included.',calibration_identities=calibration_ids(),frozen_at=datetime.now(UTC).isoformat())
     PATH.write_bytes((json.dumps(p,indent=2)+'\n').encode());profile.cache_clear()
-    verified=[]
-    with ProcessPoolExecutor(max_workers=3) as pool:
-        futures={pool.submit(calibration_worker,did,True):did for did in ids}
-        for f in as_completed(futures):verified.extend(f.result());print('Calibration runtime verification',futures[f],len(verified),flush=True)
-    verified.sort(key=lambda r:r['id']);verified_neg=calibration_negatives(True)
+    selected_index=options.index(chosen)
+    def observed(r):
+        value={k:v for k,v in r.items() if k not in ('grid_results','retrieval_scores')}
+        value.update(r['grid_results'][selected_index]['observed_case']);value['id']=r['id'];return value
+    verified=[observed(r) for r in rows];verified_neg=[observed(r) for r in negatives]
     assert sum(r['correct'] for r in verified)==chosen['exact'],'Grid/runtime recall mismatch'
     assert all(r['correct'] for r in verified_neg),'Grid/runtime negative mismatch'
-    save('calibration_runtime_verified',verified,negative_cases=verified_neg,scope='Actual chosen runtime replay on development only, before fresh evaluation.')
+    save('calibration_runtime_verified',verified,negative_cases=verified_neg,scope='All grid outcomes checked against actual runtime during each development request; selected outcome retained without repeating OCR. Family negatives retain isolated-family corpus contract. Official negatives use historical extraction; final unknown run re-extracts.')
     write(OUT+'calibration_development_observations.json',dict(cases=rows,negative_cases=negatives,grid=options))
     write(OUT+'decision_calibration.json',dict(**p,commit=identity()['commit'],runtime_sha256=runtime_hash(),fingerprint_sha256=revision(),profile_sha256=hashlib.sha256(PATH.read_bytes()).hexdigest(),results=chosen,grid=options,scope='Round6 representations and historical development negatives; never fresh evaluation identities or new evaluation unknowns. Simulation uses runtime tier/safety/margin and actual metadata fallback.'))
     print('Decision calibration frozen',chosen,flush=True)
@@ -162,6 +182,13 @@ def new_plan():
     f=checked();docs,_=catalog();by={d.id:d for d in docs};excluded=set(calibration_ids());all_records=active_records()
     cal_records=[r for r in all_records if r['document_id'] in excluded]
     shas={r['canonical_file_sha256'] for r in cal_records};urls={r['url'] for r in cal_records}|{r['final_url'] for r in cal_records}
+    # Historical official unknowns also participated in development safety
+    # calibration. Their bytes/URLs cannot reappear in the fresh known set.
+    for name in ['official_documents_v2','official_holdout_v1','official_holdout_v2']:
+        for c in read('benchmarks/manifests/'+name+'.json')['cases']:
+            if c.get('expected_match_type')=='NO_MATCH':
+                shas.add(c['sha256']);urls.add(c['url'])
+                if c.get('receipt',{}).get('final_url'):urls.add(c['receipt']['final_url'])
     key=lambda d:(normalize_text(d.titolo_ufficiale),normalize_text(d.codice or ''),d.versione)
     signatures={key(by[i]) for i in excluded if i in by};cal_docs=[by[i] for i in excluded if i in by];candidates={}
     from rapidfuzz.fuzz import ratio
@@ -177,9 +204,13 @@ def new_plan():
     order=lambda r:hashlib.sha256(f'{SEED}:{r["document_id"]}'.encode()).hexdigest()
     pdfs=sorted([r for r in candidates.values() if r['mime_type']=='application/pdf'],key=order);selected=[];widgets=[]
     import fitz
+    from pypdf import PdfReader
+    from io import BytesIO
     for r in pdfs:
-        with fitz.open(stream=raw_record(r),filetype='pdf') as doc:
-            if any(list(p.widgets() or ()) for p in doc):widgets.append(r)
+        raw=raw_record(r);fields=PdfReader(BytesIO(raw)).get_fields() or {}
+        with fitz.open(stream=raw,filetype='pdf') as doc:
+            all_widgets=[w for page in doc for w in page.widgets() or ()]
+            if all_widgets and all(w.field_name in fields for w in all_widgets) and any(w.field_type in (fitz.PDF_WIDGET_TYPE_TEXT,fitz.PDF_WIDGET_TYPE_CHECKBOX) and not w.field_flags&1 for w in all_widgets):widgets.append(r)
         if len(widgets)>=10:break
     selected.extend(widgets)
     for source in sorted({r['source_id'] for r in pdfs}):
@@ -190,7 +221,7 @@ def new_plan():
         if len(selected)>=40:break
     other=sorted([r for r in candidates.values() if r['mime_type']!='application/pdf'],key=order)[:2]
     selected=selected[:40]+other
-    plan=dict(seed=SEED,freeze_commit=f['commit'],selection='After code freeze: first ten deterministic AcroForm templates, one PDF/source then hashed order to 40 PDFs, plus two DOCX where available. No result-based selection.',calibration_identities=sorted(excluded),evaluation_identities=[r['document_id'] for r in selected],filled_identities=[r['document_id'] for r in widgets],resources={str(r['document_id']):r['canonical_file_sha256'] for r in selected},source_counts=dict(Counter(str(r['source_id']) for r in selected)))
+    plan=dict(seed=SEED,freeze_commit=f['commit'],selection='After code freeze: first ten deterministic AcroForm templates with canonical field tree, no orphan widgets and editable text/checkbox, one PDF/source then hashed order to 40 PDFs, plus two DOCX where available. No recognition-result-based selection.',calibration_identities=sorted(excluded),evaluation_identities=[r['document_id'] for r in selected],filled_identities=[r['document_id'] for r in widgets],resources={str(r['document_id']):r['canonical_file_sha256'] for r in selected},source_counts=dict(Counter(str(r['source_id']) for r in selected)))
     leakage=dict(identity_overlap=sorted(excluded&set(plan['evaluation_identities'])),resource_sha_overlap=sorted(shas&{r['canonical_file_sha256'] for r in selected}),canonical_url_overlap=sorted(urls&{u for r in selected for u in [r['url'],r['final_url']]}),title_code_version_overlap=[r['document_id'] for r in selected if key(by[r['document_id']]) in signatures or near_calibration(by[r['document_id']])],near_duplicate_rule='Exclude same nonempty code+issuer at any version, or title ratio >=92 with compatible code and equal version; normalized exact triple also excluded.',transformation_provenance='Every case records original resource SHA, identity, fixed seed and transform parameters; runtime hashes checked before and after.',prohibited_leakage=0)
     assert not any(leakage[k] for k in ['identity_overlap','resource_sha_overlap','canonical_url_overlap','title_code_version_overlap'])
     write(OUT+'robustness_v3_evaluation_plan.json',plan);write(OUT+'evaluation_v3_leakage.json',leakage);return plan

@@ -739,6 +739,10 @@ def show_benchmark(catalog, families):
                  'scan_ocr':'Scansioni e OCR',
                  'unknown_official':'Documenti ufficiali sconosciuti'}[key])
         if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
+        if summary.get('benchmark_model')=='known-family-unknown-v3':
+            if key=='known_robustness':st.text('Nuova valutazione v3 su identità escluse dalla calibrazione; trasformazioni sintetiche di documenti noti.')
+            if key=='unknown_official':st.text('File sconosciuti storici, usati anche nella calibrazione: nessuna nuova validazione unknown indipendente.')
+            if key=='filled_forms':st.text('Campi AcroForm interattivi con dati fittizi; nessuna validità amministrativa dei dati compilati.')
         if section.get('status')=='not_run':
             st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')
             continue

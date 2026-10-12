@@ -70,6 +70,9 @@ def main():
             assert leakage['prohibited_leakage']==0 and not any(leakage[k] for k in ['identity_overlap','resource_sha_overlap','canonical_url_overlap','title_code_version_overlap'])
             plan=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/robustness_v3_evaluation_plan.json'))
             assert not set(plan['calibration_identities'])&set(plan['evaluation_identities'])
+            locks=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/evaluation_locks.json'))
+            for path,digest in locks['sha256'].items():
+                assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
         if round_number==6:
             calibration=json.loads(archive.read('BurOCRazia/benchmarks/results/round6/fingerprint_calibration.json'))
             assert hashlib.sha256(archive.read('BurOCRazia/data/recognition_profiles/fingerprint_v2.json')).hexdigest()==calibration['profile_sha256']
