@@ -1,0 +1,29 @@
+{
+  "inspected_at": "2026-10-12T13:13:50.725864+00:00",
+  "stage": "after preparation, before recognition",
+  "attempted": 50,
+  "generated": 50,
+  "reopened": 50,
+  "synthetic_verified": 50,
+  "first_page_template_ids": [
+    128,
+    130,
+    147,
+    153,
+    254,
+    360,
+    683,
+    684,
+    1133,
+    1146
+  ],
+  "variant": 1,
+  "full_size_inspected": [
+    360,
+    1133
+  ],
+  "renderer": "Local Poppler pdftoppm, 1700-pixel maximum dimension",
+  "contact_sha256": "2fca30f9219e3a23c9be9b54bcce1c7c9853776d7e11e4c2ff9d6bd8abb8a40c",
+  "observations": "All ten sampled first pages preserve headings, codes and issuer marks; synthetic text is visible and not clipped in the inspected views. This is a visual sample, not all pages of all 50 files.",
+  "limitations": "Mechanical validity means reopened persistent synthetic fields, not complete or semantically correct administrative filling. For template 1133 the generator puts a date in the adjacent birthplace field as well as the birth-date field; generic municipality/address fields may repeat a fictitious street. These limits are recorded without changing the frozen generator, cases, labels or denominators. Unknown fields and unsupported radio controls may remain blank; no administrative validity is claimed."
+}

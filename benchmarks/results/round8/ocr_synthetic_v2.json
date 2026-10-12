@@ -1,0 +1,805 @@
+{
+  "schema_version": 1,
+  "corpus_id": "ocr-synthetic-v2",
+  "synthetic": true,
+  "executed_at": "2026-10-12T17:52:56.389770+00:00",
+  "status": "executed",
+  "attempts": [
+    {
+      "id": "OCR1",
+      "status": "executed"
+    },
+    {
+      "id": "OCR2",
+      "status": "executed"
+    },
+    {
+      "id": "OCR3",
+      "status": "executed"
+    },
+    {
+      "id": "OCR4",
+      "status": "executed"
+    },
+    {
+      "id": "OCR5",
+      "status": "executed"
+    },
+    {
+      "id": "OCR6",
+      "status": "executed"
+    },
+    {
+      "id": "OCR7",
+      "status": "executed"
+    },
+    {
+      "id": "OCR8",
+      "status": "executed"
+    },
+    {
+      "id": "OCR9",
+      "status": "executed"
+    },
+    {
+      "id": "OCR10",
+      "status": "executed"
+    },
+    {
+      "id": "OCR11",
+      "status": "executed"
+    },
+    {
+      "id": "OCR12",
+      "status": "executed"
+    },
+    {
+      "id": "OCR13",
+      "status": "executed"
+    },
+    {
+      "id": "OCR14",
+      "status": "executed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "OCR1",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 4759.772,
+      "source": "INPS",
+      "noise": "upright",
+      "extraction_ms": 609.34,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 33.987,
+      "extracted_characters": 269,
+      "input_sha256": "2f97cb8ca6c20999759f42d55027bf4948e1a2c05cd12433504a02d619f159b1",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR2",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 79.79,
+      "source": "INPS",
+      "noise": "90",
+      "extraction_ms": 976.866,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 91.521,
+      "extracted_characters": 269,
+      "input_sha256": "2a16bdb9716ea685180c3abccf069249c6b2de069ea4ec303df3be51335f278a",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR3",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 58.557,
+      "source": "INPS",
+      "noise": "180",
+      "extraction_ms": 953.414,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 52.512,
+      "extracted_characters": 269,
+      "input_sha256": "131fce6ca6b9ebee2bf2a946e2742b80a3362d3759cf804a69d233e0a92f40c3",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR4",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 57.347,
+      "source": "INPS",
+      "noise": "270",
+      "extraction_ms": 887.465,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 65.558,
+      "extracted_characters": 269,
+      "input_sha256": "1887b1d9b14a17b2c7589370f77f9f7ead8686ab672c68574f08dafc55cac5d1",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR5",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 68.9,
+      "source": "INPS",
+      "noise": "contrast",
+      "extraction_ms": 595.144,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 63.4,
+      "extracted_characters": 269,
+      "input_sha256": "21a5579a3bc883f65cb15598cea8b0848fe753aa817f267da5de25d8418d554d",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR6",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 78.139,
+      "source": "INPS",
+      "noise": "blur",
+      "extraction_ms": 601.857,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 127.624,
+      "extracted_characters": 268,
+      "input_sha256": "a135f236a521eb61c3460f33d2329edc0ed013ba15e7dd9fc8dfe4d3f56dbe35",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR7",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 78.933,
+      "source": "INPS",
+      "noise": "jpeg",
+      "extraction_ms": 668.196,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 26.171,
+      "extracted_characters": 269,
+      "input_sha256": "19fa391c8359b3644a33ac54c5f73c59f9638a2fceeee0eddcceb7ae9a7ada17",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR8",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 62.18,
+      "source": "INPS",
+      "noise": "crop",
+      "extraction_ms": 597.751,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 60.746,
+      "extracted_characters": 269,
+      "input_sha256": "82667aebc4efc441323fd1761a60314ee82e553233956a81ff20e92e3502175e",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR9",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 53.716,
+      "source": "INPS",
+      "noise": "small",
+      "extraction_ms": 552.137,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 62.764,
+      "extracted_characters": 268,
+      "input_sha256": "92839d311961d81b7976277dcef2e37573c2c25597f98e4e34be139b2dd55876",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR10",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 51.843,
+      "source": "INPS",
+      "noise": "large",
+      "extraction_ms": 697.939,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 129.425,
+      "extracted_characters": 269,
+      "input_sha256": "dd233cb82ff2a5d911899acb37f0d8dec63e2c223e9e143d02a63fed2e5121dd",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR11",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 64.784,
+      "source": "INPS",
+      "noise": "scan",
+      "extraction_ms": 1099.398,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 85.075,
+      "extracted_characters": 268,
+      "input_sha256": "0b569e703a8a77977dbaa506c3ef3d6997eb145eda4b61888c0a1e98e70d0e8b",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR12",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 56.98,
+      "source": "INPS",
+      "noise": "typos",
+      "extraction_ms": 639.817,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 40.548,
+      "extracted_characters": 269,
+      "input_sha256": "e3160bcf55dd23f37938be337e3521a65056691abff837769a3d20a3b346f197",
+      "receipt": null,
+      "ocr_text_similarity": 0.992453
+    },
+    {
+      "id": "OCR13",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 55.391,
+      "source": "INPS",
+      "noise": "seeded_noise",
+      "extraction_ms": 797.248,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 277.892,
+      "extracted_characters": 269,
+      "input_sha256": "88e6f7ac841625b3be2ece1ad65db36b28d33e596f07a1c6ff20c9cc70df5ea4",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    },
+    {
+      "id": "OCR14",
+      "group": "document:1",
+      "category": "ocr",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 62.057,
+      "source": "INPS",
+      "noise": "two_page_scan",
+      "extraction_ms": 2099.43,
+      "used_ocr": true,
+      "acquisition_or_generation_ms": 21.414,
+      "extracted_characters": 537,
+      "input_sha256": "8fff7a6be0051b1666c29a98b04bdd61cd8f2fbaf563b9afd8e7f6b925c089ee",
+      "receipt": null,
+      "ocr_text_similarity": 1.0
+    }
+  ],
+  "summary": {
+    "cases": 14,
+    "passed": 14,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "document_f1": {
+        "numerator": 28,
+        "denominator": 28,
+        "value": 1.0
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "useful_coverage": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 14,
+        "value": 0.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 14,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 14,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 14,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 62.1185,
+      "p95": 1717.7837,
+      "p99": null
+    }
+  },
+  "identity": {
+    "corpus_sha256": "d3d47e8f4113830b1d51a935128e5979b61c3337481d7b99a752ce6df24c016a",
+    "catalog_semantic_sha256": "sha256:ba9b3eb2ca803f4e25b8d975ef7d9103f77f28b5ef79eed73ba661d18fd5a76c",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "rules_version": "deterministic-10-fingerprint-decision-v4",
+    "git_commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "catalog_file_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "system": "Windows",
+    "tesseract_executable": "tesseract.exe",
+    "pillow": "11.3.0",
+    "pymupdf": "1.28.2"
+  },
+  "limits": "Campione di convenienza; nessun testo estratto conservato. Errori di acquisizione/estrazione esclusi dalle metriche di matching e riportati negli attempts.",
+  "bootstrap_95": {
+    "method": "group_percentile",
+    "groups": 1,
+    "intervals": null,
+    "reason": "Meno di cinque gruppi"
+  },
+  "by_source": {
+    "INPS": {
+      "cases": 14,
+      "passed": 14,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 28,
+          "denominator": 28,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 14,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "latency_ms": {
+        "p50": 62.1185,
+        "p95": 1717.7837,
+        "p99": null
+      }
+    }
+  },
+  "counts": {
+    "manifest_cases": 14,
+    "extracted": 14,
+    "exact_correct": 14,
+    "family_correct": 0,
+    "no_match": 0,
+    "wrong_accepted": 0
+  }
+}

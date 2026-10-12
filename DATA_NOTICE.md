@@ -1,3 +1,7 @@
+<!-- round8-current -->
+Round 8 conserva il catalogo e la provenienza. Redistribuisce soltanto firme hash e risultati numerici di dati pubblici; nessun file ufficiale, immagine, testo OCR o compilato sintetico incluso. Nessuna verifica editoriale attribuita automaticamente.
+<!-- /round8-current -->
+
 # Data and third-party materials notice
 
 BurOCRazia is an independent project created by Luca Lullo.

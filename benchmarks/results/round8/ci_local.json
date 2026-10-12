@@ -1,0 +1,71 @@
+{
+  "catalog": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "bootstrap": "passed on separate temporary database",
+  "compileall": "passed",
+  "historical_raw_unchanged": true,
+  "commands": [
+    {
+      "command": "python -m maintenance.build_fingerprints --validate-only",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -m maintenance.build_fingerprints_v2 --validate-only",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python -m maintenance.build_fingerprints_v3 --validate-only",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python scripts/benchmark.py --output benchmarks/results/round8/development_cli.json",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python scripts/benchmark.py --corpus tests/fixtures/benchmark_v2.json --output benchmarks/results/round8/development_compat_cli.json",
+      "exit_code": 1,
+      "stderr": ""
+    }
+  ],
+  "freeze": {
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T13:10:45.547183+00:00",
+    "calibration_sha256": "f7c8a4cccc43c0a795dc1ad71d74a9df2fa5f06b30801ee65f6423e1b5c98704",
+    "truth_sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa",
+    "profile_sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
+  },
+  "external_ci": "pending_external_gate",
+  "platform_scope": "Local Windows Python3.12 only; configured Ubuntu/macOS/Windows matrix not executed remotely; normal CI has no official cache requirement."
+}

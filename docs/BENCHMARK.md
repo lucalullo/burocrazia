@@ -1,3 +1,11 @@
+<!-- round8-current -->
+# Benchmark Round 8 — NOT READY
+
+Round 8 **NOT READY**, software 0.6.1: copertura file 81.26%; canonical 979/979. **Evaluation v4 INCOMPLETA: 50/356 osservazioni salvate dopo errore di scrittura; nessuna ripetizione.** Sole metriche descrittive parziali: exact 36/50, scan 25/39, compilati 5/5; non qualificano i gate principali. Generazione compilati 50/50. p95 350.13 ms. Truth e gate nel [rapporto Round 8](ROUND8_REPORT.md). Due accettazioni contro NO storici ambigui restano bloccanti. R6/R7 sono sviluppo; family insufficiently validated; unknown soltanto storico; CI esterna pending.
+
+Le sezioni successive conservano le misure storiche e i loro denominatori; non descrivono la release corrente.
+<!-- /round8-current -->
+
 # Benchmark Round 7 — NOT READY
 
 <!-- round7-current-start -->

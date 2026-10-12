@@ -1,0 +1,3306 @@
+{
+  "schema_version": 4,
+  "identity": {
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T13:14:52.815274+00:00"
+  },
+  "summary": {
+    "cases": 100,
+    "passed": 100,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 100,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 100,
+        "denominator": 100,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 100
+      }
+    },
+    "latency_ms": {
+      "p50": 4.738,
+      "p95": 30.7247,
+      "p99": 34.1185
+    }
+  },
+  "cases": [
+    {
+      "id": "H000",
+      "group": "hard:0",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:no_candidate] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.47,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H001",
+      "group": "hard:1",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:no_candidate] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.904,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H002",
+      "group": "hard:2",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.839,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H003",
+      "group": "hard:3",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.333,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H004",
+      "group": "hard:4",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.747,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H005",
+      "group": "hard:5",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "matching_ms": 27.796,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H006",
+      "group": "hard:6",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "matching_ms": 28.313,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H007",
+      "group": "hard:7",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 26.128,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H008",
+      "group": "hard:8",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Ente incompatibile con le famiglie candidate.",
+      "conflicts": [
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 27.425,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H009",
+      "group": "hard:9",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 26.167,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H010",
+      "group": "hard:10",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "matching_ms": 27.03,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H011",
+      "group": "hard:11",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 29.022,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H012",
+      "group": "hard:12",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 32.662,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H013",
+      "group": "hard:13",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 38.323,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H014",
+      "group": "hard:14",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 30.524,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H015",
+      "group": "hard:15",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 26.889,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H016",
+      "group": "hard:16",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 27.115,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H017",
+      "group": "hard:17",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 26.474,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H018",
+      "group": "hard:18",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.965,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H019",
+      "group": "hard:19",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 30.409,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H020",
+      "group": "hard:20",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.91,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H021",
+      "group": "hard:21",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.681,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H022",
+      "group": "hard:22",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.768,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H023",
+      "group": "hard:23",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.831,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H024",
+      "group": "hard:24",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 30.681,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H025",
+      "group": "hard:25",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 28.298,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H026",
+      "group": "hard:26",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 31.986,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H027",
+      "group": "hard:27",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 34.076,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H028",
+      "group": "hard:28",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 31.555,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "H029",
+      "group": "hard:29",
+      "category": "unknown",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 27.314,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-031",
+      "group": "negative:INPS:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.118,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-032",
+      "group": "negative:INPS:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.966,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-033",
+      "group": "negative:INPS:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.967,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-034",
+      "group": "negative:INPS:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.98,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-035",
+      "group": "negative:INPS:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.295,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-036",
+      "group": "negative:INPS:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.071,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-037",
+      "group": "negative:INPS:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.075,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-038",
+      "group": "negative:Agenzia delle Entrate:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.846,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-039",
+      "group": "negative:Agenzia delle Entrate:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.302,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-040",
+      "group": "negative:Agenzia delle Entrate:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.905,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-041",
+      "group": "negative:Agenzia delle Entrate:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.78,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-042",
+      "group": "negative:Agenzia delle Entrate:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.826,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-043",
+      "group": "negative:Agenzia delle Entrate:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.103,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-044",
+      "group": "negative:Agenzia delle Entrate:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.026,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-045",
+      "group": "negative:INAIL:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.635,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-046",
+      "group": "negative:INAIL:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.616,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-047",
+      "group": "negative:INAIL:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.673,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-048",
+      "group": "negative:INAIL:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.611,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-049",
+      "group": "negative:INAIL:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.608,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-050",
+      "group": "negative:INAIL:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 3.706,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-051",
+      "group": "negative:INAIL:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.258,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-052",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.798,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-053",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.587,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-054",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.519,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-055",
+      "group": "negative:Ispettorato Nazionale del Lavoro:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.286,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-056",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.111,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-057",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.231,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-058",
+      "group": "negative:Ispettorato Nazionale del Lavoro:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.172,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-059",
+      "group": "negative:Garante per la protezione dei dati personali:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 8.319,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-060",
+      "group": "negative:Garante per la protezione dei dati personali:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 7.297,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-061",
+      "group": "negative:Garante per la protezione dei dati personali:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 8.557,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-062",
+      "group": "negative:Garante per la protezione dei dati personali:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 7.723,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-063",
+      "group": "negative:Garante per la protezione dei dati personali:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 7.26,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-064",
+      "group": "negative:Garante per la protezione dei dati personali:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 8.05,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-065",
+      "group": "negative:Garante per la protezione dei dati personali:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 8.739,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-066",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.749,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-067",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.902,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-068",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.316,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-069",
+      "group": "negative:Agenzia delle Entrate-Riscossione:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.316,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-070",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.82,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-071",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.738,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-072",
+      "group": "negative:Agenzia delle Entrate-Riscossione:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.714,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-073",
+      "group": "negative:Tribunale di Roma:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.743,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-074",
+      "group": "negative:Tribunale di Roma:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.92,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-075",
+      "group": "negative:Tribunale di Roma:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.946,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-076",
+      "group": "negative:Tribunale di Roma:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.73,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-077",
+      "group": "negative:Tribunale di Roma:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 7.105,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-078",
+      "group": "negative:Tribunale di Roma:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.117,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-079",
+      "group": "negative:Tribunale di Roma:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.07,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-080",
+      "group": "negative:Comune di Milano:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.878,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-081",
+      "group": "negative:Comune di Milano:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.738,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-082",
+      "group": "negative:Comune di Milano:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.275,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-083",
+      "group": "negative:Comune di Milano:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.5,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-084",
+      "group": "negative:Comune di Milano:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.187,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-085",
+      "group": "negative:Comune di Milano:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.589,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-086",
+      "group": "negative:Comune di Milano:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.151,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-087",
+      "group": "negative:Ministero della Salute:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.278,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-088",
+      "group": "negative:Ministero della Salute:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.528,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-089",
+      "group": "negative:Ministero della Salute:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.517,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-090",
+      "group": "negative:Ministero della Salute:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.185,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-091",
+      "group": "negative:Ministero della Salute:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.247,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-092",
+      "group": "negative:Ministero della Salute:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.159,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-093",
+      "group": "negative:Ministero della Salute:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.13,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-094",
+      "group": "negative:Autorità Nazionale Anticorruzione:Circolare",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.115,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-095",
+      "group": "negative:Autorità Nazionale Anticorruzione:Guida",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.043,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-096",
+      "group": "negative:Autorità Nazionale Anticorruzione:Istruzioni",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.489,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-097",
+      "group": "negative:Autorità Nazionale Anticorruzione:FAQ",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.152,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-098",
+      "group": "negative:Autorità Nazionale Anticorruzione:Provvedimento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.777,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-099",
+      "group": "negative:Autorità Nazionale Anticorruzione:Manuale",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.789,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "HN2-100",
+      "group": "negative:Autorità Nazionale Anticorruzione:Regolamento",
+      "category": "administrative_near_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v4:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 4.397,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    }
+  ],
+  "scope": "Original locked expectations unchanged, historical diagnostic and safety contract; no unsupported labels promoted to confirmed.",
+  "counts": {
+    "exact": 0,
+    "family": 0,
+    "reject": 100,
+    "wrong": 0,
+    "extraction_failed": 0
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "numerator": 0,
+      "denominator": 100
+    },
+    "5": {
+      "numerator": 0,
+      "denominator": 100
+    },
+    "10": {
+      "numerator": 0,
+      "denominator": 100
+    },
+    "25": {
+      "numerator": 0,
+      "denominator": 100
+    }
+  },
+  "by_transformation": {
+    "synthetic_historical": {
+      "cases": 100,
+      "passed": 100,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 100
+        }
+      },
+      "latency_ms": {
+        "p50": 4.738,
+        "p95": 30.7247,
+        "p99": 34.1185
+      }
+    }
+  },
+  "by_source": {
+    "unlabelled": {
+      "cases": 100,
+      "passed": 100,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 100
+        }
+      },
+      "latency_ms": {
+        "p50": 4.738,
+        "p95": 30.7247,
+        "p99": 34.1185
+      }
+    }
+  }
+}

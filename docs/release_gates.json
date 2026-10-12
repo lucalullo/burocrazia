@@ -1,21 +1,51 @@
 {
-  "schema_version": 7,
-  "round": 7,
+  "round": 8,
   "status": "NOT READY",
-  "local_gates_passed": false,
-  "external_ci": "pending_external_gate",
-  "final_release_allowed": false,
+  "software_version": "0.6.1",
+  "candidate_target": "0.7.0",
+  "schema": 610,
   "identity": {
-    "commit": "07cabe0ff237aef8f80d381e76553ac2958c3e08",
-    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
-    "code_sha256": "f0a9547f017f63dd8d6109956fcd437a8c75bbba4f76f979432f251897807585",
-    "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
-    "seed": 2026101207,
-    "executed_at": "2026-10-12T08:56:26.510627+00:00",
-    "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T18:04:30.986457+00:00"
   },
-  "freeze_commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
+  "freeze": {
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T13:10:45.547183+00:00",
+    "calibration_sha256": "f7c8a4cccc43c0a795dc1ad71d74a9df2fa5f06b30801ee65f6423e1b5c98704",
+    "truth_sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa",
+    "profile_sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
+  },
+  "local_gates_passed": false,
   "gates": [
+    {
+      "gate": "truth_classified",
+      "target": "0 unclassified",
+      "actual": 0,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "canonical_resource_lookup",
+      "target": "100% bytes lookup",
+      "actual": 1027,
+      "passed": true,
+      "blocking": true
+    },
+    {
+      "gate": "reconciled_confirmed_truth",
+      "target": "all confirmed correct",
+      "actual": 2,
+      "passed": true,
+      "blocking": true
+    },
     {
       "gate": "coverage_file_backed",
       "target": ">=85%",
@@ -31,129 +61,194 @@
       "blocking": true
     },
     {
-      "gate": "evaluation_minimum_generated_representations",
-      "target": ">=300",
-      "actual": 331,
-      "passed": true,
+      "gate": "evaluation_complete",
+      "target": "all prepared observations persisted",
+      "actual": {
+        "prepared": 356,
+        "persisted": 50,
+        "complete": false
+      },
+      "passed": false,
       "blocking": true
     },
     {
-      "gate": "scan_minimum_cases",
+      "gate": "evaluation_identities",
+      "target": ">=25, target40",
+      "actual": 6,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "evaluation_sources",
+      "target": ">=5, target8",
+      "actual": 3,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "source_concentration",
+      "target": "<=30%",
+      "actual": 0.5,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "evaluation_representations",
+      "target": ">=350",
+      "actual": 50,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "scan_representations",
       "target": ">=200",
-      "actual": 280,
-      "passed": true,
+      "actual": 39,
+      "passed": false,
       "blocking": true
     },
     {
-      "gate": "filled_minimum_actual_generated",
-      "target": ">=50",
-      "actual": 9,
+      "gate": "filled_valid",
+      "target": ">=30, target50",
+      "actual": 5,
       "passed": false,
       "blocking": true
     },
     {
       "gate": "canonical_document_precision",
-      "target": "100%",
+      "target": ">=100.00%",
       "actual": 1.0,
       "passed": true,
       "blocking": true
     },
     {
       "gate": "canonical_document_recall",
-      "target": "100%",
+      "target": ">=100.00%",
       "actual": 1.0,
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "canonical_wrong",
+      "gate": "robustness_document_precision",
+      "target": ">=99.50%",
+      "actual": {
+        "partial_observed": 1.0,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "robustness_document_recall",
+      "target": ">=90.00%",
+      "actual": {
+        "partial_observed": 0.72,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "scan_document_precision",
+      "target": ">=99.50%",
+      "actual": {
+        "partial_observed": 1.0,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "scan_document_recall",
+      "target": ">=85.00%",
+      "actual": {
+        "partial_observed": 0.6410256410256411,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "filled_document_precision",
+      "target": ">=99.50%",
+      "actual": {
+        "partial_observed": 1.0,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "filled_document_recall",
+      "target": ">=90.00%",
+      "actual": {
+        "partial_observed": 1.0,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "wrong_accepted",
+      "target": "<=0.5%",
+      "actual": {
+        "partial_observed": 0.0,
+        "qualified": false
+      },
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "entity_error_rate",
       "target": "0",
-      "actual": 0,
-      "passed": true,
+      "actual": {
+        "partial_numerator": 0,
+        "qualified": false
+      },
+      "passed": false,
       "blocking": true
     },
     {
-      "gate": "robustness_precision",
-      "target": ">=99.5%",
-      "actual": 1.0,
-      "passed": true,
+      "gate": "version_year_error_rate",
+      "target": "0",
+      "actual": {
+        "partial_numerator": 0,
+        "qualified": false
+      },
+      "passed": false,
       "blocking": true
     },
     {
-      "gate": "robustness_exact_recall",
+      "gate": "filled_generation",
       "target": ">=90%",
-      "actual": 0.49193548387096775,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "scan_precision",
-      "target": ">=99.5%",
       "actual": 1.0,
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "scan_exact_recall",
-      "target": ">=85%",
-      "actual": 0.4785714285714286,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "filled_precision",
-      "target": ">=99.5%",
-      "actual": 1.0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "filled_exact_recall",
-      "target": ">=90%",
-      "actual": 0.14,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "scan_useful_recall",
-      "target": ">=95% (conservative section17 gate retained)",
-      "actual": 0.4785714285714286,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "retrieval_at_1",
-      "target": ">=99%",
-      "actual": 0.8897849462365591,
-      "passed": false,
-      "blocking": true
-    },
-    {
-      "gate": "retrieval_at_25",
-      "target": ">=100%",
-      "actual": 0.8897849462365591,
+      "gate": "unknown_confirmed_main",
+      "target": ">=99%, confirmed labels",
+      "actual": null,
       "passed": false,
       "blocking": true
     },
     {
       "gate": "unknown_historical_rejection",
-      "target": ">=99%",
+      "target": ">=99% diagnostic",
       "actual": 1.0,
       "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "family_capability_validation",
-      "target": ">=5 evaluable families",
-      "actual": 0,
-      "passed": false,
       "blocking": false
     },
     {
-      "gate": "R061",
-      "target": "NO_MATCH",
-      "actual": "NO_MATCH",
-      "passed": true,
+      "gate": "historical_safety",
+      "target": "zero historical NO false accepts and wrong identities",
+      "actual": {
+        "false_accepts": [
+          "EX02MISSINGREV",
+          "EX03MISSINGREV"
+        ],
+        "wrong_identities": []
+      },
+      "passed": false,
       "blocking": true
     },
     {
@@ -164,41 +259,10 @@
       "blocking": true
     },
     {
-      "gate": "historical_negatives",
-      "target": "130/130",
-      "actual": 130,
+      "gate": "R061",
+      "target": "NO_MATCH",
+      "actual": "NO_MATCH",
       "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "historical_family_negatives",
-      "target": "0 false accepts",
-      "actual": 0,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "historical_development",
-      "target": "35/35 unchanged labels",
-      "actual": 35,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "historical_locked_v2",
-      "target": "69/69",
-      "actual": 69,
-      "passed": true,
-      "blocking": true
-    },
-    {
-      "gate": "historical_all_frozen_expectations",
-      "target": "All historical expectations green, including contradictory v2 fixture",
-      "actual": {
-        "locked_v1": 59,
-        "compat_v2": 35
-      },
-      "passed": false,
       "blocking": true
     },
     {
@@ -212,39 +276,78 @@
       "blocking": true
     },
     {
-      "gate": "warm_p50",
+      "gate": "performance_p50",
       "target": "<=150ms",
-      "actual": 76.3465,
+      "actual": 65.9726,
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "warm_p95",
+      "gate": "performance_p95",
       "target": "<=250ms",
-      "actual": 444.6542,
+      "actual": 350.1267,
       "passed": false,
       "blocking": true
     },
     {
       "gate": "index_memory",
-      "target": "<=100MB",
-      "actual": 39832045,
+      "target": "<=100000000 bytes",
+      "actual": 54455205,
       "passed": true,
       "blocking": true
     },
     {
       "gate": "tests",
-      "target": "0 failures",
-      "actual": 690,
+      "target": "all green",
+      "actual": {
+        "passed": 726,
+        "skipped": 3,
+        "failed": 0,
+        "seconds": 507.93,
+        "log_sha256": "23872aa1bc336c27e9987f3a11b7905e8449aa647a539e5d25d65ead7528d75f",
+        "platform": "Windows-11-10.0.26300-SP0",
+        "python": "3.12.10",
+        "post_report_checks": {
+          "passed": 75,
+          "failed": 0,
+          "seconds": 11.15,
+          "log_sha256": "53aa8566ffb6386c77be33d8b4ead2439427c2cfe3fdfede259c0aa4ac28981f",
+          "scope": "Targeted UI/static-summary checks after reporting; not additional distinct tests."
+        }
+      },
       "passed": true,
       "blocking": true
     },
     {
-      "gate": "catalog_unchanged",
-      "target": "Original seed/schema610",
-      "actual": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
-      "passed": true,
-      "blocking": true
+      "gate": "external_ci",
+      "target": "pending -> local RC only",
+      "actual": "pending_external_gate",
+      "passed": false,
+      "blocking": false
+    },
+    {
+      "gate": "family_validation",
+      "target": ">=5 evaluable; otherwise exact useful gate",
+      "actual": 0,
+      "passed": false,
+      "blocking": false
     }
-  ]
+  ],
+  "tests": {
+    "passed": 726,
+    "skipped": 3,
+    "failed": 0,
+    "seconds": 507.93,
+    "log_sha256": "23872aa1bc336c27e9987f3a11b7905e8449aa647a539e5d25d65ead7528d75f",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.10",
+    "post_report_checks": {
+      "passed": 75,
+      "failed": 0,
+      "seconds": 11.15,
+      "log_sha256": "53aa8566ffb6386c77be33d8b4ead2439427c2cfe3fdfede259c0aa4ac28981f",
+      "scope": "Targeted UI/static-summary checks after reporting; not additional distinct tests."
+    }
+  },
+  "ci": "pending_external_gate"
 }

@@ -72,6 +72,38 @@ def main():
             for path,digest in locks['sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
             baseline=json.loads(archive.read('BurOCRazia/benchmarks/results/round8/baseline/metrics.json'))
             for path,digest in baseline['prior_raw_sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            def evidence(name):return json.loads(archive.read('BurOCRazia/benchmarks/results/round8/'+name+'.json'))
+            plan=evidence('robustness_v4_evaluation_plan');leak=evidence('evaluation_v4_leakage')
+            assert not set(plan['calibration_identities'])&set(plan['evaluation_identities'])
+            assert leak['prohibited_leakage']==0 and not any(leak[k] for k in ['identity_overlap','resource_sha_overlap','url_overlap','title_code_version_or_near_template_overlap'])
+            prepared=evidence('evaluation_prepared');started=evidence('evaluation_started')
+            assert started['freeze']==freeze
+            assert prepared['plan_sha256']==hashlib.sha256(archive.read('BurOCRazia/benchmarks/results/round8/robustness_v4_evaluation_plan.json')).hexdigest()
+            assert started['prepared_sha256']==hashlib.sha256(archive.read('BurOCRazia/benchmarks/results/round8/evaluation_prepared.json')).hexdigest()
+            rob=evidence('robustness_v4')
+            if not rob.get('completion',{}).get('complete',False):
+                interruption=evidence('evaluation_interruption');checkpoint=evidence('evaluation_checkpoint')
+                saved=archive.read('BurOCRazia/benchmarks/results/round8/evaluation_checkpoint.json')
+                assert saved==archive.read('BurOCRazia/benchmarks/results/round8/evaluation_checkpoint_preserved.json')
+                assert hashlib.sha256(saved).hexdigest()==interruption['checkpoint_sha256']
+                assert not interruption['rerun'] and interruption['recognition_calls_during_preservation']==0
+                assert rob['cases']==sorted(checkpoint['cases'],key=lambda r:r['id'])
+                assert len(rob['cases'])==checkpoint['completed']==interruption['persisted']
+                assert len(prepared['representations'])==interruption['planned']
+                assert interruption['unavailable']==interruption['planned']-interruption['persisted']
+                assert evidence('scan_v4')['cases']==[r for r in rob['cases'] if r['scan_like']]
+                assert evidence('filled_v4')['cases']==[r for r in rob['cases'] if r['filled']]
+                assert evidence('retrieval_v4')['cases']==rob['cases']
+                assert gates['status']=='NOT READY' and not gates['local_gates_passed']
+                latest=json.loads(archive.read('BurOCRazia/benchmarks/latest_summary.json'))
+                for key in ['known_robustness','scan_ocr','filled_forms']:
+                    assert latest[key]['status']=='incomplete' and not latest[key]['summary']['metrics']
+            for path in ['docs/ROUND8_BASELINE_AUDIT.md','docs/REFERENCE_TRUTH_AUDIT.md','docs/ROUND8_REPORT.md','docs/BENCHMARK.md','benchmarks/reference/reference_truth_v1.json','data/document_recognition_fingerprints_v3.schema.json','benchmarks/latest_summary.json']:
+                assert archive.read('BurOCRazia/'+path),path
+            for name in ['performance','performance_profile_components','unknown_v4','calibration_v4']:
+                assert evidence(name)
+            for name in ['filled_generation_audit','scan_failure_decomposition']:
+                assert archive.read('BurOCRazia/benchmarks/results/round8/'+name+'.csv')
         if round_number==7:
             freeze=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/freeze.json'))
             for key in ['runtime_sha256','code_sha256','fingerprint_sha256']:assert freeze[key]==gates['identity'][key]
