@@ -118,6 +118,8 @@ class FingerprintIndex:
             for value in set(r['digital'])|set(r['ocr'])|set(r['header'])|set(r['ocr_header']):post[value].append(i)
         self.postings={h:array('H',ids) for h,ids in post.items()};N=len(self.records)
         self.weights={h:math.log((N+1)/(len(ids)+1))+1 for h,ids in self.postings.items()}
+        # Public catalog-only denominators; never cache query features.
+        self.denominators=[tuple(sum(self.weights.get(h,1) for h in r[k]) for k in ('digital','ocr','header','ocr_header')) for r in self.records]
     def candidates(self,query,visual=(),reference=False):
         if reference:return range(len(self.records))
         votes=Counter(i for h in query['tokens'] for i in self.postings.get(h,()))
@@ -129,15 +131,18 @@ class FingerprintIndex:
         rows=[]
         for i in self.candidates(query,visual,reference):
             r=self.records[i];best=0.;inter=0
-            for k in ['digital','ocr','header','ocr_header']:
-                values=r[k];den=sum(self.weights.get(h,1) for h in values)
-                score=sum(self.weights.get(h,1) for h in values if h in query['tokens'])/den if den else 0
-                best=max(best,score);inter=max(inter,sum(h in query['tokens'] for h in values))
+            channels={}
+            for j,k in enumerate(['digital','ocr','header','ocr_header']):
+                values=r[k];den=self.denominators[i][j]
+                matched=[h for h in values if h in query['tokens']]
+                score=sum(self.weights.get(h,1) for h in matched)/den if den else 0
+                channels[k]=score
+                best=max(best,score);inter=max(inter,len(matched))
             chars=overlap(r['chars'],query['chars']);anchors=overlap(r['anchors'],query['anchors']);vs=visual_similarity(visual,r['visual'])
             row=dict(document_id=r['document_id'],resource_index=i,text=best,chars=chars,anchors=anchors,visual=vs,overlap=inter,
                 structure=1-abs(r['structure'][1]-query['structure'][1])/max(r['structure'][1],query['structure'][1],1),
                 score=.5*best+.25*chars+.15*anchors+.1*vs)
-            rows.append(row)
+            row.update(channels);rows.append(row)
         # Multiple resources compete as one identity, never against themselves.
         by={}
         for row in rows:

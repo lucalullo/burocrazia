@@ -757,7 +757,7 @@ def show_benchmark(catalog, families):
                 st.text('Latenza p50/p95 (ms): '+str(section['latency_ms'].get('p50'))+' / '+str(section['latency_ms'].get('p95')))
                 st.text('Indice fingerprint (byte): '+str(section.get('index_bytes','non disponibile')))
             else:st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
-    if summary.get('benchmark_model')=='known-family-unknown-v2':
+    if summary.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3'):
         family=summary.get('family_identity_holdout',{})
         st.text('Famiglie valutabili: '+str(family.get('families_evaluable',0))+' / 16')
         st.text('Validazione family: '+str(family.get('capability_status','non disponibile')))

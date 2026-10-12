@@ -26,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-8-fingerprint-v2"
+RULES_VERSION = "deterministic-9-fingerprint-decision-v3"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -503,13 +503,18 @@ def _score_candidate(
     if exact_title or annual_alias_match or window_title or technical_title:
         title_similarity = 100.0
     else:
-        title_similarity = float(fuzz.partial_ratio(normalized_title, identity_text))
         # partial_ratio alone gives 100 when only one word of a long title is
         # supplied. Require coverage of the candidate title before using it.
         title_tokens = features.title_tokens
         covered_tokens = title_tokens & (input_features['opening_tokens'] if input_features is not None else set(identity_text.split()))
-        if title_tokens and len(covered_tokens) / len(title_tokens) < 0.7:
-            title_similarity = min(title_similarity, MIN_TITLE_SIMILARITY - 1)
+        insufficient=title_tokens and len(covered_tokens) / len(title_tokens) < 0.7
+        if insufficient and input_features is not None and not input_features.get('reference'):
+            # Every value below this threshold contributes zero title score
+            # and zero title evidence. Keep the full computation in reference.
+            title_similarity=MIN_TITLE_SIMILARITY-1
+        else:
+            title_similarity=float(fuzz.partial_ratio(normalized_title,identity_text))
+            if insufficient:title_similarity=min(title_similarity,MIN_TITLE_SIMILARITY-1)
     if title_similarity >= MIN_TITLE_SIMILARITY:
         score += WEIGHTS["title"] * title_similarity / 100.0
         signals.append("modello e versione" if annual_alias_match else "titolo")
@@ -517,7 +522,8 @@ def _score_candidate(
 
     normalized_entity = features.entity
     entity_match = normalized_entity in detected_entities
-    entity_conflict = (bool(detected_entities) and not entity_match) or (len(detected_entities)>1 and not exact_code) or _local_entity_conflict(original_text, document.ente)
+    local_conflict=input_features['local_entity_conflicts'][document.ente] if input_features is not None and 'local_entity_conflicts' in input_features else _local_entity_conflict(original_text,document.ente)
+    entity_conflict = (bool(detected_entities) and not entity_match) or (len(detected_entities)>1 and not exact_code) or local_conflict
     if entity_match:
         score += WEIGHTS["entity"]
         signals.append("ente")
@@ -526,7 +532,7 @@ def _score_candidate(
     matched_keywords = sum(
         1
         for keyword in features.keywords
-        if keyword and f' {keyword} ' in f' {normalized_text} '
+        if keyword and f' {keyword} ' in (input_features['padded_text'] if input_features is not None and 'padded_text' in input_features else f' {normalized_text} ')
     )
     if keyword_count and matched_keywords:
         score += WEIGHTS["keywords"] * matched_keywords / keyword_count
@@ -666,6 +672,9 @@ def recognize_document(
     if reference_full_scan:
         # Reference computes the same new evidence without annual-analysis caches.
         input_features = dict(input_features,reference=True)
+    else:
+        input_features['local_entity_conflicts']={entity:_local_entity_conflict(text[:2000],entity) for entity in set(d.ente for d in document_list)}
+        input_features['padded_text']=f' {normalized_text} '
     candidates = sorted(
         (
             _score_candidate(text, normalized_text, document, detected_entities, opening_text, input_features)
@@ -904,6 +913,7 @@ def catalog_revision(
     catalog_signature = {
         "document_fingerprints": __import__('src.document_fingerprints',fromlist=['revision']).revision(),
         "document_fingerprints_v2": __import__('src.fingerprint_v2',fromlist=['revision']).revision(),
+        "fingerprint_decision_v3": __import__('src.fingerprint_decision_v3',fromlist=['revision']).revision(),
         "technical_features": feature_revision(),
         "safety_profiles": profile_revision(),
         "documents": sorted((
@@ -935,10 +945,11 @@ def recognize_catalog(
     document_list = list(documents)
     family_list = list(families)
     from src.fingerprint_v2 import public_index as fingerprint_index_v2
+    fingerprint_diagnostics={}
     if fingerprint_index_v2().records:
         from src.fingerprint_match_v2 import match as match_fingerprint
         fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
-            visual=visual_fingerprint, reference=reference_full_scan)
+            visual=visual_fingerprint, reference=reference_full_scan,diagnostics=fingerprint_diagnostics)
     else:
         from src.fingerprint_match import match as match_fingerprint
         fingerprint_result = match_fingerprint(text, document_list, file_sha256=file_sha256,
@@ -977,10 +988,13 @@ def recognize_catalog(
     # version through the metadata fallback after a fingerprint refusal.
     if document_result.recognized and document_result.document is not None:
         version=document_result.document.versione or ''
-        if re.fullmatch(r'\d+(?:[.]\d+)+',version) and not re.search(
+        from src.fingerprint_decision_v3 import metadata_revision_supported
+        if re.fullmatch(r'\d+(?:[.]\d+)+',version) and not metadata_revision_supported(text,document_result.document,operational_documents) and not re.search(
             r'\b(?:versione|version|revisione|rev[.])\s*[:=]?\s*'+re.escape(version)+r'\b',text[:2000],re.I):
             document_result=RecognitionResult(False,0.0,reason='Revisione del modello non leggibile.',
                 conflicts=('missing_model_revision',),candidate_ids=document_result.candidate_ids)
+    if not document_result.recognized and fingerprint_diagnostics:
+        document_result=__import__('dataclasses').replace(document_result,reason=document_result.reason+' [fingerprint-decision-v3:'+str(fingerprint_diagnostics.get('reason_code') or fingerprint_diagnostics.get('tier'))+']')
     diagnostics = {
         "document_score_margin": document_result.score_margin,
         "family_score_margin": family_result.score_margin,

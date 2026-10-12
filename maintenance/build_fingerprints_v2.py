@@ -26,9 +26,9 @@ def atomic_bundle(bundle,path=PATH):
         if tmp.exists():tmp.unlink()
     return True
 
-def build(*,worker=False,shard=0,shards=1):
+def build(*,worker=False,shard=0,shards=1,manifest='benchmarks/manifests/official_fingerprint_cache_v2.json',output_dir='benchmarks/results/round6'):
     docs,_=catalog();by={d.id:d for d in docs}
-    resources=read('benchmarks/manifests/official_fingerprint_cache_v2.json')['files']
+    resources=read(manifest)['files']
     if worker:resources=[r for i,r in enumerate(resources) if i%shards==shard]
     work=ROOT/'benchmarks/work/fingerprint-v2';work.mkdir(parents=True,exist_ok=True)
     negative=set()
@@ -42,6 +42,8 @@ def build(*,worker=False,shard=0,shards=1):
         d=by[r['document_id']];key=str(d.id)+'-'+r['sha256'];checkpoint=work/(key+'.json')
         try:
             if d.stato_verifica in ['demo','rifiutato']:raise ValueError('non_operational')
+            if r['mime'] not in ['application/pdf','application/vnd.openxmlformats-officedocument.wordprocessingml.document']:
+                raise ValueError('unsupported_actual_format:'+r['mime'])
             if r['sha256'] in negative or r.get('container_sha256') in negative:raise ValueError('frozen_unknown_label_conflict')
             if checkpoint.exists():
                 record=json.loads(checkpoint.read_bytes())
@@ -84,7 +86,7 @@ def build(*,worker=False,shard=0,shards=1):
     bundle=dict(schema_version=2,fingerprint_version=VERSION,parameters=PARAMETERS,
         records=sorted(records,key=lambda r:(r['document_id'],r['canonical_file_sha256'])))
     atomic_bundle(bundle)
-    write('benchmarks/results/round6/fingerprint_build.json',dict(resources=len(resources),records=len(records),
+    write(output_dir+'/fingerprint_build.json',dict(resources=len(resources),records=len(records),
         identities=len({r['document_id'] for r in records if r['status']=='active'}),
         status_counts=dict(Counter(r['status'] for r in records)),ocr_counts=dict(Counter(r['ocr_metadata']['status'] for r in records)),
         failures=failures,bundle_sha256=hashlib.sha256(PATH.read_bytes()).hexdigest(),
@@ -92,7 +94,7 @@ def build(*,worker=False,shard=0,shards=1):
     print('V2 built',len(records),'resources',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--worker',action='store_true');parser.add_argument('--shard',type=int,default=0);parser.add_argument('--shards',type=int,default=1);parser.add_argument('--validate-only',action='store_true');a=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--worker',action='store_true');parser.add_argument('--shard',type=int,default=0);parser.add_argument('--shards',type=int,default=1);parser.add_argument('--validate-only',action='store_true');parser.add_argument('--manifest',default='benchmarks/manifests/official_fingerprint_cache_v2.json');parser.add_argument('--output-dir',default='benchmarks/results/round6');a=parser.parse_args()
     if not 1<=a.shards<=4 or not 0<=a.shard<a.shards:parser.error('Invalid bounded worker shard')
     if a.validate_only:validate(read_bundle());print('Fingerprint v2 schema valid.')
-    else:build(worker=a.worker,shard=a.shard,shards=a.shards)
+    else:build(worker=a.worker,shard=a.shard,shards=a.shards,manifest=a.manifest,output_dir=a.output_dir)

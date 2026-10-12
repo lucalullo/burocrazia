@@ -10,7 +10,9 @@ def safety_reason(text,document,documents,*,exact=False,entities=None):
         _qualifier_conflict,DISTINCT_ENTITY_NAMES)
     if document.stato_verifica in {'demo','rifiutato'}:return 'non_operational'
     opening=text[:2000];normal=normalize_text(opening)
-    if entities is None:entities=_issuer_entities(opening,[d.ente for d in documents]+list(DISTINCT_ENTITY_NAMES))
+    if entities is None:
+        from src.fingerprint_decision_v3 import entity_evidence
+        entities=entity_evidence(opening,[d.ente for d in documents]+list(DISTINCT_ENTITY_NAMES))
     entities=entities-{'comune','comuni','regione','regioni','enti locali'}
     if entities and normalize_text(document.ente) not in entities:return 'explicit_entity_conflict'
     if _local_entity_conflict(opening,document.ente):return 'explicit_local_entity_conflict'
@@ -42,12 +44,13 @@ def safety_reason(text,document,documents,*,exact=False,entities=None):
     if annex and actual and annex not in actual:return 'explicit_annex_conflict'
     return None
 
-def match(text,documents,*,file_sha256=None,visual=(),index=None,reference=False):
+def match(text,documents,*,file_sha256=None,visual=(),index=None,reference=False,diagnostics=None):
     index=public_index() if index is None else index
     if not index.records:return None
     docs={d.id:d for d in documents if d.stato_verifica not in {'demo','rifiutato'}}
     from src.recognize import _issuer_entities,DISTINCT_ENTITY_NAMES
-    entities=_issuer_entities(text[:2000],[d.ente for d in documents]+list(DISTINCT_ENTITY_NAMES))
+    from src.fingerprint_decision_v3 import entity_evidence,tier,profile,VERSION
+    entities=entity_evidence(text,[d.ente for d in documents]+list(DISTINCT_ENTITY_NAMES))
     decisions={}
     def safe(i,exact=False):
         key=(i,exact)
@@ -60,19 +63,30 @@ def match(text,documents,*,file_sha256=None,visual=(),index=None,reference=False
         if len(ids)==1:
             did=next(iter(ids));resources=[i for i,r in enumerate(index.records) if r['document_id']==did and r['canonical_file_sha256']==file_sha256]
             if any(safe(i,True) for i in resources):
-                return RecognitionResult(True,100.,docs[did],('official_file_sha256_exact','fingerprint_v2'),
+                return RecognitionResult(True,100.,docs[did],('official_file_sha256_exact','fingerprint_v2',VERSION,'A_exact_sha'),
                     'File ufficiale canonico identico.',score_margin=100.,candidate_ids=(did,))
     query=features(text)
     if len(query['tokens'])<20:return None
-    rows=index.similarities(query,visual,reference);t=thresholds()
-    eligible=[r for r in rows if fused(r,t) and safe(r['resource_index'])]
-    if not eligible:return None
+    rows=index.similarities(query,visual,reference);t=profile()
+    from src.title_evidence import exact_code_candidates
+    codes=set(exact_code_candidates(text,documents,reference=reference))
+    choose=lambda r:tier(r,t,code_anchor=r['document_id'] in codes)
+    eligible=[r for r in rows if choose(r) and safe(r['resource_index'])]
+    if not eligible:
+        if diagnostics is not None:
+            best=rows[0] if rows else None
+            d=docs.get(best['document_id']) if best else None
+            diagnostics.update(reason_code=safety_reason(text,d,documents,entities=entities) if d else 'no_candidate',
+                tier='D_template_uncertain' if best and choose(best) else 'insufficient_channels',candidate_ids=tuple(r['document_id'] for r in rows[:25]))
+        return None
     best=eligible[0]
     # Competing supported identities remain ambiguous even if a competitor is
     # just below its acceptance threshold; don't manufacture a large margin.
     runner=max((r['score'] for r in rows if r['document_id']!=best['document_id'] and r['score']>=best['score']-t['margin'] and safe(r['resource_index'])),default=0.)
-    if best['score']-runner<t['margin']:return None
+    if best['score']-runner<t['margin']:
+        if diagnostics is not None:diagnostics.update(reason_code='margin',tier='D_template_uncertain')
+        return None
     return RecognitionResult(True,min(99.,80+19*best['score']),docs[best['document_id']],
-        ('content_fingerprint_match','fingerprint_v2',*(f"{k}:{best[k]:.4f}" for k in ['text','chars','anchors','visual'])),
-        'Firma del contenuto corroborata da più canali e vincoli di identità.',
+        ('content_fingerprint_match','fingerprint_v2',VERSION,choose(best),*(f"{k}:{best[k]:.4f}" for k in ['text','chars','anchors','visual'])),
+        'Firma del contenuto: '+choose(best)+'; ente e versione compatibili.',
         score_margin=100*(best['score']-runner),candidate_ids=tuple(r['document_id'] for r in rows))

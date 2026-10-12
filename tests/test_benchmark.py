@@ -8,7 +8,7 @@ from src.models import AdministrativeDocument, CatalogRecognitionResult, Documen
 
 
 def test_revision_policy_fixture_v2_preserves_its_historical_parent():
-    current = json.loads(DEFAULT_CORPUS.read_text(encoding="utf-8"))
+    current = json.loads((PROJECT_ROOT / "tests/fixtures/benchmark_v2.json").read_text(encoding="utf-8"))
     parent = PROJECT_ROOT / current["parent"]["path"]
     assert hashlib.sha256(parent.read_bytes()).hexdigest() == current["parent"]["sha256"]
     historical = json.loads(parent.read_text(encoding="utf-8"))

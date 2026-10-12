@@ -1,7 +1,8 @@
 """Bounded source resolvers for existing catalog identities only."""
 from email import policy
 from email.parser import BytesParser
-import hashlib,re
+import hashlib,re,zipfile
+from io import BytesIO
 from urllib.parse import urljoin,urlsplit,unquote
 from lxml import html
 from maintenance.iri import iri_to_uri
@@ -13,7 +14,15 @@ SOURCES={2:'inps',3:'inail',4:'ade',5:'lavoro',10:'mimit',12:'funzione_pubblica'
 def sniff(raw):
     if not raw:return 'empty_file'
     if raw.startswith(b'%PDF-'):return 'application/pdf'
-    if raw.startswith(b'PK'):return 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    if raw.startswith(b'PK'):
+        try:
+            with zipfile.ZipFile(BytesIO(raw)) as z:
+                names=set(z.namelist())
+                if 'word/document.xml' in names:return 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+                if 'xl/workbook.xml' in names:return 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                if 'ppt/presentation.xml' in names:return 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+        except (ValueError,OSError,zipfile.BadZipFile):pass
+        return 'application/zip'
     if raw.startswith(b'\xd0\xcf\x11\xe0'):return 'application/msword'
     if b'<html' in raw[:4000].lower() or b'<!doctype html' in raw[:4000].lower():return 'text/html'
     return 'unsupported_mime'
@@ -44,11 +53,17 @@ def resolve_links(raw,base_url,source_key,document):
     validate_url(base_url,source_key)
     if len(raw)>8*1024*1024:raise ValueError('Detail page too large')
     root=html.fromstring(raw,parser=html.HTMLParser(no_network=True,recover=True))
+    redirects=[]
+    for meta in root.xpath('//meta[translate(@http-equiv,"REFSH","refsh")="refresh"]')[:4]:
+        m=re.fullmatch(r'\s*[012](?:[.]0+)?\s*;\s*url\s*=\s*[\"\']?([^\"\']+)[\"\']?\s*',meta.get('content',''),re.I)
+        if m:
+            try:redirects.append(validate_url(iri_to_uri(urljoin(base_url,m[1].strip())),source_key))
+            except ValueError:pass
     wanted=words(' '.join([document.titolo_ufficiale,document.codice or '',urlsplit(document.download_url or '').path.rsplit('/',1)[-1]]))
     rows={}
     for a in root.xpath('//a[@href]')[:2000]:
         href=a.get('href','')
-        if not re.search(r'\.(?:pdf|docx?)(?:[/?#]|$)',href,re.I):continue
+        if not re.search(r'\.(?:pdf|docx?|xlsx?)(?:[/?#]|$)',unquote(href),re.I) and not a.get('download') and not re.search(r'/(?:documents|download)/',href,re.I):continue
         try:url=validate_url(iri_to_uri(urljoin(base_url,href)),source_key)
         except ValueError:continue
         label=a.text_content()[:1000]+' '+urlsplit(url).path.rsplit('/',1)[-1]
@@ -59,7 +74,7 @@ def resolve_links(raw,base_url,source_key,document):
     # page; a shared listing page cannot grant a new association.
     selected=[u for u,s in sorted(rows.items(),key=lambda x:(-x[1],x[0])) if s>=.55]
     if not selected and len(rows)==1 and base_url==document.detail_url:selected=list(rows)
-    return selected[:6]
+    return list(dict.fromkeys([*redirects[:1],*selected]))[:6]
 
 def classify_error(reason,status=None):
     s=reason.lower()

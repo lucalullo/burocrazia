@@ -55,12 +55,22 @@ def main():
         from src.document_fingerprints import validate
         fp=archive.read('BurOCRazia/data/document_recognition_fingerprints.json')
         validate(json.loads(fp))
-        if round_number!=6:assert hashlib.sha256(fp).hexdigest()==gates['identity']['fingerprint_sha256']
-        if round_number==6:
+        if round_number<6:assert hashlib.sha256(fp).hexdigest()==gates['identity']['fingerprint_sha256']
+        if round_number>=6:
             from src.fingerprint_v2 import validate as validate_v2
             fp2=archive.read('BurOCRazia/data/document_recognition_fingerprints_v2.json')
             validate_v2(json.loads(fp2))
             assert hashlib.sha256(fp2).hexdigest()==gates['identity']['fingerprint_sha256']
+        if round_number==7:
+            freeze=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/freeze.json'))
+            for key in ['runtime_sha256','code_sha256','fingerprint_sha256']:assert freeze[key]==gates['identity'][key]
+            assert hashlib.sha256(archive.read('BurOCRazia/benchmarks/results/round7/decision_calibration.json')).hexdigest()==freeze['calibration_sha256']
+            assert hashlib.sha256(archive.read('BurOCRazia/data/recognition_profiles/fingerprint_decision_v3.json')).hexdigest()==freeze['profile_sha256']
+            leakage=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/evaluation_v3_leakage.json'))
+            assert leakage['prohibited_leakage']==0 and not any(leakage[k] for k in ['identity_overlap','resource_sha_overlap','canonical_url_overlap','title_code_version_overlap'])
+            plan=json.loads(archive.read('BurOCRazia/benchmarks/results/round7/robustness_v3_evaluation_plan.json'))
+            assert not set(plan['calibration_identities'])&set(plan['evaluation_identities'])
+        if round_number==6:
             calibration=json.loads(archive.read('BurOCRazia/benchmarks/results/round6/fingerprint_calibration.json'))
             assert hashlib.sha256(archive.read('BurOCRazia/data/recognition_profiles/fingerprint_v2.json')).hexdigest()==calibration['profile_sha256']
             assert not set(calibration['calibration_identities'])&set(calibration['evaluation_identities'])

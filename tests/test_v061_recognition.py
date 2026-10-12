@@ -113,7 +113,9 @@ def test_sr211_rejection_preserves_full_record_catalog_and_append_only_history(t
         families = list_document_families(connection)
         target = next(document for document in original_documents if document.codice == "SR211")
     incomplete_text = f"{target.ente} {target.codice} {target.titolo_ufficiale}"
-    assert recognize.recognize_catalog(incomplete_text, original_documents, families).match_type == "NO_MATCH"
+    # A sole catalog identity with explicit code/title/issuer is supported by
+    # the conditional v3 policy even when its revision is not printed.
+    assert recognize.recognize_catalog(incomplete_text, original_documents, families).document == target
     text = f"{incomplete_text} Versione {target.versione}"
     assert recognize.recognize_catalog(text, original_documents, families).document == target
     assert submit_document_review(target.id, "da_verificare", "Revisore di prova", db_path=path)

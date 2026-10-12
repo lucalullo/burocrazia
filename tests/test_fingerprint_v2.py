@@ -212,6 +212,8 @@ def test_metadata_fallback_requires_readable_semantic_revision():
     from src.recognize import recognize_catalog
     d=document(versione='1.2')
     result=recognize_catalog(TEXT,[d],[])
-    assert result.match_type=='NO_MATCH'
+    assert result.match_type=='DOCUMENT_MATCH'
+    peer=replace(d,id=2,versione='1.3')
+    assert recognize_catalog(TEXT,[d,peer],[]).match_type=='NO_MATCH'
     result=recognize_catalog('INPS\nVersione 1.2\n'+TEXT,[d],[])
     assert result.match_type=='DOCUMENT_MATCH'
