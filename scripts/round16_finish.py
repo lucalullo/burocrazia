@@ -6,12 +6,15 @@ from benchmarks.evaluate import summary
 from src.benchmark_display import load_summary
 
 def main():
-    pre=read(OUT/'pre_freeze_gate.json');perf=read(OUT/'performance_stability.json');eq=read(OUT/'semantic_equivalence.json');tests=read(OUT/'tests.json');checks=read(OUT/'final_checks.json');cov=read(OUT/'coverage.json')
+    pre=read(OUT/'pre_freeze_gate.json');perf=read(OUT/'performance_stability.json');eq=read(OUT/'semantic_equivalence.json');tests=read(OUT/'final_tests.json') if (OUT/'final_tests.json').exists() else read(OUT/'tests.json');checks=read(OUT/'final_checks.json');cov=read(OUT/'coverage.json')
     freeze=read(OUT/'freeze_manifest.json')['freeze_git_commit'] if (OUT/'freeze_manifest.json').exists() else None
     if not (OUT/'unknown_release_v3.json').exists():
         selection=read(OUT/'unknown_v3_selection.json') if (OUT/'unknown_v3_selection.json').exists() else None
         save('unknown_release_v3',dict(status='not_run',passed=False,recognition_calls=0,reason='Fresh confirmed supported pool did not satisfy mandatory sample/source/type gates.' if freeze else 'Mandatory pre-freeze prerequisite failed.',selection=selection.get('selection') if selection else None,n=None,wrong_document_match=None,wrong_family_match=None,freeze_commit=freeze))
     u=read(OUT/'unknown_release_v3.json')
+    if u['status']=='not_run' and (u.get('selection') or {}).get('total',100)<100:
+        u['reason']=f"Campione indipendente insufficiente: {u['selection']['total']}/100 casi obbligatori. Nessuna predizione avviata."
+        save('unknown_release_v3',u)
     preflight=read(OUT/'evaluation_v5_preflight.json') if (OUT/'evaluation_v5_preflight.json').exists() else None
     if not (OUT/'evaluation_v5_gate.json').exists():save('evaluation_not_run',dict(status='not_run',recognition_calls=0,reason='Fresh unknown v3 gate did not pass; known v5 is conditional on that gate.' if not u['passed'] else 'Known v5 preflight did not establish mandatory representation/source/leakage adequacy.',preflight=preflight,metrics=None))
     v5=read(OUT/'evaluation_v5_gate.json') if (OUT/'evaluation_v5_gate.json').exists() else None
@@ -19,7 +22,7 @@ def main():
     reasons=[]
     if not pre['ready_to_freeze']:reasons.append('Mandatory pre-freeze prerequisite failed: '+', '.join(k for k,v in pre.items() if k.endswith('_pass') and v is False)+'.')
     if not u['passed']:reasons.append(u.get('reason','Fresh unknown v3 gate failed; no tuning or replay permitted.'))
-    if not v5 or not v5['passed']:reasons.append('Evaluation v5 has not established its mandatory gates.')
+    if not v5 or not v5['passed']:reasons.append('Evaluation v5 non eseguita: richiede il PASS di unknown v3.' if not u['passed'] else 'Evaluation v5 has not established its mandatory gates.')
     gates=[]
     def gate(name,target,actual,passed,blocking=True):
         gates.append(dict(gate=name,target=target,actual=actual,passed=bool(passed),blocking=blocking,status='PASS' if passed else 'NON MISURATO' if actual is None else 'FAIL' if blocking else 'PENDING' if name=='CI' else 'PREFERITO NON RAGGIUNTO'))
@@ -30,7 +33,8 @@ def main():
     gate('performance_preferred_stability','>=5/7 under250ms',perf['pass_count'],perf['preferred_stability_pass'],False)
     gate('release_freeze','Dedicated commit after prerequisites',freeze,bool(freeze))
     stats=u.get('selection') or {}
-    gate('unknown_v3_sample','>=100;8sources;max25%;5types',stats or None,stats.get('total',0)>=100 and stats.get('sources',0)>=8 and stats.get('max_concentration',1)<=.25 and stats.get('type_groups',0)>=5)
+    sample_actual={k:stats.get(k) for k in ['total','sources','entities','max_concentration','type_groups']} if stats else None
+    gate('unknown_v3_sample','>=100;8sources;max25%;5types',sample_actual,stats.get('total',0)>=100 and stats.get('sources',0)>=8 and stats.get('max_concentration',1)<=.25 and stats.get('type_groups',0)>=5)
     gate('unknown_v3_rejection','>=99%',u.get('rejection_rate'),u.get('rejection_rate',0)>=.99)
     gate('unknown_v3_false_DOC_plus_FAMILY','<=1%',u.get('false_acceptance_rate'),u.get('false_acceptance_rate',1)<=.01)
     gate('unknown_v3_entity_version','0',dict(entity=u['entity_errors'],version=u['version_errors']) if u.get('status')=='complete' else None,u.get('entity_errors',1)==u.get('version_errors',1)==0)
@@ -44,6 +48,7 @@ def main():
     ident=identity();software='0.7.0-rc1' if ready else '0.6.1'
     atomic_json(ROOT/'docs/release_gates.json',dict(round=16,status=status,software_version=software,candidate_target='0.7.0',schema=610,freeze=freeze,identity=ident,gates=gates,local_gates_passed=ready,tests=tests,reasons=reasons,ci='external_pending'))
     latest=copy.deepcopy(read('benchmarks/latest_summary.json'));latest.update(round=16,status=status,software_version=software,version=software,commit=ident['commit'],runtime_sha256=ident['runtime_sha256'],fingerprint_sha256=ident['fingerprint_sha256'],reasons=reasons)
+    if freeze:latest['catalog_semantic_sha256']=read(OUT/'freeze_manifest.json')['catalog_semantic_sha256']
     canonical_summary=summary(read(OUT/'canonical.json')['cases']+read(OUT/'canonical_legacy.json')['cases']);canonical_summary['latency_ms']={}
     latest['known_canonical']=dict(status='executed',native_resources=980,legacy_qualified_resources=27,summary=canonical_summary,scope='1563-case equivalence includes actual1007 canonical recognition results; technical binding is not editorial verification.')
     latest['fingerprint_coverage']=dict(status='executed',operational_docs_total=1212,file_backed_operational_docs=1158,fingerprinted_all_operational_docs=1002,coverage_all=cov['all_operational_percent']/100,coverage_file_backed=cov['file_backed_percent']/100,legacy_qualified=27,scope='Frozen support definition, same denominators; shared support is not exact identity accuracy.')
@@ -54,13 +59,18 @@ def main():
         for key,artifact in [('known_robustness','robustness_v5'),('scan_ocr','scan_v5'),('filled_forms','filled_v5')]:
             latest[key]=dict(status='executed',summary=read(OUT/(artifact+'.json'))['summary'],scope='Prospective same-freeze evaluation v5, single-shot; any failed mandatory metric is retained.')
     latest['unknown_official']=dict(status='executed' if u['status']=='complete' else 'not_run',reason=u.get('reason','Fresh post-freeze single-shot v3; every DOCUMENT/FAMILY acceptance counts as false acceptance.'),summary=dict(cases=u.get('n') or 0,metrics={} if u['status']!='complete' else dict(correct_rejection=dict(numerator=u['correct_no_match'],denominator=u['n'],value=u['rejection_rate'])),latency_ms={}))
+    if u['status']=='complete':
+        latest['unknown_official']['summary']=summary(read(OUT/'unknown_release_v3_observations.json')['cases'])
+        latest['unknown_official'].update(entity_errors=u['entity_errors'],version_errors=u['version_errors'],wrong_family_match=u['wrong_family_match'],wrong_document_match=u['wrong_document_match'])
     latest['input_safety']=dict(status='executed',n=9,safe_rejects=9,passed=True)
     latest['truth_policy']=dict(policy_sha256=sha(POLICY),base_truth_sha256=sha(TRUTH),addendum_sha256=sha(ADDENDUM),confirmed_diagnostic_contracts=1258,historical_mismatches=15)
     latest['evaluations']=[dict(name=p.stem,summary=read(p)['summary']) for p in sorted(OUT.glob('historical_*.json')) if 'summary' in read(p)]
     atomic_json(ROOT/'benchmarks/latest_summary.json',latest);load_summary(ROOT/'benchmarks/latest_summary.json')
     timing='\n'.join(f"| {r['run']} | {r['latency_ms']['p50']} | {r['latency_ms']['p95']} |" for r in perf['runs'])
     table='\n'.join('| '+' | '.join(str(x).replace('|','/') for x in row)+' |' for row in [['Gate','Target','Misurato','Esito','Obbligatorio'],['---']*5]+[[g['gate'],g['target'],g['actual'] if g['actual'] is not None else 'non misurato',g['status'],'sì' if g['blocking'] else 'no'] for g in gates])
-    unknown_text=f"{u.get('correct_no_match')}/{u.get('n')}; DOC errati={u.get('wrong_document_match')}, FAMILY errati={u.get('wrong_family_match')}, rejection={u.get('rejection_rate')}; fonti/concentrazione/tipi={stats}." if u['status']=='complete' else f"Non eseguito: {u['reason']} Adeguatezza pool={stats or 'non misurata'}. Zero chiamate release."
+    unknown_text=f"{u.get('correct_no_match')}/{u.get('n')}; DOC errati={u.get('wrong_document_match')}, FAMILY errati={u.get('wrong_family_match')}, rejection={u.get('rejection_rate')}." if u['status']=='complete' else f"**Non eseguito. {u['reason']}** Il pool finale contiene95 casi qualificati,13 fonti,18 enti,13 categorie; concentrazione massima21.0526%. Fonti/tipi/concentrazione passano, il numero di casi no: ne mancano5. Corrette rejection, false DOCUMENT/FAMILY ed errori ente/versione **non misurati**,0 chiamate release."
+    discovery=read(OUT/'unknown_v3_discovery_summary.json') if (OUT/'unknown_v3_discovery_summary.json').exists() else {}
+    discovery_text=f"{discovery.get('candidates','non misurato')} candidati da tre lotti; richieste effettive {discovery.get('actual_network_request_counts',[])}, totale {discovery.get('total_network_requests','non misurato')}.108 qualificazioni automatiche provvisorie diventano95 casi indipendenti dopo la revisione:1 relazione irrisolta e12 rappresentazioni molto simili escluse. Il terzo traversal termina naturalmente a160/400 richieste, con soli2 nuovi qualificati rispetto ai93 precedenti. È una raccolta limitata dal protocollo, non un'esplorazione esaustiva dei siti ufficiali."
     test_history='I run completi nel temporaneo del workspace hanno incontrato WinError5 nella pubblicazione atomica delle directory dei test; entrambi restano nei log e negli audit, senza modifiche runtime. La verifica dei pacchetti nel temporaneo nativo Windows ha prodotto24 passed/3skip; suite finale eseguita nello stesso ambiente nativo. Un PASS finale non cancella i fallimenti precedenti e non dimostra la causa del blocco Windows oltre l’errore osservato.'
     report=f'''# Round16 — {status}
 
@@ -96,13 +106,15 @@ Historical-regression-fast: **15 mismatch conservati su1517 expected**, exit1:2 
 
 {unknown_text}
 
+{discovery_text} Intestazioni primarie e confronto col catalogo precedono ogni scelta/predizione. La bozza MIMIT2019 collegata al modello582/2020 resta irrisolta ed esclusa. Correzioni di emittenti ricavati da citazioni, coemittenti e tipo primario documentate in unknown_v3_primary_truth_review.json. Nessun metadata/catalogo runtime aggiornato. Nessun falso positivo o precisione vengono inventati su un corpus non eseguito. Il manifest release non viene creato se il minimo non passa; la selezione insufficiente e il risultato not_run restano negli artifact.
+
 Selezione prevista solo dopo freeze, seed2026101316, quote source e gruppi near-resource, senza score; registrazione contaminazione v3 aggiuntiva, SHA e varianti già osservate escluse. Input oltre i limiti e identità non qualificate non entrano come unknown certi. Se un gate fallisce, stop senza tuning/replay sul set. V5 è autorizzata soltanto dopo PASS unknown. Preflight: **{preflight or 'non misurata'}**. Robustezza, scansioni, filled, retrieval@1/@5/@10/@25 e mix unknown sono **{'in evaluation_v5_gate.json e retrieval_v5.json' if v5 else 'non misurati'}**. Nessuna metrica storica riempie i campi mancanti. Family resta **experimental / insufficiently validated**, nessuna nuova prova su>=5 famiglie reali identity-held-out.
 
 ## Test e controlli
 
 Baseline già eseguita786 passed,3skip; finale **{tests['passed']} passed,{tests['failed']} failed,{tests['skipped']} skipped**, {tests['seconds']}s, log SHA registrato. {test_history} Primo run completo810 passed,1failed,2skip; il test isolato symlink raggiunge lo skip previsto per privilegio Windows assente. Dettagli in tests.json/validation_environment.json. Nessun retry nel runtime o modifica IO estranea al vincolo performance-only. Un primo CLI release gate diagnostico confrontava erroneamente i vincoli forbidden_entities come campi osservati: corretto soltanto il comparatore, aggiunti due controesempi; sei NO effettivi non erano falsi positivi. Artifact iniziale preservato,1258 contratti PASS nel gate finale.
 
-Il test storico R15 verifica il suo commit finale d39103d; il nuovo controllo R16 vincola le modifiche correnti alle due funzioni autorizzate e confronta semanticamente gli output. Compile, SQLite integrity/FK, copia/migrazione schema610 e conteggi righe, binding, validator fingerprintv1/v2/v3, compat-v2, schema truth e lock storici PASS. Test sintetici, Tesseract reale, adjudication precedente e CI/collaudo di piattaforma restano separati. Catalogo completo, provenance e famiglia preservati; runtime locale senza LLM/API/telemetria/importazione acquisitori. Runner futuri unknown/v5 predisposti ma non collaudati come release: nessuna selezione, acquisizione o predizione indipendente eseguita in questo round.
+Il test storico R15 verifica il suo commit finale d39103d; il nuovo controllo R16 vincola le modifiche correnti alle due funzioni autorizzate e confronta semanticamente gli output. Compile, SQLite integrity/FK, copia/migrazione schema610 e conteggi righe, binding, validator fingerprintv1/v2/v3, compat-v2, schema truth e lock storici PASS. Test sintetici, Tesseract reale, adjudication precedente e CI/collaudo di piattaforma restano separati. Catalogo completo, provenance e famiglia preservati; runtime locale senza LLM/API/telemetria/importazione acquisitori. Acquisizione/truth e predizioni indipendenti hanno stati distinti negli artifact: nessun caso non eseguito viene dichiarato collaudato. La raccolta maintenance è separata, con opt-in rete, robots, allowlist e lotti limitati; non scrive nel catalogo né importa trasporti nel runtime.
 
 ## Gate
 
@@ -117,7 +129,7 @@ Il test storico R15 verifica il suo commit finale d39103d; il nuovo controllo R1
     if marker in old:old=old[old.index(end)+len(end):].lstrip()
     p.write_text(f"{marker}\n# Round16 — {status}\n\nEquivalenza1563/1563, nessuna differenza; performance7 run mediana p95 {perf['median_p95']}ms (PASS obbligatorio,4/7 sotto250, preferiti non raggiunti). Coverage86.53%, canonical1007/1007,241NO/0FA,input-safety9/9. Truth policy distingue EX02/EX03 INPS e due annualità INAIL ambigue; release gate1258 PASS,15 mismatch storici conservati. Unknown v3 {u['status']}; v5 {'misurata' if v5 else 'non misurata'}. Test{tests['passed']} passed/{tests['failed']}failed/{tests['skipped']}skip: freeze bloccato dai test; schema610, CI pending. [Report Round16](ROUND16_REPORT.md). Le sezioni successive restano storiche.\n{end}\n\n"+old,encoding='utf8',newline='\n')
     paths=[p for p in OUT.glob('*') if p.suffix in ['.json','.csv','.md'] and p.name!='evidence_locks.json']
-    paths.extend(ROOT/p for p in [REGISTRY,POLICY,ADDENDUM,TRUTH,'docs/RELEASE_TRUTH_POLICY.md','docs/ROUND16_BASELINE_AUDIT.md','docs/ROUND16_REPORT.md','docs/BENCHMARK.md','docs/release_gates.json','benchmarks/latest_summary.json'])
+    paths.extend(ROOT/p for p in [REGISTRY,POLICY,ADDENDUM,TRUTH,'scripts/round16_unknown_review.py','docs/RELEASE_TRUTH_POLICY.md','docs/ROUND16_BASELINE_AUDIT.md','docs/ROUND16_REPORT.md','docs/BENCHMARK.md','docs/release_gates.json','benchmarks/latest_summary.json'])
     save('evidence_locks',dict(baseline_commit=BASE,freeze=freeze,sha256={p.relative_to(ROOT).as_posix():sha(p) for p in sorted(paths)},historical_original_git_sha256=read(OUT/'historical_locks.json')['historical_original_git_sha256']))
     print('R16',status,reasons,flush=True)
 

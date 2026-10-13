@@ -1,3 +1,9 @@
+<!-- round16-current -->
+# Round16 — NOT READY
+
+Equivalenza1563/1563, nessuna differenza; performance7 run mediana p95 244.9918ms (PASS obbligatorio,4/7 sotto250, preferiti non raggiunti). Coverage86.53%, canonical1007/1007,241NO/0FA,input-safety9/9. Truth policy distingue EX02/EX03 INPS e due annualità INAIL ambigue; release gate1258 PASS,15 mismatch storici conservati. Unknown v3 not_run; v5 non misurata. Test819 passed/0failed/3skip: freeze bloccato dai test; schema610, CI pending. [Report Round16](ROUND16_REPORT.md). Le sezioni successive restano storiche.
+<!-- /round16-current -->
+
 <!-- round15-current -->
 # Round15 — NOT READY
 

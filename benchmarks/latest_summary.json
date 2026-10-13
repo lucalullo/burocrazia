@@ -2,106 +2,9 @@
   "benchmark_model": "known-family-unknown-v5",
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
-  "catalog_semantic_sha256": "sha256:76f9e2ecb0263545622e1096286cf71c7574bf6fa8a964c1513e40197c90fd09",
-  "commit": "842d9d421d9b36e97930c7826a8b661561122e7e",
+  "catalog_semantic_sha256": "sha256:c525200e32af038d109c641e6ad001f2f10749f3a7d23e05cc859f8f7bcf789c",
+  "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
   "evaluations": [
-    {
-      "name": "historical_catalog_coverage",
-      "summary": {
-        "cases": 1212,
-        "confusion_matrix": {
-          "DOCUMENT_MATCH": {
-            "DOCUMENT_MATCH": 1169,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 43
-          },
-          "FAMILY_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          },
-          "NO_MATCH": {
-            "DOCUMENT_MATCH": 0,
-            "FAMILY_MATCH": 0,
-            "NO_MATCH": 0
-          }
-        },
-        "failed": 43,
-        "latency_ms": {
-          "p50": 57.5405,
-          "p95": 72.7348,
-          "p99": 80.1022
-        },
-        "metrics": {
-          "document_f1": {
-            "denominator": 2381,
-            "numerator": 2338,
-            "value": 0.9819403611927762
-          },
-          "document_precision": {
-            "denominator": 1169,
-            "numerator": 1169,
-            "value": 1.0
-          },
-          "document_recall": {
-            "denominator": 1212,
-            "numerator": 1169,
-            "value": 0.9645214521452146
-          },
-          "entity_error_rate": {
-            "denominator": 1169,
-            "numerator": 0,
-            "value": 0.0
-          },
-          "exact_document_coverage": {
-            "denominator": 1212,
-            "numerator": 1169,
-            "value": 0.9645214521452146
-          },
-          "family_f1": {
-            "denominator": 0,
-            "numerator": 0,
-            "value": null
-          },
-          "family_precision": {
-            "denominator": 0,
-            "numerator": 0,
-            "value": null
-          },
-          "family_recall": {
-            "denominator": 0,
-            "numerator": 0,
-            "value": null
-          },
-          "supported_rejection_rate": {
-            "denominator": 1212,
-            "numerator": 43,
-            "value": 0.03547854785478548
-          },
-          "unknown_correct_rejection_rate": {
-            "denominator": 0,
-            "numerator": 0,
-            "value": null
-          },
-          "unknown_false_acceptance_rate": {
-            "denominator": 0,
-            "numerator": 0,
-            "value": null
-          },
-          "useful_coverage": {
-            "denominator": 1212,
-            "numerator": 1169,
-            "value": 0.9645214521452146
-          },
-          "version_year_error_rate": {
-            "denominator": 1169,
-            "numerator": 0,
-            "value": 0.0
-          }
-        },
-        "passed": 1169
-      }
-    },
     {
       "name": "historical_development_compat_v2",
       "summary": {
@@ -124,11 +27,7 @@
           }
         },
         "failed": 0,
-        "latency_ms": {
-          "p50": 46.215,
-          "p95": 70.8268,
-          "p99": null
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 22,
@@ -221,11 +120,7 @@
           }
         },
         "failed": 2,
-        "latency_ms": {
-          "p50": 65.482,
-          "p95": 173.8151,
-          "p99": null
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 20,
@@ -318,11 +213,7 @@
           }
         },
         "failed": 0,
-        "latency_ms": {
-          "p50": 2.286,
-          "p95": 8.305,
-          "p99": 8.8352
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 0,
@@ -415,11 +306,7 @@
           }
         },
         "failed": 0,
-        "latency_ms": {
-          "p50": 52.4215,
-          "p95": 62.7013,
-          "p99": null
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 0,
@@ -512,11 +399,7 @@
           }
         },
         "failed": 0,
-        "latency_ms": {
-          "p50": 10.345,
-          "p95": 62.5257,
-          "p99": 66.8216
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 0,
@@ -588,6 +471,99 @@
       }
     },
     {
+      "name": "historical_INAIL_ambiguous",
+      "summary": {
+        "cases": 2,
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 2,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "failed": 2,
+        "latency_ms": {},
+        "metrics": {
+          "document_f1": {
+            "denominator": 2,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "document_precision": {
+            "denominator": 2,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "document_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "entity_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "denominator": 2,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "unknown_false_acceptance_rate": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "version_year_error_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          }
+        },
+        "passed": 0
+      }
+    },
+    {
       "name": "historical_release_locked_v1",
       "summary": {
         "cases": 69,
@@ -609,11 +585,7 @@
           }
         },
         "failed": 10,
-        "latency_ms": {
-          "p50": 59.768,
-          "p95": 77.0174,
-          "p99": null
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 116,
@@ -706,11 +678,7 @@
           }
         },
         "failed": 0,
-        "latency_ms": {
-          "p50": 58.571,
-          "p95": 70.7978,
-          "p99": null
-        },
+        "latency_ms": {},
         "metrics": {
           "document_f1": {
             "denominator": 112,
@@ -789,7 +757,7 @@
     "status": "experimental"
   },
   "filled_forms": {
-    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
+    "reason": "Evaluation v5 conditional gates not established.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -803,9 +771,8 @@
     "file_backed_operational_docs": 1158,
     "fingerprinted_all_operational_docs": 1002,
     "legacy_qualified": 27,
-    "native_coverage": 0.8419689119170984,
     "operational_docs_total": 1212,
-    "scope": "Frozen support definition v1; shared resource support is distinct from exact identity accuracy.",
+    "scope": "Frozen support definition, same denominators; shared support is not exact identity accuracy.",
     "status": "executed"
   },
   "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
@@ -830,7 +797,7 @@
   "known_canonical": {
     "legacy_qualified_resources": 27,
     "native_resources": 980,
-    "scope": "Fix validation on current runtime; no Round15 release freeze or independent evaluation claimed.",
+    "scope": "1563-case equivalence includes actual1007 canonical recognition results; technical binding is not editorial verification.",
     "status": "executed",
     "summary": {
       "cases": 1007,
@@ -852,11 +819,7 @@
         }
       },
       "failed": 0,
-      "latency_ms": {
-        "p50": 11.5297,
-        "p95": 15.8834,
-        "p99": 66.161
-      },
+      "latency_ms": {},
       "metrics": {
         "document_f1": {
           "denominator": 2014,
@@ -874,9 +837,9 @@
           "value": 1.0
         },
         "entity_error_rate": {
-          "denominator": 980,
+          "denominator": 0,
           "numerator": 0,
-          "value": 0.0
+          "value": null
         },
         "exact_document_coverage": {
           "denominator": 1007,
@@ -884,9 +847,9 @@
           "value": 1.0
         },
         "family_f1": {
-          "denominator": 12,
+          "denominator": 0,
           "numerator": 0,
-          "value": 0.0
+          "value": null
         },
         "family_precision": {
           "denominator": 0,
@@ -894,9 +857,9 @@
           "value": null
         },
         "family_recall": {
-          "denominator": 12,
+          "denominator": 0,
           "numerator": 0,
-          "value": 0.0
+          "value": null
         },
         "supported_rejection_rate": {
           "denominator": 1007,
@@ -919,16 +882,16 @@
           "value": 1.0
         },
         "version_year_error_rate": {
-          "denominator": 980,
+          "denominator": 0,
           "numerator": 0,
-          "value": 0.0
+          "value": null
         }
       },
       "passed": 1007
     }
   },
   "known_robustness": {
-    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
+    "reason": "Evaluation v5 conditional gates not established.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -938,36 +901,20 @@
   },
   "performance": {
     "latency_ms": {
-      "p50": 66.4942,
-      "p95": 263.0707
+      "p50": 62.3783,
+      "p95": 244.9918
     },
-    "mandatory_gate": "Median p95 <=250ms; four of five preferred only",
-    "median_p95": 263.0707,
-    "p50": [
-      48.7097,
-      66.9108,
-      66.4942,
-      66.5482,
-      63.6686
-    ],
-    "p95": [
-      215.0934,
-      263.0707,
-      259.0395,
-      283.8871,
-      285.658
-    ],
-    "pass_count": 1,
-    "passed": false,
-    "preferred_four_of_five": false,
-    "prudent_fragile": true,
-    "reason": "Mediane dei percentili dei cinque run warm; p95 oltre il limite di 250 ms. Memoria dell’indice non rimisurata in questo round.",
-    "scope": "Five predetermined runs retained, failed mandatory median gate; no rerun.",
+    "median_p95": 244.9918,
+    "pass_count": 4,
+    "passed": true,
+    "preferred_stability_pass": false,
+    "reason": "Seven predetermined warm runs,402 fresh requests/run,2814 raw timings; extraction/OCR reported separately. Preferred targets are not blockers.",
+    "runs": 7,
     "status": "executed"
   },
   "reasons": [
-    "Performance prerequisite failed: median p95 263.0707ms exceeds250ms, five predetermined runs retained.",
-    "Actual release-fast CLI exit1 with unchanged historical EX02/EX03; zero-failure final gate not met."
+    "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
+    "Evaluation v5 non eseguita: richiede il PASS di unknown v3."
   ],
   "release_gate": {
     "candidate_target": "0.7.0",
@@ -1260,10 +1207,10 @@
       "status": "passed"
     }
   },
-  "round": 15,
-  "runtime_sha256": "e5e9ad58ae261506e94e5a40bcb84a7cf3031ad18fddcb57aff2155661c47dfb",
+  "round": 16,
+  "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
   "scan_ocr": {
-    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
+    "reason": "Evaluation v5 conditional gates not established.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -1279,6 +1226,13 @@
     "ambiguous": 2,
     "completed_before_fix": true,
     "confirmed_false_accepts": 1
+  },
+  "truth_policy": {
+    "addendum_sha256": "ca3819fba1e8ccf0281e9bc5e81feae8be75634fe2e982d953c98fa3b9507f2c",
+    "base_truth_sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7",
+    "confirmed_diagnostic_contracts": 1258,
+    "historical_mismatches": 15,
+    "policy_sha256": "bc48cc12747f364ffbd90ca93565124c48ae0bb3b9686983efd058370203ab41"
   },
   "unknown_development": {
     "scope": "Only master-minus-release development resources; no R11 release predictions or tuning. Prior exposure of release cases remains explicitly reported.",
@@ -1417,7 +1371,7 @@
     "without_code": 104
   },
   "unknown_official": {
-    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
+    "reason": "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
     "status": "not_run",
     "summary": {
       "cases": 0,

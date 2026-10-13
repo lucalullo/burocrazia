@@ -290,12 +290,47 @@ def verify_round16(archive,names,gates):
     if gates['freeze']:
         f=r('freeze_manifest');assert f['freeze_git_commit']==gates['freeze'] and r('pre_freeze_gate')['ready_to_freeze']
         for p,h in f['engine_files_sha256'].items():assert hashlib.sha256(archive.read(prefix+p)).hexdigest()==h,p
+        for n,h in f['prerequisite_evidence_sha256'].items():assert hashlib.sha256(archive.read(prefix+'benchmarks/results/round16/'+n+'.json')).hexdigest()==h,n
     else:assert prefix+'benchmarks/results/round16/freeze_manifest.json' not in names
     unknown=r('unknown_release_v3')
     if unknown['status']=='complete':
         assert gates['freeze'] and unknown['recognition_calls']==unknown['n']>=100
         assert unknown['observations_sha256']==hashlib.sha256(archive.read(prefix+'benchmarks/results/round16/unknown_release_v3_observations.json')).hexdigest()
-    else:assert unknown['recognition_calls']==0
+        manifest=data('benchmarks/manifests/official_unknown_release_v3.json')
+        assert unknown['manifest_sha256']==hashlib.sha256(archive.read(prefix+'benchmarks/manifests/official_unknown_release_v3.json')).hexdigest()
+        from benchmarks.unknown_release import balance
+        from benchmarks.round16_unknown import metrics
+        stats=balance(manifest['cases']);assert stats==unknown['selection']
+        assert stats['total']>=100 and stats['sources']>=8 and stats['max_concentration']<=.25 and stats['type_groups']>=5
+        registry=data('benchmarks/reference/benchmark_contamination_registry_v3.json')
+        assert not set(registry['observed_resource_sha256'])&{c['SHA256'] for c in manifest['cases']}
+        obs=r('unknown_release_v3_observations');assert obs['complete'] and len(obs['cases'])==obs['completed']==obs['expected_count']==unknown['n']
+        assert {c['id']:c['input_sha256'] for c in obs['cases']}=={c['case_id']:c['SHA256'] for c in manifest['cases']}
+        assert len({c['id'] for c in obs['cases']})==unknown['n']
+        measured=metrics(obs['cases'])
+        for k,v in measured.items():assert unknown[k]==v,k
+        assert unknown['passed']==(measured['rejection_rate']>=.99 and measured['false_acceptance_rate']<=.01 and measured['entity_errors']==measured['version_errors']==0)
+        assert unknown['identity']['runtime_sha256']==f['runtime_sha256']
+        assert manifest['freeze_commit']==f['freeze_git_commit']
+    else:
+        assert unknown['recognition_calls']==0 and not r('unknown_v3_selection')['passed']
+        assert r('unknown_v3_selection')['selection']['total']==95
+        assert prefix+'benchmarks/manifests/official_unknown_release_v3.json' not in names
+        assert prefix+'benchmarks/results/round16/unknown_v3_started.json' not in names
+        assert r('evaluation_not_run')['recognition_calls']==0
+    review=r('unknown_v3_primary_truth_review')
+    assert review['recognition_calls']==0 and review['counts']['confirmed_independent']==95
+    assert review['script_sha256']==hashlib.sha256(archive.read(prefix+'scripts/round16_unknown_review.py')).hexdigest()
+    assert r('final_tests')['failed']==0 and r('final_tests')['passed']==gates['tests']['passed']>=819
+    assert r('post_freeze_checks')['prerequisite_hashes_preserved']
+    if prefix+'benchmarks/results/round16/evaluation_v5_gate.json' in names:
+        v5=r('evaluation_v5_gate');obs=r('evaluation_v5_observations')
+        assert unknown['passed'] and obs['complete'] and len(obs['cases'])==obs['completed']==obs['expected_count']==v5['expected_count']==v5['actual_count']==v5['unique_case_ids']
+        assert len({c['id'] for c in obs['cases']})==len(obs['cases'])
+        assert v5['final_observations_sha256']==hashlib.sha256(archive.read(prefix+'benchmarks/results/round16/evaluation_v5_observations.json')).hexdigest()
+        assert r('evaluation_v5_preflight')['passed'] and r('evaluation_v5_leakage')['passed'] and r('evaluation_v5_leakage')['prohibited_leakage']==0
+        assert v5['passed']==all(g['passed'] for g in v5['gates'].values())
+        assert v5['identity']['runtime_sha256']==f['runtime_sha256']
     if gates['local_gates_passed']:assert unknown['passed'] and r('evaluation_v5_gate')['passed']
     locks=r('evidence_locks')
     for key in ['sha256','historical_original_git_sha256']:

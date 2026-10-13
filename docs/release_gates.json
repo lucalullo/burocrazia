@@ -1,105 +1,117 @@
 {
-  "adjudication_sha256": "3fdb391e1ef8b8d1efde9f17cf63cbc19968076cf9428c4ffc9889090685ab75",
   "candidate_target": "0.7.0",
   "ci": "external_pending",
-  "evaluation_v5": "not_run",
-  "freeze": null,
+  "freeze": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
   "gates": [
     {
-      "actual": {
-        "actual_catalog_document": 0,
-        "ambiguous": 2,
-        "confirmed_unknown": 1,
-        "release_eligible": 0
-      },
+      "actual": true,
       "blocking": true,
-      "gate": "truth_adjudication",
+      "gate": "coverage",
       "passed": true,
       "status": "PASS",
-      "target": "3 official decisions before engine edit; ambiguous excluded"
+      "target": "PASS"
     },
     {
-      "actual": 86.52849740932642,
+      "actual": true,
       "blocking": true,
-      "gate": "fingerprint_coverage",
+      "gate": "canonical",
       "passed": true,
       "status": "PASS",
-      "target": ">=85%"
+      "target": "PASS"
     },
     {
-      "actual": 82.67326732673267,
+      "actual": true,
       "blocking": true,
-      "gate": "all_operational",
+      "gate": "confirmed_safety",
       "passed": true,
       "status": "PASS",
-      "target": ">=70%"
+      "target": "PASS"
     },
     {
-      "actual": "980/980",
-      "blocking": true,
-      "gate": "canonical_native",
-      "passed": true,
-      "status": "PASS",
-      "target": "100%"
-    },
-    {
-      "actual": "27/27",
-      "blocking": true,
-      "gate": "canonical_legacy",
-      "passed": true,
-      "status": "PASS",
-      "target": "100%"
-    },
-    {
-      "actual": {
-        "false_accepts": 0,
-        "n": 241
-      },
-      "blocking": true,
-      "gate": "historical_safety",
-      "passed": true,
-      "status": "PASS",
-      "target": "241 NO; 0 false accepts"
-    },
-    {
-      "actual": "NO_MATCH",
-      "blocking": true,
-      "gate": "confirmed_ANAC_regression",
-      "passed": true,
-      "status": "PASS",
-      "target": "NO_MATCH"
-    },
-    {
-      "actual": "9/9",
+      "actual": true,
       "blocking": true,
       "gate": "input_safety",
       "passed": true,
       "status": "PASS",
-      "target": "all safe rejects/no crash/no residue"
+      "target": "PASS"
     },
     {
-      "actual": 263.0707,
+      "actual": true,
+      "blocking": true,
+      "gate": "truth_policy",
+      "passed": true,
+      "status": "PASS",
+      "target": "PASS"
+    },
+    {
+      "actual": true,
+      "blocking": true,
+      "gate": "release_gate_fast",
+      "passed": true,
+      "status": "PASS",
+      "target": "PASS"
+    },
+    {
+      "actual": true,
+      "blocking": true,
+      "gate": "semantic_equivalence",
+      "passed": true,
+      "status": "PASS",
+      "target": "PASS"
+    },
+    {
+      "actual": true,
+      "blocking": true,
+      "gate": "tests",
+      "passed": true,
+      "status": "PASS",
+      "target": "PASS"
+    },
+    {
+      "actual": 244.9918,
       "blocking": true,
       "gate": "performance_median_p95",
-      "passed": false,
-      "status": "FAIL",
+      "passed": true,
+      "status": "PASS",
       "target": "<=250ms"
     },
     {
-      "actual": 1,
+      "actual": 244.9918,
       "blocking": false,
-      "gate": "performance_four_of_five",
+      "gate": "performance_preferred_latency",
       "passed": false,
       "status": "PREFERITO NON RAGGIUNTO",
-      "target": "preferred>=4/5"
+      "target": "<=220ms"
     },
     {
-      "actual": null,
+      "actual": 4,
+      "blocking": false,
+      "gate": "performance_preferred_stability",
+      "passed": false,
+      "status": "PREFERITO NON RAGGIUNTO",
+      "target": ">=5/7 under250ms"
+    },
+    {
+      "actual": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "blocking": true,
+      "gate": "release_freeze",
+      "passed": true,
+      "status": "PASS",
+      "target": "Dedicated commit after prerequisites"
+    },
+    {
+      "actual": {
+        "entities": 18,
+        "max_concentration": 0.21052631578947367,
+        "sources": 13,
+        "total": 95,
+        "type_groups": 13
+      },
       "blocking": true,
       "gate": "unknown_v3_sample",
       "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=100 confirmed unknown,8sources,max25%"
+      "status": "FAIL",
+      "target": ">=100;8sources;max25%;5types"
     },
     {
       "actual": null,
@@ -112,7 +124,7 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "unknown_v3_wrong_document",
+      "gate": "unknown_v3_false_DOC_plus_FAMILY",
       "passed": false,
       "status": "NON MISURATO",
       "target": "<=1%"
@@ -128,10 +140,18 @@
     {
       "actual": null,
       "blocking": true,
+      "gate": "unknown_v3_freshness",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "No prior SHA or obvious near variant"
+    },
+    {
+      "actual": null,
+      "blocking": true,
       "gate": "v5_preflight",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=30IDs,6sources,400reps,200scan,50filled,30unknown"
+      "target": ">=30IDs,6sources,400known,200scan,50filled,30unknown"
     },
     {
       "actual": null,
@@ -139,7 +159,7 @@
       "gate": "v5_leakage",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "0 prohibited"
+      "target": "0"
     },
     {
       "actual": null,
@@ -156,14 +176,6 @@
       "passed": false,
       "status": "NON MISURATO",
       "target": ">=90%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_entity_version",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "0"
     },
     {
       "actual": null,
@@ -219,7 +231,15 @@
       "gate": "v5_retrieval_at1",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "target>=99%"
+      "target": ">=99%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_entity_version",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "0"
     },
     {
       "actual": null,
@@ -227,83 +247,15 @@
       "gate": "v5_unknown_mix",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=99% rejection"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "release_freeze",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "Dedicated commit after all prerequisites"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "unknown_v3_freshness",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "0 prior SHA or obvious near-resource reuse"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "unknown_v3_supported_truth",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "Confirmed unknown, supported input only"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "unknown_v3_types",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=5 types"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "unknown_v3_family_acceptance",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "Counts as false acceptance"
-    },
-    {
-      "actual": {
-        "failed": 0,
-        "passed": 786,
-        "skipped": 3
-      },
-      "blocking": true,
-      "gate": "pytest",
-      "passed": true,
-      "status": "PASS",
-      "target": "0 failures"
-    },
-    {
-      "actual": true,
-      "blocking": true,
-      "gate": "compile_integrity_FK_migrations_schema",
-      "passed": true,
-      "status": "PASS",
-      "target": "0 failures"
-    },
-    {
-      "actual": 1,
-      "blocking": true,
-      "gate": "release_fast_cli",
-      "passed": false,
-      "status": "FAIL",
-      "target": "exit0"
+      "target": ">=99%"
     },
     {
       "actual": "experimental / insufficiently validated",
       "blocking": false,
       "gate": "family_identity_holdout",
       "passed": false,
-      "status": "EXPERIMENTAL",
-      "target": ">=5 real families"
+      "status": "PREFERITO NON RAGGIUNTO",
+      "target": ">=5 validated real families"
     },
     {
       "actual": "external_pending",
@@ -311,34 +263,35 @@
       "gate": "CI",
       "passed": false,
       "status": "PENDING",
-      "target": "external pending"
+      "target": "External matrix"
     }
   ],
-  "historical_unknown_v2": "historical_unknown_release_v2_round14",
   "identity": {
-    "code_sha256": "7e5bc92baad0fec8c24a8fed69df3cf288a68a813e941fcd1baf070f8b05ccfb",
-    "commit": "842d9d421d9b36e97930c7826a8b661561122e7e",
-    "executed_at": "2026-10-13T13:18:35.747908+00:00",
+    "code_sha256": "0a6a8d4bc8a2ad548c08b01203fb25ac6e5879fa7c64bda2f5d6306c5f2932b0",
+    "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+    "executed_at": "2026-10-13T20:10:16.855023+00:00",
     "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
-    "runtime_sha256": "e5e9ad58ae261506e94e5a40bcb84a7cf3031ad18fddcb57aff2155661c47dfb",
-    "seed": 2026101315
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "seed": 2026101208
   },
   "local_gates_passed": false,
   "reasons": [
-    "Performance prerequisite failed: median p95 263.0707ms exceeds250ms, five predetermined runs retained.",
-    "Actual release-fast CLI exit1 with unchanged historical EX02/EX03; zero-failure final gate not met."
+    "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
+    "Evaluation v5 non eseguita: richiede il PASS di unknown v3."
   ],
-  "round": 15,
+  "round": 16,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "86e030f7a189470fd823a521ce06e4a486d9f849a83e804bda547450594e154d",
-    "passed": 786,
-    "seconds": 531.32,
+    "log_sha256": "c000135f7f78a4b26922295713b316de6c528e49e402e25a1a6e2c0610fd4c17",
+    "passed": 819,
+    "pre_freeze_tests_sha256": "857e5a868bc2988b3dcc35823f70f1d84713f6e506c639f0fff4c208b2ab8917",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "scope": "Final full suite after reports/data qualification on the same frozen engine; pre-freeze tests remain immutable.",
+    "seconds": 677.72,
     "skipped": 3,
     "status": "passed"
-  },
-  "unknown_v3": "not_run"
+  }
 }
