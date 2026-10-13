@@ -1,0 +1,108 @@
+{
+  "branch": "codex/coverage-benchmark-v0.7.0",
+  "canonical": {
+    "exact": 979,
+    "total": 979,
+    "wrong": 0
+  },
+  "ci": "external_pending",
+  "code_sha256": "597365a87ec73350a88346da11d314ed3a8c67e28ec8362e5d699aa22d0fba93",
+  "commit": "d19547f458e46d38c11a84ffd9e2f735510ac5bc",
+  "coverage": {
+    "current_fingerprinted": 941,
+    "exact_shortfall": 44,
+    "file_backed_total": 1158,
+    "initial_coverage_percent": 81.26079447322971,
+    "minimum_for_85": 985,
+    "operational_total": 1212,
+    "scope": "Initial R10 unambiguous metric preserved. R11 shared eligibility requires a separate binding/provenance audit; no automatic promotion of all shared IDs.",
+    "shared_only_candidates": 38
+  },
+  "decision_version": "fingerprint-decision-v5",
+  "entry_working_tree": "clean (captured before baseline script creation)",
+  "evaluation_v5": "not_run",
+  "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+  "fingerprint_version": "fingerprint-v3",
+  "freeze": null,
+  "historical_counts": {
+    "historical_catalog_coverage": {
+      "passed": 1169,
+      "total": 1212
+    },
+    "historical_development_compat_v2": {
+      "passed": 37,
+      "total": 37
+    },
+    "historical_development_regression": {
+      "passed": 33,
+      "total": 35
+    },
+    "historical_family_release_v3": {
+      "passed": 161,
+      "total": 161
+    },
+    "historical_hard_negatives_v1": {
+      "passed": 30,
+      "total": 30
+    },
+    "historical_hard_negatives_v2": {
+      "passed": 100,
+      "total": 100
+    },
+    "historical_release_locked_v1": {
+      "passed": 59,
+      "total": 69
+    },
+    "historical_release_locked_v2": {
+      "passed": 69,
+      "total": 69
+    }
+  },
+  "historical_false_accepts": [],
+  "historical_no": 241,
+  "performance": {
+    "n": 402,
+    "p50": 25.5838,
+    "p95": 146.0866,
+    "p99": 211.5491
+  },
+  "performance_source_sha256": "dba90e073d590417eed3f538e24bdc6b510a8ae02c0df42ef6488d9f7c3ac819",
+  "r10_evidence_locks_verified": 46,
+  "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+  "schema": 610,
+  "software_version": "0.6.1",
+  "tests": {
+    "failed": 0,
+    "log_sha256": "b976c42638277a87d196b2f94c434afa639ff2e0b0f9cbe9e1b8786fb5ab47f3",
+    "passed": 758,
+    "seconds": 486.1,
+    "skipped": 3
+  },
+  "unknown": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "inail": 16,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 45,
+      "mit": 3
+    },
+    "current_max_concentration": 0.4205607476635514,
+    "current_max_source_count": 45,
+    "current_sources": 7,
+    "current_total": 107,
+    "dominant_source": "mimit",
+    "dominant_usable_at_100": 25,
+    "max_per_source_at_100": 25,
+    "minimum_new_non_dominant": 13,
+    "minimum_new_sources": 1,
+    "non_dominant_available": 62,
+    "preferred_additions": [
+      20,
+      40
+    ],
+    "release_minimum": 100,
+    "scope": "All confirmed master cases retained. A deterministic source quota subset may be selected before evaluation; no prediction-based selection."
+  }
+}

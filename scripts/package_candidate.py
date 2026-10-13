@@ -122,6 +122,35 @@ def main():
                 assert evidence(name)
             for name in ['filled_generation_audit','scan_failure_decomposition']:
                 assert archive.read('BurOCRazia/benchmarks/results/round8/'+name+'.csv')
+        if round_number==11:
+            from src.fingerprint_v3 import validate as validate_v3
+            from benchmarks.unknown_release import validate as validate_unknown11,select
+            from benchmarks.truth_v2 import validate_registry
+            validate_registry(json.loads(archive.read('BurOCRazia/benchmarks/reference/reference_truth_v2_round11_addendum.json')))
+            fp11=json.loads(archive.read('BurOCRazia/data/document_recognition_fingerprints_v3.json'));validate_v3(fp11)
+            assert hashlib.sha256(archive.read('BurOCRazia/data/document_recognition_fingerprints_v3.json')).hexdigest()==gates['identity']['fingerprint_sha256']
+            original_fp=json.loads(subprocess.check_output(['git','show','d19547f:data/document_recognition_fingerprints_v3.json'],cwd=ROOT))
+            assert fp11['records'][:len(original_fp['records'])]==original_fp['records']
+            restored=dict(fp11,records=fp11['records'][:len(original_fp['records'])])
+            assert hashlib.sha256((json.dumps(restored,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest()=='378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6'
+            master11=validate_unknown11(json.loads(archive.read('BurOCRazia/benchmarks/manifests/official_unknown_master_v1.json')))
+            release11=validate_unknown11(json.loads(archive.read('BurOCRazia/benchmarks/manifests/official_unknown_release_v1.json')))
+            assert {c['case_id'] for c in select(master11['cases'])}=={c['case_id'] for c in release11['cases']}
+            assert {c['case_id'] for c in json.loads(archive.read('BurOCRazia/benchmarks/manifests/official_unknown_v2.json'))['cases']}<={c['case_id'] for c in master11['cases']}
+            locks11=json.loads(archive.read('BurOCRazia/benchmarks/results/round11/evidence_locks.json'))
+            for path,digest in locks11['sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            for path,digest in locks11['historical_original_git_sha256'].items():assert hashlib.sha256(archive.read('BurOCRazia/'+path)).hexdigest()==digest,path
+            prior_raw_archive_count=len(locks11['historical_original_git_sha256'])
+            pre11=json.loads(archive.read('BurOCRazia/benchmarks/results/round11/prerequisite_gate.json'))
+            assert not pre11['ready_to_freeze'] and gates['status']=='NOT READY' and gates['freeze'] is None
+            for name in ['freeze','robustness_v5','scan_v5','filled_v5','unknown_eval_v5','retrieval_v5','evaluation_v5_leakage']:assert 'BurOCRazia/benchmarks/results/round11/'+name+'.json' not in names
+            dev11=json.loads(archive.read('BurOCRazia/benchmarks/results/round11/unknown_development.json'))
+            assert {r['id'] for r in dev11['cases']}=={c['case_id'] for c in master11['cases'] if c['split']=='unknown_dev'}
+            assert dev11['actual_count']==dev11['expected_count']==dev11['unique_case_ids'] and dev11['release_recognition_calls']==0
+            assert hashlib.sha256(archive.read('BurOCRazia/benchmarks/results/round11/unknown_development_observations.json')).hexdigest()==dev11['observations_sha256']
+            latest11=json.loads(archive.read('BurOCRazia/benchmarks/latest_summary.json'))
+            for name in ['known_robustness','scan_ocr','filled_forms','unknown_official']:assert latest11[name]['status']=='not_run' and not latest11[name]['summary']['metrics']
+            for path in ['docs/ROUND11_BASELINE_AUDIT.md','docs/ROUND11_REPORT.md','benchmarks/results/round11/coverage_target.json','benchmarks/results/round11/coverage_final.json','benchmarks/results/round11/fingerprint_recovery_plan.csv','benchmarks/results/round11/unknown_balance_target.json','benchmarks/results/round11/unknown_truth_audit.csv','benchmarks/results/round11/unknown_balance_final.json','benchmarks/results/round11/tests.json']:assert archive.read('BurOCRazia/'+path),path
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -200,9 +229,11 @@ def main():
             assert locks['runtime_sha256']==gates['identity']['runtime_sha256']
         assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
     historical_scope='Original R6/R7/R8/R9 Git blobs unchanged from the Round10 baseline, plus immutable v1 unknown/v2 truth/fingerprint/decision data. All R6/R7 physical baseline hashes separately verified. No old evaluation result rewritten.' if round_number==10 else 'Original R6/R7/R8 tracked Git blobs unchanged from the Round9 baseline; evidence_locks.json lists their byte hashes. All 110 R6/R7 physical workspace hashes separately verified. Historical ignored checkpoints intentionally excluded. Locked corpus byte hashes verified without normalization.' if round_number==9 else '105 tracked historical Git blobs unchanged from the initial Round7 commit, including 18 preexisting LF Git/CRLF workspace differences with identical JSON. All 110 workspace raw hashes unchanged; five historically ignored development checkpoints intentionally excluded from Git archive. Locked corpus byte hashes verified separately without normalization.'
+    if round_number==11:historical_scope='Original R6-R10 Git evidence blobs unchanged. All1027 prior fingerprint records preserved and original R10 bundle byte SHA reconstructible from that prefix with UTF8/indent2/trailing LF. Corpus locks, seed and prior archives separately verified.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==10:(output.parent/'package-verification-round10.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==11:(output.parent/'package-verification-round11.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

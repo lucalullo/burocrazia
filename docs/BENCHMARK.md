@@ -1,3 +1,9 @@
+<!-- round11-current -->
+# Round 11
+
+Round 11 **NOT READY**, pubblico 0.6.1/schema 610. Coverage supporto risorsa 975/1158=84.196891%, di cui 942 unambiguous e 33 shared-only; non confondere con canonical 980/980. Master unknown 125, release 105/10 fonti/max 23.809524%, senza predizioni release R11. p95 248.23ms; tests 762 passati/3 skip. Nessun freeze/v5. Dettagli: [rapporto Round 11](ROUND11_REPORT.md). Le sezioni successive restano storiche.
+<!-- /round11-current -->
+
 <!-- round10-current -->
 # Round10
 

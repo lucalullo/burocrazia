@@ -40,4 +40,8 @@ Il Garante espone servizi online, pagine informative e download; dodici risorse 
 
 ## Stato delle priorità Round 2
 
+### Integrazione benchmark Round 11
+
+Regione Piemonte è ammessa solo negli strumenti maintenance per il benchmark unknown, sul dominio istituzionale `regione.piemonte.it` e suoi sottodomini. Prove primarie: [Bandi Regione Piemonte](https://bandi.regione.piemonte.it/contributi-finanziamenti/progetti-i-giovani-ambito-sportivo), [Servizionline regionale](https://servizi.regione.piemonte.it/catalogo/presentazione-domanda-flaidom) e [modulo sul portale Trasparenza](https://trasparenza.regione.piemonte.it/media/27859/download). Le ricevute effettive, redirect e SHA sono nell’acquisizione R11; nessuna fonte o documento aggiunto al catalogo. HTML challenge e file non acquisibili non costituiscono prove documentali. Interno/Prefetture e Giustizia fuori Venezia restano benchmark-only; il titolo della pagina dettaglio è distinto dall’etichetta generica dell’allegato. Le dichiarazioni Round 2 seguenti restano storiche.
+
 La seconda espansione non è stata avviata: precisione locked v1, copertura reale e gate CI restano insufficienti. Le prove Round 1 sono conservate in `source_census.json`; non sono spacciate per richieste Round 2. Il campione ufficiale è una valutazione dei record esistenti, non un import. ADE/ADER/ADM, ACI/PRA, MIT, Interno/Prefetture, Salute, AgID, Polizia, altri tribunali e IPA restano nel perimetro residuo. Nessun bypass di 403/429.

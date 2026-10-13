@@ -2,8 +2,8 @@
   "benchmark_model": "known-family-unknown-v5",
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
-  "catalog_semantic_sha256": "sha256:f3d119945cf4cc25a602639a80887fb27baf750fffe5c4d536ef3a8a29ab7f31",
-  "commit": "8c13da270fe2c4db212ca3611fb5ce0ddef7b0d8",
+  "catalog_semantic_sha256": "sha256:76f9e2ecb0263545622e1096286cf71c7574bf6fa8a964c1513e40197c90fd09",
+  "commit": "d19547f458e46d38c11a84ffd9e2f735510ac5bc",
   "evaluations": [
     {
       "name": "development_regression",
@@ -28,8 +28,8 @@
         },
         "failed": 2,
         "latency_ms": {
-          "p50": 61.169,
-          "p95": 155.8402,
+          "p50": 43.742,
+          "p95": 118.7544,
           "p99": null
         },
         "metrics": {
@@ -125,8 +125,8 @@
         },
         "failed": 10,
         "latency_ms": {
-          "p50": 57.182,
-          "p95": 67.1054,
+          "p50": 36.488,
+          "p95": 58.2564,
           "p99": null
         },
         "metrics": {
@@ -222,8 +222,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 61.78,
-          "p95": 77.6458,
+          "p50": 38.045,
+          "p95": 55.1192,
           "p99": null
         },
         "metrics": {
@@ -319,8 +319,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 27.006,
-          "p95": 55.9804,
+          "p50": 34.3115,
+          "p95": 49.1661,
           "p99": null
         },
         "metrics": {
@@ -416,9 +416,9 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 5.229,
-          "p95": 29.1773,
-          "p99": 30.8632
+          "p50": 10.116,
+          "p95": 36.8496,
+          "p99": 53.997
         },
         "metrics": {
           "document_f1": {
@@ -513,9 +513,9 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 0.822,
-          "p95": 3.027,
-          "p99": 3.4248
+          "p50": 1.324,
+          "p95": 4.775,
+          "p99": 6.233
         },
         "metrics": {
           "document_f1": {
@@ -610,8 +610,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 27.774,
-          "p95": 32.5478,
+          "p50": 36.899,
+          "p95": 55.1612,
           "p99": null
         },
         "metrics": {
@@ -707,9 +707,9 @@
         },
         "failed": 43,
         "latency_ms": {
-          "p50": 58.677,
-          "p95": 72.4449,
-          "p99": 80.805
+          "p50": 38.3605,
+          "p95": 58.7836,
+          "p99": 64.6449
         },
         "metrics": {
           "document_f1": {
@@ -782,7 +782,7 @@
       }
     }
   ],
-  "executed_at": "2026-10-12T20:32:59.681207+00:00",
+  "executed_at": "2026-10-13T06:29:04.950875+00:00",
   "family_identity_holdout": {
     "capability_status": "insufficiently_validated",
     "families_evaluable": 0,
@@ -791,7 +791,7 @@
   "filled_forms": {
     "cases": [],
     "freeze": null,
-    "reason": "Prerequisites failed: coverage, source diversity and balance.",
+    "reason": "Coverage below85%; freeze/evaluationv5 prohibited.",
     "recognition_calls": 0,
     "status": "not_run",
     "summary": {
@@ -801,59 +801,23 @@
     }
   },
   "fingerprint_coverage": {
-    "additional_required": 44,
-    "coverage_all": 0.7764026402640264,
-    "coverage_file_backed": 0.812607944732297,
-    "derived_fingerprints_active": 0,
-    "derived_resource_count": 47,
-    "derived_unique_identity_candidates": [
-      422,
-      1101
-    ],
-    "file_backed": 1158,
+    "coverage_all": 0.8044554455445545,
+    "coverage_file_backed": 0.8419689119170983,
     "file_backed_operational_docs": 1158,
-    "fingerprinted": 941,
-    "fingerprinted_all_operational_docs": 941,
-    "fingerprinted_file_backed_docs": 941,
-    "minimum_needed_for_85": 985,
-    "operational": 1212,
+    "fingerprinted_all_operational_docs": 975,
     "operational_docs_total": 1212,
-    "recovered": 0,
-    "remaining_reasons": {
-      "Risposta oltre 8 MiB.;official_html_wrapper": 1,
-      "additional_resource_identity_not_supported": 5,
-      "additional_resource_identity_not_supported;explicit_entity_conflict": 1,
-      "derived_only_original_mime_not_supported_by_v3": 3,
-      "explicit_entity_conflict": 18,
-      "legacy_active_content_rejected": 3,
-      "legacy_conversion_failed": 1,
-      "legacy_external_relationship_rejected": 9,
-      "legacy_pdf_limits": 1,
-      "official_html_wrapper": 4,
-      "official_html_wrapper;prior_permanent_failure_no_retry": 10,
-      "official_html_wrapper;prior_permanent_failure_no_retry;supported_official_bytes": 1,
-      "official_html_wrapper;supported_official_bytes": 23,
-      "opening_identity_not_supported": 46,
-      "prior_403_429_no_retry": 90,
-      "prior_permanent_failure_no_retry;supported_official_bytes": 1
-    },
-    "residual_audited": 217,
-    "scope": "Fixed R6 denominator; 941 active unique IDs, 979 active resources. Derived-only and shared candidates excluded. No original legacy bytes represented as official PDF SHA. Runtime bundle and seed unchanged.",
+    "scope": "R11 explicitly allows genuinely associated shared-resource support. R10 unambiguous941/1158 metric retained alongside this distinct coverage measure; no denominator change or shared canonical-identity inflation.",
+    "shared_only_supported": 33,
     "status": "executed",
-    "tiers": {
-      "1": 27,
-      "2": 63,
-      "3": 32,
-      "4": 95
-    }
+    "unambiguous_identities": 942
   },
   "known_canonical": {
     "status": "executed",
     "summary": {
-      "cases": 979,
+      "cases": 980,
       "confusion_matrix": {
         "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 979,
+          "DOCUMENT_MATCH": 980,
           "FAMILY_MATCH": 0,
           "NO_MATCH": 0
         },
@@ -870,34 +834,34 @@
       },
       "failed": 0,
       "latency_ms": {
-        "p50": 9.9299,
-        "p95": 13.6835,
-        "p99": 16.3394
+        "p50": 8.9853,
+        "p95": 12.5722,
+        "p99": 14.4078
       },
       "metrics": {
         "document_f1": {
-          "denominator": 1958,
-          "numerator": 1958,
+          "denominator": 1960,
+          "numerator": 1960,
           "value": 1.0
         },
         "document_precision": {
-          "denominator": 979,
-          "numerator": 979,
+          "denominator": 980,
+          "numerator": 980,
           "value": 1.0
         },
         "document_recall": {
-          "denominator": 979,
-          "numerator": 979,
+          "denominator": 980,
+          "numerator": 980,
           "value": 1.0
         },
         "entity_error_rate": {
-          "denominator": 979,
+          "denominator": 980,
           "numerator": 0,
           "value": 0.0
         },
         "exact_document_coverage": {
-          "denominator": 979,
-          "numerator": 979,
+          "denominator": 980,
+          "numerator": 980,
           "value": 1.0
         },
         "family_f1": {
@@ -916,7 +880,7 @@
           "value": 0.0
         },
         "supported_rejection_rate": {
-          "denominator": 979,
+          "denominator": 980,
           "numerator": 0,
           "value": 0.0
         },
@@ -931,23 +895,23 @@
           "value": null
         },
         "useful_coverage": {
-          "denominator": 979,
-          "numerator": 979,
+          "denominator": 980,
+          "numerator": 980,
           "value": 1.0
         },
         "version_year_error_rate": {
-          "denominator": 979,
+          "denominator": 980,
           "numerator": 0,
           "value": 0.0
         }
       },
-      "passed": 979
+      "passed": 980
     }
   },
   "known_robustness": {
     "cases": [],
     "freeze": null,
-    "reason": "Prerequisites failed: coverage, source diversity and balance.",
+    "reason": "Coverage below85%; freeze/evaluationv5 prohibited.",
     "recognition_calls": 0,
     "status": "not_run",
     "summary": {
@@ -957,12 +921,12 @@
     }
   },
   "performance": {
-    "index_bytes": 89725169,
+    "index_bytes": 89746066,
     "latency_ms": {
       "n": 402,
-      "p50": 25.5838,
-      "p95": 146.0866,
-      "p99": 211.5491
+      "p50": 55.8256,
+      "p95": 248.2326,
+      "p99": 409.8556
     },
     "status": "executed"
   },
@@ -973,50 +937,64 @@
     "freeze_status": "not_created",
     "gates": [
       {
-        "actual": 0.812607944732297,
+        "actual": 84.19689119170984,
         "blocking": true,
         "gate": "coverage_file_backed",
         "passed": false,
+        "status": "FAIL",
         "target": ">=85%"
       },
       {
-        "actual": 0.7764026402640264,
+        "actual": 80.44554455445545,
         "blocking": true,
         "gate": "coverage_all",
         "passed": true,
+        "status": "PASS",
         "target": ">=70%"
       },
       {
-        "actual": 107,
+        "actual": 105,
         "blocking": true,
         "gate": "unknown_count",
         "passed": true,
-        "target": ">=100,target150"
+        "status": "PASS",
+        "target": ">=100"
       },
       {
-        "actual": 7,
+        "actual": 10,
         "blocking": true,
         "gate": "unknown_sources",
-        "passed": false,
-        "target": ">=8,target10+"
+        "passed": true,
+        "status": "PASS",
+        "target": ">=8"
       },
       {
-        "actual": 0.4205607476635514,
+        "actual": 0.23809523809523808,
         "blocking": true,
         "gate": "unknown_balance",
-        "passed": false,
+        "passed": true,
+        "status": "PASS",
         "target": "<=25%"
+      },
+      {
+        "actual": 12,
+        "blocking": true,
+        "gate": "unknown_types",
+        "passed": true,
+        "status": "PASS",
+        "target": ">=5"
       },
       {
         "actual": [],
         "blocking": true,
         "gate": "historical_safety",
         "passed": true,
-        "target": "0 historical NO accepts"
+        "status": "PASS",
+        "target": "0 false accepts"
       },
       {
         "actual": {
-          "exact": 979,
+          "exact": 980,
           "extraction_failed": 0,
           "family": 0,
           "reject": 0,
@@ -1025,85 +1003,116 @@
         "blocking": true,
         "gate": "canonical",
         "passed": true,
+        "status": "PASS",
         "target": "100% unambiguous"
       },
       {
         "actual": {
           "n": 402,
-          "p50": 25.5838,
-          "p95": 146.0866,
-          "p99": 211.5491
+          "p50": 55.8256,
+          "p95": 248.2326,
+          "p99": 409.8556
         },
         "blocking": true,
         "gate": "performance",
         "passed": true,
+        "status": "PASS",
         "target": "p95<=250ms"
       },
       {
-        "actual": {
-          "extraction_failed": 0,
-          "false_accepts": 0,
-          "total": 75
-        },
+        "actual": 125,
         "blocking": false,
-        "gate": "unknown_development",
+        "gate": "master_pool",
         "passed": true,
-        "target": "observed separately"
+        "status": "PASS",
+        "target": ">=120 preferred"
+      },
+      {
+        "actual": {
+          "failed": 0,
+          "log_sha256": "fd0fa5646fd548dedce492340a419a9fdbdc906557f72b7298ab512899103718",
+          "passed": 762,
+          "platform": "Windows-11-10.0.26300-SP0",
+          "python": "3.12.10",
+          "scope": "Full local Windows pytest, real local Tesseract where required; one symlink-privilege and two FIFO skips. No external CI claim.",
+          "seconds": 506.06,
+          "skipped": 3,
+          "status": "passed",
+          "targeted_final": {
+            "failed": 0,
+            "log_sha256": "8e0462cecf6a3b11ca062ed36b898adcedb32a4134175e784bb4c8a2594ebd30",
+            "passed": 4,
+            "scope": "Resolver, attachment role, quota invariance, domain and negative-manifest guards; not added twice to the suite count."
+          }
+        },
+        "blocking": true,
+        "gate": "tests",
+        "passed": true,
+        "status": "PASS",
+        "target": "0 failures"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_identities",
+        "gate": "v5_known_identities",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=30"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_sources",
+        "gate": "v5_known_sources",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=6"
-      },
-      {
-        "actual": null,
-        "blocking": true,
-        "gate": "v5_concentration",
-        "passed": false,
-        "target": "<=30%"
       },
       {
         "actual": null,
         "blocking": true,
         "gate": "v5_representations",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=400"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_scans",
+        "gate": "v5_scan_count",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=200"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_fills",
+        "gate": "v5_valid_fills",
         "passed": false,
-        "target": ">=50 valid"
+        "status": "NON MISURATO",
+        "target": ">=50"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_unknown_eval",
+        "gate": "v5_unknown_mix",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=30"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "v5_validity",
+        "passed": false,
+        "status": "NON MISURATO",
+        "target": "count==unique==expected; schema/atomic/SHA"
       },
       {
         "actual": null,
         "blocking": true,
         "gate": "v5_precision",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=99.5%"
       },
       {
@@ -1111,34 +1120,47 @@
         "blocking": true,
         "gate": "v5_exact_recall",
         "passed": false,
+        "status": "NON MISURATO",
         "target": ">=90%"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_entity_version_errors",
+        "gate": "v5_entity_errors",
         "passed": false,
+        "status": "NON MISURATO",
         "target": "0"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_scan",
+        "gate": "v5_version_errors",
         "passed": false,
-        "target": "P>=99.5%,R>=85%"
+        "status": "NON MISURATO",
+        "target": "0"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_filled",
+        "gate": "v5_scan_recall",
         "passed": false,
-        "target": "P>=99.5%,R>=90%"
+        "status": "NON MISURATO",
+        "target": ">=85%,P>=99.5%"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_unknown_rejection",
+        "gate": "v5_filled_recall",
         "passed": false,
+        "status": "NON MISURATO",
+        "target": ">=90%,P>=99.5%"
+      },
+      {
+        "actual": null,
+        "blocking": true,
+        "gate": "unknown_release_rejection",
+        "passed": false,
+        "status": "NON MISURATO",
         "target": ">=99%"
       },
       {
@@ -1146,84 +1168,62 @@
         "blocking": true,
         "gate": "v5_retrieval_at25",
         "passed": false,
-        "target": "100%"
-      },
-      {
-        "actual": {
-          "failed": 0,
-          "log_sha256": "0f2023306ca44ed0eb898ed2bbf1671170ad9fa9c3ad41c587e66f80566af387",
-          "passed": 758,
-          "platform": "Windows-11-10.0.26300-SP0",
-          "post_correction_targeted": {
-            "failed": 0,
-            "log_sha256": "f2317bd1550b555fd2439ee1eddc1d6065741ff2113740c6e2a0e3108ed60cd9",
-            "passed": 9,
-            "scope": "Profile values and timeout/provenance contracts retested after maintenance profile correction; not added a second time to full-suite count.",
-            "seconds": 0.71
-          },
-          "python": "3.12.10",
-          "seconds": 514.23,
-          "skip_reasons": "Windows: one symlink privilege and two FIFO unsupported cases; see preserved local pytest log.",
-          "skipped": 3,
-          "status": "passed"
-        },
-        "blocking": true,
-        "gate": "tests",
-        "passed": true,
-        "target": "all pass"
+        "status": "NON MISURATO",
+        "target": "100%;@1 target99%"
       },
       {
         "actual": "experimental / insufficiently validated",
         "blocking": false,
         "gate": "family",
         "passed": false,
-        "target": ">=5 real evaluable families"
+        "status": "INFO/PENDING",
+        "target": ">=5 real families or experimental"
       },
       {
         "actual": "external_pending",
         "blocking": false,
         "gate": "CI",
         "passed": false,
+        "status": "INFO/PENDING",
         "target": "external_pending"
       }
     ],
     "identity": {
-      "code_sha256": "597365a87ec73350a88346da11d314ed3a8c67e28ec8362e5d699aa22d0fba93",
-      "commit": "8c13da270fe2c4db212ca3611fb5ce0ddef7b0d8",
-      "executed_at": "2026-10-12T20:32:59.681207+00:00",
-      "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+      "code_sha256": "b9cffa120d771ab78a34728f06a6908ab13a4df0c19dab93f92053a653782528",
+      "commit": "d19547f458e46d38c11a84ffd9e2f735510ac5bc",
+      "executed_at": "2026-10-13T06:29:04.950875+00:00",
+      "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
       "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
-      "seed": 2026101210
+      "seed": 2026101311
     },
     "local_gates_passed": false,
-    "round": 10,
+    "round": 11,
     "schema": 610,
     "software_version": "0.6.1",
     "status": "NOT READY",
     "tests": {
       "failed": 0,
-      "log_sha256": "0f2023306ca44ed0eb898ed2bbf1671170ad9fa9c3ad41c587e66f80566af387",
-      "passed": 758,
+      "log_sha256": "fd0fa5646fd548dedce492340a419a9fdbdc906557f72b7298ab512899103718",
+      "passed": 762,
       "platform": "Windows-11-10.0.26300-SP0",
-      "post_correction_targeted": {
-        "failed": 0,
-        "log_sha256": "f2317bd1550b555fd2439ee1eddc1d6065741ff2113740c6e2a0e3108ed60cd9",
-        "passed": 9,
-        "scope": "Profile values and timeout/provenance contracts retested after maintenance profile correction; not added a second time to full-suite count.",
-        "seconds": 0.71
-      },
       "python": "3.12.10",
-      "seconds": 514.23,
-      "skip_reasons": "Windows: one symlink privilege and two FIFO unsupported cases; see preserved local pytest log.",
+      "scope": "Full local Windows pytest, real local Tesseract where required; one symlink-privilege and two FIFO skips. No external CI claim.",
+      "seconds": 506.06,
       "skipped": 3,
-      "status": "passed"
+      "status": "passed",
+      "targeted_final": {
+        "failed": 0,
+        "log_sha256": "8e0462cecf6a3b11ca062ed36b898adcedb32a4134175e784bb4c8a2594ebd30",
+        "passed": 4,
+        "scope": "Resolver, attachment role, quota invariance, domain and negative-manifest guards; not added twice to the suite count."
+      }
     }
   },
-  "round": 10,
+  "round": 11,
   "scan_ocr": {
     "cases": [],
     "freeze": null,
-    "reason": "Prerequisites failed: coverage, source diversity and balance.",
+    "reason": "Coverage below85%; freeze/evaluationv5 prohibited.",
     "recognition_calls": 0,
     "status": "not_run",
     "summary": {
@@ -1235,56 +1235,11 @@
   "schema_version": 1,
   "software_version": "0.6.1",
   "status": "NOT READY",
-  "unknown_official": {
-    "confirmed_corpus": {
-      "classification_counts": {
-        "ambiguous": 94,
-        "confirmed_unknown": 39,
-        "duplicate_of_catalog": 8,
-        "possible_family_match": 7,
-        "unsupported_truth": 5
-      },
-      "counts_per_source": {
-        "agid": 15,
-        "anac": 9,
-        "inail": 16,
-        "lavoro": 6,
-        "mef": 13,
-        "mimit": 45,
-        "mit": 3
-      },
-      "document_types": {
-        "circolare": 28,
-        "comunicato": 1,
-        "decreto": 27,
-        "delibera": 2,
-        "direttiva": 2,
-        "guida": 31,
-        "istruzioni": 3,
-        "manuale": 6,
-        "modulo": 2,
-        "regolamento": 5
-      },
-      "entities": 7,
-      "max_concentration": 0.4205607476635514,
-      "near_resource_groups": 105,
-      "new_candidates_audited": 153,
-      "scope": "Only positively confirmed unknowns count. All68 R9 cases retained; no downsampling to improve balance. Code requires explicit document-number/protocol marker in opening800; version/year requires explicit version/revision/edition/year marker. Cited statute years do not make a document versioned; absent proof remains unversioned. R9 lexical observations preserved separately, no truth-label changes.",
-      "sources": 7,
-      "split": {
-        "unknown_dev": 75,
-        "unknown_eval": 32
-      },
-      "total_confirmed": 107,
-      "unversioned": 81,
-      "versioned": 26,
-      "with_code": 19,
-      "without_code": 88
-    },
-    "reason": "Reserved unknown_eval unmeasured; no independent rejection estimate.",
-    "status": "development_only",
+  "unknown_development": {
+    "scope": "Only master-minus-release development resources; no R11 release predictions or tuning. Prior exposure of release cases remains explicitly reported.",
+    "status": "executed",
     "summary": {
-      "cases": 75,
+      "cases": 20,
       "confusion_matrix": {
         "DOCUMENT_MATCH": {
           "DOCUMENT_MATCH": 0,
@@ -1299,13 +1254,13 @@
         "NO_MATCH": {
           "DOCUMENT_MATCH": 0,
           "FAMILY_MATCH": 0,
-          "NO_MATCH": 75
+          "NO_MATCH": 20
         }
       },
       "failed": 0,
       "latency_ms": {
-        "p50": 114.1226,
-        "p95": 306.0323,
+        "p50": 198.4631,
+        "p95": 877.4051,
         "p99": null
       },
       "metrics": {
@@ -1355,12 +1310,12 @@
           "value": null
         },
         "unknown_correct_rejection_rate": {
-          "denominator": 75,
-          "numerator": 75,
+          "denominator": 20,
+          "numerator": 20,
           "value": 1.0
         },
         "unknown_false_acceptance_rate": {
-          "denominator": 75,
+          "denominator": 20,
           "numerator": 0,
           "value": 0.0
         },
@@ -1375,7 +1330,95 @@
           "value": null
         }
       },
-      "passed": 75
+      "passed": 20
     }
+  },
+  "unknown_master_pool": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "giustizia": 2,
+      "inail": 16,
+      "interno": 14,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 45,
+      "mit": 3,
+      "regione_piemonte": 2
+    },
+    "document_types": {
+      "atto_indirizzo": 1,
+      "circolare": 39,
+      "comunicato": 1,
+      "decreto": 28,
+      "delibera": 2,
+      "direttiva": 2,
+      "domanda": 3,
+      "guida": 31,
+      "istruzioni": 3,
+      "manuale": 7,
+      "modulo": 3,
+      "regolamento": 5
+    },
+    "entities": 10,
+    "max_concentration": 0.36,
+    "previously_recognized": 75,
+    "sources": 10,
+    "total": 125,
+    "type_groups": 12,
+    "unversioned": 97,
+    "versioned": 28,
+    "with_code": 21,
+    "without_code": 104
+  },
+  "unknown_official": {
+    "cases": [],
+    "freeze": null,
+    "reason": "Release subset105/10sources, max23.81%, selected but not recognized in R11. Prior exposure55 cases retained; no independent rejection estimate.",
+    "recognition_calls": 0,
+    "status": "not_run",
+    "summary": {
+      "cases": 0,
+      "latency_ms": {},
+      "metrics": {}
+    }
+  },
+  "unknown_release_subset": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "giustizia": 2,
+      "inail": 16,
+      "interno": 14,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 25,
+      "mit": 3,
+      "regione_piemonte": 2
+    },
+    "document_types": {
+      "atto_indirizzo": 1,
+      "circolare": 29,
+      "comunicato": 1,
+      "decreto": 22,
+      "delibera": 2,
+      "direttiva": 1,
+      "domanda": 3,
+      "guida": 31,
+      "istruzioni": 3,
+      "manuale": 7,
+      "modulo": 3,
+      "regolamento": 2
+    },
+    "entities": 10,
+    "max_concentration": 0.23809523809523808,
+    "previously_recognized": 55,
+    "sources": 10,
+    "total": 105,
+    "type_groups": 12,
+    "unversioned": 78,
+    "versioned": 27,
+    "with_code": 16,
+    "without_code": 89
   }
 }

@@ -1,0 +1,28 @@
+{
+  "canonical_pass": true,
+  "coverage_all_pass": true,
+  "coverage_all_percent": 80.44554455445545,
+  "coverage_file_backed_pass": false,
+  "coverage_file_backed_percent": 84.19689119170984,
+  "historical_safety_pass": true,
+  "identity": {
+    "code_sha256": "b9cffa120d771ab78a34728f06a6908ab13a4df0c19dab93f92053a653782528",
+    "commit": "d19547f458e46d38c11a84ffd9e2f735510ac5bc",
+    "executed_at": "2026-10-13T06:29:04.950875+00:00",
+    "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101311
+  },
+  "performance_pass": true,
+  "ready_to_freeze": false,
+  "scope": "Shared eligibility audited separately from exact canonical identity. Release selected without predictions; no R11 release recognition before freeze.",
+  "tests_pass": true,
+  "unknown_balance_pass": true,
+  "unknown_count_pass": true,
+  "unknown_master_count": 125,
+  "unknown_release_count": 105,
+  "unknown_release_max_concentration": 0.23809523809523808,
+  "unknown_release_sources": 10,
+  "unknown_sources_pass": true,
+  "unknown_types_pass": true
+}

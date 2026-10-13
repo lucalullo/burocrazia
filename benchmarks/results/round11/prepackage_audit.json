@@ -1,0 +1,40 @@
+{
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "official_unknown_hashes_verified": 125,
+  "prior_archives_sha256": {
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round10.zip": "17b8c6655e44f7ea4d1025d13a7db0afb558df93c7891e4e46d5709751f8ce37",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round8.zip": "d1b8cf63e9f4b857bccb61942e0b52e2a36badeae7213be41aca33478909752a",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round9.zip": "4eb297530a7ab2854e1d10004fcaec6d73ddb5771810e13d9210540a865e4517"
+  },
+  "prior_fingerprint_records_preserved": 1027,
+  "prior_fingerprint_restore": "Select first1027 records from current bundle; serialize UTF8 ensure_ascii=False indent=2 with trailing LF. Exact original Git bytes verified; no duplicate50MB required.",
+  "prior_fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+  "release_recognition_calls": 0,
+  "release_selection_reproducible": true,
+  "summary_contract": "valid"
+}

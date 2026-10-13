@@ -22,6 +22,7 @@ DOMAINS = {
     "polizia": ("poliziadistato.it",),
     "unioncamere": ("unioncamere.gov.it",),
     "registro_imprese": ("registroimprese.it",),
+    "regione_piemonte": ("regione.piemonte.it",),
 }
 
 
