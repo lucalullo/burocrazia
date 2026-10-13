@@ -11,6 +11,73 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 
+def verify_round12(archive, names, gates):
+    """Verify the stopped R12 path and all five measured performance runs."""
+    from collections import Counter
+    import csv
+    import math
+    import statistics
+    from benchmarks.unknown_release import validate as validate_unknown, select
+    from benchmarks.round9_performance import describe
+    from src.fingerprint_v3 import validate as validate_v3
+    def read12(name):
+        return json.loads(archive.read('BurOCRazia/benchmarks/results/round12/' + name + '.json'))
+    prefix = 'BurOCRazia/'
+    fp_bytes = archive.read(prefix + 'data/document_recognition_fingerprints_v3.json')
+    fp = validate_v3(json.loads(fp_bytes))
+    assert fp_bytes == subprocess.check_output(['git', 'show', 'd911fcc:data/document_recognition_fingerprints_v3.json'], cwd=ROOT)
+    assert hashlib.sha256(fp_bytes).hexdigest() == gates['identity']['fingerprint_sha256']
+    master = validate_unknown(json.loads(archive.read(prefix + 'benchmarks/manifests/official_unknown_master_v1.json')))
+    release_bytes = archive.read(prefix + 'benchmarks/manifests/official_unknown_release_v1.json')
+    release = validate_unknown(json.loads(release_bytes))
+    assert release_bytes == subprocess.check_output(['git', 'show', 'd911fcc:benchmarks/manifests/official_unknown_release_v1.json'], cwd=ROOT)
+    assert [c['case_id'] for c in select(master['cases'])] == [c['case_id'] for c in release['cases']]
+    locks = read12('evidence_locks')
+    for path, digest in locks['sha256'].items():
+        assert hashlib.sha256(archive.read(prefix + path)).hexdigest() == digest, path
+    for path, digest in locks['historical_original_git_sha256'].items():
+        assert hashlib.sha256(archive.read(prefix + path)).hexdigest() == digest, path
+    target, coverage, prerequisite = read12('coverage_target'), read12('coverage_final'), read12('prerequisite_gate')
+    fixed = {c['document_id'] for c in json.loads(archive.read(prefix + 'benchmarks/results/round6/resource_audit.json'))['cases'] if c['expected_resource_type'] == 'file_backed_document'}
+    shared = {c['document_id'] for c in read12('shared_eligibility_audit')['cases'] if c['eligible']}
+    active = {r['document_id'] for r in fp['records'] if r['status'] == 'active'}
+    supported = (active | shared) & fixed
+    assert target['minimum_required'] == math.ceil(.85 * len(fixed)) == 985
+    assert target['current_fingerprinted'] == coverage['fingerprinted_file_backed'] == len(supported) == 975
+    assert set(coverage['eligible_ids']) == supported and coverage['recovered_round12'] == 0
+    assert not prerequisite['ready_to_freeze'] and not prerequisite['coverage_file_backed_pass']
+    assert gates['status'] == 'NOT READY' and gates['freeze'] is None and not gates['local_gates_passed']
+    unknown = read12('unknown_release_v1')
+    assert unknown['manifest_sha256'] == hashlib.sha256(release_bytes).hexdigest()
+    assert unknown['status'] == 'not_run' and unknown['actual_count'] == unknown['recognition_calls'] == 0 and not unknown['cases']
+    for key in ['correct_no_match', 'wrong_document_match', 'wrong_family_match', 'rejection_rate', 'false_acceptance_rate', 'confidence_interval_95']:
+        assert unknown[key] is None
+    perf = read12('performance_stability')
+    assert perf['status'] == 'complete' and len(perf['runs']) == 5
+    ids = {c['id'] for c in perf['corpus']}
+    assert len(ids) == 67
+    for run in perf['runs']:
+        assert run['sample_count'] == len(run['samples']) == 402
+        assert Counter(s['case_id'] for s in run['samples']) == Counter({i: 6 for i in ids})
+        assert describe([s['milliseconds'] for s in run['samples']]) == run['latency_ms']
+    assert perf['median_p95'] == statistics.median(r['latency_ms']['p95'] for r in perf['runs']) == prerequisite['performance_median_p95']
+    assert perf['identity']['code_sha256'] == gates['identity']['code_sha256']
+    recovery = read12('recovery_attempts')
+    assert not recovery['native_additions'] and recovery['temporary_converted_outputs_deleted']
+    rows = list(csv.DictReader(archive.read(prefix + 'benchmarks/results/round12/fingerprint_recovery.csv').decode().splitlines()))
+    assert len(rows) == len(fixed - supported) == 183 and {int(r['document_id']) for r in rows} == fixed - supported
+    tests = read12('tests')
+    assert tests['status'] == 'passed' and tests['failed'] == 0 and tests['passed'] == gates['tests']['passed']
+    latest = json.loads(archive.read(prefix + 'benchmarks/latest_summary.json'))
+    assert latest['round'] == 12 and latest['status'] == 'NOT READY'
+    for name in ['known_robustness', 'scan_ocr', 'filled_forms', 'unknown_official']:
+        assert latest[name]['status'] == 'not_run' and not latest[name]['summary']['metrics']
+    for name in ['freeze', 'freeze_manifest', 'robustness_v5', 'scan_v5', 'filled_v5', 'unknown_eval_v5', 'retrieval_v5', 'end_to_end_v5', 'evaluation_v5_leakage']:
+        assert prefix + 'benchmarks/results/round12/' + name + '.json' not in names
+    for path in ['docs/ROUND12_BASELINE_AUDIT.md', 'docs/ROUND12_REPORT.md', 'benchmarks/results/round12/catalog_verification.json', 'benchmarks/results/round12/retained_safety_canonical.json']:
+        assert archive.read(prefix + path), path
+    return len(locks['historical_original_git_sha256'])
+
 def main():
     gates=json.loads((ROOT/'docs/release_gates.json').read_text(encoding='utf-8'))
     round_number=gates.get('round',5)
@@ -151,6 +218,8 @@ def main():
             latest11=json.loads(archive.read('BurOCRazia/benchmarks/latest_summary.json'))
             for name in ['known_robustness','scan_ocr','filled_forms','unknown_official']:assert latest11[name]['status']=='not_run' and not latest11[name]['summary']['metrics']
             for path in ['docs/ROUND11_BASELINE_AUDIT.md','docs/ROUND11_REPORT.md','benchmarks/results/round11/coverage_target.json','benchmarks/results/round11/coverage_final.json','benchmarks/results/round11/fingerprint_recovery_plan.csv','benchmarks/results/round11/unknown_balance_target.json','benchmarks/results/round11/unknown_truth_audit.csv','benchmarks/results/round11/unknown_balance_final.json','benchmarks/results/round11/tests.json']:assert archive.read('BurOCRazia/'+path),path
+        if round_number==12:
+            prior_raw_archive_count=verify_round12(archive,names,gates)
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -230,10 +299,12 @@ def main():
         assert archive.read('BurOCRazia/docs/release_gates.json')==(ROOT/'docs/release_gates.json').read_bytes()
     historical_scope='Original R6/R7/R8/R9 Git blobs unchanged from the Round10 baseline, plus immutable v1 unknown/v2 truth/fingerprint/decision data. All R6/R7 physical baseline hashes separately verified. No old evaluation result rewritten.' if round_number==10 else 'Original R6/R7/R8 tracked Git blobs unchanged from the Round9 baseline; evidence_locks.json lists their byte hashes. All 110 R6/R7 physical workspace hashes separately verified. Historical ignored checkpoints intentionally excluded. Locked corpus byte hashes verified without normalization.' if round_number==9 else '105 tracked historical Git blobs unchanged from the initial Round7 commit, including 18 preexisting LF Git/CRLF workspace differences with identical JSON. All 110 workspace raw hashes unchanged; five historically ignored development checkpoints intentionally excluded from Git archive. Locked corpus byte hashes verified separately without normalization.'
     if round_number==11:historical_scope='Original R6-R10 Git evidence blobs unchanged. All1027 prior fingerprint records preserved and original R10 bundle byte SHA reconstructible from that prefix with UTF8/indent2/trailing LF. Corpus locks, seed and prior archives separately verified.'
+    if round_number==12:historical_scope='Original R6-R11 Git evidence unchanged. Full R11 fingerprint bundle, seed and release unknown manifest byte-identical; prior archives preserved. All five warm runs/2010 timings verified. Coverage stop enforced: zero unknown release predictions, no freeze or evaluation v5.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==10:(output.parent/'package-verification-round10.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==11:(output.parent/'package-verification-round11.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==12:(output.parent/'package-verification-round12.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

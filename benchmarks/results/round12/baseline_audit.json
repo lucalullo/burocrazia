@@ -1,0 +1,103 @@
+{
+  "baseline_performance_identity": {
+    "code_sha256": "b9cffa120d771ab78a34728f06a6908ab13a4df0c19dab93f92053a653782528",
+    "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
+    "executed_at": "2026-10-13T06:43:36.116553+00:00",
+    "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101208
+  },
+  "branch": "codex/coverage-benchmark-v0.7.0",
+  "canonical_counts": {
+    "exact": 980,
+    "extraction_failed": 0,
+    "family": 0,
+    "reject": 0,
+    "wrong": 0
+  },
+  "ci": "external_pending",
+  "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
+  "coverage": {
+    "current_fingerprinted": 975,
+    "file_backed_total": 1158,
+    "initial_file_backed_percent": 84.19689119170984,
+    "minimum_required": 985,
+    "operational_total": 1212,
+    "scope": "Same fixed R6 denominator and adjudicated R11 resource-support definition.",
+    "shared_only_supported": 33,
+    "shortfall": 10,
+    "unambiguous_identities": 942
+  },
+  "entry_working_tree": "clean; captured before baseline run and script creation",
+  "evaluation_v5": "not_run",
+  "freeze": null,
+  "historical_false_accepts": 0,
+  "historical_no": 241,
+  "performance": {
+    "n": 402,
+    "p50": 58.4073,
+    "p95": 275.5781,
+    "p99": 394.1891
+  },
+  "prior_tests": {
+    "failed": 0,
+    "log_sha256": "fd0fa5646fd548dedce492340a419a9fdbdc906557f72b7298ab512899103718",
+    "passed": 762,
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.10",
+    "scope": "Full local Windows pytest, real local Tesseract where required; one symlink-privilege and two FIFO skips. No external CI claim.",
+    "seconds": 506.06,
+    "skipped": 3,
+    "status": "passed",
+    "targeted_final": {
+      "failed": 0,
+      "log_sha256": "8e0462cecf6a3b11ca062ed36b898adcedb32a4134175e784bb4c8a2594ebd30",
+      "passed": 4,
+      "scope": "Resolver, attachment role, quota invariance, domain and negative-manifest guards; not added twice to the suite count."
+    }
+  },
+  "r11_evidence_locks_verified": 43,
+  "schema": 610,
+  "software_version": "0.6.1",
+  "unknown_master_count": 125,
+  "unknown_release": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "giustizia": 2,
+      "inail": 16,
+      "interno": 14,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 25,
+      "mit": 3,
+      "regione_piemonte": 2
+    },
+    "document_types": {
+      "atto_indirizzo": 1,
+      "circolare": 29,
+      "comunicato": 1,
+      "decreto": 22,
+      "delibera": 2,
+      "direttiva": 1,
+      "domanda": 3,
+      "guida": 31,
+      "istruzioni": 3,
+      "manuale": 7,
+      "modulo": 3,
+      "regolamento": 2
+    },
+    "entities": 10,
+    "max_concentration": 0.23809523809523808,
+    "previously_recognized": 55,
+    "sources": 10,
+    "total": 105,
+    "type_groups": 12,
+    "unversioned": 78,
+    "versioned": 27,
+    "with_code": 16,
+    "without_code": 89
+  },
+  "unknown_release_manifest_sha256": "60246fc4e63f41f55b367141ec4ab5b45c08fc42db7d30d5a2551e8c19ad70be",
+  "unknown_selection_seed": 2026101311
+}

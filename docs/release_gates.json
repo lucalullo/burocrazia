@@ -2,7 +2,6 @@
   "candidate_target": "0.7.0",
   "ci": "external_pending",
   "freeze": null,
-  "freeze_status": "not_created",
   "gates": [
     {
       "actual": 84.19689119170984,
@@ -23,15 +22,15 @@
     {
       "actual": 105,
       "blocking": true,
-      "gate": "unknown_count",
+      "gate": "unknown_release_count",
       "passed": true,
       "status": "PASS",
-      "target": ">=100"
+      "target": ">=100 selected"
     },
     {
       "actual": 10,
       "blocking": true,
-      "gate": "unknown_sources",
+      "gate": "unknown_release_sources",
       "passed": true,
       "status": "PASS",
       "target": ">=8"
@@ -39,79 +38,56 @@
     {
       "actual": 0.23809523809523808,
       "blocking": true,
-      "gate": "unknown_balance",
+      "gate": "unknown_release_concentration",
       "passed": true,
       "status": "PASS",
       "target": "<=25%"
     },
     {
-      "actual": 12,
+      "actual": null,
       "blocking": true,
-      "gate": "unknown_types",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=5"
+      "gate": "unknown_rejection",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": ">=99%"
     },
     {
-      "actual": [],
+      "actual": 0,
       "blocking": true,
       "gate": "historical_safety",
       "passed": true,
-      "status": "PASS",
-      "target": "0 false accepts"
+      "status": "PASS R11 / BYTE INVARIATI",
+      "target": "0 confirmed false accepts"
     },
     {
-      "actual": {
-        "exact": 980,
-        "extraction_failed": 0,
-        "family": 0,
-        "reject": 0,
-        "wrong": 0
-      },
+      "actual": "980/980",
       "blocking": true,
       "gate": "canonical",
       "passed": true,
-      "status": "PASS",
+      "status": "PASS R11 / BYTE INVARIATI",
       "target": "100% unambiguous"
     },
     {
-      "actual": {
-        "n": 402,
-        "p50": 55.8256,
-        "p95": 248.2326,
-        "p99": 409.8556
-      },
+      "actual": 217.834,
       "blocking": true,
-      "gate": "performance",
+      "gate": "performance_median_p95",
       "passed": true,
       "status": "PASS",
-      "target": "p95<=250ms"
+      "target": "<=250 ms"
     },
     {
-      "actual": 125,
+      "actual": 3,
       "blocking": false,
-      "gate": "master_pool",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=120 preferred"
+      "gate": "performance_stability",
+      "passed": false,
+      "status": "FAIL",
+      "target": ">=4/5 p95<=250 ms preferred"
     },
     {
       "actual": {
         "failed": 0,
-        "log_sha256": "fd0fa5646fd548dedce492340a419a9fdbdc906557f72b7298ab512899103718",
-        "passed": 762,
-        "platform": "Windows-11-10.0.26300-SP0",
-        "python": "3.12.10",
-        "scope": "Full local Windows pytest, real local Tesseract where required; one symlink-privilege and two FIFO skips. No external CI claim.",
-        "seconds": 506.06,
-        "skipped": 3,
-        "status": "passed",
-        "targeted_final": {
-          "failed": 0,
-          "log_sha256": "8e0462cecf6a3b11ca062ed36b898adcedb32a4134175e784bb4c8a2594ebd30",
-          "passed": 4,
-          "scope": "Resolver, attachment role, quota invariance, domain and negative-manifest guards; not added twice to the suite count."
-        }
+        "passed": 767,
+        "skipped": 3
       },
       "blocking": true,
       "gate": "tests",
@@ -130,7 +106,7 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_known_sources",
+      "gate": "v5_sources",
       "passed": false,
       "status": "NON MISURATO",
       "target": ">=6"
@@ -146,7 +122,7 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_scan_count",
+      "gate": "v5_scans",
       "passed": false,
       "status": "NON MISURATO",
       "target": ">=200"
@@ -170,10 +146,18 @@
     {
       "actual": null,
       "blocking": true,
+      "gate": "v5_leakage",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "0 prohibited"
+    },
+    {
+      "actual": null,
+      "blocking": true,
       "gate": "v5_validity",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "count==unique==expected; schema/atomic/SHA"
+      "target": "expected==actual==unique; atomic/schema/SHA"
     },
     {
       "actual": null,
@@ -194,6 +178,14 @@
     {
       "actual": null,
       "blocking": true,
+      "gate": "v5_wrong_accepted",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "<=0.5%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
       "gate": "v5_entity_errors",
       "passed": false,
       "status": "NON MISURATO",
@@ -210,26 +202,26 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_scan_recall",
+      "gate": "v5_scan",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=85%,P>=99.5%"
+      "target": "precision>=99.5%, recall>=85%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_filled_recall",
+      "gate": "v5_filled_generation",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=90%,P>=99.5%"
+      "target": ">=90%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "unknown_release_rejection",
+      "gate": "v5_filled_recognition",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=99%"
+      "target": "precision>=99.5%, recall>=90%"
     },
     {
       "actual": null,
@@ -237,53 +229,55 @@
       "gate": "v5_retrieval_at25",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "100%;@1 target99%"
+      "target": "100%; @1 preferred99%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_unknown_end_to_end",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": ">=99% rejection"
     },
     {
       "actual": "experimental / insufficiently validated",
       "blocking": false,
       "gate": "family",
       "passed": false,
-      "status": "INFO/PENDING",
-      "target": ">=5 real families or experimental"
+      "status": "INFO",
+      "target": ">=5 real identity-held-out families or experimental"
     },
     {
       "actual": "external_pending",
       "blocking": false,
       "gate": "CI",
       "passed": false,
-      "status": "INFO/PENDING",
-      "target": "external_pending"
+      "status": "PENDING",
+      "target": "external pending"
     }
   ],
   "identity": {
-    "code_sha256": "b9cffa120d771ab78a34728f06a6908ab13a4df0c19dab93f92053a653782528",
-    "commit": "d19547f458e46d38c11a84ffd9e2f735510ac5bc",
-    "executed_at": "2026-10-13T06:29:04.950875+00:00",
+    "code_sha256": "6352f42c0f2ef57c2802001027a7bd3a62c924698f44e948c277e25eb0cb30ef",
+    "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
+    "executed_at": "2026-10-13T07:14:58.437586+00:00",
     "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
     "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
-    "seed": 2026101311
+    "seed": 2026101312
   },
   "local_gates_passed": false,
-  "round": 11,
+  "round": 12,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "fd0fa5646fd548dedce492340a419a9fdbdc906557f72b7298ab512899103718",
-    "passed": 762,
-    "platform": "Windows-11-10.0.26300-SP0",
+    "log_sha256": "cdba6fe75e2eba4ffdeb1d6335f88761e497075ad3af73a12fc0c50caddd6af9",
+    "os": "Windows-11-10.0.26300-SP0",
+    "passed": 767,
     "python": "3.12.10",
-    "scope": "Full local Windows pytest, real local Tesseract where required; one symlink-privilege and two FIFO skips. No external CI claim.",
-    "seconds": 506.06,
+    "scope": "Full local Windows pytest; real local Tesseract where required; symlink privilege and two FIFO skips. No external CI claim.",
+    "seconds": 396.91,
     "skipped": 3,
-    "status": "passed",
-    "targeted_final": {
-      "failed": 0,
-      "log_sha256": "8e0462cecf6a3b11ca062ed36b898adcedb32a4134175e784bb4c8a2594ebd30",
-      "passed": 4,
-      "scope": "Resolver, attachment role, quota invariance, domain and negative-manifest guards; not added twice to the suite count."
-    }
+    "status": "passed"
   }
 }

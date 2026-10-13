@@ -1,0 +1,31 @@
+{
+  "canonical_pass": true,
+  "coverage_all_pass": true,
+  "coverage_all_percent": 80.44554455445545,
+  "coverage_file_backed_pass": false,
+  "coverage_file_backed_percent": 84.19689119170984,
+  "historical_safety_pass": true,
+  "identity": {
+    "code_sha256": "6352f42c0f2ef57c2802001027a7bd3a62c924698f44e948c277e25eb0cb30ef",
+    "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
+    "executed_at": "2026-10-13T07:14:58.437586+00:00",
+    "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
+    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+    "seed": 2026101312
+  },
+  "performance_median_p95": 217.834,
+  "performance_pass": true,
+  "performance_prudent_fragile": false,
+  "performance_stability_pass": false,
+  "performance_stability_required": false,
+  "ready_to_freeze": false,
+  "safety_canonical_status": "retained_round11_unchanged_runtime_and_data",
+  "scope": "Unknown pass false means unmeasured, not an observed failed rejection rate. Stability4/5 is preferred; median is mandatory. Coverage independently prohibits freeze.",
+  "tests_pass": true,
+  "unknown_rejection_pass": false,
+  "unknown_rejection_rate": null,
+  "unknown_release_count": 105,
+  "unknown_release_max_concentration": 0.23809523809523808,
+  "unknown_release_sources": 10,
+  "unknown_status": "not_run_coverage_stop"
+}

@@ -1,3 +1,9 @@
+<!-- round12-current -->
+# Round 12
+
+Round 12 **NOT READY**, pubblico 0.6.1/schema 610. Coverage 975/1158 = 84.196891%, recuperi 0, deficit 10. Unknown release: 105 selezionati e immutati, zero chiamate per STOP coverage. Median p95 217.8340 ms, 3/5 run <=250 ms. Test 767 passed/3 skipped. Safety/canonical R11 conservati su byte invariati; nessun freeze/v5. Dettagli: [report Round 12](ROUND12_REPORT.md). Le sezioni successive restano storiche.
+<!-- /round12-current -->
+
 <!-- round11-current -->
 # Round 11
 
