@@ -1,0 +1,10 @@
+{
+  "cause": "The targeted invocation omitted the existing QA-tools PYTHONPATH; pypdf is provided there, not installed in the product venv.",
+  "failed": 1,
+  "log_sha256": "879b20686e749e48ccd353c08be91a030c3674e32dbe6c99eabfecb4e9dd3a2e",
+  "passed": 13,
+  "recorded_at": "2026-10-13T13:01:48.117969+00:00",
+  "resolution": "Final full suite uses the same complete QA environment as the baseline and canonical run.",
+  "runtime_changes": 0,
+  "status": "invalid_targeted_environment"
+}

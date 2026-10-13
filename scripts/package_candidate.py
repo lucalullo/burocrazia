@@ -181,6 +181,71 @@ def verify_round14(archive,names,gates):
     assert latest['unknown_official']['summary']['metrics']['unknown_correct_rejection_rate']['numerator']==107
     return len(locks['historical_original_git_sha256'])
 
+def verify_round15(archive,names,gates):
+    """Verify adjudication, the sole fix and the stop before independent tests."""
+    import statistics,jsonschema
+    from src.fingerprint_v3 import validate as validate_v3
+    from benchmarks.round9_performance import describe
+    prefix='BurOCRazia/'
+    def data(path):return json.loads(archive.read(prefix+path))
+    def r(name):return data('benchmarks/results/round15/'+name+'.json')
+    assert gates['status']=='NOT READY' and gates['freeze'] is None and not gates['local_gates_passed'] and gates['software_version']=='0.6.1'
+    assert not r('pre_freeze_gate')['passed'] and not r('pre_freeze_gate')['performance_pass']
+    assert r('freeze_not_created')['freeze_commit'] is None
+    assert prefix+'benchmarks/results/round15/freeze_manifest.json' not in names
+    assert prefix+'benchmarks/manifests/official_unknown_release_v3.json' not in names
+    assert r('unknown_release_v3')['status']=='not_run' and r('unknown_release_v3')['recognition_calls']==0
+    assert r('evaluation_not_run')['recognition_calls']==0
+    for n in ['evaluation_v5_preflight.json','evaluation_v5_pool_audit.csv','evaluation_v5_leakage.json','robustness_v5.json','scan_v5.json','filled_v5.json','retrieval_v5.json','end_to_end_v5.json']:
+        assert prefix+'benchmarks/results/round15/'+n not in names
+    old=data('benchmarks/results/round14/unknown_release_v2.json');obs=data('benchmarks/results/round14/unknown_release_v2_observations.json')
+    assert old['correct_no_match']==107 and old['n']==114 and old['wrong_document_match']==3 and old['extraction_failed']==4 and old['wrong_family_match']==0
+    assert len(obs['cases'])==obs['expected_count']==obs['completed']==114 and obs['complete']
+    assert hashlib.sha256(archive.read(prefix+'benchmarks/results/round14/unknown_release_v2_observations.json')).hexdigest()==old['observations_sha256']
+    assert hashlib.sha256(archive.read(prefix+'benchmarks/manifests/official_unknown_release_v2.json')).hexdigest()==old['manifest_sha256']
+    assert old['freeze_commit']=='37a9d1f3125b9e0480d2592f479554fe5ea40a0a'
+    truth=data('benchmarks/reference/reference_truth_v3.json');jsonschema.validate(truth,data('benchmarks/schemas/reference_truth_v3.schema.json'),format_checker=jsonschema.FormatChecker())
+    critical=data('benchmarks/reference/round15_truth_adjudication.json')
+    assert critical['decisions_completed_before_engine_change'] and critical['recognition_calls']==0
+    assert len(critical['cases'])==3 and sum(c['adjudicated_status']=='ambiguous_truth' for c in critical['cases'])==2 and sum(c['adjudicated_status']=='confirmed_unknown' for c in critical['cases'])==1
+    assert r('confirmed_false_accepts')['confirmed_false_accepts']==1 and not any(c['release_gate_eligible'] for c in truth['cases'])
+    dev=r('development_regression_after_round15_fix');assert dev['status']=='development_regression_after_round15_fix' and not dev['release_gate_eligible']
+    assert dev['confirmed_anac_after']['match_type']=='NO_MATCH' and dev['n']==114 and dev['correct_no_match']==108 and dev['wrong_document_match']==2 and dev['extraction_failed']==4
+    assert r('page_limit_audit')['existed_before_round14_selection'] and r('page_limit_audit')['limit_pages']==100
+    inputs=r('input_safety');assert inputs['passed'] and inputs['safe_rejects']==inputs['n']==9
+    assert all(not c['crash'] and not c['temp_residue'] and c['recognition_calls']==0 and c['no_false_document_result'] for c in inputs['cases'])
+    assert {c['case_id']:c['SHA256'] for c in data('benchmarks/manifests/input_safety_v1.json')['cases']}=={c['case_id']:c['input_sha256'] for c in inputs['cases']}
+    assert r('coverage')['runtime_usable_supported']==1002 and r('coverage')['passed']
+    assert r('canonical')['counts']['exact']==len(r('canonical')['cases'])==980
+    assert r('canonical_legacy')['counts']['exact']==len(r('canonical_legacy')['cases'])==27
+    for name in ['canonical','canonical_legacy','development_regression_after_round15_fix']:
+        assert r(name)['identity']['runtime_sha256']==gates['identity']['runtime_sha256'],name
+        assert r(name)['identity']['fingerprint_sha256']==gates['identity']['fingerprint_sha256'],name
+    assert r('historical_safety')['n']==241 and not r('historical_safety')['false_accepts'] and r('historical_safety')['passed']
+    perf=r('performance_pre_freeze');assert len(perf['runs'])==5 and perf['status']=='complete'
+    for run in perf['runs']:assert len(run['samples'])==402 and describe([c['milliseconds'] for c in run['samples']])==run['latency_ms']
+    assert statistics.median(c['latency_ms']['p95'] for c in perf['runs'])==perf['median_p95']==263.0707 and not perf['required_pass'] and perf['pass_count']==1
+    assert perf['identity']['runtime_sha256']==gates['identity']['runtime_sha256'] and perf['identity']['fingerprint_sha256']==gates['identity']['fingerprint_sha256']
+    raw=archive.read(prefix+'data/document_recognition_fingerprints_v3.json');validate_v3(json.loads(raw));assert hashlib.sha256(raw).hexdigest()==gates['identity']['fingerprint_sha256']
+    for path in ['data/catalog_seed.sqlite3','data/document_recognition_fingerprints_v3.json','data/recognition_profiles/fingerprint_decision_v5.json']:
+        assert archive.read(prefix+path)==subprocess.check_output(['git','show','425fa01:'+path],cwd=ROOT),path
+    # Runtime changes are constrained to the adjudicated general heading fix.
+    changed=subprocess.check_output(['git','diff','--name-only','425fa01','HEAD','--','src','app.py','run.py','data'],cwd=ROOT,text=True).splitlines()
+    assert changed==['src/recognize.py'],changed
+    registry=data('benchmarks/reference/benchmark_contamination_registry_v2.json');assert registry['schema_version']==2
+    assert registry['parent_registry_sha256']==hashlib.sha256(archive.read(prefix+'benchmarks/reference/benchmark_contamination_registry_v1.json')).hexdigest()
+    assert {c['SHA256'] for c in data('benchmarks/manifests/official_unknown_release_v2.json')['cases']}<=set(registry['observed_resource_sha256'])
+    assert r('tests')['failed']==0 and r('tests')['passed']==gates['tests']['passed']>=784
+    assert r('final_checks')['truth_v3_schema_valid'] and r('final_checks')['release_fast_exit']==1 and set(r('final_checks')['release_fast_historical_failed_ids'])=={'EX02','EX03'}
+    locks=r('evidence_locks')
+    for path,h in locks['sha256'].items():assert hashlib.sha256(archive.read(prefix+path)).hexdigest()==h,path
+    for path,h in locks['historical_original_git_sha256'].items():assert hashlib.sha256(archive.read(prefix+path)).hexdigest()==h,path
+    latest=data('benchmarks/latest_summary.json');assert latest['round']==15 and latest['status']=='NOT READY'
+    assert latest['historical_unknown_release_v2_round14']['correct_no_match']==107
+    for name in ['unknown_official','known_robustness','scan_ocr','filled_forms']:assert latest[name]['status']=='not_run' and not latest[name]['summary']['metrics']
+    for path in ['docs/ROUND15_BASELINE_AUDIT.md','docs/ROUND15_TRUTH_ADJUDICATION.md','docs/ROUND15_REPORT.md','benchmarks/results/round15/false_acceptance_root_causes.md']:assert archive.read(prefix+path),path
+    return len(locks['historical_original_git_sha256'])
+
 def main():
     gates=json.loads((ROOT/'docs/release_gates.json').read_text(encoding='utf-8'))
     round_number=gates.get('round',5)
@@ -327,6 +392,8 @@ def main():
             prior_raw_archive_count=verify_round13(archive,names,gates)
         if round_number==14:
             prior_raw_archive_count=verify_round14(archive,names,gates)
+        if round_number==15:
+            prior_raw_archive_count=verify_round15(archive,names,gates)
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -409,13 +476,19 @@ def main():
     if round_number==12:historical_scope='Original R6-R11 Git evidence unchanged. Full R11 fingerprint bundle, seed and release unknown manifest byte-identical; prior archives preserved. All five warm runs/2010 timings verified. Coverage stop enforced: zero unknown release predictions, no freeze or evaluation v5.'
     if round_number==13:historical_scope='Original R6-R12 evidence preserved; 1028 prior fingerprint records byte-restorable. Initial R13 single-shot bundle exactly restorable using the three adjudicated record snapshots. 105 unknown predictions preserved without replay; current candidate binding marked unmeasured. Corrected common-page ambiguity, five performance runs and current source bytes verified. No freeze or v5.'
     if round_number==14:historical_scope='Original R6-R13 raw/corpora/manifests preserved. Corrected R13 dataset/engine unchanged and frozen before fresh selection. All114 fresh unknown predictions, frozen labels and three wrong accepts/four extraction errors retained, with two INAIL reference concerns. No tuning/replay/v5/RC. Five pre-freeze runs and actual historical release-fast exit1 preserved; final tests and archive bytes verified.'
+    if round_number==15:historical_scope='Round14 original107/114,114 raw predictions, labels and freeze preserved byte-for-byte. Additive official truth adjudication completed before sole general draft-heading fix. Separate development replay108/114, two INAIL truth ambiguities, input-safety9/9 and five predetermined performance runs retained. Performance263.0707ms FAIL: no Round15 freeze/independent unknown v3/evaluation v5/RC. Actual release-fast exit1 retained; source, dataset, tests and archive bytes verified.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
+    if round_number==15:
+        perf=json.loads((ROOT/'benchmarks/results/round15/performance_pre_freeze.json').read_bytes())
+        report.update(measured_recognition_runtime_sha256=perf['identity']['runtime_sha256'],performance_full_code_sha256=perf['identity']['code_sha256'],final_full_code_sha256=gates['identity']['code_sha256'],
+            code_bytes_scope='Archive equals final source inventory. Recognition runtime/dataset are byte-identical to performance, canonical and diagnostic measurements. The maintenance-only evidence collector received a provenance URL/SHA correction after timing; its broader full-code hash is reported separately, not asserted equal to the timing inventory.')
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==10:(output.parent/'package-verification-round10.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==11:(output.parent/'package-verification-round11.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==12:(output.parent/'package-verification-round12.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==13:(output.parent/'package-verification-round13.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==14:(output.parent/'package-verification-round14.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==15:(output.parent/'package-verification-round15.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-13T13:16:03.860802+00:00",
+  "failed": 0,
+  "log_sha256": "4445b8183aae5ebe9f0a18df411c2ddba052fad6557264ac3cbcce9cae2aa33d",
+  "passed": 1,
+  "runtime_binding_verified_for": [
+    "canonical",
+    "canonical_legacy",
+    "development_regression_after_round15_fix"
+  ],
+  "status": "passed",
+  "test": "tests/test_round3.py::test_ui_benchmark_headline_and_rejected_history"
+}

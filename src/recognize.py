@@ -186,7 +186,9 @@ def _is_distinctive_title(normalized_title: str) -> bool:
 def _informational_heading(text: str) -> bool:
     """A guide quoting a form is not the form; only explicit headings count."""
     lines = [normalize_text(line) for line in text[:800].splitlines() if line.strip()]
-    return any(re.match(r"^(?:circolare|manuale|guida|istruzioni|faq|domande frequenti|provvedimento|comunicato|regolamento)\b", line)
+    # Draft/proposal wrappers preserve the role of the explicit heading. A
+    # regulation draft quoting an application title is still a normative act.
+    return any(re.match(r"^(?:(?:bozza|schema|proposta)(?: di)? )?(?:circolare|manuale|guida|istruzioni|faq|domande frequenti|provvedimento|comunicato|regolamento)\b", line)
                for line in lines[:6])
 
 

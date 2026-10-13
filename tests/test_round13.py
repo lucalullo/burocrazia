@@ -52,7 +52,10 @@ def test_pdf_normalization_removes_variable_metadata_without_changing_text():
 def test_fingerprint_scoring_and_decision_semantics_are_unchanged():
     from scripts.round13_semantics import ROOT,check
     if not (ROOT/'.git').exists():pytest.skip('Historical Git checkout required; package includes the semantic audit')
-    assert check()['features_index_scoring_ast_unchanged']
+    # Preserve the Round13 guarantee against its final committed artifact.
+    # Round15 explicitly authorizes an adjudicated metadata-heading fix; its
+    # current-engine invariant is tested separately in test_round15.py.
+    assert check(target_commit='19883ba6a1e0e7360716aa0d9bba5ecb52a569eb')['features_index_scoring_ast_unchanged']
 
 
 def test_common_legacy_page_cannot_establish_exact_identity_without_disambiguation(monkeypatch):

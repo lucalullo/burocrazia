@@ -1,8 +1,23 @@
 {
+  "adjudication_sha256": "3fdb391e1ef8b8d1efde9f17cf63cbc19968076cf9428c4ffc9889090685ab75",
   "candidate_target": "0.7.0",
   "ci": "external_pending",
-  "freeze": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+  "evaluation_v5": "not_run",
+  "freeze": null,
   "gates": [
+    {
+      "actual": {
+        "actual_catalog_document": 0,
+        "ambiguous": 2,
+        "confirmed_unknown": 1,
+        "release_eligible": 0
+      },
+      "blocking": true,
+      "gate": "truth_adjudication",
+      "passed": true,
+      "status": "PASS",
+      "target": "3 official decisions before engine edit; ambiguous excluded"
+    },
     {
       "actual": 86.52849740932642,
       "blocking": true,
@@ -22,7 +37,7 @@
     {
       "actual": "980/980",
       "blocking": true,
-      "gate": "pre_freeze_canonical_native",
+      "gate": "canonical_native",
       "passed": true,
       "status": "PASS",
       "target": "100%"
@@ -30,90 +45,85 @@
     {
       "actual": "27/27",
       "blocking": true,
-      "gate": "pre_freeze_canonical_legacy",
+      "gate": "canonical_legacy",
       "passed": true,
       "status": "PASS",
       "target": "100%"
     },
     {
-      "actual": 0,
+      "actual": {
+        "false_accepts": 0,
+        "n": 241
+      },
       "blocking": true,
       "gate": "historical_safety",
       "passed": true,
       "status": "PASS",
-      "target": "241 NO, 0 false accepts"
+      "target": "241 NO; 0 false accepts"
     },
     {
-      "actual": 247.1435,
+      "actual": "NO_MATCH",
       "blocking": true,
-      "gate": "performance_median_p95",
+      "gate": "confirmed_ANAC_regression",
       "passed": true,
       "status": "PASS",
+      "target": "NO_MATCH"
+    },
+    {
+      "actual": "9/9",
+      "blocking": true,
+      "gate": "input_safety",
+      "passed": true,
+      "status": "PASS",
+      "target": "all safe rejects/no crash/no residue"
+    },
+    {
+      "actual": 263.0707,
+      "blocking": true,
+      "gate": "performance_median_p95",
+      "passed": false,
+      "status": "FAIL",
       "target": "<=250ms"
     },
     {
-      "actual": 3,
+      "actual": 1,
       "blocking": false,
       "gate": "performance_four_of_five",
       "passed": false,
       "status": "FAIL",
-      "target": "preferred >=4/5"
+      "target": "preferred>=4/5"
     },
     {
-      "actual": 114,
+      "actual": null,
       "blocking": true,
-      "gate": "unknown_v2_count",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=100"
-    },
-    {
-      "actual": 12,
-      "blocking": true,
-      "gate": "unknown_v2_sources",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=8"
-    },
-    {
-      "actual": 21.929824561403507,
-      "blocking": true,
-      "gate": "unknown_v2_max_concentration",
-      "passed": true,
-      "status": "PASS",
-      "target": "<=25%"
-    },
-    {
-      "actual": 93.85964912280701,
-      "blocking": true,
-      "gate": "unknown_v2_rejection",
+      "gate": "unknown_v3_sample",
       "passed": false,
-      "status": "FAIL",
+      "status": "NON MISURATO",
+      "target": ">=100 confirmed unknown,8sources,max25%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_v3_rejection",
+      "passed": false,
+      "status": "NON MISURATO",
       "target": ">=99%"
     },
     {
-      "actual": 0,
+      "actual": null,
       "blocking": true,
-      "gate": "unknown_v2_entity_errors",
-      "passed": true,
-      "status": "PASS",
-      "target": "0"
-    },
-    {
-      "actual": 0,
-      "blocking": true,
-      "gate": "unknown_v2_version_errors",
-      "passed": true,
-      "status": "PASS",
-      "target": "0"
-    },
-    {
-      "actual": 2,
-      "blocking": true,
-      "gate": "unknown_v2_reference_qualification",
+      "gate": "unknown_v3_wrong_document",
       "passed": false,
-      "status": "FAIL",
-      "target": "confirmed unknown without unresolved catalog identity overlap"
+      "status": "NON MISURATO",
+      "target": "<=1%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_v3_entity_version",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "0"
     },
     {
       "actual": null,
@@ -121,7 +131,7 @@
       "gate": "v5_preflight",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=30 IDs,6sources,400known,200scan,50filled"
+      "target": ">=30IDs,6sources,400reps,200scan,50filled,30unknown"
     },
     {
       "actual": null,
@@ -150,23 +160,7 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_wrong_accepted",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "<=0.5%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_entity_errors",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "0"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_version_errors",
+      "gate": "v5_entity_version",
       "passed": false,
       "status": "NON MISURATO",
       "target": "0"
@@ -222,15 +216,63 @@
     {
       "actual": null,
       "blocking": true,
+      "gate": "v5_retrieval_at1",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "target>=99%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
       "gate": "v5_unknown_mix",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=30fresh, rejection>=99%"
+      "target": ">=99% rejection"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "release_freeze",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "Dedicated commit after all prerequisites"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_v3_freshness",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "0 prior SHA or obvious near-resource reuse"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_v3_supported_truth",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "Confirmed unknown, supported input only"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_v3_types",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": ">=5 types"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_v3_family_acceptance",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "Counts as false acceptance"
     },
     {
       "actual": {
         "failed": 0,
-        "passed": 777,
+        "passed": 786,
         "skipped": 3
       },
       "blocking": true,
@@ -242,7 +284,7 @@
     {
       "actual": true,
       "blocking": true,
-      "gate": "compile_integrity_FK_migration_schema",
+      "gate": "compile_integrity_FK_migrations_schema",
       "passed": true,
       "status": "PASS",
       "target": "0 failures"
@@ -256,6 +298,14 @@
       "target": "exit0"
     },
     {
+      "actual": "experimental / insufficiently validated",
+      "blocking": false,
+      "gate": "family_identity_holdout",
+      "passed": false,
+      "status": "FAIL",
+      "target": ">=5 real families"
+    },
+    {
       "actual": "external_pending",
       "blocking": false,
       "gate": "CI",
@@ -264,28 +314,31 @@
       "target": "external pending"
     }
   ],
+  "historical_unknown_v2": "historical_unknown_release_v2_round14",
   "identity": {
-    "code_sha256": "dd40134a4d846ed58e8242950b96759a828fd1b7b30a775861df54bd12237453",
-    "commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
-    "executed_at": "2026-10-13T11:35:49.839273+00:00",
+    "code_sha256": "7e5bc92baad0fec8c24a8fed69df3cf288a68a813e941fcd1baf070f8b05ccfb",
+    "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+    "executed_at": "2026-10-13T13:16:05.568222+00:00",
     "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
-    "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
-    "seed": 2026101314
+    "runtime_sha256": "e5e9ad58ae261506e94e5a40bcb84a7cf3031ad18fddcb57aff2155661c47dfb",
+    "seed": 2026101315
   },
   "local_gates_passed": false,
-  "reason": "Unknown v2 failed; reference qualification concerns retained; no tuning or v5.",
-  "round": 14,
+  "reasons": [
+    "Performance prerequisite failed: median p95 263.0707ms exceeds250ms, five predetermined runs retained.",
+    "Actual release-fast CLI exit1 with unchanged historical EX02/EX03; zero-failure final gate not met."
+  ],
+  "round": 15,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "ba3b4d8ae7fae07366f5d7386b44edfd7693f6e7712c3cdaa9940347b249808d",
-    "os": "Windows-11-10.0.26300-SP0",
-    "passed": 777,
-    "python": "3.12.10",
-    "seconds": 639.41,
+    "log_sha256": "86e030f7a189470fd823a521ce06e4a486d9f849a83e804bda547450594e154d",
+    "passed": 786,
+    "seconds": 531.32,
     "skipped": 3,
     "status": "passed"
-  }
+  },
+  "unknown_v3": "not_run"
 }

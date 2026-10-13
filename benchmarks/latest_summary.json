@@ -3,7 +3,7 @@
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
   "catalog_semantic_sha256": "sha256:76f9e2ecb0263545622e1096286cf71c7574bf6fa8a964c1513e40197c90fd09",
-  "commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+  "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
   "evaluations": [
     {
       "name": "historical_catalog_coverage",
@@ -28,9 +28,9 @@
         },
         "failed": 43,
         "latency_ms": {
-          "p50": 48.4795,
-          "p95": 65.7866,
-          "p99": 72.2687
+          "p50": 57.5405,
+          "p95": 72.7348,
+          "p99": 80.1022
         },
         "metrics": {
           "document_f1": {
@@ -125,8 +125,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 45.537,
-          "p95": 53.5728,
+          "p50": 46.215,
+          "p95": 70.8268,
           "p99": null
         },
         "metrics": {
@@ -222,8 +222,8 @@
         },
         "failed": 2,
         "latency_ms": {
-          "p50": 43.174,
-          "p95": 144.6044,
+          "p50": 65.482,
+          "p95": 173.8151,
           "p99": null
         },
         "metrics": {
@@ -319,9 +319,9 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 1.54,
-          "p95": 5.506,
-          "p99": 5.9564
+          "p50": 2.286,
+          "p95": 8.305,
+          "p99": 8.8352
         },
         "metrics": {
           "document_f1": {
@@ -416,8 +416,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 42.4795,
-          "p95": 59.4528,
+          "p50": 52.4215,
+          "p95": 62.7013,
           "p99": null
         },
         "metrics": {
@@ -513,9 +513,9 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 8.1515,
-          "p95": 47.6514,
-          "p99": 53.1416
+          "p50": 10.345,
+          "p95": 62.5257,
+          "p99": 66.8216
         },
         "metrics": {
           "document_f1": {
@@ -610,8 +610,8 @@
         },
         "failed": 10,
         "latency_ms": {
-          "p50": 45.46,
-          "p95": 58.1192,
+          "p50": 59.768,
+          "p95": 77.0174,
           "p99": null
         },
         "metrics": {
@@ -707,8 +707,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 44.656,
-          "p95": 55.9076,
+          "p50": 58.571,
+          "p95": 70.7978,
           "p99": null
         },
         "metrics": {
@@ -789,7 +789,7 @@
     "status": "experimental"
   },
   "filled_forms": {
-    "reason": "Stopped after unknown v2 failure; evaluation v5 not built or run.",
+    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -805,13 +805,32 @@
     "legacy_qualified": 27,
     "native_coverage": 0.8419689119170984,
     "operational_docs_total": 1212,
-    "scope": "Frozen support definition v1; shared resource support separated from exact identity accuracy.",
+    "scope": "Frozen support definition v1; shared resource support is distinct from exact identity accuracy.",
+    "status": "executed"
+  },
+  "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+  "historical_unknown_release_v2_round14": {
+    "adjudicated_ambiguous": 2,
+    "adjudicated_confirmed_false_accepts": 1,
+    "correct_no_match": 107,
+    "extraction_failed": 4,
+    "n": 114,
+    "original_manifest_sha256": "a11e4507ec47cc762ee08e19c39c10fde9b2caa393ab1ddc8c9aeec5c559a980",
+    "original_raw_sha256": "5c7a9d9d272ad540efbd70e5cb34aeab476b393313f00f3874205ef4ecc0471d",
+    "status": "historical_unknown_release_v2_round14",
+    "wrong_document_match": 3,
+    "wrong_family_match": 0
+  },
+  "input_safety": {
+    "n": 9,
+    "passed": true,
+    "safe_rejects": 9,
     "status": "executed"
   },
   "known_canonical": {
     "legacy_qualified_resources": 27,
     "native_resources": 980,
-    "scope": "Pre-freeze run, identical sealed recognition bytes; no post-STOP rerun claimed.",
+    "scope": "Fix validation on current runtime; no Round15 release freeze or independent evaluation claimed.",
     "status": "executed",
     "summary": {
       "cases": 1007,
@@ -834,9 +853,9 @@
       },
       "failed": 0,
       "latency_ms": {
-        "p50": 9.2216,
-        "p95": 15.0537,
-        "p99": 49.4804
+        "p50": 11.5297,
+        "p95": 15.8834,
+        "p99": 66.161
       },
       "metrics": {
         "document_f1": {
@@ -909,7 +928,7 @@
     }
   },
   "known_robustness": {
-    "reason": "Stopped after unknown v2 failure; evaluation v5 not built or run.",
+    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -918,29 +937,38 @@
     }
   },
   "performance": {
+    "latency_ms": {
+      "p50": 66.4942,
+      "p95": 263.0707
+    },
     "mandatory_gate": "Median p95 <=250ms; four of five preferred only",
-    "median_p95": 247.1435,
+    "median_p95": 263.0707,
     "p50": [
-      52.7451,
-      40.9636,
-      60.2337,
-      66.6911,
-      61.8393
+      48.7097,
+      66.9108,
+      66.4942,
+      66.5482,
+      63.6686
     ],
     "p95": [
-      243.5416,
-      186.8782,
-      247.1435,
-      300.0547,
-      303.6369
+      215.0934,
+      263.0707,
+      259.0395,
+      283.8871,
+      285.658
     ],
-    "pass_count": 3,
-    "passed": true,
+    "pass_count": 1,
+    "passed": false,
     "preferred_four_of_five": false,
     "prudent_fragile": true,
-    "scope": "Five pre-freeze warm runs, sealed identical engine; no favorable rerun after STOP.",
+    "reason": "Mediane dei percentili dei cinque run warm; p95 oltre il limite di 250 ms. Memoria dell’indice non rimisurata in questo round.",
+    "scope": "Five predetermined runs retained, failed mandatory median gate; no rerun.",
     "status": "executed"
   },
+  "reasons": [
+    "Performance prerequisite failed: median p95 263.0707ms exceeds250ms, five predetermined runs retained.",
+    "Actual release-fast CLI exit1 with unchanged historical EX02/EX03; zero-failure final gate not met."
+  ],
   "release_gate": {
     "candidate_target": "0.7.0",
     "ci": "external_pending",
@@ -1232,9 +1260,10 @@
       "status": "passed"
     }
   },
-  "round": 14,
+  "round": 15,
+  "runtime_sha256": "e5e9ad58ae261506e94e5a40bcb84a7cf3031ad18fddcb57aff2155661c47dfb",
   "scan_ocr": {
-    "reason": "Stopped after unknown v2 failure; evaluation v5 not built or run.",
+    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -1245,6 +1274,12 @@
   "schema_version": 1,
   "software_version": "0.6.1",
   "status": "NOT READY",
+  "truth_adjudication": {
+    "actual_catalog_document": 0,
+    "ambiguous": 2,
+    "completed_before_fix": true,
+    "confirmed_false_accepts": 1
+  },
   "unknown_development": {
     "scope": "Only master-minus-release development resources; no R11 release predictions or tuning. Prior exposure of release cases remains explicitly reported.",
     "status": "retained_round11",
@@ -1382,111 +1417,12 @@
     "without_code": 104
   },
   "unknown_official": {
-    "extraction_failed": 4,
-    "false_accepts": 3,
-    "gate_passed": false,
-    "reference_concerns": 2,
-    "rejection_rate": 0.9385964912280702,
-    "scope": "Fresh v2 single-shot, frozen labels retained. Main end-to-end correct rejection excludes four extraction errors. Two INAIL annual identity reference concerns identified after results, never removed or relabelled.",
-    "status": "executed",
+    "reason": "Round 15 fermato prima del freeze: prerequisito di performance fallito; valutazione indipendente non eseguita.",
+    "status": "not_run",
     "summary": {
-      "cases": 114,
-      "confusion_matrix": {
-        "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "FAMILY_MATCH": {
-          "DOCUMENT_MATCH": 0,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 0
-        },
-        "NO_MATCH": {
-          "DOCUMENT_MATCH": 3,
-          "FAMILY_MATCH": 0,
-          "NO_MATCH": 111
-        }
-      },
-      "failed": 7,
-      "latency_ms": {
-        "p50": 164.5008,
-        "p95": 323.6779,
-        "p99": 936.3175
-      },
-      "metrics": {
-        "document_f1": {
-          "denominator": 3,
-          "numerator": 0,
-          "value": 0.0
-        },
-        "document_precision": {
-          "denominator": 3,
-          "numerator": 0,
-          "value": 0.0
-        },
-        "document_recall": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "entity_error_rate": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "exact_document_coverage": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "family_f1": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "family_precision": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "family_recall": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "supported_rejection_rate": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "unknown_correct_rejection_rate": {
-          "denominator": 114,
-          "numerator": 107,
-          "value": 0.9385964912280702
-        },
-        "unknown_extraction_failure_rate": {
-          "denominator": 114,
-          "numerator": 4,
-          "value": 0.03508771929824561
-        },
-        "unknown_false_acceptance_rate": {
-          "denominator": 114,
-          "numerator": 3,
-          "value": 0.02631578947368421
-        },
-        "useful_coverage": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        },
-        "version_year_error_rate": {
-          "denominator": 0,
-          "numerator": 0,
-          "value": null
-        }
-      },
-      "passed": 107
+      "cases": 0,
+      "latency_ms": {},
+      "metrics": {}
     }
   },
   "unknown_release_subset": {
@@ -1526,5 +1462,6 @@
     "versioned": 27,
     "with_code": 16,
     "without_code": 89
-  }
+  },
+  "version": "0.6.1"
 }

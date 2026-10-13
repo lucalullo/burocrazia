@@ -1,3 +1,9 @@
+<!-- round15-current -->
+# Round15 — NOT READY
+
+Adjudication prima del fix: 1 falso positivo ANAC confermato, 2 annualità INAIL ambigue. Unico fix generale sull'intestazione bozza/schema/proposta; nessun tuning dai dubbi. V2 storico **107/114 immutabile**; replay separato development **108/114**, non release. Limite100 pagine preesistente; input-safety **9/9**. Coverage **86.53%**, canonici **980/980+27/27**, safety **241 NO/0FA**. Cinque run warm: mediana p95 **263.0707ms**, **FAIL**; nessun freeze, unknown v3 o evaluation v5. Pytest **786 passed,0 failed,3 skipped**; release-fast exit1 storico, CI pending. Software pubblico0.6.1, schema610. [Report Round15](ROUND15_REPORT.md). Le sezioni successive conservano i risultati storici, incluso Round14.
+<!-- /round15-current -->
+
 <!-- round14-current -->
 # Round 14
 
