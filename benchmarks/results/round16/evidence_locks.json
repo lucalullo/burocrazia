@@ -485,11 +485,12 @@
     "docs/ROUND15_TRUTH_ADJUDICATION.md": "5aa014c841deeca2cadeec624147162a21f8d448a53b1d16b1f85be387504dc5"
   },
   "sha256": {
-    "benchmarks/latest_summary.json": "f6a18250d9f1d31bfa90258d9ca2836e9c28159bcca9f7cbbe9267518493846d",
+    "benchmarks/latest_summary.json": "191903773a45788c05185d81fcd658fe5a7fee2b33a0a6f9cf582f37e0da84f2",
     "benchmarks/reference/benchmark_contamination_registry_v3.json": "6a48029bc3b29d804fe1f7893d6a3236538398e7a19b644d63df736ababb13fd",
     "benchmarks/reference/reference_truth_v3.json": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7",
     "benchmarks/reference/reference_truth_v3_round16_addendum.json": "ca3819fba1e8ccf0281e9bc5e81feae8be75634fe2e982d953c98fa3b9507f2c",
     "benchmarks/reference/release_truth_policy_v1.json": "bc48cc12747f364ffbd90ca93565124c48ae0bb3b9686983efd058370203ab41",
+    "benchmarks/results/round16/archive_serialization_audit.json": "e219f5505fcdc24b8115a6ec52c60cf0a1fdd0b1547c575b853f171e6936d976",
     "benchmarks/results/round16/baseline_audit.json": "9c7acc9e8c86382f7e21d20a9ec9a31ac1b8934c45c455ab3f599f70a8e78f30",
     "benchmarks/results/round16/baseline_tests.json": "d875b309300e3d5aaa73f2e2e4d4bc4dac52c02dbadc4f9463ea6dbe87215b8e",
     "benchmarks/results/round16/canonical.json": "b27e83ab4a273ebec9fb330671b9c4cc59dc7cbe20e7783291bed54f294b3e3c",
@@ -518,6 +519,7 @@
     "benchmarks/results/round16/input_safety.json": "cab497f95d4cb51725e6cf9cf19ae3e6910514d7cfda5f84a8cfd8899de70895",
     "benchmarks/results/round16/old_false_accepts.json": "0cf45bb820edad55d19431f0c47fcc91c050784f0ddd89115d4fa6ecd1d196b0",
     "benchmarks/results/round16/old_false_accepts_exact_diagnostic.json": "26ddd9ecfe6ab96af60952d390f1d3448eaf12a139904962a2da5d05cb462922",
+    "benchmarks/results/round16/package_initial_verification_failure.json": "a7a405d0da5aa8af9a829470564b36d94f5e545adcf57389d8df8542852bf524",
     "benchmarks/results/round16/page_limit_audit.json": "01513bf135005dc83c6a95089de80f10a330a51ac053e0c6a14f8f9e1552b473",
     "benchmarks/results/round16/performance_profile.json": "ba01ee613ee40568cf6321d573bfa8a335fb5344a0c3e1a691b9a31e5608a046",
     "benchmarks/results/round16/performance_stability.json": "4b46a0866acebe0b55884f9469aea77f3182dea13dabd687db3a9fcfcd888ebb",
@@ -559,11 +561,11 @@
     "benchmarks/results/round16/unknown_v3_truth_audit_wave2.csv": "a26ac31b3db3d430d025648ca106c3506f96accbdc499d97ca2d0cfb5fd3ffff",
     "benchmarks/results/round16/unknown_v3_truth_audit_wave2_reviewed.json": "b7ccdd24bf0a5b09e088a38df7ec03aa4c8d798c4c0ac3c1d03f64f32fa47a2e",
     "benchmarks/results/round16/validation_environment.json": "fb3df67db3dd0e9c42f7334d43ff8c234f6e48cce0272cf188175ec1f8b088d3",
-    "docs/BENCHMARK.md": "9b131e29e5ac20f53b2c7d0a817c2a7410505312ce835d311e9a1ba464452720",
+    "docs/BENCHMARK.md": "f4e441be5edc58a65109f07ad66df658025c71682cc6d2a571948cc20caab9eb",
     "docs/RELEASE_TRUTH_POLICY.md": "a5abf84cb2b0615b3e4dea5e43d4f1242b71c58611b3da6eeaa6cb8630c4941a",
     "docs/ROUND16_BASELINE_AUDIT.md": "db5388e6cca6c4a1e02bcd8ea1c9d1ad9d21f4eda7acde8cecc0a1907099c135",
-    "docs/ROUND16_REPORT.md": "3b2ad9a73dbdc56c89bd36e6cca9686c9b857b2c08e5e333c8996a1d613b027f",
-    "docs/release_gates.json": "1ca48586888b26bd3f97e48da0c8a6c0bd098a74629272846598e64f042be4f0",
+    "docs/ROUND16_REPORT.md": "62c816cf3c56d4d3518ccd9e21dcfbbc477b46cd364d988ceaaed4798aec7b04",
+    "docs/release_gates.json": "0b53e96c8c11acf0108c37f1084f9e7941035dc8d22306aebf31a7ee2287a1c2",
     "scripts/round16_unknown_review.py": "2c9275e1c767f653dcd031c16c8a6179d2c3d78fadb9e2597af3716747921c08"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "action": "Archive verification",
+  "error": "Catalog manifest CRLF workspace / baseline Git LF; one preexisting serialization difference, not engine or data change",
+  "failed_archive": "dist/BurOCRazia-v0.7.0-candidate-NOT-READY-round16-initial-verification-failed.zip",
+  "failed_archive_sha256": "3cc05b04d373ffe94d1b48ff97ecb127509e649d472ae273efef5b11c44b8502",
+  "log_sha256": "14246d60e19ffa155ca46b6e8b5d5b99526af924dc1b8dc2a4844b485c1c96ba",
+  "resolution": "Narrow verifier exception checks physical freeze SHA, exact original Git bytes and JSON/CRLF identity for catalog_manifest.json only; no frozen workspace file modified."
+}

@@ -87,4 +87,6 @@ Il test storico R15 verifica il suo commit finale d39103d; il nuovo controllo R1
 
 ## Archivio e limiti
 
+Verifica archivio: il primo tentativo ha rilevato una sola serializzazione preesistente, data/catalog_manifest.json CRLF nel workspace e LF nel Git originale. Workspace e freeze conservano SHA4649cf9029225906b0f881ac6c1cb6b4418b7cf417c5391b517fa371798eb7cc; il blob Git/ZIP ha SHA5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d. JSON identico e blob ZIP esattamente uguale al Git precedente al Round16: eccezione limitata a quel file, nessun byte congelato modificato. Catalogo SQLite, runtime e dataset restano byte-identici. Audit e archivio del primo tentativo conservati.
+
 Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.; Evaluation v5 non eseguita: richiede il PASS di unknown v3. Prestazioni preferite non raggiunte; ambiguità storiche non risolte; family sperimentale; CI external pending. Archivio `dist/BurOCRazia-v0.7.0-candidate-NOT-READY-round16.zip`. SHA256 e verifica completa esterni al ZIP in `dist/package-verification-round16.json` e `.zip.sha256`. Nessun dato personale, cache, DB di lavoro o credenziale nel pacchetto.

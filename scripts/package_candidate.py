@@ -289,7 +289,16 @@ def verify_round16(archive,names,gates):
         assert archive.read(prefix+p)==subprocess.check_output(['git','show','d39103d:'+p],cwd=ROOT),p
     if gates['freeze']:
         f=r('freeze_manifest');assert f['freeze_git_commit']==gates['freeze'] and r('pre_freeze_gate')['ready_to_freeze']
-        for p,h in f['engine_files_sha256'].items():assert hashlib.sha256(archive.read(prefix+p)).hexdigest()==h,p
+        for p,h in f['engine_files_sha256'].items():
+            raw=archive.read(prefix+p)
+            if hashlib.sha256(raw).hexdigest()!=h:
+                assert p=='data/catalog_manifest.json',p
+                physical=(ROOT/p).read_bytes();proof=r('archive_serialization_audit')['differences']
+                assert len(proof)==1 and proof[0]['path']==p and proof[0]['only_crlf_lf'] and proof[0]['archive_equals_baseline_git']
+                assert hashlib.sha256(physical).hexdigest()==h==proof[0]['freeze_sha256']
+                assert physical.replace(b'\r\n',b'\n')==raw and json.loads(physical)==json.loads(raw)
+                assert raw==subprocess.check_output(['git','show','d39103d:'+p],cwd=ROOT)
+                assert hashlib.sha256(raw).hexdigest()==proof[0]['archive_sha256']
         for n,h in f['prerequisite_evidence_sha256'].items():assert hashlib.sha256(archive.read(prefix+'benchmarks/results/round16/'+n+'.json')).hexdigest()==h,n
     else:assert prefix+'benchmarks/results/round16/freeze_manifest.json' not in names
     unknown=r('unknown_release_v3')
@@ -582,6 +591,7 @@ def main():
     if round_number==16:
         perf=json.loads((ROOT/'benchmarks/results/round16/performance_stability.json').read_bytes())
         report.update(measured_recognition_runtime_sha256=perf['identity']['runtime_sha256'],performance_full_code_sha256=perf['identity']['code_sha256'],final_full_code_sha256=gates['identity']['code_sha256'],code_bytes_scope='Archive equals final source inventory. Runtime and dataset are byte-identical to equivalence, canonical and seven-run performance measurements. Benchmark-only gate/acquisition/reporting infrastructure added after timing has a separate full inventory hash; no runtime or decision semantics changed.')
+        report['preexisting_catalog_manifest_serialization']=json.loads((ROOT/'benchmarks/results/round16/archive_serialization_audit.json').read_bytes())['differences']
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==10:(output.parent/'package-verification-round10.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==11:(output.parent/'package-verification-round11.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
