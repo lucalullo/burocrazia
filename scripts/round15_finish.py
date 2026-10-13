@@ -20,7 +20,9 @@ def main():
     save('unknown_release_v3',dict(status='not_run',passed=False,reason='Stopped before freeze and final corpus selection because mandatory performance prerequisite failed.',freeze_commit=None,selection=None,n=None,sources=None,max_concentration=None,rejection_rate=None,confidence_interval_95=None,wrong_document_match=None,wrong_family_match=None,recognition_calls=0,independent_replays=0))
     save('evaluation_not_run',dict(status='not_run',reason='Unknown v3 not selected or run; v5 is authorized only after a passing fresh unknown gate.',identities=None,sources=None,representations=None,scans=None,filled=None,leakage=None,precision=None,exact_recall=None,retrieval=None,recognition_calls=0))
     gates=[]
-    def gate(name,target,actual,passed,blocking=True):gates.append(dict(gate=name,target=target,actual=actual,passed=passed,blocking=blocking,status='PASS' if passed else 'NON MISURATO' if actual is None else 'FAIL'))
+    def gate(name,target,actual,passed,blocking=True):
+        status='PASS' if passed else 'PENDING' if name=='CI' else 'EXPERIMENTAL' if name=='family_identity_holdout' else 'NON MISURATO' if actual is None else 'FAIL' if blocking else 'PREFERITO NON RAGGIUNTO'
+        gates.append(dict(gate=name,target=target,actual=actual,passed=passed,blocking=blocking,status=status))
     gate('truth_adjudication','3 official decisions before engine edit; ambiguous excluded',dict(confirmed_unknown=1,actual_catalog_document=0,ambiguous=2,release_eligible=0),True)
     gate('fingerprint_coverage','>=85%',cov['file_backed_percent'],cov['passed']);gate('all_operational','>=70%',cov['all_operational_percent'],cov['all_operational_percent']>=70)
     gate('canonical_native','100%',f"{native['counts']['exact']}/{len(native['cases'])}",prereq['canonical_native_pass']);gate('canonical_legacy','100%',f"{legacy['counts']['exact']}/{len(legacy['cases'])}",prereq['canonical_legacy_pass'])
@@ -47,7 +49,7 @@ def main():
     latest['truth_adjudication']=dict(confirmed_false_accepts=1,ambiguous=2,actual_catalog_document=0,completed_before_fix=True)
     latest['evaluations']=[dict(name=p.stem,summary=read(p)['summary']) for p in sorted(OUT.glob('historical_*.json')) if 'summary' in read(p)]
     atomic_json(ROOT/'benchmarks/latest_summary.json',latest);load_summary(ROOT/'benchmarks/latest_summary.json')
-    table='\n'.join('| '+' | '.join(str(v).replace('|','/') for v in row)+' |' for row in [['Gate','Target','Actual','Esito'],['---']*4]+[[g['gate'],g['target'],'non misurato' if g['actual'] is None else g['actual'],g['status']] for g in gates])
+    table='\n'.join('| '+' | '.join(str(v).replace('|','/') for v in row)+' |' for row in [['Gate','Target','Actual','Esito','Obbligatorio'],['---']*5]+[[g['gate'],g['target'],'non misurato' if g['actual'] is None else g['actual'],g['status'],'sì' if g['blocking'] else 'no'] for g in gates])
     timing='\n'.join(f"| {i+1} | {a} | {b} |" for i,(a,b) in enumerate(zip(perf['p50'],perf['p95'])))
     report=f'''# Round15 — NOT READY
 

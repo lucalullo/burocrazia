@@ -52,45 +52,45 @@ Compile, SQLite integrity/FK, copia/migrazione schema610 con conteggi invariati,
 
 ## Gate table
 
-| Gate | Target | Actual | Esito |
-| --- | --- | --- | --- |
-| truth_adjudication | 3 official decisions before engine edit; ambiguous excluded | {'confirmed_unknown': 1, 'actual_catalog_document': 0, 'ambiguous': 2, 'release_eligible': 0} | PASS |
-| fingerprint_coverage | >=85% | 86.52849740932642 | PASS |
-| all_operational | >=70% | 82.67326732673267 | PASS |
-| canonical_native | 100% | 980/980 | PASS |
-| canonical_legacy | 100% | 27/27 | PASS |
-| historical_safety | 241 NO; 0 false accepts | {'n': 241, 'false_accepts': 0} | PASS |
-| confirmed_ANAC_regression | NO_MATCH | NO_MATCH | PASS |
-| input_safety | all safe rejects/no crash/no residue | 9/9 | PASS |
-| performance_median_p95 | <=250ms | 263.0707 | FAIL |
-| performance_four_of_five | preferred>=4/5 | 1 | FAIL |
-| unknown_v3_sample | >=100 confirmed unknown,8sources,max25% | non misurato | NON MISURATO |
-| unknown_v3_rejection | >=99% | non misurato | NON MISURATO |
-| unknown_v3_wrong_document | <=1% | non misurato | NON MISURATO |
-| unknown_v3_entity_version | 0 | non misurato | NON MISURATO |
-| v5_preflight | >=30IDs,6sources,400reps,200scan,50filled,30unknown | non misurato | NON MISURATO |
-| v5_leakage | 0 prohibited | non misurato | NON MISURATO |
-| v5_precision | >=99.5% | non misurato | NON MISURATO |
-| v5_exact_recall | >=90% | non misurato | NON MISURATO |
-| v5_entity_version | 0 | non misurato | NON MISURATO |
-| v5_scan_precision | >=99.5% | non misurato | NON MISURATO |
-| v5_scan_recall | >=85% | non misurato | NON MISURATO |
-| v5_filled_generation | >=90% | non misurato | NON MISURATO |
-| v5_filled_precision | >=99.5% | non misurato | NON MISURATO |
-| v5_filled_recall | >=90% | non misurato | NON MISURATO |
-| v5_retrieval_at25 | 100% | non misurato | NON MISURATO |
-| v5_retrieval_at1 | target>=99% | non misurato | NON MISURATO |
-| v5_unknown_mix | >=99% rejection | non misurato | NON MISURATO |
-| release_freeze | Dedicated commit after all prerequisites | non misurato | NON MISURATO |
-| unknown_v3_freshness | 0 prior SHA or obvious near-resource reuse | non misurato | NON MISURATO |
-| unknown_v3_supported_truth | Confirmed unknown, supported input only | non misurato | NON MISURATO |
-| unknown_v3_types | >=5 types | non misurato | NON MISURATO |
-| unknown_v3_family_acceptance | Counts as false acceptance | non misurato | NON MISURATO |
-| pytest | 0 failures | {'passed': 786, 'failed': 0, 'skipped': 3} | PASS |
-| compile_integrity_FK_migrations_schema | 0 failures | True | PASS |
-| release_fast_cli | exit0 | 1 | FAIL |
-| family_identity_holdout | >=5 real families | experimental / insufficiently validated | FAIL |
-| CI | external pending | external_pending | FAIL |
+| Gate | Target | Actual | Esito | Obbligatorio |
+| --- | --- | --- | --- | --- |
+| truth_adjudication | 3 official decisions before engine edit; ambiguous excluded | {'confirmed_unknown': 1, 'actual_catalog_document': 0, 'ambiguous': 2, 'release_eligible': 0} | PASS | sì |
+| fingerprint_coverage | >=85% | 86.52849740932642 | PASS | sì |
+| all_operational | >=70% | 82.67326732673267 | PASS | sì |
+| canonical_native | 100% | 980/980 | PASS | sì |
+| canonical_legacy | 100% | 27/27 | PASS | sì |
+| historical_safety | 241 NO; 0 false accepts | {'n': 241, 'false_accepts': 0} | PASS | sì |
+| confirmed_ANAC_regression | NO_MATCH | NO_MATCH | PASS | sì |
+| input_safety | all safe rejects/no crash/no residue | 9/9 | PASS | sì |
+| performance_median_p95 | <=250ms | 263.0707 | FAIL | sì |
+| performance_four_of_five | preferred>=4/5 | 1 | PREFERITO NON RAGGIUNTO | no |
+| unknown_v3_sample | >=100 confirmed unknown,8sources,max25% | non misurato | NON MISURATO | sì |
+| unknown_v3_rejection | >=99% | non misurato | NON MISURATO | sì |
+| unknown_v3_wrong_document | <=1% | non misurato | NON MISURATO | sì |
+| unknown_v3_entity_version | 0 | non misurato | NON MISURATO | sì |
+| v5_preflight | >=30IDs,6sources,400reps,200scan,50filled,30unknown | non misurato | NON MISURATO | sì |
+| v5_leakage | 0 prohibited | non misurato | NON MISURATO | sì |
+| v5_precision | >=99.5% | non misurato | NON MISURATO | sì |
+| v5_exact_recall | >=90% | non misurato | NON MISURATO | sì |
+| v5_entity_version | 0 | non misurato | NON MISURATO | sì |
+| v5_scan_precision | >=99.5% | non misurato | NON MISURATO | sì |
+| v5_scan_recall | >=85% | non misurato | NON MISURATO | sì |
+| v5_filled_generation | >=90% | non misurato | NON MISURATO | sì |
+| v5_filled_precision | >=99.5% | non misurato | NON MISURATO | sì |
+| v5_filled_recall | >=90% | non misurato | NON MISURATO | sì |
+| v5_retrieval_at25 | 100% | non misurato | NON MISURATO | sì |
+| v5_retrieval_at1 | target>=99% | non misurato | NON MISURATO | sì |
+| v5_unknown_mix | >=99% rejection | non misurato | NON MISURATO | sì |
+| release_freeze | Dedicated commit after all prerequisites | non misurato | NON MISURATO | sì |
+| unknown_v3_freshness | 0 prior SHA or obvious near-resource reuse | non misurato | NON MISURATO | sì |
+| unknown_v3_supported_truth | Confirmed unknown, supported input only | non misurato | NON MISURATO | sì |
+| unknown_v3_types | >=5 types | non misurato | NON MISURATO | sì |
+| unknown_v3_family_acceptance | Counts as false acceptance | non misurato | NON MISURATO | sì |
+| pytest | 0 failures | {'passed': 786, 'failed': 0, 'skipped': 3} | PASS | sì |
+| compile_integrity_FK_migrations_schema | 0 failures | True | PASS | sì |
+| release_fast_cli | exit0 | 1 | FAIL | sì |
+| family_identity_holdout | >=5 real families | experimental / insufficiently validated | EXPERIMENTAL | no |
+| CI | external pending | external_pending | PENDING | no |
 
 ## Limiti e archivio
 
