@@ -246,6 +246,65 @@ def verify_round15(archive,names,gates):
     for path in ['docs/ROUND15_BASELINE_AUDIT.md','docs/ROUND15_TRUTH_ADJUDICATION.md','docs/ROUND15_REPORT.md','benchmarks/results/round15/false_acceptance_root_causes.md']:assert archive.read(prefix+path),path
     return len(locks['historical_original_git_sha256'])
 
+def verify_round16(archive,names,gates):
+    """Check measured equivalence, seven-run timing and conditional release evidence."""
+    import statistics
+    from benchmarks.round9_performance import describe
+    from benchmarks.release_truth import select_release
+    from src.fingerprint_v3 import validate as validate_v3
+    prefix='BurOCRazia/'
+    def data(p):return json.loads(archive.read(prefix+p))
+    def r(n):return data('benchmarks/results/round16/'+n+'.json')
+    assert gates['round']==16 and gates['schema']==610
+    policy=data('benchmarks/reference/release_truth_policy_v1.json');addendum=data(policy['registry'])
+    assert policy['registry_sha256']==hashlib.sha256(archive.read(prefix+policy['registry'])).hexdigest()
+    assert policy['base_reference_truth_v3_sha256']==hashlib.sha256(archive.read(prefix+'benchmarks/reference/reference_truth_v3.json')).hexdigest()
+    assert len(select_release(addendum['cases']))==1258
+    for p,h in addendum['source_sha256'].items():assert hashlib.sha256(archive.read(prefix+p)).hexdigest()==h
+    sem=r('semantic_equivalence');assert sem['passed'] and not sem['differences'] and sem['n']==1563
+    assert sem['counts']['INAIL_ambiguous']==2 and sem['counts']['ANAC_full_pdf']==1
+    for p,h in sem['artifacts_sha256'].items():assert hashlib.sha256(archive.read(prefix+'benchmarks/results/round16/'+p)).hexdigest()==h
+    for stem in ['semantic','semantic_supplement']:
+        before=r(stem+'_before');after=r(stem+'_after')
+        assert before['prepared_sha256']==after['prepared_sha256'] and len(before['cases'])==len(after['cases'])==after['expected_count']
+        assert all(a['case_id']==b['case_id'] and a['signature']==b['signature'] for a,b in zip(before['cases'],after['cases']))
+        assert after['identity']['runtime_sha256']==gates['identity']['runtime_sha256']
+    perf=r('performance_stability');assert perf['status']=='complete' and len(perf['runs'])==7
+    for run in perf['runs']:assert len(run['samples'])==402 and describe([c['milliseconds'] for c in run['samples']])==run['latency_ms']
+    assert statistics.median(c['latency_ms']['p95'] for c in perf['runs'])==perf['median_p95']
+    assert perf['required_pass']==(perf['median_p95']<=250)
+    assert perf['identity']['runtime_sha256']==gates['identity']['runtime_sha256']
+    assert r('canonical')['counts']['exact']==980 and r('canonical_legacy')['counts']['exact']==27
+    assert r('historical_safety')['n']==241 and r('historical_safety')['passed']
+    inputs=r('input_safety');assert inputs['n']==inputs['safe_rejects']==9 and inputs['passed'] and inputs['no_false_family_result']
+    assert r('release_gate_fast')['passed'] and r('release_gate_fast')['n']==1258
+    assert not r('historical_regression_fast')['passed'] and r('historical_regression_fast')['n']==1517 and len(r('historical_regression_fast')['mismatches'])==15
+    assert r('tests')['passed']>=809
+    if gates['local_gates_passed']:assert r('tests')['failed']==0
+    elif r('tests')['failed']:assert not gates['freeze'] and not r('pre_freeze_gate')['tests_pass']
+    changed=subprocess.check_output(['git','diff','--name-only','d39103d','HEAD','--','src','app.py','run.py','data'],cwd=ROOT,text=True).splitlines()
+    assert changed==['src/fingerprint_pages.py','src/fingerprint_v3.py'] or gates['local_gates_passed'],changed
+    raw=archive.read(prefix+'data/document_recognition_fingerprints_v3.json');validate_v3(json.loads(raw));assert hashlib.sha256(raw).hexdigest()==gates['identity']['fingerprint_sha256']
+    for p in ['data/catalog_seed.sqlite3','data/document_recognition_fingerprints_v3.json','data/recognition_profiles/fingerprint_decision_v5.json']:
+        assert archive.read(prefix+p)==subprocess.check_output(['git','show','d39103d:'+p],cwd=ROOT),p
+    if gates['freeze']:
+        f=r('freeze_manifest');assert f['freeze_git_commit']==gates['freeze'] and r('pre_freeze_gate')['ready_to_freeze']
+        for p,h in f['engine_files_sha256'].items():assert hashlib.sha256(archive.read(prefix+p)).hexdigest()==h,p
+    else:assert prefix+'benchmarks/results/round16/freeze_manifest.json' not in names
+    unknown=r('unknown_release_v3')
+    if unknown['status']=='complete':
+        assert gates['freeze'] and unknown['recognition_calls']==unknown['n']>=100
+        assert unknown['observations_sha256']==hashlib.sha256(archive.read(prefix+'benchmarks/results/round16/unknown_release_v3_observations.json')).hexdigest()
+    else:assert unknown['recognition_calls']==0
+    if gates['local_gates_passed']:assert unknown['passed'] and r('evaluation_v5_gate')['passed']
+    locks=r('evidence_locks')
+    for key in ['sha256','historical_original_git_sha256']:
+        for p,h in locks[key].items():assert hashlib.sha256(archive.read(prefix+p)).hexdigest()==h,p
+    latest=data('benchmarks/latest_summary.json');assert latest['round']==16 and latest['status']==gates['status']
+    assert latest['historical_unknown_release_v2_round14']['correct_no_match']==107
+    assert r('final_checks')['release_gate_fast_exit']==0 and r('final_checks')['historical_regression_fast_exit']==1
+    return len(locks['historical_original_git_sha256'])
+
 def main():
     gates=json.loads((ROOT/'docs/release_gates.json').read_text(encoding='utf-8'))
     round_number=gates.get('round',5)
@@ -394,6 +453,8 @@ def main():
             prior_raw_archive_count=verify_round14(archive,names,gates)
         if round_number==15:
             prior_raw_archive_count=verify_round15(archive,names,gates)
+        if round_number==16:
+            prior_raw_archive_count=verify_round16(archive,names,gates)
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -477,11 +538,15 @@ def main():
     if round_number==13:historical_scope='Original R6-R12 evidence preserved; 1028 prior fingerprint records byte-restorable. Initial R13 single-shot bundle exactly restorable using the three adjudicated record snapshots. 105 unknown predictions preserved without replay; current candidate binding marked unmeasured. Corrected common-page ambiguity, five performance runs and current source bytes verified. No freeze or v5.'
     if round_number==14:historical_scope='Original R6-R13 raw/corpora/manifests preserved. Corrected R13 dataset/engine unchanged and frozen before fresh selection. All114 fresh unknown predictions, frozen labels and three wrong accepts/four extraction errors retained, with two INAIL reference concerns. No tuning/replay/v5/RC. Five pre-freeze runs and actual historical release-fast exit1 preserved; final tests and archive bytes verified.'
     if round_number==15:historical_scope='Round14 original107/114,114 raw predictions, labels and freeze preserved byte-for-byte. Additive official truth adjudication completed before sole general draft-heading fix. Separate development replay108/114, two INAIL truth ambiguities, input-safety9/9 and five predetermined performance runs retained. Performance263.0707ms FAIL: no Round15 freeze/independent unknown v3/evaluation v5/RC. Actual release-fast exit1 retained; source, dataset, tests and archive bytes verified.'
+    if round_number==16:historical_scope='Original R6-R15 evidence and historical labels preserved. EX02/EX03 are synthetic INPS; separate INAIL annual ambiguities retained. Truth-aware release gate,1563 exact before/after observations and all7 warm runs/2814 timings verified. Freeze and independent v3/v5 evidence are conditional on their actual prerequisites.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     if round_number==15:
         perf=json.loads((ROOT/'benchmarks/results/round15/performance_pre_freeze.json').read_bytes())
         report.update(measured_recognition_runtime_sha256=perf['identity']['runtime_sha256'],performance_full_code_sha256=perf['identity']['code_sha256'],final_full_code_sha256=gates['identity']['code_sha256'],
             code_bytes_scope='Archive equals final source inventory. Recognition runtime/dataset are byte-identical to performance, canonical and diagnostic measurements. The maintenance-only evidence collector received a provenance URL/SHA correction after timing; its broader full-code hash is reported separately, not asserted equal to the timing inventory.')
+    if round_number==16:
+        perf=json.loads((ROOT/'benchmarks/results/round16/performance_stability.json').read_bytes())
+        report.update(measured_recognition_runtime_sha256=perf['identity']['runtime_sha256'],performance_full_code_sha256=perf['identity']['code_sha256'],final_full_code_sha256=gates['identity']['code_sha256'],code_bytes_scope='Archive equals final source inventory. Runtime and dataset are byte-identical to equivalence, canonical and seven-run performance measurements. Benchmark-only gate/acquisition/reporting infrastructure added after timing has a separate full inventory hash; no runtime or decision semantics changed.')
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==10:(output.parent/'package-verification-round10.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==11:(output.parent/'package-verification-round11.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
@@ -489,6 +554,7 @@ def main():
     if round_number==13:(output.parent/'package-verification-round13.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==14:(output.parent/'package-verification-round14.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==15:(output.parent/'package-verification-round15.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==16:(output.parent/'package-verification-round16.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

@@ -1,0 +1,10 @@
+{
+  "diagnostic": "Isolated test reaches expected Windows symlink privilege skip; full suite repeated in a new temporary base, no recognition/timing changes",
+  "seconds": 641.21,
+  "log_sha256": "3084478a65508fcd61688db58de5a51df83652b67120fee6876d428199a23a7d",
+  "failed": 1,
+  "skipped": 2,
+  "scope": "Initial full-suite validation failure preserved; runtime unchanged",
+  "failure": "test_imported_resource_symlinks_are_rejected: WinError5 at atomic staging-directory publication before symlink creation",
+  "passed": 810
+}

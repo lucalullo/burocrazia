@@ -8,16 +8,19 @@ from src.fingerprint_v3 import features
 
 def image_signature(image):
     out=[]
-    for angle in (0,90,180,270):
-        with image.rotate(angle,expand=True) as rotated,ImageOps.grayscale(rotated) as gray:
-            w,h=gray.size
-            boxes=[(0,0,w,h),(w*.06,h*.06,w*.94,h*.94),*( (x*w/2,y*h/2,(x+1)*w/2,(y+1)*h/2) for y in (0,1) for x in (0,1))]
-            for box in boxes:
-                with gray.crop(box) as crop,crop.resize((9,8),Image.Resampling.LANCZOS) as small:
-                    pixels=list(small.getdata());bits=0
-                    for y in range(8):
-                        for x in range(8):bits=(bits<<1)|int(pixels[y*9+x]>pixels[y*9+x+1])
-                    out.append(format(bits,'016x'))
+    # Orthogonal rotations only transpose pixels, so grayscale commutes with
+    # all four rotations. Convert once instead of copying/converting RGB four times.
+    with ImageOps.grayscale(image) as source:
+        for angle in (0,90,180,270):
+            with source.rotate(angle,expand=True) as gray:
+                w,h=gray.size
+                boxes=[(0,0,w,h),(w*.06,h*.06,w*.94,h*.94),*( (x*w/2,y*h/2,(x+1)*w/2,(y+1)*h/2) for y in (0,1) for x in (0,1))]
+                for box in boxes:
+                    with gray.crop(box) as crop,crop.resize((9,8),Image.Resampling.LANCZOS) as small:
+                        pixels=list(small.getdata());bits=0
+                        for y in range(8):
+                            for x in range(8):bits=(bits<<1)|int(pixels[y*9+x]>pixels[y*9+x+1])
+                        out.append(format(bits,'016x'))
     return tuple(out)
 
 def field_signature(names):return tuple(sorted({hashlib.blake2b(str(n).encode(),digest_size=8,person=b'BurOCRazia-field').hexdigest() for n in names}))

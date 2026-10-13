@@ -1,0 +1,48 @@
+{
+  "addendum_sha256": "ca3819fba1e8ccf0281e9bc5e81feae8be75634fe2e982d953c98fa3b9507f2c",
+  "by_domain": {
+    "official_adjudication": 1,
+    "parser_limit_contract": 9,
+    "synthetic_safety_contract": 241,
+    "technical_canonical_binding": 1007
+  },
+  "excluded": [
+    {
+      "case_id": "historical_v2:U14-5f0c017c3d56e6c5",
+      "confidence": "ambiguous"
+    },
+    {
+      "case_id": "historical_v2:U14-c1fc4765c01dcd62",
+      "confidence": "ambiguous"
+    },
+    {
+      "case_id": "historical_v2:U14-0cf371a00bd16303",
+      "confidence": "insufficient"
+    },
+    {
+      "case_id": "historical_v2:U14-2223cfdb5154ea58",
+      "confidence": "insufficient"
+    },
+    {
+      "case_id": "historical_v2:U14-3a58df37879b0998",
+      "confidence": "insufficient"
+    },
+    {
+      "case_id": "historical_v2:U14-b597730bdb485d2e",
+      "confidence": "insufficient"
+    },
+    {
+      "case_id": "development_regression:EX02",
+      "confidence": "ambiguous"
+    },
+    {
+      "case_id": "development_regression:EX03",
+      "confidence": "ambiguous"
+    }
+  ],
+  "historical_labels_changed": false,
+  "passed": true,
+  "policy_sha256": "bc48cc12747f364ffbd90ca93565124c48ae0bb3b9686983efd058370203ab41",
+  "reference_truth_v3_sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7",
+  "selected": 1258
+}

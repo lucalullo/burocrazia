@@ -42,10 +42,12 @@ def test_authorized_heading_fix_preserves_other_recognition_semantics():
     root=Path(__file__).resolve().parents[1]
     if not (root/'.git').exists():pytest.skip('Historical Git checkout required; package verification includes the source contract')
     baseline='425fa010063692d5d8ed090431068ad014d86ee6'
+    final='d39103d0673b8690816df1f9a3a4499a46f94f45'
     def old(path):return subprocess.check_output(['git','show',baseline+':'+path],cwd=root)
-    before=ast.parse(old('src/recognize.py'));after=ast.parse((root/'src/recognize.py').read_bytes())
+    def completed(path):return subprocess.check_output(['git','show',final+':'+path],cwd=root)
+    before=ast.parse(old('src/recognize.py'));after=ast.parse(completed('src/recognize.py'))
     def other_nodes(tree):
         return [ast.dump(n,include_attributes=False) for n in tree.body if not isinstance(n,ast.FunctionDef) or n.name!='_informational_heading']
     assert other_nodes(before)==other_nodes(after)
     for path in ['src/extract.py','src/fingerprint_v3.py','src/fingerprint_decision_v5.py','src/fingerprint_decision_v4.py','src/fingerprint_match_v2.py','src/title_evidence.py','src/fingerprint_pages.py','data/recognition_profiles/fingerprint_decision_v5.json','data/recognition_features.json']:
-        assert (root/path).read_bytes()==old(path),path
+        assert completed(path)==old(path),path

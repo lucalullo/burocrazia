@@ -21,9 +21,11 @@ def char_hash(value,n):return int.from_bytes(hashlib.blake2b(('char'+str(n)+'\0'
 def features(text):
     text=unicodedata.normalize('NFKC',text[:PARAMETERS['max_page_chars']]).casefold()
     words,_=streams(text)
-    tokens=frozenset(token_hash(' '.join(words[i:i+3]),'token') for i in range(max(0,len(words)-2)))
+    # Deduplicate within this request before hashing. Hash-set semantics are
+    # identical, including collisions; no uploaded text enters a shared cache.
+    tokens=frozenset(token_hash(value,'token') for value in {' '.join(words[i:i+3]) for i in range(max(0,len(words)-2))})
     compact=re.sub(r'[^\w]','',text)
-    chars={str(n):frozenset(char_hash(compact[i:i+n],n) for i in range(max(0,len(compact)-n+1))) for n in (3,4,5)}
+    chars={str(n):frozenset(char_hash(value,n) for value in {compact[i:i+n] for i in range(max(0,len(compact)-n+1))}) for n in (3,4,5)}
     anchors=set()
     for line in text[:2000].splitlines():
         w,_=streams(line)
