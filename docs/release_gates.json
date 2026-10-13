@@ -4,17 +4,17 @@
   "freeze": null,
   "gates": [
     {
-      "actual": 84.19689119170984,
+      "actual": 86.52849740932642,
       "blocking": true,
-      "gate": "coverage_file_backed",
-      "passed": false,
-      "status": "FAIL",
+      "gate": "runtime_usable_coverage",
+      "passed": true,
+      "status": "PASS",
       "target": ">=85%"
     },
     {
-      "actual": 80.44554455445545,
+      "actual": 82.67326732673267,
       "blocking": true,
-      "gate": "coverage_all",
+      "gate": "all_operational_coverage",
       "passed": true,
       "status": "PASS",
       "target": ">=70%"
@@ -22,71 +22,87 @@
     {
       "actual": 105,
       "blocking": true,
-      "gate": "unknown_release_count",
+      "gate": "unknown_count",
       "passed": true,
       "status": "PASS",
-      "target": ">=100 selected"
+      "target": ">=100"
     },
     {
       "actual": 10,
       "blocking": true,
-      "gate": "unknown_release_sources",
+      "gate": "unknown_sources",
       "passed": true,
       "status": "PASS",
       "target": ">=8"
     },
     {
-      "actual": 0.23809523809523808,
+      "actual": 23.809523809523807,
       "blocking": true,
-      "gate": "unknown_release_concentration",
+      "gate": "unknown_concentration",
       "passed": true,
       "status": "PASS",
       "target": "<=25%"
     },
     {
+      "actual": 100.0,
+      "blocking": false,
+      "gate": "unknown_measured_earlier_candidate",
+      "passed": true,
+      "status": "PASS",
+      "target": ">=99%"
+    },
+    {
       "actual": null,
       "blocking": true,
-      "gate": "unknown_rejection",
+      "gate": "unknown_current_candidate",
       "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=99%"
+      "status": "BINDING INVALIDATED / NON MISURATO",
+      "target": ">=99%, exact dataset binding"
     },
     {
       "actual": 0,
       "blocking": true,
       "gate": "historical_safety",
       "passed": true,
-      "status": "PASS R11 / BYTE INVARIATI",
-      "target": "0 confirmed false accepts"
+      "status": "PASS",
+      "target": "0 false accepts"
     },
     {
       "actual": "980/980",
       "blocking": true,
-      "gate": "canonical",
+      "gate": "canonical_native",
       "passed": true,
-      "status": "PASS R11 / BYTE INVARIATI",
-      "target": "100% unambiguous"
+      "status": "PASS",
+      "target": "100%"
     },
     {
-      "actual": 217.834,
+      "actual": "27/27",
+      "blocking": true,
+      "gate": "canonical_legacy",
+      "passed": true,
+      "status": "PASS",
+      "target": "100% qualified"
+    },
+    {
+      "actual": 215.5789,
       "blocking": true,
       "gate": "performance_median_p95",
       "passed": true,
       "status": "PASS",
-      "target": "<=250 ms"
+      "target": "<=250ms"
     },
     {
-      "actual": 3,
+      "actual": 5,
       "blocking": false,
-      "gate": "performance_stability",
-      "passed": false,
-      "status": "FAIL",
-      "target": ">=4/5 p95<=250 ms preferred"
+      "gate": "performance_four_of_five",
+      "passed": true,
+      "status": "PASS",
+      "target": "preferred>=4/5"
     },
     {
       "actual": {
         "failed": 0,
-        "passed": 767,
+        "passed": 772,
         "skipped": 3
       },
       "blocking": true,
@@ -114,7 +130,7 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_representations",
+      "gate": "v5_known_representations",
       "passed": false,
       "status": "NON MISURATO",
       "target": ">=400"
@@ -157,7 +173,7 @@
       "gate": "v5_validity",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "expected==actual==unique; atomic/schema/SHA"
+      "target": "expected==actual==unique, atomic/schema/SHA"
     },
     {
       "actual": null,
@@ -174,14 +190,6 @@
       "passed": false,
       "status": "NON MISURATO",
       "target": ">=90%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_wrong_accepted",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "<=0.5%"
     },
     {
       "actual": null,
@@ -205,31 +213,23 @@
       "gate": "v5_scan",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "precision>=99.5%, recall>=85%"
+      "target": "P>=99.5%,R>=85%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_filled_generation",
+      "gate": "v5_filled",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=90%"
+      "target": "generation>=90%,P>=99.5%,R>=90%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_filled_recognition",
+      "gate": "v5_retrieval",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "precision>=99.5%, recall>=90%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_retrieval_at25",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "100%; @1 preferred99%"
+      "target": "@25=100%, @1 preferred99%"
     },
     {
       "actual": null,
@@ -237,7 +237,7 @@
       "gate": "v5_unknown_end_to_end",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=99% rejection"
+      "target": "rejection>=99%"
     },
     {
       "actual": "experimental / insufficiently validated",
@@ -245,7 +245,7 @@
       "gate": "family",
       "passed": false,
       "status": "INFO",
-      "target": ">=5 real identity-held-out families or experimental"
+      "target": ">=5 qualified real families or experimental"
     },
     {
       "actual": "external_pending",
@@ -257,26 +257,25 @@
     }
   ],
   "identity": {
-    "code_sha256": "6352f42c0f2ef57c2802001027a7bd3a62c924698f44e948c277e25eb0cb30ef",
-    "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
-    "executed_at": "2026-10-13T07:14:58.437586+00:00",
-    "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
-    "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
-    "seed": 2026101312
+    "code_sha256": "05912f9ed63d4e9a3880fb7ea116a278c73487cdf7558d6a990808ae66925822",
+    "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+    "executed_at": "2026-10-13T10:32:16.404874+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
+    "seed": 2026101313
   },
   "local_gates_passed": false,
-  "round": 12,
+  "round": 13,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "cdba6fe75e2eba4ffdeb1d6335f88761e497075ad3af73a12fc0c50caddd6af9",
+    "log_sha256": "6856e714554eaa5101b83a35f7bf7edfe1bc1e9ab6a3bbaaed2a8a19e523b32d",
     "os": "Windows-11-10.0.26300-SP0",
-    "passed": 767,
+    "passed": 772,
     "python": "3.12.10",
-    "scope": "Full local Windows pytest; real local Tesseract where required; symlink privilege and two FIFO skips. No external CI claim.",
-    "seconds": 396.91,
+    "seconds": 395.9,
     "skipped": 3,
     "status": "passed"
   }

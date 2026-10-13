@@ -1,0 +1,18 @@
+{
+  "allowed_change": "Only fingerprint source provenance validation, not input formats, decision/fusion/ranking/weights/thresholds/veto. Runtime imports no legacy converter.",
+  "baseline_commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+  "byte_identical": {
+    "data/catalog_seed.sqlite3": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "data/recognition_features.json": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6",
+    "data/recognition_profiles/fingerprint_decision_v5.json": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe",
+    "src/extract.py": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9",
+    "src/fingerprint_decision_v4.py": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9",
+    "src/fingerprint_decision_v5.py": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9",
+    "src/fingerprint_match_v2.py": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0",
+    "src/fingerprint_pages.py": "22c2dba81a5f823adf47b83f1788716247954daf381977112642fb1d359651ec",
+    "src/recognize.py": "96c089d9eed17e35dc4a49e3ef820dcdfc0cfa79c4a0814b5639846e38348196",
+    "src/title_evidence.py": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+  },
+  "features_index_scoring_ast_unchanged": true,
+  "status": "passed"
+}

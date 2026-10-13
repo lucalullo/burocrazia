@@ -1,0 +1,21 @@
+{
+  "all_operational_gate_percent": 70,
+  "definition_id": "fingerprint-support-definition-v1",
+  "denominator": 1158,
+  "denominator_reference": "benchmarks/results/round6/resource_audit.json",
+  "eligible_for_coverage": "Native historically audited support UNION distinct qualified legacy IDs. Legacy requires receipt/hash/source association, two equal normalized conversions, persisted index record, current non-rejected/non-shared binding, and correct supported-format end-to-end fingerprint-channel result. Mere conversion, fallback-only match or unresolved ambiguity is insufficient.",
+  "file_backed_identity": "Operational identity in the immutable R6 file-backed ID set; failures, original legacy MIME and ambiguity do not remove it.",
+  "fingerprint_supported_identity": "Verified source, current binding and persisted indexed technical fingerprint usable on a supported runtime representation. No runtime converter dependency. New legacy eligibility requires deterministic derivation and a correct normal end-to-end fingerprint-channel DOCUMENT_MATCH.",
+  "gate_percent": 85,
+  "historical_interpretation": "R5 active signatures; R6 introduced >=85% file-backed, not explicit native-only. R10-R12 excluded unindexed legacy candidates operationally, not as a founding native-only metric definition. R11 permitted audited shared resource support.",
+  "immutable_after": "Declared before R13 legacy result aggregation; do not change based on measured totals.",
+  "legacy_canonical_resource": "Verified official original DOC/RTF/XLS/XLSX/ODT, original URL/SHA/MIME/date kept. Maintenance-derived PDF statistics are separate from original bytes; no claim that derived PDF is an official exact byte identity.",
+  "legacy_test": "Normal extract_document -> prepare -> recognize_catalog on temporary deterministic PDF; file_sha256 is derived input SHA, different from original canonical SHA. Exact original-SHA shortcut cannot establish the legacy result.",
+  "metric": "runtime_usable_fingerprint_supported",
+  "native_metric_reported_separately": true,
+  "operational_denominator": 1212,
+  "performance_gate": "Median p95<=250ms mandatory; 4/5 warm runs<=250ms preferred as explicitly specified in R12. No retrospective blocker.",
+  "runtime_input_format_supported": "An input accepted by the unchanged local extraction pipeline (PDF/JPG/PNG/DOCX/TXT and existing aliases); canonical-source format does not imply upload-format support.",
+  "schema_version": 1,
+  "shared_resource_supported": "Positively adjudicated official resource association, indexed with shared status and conservative identity disambiguation. Resource support is separate from unique identity accuracy. Existing R11/R12 adjudicated shared support is preserved separately; unresolved legacy ambiguity is not newly eligible."
+}

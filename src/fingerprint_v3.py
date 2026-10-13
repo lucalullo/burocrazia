@@ -41,6 +41,20 @@ def page_record(number,digital,ocr,visual,*,reused_ocr=None,ocr_status='generate
         char_counts={str(n):len(d['chars'][str(n)]|o['chars'][str(n)]) for n in (3,4,5)},
         anchors=sketch(d['anchors']|o['anchors'],32),visual=list(visual),ocr_status=ocr_status)
 
+def validate_legacy_source(record):
+    """Validate source provenance only; upload formats and scoring are unchanged."""
+    formats={'.doc':'application/msword','.rtf':'application/rtf','.xls':'application/vnd.ms-excel',
+             '.xlsx':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+             '.odt':'application/vnd.oasis.opendocument.text'}
+    meta=record['ocr_metadata']
+    if not isinstance(meta,dict) or meta.get('source_kind')!='maintenance_derived_legacy':raise ValueError('Provenienza legacy v3 assente.')
+    if not isinstance(meta.get('original_format'),str) or formats.get(meta['original_format'])!=record['mime_type']:raise ValueError('Formato originale legacy incoerente.')
+    if meta.get('original_sha256')!=record['canonical_file_sha256']:raise ValueError('SHA originale legacy incoerente.')
+    for key in ['derived_sha256','converter_sha256','profile_sha256','provenance_manifest_sha256']:
+        if not isinstance(meta.get(key),str) or not re.fullmatch('[a-f0-9]{64}',meta[key]):raise ValueError('Prova legacy v3 incompleta.')
+    if meta['derived_sha256']==record['canonical_file_sha256'] or meta.get('derived_mime_type')!='application/pdf' or meta.get('deterministic_conversion') is not True:raise ValueError('Derivazione legacy non verificata.')
+    if meta.get('conversion_method')!='libreoffice-pdf-normalized-v1' or meta.get('representation_byte_identity')!='derived_not_official':raise ValueError('Identità dei byte derivati non valida.')
+
 def validate(bundle):
     if not isinstance(bundle,dict) or set(bundle)!={'schema_version','fingerprint_version','parameters','records'}:raise ValueError('Schema fingerprint v3 non valido.')
     if bundle['schema_version']!=3 or bundle['fingerprint_version']!=VERSION or bundle['parameters']!=PARAMETERS:raise ValueError('Versione fingerprint v3 non valida.')
@@ -65,7 +79,9 @@ def validate(bundle):
             u=urlsplit(r[k])
             if u.scheme!='https' or not u.hostname or u.username or u.password or len(r[k])>4096:raise ValueError('URL v3 non valida.')
         if type(r['size_bytes']) is not int or not 0<r['size_bytes']<=20*1024*1024:raise ValueError('Dimensione v3 non valida.')
-        if r['mime_type'] not in ['application/pdf','application/vnd.openxmlformats-officedocument.wordprocessingml.document']:raise ValueError('MIME v3 non valido.')
+        legacy=r['mime_type'] not in ['application/pdf','application/vnd.openxmlformats-officedocument.wordprocessingml.document']
+        if legacy:validate_legacy_source(r)
+        elif isinstance(r['ocr_metadata'],dict) and r['ocr_metadata'].get('source_kind')=='maintenance_derived_legacy':raise ValueError('MIME originale legacy mascherato da PDF/DOCX.')
         if not isinstance(r['ocr_metadata'],dict) or len(json.dumps(r['ocr_metadata']))>3000:raise ValueError('Metadata OCR v3 non validi.')
         def hashes(v,cap):
             if not isinstance(v,list) or len(v)>cap or v!=sorted(set(v)) or any(not isinstance(x,str) or not re.fullmatch('[a-f0-9]{16}',x) for x in v):raise ValueError('Sketch v3 non valido.')
@@ -83,7 +99,7 @@ def validate(bundle):
             counts=[p['digital_count'],p['ocr_count'],*p['char_counts'].values()]
             if any(type(n) is not int or not 0<=n<=100000 for n in counts):raise ValueError('Cardinalità v3 non valida.')
             if not isinstance(p['visual'],list) or len(p['visual']) not in [0,24] or any(not isinstance(x,str) or not re.fullmatch('[a-f0-9]{16}',x) for x in p['visual']):raise ValueError('Visual v3 non valido.')
-            if p['ocr_status'] not in ['generated','reused_v2_first_page','unavailable_docx_renderer','failed','bounded_timeout']:raise ValueError('Stato OCR pagina non valido.')
+            if p['ocr_status'] not in ['generated','reused_v2_first_page','unavailable_docx_renderer','failed','bounded_timeout'] and not (legacy and p['ocr_status']=='not_requested_maintenance_digital_only'):raise ValueError('Stato OCR pagina non valido.')
         total_pages+=len(r['pages'])
     if total_pages>20000:raise ValueError('Troppe pagine v3.')
     return bundle

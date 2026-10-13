@@ -1,3 +1,9 @@
+<!-- round13-current -->
+# Round 13
+
+Round 13 **NOT READY**, versione pubblica 0.6.1, schema 610. Runtime-usable 1002/1158 = 86.528497%, native 975/1158 = 84.196891%; legacy qualificati 27/40. Unknown 105/105 sul bundle precedente, non trasferito alla candidata corretta e non ripetuto; freeze/v5 assenti. p95 mediano 215.5789 ms; test 772 passed, 3 skipped. [Report Round 13](ROUND13_REPORT.md). Le sezioni successive restano storiche.
+<!-- /round13-current -->
+
 <!-- round12-current -->
 # Round 12
 

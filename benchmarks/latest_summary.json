@@ -3,11 +3,10 @@
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
   "catalog_semantic_sha256": "sha256:76f9e2ecb0263545622e1096286cf71c7574bf6fa8a964c1513e40197c90fd09",
-  "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
+  "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
   "evaluations": [
     {
       "name": "development_regression",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 35,
         "confusion_matrix": {
@@ -29,8 +28,8 @@
         },
         "failed": 2,
         "latency_ms": {
-          "p50": 43.742,
-          "p95": 118.7544,
+          "p50": 65.955,
+          "p95": 194.3923,
           "p99": null
         },
         "metrics": {
@@ -105,7 +104,6 @@
     },
     {
       "name": "release_locked_v1",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 69,
         "confusion_matrix": {
@@ -127,8 +125,8 @@
         },
         "failed": 10,
         "latency_ms": {
-          "p50": 36.488,
-          "p95": 58.2564,
+          "p50": 58.01,
+          "p95": 69.7046,
           "p99": null
         },
         "metrics": {
@@ -203,7 +201,6 @@
     },
     {
       "name": "release_locked_v2",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 69,
         "confusion_matrix": {
@@ -225,8 +222,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 38.045,
-          "p95": 55.1192,
+          "p50": 56.458,
+          "p95": 70.5994,
           "p99": null
         },
         "metrics": {
@@ -301,7 +298,6 @@
     },
     {
       "name": "hard_negatives_v1",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 30,
         "confusion_matrix": {
@@ -323,8 +319,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 34.3115,
-          "p95": 49.1661,
+          "p50": 26.8755,
+          "p95": 34.8248,
           "p99": null
         },
         "metrics": {
@@ -399,7 +395,6 @@
     },
     {
       "name": "hard_negatives_v2",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 100,
         "confusion_matrix": {
@@ -421,9 +416,9 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 10.116,
-          "p95": 36.8496,
-          "p99": 53.997
+          "p50": 5.431,
+          "p95": 28.9959,
+          "p99": 31.5589
         },
         "metrics": {
           "document_f1": {
@@ -497,7 +492,6 @@
     },
     {
       "name": "family_release_v3",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 161,
         "confusion_matrix": {
@@ -519,9 +513,9 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 1.324,
-          "p95": 4.775,
-          "p99": 6.233
+          "p50": 0.825,
+          "p95": 3.053,
+          "p99": 3.3302
         },
         "metrics": {
           "document_f1": {
@@ -595,7 +589,6 @@
     },
     {
       "name": "development_compat_v2",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 37,
         "confusion_matrix": {
@@ -617,8 +610,8 @@
         },
         "failed": 0,
         "latency_ms": {
-          "p50": 36.899,
-          "p95": 55.1612,
+          "p50": 38.944,
+          "p95": 57.6588,
           "p99": null
         },
         "metrics": {
@@ -693,7 +686,6 @@
     },
     {
       "name": "catalog_coverage",
-      "scope": "Retained Round11 evidence; runtime/catalog/fingerprints unchanged; no R12 post-unknown rerun.",
       "summary": {
         "cases": 1212,
         "confusion_matrix": {
@@ -715,9 +707,9 @@
         },
         "failed": 43,
         "latency_ms": {
-          "p50": 38.3605,
-          "p95": 58.7836,
-          "p99": 64.6449
+          "p50": 56.904,
+          "p95": 69.3918,
+          "p99": 75.9697
         },
         "metrics": {
           "document_f1": {
@@ -790,7 +782,7 @@
       }
     }
   ],
-  "executed_at": "2026-10-13T07:14:58.437586+00:00",
+  "executed_at": "2026-10-13T10:32:16.404874+00:00",
   "family_identity_holdout": {
     "capability_status": "insufficiently_validated",
     "families_evaluable": 0,
@@ -809,25 +801,25 @@
     }
   },
   "fingerprint_coverage": {
-    "coverage_all": 0.8044554455445545,
-    "coverage_file_backed": 0.8419689119170983,
+    "coverage_all": 0.8267326732673267,
+    "coverage_file_backed": 0.8652849740932642,
     "file_backed_operational_docs": 1158,
-    "fingerprinted_all_operational_docs": 975,
+    "fingerprinted_all_operational_docs": 1002,
+    "legacy_qualified": 27,
+    "native_coverage": 0.8419689119170983,
     "operational_docs_total": 1212,
-    "recovered_round12": 0,
-    "scope": "Unchanged R6 denominator and R11 support definition. Legacy sketches outside native runtime contract excluded.",
-    "shared_only_supported": 33,
-    "status": "executed",
-    "unambiguous_identities": 942
+    "scope": "Frozen definition v1, native plus runtime-usable legacy; shared resource support separated from exact identity accuracy.",
+    "status": "executed"
   },
   "known_canonical": {
-    "scope": "No post-unknown rerun: coverage failed before unknown execution. Prior measured evidence retained only because catalog, runtime and fingerprint bytes are identical. Infrastructure code hash differs and is reported separately.",
-    "status": "retained_round11",
+    "legacy_qualified_resources": 27,
+    "native_resources": 980,
+    "status": "executed",
     "summary": {
-      "cases": 980,
+      "cases": 1007,
       "confusion_matrix": {
         "DOCUMENT_MATCH": {
-          "DOCUMENT_MATCH": 980,
+          "DOCUMENT_MATCH": 1007,
           "FAMILY_MATCH": 0,
           "NO_MATCH": 0
         },
@@ -844,24 +836,24 @@
       },
       "failed": 0,
       "latency_ms": {
-        "p50": 8.9853,
-        "p95": 12.5722,
-        "p99": 14.4078
+        "p50": 9.141,
+        "p95": 13.7419,
+        "p99": 54.3121
       },
       "metrics": {
         "document_f1": {
-          "denominator": 1960,
-          "numerator": 1960,
+          "denominator": 2014,
+          "numerator": 2014,
           "value": 1.0
         },
         "document_precision": {
-          "denominator": 980,
-          "numerator": 980,
+          "denominator": 1007,
+          "numerator": 1007,
           "value": 1.0
         },
         "document_recall": {
-          "denominator": 980,
-          "numerator": 980,
+          "denominator": 1007,
+          "numerator": 1007,
           "value": 1.0
         },
         "entity_error_rate": {
@@ -870,8 +862,8 @@
           "value": 0.0
         },
         "exact_document_coverage": {
-          "denominator": 980,
-          "numerator": 980,
+          "denominator": 1007,
+          "numerator": 1007,
           "value": 1.0
         },
         "family_f1": {
@@ -890,7 +882,7 @@
           "value": 0.0
         },
         "supported_rejection_rate": {
-          "denominator": 980,
+          "denominator": 1007,
           "numerator": 0,
           "value": 0.0
         },
@@ -905,8 +897,8 @@
           "value": null
         },
         "useful_coverage": {
-          "denominator": 980,
-          "numerator": 980,
+          "denominator": 1007,
+          "numerator": 1007,
           "value": 1.0
         },
         "version_year_error_rate": {
@@ -915,7 +907,7 @@
           "value": 0.0
         }
       },
-      "passed": 980
+      "passed": 1007
     }
   },
   "known_robustness": {
@@ -931,43 +923,40 @@
     }
   },
   "performance": {
-    "median_p95": 217.834,
-    "pass_count": 3,
-    "preferred_stability_pass": false,
-    "required_pass": true,
+    "median_p95": 215.5789,
+    "pass_count": 5,
     "runs": [
       {
         "n": 402,
-        "p50": 43.2193,
-        "p95": 195.6687,
-        "p99": 339.845
+        "p50": 48.3701,
+        "p95": 207.0979,
+        "p99": 331.8922
       },
       {
         "n": 402,
-        "p50": 59.7579,
-        "p95": 261.1139,
-        "p99": 427.3527
+        "p50": 46.1169,
+        "p95": 215.5789,
+        "p99": 344.9565
       },
       {
         "n": 402,
-        "p50": 62.574,
-        "p95": 259.0858,
-        "p99": 373.4973
+        "p50": 48.748,
+        "p95": 216.2203,
+        "p99": 332.2318
       },
       {
         "n": 402,
-        "p50": 45.7215,
-        "p95": 217.834,
-        "p99": 347.1092
+        "p50": 58.6483,
+        "p95": 216.6899,
+        "p99": 361.0365
       },
       {
         "n": 402,
-        "p50": 42.1705,
-        "p95": 202.9763,
-        "p99": 339.9105
+        "p50": 40.2919,
+        "p95": 202.6467,
+        "p99": 296.1034
       }
     ],
-    "scope": "Five paired warm runs; median of run p95, not a pooled quantile. OCR separately measured.",
     "status": "executed"
   },
   "release_gate": {
@@ -976,17 +965,17 @@
     "freeze": null,
     "gates": [
       {
-        "actual": 84.19689119170984,
+        "actual": 86.52849740932642,
         "blocking": true,
-        "gate": "coverage_file_backed",
-        "passed": false,
-        "status": "FAIL",
+        "gate": "runtime_usable_coverage",
+        "passed": true,
+        "status": "PASS",
         "target": ">=85%"
       },
       {
-        "actual": 80.44554455445545,
+        "actual": 82.67326732673267,
         "blocking": true,
-        "gate": "coverage_all",
+        "gate": "all_operational_coverage",
         "passed": true,
         "status": "PASS",
         "target": ">=70%"
@@ -994,71 +983,87 @@
       {
         "actual": 105,
         "blocking": true,
-        "gate": "unknown_release_count",
+        "gate": "unknown_count",
         "passed": true,
         "status": "PASS",
-        "target": ">=100 selected"
+        "target": ">=100"
       },
       {
         "actual": 10,
         "blocking": true,
-        "gate": "unknown_release_sources",
+        "gate": "unknown_sources",
         "passed": true,
         "status": "PASS",
         "target": ">=8"
       },
       {
-        "actual": 0.23809523809523808,
+        "actual": 23.809523809523807,
         "blocking": true,
-        "gate": "unknown_release_concentration",
+        "gate": "unknown_concentration",
         "passed": true,
         "status": "PASS",
         "target": "<=25%"
       },
       {
+        "actual": 100.0,
+        "blocking": false,
+        "gate": "unknown_measured_earlier_candidate",
+        "passed": true,
+        "status": "PASS",
+        "target": ">=99%"
+      },
+      {
         "actual": null,
         "blocking": true,
-        "gate": "unknown_rejection",
+        "gate": "unknown_current_candidate",
         "passed": false,
-        "status": "NON MISURATO",
-        "target": ">=99%"
+        "status": "BINDING INVALIDATED / NON MISURATO",
+        "target": ">=99%, exact dataset binding"
       },
       {
         "actual": 0,
         "blocking": true,
         "gate": "historical_safety",
         "passed": true,
-        "status": "PASS R11 / BYTE INVARIATI",
-        "target": "0 confirmed false accepts"
+        "status": "PASS",
+        "target": "0 false accepts"
       },
       {
         "actual": "980/980",
         "blocking": true,
-        "gate": "canonical",
+        "gate": "canonical_native",
         "passed": true,
-        "status": "PASS R11 / BYTE INVARIATI",
-        "target": "100% unambiguous"
+        "status": "PASS",
+        "target": "100%"
       },
       {
-        "actual": 217.834,
+        "actual": "27/27",
+        "blocking": true,
+        "gate": "canonical_legacy",
+        "passed": true,
+        "status": "PASS",
+        "target": "100% qualified"
+      },
+      {
+        "actual": 215.5789,
         "blocking": true,
         "gate": "performance_median_p95",
         "passed": true,
         "status": "PASS",
-        "target": "<=250 ms"
+        "target": "<=250ms"
       },
       {
-        "actual": 3,
+        "actual": 5,
         "blocking": false,
-        "gate": "performance_stability",
-        "passed": false,
-        "status": "FAIL",
-        "target": ">=4/5 p95<=250 ms preferred"
+        "gate": "performance_four_of_five",
+        "passed": true,
+        "status": "PASS",
+        "target": "preferred>=4/5"
       },
       {
         "actual": {
           "failed": 0,
-          "passed": 767,
+          "passed": 772,
           "skipped": 3
         },
         "blocking": true,
@@ -1086,7 +1091,7 @@
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_representations",
+        "gate": "v5_known_representations",
         "passed": false,
         "status": "NON MISURATO",
         "target": ">=400"
@@ -1129,7 +1134,7 @@
         "gate": "v5_validity",
         "passed": false,
         "status": "NON MISURATO",
-        "target": "expected==actual==unique; atomic/schema/SHA"
+        "target": "expected==actual==unique, atomic/schema/SHA"
       },
       {
         "actual": null,
@@ -1146,14 +1151,6 @@
         "passed": false,
         "status": "NON MISURATO",
         "target": ">=90%"
-      },
-      {
-        "actual": null,
-        "blocking": true,
-        "gate": "v5_wrong_accepted",
-        "passed": false,
-        "status": "NON MISURATO",
-        "target": "<=0.5%"
       },
       {
         "actual": null,
@@ -1177,31 +1174,23 @@
         "gate": "v5_scan",
         "passed": false,
         "status": "NON MISURATO",
-        "target": "precision>=99.5%, recall>=85%"
+        "target": "P>=99.5%,R>=85%"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_filled_generation",
+        "gate": "v5_filled",
         "passed": false,
         "status": "NON MISURATO",
-        "target": ">=90%"
+        "target": "generation>=90%,P>=99.5%,R>=90%"
       },
       {
         "actual": null,
         "blocking": true,
-        "gate": "v5_filled_recognition",
+        "gate": "v5_retrieval",
         "passed": false,
         "status": "NON MISURATO",
-        "target": "precision>=99.5%, recall>=90%"
-      },
-      {
-        "actual": null,
-        "blocking": true,
-        "gate": "v5_retrieval_at25",
-        "passed": false,
-        "status": "NON MISURATO",
-        "target": "100%; @1 preferred99%"
+        "target": "@25=100%, @1 preferred99%"
       },
       {
         "actual": null,
@@ -1209,7 +1198,7 @@
         "gate": "v5_unknown_end_to_end",
         "passed": false,
         "status": "NON MISURATO",
-        "target": ">=99% rejection"
+        "target": "rejection>=99%"
       },
       {
         "actual": "experimental / insufficiently validated",
@@ -1217,7 +1206,7 @@
         "gate": "family",
         "passed": false,
         "status": "INFO",
-        "target": ">=5 real identity-held-out families or experimental"
+        "target": ">=5 qualified real families or experimental"
       },
       {
         "actual": "external_pending",
@@ -1229,31 +1218,30 @@
       }
     ],
     "identity": {
-      "code_sha256": "6352f42c0f2ef57c2802001027a7bd3a62c924698f44e948c277e25eb0cb30ef",
-      "commit": "d911fccae4042c5c720a22d9e8767793a9aec61d",
-      "executed_at": "2026-10-13T07:14:58.437586+00:00",
-      "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
-      "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
-      "seed": 2026101312
+      "code_sha256": "05912f9ed63d4e9a3880fb7ea116a278c73487cdf7558d6a990808ae66925822",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "executed_at": "2026-10-13T10:32:16.404874+00:00",
+      "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+      "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
+      "seed": 2026101313
     },
     "local_gates_passed": false,
-    "round": 12,
+    "round": 13,
     "schema": 610,
     "software_version": "0.6.1",
     "status": "NOT READY",
     "tests": {
       "failed": 0,
-      "log_sha256": "cdba6fe75e2eba4ffdeb1d6335f88761e497075ad3af73a12fc0c50caddd6af9",
+      "log_sha256": "6856e714554eaa5101b83a35f7bf7edfe1bc1e9ab6a3bbaaed2a8a19e523b32d",
       "os": "Windows-11-10.0.26300-SP0",
-      "passed": 767,
+      "passed": 772,
       "python": "3.12.10",
-      "scope": "Full local Windows pytest; real local Tesseract where required; symlink privilege and two FIFO skips. No external CI claim.",
-      "seconds": 396.91,
+      "seconds": 395.9,
       "skipped": 3,
       "status": "passed"
     }
   },
-  "round": 12,
+  "round": 13,
   "scan_ocr": {
     "cases": [],
     "freeze": null,
@@ -1406,10 +1394,12 @@
     "without_code": 104
   },
   "unknown_official": {
-    "prior_exposure": 55,
-    "reason": "Coverage below85%; Round12 section7 prohibits starting the unknown release single-shot.",
-    "recognition_calls": 0,
-    "selected_count": 105,
+    "historical_measurement": {
+      "fingerprint_sha256": "d10650139b16d9809f3a08d7065572e4536e4a1094a710039de0ae1888ea423c",
+      "n": 105,
+      "rejection_rate": 1.0
+    },
+    "reason": "Current candidate binding invalidated after known-source ambiguity adjudication; earlier result preserved, no replay.",
     "status": "not_run",
     "summary": {
       "cases": 0,

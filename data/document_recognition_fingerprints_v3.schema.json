@@ -77,7 +77,15 @@
             "pattern": "^[a-f0-9]{64}$"
           },
           "mime_type": {
-            "type": "string"
+            "enum": [
+              "application/pdf",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "application/msword",
+              "application/rtf",
+              "application/vnd.ms-excel",
+              "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "application/vnd.oasis.opendocument.text"
+            ]
           },
           "url": {
             "type": "string"
@@ -260,7 +268,8 @@
                     "reused_v2_first_page",
                     "unavailable_docx_renderer",
                     "failed",
-                    "bounded_timeout"
+                    "bounded_timeout",
+                    "not_requested_maintenance_digital_only"
                   ]
                 }
               }
@@ -287,10 +296,60 @@
           "ocr_metadata": {
             "type": "object"
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "mime_type": {
+                  "enum": [
+                    "application/msword",
+                    "application/rtf",
+                    "application/vnd.ms-excel",
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "application/vnd.oasis.opendocument.text"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "ocr_metadata": {
+                  "required": [
+                    "source_kind",
+                    "original_format",
+                    "original_sha256",
+                    "derived_sha256",
+                    "derived_mime_type",
+                    "deterministic_conversion",
+                    "conversion_method",
+                    "converter_sha256",
+                    "profile_sha256",
+                    "provenance_manifest_sha256",
+                    "representation_byte_identity"
+                  ],
+                  "properties": {
+                    "source_kind": {
+                      "const": "maintenance_derived_legacy"
+                    },
+                    "derived_mime_type": {
+                      "const": "application/pdf"
+                    },
+                    "deterministic_conversion": {
+                      "const": true
+                    },
+                    "representation_byte_identity": {
+                      "const": "derived_not_official"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
       }
     }
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "Public hashed canonical pages only. Runtime validator additionally enforces sorted sketches, aggregate page cap, dates, HTTPS, size, safe paths and binding rules."
+  "description": "Public hashed canonical pages only. Runtime validator additionally enforces sorted sketches, aggregate page cap, dates, HTTPS, size, safe paths and binding rules. Backward-compatible legacy source provenance extension: source MIME/SHA remain original, page statistics may be maintenance-derived. No legacy upload support or scoring change."
 }

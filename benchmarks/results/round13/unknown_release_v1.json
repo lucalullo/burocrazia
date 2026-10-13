@@ -1,0 +1,430 @@
+{
+  "actual_count": 105,
+  "confidence_interval_95": {
+    "lower": 0.9647059230708901,
+    "method": "Wilson score two-sided95%",
+    "n": 105,
+    "upper": 1
+  },
+  "correct_no_match": 105,
+  "entity_error_basis": "Conservative unsupported document/entity assertions on NO_MATCH; no inference from hosting authority alone.",
+  "entity_errors": 0,
+  "expected_count": 105,
+  "extraction_failed": 0,
+  "false_acceptance_rate": 0.0,
+  "identity": {
+    "code_sha256": "667313fbbfb3c2c1f3d107601d90f2dada32b6fc2509db6fd3142bb1eb687687",
+    "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+    "executed_at": "2026-10-13T09:36:56.268601+00:00",
+    "fingerprint_sha256": "d10650139b16d9809f3a08d7065572e4536e4a1094a710039de0ae1888ea423c",
+    "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
+    "seed": 2026101313
+  },
+  "manifest_sha256": "60246fc4e63f41f55b367141ec4ab5b45c08fc42db7d30d5a2551e8c19ad70be",
+  "n": 105,
+  "observations_sha256": "c5ad5d858ad7af9ff2b9e6d68d12873c4527831a3cc89bc9811717bc15f70fdb",
+  "passed": true,
+  "per_category": {
+    "atto_indirizzo": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score two-sided95%",
+        "n": 1,
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "circolare": {
+      "confidence_interval_95": {
+        "lower": 0.8830302015002593,
+        "method": "Wilson score two-sided95%",
+        "n": 29,
+        "upper": 1
+      },
+      "correct_no_match": 29,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 29,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "comunicato": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score two-sided95%",
+        "n": 1,
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "decreto": {
+      "confidence_interval_95": {
+        "lower": 0.8513451253913791,
+        "method": "Wilson score two-sided95%",
+        "n": 22,
+        "upper": 1
+      },
+      "correct_no_match": 22,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 22,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "delibera": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score two-sided95%",
+        "n": 2,
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "direttiva": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score two-sided95%",
+        "n": 1,
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "domanda": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score two-sided95%",
+        "n": 3,
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "guida": {
+      "confidence_interval_95": {
+        "lower": 0.889744604539564,
+        "method": "Wilson score two-sided95%",
+        "n": 31,
+        "upper": 1
+      },
+      "correct_no_match": 31,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 31,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "istruzioni": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score two-sided95%",
+        "n": 3,
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "manuale": {
+      "confidence_interval_95": {
+        "lower": 0.6456695649333126,
+        "method": "Wilson score two-sided95%",
+        "n": 7,
+        "upper": 1
+      },
+      "correct_no_match": 7,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 7,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "modulo": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score two-sided95%",
+        "n": 3,
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "regolamento": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score two-sided95%",
+        "n": 2,
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    }
+  },
+  "per_source": {
+    "agid": {
+      "confidence_interval_95": {
+        "lower": 0.7961166989641515,
+        "method": "Wilson score two-sided95%",
+        "n": 15,
+        "upper": 1
+      },
+      "correct_no_match": 15,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 15,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "anac": {
+      "confidence_interval_95": {
+        "lower": 0.7008549515804559,
+        "method": "Wilson score two-sided95%",
+        "n": 9,
+        "upper": 1
+      },
+      "correct_no_match": 9,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 9,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "giustizia": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score two-sided95%",
+        "n": 2,
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "inail": {
+      "confidence_interval_95": {
+        "lower": 0.8063923194655637,
+        "method": "Wilson score two-sided95%",
+        "n": 16,
+        "upper": 1
+      },
+      "correct_no_match": 16,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 16,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "interno": {
+      "confidence_interval_95": {
+        "lower": 0.7846891972623643,
+        "method": "Wilson score two-sided95%",
+        "n": 14,
+        "upper": 1
+      },
+      "correct_no_match": 14,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 14,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "lavoro": {
+      "confidence_interval_95": {
+        "lower": 0.6096657120978346,
+        "method": "Wilson score two-sided95%",
+        "n": 6,
+        "upper": 1
+      },
+      "correct_no_match": 6,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 6,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mef": {
+      "confidence_interval_95": {
+        "lower": 0.7719046276458016,
+        "method": "Wilson score two-sided95%",
+        "n": 13,
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 13,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 13,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mimit": {
+      "confidence_interval_95": {
+        "lower": 0.8668077490609515,
+        "method": "Wilson score two-sided95%",
+        "n": 25,
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 25,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 25,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mit": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score two-sided95%",
+        "n": 3,
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "regione_piemonte": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score two-sided95%",
+        "n": 2,
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    }
+  },
+  "recognition_calls": 105,
+  "rejection_rate": 1.0,
+  "schema_version": 1,
+  "scope": "First R13 release single-shot, same frozen R11 manifest. Historical55 exposure retained; Wilson interval describes this finite set, not a claim of independent population performance. No tuning or labels changed.",
+  "selection": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "giustizia": 2,
+      "inail": 16,
+      "interno": 14,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 25,
+      "mit": 3,
+      "regione_piemonte": 2
+    },
+    "document_types": {
+      "atto_indirizzo": 1,
+      "circolare": 29,
+      "comunicato": 1,
+      "decreto": 22,
+      "delibera": 2,
+      "direttiva": 1,
+      "domanda": 3,
+      "guida": 31,
+      "istruzioni": 3,
+      "manuale": 7,
+      "modulo": 3,
+      "regolamento": 2
+    },
+    "entities": 10,
+    "max_concentration": 0.23809523809523808,
+    "previously_recognized": 55,
+    "sources": 10,
+    "total": 105,
+    "type_groups": 12,
+    "unversioned": 78,
+    "versioned": 27,
+    "with_code": 16,
+    "without_code": 89
+  },
+  "status": "complete",
+  "unique_case_ids": 105,
+  "wrong_accepts": [],
+  "wrong_document_match": 0,
+  "wrong_family_match": 0
+}

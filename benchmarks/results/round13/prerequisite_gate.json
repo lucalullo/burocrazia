@@ -1,0 +1,29 @@
+{
+  "canonical_pass": true,
+  "coverage_definition": "runtime_usable_fingerprint_supported",
+  "coverage_pass": true,
+  "coverage_percent": 86.52849740932642,
+  "historical_safety_pass": true,
+  "identity": {
+    "code_sha256": "05912f9ed63d4e9a3880fb7ea116a278c73487cdf7558d6a990808ae66925822",
+    "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+    "executed_at": "2026-10-13T10:32:16.404874+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
+    "seed": 2026101313
+  },
+  "performance_four_of_five_mandatory": false,
+  "performance_median_p95": 215.5789,
+  "performance_pass": true,
+  "ready_to_freeze": false,
+  "reason": "Measured unknown result belongs to the pre-adjudication fingerprint bundle. No replay; corrected candidate lacks a valid bound unknown prerequisite.",
+  "tests_pass": true,
+  "unknown_binding_current": false,
+  "unknown_current_candidate_rejection_rate": null,
+  "unknown_max_concentration": 0.23809523809523808,
+  "unknown_measured_pass": true,
+  "unknown_pass": false,
+  "unknown_rejection_rate": 1.0,
+  "unknown_release_count": 105,
+  "unknown_sources": 10
+}
