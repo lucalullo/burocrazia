@@ -129,6 +129,58 @@ def verify_round13(archive,names,gates):
     assert latest['unknown_official']['status']=='not_run' and not latest['unknown_official']['summary']['metrics']
     return len(locks['historical_original_git_sha256'])
 
+def verify_round14(archive,names,gates):
+    from benchmarks.round14_unknown import validate_release,validate_observations,metrics
+    from benchmarks.round9_performance import describe
+    from src.fingerprint_v3 import validate as validate_v3
+    import statistics
+    prefix='BurOCRazia/'
+    def r(name):return json.loads(archive.read(prefix+'benchmarks/results/round14/'+name+'.json'))
+    f=r('freeze_manifest');assert f['freeze_git_commit']==gates['freeze']
+    for path,digest in f['engine_files_sha256'].items():
+        raw=archive.read(prefix+path)
+        assert raw==subprocess.check_output(['git','show',f['freeze_git_commit']+':'+path],cwd=ROOT),path
+        allowed=f['preexisting_serialization_differences'].get(path)
+        assert hashlib.sha256(raw).hexdigest()==(allowed['git_blob_sha256'] if allowed else digest),path
+    fpraw=archive.read(prefix+'data/document_recognition_fingerprints_v3.json');validate_v3(json.loads(fpraw))
+    assert fpraw==subprocess.check_output(['git','show','19883ba:data/document_recognition_fingerprints_v3.json'],cwd=ROOT)
+    assert hashlib.sha256(fpraw).hexdigest()==f['fingerprint_dataset_sha256']==gates['identity']['fingerprint_sha256']
+    registry=archive.read(prefix+'benchmarks/reference/benchmark_contamination_registry_v1.json')
+    assert hashlib.sha256(registry).hexdigest()==f['contamination_registry_sha256']
+    for path,key in [('benchmarks/results/round14/canonical.json','canonical_result_sha256'),('benchmarks/results/round14/canonical_legacy.json','canonical_legacy_result_sha256'),
+                     ('benchmarks/results/round14/historical_safety.json','historical_safety_result_sha256'),('benchmarks/results/round14/performance_pre_freeze.json','performance_result_sha256'),
+                     ('benchmarks/results/round14/baseline_tests.json','test_result_sha256'),('benchmarks/results/round14/pre_freeze_gate.json','pre_freeze_gate_sha256')]:
+        assert hashlib.sha256(archive.read(prefix+path)).hexdigest()==f[key],path
+    assert r('pre_freeze_gate')['passed'] and r('coverage')['runtime_usable_supported']==1002
+    assert r('canonical')['counts']['exact']==980 and r('canonical_legacy')['counts']['exact']==27
+    assert r('historical_safety')['n']==241 and not r('historical_safety')['false_accepts']
+    manifest=archive.read(prefix+'benchmarks/manifests/official_unknown_release_v2.json');m=validate_release(json.loads(manifest));u=r('unknown_release_v2');obs=validate_observations(r('unknown_release_v2_observations'))
+    assert hashlib.sha256(manifest).hexdigest()==u['manifest_sha256']==r('unknown_v2_selection')['manifest_sha256']
+    assert len(m['cases'])==obs['expected_count']==obs['completed']==len(obs['cases'])==114
+    assert {c['case_id']:c['SHA256'] for c in m['cases']}=={c['id']:c['input_sha256'] for c in obs['cases']}
+    assert hashlib.sha256(archive.read(prefix+'benchmarks/results/round14/unknown_release_v2_observations.json')).hexdigest()==u['observations_sha256']
+    assert all(u[k]==v for k,v in metrics(obs['cases']).items())
+    assert u['correct_no_match']==107 and u['wrong_document_match']==3 and u['wrong_family_match']==0 and u['extraction_failed']==4 and u['passed'] is False
+    assert u['freeze_commit']==f['freeze_git_commit']==u['identity']['commit']
+    assert u['identity']['runtime_sha256']==f['runtime_sha256']==gates['identity']['runtime_sha256']
+    assert not r('failure_audit')['replay'] and not r('failure_audit')['labels_changed'] and len(r('failure_audit')['reference_concerns'])==2
+    assert r('evaluation_not_run')['recognition_calls']==0
+    assert gates['status']=='NOT READY' and not gates['local_gates_passed'] and gates['software_version']=='0.6.1'
+    perf=r('performance_pre_freeze');assert len(perf['runs'])==5 and perf['status']=='complete'
+    for run in perf['runs']:assert len(run['samples'])==402 and describe([c['milliseconds'] for c in run['samples']])==run['latency_ms']
+    assert statistics.median(c['latency_ms']['p95'] for c in perf['runs'])==perf['median_p95']==247.1435
+    assert perf['pass_count']==3 and perf['prudent_fragile']
+    assert r('tests')['failed']==0 and r('tests')['passed']==gates['tests']['passed']>=777
+    assert r('final_checks')['benchmark_schema_validation'] and r('final_checks')['release_fast_exit']==1
+    locks=r('evidence_locks')
+    for path,digest in locks['sha256'].items():assert hashlib.sha256(archive.read(prefix+path)).hexdigest()==digest,path
+    for path,digest in locks['historical_original_git_sha256'].items():assert hashlib.sha256(archive.read(prefix+path)).hexdigest()==digest,path
+    for name in ['evaluation_v5_pool_audit.csv','evaluation_v5_preflight.json','evaluation_v5_leakage.json','robustness_v5.json','scan_v5.json','filled_v5.json','retrieval_v5.json','end_to_end_v5.json']:
+        assert prefix+'benchmarks/results/round14/'+name not in names
+    latest=json.loads(archive.read(prefix+'benchmarks/latest_summary.json'));assert latest['round']==14 and latest['status']=='NOT READY'
+    assert latest['unknown_official']['summary']['metrics']['unknown_correct_rejection_rate']['numerator']==107
+    return len(locks['historical_original_git_sha256'])
+
 def main():
     gates=json.loads((ROOT/'docs/release_gates.json').read_text(encoding='utf-8'))
     round_number=gates.get('round',5)
@@ -273,6 +325,8 @@ def main():
             prior_raw_archive_count=verify_round12(archive,names,gates)
         if round_number==13:
             prior_raw_archive_count=verify_round13(archive,names,gates)
+        if round_number==14:
+            prior_raw_archive_count=verify_round14(archive,names,gates)
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -354,12 +408,14 @@ def main():
     if round_number==11:historical_scope='Original R6-R10 Git evidence blobs unchanged. All1027 prior fingerprint records preserved and original R10 bundle byte SHA reconstructible from that prefix with UTF8/indent2/trailing LF. Corpus locks, seed and prior archives separately verified.'
     if round_number==12:historical_scope='Original R6-R11 Git evidence unchanged. Full R11 fingerprint bundle, seed and release unknown manifest byte-identical; prior archives preserved. All five warm runs/2010 timings verified. Coverage stop enforced: zero unknown release predictions, no freeze or evaluation v5.'
     if round_number==13:historical_scope='Original R6-R12 evidence preserved; 1028 prior fingerprint records byte-restorable. Initial R13 single-shot bundle exactly restorable using the three adjudicated record snapshots. 105 unknown predictions preserved without replay; current candidate binding marked unmeasured. Corrected common-page ambiguity, five performance runs and current source bytes verified. No freeze or v5.'
+    if round_number==14:historical_scope='Original R6-R13 raw/corpora/manifests preserved. Corrected R13 dataset/engine unchanged and frozen before fresh selection. All114 fresh unknown predictions, frozen labels and three wrong accepts/four extraction errors retained, with two INAIL reference concerns. No tuning/replay/v5/RC. Five pre-freeze runs and actual historical release-fast exit1 preserved; final tests and archive bytes verified.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     (output.parent/'package-verification.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==10:(output.parent/'package-verification-round10.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==11:(output.parent/'package-verification-round11.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==12:(output.parent/'package-verification-round12.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==13:(output.parent/'package-verification-round13.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==14:(output.parent/'package-verification-round14.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

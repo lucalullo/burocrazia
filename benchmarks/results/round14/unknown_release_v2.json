@@ -1,0 +1,751 @@
+{
+  "actual_count": 114,
+  "confidence_interval_95": {
+    "lower": 0.8786570589735132,
+    "method": "Wilson score 95% two sided",
+    "upper": 0.9699407180801347
+  },
+  "correct_no_match": 107,
+  "entity_errors": 0,
+  "error_basis": "Entity errors compare an emitted entity to the literal verified issuer, applying only existing public ENTITY_ALIASES. Version errors count explicit contradictory version/year only. Every document/family acceptance is false acceptance even when entity/version are compatible.",
+  "expected_count": 114,
+  "extraction_failed": 4,
+  "false_acceptance_rate": 0.02631578947368421,
+  "freeze_commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+  "identity": {
+    "code_sha256": "dd40134a4d846ed58e8242950b96759a828fd1b7b30a775861df54bd12237453",
+    "commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+    "executed_at": "2026-10-13T11:35:49.839273+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
+    "seed": 2026101314
+  },
+  "manifest_sha256": "a11e4507ec47cc762ee08e19c39c10fde9b2caa393ab1ddc8c9aeec5c559a980",
+  "n": 114,
+  "observations_sha256": "5c7a9d9d272ad540efbd70e5cb34aeab476b393313f00f3874205ef4ecc0471d",
+  "passed": false,
+  "per_entity": {
+    "Agenzia per l’Italia Digitale": {
+      "confidence_interval_95": {
+        "lower": 0.40927543031016883,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9285207872478909
+      },
+      "correct_no_match": 6,
+      "entity_errors": 0,
+      "extraction_failed": 2,
+      "false_acceptance_rate": 0.0,
+      "n": 8,
+      "rejection_rate": 0.75,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Autorità Nazionale Anticorruzione": {
+      "confidence_interval_95": {
+        "lower": 0.30064184258240184,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9544127391902995
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.25,
+      "n": 4,
+      "rejection_rate": 0.75,
+      "version_errors": 0,
+      "wrong_document_match": 1,
+      "wrong_family_match": 0
+    },
+    "Dipartimento per le Libertà Civili e l’Immigrazione": {
+      "confidence_interval_95": {
+        "lower": 0.5655175352168251,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 5,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 5,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "INAIL": {
+      "confidence_interval_95": {
+        "lower": 0.5897054143116588,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9380887336237901
+      },
+      "correct_no_match": 14,
+      "entity_errors": 0,
+      "extraction_failed": 1,
+      "false_acceptance_rate": 0.11764705882352941,
+      "n": 17,
+      "rejection_rate": 0.8235294117647058,
+      "version_errors": 0,
+      "wrong_document_match": 2,
+      "wrong_family_match": 0
+    },
+    "INPS": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Ispettorato Nazionale del Lavoro": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Ministero della Giustizia": {
+      "confidence_interval_95": {
+        "lower": 0.5655175352168251,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 5,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 5,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Ministero delle Imprese e del Made in Italy": {
+      "confidence_interval_95": {
+        "lower": 0.5101091635454027,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 4,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 4,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Ministero delle Infrastrutture e dei Trasporti": {
+      "confidence_interval_95": {
+        "lower": 0.6456695649333126,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 7,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 7,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Ministero dello Sviluppo Economico": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Ministero dell’Economia e delle Finanze": {
+      "confidence_interval_95": {
+        "lower": 0.8045593626380625,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9929037664980127
+      },
+      "correct_no_match": 24,
+      "entity_errors": 0,
+      "extraction_failed": 1,
+      "false_acceptance_rate": 0.0,
+      "n": 25,
+      "rejection_rate": 0.96,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Prefettura -": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Regione Piemonte": {
+      "confidence_interval_95": {
+        "lower": 0.8668077490609515,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 25,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 25,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "Unioncamere": {
+      "confidence_interval_95": {
+        "lower": 0.6456695649333126,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 7,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 7,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    }
+  },
+  "per_source": {
+    "agid": {
+      "confidence_interval_95": {
+        "lower": 0.40927543031016883,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9285207872478909
+      },
+      "correct_no_match": 6,
+      "entity_errors": 0,
+      "extraction_failed": 2,
+      "false_acceptance_rate": 0.0,
+      "n": 8,
+      "rejection_rate": 0.75,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "anac": {
+      "confidence_interval_95": {
+        "lower": 0.30064184258240184,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9544127391902995
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.25,
+      "n": 4,
+      "rejection_rate": 0.75,
+      "version_errors": 0,
+      "wrong_document_match": 1,
+      "wrong_family_match": 0
+    },
+    "giustizia": {
+      "confidence_interval_95": {
+        "lower": 0.5655175352168251,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 5,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 5,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "inail": {
+      "confidence_interval_95": {
+        "lower": 0.5897054143116588,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9380887336237901
+      },
+      "correct_no_match": 14,
+      "entity_errors": 0,
+      "extraction_failed": 1,
+      "false_acceptance_rate": 0.11764705882352941,
+      "n": 17,
+      "rejection_rate": 0.8235294117647058,
+      "version_errors": 0,
+      "wrong_document_match": 2,
+      "wrong_family_match": 0
+    },
+    "inl": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "inps": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "interno": {
+      "confidence_interval_95": {
+        "lower": 0.6096657120978346,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 6,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 6,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mef": {
+      "confidence_interval_95": {
+        "lower": 0.8045593626380625,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9929037664980127
+      },
+      "correct_no_match": 24,
+      "entity_errors": 0,
+      "extraction_failed": 1,
+      "false_acceptance_rate": 0.0,
+      "n": 25,
+      "rejection_rate": 0.96,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mimit": {
+      "confidence_interval_95": {
+        "lower": 0.6456695649333126,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 7,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 7,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mit": {
+      "confidence_interval_95": {
+        "lower": 0.6456695649333126,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 7,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 7,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "regione_piemonte": {
+      "confidence_interval_95": {
+        "lower": 0.8668077490609515,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 25,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 25,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "unioncamere": {
+      "confidence_interval_95": {
+        "lower": 0.6456695649333126,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 7,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 7,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    }
+  },
+  "per_type": {
+    "circolare": {
+      "confidence_interval_95": {
+        "lower": 0.7961166989641515,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 15,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 15,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "decreto": {
+      "confidence_interval_95": {
+        "lower": 0.8139294257983507,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9841868381428913
+      },
+      "correct_no_match": 33,
+      "entity_errors": 0,
+      "extraction_failed": 1,
+      "false_acceptance_rate": 0.02857142857142857,
+      "n": 35,
+      "rejection_rate": 0.9428571428571428,
+      "version_errors": 0,
+      "wrong_document_match": 1,
+      "wrong_family_match": 0
+    },
+    "direttiva": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "domanda": {
+      "confidence_interval_95": {
+        "lower": 0.8712710781407846,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 26,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 26,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "guida": {
+      "confidence_interval_95": {
+        "lower": 0.672002348698212,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9689804773543876
+      },
+      "correct_no_match": 16,
+      "entity_errors": 0,
+      "extraction_failed": 2,
+      "false_acceptance_rate": 0.0,
+      "n": 18,
+      "rejection_rate": 0.8888888888888888,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "informativa": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "istruzioni": {
+      "confidence_interval_95": {
+        "lower": 0.34238022750665303,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 2,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 2,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "manuale": {
+      "confidence_interval_95": {
+        "lower": 0,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.7934506856227626
+      },
+      "correct_no_match": 0,
+      "entity_errors": 0,
+      "extraction_failed": 1,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 0.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "modulo": {
+      "confidence_interval_95": {
+        "lower": 0.299993315138392,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9032285888942195
+      },
+      "correct_no_match": 4,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.3333333333333333,
+      "n": 6,
+      "rejection_rate": 0.6666666666666666,
+      "version_errors": 0,
+      "wrong_document_match": 2,
+      "wrong_family_match": 0
+    },
+    "provvedimento": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "regolamento": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "scheda": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    }
+  },
+  "recognition_calls": 114,
+  "rejection_rate": 0.9385964912280702,
+  "schema_version": 1,
+  "scope": "First single-shot on byte-identical freeze engine. Fresh prediction SHA, no release v1/development/observed resource overlap. Known v5 may run only if this gate passes.",
+  "selection": {
+    "counts_per_source": {
+      "agid": 8,
+      "anac": 4,
+      "giustizia": 5,
+      "inail": 17,
+      "inl": 2,
+      "inps": 1,
+      "interno": 6,
+      "mef": 25,
+      "mimit": 7,
+      "mit": 7,
+      "regione_piemonte": 25,
+      "unioncamere": 7
+    },
+    "document_types": {
+      "circolare": 15,
+      "decreto": 35,
+      "direttiva": 3,
+      "domanda": 26,
+      "guida": 18,
+      "informativa": 1,
+      "istruzioni": 2,
+      "manuale": 1,
+      "modulo": 6,
+      "provvedimento": 3,
+      "regolamento": 3,
+      "scheda": 1
+    },
+    "entities": 14,
+    "max_concentration": 0.21929824561403508,
+    "previously_recognized": 0,
+    "sources": 12,
+    "total": 114,
+    "type_groups": 12,
+    "unversioned": 74,
+    "versioned": 40,
+    "with_code": 10,
+    "without_code": 104
+  },
+  "status": "complete",
+  "unique_case_ids": 114,
+  "version_errors": 0,
+  "wrong_accepts": [
+    {
+      "id": "U14-5f0c017c3d56e6c5",
+      "observed": {
+        "document_id": 1147,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v5",
+        "B_digital_char_identity",
+        "canonical_page:2",
+        "digital:0.9293",
+        "ocr:0.8765",
+        "chars:0.8600",
+        "visual:0.0000",
+        "anchors:0.5625"
+      ]
+    },
+    {
+      "id": "U14-c1fc4765c01dcd62",
+      "observed": {
+        "document_id": 1147,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "signals": [
+        "content_fingerprint_match",
+        "fingerprint_v3",
+        "fingerprint-decision-v5",
+        "B_digital_char_identity",
+        "canonical_page:2",
+        "digital:0.9293",
+        "ocr:0.8765",
+        "chars:0.8600",
+        "visual:0.0000",
+        "anchors:0.5625"
+      ]
+    },
+    {
+      "id": "U14-d6e51fa8e7f88431",
+      "observed": {
+        "document_id": 615,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "signals": [
+        "titolo",
+        "ente",
+        "similarità generale"
+      ]
+    }
+  ],
+  "wrong_document_match": 3,
+  "wrong_family_match": 0
+}

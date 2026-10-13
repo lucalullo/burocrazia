@@ -1,12 +1,12 @@
 {
   "candidate_target": "0.7.0",
   "ci": "external_pending",
-  "freeze": null,
+  "freeze": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
   "gates": [
     {
       "actual": 86.52849740932642,
       "blocking": true,
-      "gate": "runtime_usable_coverage",
+      "gate": "fingerprint_coverage",
       "passed": true,
       "status": "PASS",
       "target": ">=85%"
@@ -14,63 +14,15 @@
     {
       "actual": 82.67326732673267,
       "blocking": true,
-      "gate": "all_operational_coverage",
+      "gate": "all_operational",
       "passed": true,
       "status": "PASS",
       "target": ">=70%"
     },
     {
-      "actual": 105,
-      "blocking": true,
-      "gate": "unknown_count",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=100"
-    },
-    {
-      "actual": 10,
-      "blocking": true,
-      "gate": "unknown_sources",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=8"
-    },
-    {
-      "actual": 23.809523809523807,
-      "blocking": true,
-      "gate": "unknown_concentration",
-      "passed": true,
-      "status": "PASS",
-      "target": "<=25%"
-    },
-    {
-      "actual": 100.0,
-      "blocking": false,
-      "gate": "unknown_measured_earlier_candidate",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=99%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "unknown_current_candidate",
-      "passed": false,
-      "status": "BINDING INVALIDATED / NON MISURATO",
-      "target": ">=99%, exact dataset binding"
-    },
-    {
-      "actual": 0,
-      "blocking": true,
-      "gate": "historical_safety",
-      "passed": true,
-      "status": "PASS",
-      "target": "0 false accepts"
-    },
-    {
       "actual": "980/980",
       "blocking": true,
-      "gate": "canonical_native",
+      "gate": "pre_freeze_canonical_native",
       "passed": true,
       "status": "PASS",
       "target": "100%"
@@ -78,13 +30,21 @@
     {
       "actual": "27/27",
       "blocking": true,
-      "gate": "canonical_legacy",
+      "gate": "pre_freeze_canonical_legacy",
       "passed": true,
       "status": "PASS",
-      "target": "100% qualified"
+      "target": "100%"
     },
     {
-      "actual": 215.5789,
+      "actual": 0,
+      "blocking": true,
+      "gate": "historical_safety",
+      "passed": true,
+      "status": "PASS",
+      "target": "241 NO, 0 false accepts"
+    },
+    {
+      "actual": 247.1435,
       "blocking": true,
       "gate": "performance_median_p95",
       "passed": true,
@@ -92,72 +52,76 @@
       "target": "<=250ms"
     },
     {
-      "actual": 5,
+      "actual": 3,
       "blocking": false,
       "gate": "performance_four_of_five",
+      "passed": false,
+      "status": "FAIL",
+      "target": "preferred >=4/5"
+    },
+    {
+      "actual": 114,
+      "blocking": true,
+      "gate": "unknown_v2_count",
       "passed": true,
       "status": "PASS",
-      "target": "preferred>=4/5"
+      "target": ">=100"
     },
     {
-      "actual": {
-        "failed": 0,
-        "passed": 772,
-        "skipped": 3
-      },
+      "actual": 12,
       "blocking": true,
-      "gate": "tests",
+      "gate": "unknown_v2_sources",
       "passed": true,
       "status": "PASS",
-      "target": "0 failures"
+      "target": ">=8"
+    },
+    {
+      "actual": 21.929824561403507,
+      "blocking": true,
+      "gate": "unknown_v2_max_concentration",
+      "passed": true,
+      "status": "PASS",
+      "target": "<=25%"
+    },
+    {
+      "actual": 93.85964912280701,
+      "blocking": true,
+      "gate": "unknown_v2_rejection",
+      "passed": false,
+      "status": "FAIL",
+      "target": ">=99%"
+    },
+    {
+      "actual": 0,
+      "blocking": true,
+      "gate": "unknown_v2_entity_errors",
+      "passed": true,
+      "status": "PASS",
+      "target": "0"
+    },
+    {
+      "actual": 0,
+      "blocking": true,
+      "gate": "unknown_v2_version_errors",
+      "passed": true,
+      "status": "PASS",
+      "target": "0"
+    },
+    {
+      "actual": 2,
+      "blocking": true,
+      "gate": "unknown_v2_reference_qualification",
+      "passed": false,
+      "status": "FAIL",
+      "target": "confirmed unknown without unresolved catalog identity overlap"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_known_identities",
+      "gate": "v5_preflight",
       "passed": false,
       "status": "NON MISURATO",
-      "target": ">=30"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_sources",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=6"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_known_representations",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=400"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_scans",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=200"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_valid_fills",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=50"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_unknown_mix",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=30"
+      "target": ">=30 IDs,6sources,400known,200scan,50filled"
     },
     {
       "actual": null,
@@ -166,14 +130,6 @@
       "passed": false,
       "status": "NON MISURATO",
       "target": "0 prohibited"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_validity",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "expected==actual==unique, atomic/schema/SHA"
     },
     {
       "actual": null,
@@ -194,6 +150,14 @@
     {
       "actual": null,
       "blocking": true,
+      "gate": "v5_wrong_accepted",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "<=0.5%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
       "gate": "v5_entity_errors",
       "passed": false,
       "status": "NON MISURATO",
@@ -210,72 +174,117 @@
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_scan",
+      "gate": "v5_scan_precision",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "P>=99.5%,R>=85%"
+      "target": ">=99.5%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_filled",
+      "gate": "v5_scan_recall",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "generation>=90%,P>=99.5%,R>=90%"
+      "target": ">=85%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_retrieval",
+      "gate": "v5_filled_generation",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "@25=100%, @1 preferred99%"
+      "target": ">=90%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "v5_unknown_end_to_end",
+      "gate": "v5_filled_precision",
       "passed": false,
       "status": "NON MISURATO",
-      "target": "rejection>=99%"
+      "target": ">=99.5%"
     },
     {
-      "actual": "experimental / insufficiently validated",
-      "blocking": false,
-      "gate": "family",
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_filled_recall",
       "passed": false,
-      "status": "INFO",
-      "target": ">=5 qualified real families or experimental"
+      "status": "NON MISURATO",
+      "target": ">=90%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_retrieval_at25",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": "100%"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "v5_unknown_mix",
+      "passed": false,
+      "status": "NON MISURATO",
+      "target": ">=30fresh, rejection>=99%"
+    },
+    {
+      "actual": {
+        "failed": 0,
+        "passed": 777,
+        "skipped": 3
+      },
+      "blocking": true,
+      "gate": "pytest",
+      "passed": true,
+      "status": "PASS",
+      "target": "0 failures"
+    },
+    {
+      "actual": true,
+      "blocking": true,
+      "gate": "compile_integrity_FK_migration_schema",
+      "passed": true,
+      "status": "PASS",
+      "target": "0 failures"
+    },
+    {
+      "actual": 1,
+      "blocking": true,
+      "gate": "release_fast_cli",
+      "passed": false,
+      "status": "FAIL",
+      "target": "exit0"
     },
     {
       "actual": "external_pending",
       "blocking": false,
       "gate": "CI",
       "passed": false,
-      "status": "PENDING",
+      "status": "FAIL",
       "target": "external pending"
     }
   ],
   "identity": {
-    "code_sha256": "05912f9ed63d4e9a3880fb7ea116a278c73487cdf7558d6a990808ae66925822",
-    "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
-    "executed_at": "2026-10-13T10:32:16.404874+00:00",
+    "code_sha256": "dd40134a4d846ed58e8242950b96759a828fd1b7b30a775861df54bd12237453",
+    "commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+    "executed_at": "2026-10-13T11:35:49.839273+00:00",
     "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
     "runtime_sha256": "1afd21aa65c28848e6a0b4224085caa5d04cc1dd3029845d8f7ac91cb3eeb873",
-    "seed": 2026101313
+    "seed": 2026101314
   },
   "local_gates_passed": false,
-  "round": 13,
+  "reason": "Unknown v2 failed; reference qualification concerns retained; no tuning or v5.",
+  "round": 14,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "6856e714554eaa5101b83a35f7bf7edfe1bc1e9ab6a3bbaaed2a8a19e523b32d",
+    "log_sha256": "ba3b4d8ae7fae07366f5d7386b44edfd7693f6e7712c3cdaa9940347b249808d",
     "os": "Windows-11-10.0.26300-SP0",
-    "passed": 772,
+    "passed": 777,
     "python": "3.12.10",
-    "seconds": 395.9,
+    "seconds": 639.41,
     "skipped": 3,
     "status": "passed"
   }

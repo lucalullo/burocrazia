@@ -1,0 +1,686 @@
+{
+  "benchmark_schema_validation": true,
+  "canonical_hash_binding_integrity": true,
+  "canonical_scope": "Integrity of executed pre-freeze native/legacy results and byte-identical frozen engine; no post-STOP recognition rerun.",
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "checked_at": "2026-10-13T11:52:12.342178+00:00",
+  "cli": [
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_status": true,
+      "name": "fingerprint_v1_validate",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2dda91b9257189d8169d0b4f74bc565f859349d6ed70507f52df69eea06c8092"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v2",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_status": true,
+      "name": "fingerprint_v2_validate",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "964eb3b7e3ffe028e53eaedc866528d68ac455de557bece06cd072c3a37cfecf"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v3",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_status": true,
+      "name": "fingerprint_v3_validate",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "692f7198eeab96ad90764525e468da57fa582ebde150b4e5b7dd98084c12d2bb"
+    },
+    {
+      "args": [
+        "scripts/benchmark.py",
+        "--corpus",
+        "tests/fixtures/benchmark_v2.json",
+        "--output",
+        "reports/round14-cli-compat-v2.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_status": true,
+      "name": "compat_v2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.evaluate",
+        "--fast",
+        "--output-dir",
+        "reports/round14-fast"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "expected_status": true,
+      "name": "release_fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ded51c4d3d4518942b21cd4b19361fb853119693fab1d4ff20b8b1a13afc2eb8"
+    }
+  ],
+  "compile_pass": true,
+  "freeze_commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+  "migration": {
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "row_counts_unchanged": true,
+    "schema": 610
+  },
+  "release_fast_exit": 1,
+  "release_fast_historical_failed_ids": [
+    "EX02",
+    "EX03"
+  ],
+  "release_fast_scope": "Existing v1 contradictions retained; actual CLI exit1, not a green CLI or CI claim.",
+  "release_fast_summaries": {
+    "development_regression": {
+      "cases": 35,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 9,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 2
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 14,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 10
+        }
+      },
+      "failed": 2,
+      "latency_ms": {
+        "p50": 44.474,
+        "p95": 154.3205,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 20,
+          "numerator": 18,
+          "value": 0.9
+        },
+        "document_precision": {
+          "denominator": 9,
+          "numerator": 9,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 11,
+          "numerator": 9,
+          "value": 0.8181818181818182
+        },
+        "entity_error_rate": {
+          "denominator": 21,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 11,
+          "numerator": 9,
+          "value": 0.8181818181818182
+        },
+        "family_f1": {
+          "denominator": 30,
+          "numerator": 28,
+          "value": 0.9333333333333333
+        },
+        "family_precision": {
+          "denominator": 14,
+          "numerator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 16,
+          "numerator": 14,
+          "value": 0.875
+        },
+        "supported_rejection_rate": {
+          "denominator": 25,
+          "numerator": 2,
+          "value": 0.08
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 10,
+          "numerator": 10,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 10,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 25,
+          "numerator": 23,
+          "value": 0.92
+        },
+        "version_year_error_rate": {
+          "denominator": 9,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 33
+    },
+    "family_release_v3": {
+      "cases": 161,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 80,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 81
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 1.993,
+        "p95": 8.148,
+        "p99": 8.6508
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 70,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 160,
+          "numerator": 160,
+          "value": 1.0
+        },
+        "family_precision": {
+          "denominator": 80,
+          "numerator": 80,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 80,
+          "numerator": 80,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "denominator": 80,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 81,
+          "numerator": 81,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 81,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 80,
+          "numerator": 80,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 161
+    },
+    "hard_negatives_v1": {
+      "cases": 30,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 30
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 65.52,
+        "p95": 76.5677,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 30,
+          "numerator": 30,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 30,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 30
+    },
+    "hard_negatives_v2": {
+      "cases": 100,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 100
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 13.032,
+        "p95": 68.7679,
+        "p99": 76.143
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 100,
+          "numerator": 100,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 100,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 100
+    },
+    "release_locked_v1": {
+      "cases": 69,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 54,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 6
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 5,
+          "NO_MATCH": 2
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 10,
+      "latency_ms": {
+        "p50": 48.323,
+        "p95": 71.467,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 116,
+          "numerator": 108,
+          "value": 0.9310344827586207
+        },
+        "document_precision": {
+          "denominator": 56,
+          "numerator": 54,
+          "value": 0.9642857142857143
+        },
+        "document_recall": {
+          "denominator": 60,
+          "numerator": 54,
+          "value": 0.9
+        },
+        "entity_error_rate": {
+          "denominator": 61,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 60,
+          "numerator": 54,
+          "value": 0.9
+        },
+        "family_f1": {
+          "denominator": 14,
+          "numerator": 10,
+          "value": 0.7142857142857143
+        },
+        "family_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 9,
+          "numerator": 5,
+          "value": 0.5555555555555556
+        },
+        "supported_rejection_rate": {
+          "denominator": 69,
+          "numerator": 8,
+          "value": 0.11594202898550725
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 69,
+          "numerator": 59,
+          "value": 0.855072463768116
+        },
+        "version_year_error_rate": {
+          "denominator": 54,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 59
+    },
+    "release_locked_v2": {
+      "cases": 69,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 56,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 5,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 8
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 67.32,
+        "p95": 82.78,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 112,
+          "numerator": 112,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 56,
+          "numerator": 56,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 56,
+          "numerator": 56,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 61,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 56,
+          "numerator": 56,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 10,
+          "numerator": 10,
+          "value": 1.0
+        },
+        "family_precision": {
+          "denominator": 5,
+          "numerator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "denominator": 5,
+          "numerator": 5,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "denominator": 61,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 8,
+          "numerator": 8,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 8,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 61,
+          "numerator": 61,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 56,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 69
+    }
+  },
+  "status": "verified_with_historical_nonzero_cli",
+  "unknown_expected_actual_unique": 114,
+  "unknown_replays": 0
+}

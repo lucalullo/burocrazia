@@ -1,3 +1,9 @@
+<!-- round14-current -->
+# Round 14
+
+Round 14 **NOT READY**. Freeze `37a9d1f3125b9e0480d2592f479554fe5ea40a0a`; coverage 1002/1158 = 86.53%, canonici 980/980 + 27/27, safety 241 NO / 0 FA. Unknown v2 fresco: 114 casi / 12 fonti, 107 rifiuti corretti, 3 DOCUMENT_MATCH sulle label congelate, 4 errori di estrazione; 93.86%, gate FAIL. Due annualità INAIL richiedono adjudicazione truth, senza correzioni post-hoc. Nessun tuning/replay/v5. Performance pre-freeze: mediana p95 247.1435 ms, solo 3/5 sotto 250 ms; pytest finale 777 passed / 3 skipped. [Report Round 14](ROUND14_REPORT.md). Le sezioni successive restano storiche.
+<!-- /round14-current -->
+
 <!-- round13-current -->
 # Round 13
 

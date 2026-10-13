@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "identity", "expected_count", "completed", "complete", "cases"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "identity": {"type": "object", "required": ["freeze_commit", "manifest_sha256", "runtime_sha256", "fingerprint_sha256", "runner_code_sha256", "registry_sha256"]},
+    "expected_count": {"type": "integer", "minimum": 1},
+    "completed": {"type": "integer", "minimum": 1},
+    "complete": {"const": true},
+    "cases": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "expected", "observed", "input_sha256", "extraction_failed", "provenance", "representation", "signals"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^U14-[a-f0-9]{16}$"},
+          "expected": {"type": "object", "required": ["match_type"], "properties": {"match_type": {"const": "NO_MATCH"}}},
+          "observed": {"type": "object", "required": ["match_type", "document_id", "family_id", "entity", "version"], "properties": {"match_type": {"enum": ["NO_MATCH", "DOCUMENT_MATCH", "FAMILY_MATCH"]}}},
+          "input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "extraction_failed": {"type": "boolean"},
+          "signals": {"type": "array", "items": {"type": "string"}},
+          "representation": {"const": "official_original"},
+          "provenance": {"type": "object", "required": ["source", "entity", "document_type", "sha256", "previously_seen", "official_url"], "properties": {"previously_seen": {"const": false}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
+        }
+      }
+    }
+  }
+}
