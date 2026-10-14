@@ -1,14 +1,14 @@
 {
   "candidate_target": "0.7.0",
   "ci": "external_pending",
-  "freeze": null,
+  "freeze": "aa816782b075c8a27eabb7492d080d1c26fa3119",
   "gates": [
     {
-      "actual": false,
+      "actual": true,
       "blocking": true,
       "gate": "unknown_v3_preflight",
-      "passed": false,
-      "status": "FAIL",
+      "passed": true,
+      "status": "PASS",
       "target": "PASS"
     },
     {
@@ -76,7 +76,7 @@
       "target": "PASS"
     },
     {
-      "actual": 231.5144,
+      "actual": 234.4921,
       "blocking": true,
       "gate": "performance_median_p95",
       "passed": true,
@@ -84,7 +84,7 @@
       "target": "<=250 ms"
     },
     {
-      "actual": 5,
+      "actual": 7,
       "blocking": false,
       "gate": "performance_preferred_stability",
       "passed": true,
@@ -92,7 +92,7 @@
       "target": ">=5/7"
     },
     {
-      "actual": 231.5144,
+      "actual": 234.4921,
       "blocking": false,
       "gate": "performance_preferred_latency",
       "passed": false,
@@ -100,43 +100,81 @@
       "target": "<=220 ms"
     },
     {
-      "actual": null,
+      "actual": "aa816782b075c8a27eabb7492d080d1c26fa3119",
       "blocking": true,
       "gate": "release_freeze",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": "after all prerequisites"
     },
     {
-      "actual": null,
+      "actual": 1.0,
       "blocking": true,
       "gate": "unknown_rejection",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": ">=99%"
     },
     {
-      "actual": null,
+      "actual": 0.0,
       "blocking": true,
       "gate": "unknown_false_acceptance",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": "<=1%"
     },
     {
-      "actual": null,
+      "actual": {
+        "entity": 0,
+        "version": 0
+      },
       "blocking": true,
       "gate": "unknown_entity_version",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": "0"
     },
     {
-      "actual": null,
+      "actual": {
+        "attempted_filled": 0,
+        "created_at": "2026-10-14T06:40:02.909761+00:00",
+        "eligible_identities": 351,
+        "eligible_records": 352,
+        "eligible_source_counts": {
+          "14": 3,
+          "16": 15,
+          "2": 195,
+          "3": 134,
+          "5": 5
+        },
+        "eligible_sources": 5,
+        "failed_gates": [
+          "fresh_known_sources"
+        ],
+        "filled_generation_rate": null,
+        "freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+        "generation_status": "not_run",
+        "identities": 36,
+        "known": 0,
+        "minimum_sources": 6,
+        "passed": false,
+        "plan_sha256": "37c9f3dc1a1c08f70609c032db014c82fbe5e723753087ce18b4b8e26a06a32e",
+        "planned_filled": 60,
+        "planned_known": 608,
+        "planned_scans": 476,
+        "planned_unknown_mix": 30,
+        "pool_audit_sha256": "819da021fa52c2ae5d4ba5cfca719a8996d7f428394c9216d4142c19742d6225",
+        "reason": "Entire eligible native/canonical-verified identity pool has only5 sources; minimum6. Stop before representation generation and v5 recognition. No contaminated identities reused.",
+        "recognition_calls": 0,
+        "scans": 0,
+        "sources": 5,
+        "unknown_mix": 0,
+        "valid_filled": 0
+      },
       "blocking": true,
       "gate": "v5_preflight",
       "passed": false,
-      "status": "NOT MEASURED",
+      "status": "FAIL",
       "target": "30IDs/6sources/400known/200scan/50filled/30unknown"
     },
     {
@@ -253,39 +291,33 @@
     }
   ],
   "identity": {
-    "code_sha256": "e10a9247490ec39996ff38361d87780e06760d6835fe3ef5b6c82e4c27bbb5d5",
-    "commit": "19928839d10f762307827935eb2445bcff2787fe",
-    "executed_at": "2026-10-14T05:52:21.298745+00:00",
+    "code_sha256": "5ecf107a3628cc2b5a0b3e66c3b8e0e463e87ff17aa6d8c0007e368733354c57",
+    "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+    "executed_at": "2026-10-14T06:48:42.184589+00:00",
     "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
     "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
     "seed": 2026101208
   },
   "local_gates_passed": false,
   "reasons": [
-    "unknown_v3_preflight"
+    "v5_preflight"
   ],
-  "round": 17,
+  "round": 18,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "9518521f91a93f3e69f6b1044a1181aac975ad037641495f8d70bc6b5679424d",
-    "passed": 823,
-    "scope": "Full suite on unchanged Round16 engine and current Round17 infrastructure; no freeze, release predictions or subsequent product changes. Additional37 infrastructure/equivalence tests also passed.",
-    "seconds": 608.74,
+    "log_sha256": "ec0c6cf02cc577a0e025d41388b9098b0d84dc92609459d48c3443b074959fe1",
+    "passed": 829,
+    "pre_freeze_tests_sha256": "7ee6e1c472c412d93333d319ac5dd99d0256fa3a5b703716eadbc60b85f27bb6",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "scope": "Full post-freeze suite; no frozen prerequisite rewritten.",
+    "seconds": 534.58,
     "skipped": 3,
-    "status": "passed",
-    "targeted_failed": 0,
-    "targeted_log_sha256": "2403aacba77bc66659198a7b2bfeaa6a9d7f8933879d05f0f626446c3fd4543d",
-    "targeted_passed": 37
+    "status": "passed"
   },
   "unmeasured_required": [
-    "release_freeze",
-    "unknown_rejection",
-    "unknown_false_acceptance",
-    "unknown_entity_version",
-    "v5_preflight",
     "v5_leakage",
     "v5_precision",
     "v5_exact_recall",

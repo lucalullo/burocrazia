@@ -1,3 +1,7 @@
+# Round18 — NOT READY
+
+Pool fresh116 (13fonti/19enti); canonical1007/1007; equivalenza1563/0diff; mediana p95234.4921ms, gateTrue. Unknown v3complete, evaluation v5non eseguita. Test829pass/0fail/3skip. Motore Round16 invariato; CI pending. [Report Round18](ROUND18_REPORT.md). Le sezioni successive sono storiche.
+
 # Round17 — NOT READY
 
 Pool fresh129 (13fonti/19enti); canonical1007/1007; equivalenza1563/0diff; mediana p95231.5144ms, gateTrue. Unknown v3not_run, evaluation v5non eseguita. Test823pass/0fail/3skip. Motore Round16 invariato; CI pending. [Report Round17](ROUND17_REPORT.md). Le sezioni successive sono storiche.

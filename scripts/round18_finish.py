@@ -13,7 +13,7 @@ def main():
     u=read(OUT/'unknown_release_v3.json') if (OUT/'unknown_release_v3.json').exists() else dict(status='not_run',passed=False,recognition_calls=0,n=None,reason='Mandatory pre-freeze prerequisite failed; no release prediction permitted.',selection=None)
     if not (OUT/'unknown_release_v3.json').exists():save('unknown_release_v3',u)
     v5=read(OUT/'evaluation_v5_gate.json') if (OUT/'evaluation_v5_gate.json').exists() else None
-    if not v5:save('evaluation_not_run',dict(status='not_run',recognition_calls=0,reason='Unknown v3 prerequisite not passed.' if not u['passed'] else 'Fresh known preflight/leakage not passed.',metrics=None))
+    if not v5:save('evaluation_not_run',dict(status='not_run',recognition_calls=0,reason='Unknown v3 prerequisite not passed.' if not u['passed'] else 'Fresh known source adequacy5<6 failed; no v5 representations generated or scored.',metrics=None))
     ready=bool(pre['ready_to_freeze'] and freeze and u['passed'] and v5 and v5['passed'] and test['failed']==0)
     status='READY LOCALLY' if ready else 'NOT READY';software='0.7.0-rc1' if ready else '0.6.1'
     gates=[]
@@ -30,7 +30,9 @@ def main():
         value=(v5 or {}).get('gates',{}).get(name,{})
         if not v5 and name in ['v5_preflight','v5_leakage']:
             path=OUT/('evaluation_v5_preflight.json' if name=='v5_preflight' else 'evaluation_v5_leakage.json')
-            if path.exists():value=dict(actual=read(path),passed=read(path)['passed'])
+            if path.exists():
+                diagnostic=read(path)
+                value=dict(actual=None if diagnostic.get('status')=='not_run' else diagnostic,passed=diagnostic['passed'])
         g(name,target,value.get('actual'),value.get('passed',False))
     g('family','>=5 identity-held-out families','experimental / insufficiently validated',False,False)
     g('CI','external matrix','external_pending',False,False)
@@ -69,13 +71,14 @@ Coverage1002/1158=86.528497%; canonici980+27=1007/1007;241 NO sintetici senza ac
 |---|---|---|
 {timings}
 
-Mediana p95 **{perf['median_p95']}ms**; gate<=250{perf['required_pass']}. Stessa suite67 input/402 richieste per run,2814 tempi; sette run predeterminati, nessun rerun favorevole. Estrazione/OCR fuori timing warm; RequestPages nuova a ogni richiesta, cache soltanto catalogo. Windows/Python3.12.10; nessun collaudo Linux/macOS e nessuna garanzia su altri computer. Prestazioni Round16 244.9918ms conservate, non sostituiscono la rimisura.
+Mediana p95 **{perf['median_p95']}ms**; gate<=250{perf['required_pass']}. Stessa suite67 input/402 richieste per run,2814 tempi; sette run predeterminati, nessun rerun favorevole. Estrazione/OCR fuori timing warm; RequestPages nuova a ogni richiesta, cache soltanto catalogo. Windows/Python3.12.10; nessun collaudo Linux/macOS e nessuna garanzia su altri computer. Baseline Round17 231.5144ms conservata, distinta dalla rimisura.
 
 ## Unknown v3 ed evaluation v5
 
 Unknown: {json.dumps({k:u.get(k) for k in ['status','n','correct_no_match','wrong_document_match','wrong_family_match','rejection_rate','false_acceptance_rate','confidence_interval_95','entity_errors','version_errors','recognition_calls']},ensure_ascii=False)}.
 
 Evaluation preflight: {json.dumps(read(OUT/'evaluation_v5_preflight.json'),ensure_ascii=False) if (OUT/'evaluation_v5_preflight.json').exists() else 'non eseguito'}.
+Il pool nativo ammissibile contiene **351 identità uniche / 352 record, soltanto5 fonti** (INPS,INAIL,Ministero del Lavoro,Garante Privacy,Tribunale di Venezia). La selezione deterministica contiene36 identità, sempre5 fonti. Il minimo6 è impossibile nel pool corrente dopo esclusione di tuning, precedenti evaluation influenti e template/risorse correlate. **STOP v5 prima della generazione/predizione**: nessuna identità contaminata recuperata e nessuna espansione del catalogo.608 rappresentazioni note/476 scan/60filled/30unknown erano soltanto pianificati, non generati né misurati. Il leakage di identità passa senza overlap; il leakage completo delle rappresentazioni resta non misurato. Unknown v3 invece ha PASS116/116,0 false DOCUMENT/FAMILY,0 errori ente/versione/estrazione; Wilson95% [96.7945%,100%] riguarda questo campione, non il confidence score del motore. Il ledger post_evaluation_exposures.json registra i116 SHA ora osservati, conservando immutabili registry pre-freeze, label e manifest.
 Metriche overall/scan/filled/mix: {json.dumps({k:v.get('metrics') for k,v in metrics.items()},ensure_ascii=False) if metrics else 'non misurate'}.
 Retrieval@1/@5/@10/@25: {retrieval or 'non misurato'}.
 
@@ -83,7 +86,7 @@ Ogni esecuzione eventualmente avviata è single-shot con journal SQLite, checkpo
 
 ## Validazione e storico
 
-Test completi **{test['passed']} passed/{test['failed']} failed/{test['skipped']} skipped**, {test['seconds']}s; log SHA in tests/final_tests.json. Temporaneo nativo Windows; skip piattaforma documentati nei log. Compile, SQLite integrity/FK, migrazione idempotente610/conteggi invariati, fingerprint validators, compat-v2 e truth hash/schema in final_checks.json. Release-gate-fast **1258/1258**, exit0. Historical-regression-fast **1517 casi/15 mismatch**, exit1 atteso, etichette intatte:2 EX02/EX03 sintetici INPS (revisione mancante),10 locked-v1,2 annualità INAIL ambigue,1 NO prudente OH1-047. Non sono nuovi fallimenti né vengono cancellati per dichiarare verde il gate certo. Unknown v2 originale107/114 e tutti gli artifact Round16/17 preservati byte-per-byte. Registry v3 Round17 conservato separatamente prima dell’aggiornamento aggiuntivo v3 Round18. I contratti canonici/sintetici non sono campioni indipendenti ufficiali.
+Test completi **{test['passed']} passed/{test['failed']} failed/{test['skipped']} skipped**, {test['seconds']}s; log SHA in tests/final_tests.json. Pre-freeze829 passed/0failed/3skip; suite finale separata sul freeze. Il primo run828pass/1fail/3skip aveva già caricato il vecchio test Round17 che presumeva assente qualsiasi manifest v3; il test è stato isolato con ROOT temporaneo, nessun codice motore modificato. Log iniziale preservato in initial_validation_failure.json. Un tentativo mirato ha incontrato WinError5 nel default pytest-of-lucal: con basetemp nativo nuovo10 test mirati PASS, poi suite completa verde. Temporaneo nativo Windows; skip piattaforma documentati nei log. Compile, SQLite integrity/FK, migrazione idempotente610/conteggi invariati, fingerprint validators, compat-v2 e truth hash/schema in final_checks.json. Release-gate-fast **1258/1258**, exit0. Historical-regression-fast **1517 casi/15 mismatch**, exit1 atteso, etichette intatte:2 EX02/EX03 sintetici INPS (revisione mancante),10 locked-v1,2 annualità INAIL ambigue,1 NO prudente OH1-047. Non sono nuovi fallimenti né vengono cancellati per dichiarare verde il gate certo. Unknown v2 originale107/114 e tutti gli artifact Round16/17 preservati byte-per-byte. Registry v3 Round17 conservato separatamente prima dell’aggiornamento aggiuntivo v3 Round18. I contratti canonici/sintetici non sono campioni indipendenti ufficiali.
 
 ## Gate e limiti
 
@@ -104,7 +107,7 @@ Archivio `dist/{archive}`; SHA256 e verifica esterni in `dist/package-verificati
         (ROOT/'CHANGELOG.md').write_text('# 0.7.0-rc1 — local candidate\n\nRound18 independent unknown/evaluation gates passed locally; engine unchanged from Round16, CI pending.\n\n'+original_changelog,encoding='utf8',newline='\n')
     paths=[p for p in OUT.glob('*') if p.suffix in ['.json','.csv'] and p.name!='evidence_locks.json']
     paths.extend(ROOT/p for p in [REGISTRY,'docs/ROUND18_REPORT.md','docs/ROUND18_BASELINE_AUDIT.md','docs/BENCHMARK.md','docs/release_gates.json','benchmarks/latest_summary.json'])
-    save('evidence_locks',dict(sha256={p.relative_to(ROOT).as_posix():sha(p) for p in sorted(paths)},historical_original_git_sha256=historical(),freeze=freeze))
-    print('R17',status,'blocking',reasons,flush=True)
+    save('evidence_locks',dict(sha256={p.relative_to(ROOT).as_posix():sha(p) for p in sorted(paths)},historical_original_git_sha256=read(OUT/'historical_locks.json')['historical_original_git_sha256'],freeze=freeze))
+    print('R18',status,'blocking',reasons,flush=True)
 
 if __name__=='__main__':main()

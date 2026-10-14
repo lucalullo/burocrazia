@@ -43,6 +43,12 @@ def verify(archive,names,gates):
     pre=evidence('pre_freeze_gate');u=evidence('unknown_release_v3')
     if gates['freeze']:
         f=evidence('freeze_manifest');assert pre['ready_to_freeze'] and f['freeze_git_commit']==gates['freeze'] and f['unknown_manifest_sha256']==digest('benchmarks/manifests/official_unknown_release_v3.json')
+        from scripts.round18_common import infrastructure_sha256
+        assert f['infrastructure_sha256']==infrastructure_sha256()
+        for p in [ROOT/'scripts/round18_common.py',ROOT/'scripts/round18_freeze.py',ROOT/'scripts/round18_validate.py',ROOT/'tests/test_round18.py',*ROOT.glob('benchmarks/schemas/round18_*.json')]:assert raw(p.relative_to(ROOT).as_posix())==p.read_bytes()
+        assert f['unknown_sampling_policy_sha256']==m['sampling_policy_sha256']==digest('benchmarks/reference/unknown_release_sampling_policy_v1.json')
+        assert f['contamination_registry_sha256']==m['registry_sha256']==digest('benchmarks/reference/benchmark_contamination_registry_v3.json')
+        assert f['runtime_sha256']==perf['identity']['runtime_sha256']==gates['identity']['runtime_sha256']
         for n,h in f['prerequisite_evidence_sha256'].items():assert digest('benchmarks/results/round18/'+n+'.json')==h,n
         if u['status']=='complete':
             from benchmarks.round18_unknown import metrics,validate_observations

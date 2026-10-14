@@ -3,7 +3,7 @@
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
   "catalog_semantic_sha256": "sha256:c525200e32af038d109c641e6ad001f2f10749f3a7d23e05cc859f8f7bcf789c",
-  "commit": "19928839d10f762307827935eb2445bcff2787fe",
+  "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
   "evaluations": [
     {
       "name": "historical_development_compat_v2",
@@ -901,45 +901,45 @@
     "runs": [
       {
         "n": 402,
-        "p50": 55.1585,
-        "p95": 212.7211,
-        "p99": 328.3169
+        "p50": 50.6836,
+        "p95": 205.2807,
+        "p99": 359.5004
       },
       {
         "n": 402,
-        "p50": 61.5721,
-        "p95": 261.1455,
-        "p99": 433.1476
+        "p50": 55.3941,
+        "p95": 239.5791,
+        "p99": 376.7195
       },
       {
         "n": 402,
-        "p50": 59.9719,
-        "p95": 249.7815,
-        "p99": 378.674
+        "p50": 56.1529,
+        "p95": 239.7647,
+        "p99": 450.0775
       },
       {
         "n": 402,
-        "p50": 45.7581,
-        "p95": 231.5144,
-        "p99": 338.4393
+        "p50": 59.113,
+        "p95": 234.4921,
+        "p99": 404.5087
       },
       {
         "n": 402,
-        "p50": 53.4535,
-        "p95": 216.0429,
-        "p99": 353.5846
+        "p50": 52.448,
+        "p95": 213.9511,
+        "p99": 345.8526
       },
       {
         "n": 402,
-        "p50": 58.6798,
-        "p95": 199.359,
-        "p99": 331.6424
+        "p50": 53.552,
+        "p95": 243.7782,
+        "p99": 363.8269
       },
       {
         "n": 402,
-        "p50": 62.4849,
-        "p95": 257.06,
-        "p99": 408.5834
+        "p50": 55.5465,
+        "p95": 226.0021,
+        "p99": 412.1838
       }
     ],
     "scope": "Seven predetermined warm runs; no timing reruns or engine optimization.",
@@ -947,13 +947,13 @@
     "summary": {
       "cases": 2814,
       "latency_ms": {
-        "p95": 231.5144
+        "p95": 234.4921
       },
       "metrics": {}
     }
   },
   "reasons": [
-    "unknown_v3_preflight"
+    "v5_preflight"
   ],
   "release_gate": {
     "candidate_target": "0.7.0",
@@ -1246,7 +1246,7 @@
       "status": "passed"
     }
   },
-  "round": 17,
+  "round": 18,
   "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
   "scan_ocr": {
     "reason": "Conditional evaluation v5 not executed.",
@@ -1410,12 +1410,101 @@
     "without_code": 104
   },
   "unknown_official": {
-    "reason": "Unknown preflight FAIL: INL42/129=32.5581% exceeds25%. Required stop before freeze/selection/predictions.",
-    "status": "not_run",
+    "reason": "Fresh single-shot v3 on freeze; every DOCUMENT/FAMILY counts as false acceptance.",
+    "status": "executed",
     "summary": {
-      "cases": 0,
-      "latency_ms": {},
-      "metrics": {}
+      "cases": 116,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 116
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 215.8648,
+        "p95": 430.6004,
+        "p99": 531.2193
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 116,
+          "numerator": 116,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 116,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        }
+      },
+      "passed": 116
     }
   },
   "unknown_release_subset": {

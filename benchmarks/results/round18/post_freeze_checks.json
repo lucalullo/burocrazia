@@ -1,0 +1,42 @@
+{
+  "benchmark_schemas_valid": true,
+  "canonical_exact": 1007,
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "checked_at": "2026-10-14T06:47:02.926293+00:00",
+  "ci": "external_pending",
+  "compile_pass": true,
+  "engine_and_runner_unchanged": true,
+  "evaluation_v5_calls": 0,
+  "freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+  "passed": true,
+  "performance_recomputed": true,
+  "prerequisite_hashes_preserved": true,
+  "semantic_cases": 1563,
+  "semantic_differences": 0,
+  "unknown_release_calls": 116
+}
