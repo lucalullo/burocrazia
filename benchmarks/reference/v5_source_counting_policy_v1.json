@@ -1,0 +1,32 @@
+{
+  "created_before_predictions": true,
+  "minimum_identities": 30,
+  "minimum_sources": 6,
+  "preferred_max_concentration": 0.3,
+  "sampling_max_concentration": 0.35,
+  "schema_version": 1,
+  "seed": 2026101419,
+  "source_field": "catalog.source_id = fingerprint.source_id",
+  "source_id_names": {
+    "1": "Registro IPA",
+    "2": "Fonte istituzionale INPS",
+    "3": "Fonte istituzionale INAIL",
+    "4": "Fonte istituzionale Agenzia delle Entrate",
+    "5": "Fonte istituzionale Ministero del Lavoro",
+    "6": "Fonte istituzionale Ministero dell'Interno",
+    "7": "Fonte istituzionale Ministero dei Trasporti",
+    "8": "Fonte istituzionale Ministero della Giustizia",
+    "9": "Fonte istituzionale Ministero della Salute",
+    "10": "Fonte istituzionale MIMIT",
+    "11": "Fonte istituzionale ADER",
+    "12": "Modulistica standardizzata Funzione Pubblica",
+    "13": "Modulistica ufficiale PRA",
+    "14": "Modulistica e servizi online Garante Privacy",
+    "15": "Servizi e modulistica INL",
+    "16": "Raccolta ufficiale Tribunale di Venezia",
+    "17": "Raccolta ufficiale Ministero dell'Economia e delle Finanze / RGS",
+    "18": "Raccolta ufficiale Autorità Nazionale Anticorruzione",
+    "19": "Raccolta ufficiale Unioncamere"
+  },
+  "source_semantics": "Existing provenance source ID; same semantics as historical known-document gate. No hostname/entity/page/subsection splitting."
+}

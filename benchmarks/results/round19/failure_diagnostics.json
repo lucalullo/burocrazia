@@ -1,0 +1,179 @@
+{
+  "engine_changed": false,
+  "failed_gates": [
+    "v5_exact_recall",
+    "v5_precision",
+    "v5_retrieval_at25",
+    "v5_scan_precision",
+    "v5_scan_recall"
+  ],
+  "labels_changed": false,
+  "refusals": 179,
+  "replay_performed": false,
+  "retrieval_misses_at25": [
+    {
+      "candidate_rank": null,
+      "case_id": "R19V5-802-rotation_180",
+      "expected_id": 802,
+      "input_sha256": "dda29d7c44246b37c4ae9e5ed5c8341dfc4624444e48454e8ac50ab1daa2f51a"
+    }
+  ],
+  "scope": "Observed single-shot failures retained as failures; no retrospective ambiguity reclassification or selection/transform repair.",
+  "status": "NOT READY",
+  "tuning_performed": false,
+  "wrong_count": 8,
+  "wrong_known": [
+    {
+      "case_id": "R19V5-469-crop_5pct",
+      "expected": {
+        "document_id": 469,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "482d0b2cc6c6e766409b2759a4e5faf78b5b4d316ade821cfdb115327547719a",
+      "observed": {
+        "document_id": 511,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "crop_5pct"
+    },
+    {
+      "case_id": "R19V5-470-blur_mild",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "bdd0473cf2086df7cdd4ed2946079e7f35c918b618f7c8f195ad1ca1f0eac8e0",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "blur_mild"
+    },
+    {
+      "case_id": "R19V5-470-crop_5pct",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "d7913e712113b4e74fcac88d885c45a8a390426e15c769c4a55d85c24ee88c73",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "crop_5pct"
+    },
+    {
+      "case_id": "R19V5-470-digital_canonical_derivative",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "e83dcdc7cd047caeb7df9f2175a780010be1d24cc81a841179e4335a052b4d13",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "digital_canonical_derivative"
+    },
+    {
+      "case_id": "R19V5-470-digital_normalized",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "97c2a640656908cb62855ebc7e0c018a4f2bd2c22dc7250ab13a1c4be010afc2",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "digital_normalized"
+    },
+    {
+      "case_id": "R19V5-470-jpeg_60",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "489f1340c560e2c80a1f209464d6521d561f1dbe5a8baa792b5d211bbfc13f40",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "jpeg_60"
+    },
+    {
+      "case_id": "R19V5-470-jpeg_75",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "7a363083190648ff7b0b4c5b9141c232ce37c9e4044115e4bb73a3f9f9b127fc",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "jpeg_75"
+    },
+    {
+      "case_id": "R19V5-470-raster_200",
+      "expected": {
+        "document_id": 470,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "input_sha256": "4efb1010f3ddcc99ad627b25875df3c38a24b773c3ed5d90b99f4a5563ea0a18",
+      "observed": {
+        "document_id": 512,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "representation": "raster_200"
+    }
+  ]
+}

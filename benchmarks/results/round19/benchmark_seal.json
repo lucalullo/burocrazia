@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-14T07:18:53.424023+00:00",
+  "files_sha256": {
+    "benchmarks/round19_evaluation.py": "4ad531ac54938c9f6af3b2c610045988e67abebde3a848fbba9fbb44939ad9c4",
+    "benchmarks/round19_gates.py": "96ca62ee8bd398662a2827fb45fe426cfcbd3f41658fc3adf816e6131b9f8b1d",
+    "benchmarks/round19_performance.py": "cbb6bad5eef4dea112a1fb240faf8a0bc5ed3d4c79154a04cabac3895db86487",
+    "benchmarks/round19_plan.py": "7aba2c79a1549add2e7b62b7d68ddd70be186ef7036f2272eda3ce006c77fe60",
+    "benchmarks/round19_representations.py": "e4fd66ef4580b08e23c0701dd52807567aada9046acb95852c62e6e27774b91d",
+    "benchmarks/round19_semantics.py": "c537a8a0b50c75730aef8d9c392c2c8d4b33872556af824eafa9212d5460e23a",
+    "benchmarks/schemas/round19_evaluation_observations.schema.json": "77450c488e9c538255fdb9cf7a4b4a057b5f9b7af68d365ce938143f7ac2c1ec",
+    "scripts/round19_baseline.py": "15650f7a3df6a7d2b4059cc82b0d27849a9b02cc442a04962038a12c21f7dc03",
+    "scripts/round19_checks.py": "79420f4cf6ba1d2fb41cd39134e874419c710457147b17365369029bd4d428a6",
+    "scripts/round19_common.py": "3726559411345c16382d8c011bd2f1af1dbed018333742f8a6d1e1bca129ca25",
+    "scripts/round19_registry.py": "6cbebc0e22bfdfb6516a1603b095bfd27541bc05d826ecfb2fa48d606be1676a",
+    "scripts/round19_seal.py": "acb96b9b5bc651a25e16dc422aa55a3ddad037159064cab988be24d214120aea",
+    "scripts/round19_validate.py": "766a6c3f7a003b03543623844eed36801ec29585622b00430a7f6809a9270479",
+    "tests/test_round19.py": "23bf19283009e6cf667b68fbd695bd7a73a030b98f46b55ad94a9c0d63374ff6"
+  },
+  "full_code_sha256": "db690156a3e3121645fcb322b0604167579515c77895e0d1fa6e794563885d5b",
+  "inputs_sha256": {
+    "benchmarks/reference/benchmark_contamination_registry_v4.json": "67d187bf6139495486d0d7b5fe7e1cb3258310d07bd52d04b39420f0bfd32fa3",
+    "benchmarks/reference/v5_source_counting_policy_v1.json": "c5b8ccc10fd379a09635fe975629d2a6fce96842acedfbb1b921ccbf8fe0c14d",
+    "benchmarks/results/round19/evaluation_v5_generation_preflight.json": "fa42d3a61df2f8d68dcee078c984404c82d9a3d45b9b5df5441ee02e9824a6d7",
+    "benchmarks/results/round19/evaluation_v5_leakage.json": "e3fa61a3f0cf0330739e17c8a6b1c2d7619c9e7d8daf9edb2d895c516d4d3b72",
+    "benchmarks/results/round19/evaluation_v5_plan.json": "aea81015072bd0b34ac451253bfdbb7d1f006a8d4f788bee97d445d096faed33",
+    "benchmarks/results/round19/evaluation_v5_prepared.json": "7f6838286c41ba2e51b7a34d8467f835adbc3b441df6a8539722cfc635905b2c",
+    "benchmarks/results/round19/evaluation_v5_representation_audit.json": "815e5d43778ad7e94da981a52cec3faa0c61c951fd3369b6e9a26093a4a552e8"
+  },
+  "recognition_semantic_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+  "scope": "Benchmark-only inventory; not a new engine freeze. R18 freeze/evidence remain immutable.",
+  "semantic_freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119"
+}

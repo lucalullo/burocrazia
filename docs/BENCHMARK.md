@@ -1,3 +1,7 @@
+# Round19 — NOT READY
+
+Pool359 ID/6 fonti; V5single-shot635 noti/504scan/55filled/30unknownmix. Mediana p95198.6201ms; test834/0/3. Freezeaa81678 e unknownv3 116/116 preservati. [Report Round19](ROUND19_REPORT.md). Gate falliti: v5_exact_recall, v5_precision, v5_retrieval_at25, v5_scan_precision, v5_scan_recall. Le sezioni successive sono storiche.
+
 # Round18 — NOT READY
 
 Pool fresh116 (13fonti/19enti); canonical1007/1007; equivalenza1563/0diff; mediana p95234.4921ms, gateTrue. Unknown v3complete, evaluation v5non eseguita. Test829pass/0fail/3skip. Motore Round16 invariato; CI pending. [Report Round18](ROUND18_REPORT.md). Le sezioni successive sono storiche.

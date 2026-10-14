@@ -3,7 +3,7 @@
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
   "catalog_semantic_sha256": "sha256:c525200e32af038d109c641e6ad001f2f10749f3a7d23e05cc859f8f7bcf789c",
-  "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+  "commit": "b3bd9cc61c6af15e8b3ad9958d6e40dcf34a683b",
   "evaluations": [
     {
       "name": "historical_development_compat_v2",
@@ -757,12 +757,101 @@
     "status": "experimental"
   },
   "filled_forms": {
-    "reason": "Conditional evaluation v5 not executed.",
-    "status": "not_run",
+    "scope": "Round19 single-shot fresh representations of eligible known identities.",
+    "status": "executed",
     "summary": {
-      "cases": 0,
-      "latency_ms": {},
-      "metrics": {}
+      "cases": 55,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 55,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 0,
+      "latency_ms": {
+        "p50": 69.9004,
+        "p95": 210.3405,
+        "p99": null
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 110,
+          "numerator": 110,
+          "value": 1.0
+        },
+        "document_precision": {
+          "denominator": 55,
+          "numerator": 55,
+          "value": 1.0
+        },
+        "document_recall": {
+          "denominator": 55,
+          "numerator": 55,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "denominator": 55,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 55,
+          "numerator": 55,
+          "value": 1.0
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 55,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 55,
+          "numerator": 55,
+          "value": 1.0
+        },
+        "version_year_error_rate": {
+          "denominator": 55,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 55
     }
   },
   "fingerprint_coverage": {
@@ -795,7 +884,7 @@
     "status": "executed"
   },
   "known_canonical": {
-    "scope": "1007 current technical canonical binding contracts; not independent identity generalization.",
+    "scope": "Current technical canonical contracts, not independent identity generalization.",
     "status": "executed",
     "summary": {
       "cases": 1007,
@@ -889,71 +978,164 @@
     }
   },
   "known_robustness": {
-    "reason": "Conditional evaluation v5 not executed.",
-    "status": "not_run",
+    "scope": "Round19 single-shot fresh representations of eligible known identities.",
+    "status": "executed",
     "summary": {
-      "cases": 0,
-      "latency_ms": {},
-      "metrics": {}
+      "cases": 635,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 456,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 179
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 187,
+      "latency_ms": {
+        "p50": 109.3656,
+        "p95": 215.8094,
+        "p99": 290.2408
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 1091,
+          "numerator": 896,
+          "value": 0.8212648945921174
+        },
+        "document_precision": {
+          "denominator": 456,
+          "numerator": 448,
+          "value": 0.9824561403508771
+        },
+        "document_recall": {
+          "denominator": 635,
+          "numerator": 448,
+          "value": 0.705511811023622
+        },
+        "entity_error_rate": {
+          "denominator": 456,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 635,
+          "numerator": 448,
+          "value": 0.705511811023622
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 635,
+          "numerator": 179,
+          "value": 0.28188976377952757
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 635,
+          "numerator": 448,
+          "value": 0.705511811023622
+        },
+        "version_year_error_rate": {
+          "denominator": 456,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 448
     }
   },
   "performance": {
     "runs": [
       {
         "n": 402,
-        "p50": 50.6836,
-        "p95": 205.2807,
-        "p99": 359.5004
+        "p50": 55.6425,
+        "p95": 257.9318,
+        "p99": 389.8008
       },
       {
         "n": 402,
-        "p50": 55.3941,
-        "p95": 239.5791,
-        "p99": 376.7195
+        "p50": 48.2199,
+        "p95": 212.5373,
+        "p99": 322.6723
       },
       {
         "n": 402,
-        "p50": 56.1529,
-        "p95": 239.7647,
-        "p99": 450.0775
+        "p50": 31.6987,
+        "p95": 135.3276,
+        "p99": 223.5103
       },
       {
         "n": 402,
-        "p50": 59.113,
-        "p95": 234.4921,
-        "p99": 404.5087
+        "p50": 50.3489,
+        "p95": 198.6201,
+        "p99": 366.2545
       },
       {
         "n": 402,
-        "p50": 52.448,
-        "p95": 213.9511,
-        "p99": 345.8526
+        "p50": 58.8513,
+        "p95": 256.7781,
+        "p99": 374.4996
       },
       {
         "n": 402,
-        "p50": 53.552,
-        "p95": 243.7782,
-        "p99": 363.8269
+        "p50": 44.8587,
+        "p95": 174.4674,
+        "p99": 322.9803
       },
       {
         "n": 402,
-        "p50": 55.5465,
-        "p95": 226.0021,
-        "p99": 412.1838
+        "p50": 53.8106,
+        "p95": 190.7983,
+        "p99": 347.4793
       }
     ],
-    "scope": "Seven predetermined warm runs; no timing reruns or engine optimization.",
+    "scope": "Seven fixed final validation runs; no optimization or favorable reruns.",
     "status": "executed",
     "summary": {
       "cases": 2814,
       "latency_ms": {
-        "p95": 234.4921
+        "p95": 198.6201
       },
       "metrics": {}
     }
   },
   "reasons": [
-    "v5_preflight"
+    "v5_exact_recall",
+    "v5_precision",
+    "v5_retrieval_at25",
+    "v5_scan_precision",
+    "v5_scan_recall"
   ],
   "release_gate": {
     "candidate_target": "0.7.0",
@@ -1246,15 +1428,104 @@
       "status": "passed"
     }
   },
-  "round": 18,
+  "round": 19,
   "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
   "scan_ocr": {
-    "reason": "Conditional evaluation v5 not executed.",
-    "status": "not_run",
+    "scope": "Round19 single-shot fresh representations of eligible known identities.",
+    "status": "executed",
     "summary": {
-      "cases": 0,
-      "latency_ms": {},
-      "metrics": {}
+      "cases": 504,
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 325,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 179
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "failed": 185,
+      "latency_ms": {
+        "p50": 112.7072,
+        "p95": 215.8407,
+        "p99": 288.8609
+      },
+      "metrics": {
+        "document_f1": {
+          "denominator": 829,
+          "numerator": 638,
+          "value": 0.7696019300361882
+        },
+        "document_precision": {
+          "denominator": 325,
+          "numerator": 319,
+          "value": 0.9815384615384616
+        },
+        "document_recall": {
+          "denominator": 504,
+          "numerator": 319,
+          "value": 0.6329365079365079
+        },
+        "entity_error_rate": {
+          "denominator": 325,
+          "numerator": 0,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "denominator": 504,
+          "numerator": 319,
+          "value": 0.6329365079365079
+        },
+        "family_f1": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "denominator": 504,
+          "numerator": 179,
+          "value": 0.3551587301587302
+        },
+        "unknown_correct_rejection_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "denominator": 0,
+          "numerator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "denominator": 504,
+          "numerator": 319,
+          "value": 0.6329365079365079
+        },
+        "version_year_error_rate": {
+          "denominator": 325,
+          "numerator": 0,
+          "value": 0.0
+        }
+      },
+      "passed": 319
     }
   },
   "schema_version": 1,
@@ -1411,6 +1682,7 @@
   },
   "unknown_official": {
     "reason": "Fresh single-shot v3 on freeze; every DOCUMENT/FAMILY counts as false acceptance.",
+    "scope": "Preserved Round18 unknown v3 single-shot evidence; not rerun in Round19. Thirty-case V5 mix separately reported.",
     "status": "executed",
     "summary": {
       "cases": 116,

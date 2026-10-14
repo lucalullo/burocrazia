@@ -1,0 +1,53 @@
+{
+  "artifacts_sha256": {
+    "semantic_after.json": "84bb7dd6f91d32737878b9168a72e5f91bc3af61a4587323fd7f3fc1204f1cd6",
+    "semantic_before.json": "602b301c0eee158b39ee7b4ad1b2015b7b43556ae7738b7481ecf0cabdc0b233",
+    "semantic_inputs_manifest.json": "0cf67f44e49de067147e49be87e9320c29f010cd05107ffc396224ab7dc6a305",
+    "semantic_main_equivalence.json": "6aab094027fcd589d4e1ce4cd76fd5bd7339284e7de44545215cd8faf442ca2e",
+    "semantic_supplement_after.json": "e20bdb9fe272b330a83c664591fd08ad7106cbc9a702a40d8d3c7ce2d906e09c",
+    "semantic_supplement_before.json": "3c26755fe775c57e89e69e63f1a3133a5cdbe9ef8ad98de088ff50be542fb6c3",
+    "semantic_supplement_equivalence.json": "f022eb4fb510fcbcc53eaeca59875b780bbdcc6aa835c1173406d86a20bb538c",
+    "semantic_supplement_manifest.json": "c3ca82865301f033e39ba6825859ac5ee94f6aae7d8ebb3db835a0fd2b33ba80"
+  },
+  "compared_fields": [
+    "complete_public_result",
+    "result_type",
+    "document_id",
+    "family_id",
+    "score",
+    "runner_up",
+    "score_margin",
+    "entity_conflicts",
+    "version_conflicts",
+    "reason_code",
+    "tier",
+    "candidate_ids",
+    "top_candidates",
+    "entity_evidence",
+    "version_evidence"
+  ],
+  "counts": {
+    "ANAC": 1,
+    "ANAC_full_pdf": 1,
+    "INAIL_ambiguous": 2,
+    "canonical": 980,
+    "canonical_legacy": 27,
+    "development_compat_v2": 37,
+    "development_regression": 35,
+    "family_release_v3": 161,
+    "hard_negatives_v1": 30,
+    "hard_negatives_v2": 100,
+    "old_false_accept": 5,
+    "release_locked_v1": 69,
+    "release_locked_v2": 69,
+    "round6_filled_development": 8,
+    "round6_scan_development": 10,
+    "round7_development": 10,
+    "round8_filled_development": 8,
+    "round8_observed_development": 10
+  },
+  "differences": [],
+  "n": 1563,
+  "passed": true,
+  "scope": "Same actual extracted inputs and raw bytes, fresh request objects for every recognition. OCR extracted once before optimization to isolate recognition; baseline/final OCR product tests remain separate. No independent-release inputs used."
+}

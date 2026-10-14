@@ -1,0 +1,66 @@
+{
+  "generation_failures": [
+    {
+      "case_id": "R19V5-470-filled_0",
+      "document_id": 470,
+      "error": "ValueError: No safe blank overlay rectangle",
+      "fields_verified": 0,
+      "filled": true,
+      "generated": false,
+      "method": "",
+      "reopened": false
+    },
+    {
+      "case_id": "R19V5-470-filled_1",
+      "document_id": 470,
+      "error": "ValueError: No safe blank overlay rectangle",
+      "fields_verified": 0,
+      "filled": true,
+      "generated": false,
+      "method": "",
+      "reopened": false
+    },
+    {
+      "case_id": "R19V5-470-filled_2",
+      "document_id": 470,
+      "error": "ValueError: No safe blank overlay rectangle",
+      "fields_verified": 0,
+      "filled": true,
+      "generated": false,
+      "method": "",
+      "reopened": false
+    },
+    {
+      "case_id": "R19V5-470-filled_3",
+      "document_id": 470,
+      "error": "ValueError: No safe blank overlay rectangle",
+      "fields_verified": 0,
+      "filled": true,
+      "generated": false,
+      "method": "",
+      "reopened": false
+    },
+    {
+      "case_id": "R19V5-470-filled_4",
+      "document_id": 470,
+      "error": "ValueError: No safe blank overlay rectangle",
+      "fields_verified": 0,
+      "filled": true,
+      "generated": false,
+      "method": "",
+      "reopened": false
+    }
+  ],
+  "initial_plan_attempt": {
+    "initial_generation_log_sha256": "8b9f59d15604f854ce440e06aa4f075c6a6addeb286078ff1a2126734459f0ee",
+    "reason": "Optional DOCX quota exhausted before DOCX-only source; reserved source slots before final selection.",
+    "status": "assertion_before_manifest_or_predictions"
+  },
+  "initial_registry_attempts": "SQL column lookup/nullable demo source repaired before registry creation or any prediction. No runtime changes.",
+  "scope": "Pre-prediction infrastructure diagnostics; not hidden evaluation retries.",
+  "targeted_tests": {
+    "failed": 0,
+    "log_sha256": "1b933cd726d151a1d39deeeab80b6fff5488769569fd38ad725ffbb85f98554c",
+    "passed": 5
+  }
+}

@@ -505,6 +505,9 @@ def main():
         if round_number==18:
             from scripts.round18_package_verifier import verify as verify_round18
             prior_raw_archive_count=verify_round18(archive,names,gates)
+        if round_number==19:
+            from scripts.round19_package_verifier import verify as verify_round19
+            prior_raw_archive_count=verify_round19(archive,names,gates)
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -591,6 +594,7 @@ def main():
     if round_number==16:historical_scope='Original R6-R15 evidence and historical labels preserved. EX02/EX03 are synthetic INPS; separate INAIL annual ambiguities retained. Truth-aware release gate,1563 exact before/after observations and all7 warm runs/2814 timings verified. Freeze and independent v3/v5 evidence are conditional on their actual prerequisites.'
     if round_number==17:historical_scope='All Round16 raw evidence and engine/data unchanged; prior registry v3 preserved separately. Round17 seven timing runs,1563 full signatures,truth audit,freeze prerequisites and conditional single-shot v3/v5 verified. Prior historical labels and mismatch reports retained.'
     if round_number==18:historical_scope='Round16/17 raw evidence, engine/data and previous registry preserved. Metadata-only maximal balanced116 release subset selected before freeze/predictions; seven timing runs and1563 full signatures verified; v3/v5 single-shot results retained when executed.'
+    if round_number==19:historical_scope='Original Round18 freeze,116/116 unknown v3, manifest, labels and all historical raw evidence preserved. Granular identity/representation/source audit, unchanged engine/data, prospective six-source V5 single-shot, seven final timing runs,1563 signatures and final tests verified.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     if round_number==15:
         perf=json.loads((ROOT/'benchmarks/results/round15/performance_pre_freeze.json').read_bytes())
@@ -610,6 +614,7 @@ def main():
     if round_number==16:(output.parent/'package-verification-round16.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==17:(output.parent/'package-verification-round17.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==18:(output.parent/'package-verification-round18.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==19:(output.parent/'package-verification-round19.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

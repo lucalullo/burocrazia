@@ -1,0 +1,15 @@
+{
+  "legacy_counter_fields": {
+    "known_contaminated": 617,
+    "known_eligible": 416,
+    "known_total": 1226
+  },
+  "scope": "Legacy v3 counters are retained as historical data, not v4 eligibility. V4 eligibility is eligible_v5/eligible_sources and per-identity rows. No sealed registry or labels changed.",
+  "v4_counter_fields": {
+    "eligible_sources": 6,
+    "eligible_v5": 359,
+    "fingerprint_identities": 1019,
+    "identity_seen_in_tuning": 236,
+    "tuning_history_unresolved": 369
+  }
+}

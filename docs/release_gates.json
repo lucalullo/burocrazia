@@ -4,79 +4,79 @@
   "freeze": "aa816782b075c8a27eabb7492d080d1c26fa3119",
   "gates": [
     {
-      "actual": true,
+      "actual": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
       "blocking": true,
-      "gate": "unknown_v3_preflight",
+      "gate": "freeze_integrity",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": "same aa81678 semantic hash"
     },
     {
-      "actual": true,
+      "actual": {
+        "correct": 116,
+        "false_document": 0,
+        "false_family": 0,
+        "n": 116
+      },
+      "blocking": true,
+      "gate": "unknown_v3",
+      "passed": true,
+      "status": "PASS",
+      "target": ">=99% reject, >=100, >=6 sources"
+    },
+    {
+      "actual": 86.52849740932642,
       "blocking": true,
       "gate": "coverage",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": ">=85% file-backed"
     },
     {
-      "actual": true,
+      "actual": 1007,
       "blocking": true,
       "gate": "canonical",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": "1007/1007"
     },
     {
-      "actual": true,
+      "actual": 241,
       "blocking": true,
       "gate": "confirmed_safety",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": "zero false accepts"
     },
     {
-      "actual": true,
+      "actual": 9,
       "blocking": true,
       "gate": "input_safety",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": "safe rejection9/9"
     },
     {
-      "actual": true,
-      "blocking": true,
-      "gate": "truth_policy",
-      "passed": true,
-      "status": "PASS",
-      "target": "PASS"
-    },
-    {
-      "actual": true,
-      "blocking": true,
-      "gate": "release_gate_fast",
-      "passed": true,
-      "status": "PASS",
-      "target": "PASS"
-    },
-    {
-      "actual": true,
+      "actual": {
+        "differences": 0,
+        "n": 1563
+      },
       "blocking": true,
       "gate": "semantic_equivalence",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": "1563 / zero differences"
     },
     {
-      "actual": true,
+      "actual": 1258,
       "blocking": true,
-      "gate": "tests",
+      "gate": "release_gate_fast",
       "passed": true,
       "status": "PASS",
-      "target": "PASS"
+      "target": "1258/1258"
     },
     {
-      "actual": 234.4921,
+      "actual": 198.6201,
       "blocking": true,
       "gate": "performance_median_p95",
       "passed": true,
@@ -84,44 +84,24 @@
       "target": "<=250 ms"
     },
     {
-      "actual": 7,
-      "blocking": false,
-      "gate": "performance_preferred_stability",
-      "passed": true,
-      "status": "PASS",
-      "target": ">=5/7"
-    },
-    {
-      "actual": 234.4921,
-      "blocking": false,
-      "gate": "performance_preferred_latency",
-      "passed": false,
-      "status": "PENDING",
-      "target": "<=220 ms"
-    },
-    {
-      "actual": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "actual": {
+        "failed": 0,
+        "passed": 834,
+        "skipped": 3
+      },
       "blocking": true,
-      "gate": "release_freeze",
+      "gate": "tests",
       "passed": true,
       "status": "PASS",
-      "target": "after all prerequisites"
+      "target": "zero failures"
     },
     {
-      "actual": 1.0,
+      "actual": true,
       "blocking": true,
-      "gate": "unknown_rejection",
+      "gate": "final_checks",
       "passed": true,
       "status": "PASS",
-      "target": ">=99%"
-    },
-    {
-      "actual": 0.0,
-      "blocking": true,
-      "gate": "unknown_false_acceptance",
-      "passed": true,
-      "status": "PASS",
-      "target": "<=1%"
+      "target": "compile/catalog/FK/migration/schema"
     },
     {
       "actual": {
@@ -129,148 +109,117 @@
         "version": 0
       },
       "blocking": true,
-      "gate": "unknown_entity_version",
+      "gate": "v5_entity_version",
       "passed": true,
       "status": "PASS",
       "target": "0"
     },
     {
-      "actual": {
-        "attempted_filled": 0,
-        "created_at": "2026-10-14T06:40:02.909761+00:00",
-        "eligible_identities": 351,
-        "eligible_records": 352,
-        "eligible_source_counts": {
-          "14": 3,
-          "16": 15,
-          "2": 195,
-          "3": 134,
-          "5": 5
-        },
-        "eligible_sources": 5,
-        "failed_gates": [
-          "fresh_known_sources"
-        ],
-        "filled_generation_rate": null,
-        "freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
-        "generation_status": "not_run",
-        "identities": 36,
-        "known": 0,
-        "minimum_sources": 6,
-        "passed": false,
-        "plan_sha256": "37c9f3dc1a1c08f70609c032db014c82fbe5e723753087ce18b4b8e26a06a32e",
-        "planned_filled": 60,
-        "planned_known": 608,
-        "planned_scans": 476,
-        "planned_unknown_mix": 30,
-        "pool_audit_sha256": "819da021fa52c2ae5d4ba5cfca719a8996d7f428394c9216d4142c19742d6225",
-        "reason": "Entire eligible native/canonical-verified identity pool has only5 sources; minimum6. Stop before representation generation and v5 recognition. No contaminated identities reused.",
-        "recognition_calls": 0,
-        "scans": 0,
-        "sources": 5,
-        "unknown_mix": 0,
-        "valid_filled": 0
-      },
-      "blocking": true,
-      "gate": "v5_preflight",
-      "passed": false,
-      "status": "FAIL",
-      "target": "30IDs/6sources/400known/200scan/50filled/30unknown"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_leakage",
-      "passed": false,
-      "status": "NOT MEASURED",
-      "target": "0"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_precision",
-      "passed": false,
-      "status": "NOT MEASURED",
-      "target": ">=99.5%"
-    },
-    {
-      "actual": null,
+      "actual": 0.705511811023622,
       "blocking": true,
       "gate": "v5_exact_recall",
       "passed": false,
-      "status": "NOT MEASURED",
+      "status": "FAIL",
       "target": ">=90%"
     },
     {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_scan_precision",
-      "passed": false,
-      "status": "NOT MEASURED",
-      "target": ">=99.5%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_scan_recall",
-      "passed": false,
-      "status": "NOT MEASURED",
-      "target": ">=85%"
-    },
-    {
-      "actual": null,
+      "actual": 0.9166666666666666,
       "blocking": true,
       "gate": "v5_filled_generation",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": ">=90%"
     },
     {
-      "actual": null,
+      "actual": 1.0,
       "blocking": true,
       "gate": "v5_filled_precision",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": ">=99.5%"
     },
     {
-      "actual": null,
+      "actual": 1.0,
       "blocking": true,
       "gate": "v5_filled_recall",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": ">=90%"
     },
     {
-      "actual": null,
+      "actual": 0,
       "blocking": true,
-      "gate": "v5_retrieval_at25",
-      "passed": false,
-      "status": "NOT MEASURED",
-      "target": "100%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_retrieval_at1",
-      "passed": false,
-      "status": "NOT MEASURED",
-      "target": ">=99%"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "v5_entity_version",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "gate": "v5_leakage",
+      "passed": true,
+      "status": "PASS",
       "target": "0"
     },
     {
-      "actual": null,
+      "actual": 0.9824561403508771,
+      "blocking": true,
+      "gate": "v5_precision",
+      "passed": false,
+      "status": "FAIL",
+      "target": ">=99.5%"
+    },
+    {
+      "actual": {
+        "attempted_filled": 60,
+        "filled_generation_rate": 0.9166666666666666,
+        "identities": 38,
+        "known": 635,
+        "passed": true,
+        "prepared_sha256": "7f6838286c41ba2e51b7a34d8467f835adbc3b441df6a8539722cfc635905b2c",
+        "recognition_calls": 0,
+        "scans": 504,
+        "sources": 6,
+        "unknown_mix": 30,
+        "valid_filled": 55
+      },
+      "blocking": true,
+      "gate": "v5_preflight",
+      "passed": true,
+      "status": "PASS",
+      "target": "30IDs/6sources/400known/200scan/50filled/30unknown"
+    },
+    {
+      "actual": 0.9905511811023622,
+      "blocking": true,
+      "gate": "v5_retrieval_at1",
+      "passed": true,
+      "status": "PASS",
+      "target": ">=99%"
+    },
+    {
+      "actual": 0.9984251968503937,
+      "blocking": true,
+      "gate": "v5_retrieval_at25",
+      "passed": false,
+      "status": "FAIL",
+      "target": "100%"
+    },
+    {
+      "actual": 0.9815384615384616,
+      "blocking": true,
+      "gate": "v5_scan_precision",
+      "passed": false,
+      "status": "FAIL",
+      "target": ">=99.5%"
+    },
+    {
+      "actual": 0.6329365079365079,
+      "blocking": true,
+      "gate": "v5_scan_recall",
+      "passed": false,
+      "status": "FAIL",
+      "target": ">=85%"
+    },
+    {
+      "actual": 1.0,
       "blocking": true,
       "gate": "v5_unknown_mix",
-      "passed": false,
-      "status": "NOT MEASURED",
+      "passed": true,
+      "status": "PASS",
       "target": ">=99%"
     },
     {
@@ -291,44 +240,32 @@
     }
   ],
   "identity": {
-    "code_sha256": "5ecf107a3628cc2b5a0b3e66c3b8e0e463e87ff17aa6d8c0007e368733354c57",
-    "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
-    "executed_at": "2026-10-14T06:48:42.184589+00:00",
+    "code_sha256": "db690156a3e3121645fcb322b0604167579515c77895e0d1fa6e794563885d5b",
+    "commit": "b3bd9cc61c6af15e8b3ad9958d6e40dcf34a683b",
+    "executed_at": "2026-10-14T07:49:06.474897+00:00",
     "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
     "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
     "seed": 2026101208
   },
   "local_gates_passed": false,
   "reasons": [
-    "v5_preflight"
+    "v5_exact_recall",
+    "v5_precision",
+    "v5_retrieval_at25",
+    "v5_scan_precision",
+    "v5_scan_recall"
   ],
-  "round": 18,
+  "round": 19,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "ec0c6cf02cc577a0e025d41388b9098b0d84dc92609459d48c3443b074959fe1",
-    "passed": 829,
-    "pre_freeze_tests_sha256": "7ee6e1c472c412d93333d319ac5dd99d0256fa3a5b703716eadbc60b85f27bb6",
-    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
-    "scope": "Full post-freeze suite; no frozen prerequisite rewritten.",
-    "seconds": 534.58,
+    "log_sha256": "a0e9371aef45989386b353c3f4963c3d5bdf7f6ccdb6ba43d9a02cc9307a647d",
+    "passed": 834,
+    "scope": "Full suite started after the completed V5 single-shot; engine, labels, transforms and selection unchanged.",
+    "seconds": 624.51,
     "skipped": 3,
     "status": "passed"
-  },
-  "unmeasured_required": [
-    "v5_leakage",
-    "v5_precision",
-    "v5_exact_recall",
-    "v5_scan_precision",
-    "v5_scan_recall",
-    "v5_filled_generation",
-    "v5_filled_precision",
-    "v5_filled_recall",
-    "v5_retrieval_at25",
-    "v5_retrieval_at1",
-    "v5_entity_version",
-    "v5_unknown_mix"
-  ]
+  }
 }

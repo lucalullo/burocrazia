@@ -1,0 +1,54 @@
+{
+  "capacity_basis": "Available existing native resources; fill capacity theoretical until generation/reopening/field verification. Actual generated adequacy is a second mandatory barrier before predictions.",
+  "eligible_identities_total": 359,
+  "fill_capacity": 60,
+  "identities_per_source": {
+    "2": 197,
+    "3": 137,
+    "5": 6,
+    "14": 3,
+    "16": 15,
+    "19": 1
+  },
+  "max_source_concentration": 0.5487465181058496,
+  "passed": true,
+  "recognition_calls": 0,
+  "registry_sha256": "67d187bf6139495486d0d7b5fe7e1cb3258310d07bd52d04b39420f0bfd32fa3",
+  "representation_capacity": 5510,
+  "requirements": {
+    "fills": {
+      "actual": 60,
+      "minimum": 50,
+      "passed": true
+    },
+    "identities": {
+      "actual": 359,
+      "minimum": 30,
+      "passed": true
+    },
+    "representations": {
+      "actual": 5510,
+      "minimum": 400,
+      "passed": true
+    },
+    "scans": {
+      "actual": 4732,
+      "minimum": 200,
+      "passed": true
+    },
+    "sources": {
+      "actual": 6,
+      "minimum": 6,
+      "passed": true
+    },
+    "unknown": {
+      "actual": 116,
+      "minimum": 30,
+      "passed": true
+    }
+  },
+  "scan_capacity": 4732,
+  "source_policy_sha256": "c5b8ccc10fd379a09635fe975629d2a6fce96842acedfbb1b921ccbf8fe0c14d",
+  "sources_total": 6,
+  "unknown_v3_available": 116
+}

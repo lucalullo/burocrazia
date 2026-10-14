@@ -1,0 +1,311 @@
+{
+  "by_source": {
+    "14": {
+      "counts": {
+        "entity_errors": 0,
+        "exact": 2,
+        "extraction_failed": 0,
+        "family": 0,
+        "n": 2,
+        "reject": 0,
+        "version_errors": 0,
+        "wrong": 0
+      },
+      "source_seen": true,
+      "source_specific_rule_tuned": true
+    },
+    "16": {
+      "counts": {
+        "entity_errors": 0,
+        "exact": 143,
+        "extraction_failed": 0,
+        "family": 0,
+        "n": 170,
+        "reject": 19,
+        "version_errors": 0,
+        "wrong": 8
+      },
+      "source_seen": true,
+      "source_specific_rule_tuned": true
+    },
+    "19": {
+      "counts": {
+        "entity_errors": 0,
+        "exact": 2,
+        "extraction_failed": 0,
+        "family": 0,
+        "n": 2,
+        "reject": 0,
+        "version_errors": 0,
+        "wrong": 0
+      },
+      "source_seen": true,
+      "source_specific_rule_tuned": false
+    },
+    "2": {
+      "counts": {
+        "entity_errors": 0,
+        "exact": 115,
+        "extraction_failed": 0,
+        "family": 0,
+        "n": 175,
+        "reject": 60,
+        "version_errors": 0,
+        "wrong": 0
+      },
+      "source_seen": true,
+      "source_specific_rule_tuned": true
+    },
+    "3": {
+      "counts": {
+        "entity_errors": 0,
+        "exact": 130,
+        "extraction_failed": 0,
+        "family": 0,
+        "n": 175,
+        "reject": 45,
+        "version_errors": 0,
+        "wrong": 0
+      },
+      "source_seen": true,
+      "source_specific_rule_tuned": true
+    },
+    "5": {
+      "counts": {
+        "entity_errors": 0,
+        "exact": 56,
+        "extraction_failed": 0,
+        "family": 0,
+        "n": 111,
+        "reject": 55,
+        "version_errors": 0,
+        "wrong": 0
+      },
+      "source_seen": true,
+      "source_specific_rule_tuned": true
+    }
+  },
+  "by_transformation": {
+    "blur_mild": {
+      "entity_errors": 0,
+      "exact": 22,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 13,
+      "version_errors": 0,
+      "wrong": 1
+    },
+    "contrast_minus20": {
+      "entity_errors": 0,
+      "exact": 23,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 13,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "crop_2pct": {
+      "entity_errors": 0,
+      "exact": 21,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 15,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "crop_5pct": {
+      "entity_errors": 0,
+      "exact": 14,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 20,
+      "version_errors": 0,
+      "wrong": 2
+    },
+    "digital_canonical_derivative": {
+      "entity_errors": 0,
+      "exact": 37,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 38,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 1
+    },
+    "digital_normalized": {
+      "entity_errors": 0,
+      "exact": 37,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 38,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 1
+    },
+    "filled_0": {
+      "entity_errors": 0,
+      "exact": 11,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 11,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_1": {
+      "entity_errors": 0,
+      "exact": 11,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 11,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_2": {
+      "entity_errors": 0,
+      "exact": 11,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 11,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_3": {
+      "entity_errors": 0,
+      "exact": 11,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 11,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_4": {
+      "entity_errors": 0,
+      "exact": 11,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 11,
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "first_page_only": {
+      "entity_errors": 0,
+      "exact": 25,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 11,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "grayscale": {
+      "entity_errors": 0,
+      "exact": 24,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 12,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "jpeg_60": {
+      "entity_errors": 0,
+      "exact": 22,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 13,
+      "version_errors": 0,
+      "wrong": 1
+    },
+    "jpeg_75": {
+      "entity_errors": 0,
+      "exact": 22,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 13,
+      "version_errors": 0,
+      "wrong": 1
+    },
+    "jpeg_90": {
+      "entity_errors": 0,
+      "exact": 25,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 11,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "raster_150": {
+      "entity_errors": 0,
+      "exact": 25,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 11,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "raster_200": {
+      "entity_errors": 0,
+      "exact": 21,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 14,
+      "version_errors": 0,
+      "wrong": 1
+    },
+    "rotation_180": {
+      "entity_errors": 0,
+      "exact": 24,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 12,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "rotation_270": {
+      "entity_errors": 0,
+      "exact": 25,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 11,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "rotation_90": {
+      "entity_errors": 0,
+      "exact": 26,
+      "extraction_failed": 0,
+      "family": 0,
+      "n": 36,
+      "reject": 10,
+      "version_errors": 0,
+      "wrong": 0
+    }
+  },
+  "scope": "Diagnostic stratification only; no tuning, selection or label changes.",
+  "unknown_mix": {
+    "entity_errors": 0,
+    "exact": 0,
+    "extraction_failed": 0,
+    "family": 0,
+    "n": 30,
+    "reject": 30,
+    "version_errors": 0,
+    "wrong": 0
+  }
+}
