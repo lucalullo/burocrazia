@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "category": "ANAC",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "ANAC:U14-d6e51fa8e7f88431",
+      "id": "ANAC:U14-d6e51fa8e7f88431",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "e008c26d342d6c7d52b2270298e8f99b42207d4690a62670899b3570a480f848",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "ANAC_full_pdf",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "official_diagnostic:U14-d6e51fa8e7f88431",
+      "id": "official_diagnostic:U14-d6e51fa8e7f88431",
+      "input_sha256": "d6e51fa8e7f8843116d05f666698346884a4932d6e67050ffe5ce4fd617adc85",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "c0e9645e82b57313cbb30ed4e226a07b785c8851ad728f42284b5de6e000b4ae",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "passed": true
+}

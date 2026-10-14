@@ -3,7 +3,7 @@
   "candidate_target": "0.7.0",
   "catalog_count": 1216,
   "catalog_semantic_sha256": "sha256:c525200e32af038d109c641e6ad001f2f10749f3a7d23e05cc859f8f7bcf789c",
-  "commit": "89d2297a2b363b9c34ed4048bc1f953c4a2b51ab",
+  "commit": "19928839d10f762307827935eb2445bcff2787fe",
   "evaluations": [
     {
       "name": "historical_development_compat_v2",
@@ -757,7 +757,7 @@
     "status": "experimental"
   },
   "filled_forms": {
-    "reason": "Evaluation v5 conditional gates not established.",
+    "reason": "Conditional evaluation v5 not executed.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -795,9 +795,7 @@
     "status": "executed"
   },
   "known_canonical": {
-    "legacy_qualified_resources": 27,
-    "native_resources": 980,
-    "scope": "1563-case equivalence includes actual1007 canonical recognition results; technical binding is not editorial verification.",
+    "scope": "1007 current technical canonical binding contracts; not independent identity generalization.",
     "status": "executed",
     "summary": {
       "cases": 1007,
@@ -891,7 +889,7 @@
     }
   },
   "known_robustness": {
-    "reason": "Evaluation v5 conditional gates not established.",
+    "reason": "Conditional evaluation v5 not executed.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -900,21 +898,62 @@
     }
   },
   "performance": {
-    "latency_ms": {
-      "p50": 62.3783,
-      "p95": 244.9918
-    },
-    "median_p95": 244.9918,
-    "pass_count": 4,
-    "passed": true,
-    "preferred_stability_pass": false,
-    "reason": "Seven predetermined warm runs,402 fresh requests/run,2814 raw timings; extraction/OCR reported separately. Preferred targets are not blockers.",
-    "runs": 7,
-    "status": "executed"
+    "runs": [
+      {
+        "n": 402,
+        "p50": 55.1585,
+        "p95": 212.7211,
+        "p99": 328.3169
+      },
+      {
+        "n": 402,
+        "p50": 61.5721,
+        "p95": 261.1455,
+        "p99": 433.1476
+      },
+      {
+        "n": 402,
+        "p50": 59.9719,
+        "p95": 249.7815,
+        "p99": 378.674
+      },
+      {
+        "n": 402,
+        "p50": 45.7581,
+        "p95": 231.5144,
+        "p99": 338.4393
+      },
+      {
+        "n": 402,
+        "p50": 53.4535,
+        "p95": 216.0429,
+        "p99": 353.5846
+      },
+      {
+        "n": 402,
+        "p50": 58.6798,
+        "p95": 199.359,
+        "p99": 331.6424
+      },
+      {
+        "n": 402,
+        "p50": 62.4849,
+        "p95": 257.06,
+        "p99": 408.5834
+      }
+    ],
+    "scope": "Seven predetermined warm runs; no timing reruns or engine optimization.",
+    "status": "executed",
+    "summary": {
+      "cases": 2814,
+      "latency_ms": {
+        "p95": 231.5144
+      },
+      "metrics": {}
+    }
   },
   "reasons": [
-    "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
-    "Evaluation v5 non eseguita: richiede il PASS di unknown v3."
+    "unknown_v3_preflight"
   ],
   "release_gate": {
     "candidate_target": "0.7.0",
@@ -1207,10 +1246,10 @@
       "status": "passed"
     }
   },
-  "round": 16,
+  "round": 17,
   "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
   "scan_ocr": {
-    "reason": "Evaluation v5 conditional gates not established.",
+    "reason": "Conditional evaluation v5 not executed.",
     "status": "not_run",
     "summary": {
       "cases": 0,
@@ -1371,7 +1410,7 @@
     "without_code": 104
   },
   "unknown_official": {
-    "reason": "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
+    "reason": "Unknown preflight FAIL: INL42/129=32.5581% exceeds25%. Required stop before freeze/selection/predictions.",
     "status": "not_run",
     "summary": {
       "cases": 0,

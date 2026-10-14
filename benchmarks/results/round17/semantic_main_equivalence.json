@@ -1,0 +1,46 @@
+{
+  "after_sha256": "6c477b0188cc5c343d15eaa2345d59c83a1c425079e9bf859035047f5a1a8ca9",
+  "before_sha256": "e6e2c2853db693a8a6ae496136e4f915b345e4cd49b48fd1f56e9c4fcce00acf",
+  "compared_fields": [
+    "complete_public_result",
+    "result_type",
+    "document_id",
+    "family_id",
+    "score",
+    "runner_up",
+    "score_margin",
+    "entity_conflicts",
+    "version_conflicts",
+    "reason_code",
+    "tier",
+    "candidate_ids",
+    "top_candidates",
+    "entity_evidence",
+    "version_evidence"
+  ],
+  "counts": {
+    "ANAC": 1,
+    "canonical": 980,
+    "canonical_legacy": 27,
+    "development_compat_v2": 37,
+    "development_regression": 35,
+    "hard_negatives_v1": 30,
+    "hard_negatives_v2": 100,
+    "old_false_accept": 5,
+    "release_locked_v1": 69,
+    "release_locked_v2": 69,
+    "round6_filled_development": 8,
+    "round6_scan_development": 10,
+    "round7_development": 10,
+    "round8_filled_development": 8,
+    "round8_observed_development": 10
+  },
+  "differences": [],
+  "manifest_sha256": "0cf67f44e49de067147e49be87e9320c29f010cd05107ffc396224ab7dc6a305",
+  "n": 1399,
+  "passed": true,
+  "scope": "Same actual extracted inputs and raw bytes, fresh request objects for every recognition. OCR extracted once before optimization to isolate recognition; baseline/final OCR product tests remain separate. No independent-release inputs used.",
+  "timing_fields_excluded": [
+    "visual_ms"
+  ]
+}

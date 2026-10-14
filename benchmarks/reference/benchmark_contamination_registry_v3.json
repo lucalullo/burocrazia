@@ -1098,6 +1098,7 @@
     "benchmarks/results/round16/semantic_supplement_after.json": "9cdc711e7d124ec6f907a6ff065528eff84e289dd17a7cb169a1d3f28782bb15",
     "benchmarks/results/round16/semantic_supplement_before.json": "3c4886673f8c7e011ed6766bd4534a53ba7137e760b19b33bc974450a8923fec",
     "benchmarks/results/round16/semantic_supplement_manifest.json": "c3ca82865301f033e39ba6825859ac5ee94f6aae7d8ebb3db835a0fd2b33ba80",
+    "benchmarks/results/round17/baseline_audit.json": "2f055ef66578946b41942a3812fc54a8b1aa636379b176ac796f9ec2ac8a1fed",
     "benchmarks/results/round2/baseline_audit.json": "08ad5191270fac7412389d826cc3597fcf2bcb265607f9cc1b84f88ed806bc48",
     "benchmarks/results/round2/final/catalog_coverage.json": "92570b6bf6aa5a09272b500164e51e24ba0d363e22656bbf17b2f92655634173",
     "benchmarks/results/round2/final/development_regression.json": "66487023ac86d55dcc7f767cd8617c127016c8e60abc4a0540c06cc373db46be",
@@ -77068,7 +77069,11 @@
   ],
   "parent_registry_sha256": "f1772d69187872f1f0d9871e95a972249cd93a8042c8c512a854b1c11411fc93",
   "policy": "Immutable v1 union plus all Round14 release-v2 resources and Round15 pre-freeze diagnostic inputs. Known historical calibration/tuning/evaluation identities excluded. Canonical-only verification does not tune representation selection. Unknown freshness requires both SHA exclusion and a separate semantic/technical near-resource audit. No future release predictions may be inserted retroactively into this frozen registry. Additive Round16 equivalence/performance exposures; canonical-only verification stays distinct from tuning. Fresh unknown must exclude this union plus technical/semantic near variants. No future predictions folded back into this pre-freeze seal.",
-  "registry_id": "benchmark-contamination-registry-v3-round16",
+  "registry_id": "benchmark-contamination-registry-v3-round17",
+  "round17_baseline_commit": "19928839d10f762307827935eb2445bcff2787fe",
+  "round17_parent_registry_sha256": "6a48029bc3b29d804fe1f7893d6a3236538398e7a19b644d63df736ababb13fd",
+  "round17_policy": "Additive benchmark-only acquisition and revalidation. Previously unpredicted Round16 candidates remain eligible only after primary audit. Same observed SHA/URL, prior release/development and near-resource exclusions. No new recognition exposures at registry freeze; future single-shot exposures are recorded separately, never retroactively used to redefine independence.",
+  "round17_updated_at": "2026-10-14T05:34:38.710550+00:00",
   "schema_version": 3,
   "unknown_resources": [
     {

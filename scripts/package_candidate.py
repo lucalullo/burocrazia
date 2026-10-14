@@ -499,6 +499,9 @@ def main():
             prior_raw_archive_count=verify_round15(archive,names,gates)
         if round_number==16:
             prior_raw_archive_count=verify_round16(archive,names,gates)
+        if round_number==17:
+            from scripts.round17_package_verifier import verify as verify_round17
+            prior_raw_archive_count=verify_round17(archive,names,gates)
         if round_number==10:
             from src.fingerprint_v3 import validate as validate_v3
             from benchmarks.unknown_v2 import validate as validate_unknown_v2
@@ -583,6 +586,7 @@ def main():
     if round_number==14:historical_scope='Original R6-R13 raw/corpora/manifests preserved. Corrected R13 dataset/engine unchanged and frozen before fresh selection. All114 fresh unknown predictions, frozen labels and three wrong accepts/four extraction errors retained, with two INAIL reference concerns. No tuning/replay/v5/RC. Five pre-freeze runs and actual historical release-fast exit1 preserved; final tests and archive bytes verified.'
     if round_number==15:historical_scope='Round14 original107/114,114 raw predictions, labels and freeze preserved byte-for-byte. Additive official truth adjudication completed before sole general draft-heading fix. Separate development replay108/114, two INAIL truth ambiguities, input-safety9/9 and five predetermined performance runs retained. Performance263.0707ms FAIL: no Round15 freeze/independent unknown v3/evaluation v5/RC. Actual release-fast exit1 retained; source, dataset, tests and archive bytes verified.'
     if round_number==16:historical_scope='Original R6-R15 evidence and historical labels preserved. EX02/EX03 are synthetic INPS; separate INAIL annual ambiguities retained. Truth-aware release gate,1563 exact before/after observations and all7 warm runs/2814 timings verified. Freeze and independent v3/v5 evidence are conditional on their actual prerequisites.'
+    if round_number==17:historical_scope='All Round16 raw evidence and engine/data unchanged; prior registry v3 preserved separately. Round17 seven timing runs,1563 full signatures,truth audit,freeze prerequisites and conditional single-shot v3/v5 verified. Prior historical labels and mismatch reports retained.'
     report=dict(schema_version=1,commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=ROOT).strip(),archive=output.name,bytes=output.stat().st_size,members=len(names),sha256=hashlib.sha256(output.read_bytes()).hexdigest(),catalog_sha256=manifest['sha256'],frozen_locks_verified=True,code_bytes_match_measurements=True,hygiene_violations=[],prior_round_raw_in_archive=prior_raw_archive_count,prior_round_raw_workspace_only=sorted(prior_raw_workspace_only),prior_round_raw_serialization_differences=sorted(prior_raw_serialization_differences),prior_round_raw_scope=historical_scope)
     if round_number==15:
         perf=json.loads((ROOT/'benchmarks/results/round15/performance_pre_freeze.json').read_bytes())
@@ -600,6 +604,7 @@ def main():
     if round_number==14:(output.parent/'package-verification-round14.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==15:(output.parent/'package-verification-round15.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     if round_number==16:(output.parent/'package-verification-round16.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
+    if round_number==17:(output.parent/'package-verification-round17.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())
     output.with_suffix('.zip.sha256').write_bytes((report['sha256']+'  '+output.name+'\n').encode())
     print(json.dumps(report,indent=2))
 

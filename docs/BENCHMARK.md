@@ -1,3 +1,7 @@
+# Round17 — NOT READY
+
+Pool fresh129 (13fonti/19enti); canonical1007/1007; equivalenza1563/0diff; mediana p95231.5144ms, gateTrue. Unknown v3not_run, evaluation v5non eseguita. Test823pass/0fail/3skip. Motore Round16 invariato; CI pending. [Report Round17](ROUND17_REPORT.md). Le sezioni successive sono storiche.
+
 <!-- round16-current -->
 # Round16 — NOT READY
 

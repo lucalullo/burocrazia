@@ -1,8 +1,16 @@
 {
   "candidate_target": "0.7.0",
   "ci": "external_pending",
-  "freeze": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+  "freeze": null,
   "gates": [
+    {
+      "actual": false,
+      "blocking": true,
+      "gate": "unknown_v3_preflight",
+      "passed": false,
+      "status": "FAIL",
+      "target": "PASS"
+    },
     {
       "actual": true,
       "blocking": true,
@@ -68,97 +76,75 @@
       "target": "PASS"
     },
     {
-      "actual": 244.9918,
+      "actual": 231.5144,
       "blocking": true,
       "gate": "performance_median_p95",
       "passed": true,
       "status": "PASS",
-      "target": "<=250ms"
+      "target": "<=250 ms"
     },
     {
-      "actual": 244.9918,
+      "actual": 5,
+      "blocking": false,
+      "gate": "performance_preferred_stability",
+      "passed": true,
+      "status": "PASS",
+      "target": ">=5/7"
+    },
+    {
+      "actual": 231.5144,
       "blocking": false,
       "gate": "performance_preferred_latency",
       "passed": false,
-      "status": "PREFERITO NON RAGGIUNTO",
-      "target": "<=220ms"
-    },
-    {
-      "actual": 4,
-      "blocking": false,
-      "gate": "performance_preferred_stability",
-      "passed": false,
-      "status": "PREFERITO NON RAGGIUNTO",
-      "target": ">=5/7 under250ms"
-    },
-    {
-      "actual": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
-      "blocking": true,
-      "gate": "release_freeze",
-      "passed": true,
-      "status": "PASS",
-      "target": "Dedicated commit after prerequisites"
-    },
-    {
-      "actual": {
-        "entities": 18,
-        "max_concentration": 0.21052631578947367,
-        "sources": 13,
-        "total": 95,
-        "type_groups": 13
-      },
-      "blocking": true,
-      "gate": "unknown_v3_sample",
-      "passed": false,
-      "status": "FAIL",
-      "target": ">=100;8sources;max25%;5types"
+      "status": "PENDING",
+      "target": "<=220 ms"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "unknown_v3_rejection",
+      "gate": "release_freeze",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
+      "target": "after all prerequisites"
+    },
+    {
+      "actual": null,
+      "blocking": true,
+      "gate": "unknown_rejection",
+      "passed": false,
+      "status": "NOT MEASURED",
       "target": ">=99%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "unknown_v3_false_DOC_plus_FAMILY",
+      "gate": "unknown_false_acceptance",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": "<=1%"
     },
     {
       "actual": null,
       "blocking": true,
-      "gate": "unknown_v3_entity_version",
+      "gate": "unknown_entity_version",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": "0"
-    },
-    {
-      "actual": null,
-      "blocking": true,
-      "gate": "unknown_v3_freshness",
-      "passed": false,
-      "status": "NON MISURATO",
-      "target": "No prior SHA or obvious near variant"
     },
     {
       "actual": null,
       "blocking": true,
       "gate": "v5_preflight",
       "passed": false,
-      "status": "NON MISURATO",
-      "target": ">=30IDs,6sources,400known,200scan,50filled,30unknown"
+      "status": "NOT MEASURED",
+      "target": "30IDs/6sources/400known/200scan/50filled/30unknown"
     },
     {
       "actual": null,
       "blocking": true,
       "gate": "v5_leakage",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": "0"
     },
     {
@@ -166,7 +152,7 @@
       "blocking": true,
       "gate": "v5_precision",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=99.5%"
     },
     {
@@ -174,7 +160,7 @@
       "blocking": true,
       "gate": "v5_exact_recall",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=90%"
     },
     {
@@ -182,7 +168,7 @@
       "blocking": true,
       "gate": "v5_scan_precision",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=99.5%"
     },
     {
@@ -190,7 +176,7 @@
       "blocking": true,
       "gate": "v5_scan_recall",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=85%"
     },
     {
@@ -198,7 +184,7 @@
       "blocking": true,
       "gate": "v5_filled_generation",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=90%"
     },
     {
@@ -206,7 +192,7 @@
       "blocking": true,
       "gate": "v5_filled_precision",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=99.5%"
     },
     {
@@ -214,7 +200,7 @@
       "blocking": true,
       "gate": "v5_filled_recall",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=90%"
     },
     {
@@ -222,7 +208,7 @@
       "blocking": true,
       "gate": "v5_retrieval_at25",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": "100%"
     },
     {
@@ -230,7 +216,7 @@
       "blocking": true,
       "gate": "v5_retrieval_at1",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=99%"
     },
     {
@@ -238,7 +224,7 @@
       "blocking": true,
       "gate": "v5_entity_version",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": "0"
     },
     {
@@ -246,16 +232,16 @@
       "blocking": true,
       "gate": "v5_unknown_mix",
       "passed": false,
-      "status": "NON MISURATO",
+      "status": "NOT MEASURED",
       "target": ">=99%"
     },
     {
       "actual": "experimental / insufficiently validated",
       "blocking": false,
-      "gate": "family_identity_holdout",
+      "gate": "family",
       "passed": false,
-      "status": "PREFERITO NON RAGGIUNTO",
-      "target": ">=5 validated real families"
+      "status": "PENDING",
+      "target": ">=5 identity-held-out families"
     },
     {
       "actual": "external_pending",
@@ -263,35 +249,54 @@
       "gate": "CI",
       "passed": false,
       "status": "PENDING",
-      "target": "External matrix"
+      "target": "external matrix"
     }
   ],
   "identity": {
-    "code_sha256": "0a6a8d4bc8a2ad548c08b01203fb25ac6e5879fa7c64bda2f5d6306c5f2932b0",
-    "commit": "89d2297a2b363b9c34ed4048bc1f953c4a2b51ab",
-    "executed_at": "2026-10-13T20:17:51.162068+00:00",
+    "code_sha256": "e10a9247490ec39996ff38361d87780e06760d6835fe3ef5b6c82e4c27bbb5d5",
+    "commit": "19928839d10f762307827935eb2445bcff2787fe",
+    "executed_at": "2026-10-14T05:52:21.298745+00:00",
     "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
     "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
     "seed": 2026101208
   },
   "local_gates_passed": false,
   "reasons": [
-    "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
-    "Evaluation v5 non eseguita: richiede il PASS di unknown v3."
+    "unknown_v3_preflight"
   ],
-  "round": 16,
+  "round": 17,
   "schema": 610,
   "software_version": "0.6.1",
   "status": "NOT READY",
   "tests": {
     "failed": 0,
-    "log_sha256": "c000135f7f78a4b26922295713b316de6c528e49e402e25a1a6e2c0610fd4c17",
-    "passed": 819,
-    "pre_freeze_tests_sha256": "857e5a868bc2988b3dcc35823f70f1d84713f6e506c639f0fff4c208b2ab8917",
-    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
-    "scope": "Final full suite after reports/data qualification on the same frozen engine; pre-freeze tests remain immutable.",
-    "seconds": 677.72,
+    "log_sha256": "9518521f91a93f3e69f6b1044a1181aac975ad037641495f8d70bc6b5679424d",
+    "passed": 823,
+    "scope": "Full suite on unchanged Round16 engine and current Round17 infrastructure; no freeze, release predictions or subsequent product changes. Additional37 infrastructure/equivalence tests also passed.",
+    "seconds": 608.74,
     "skipped": 3,
-    "status": "passed"
-  }
+    "status": "passed",
+    "targeted_failed": 0,
+    "targeted_log_sha256": "2403aacba77bc66659198a7b2bfeaa6a9d7f8933879d05f0f626446c3fd4543d",
+    "targeted_passed": 37
+  },
+  "unmeasured_required": [
+    "release_freeze",
+    "unknown_rejection",
+    "unknown_false_acceptance",
+    "unknown_entity_version",
+    "v5_preflight",
+    "v5_leakage",
+    "v5_precision",
+    "v5_exact_recall",
+    "v5_scan_precision",
+    "v5_scan_recall",
+    "v5_filled_generation",
+    "v5_filled_precision",
+    "v5_filled_recall",
+    "v5_retrieval_at25",
+    "v5_retrieval_at1",
+    "v5_entity_version",
+    "v5_unknown_mix"
+  ]
 }
