@@ -1,0 +1,20 @@
+{
+  "contaminated_case_ids": [],
+  "evaluation_v5_prediction_calls": 0,
+  "master_sha256": "3597a938e9edd1b64c555e7c7f2e9e2bed4ba1824dcd8003c940410e3d95092a",
+  "passed": true,
+  "registry_sha256": "7cb366e9a4a81dca64b8c5aacfc12dba44be74df9d69e65165e679abbafcdbb5",
+  "sampling_code_sha256": "c2fd53280f68bb314d0daf409c11f56499aa1586fcec2e6f12b8602c61311bbd",
+  "sampling_policy_sha256": "33c98e3b98c81112bac00c20a9f2831e542673264527e8e64104c3cda78d7982",
+  "score_or_prediction_used": false,
+  "selection_inputs": [
+    "case_id",
+    "source",
+    "entity",
+    "document_type",
+    "code presence",
+    "version presence"
+  ],
+  "unknown_v3_prediction_calls": 0,
+  "verified_before_manifest_at": "2026-10-14T06:02:38.805938+00:00"
+}

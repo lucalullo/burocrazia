@@ -1,0 +1,29 @@
+{
+  "allowed_fields": [
+    "case_id",
+    "source",
+    "entity",
+    "document_type",
+    "code presence",
+    "version presence"
+  ],
+  "created_at": "2026-10-14T06:02:38.798783+00:00",
+  "forbidden_fields": [
+    "score",
+    "prediction",
+    "candidate rank",
+    "perceived difficulty",
+    "fingerprint similarity"
+  ],
+  "independence": "Truth/freshness qualification precedes sampling. No recognition result exists for master cases. All DOCUMENT/FAMILY acceptance counts as false acceptance. No post-prediction reselection.",
+  "master_may_be_imbalanced": true,
+  "max_source_fraction": 0.25,
+  "minimum_categories": 5,
+  "minimum_sources": 8,
+  "order": "Canonical case_id order; source capped round robin; within source secondary type/entity/coded/versioned strata interleaving. Python Random seeded by integer SHA256(global_seed:source), shuffling canonical strata keys/rows.",
+  "policy_id": "unknown-release-sampling-v1",
+  "release_minimum": 100,
+  "schema_version": 1,
+  "seed": 20261014,
+  "size_rule": "Largest N>=100 with sum(min(source_count,floor(N/4)))>=N and >=8 available sources."
+}

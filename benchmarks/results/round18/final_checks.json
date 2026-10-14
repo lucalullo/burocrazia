@@ -1,0 +1,144 @@
+{
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "checked_at": "2026-10-14T06:27:11.454288+00:00",
+  "cli": [
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "name": "fingerprint_v1_validate",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2dda91b9257189d8169d0b4f74bc565f859349d6ed70507f52df69eea06c8092"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v2",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "name": "fingerprint_v2_validate",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "964eb3b7e3ffe028e53eaedc866528d68ac455de557bece06cd072c3a37cfecf"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v3",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "name": "fingerprint_v3_validate",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "692f7198eeab96ad90764525e468da57fa582ebde150b4e5b7dd98084c12d2bb"
+    },
+    {
+      "args": [
+        "scripts/benchmark.py",
+        "--corpus",
+        "tests/fixtures/benchmark_v2.json",
+        "--output",
+        "reports/round18-cli-compat-v2.json"
+      ],
+      "exit_code": 0,
+      "name": "compat_v2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.evaluate",
+        "--fast",
+        "--output-dir",
+        "reports/round18-legacy-fast"
+      ],
+      "exit_code": 1,
+      "name": "historical_legacy_fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a94d70bab9f8dafd7876873943ffa0c16fca6b779ad923760b1cba22016d070e"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.round18_gates",
+        "release-gate-fast"
+      ],
+      "exit_code": 0,
+      "name": "release-gate-fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d3d0c36c49c759625ba20972a6c440ea83d875d525618e283cd83fc3cba6cbaa"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.round18_gates",
+        "historical-regression-fast"
+      ],
+      "exit_code": 1,
+      "name": "historical-regression-fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a7b9054dc4cd7bc0c4c5f10b9e79d9f5a6c7759d323fc977173afdebca2d7291"
+    }
+  ],
+  "compile_pass": true,
+  "github_ci": "external_pending",
+  "historical_git_blobs_verified": 610,
+  "historical_regression_fast_exit": 1,
+  "legacy_fast_exit": 1,
+  "legacy_fast_failed_ids": [
+    "EX02",
+    "EX03"
+  ],
+  "migration": {
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "row_counts_unchanged": true,
+    "schema": 610
+  },
+  "prior_archives_sha256": {
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round10.zip": "17b8c6655e44f7ea4d1025d13a7db0afb558df93c7891e4e46d5709751f8ce37",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round11.zip": "e74765d50a937360a9fb95b9b1037bed04f03456aaee999a3e4a673a204161e5",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round12.zip": "c02412796154f59d1c8d09f15816e97c8fddaec291922f6fbc20b8b4298bd7f6",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round13.zip": "02088bcd49b9b5c8ee83ffefe13e445cf298d2fdf8598719518d027ddb8b12ed",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round14.zip": "b62cae979711009529b990da2e7af79288ab2b361ff1ed1ef0098c67c8b010e2",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round15.zip": "48e23159257b9ffd24159ea4779a7dced9ea0464e7422caccd898e8b803336bc",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round16.zip": "967141239fc170265d1ad0df25cdbb2d3fea9c12cc4f7a4b4798ceb93eb9aa95",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round17.zip": "9ec5693a2f2dbb24ab32f80e7d3e1910702862e4c97e442776cbdbba349f5910",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round8.zip": "d1b8cf63e9f4b857bccb61942e0b52e2a36badeae7213be41aca33478909752a",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round9.zip": "4eb297530a7ab2854e1d10004fcaec6d73ddb5771810e13d9210540a865e4517"
+  },
+  "release_gate_fast_exit": 0,
+  "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+  "seed_dataset_policy_unchanged": true,
+  "truth_policy_hashes_valid": true,
+  "truth_v3_schema_valid": true
+}

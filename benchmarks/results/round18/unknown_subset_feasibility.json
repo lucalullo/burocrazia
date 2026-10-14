@@ -1,0 +1,178 @@
+{
+  "available_sources": 13,
+  "capacities": [
+    {
+      "capacity": 112,
+      "max_per_source": 25,
+      "n": 100
+    },
+    {
+      "capacity": 112,
+      "max_per_source": 25,
+      "n": 101
+    },
+    {
+      "capacity": 112,
+      "max_per_source": 25,
+      "n": 102
+    },
+    {
+      "capacity": 112,
+      "max_per_source": 25,
+      "n": 103
+    },
+    {
+      "capacity": 113,
+      "max_per_source": 26,
+      "n": 104
+    },
+    {
+      "capacity": 113,
+      "max_per_source": 26,
+      "n": 105
+    },
+    {
+      "capacity": 113,
+      "max_per_source": 26,
+      "n": 106
+    },
+    {
+      "capacity": 113,
+      "max_per_source": 26,
+      "n": 107
+    },
+    {
+      "capacity": 114,
+      "max_per_source": 27,
+      "n": 108
+    },
+    {
+      "capacity": 114,
+      "max_per_source": 27,
+      "n": 109
+    },
+    {
+      "capacity": 114,
+      "max_per_source": 27,
+      "n": 110
+    },
+    {
+      "capacity": 114,
+      "max_per_source": 27,
+      "n": 111
+    },
+    {
+      "capacity": 115,
+      "max_per_source": 28,
+      "n": 112
+    },
+    {
+      "capacity": 115,
+      "max_per_source": 28,
+      "n": 113
+    },
+    {
+      "capacity": 115,
+      "max_per_source": 28,
+      "n": 114
+    },
+    {
+      "capacity": 115,
+      "max_per_source": 28,
+      "n": 115
+    },
+    {
+      "capacity": 116,
+      "max_per_source": 29,
+      "n": 116
+    },
+    {
+      "capacity": 116,
+      "max_per_source": 29,
+      "n": 117
+    },
+    {
+      "capacity": 116,
+      "max_per_source": 29,
+      "n": 118
+    },
+    {
+      "capacity": 116,
+      "max_per_source": 29,
+      "n": 119
+    },
+    {
+      "capacity": 117,
+      "max_per_source": 30,
+      "n": 120
+    },
+    {
+      "capacity": 117,
+      "max_per_source": 30,
+      "n": 121
+    },
+    {
+      "capacity": 117,
+      "max_per_source": 30,
+      "n": 122
+    },
+    {
+      "capacity": 117,
+      "max_per_source": 30,
+      "n": 123
+    },
+    {
+      "capacity": 118,
+      "max_per_source": 31,
+      "n": 124
+    },
+    {
+      "capacity": 118,
+      "max_per_source": 31,
+      "n": 125
+    },
+    {
+      "capacity": 118,
+      "max_per_source": 31,
+      "n": 126
+    },
+    {
+      "capacity": 118,
+      "max_per_source": 31,
+      "n": 127
+    },
+    {
+      "capacity": 119,
+      "max_per_source": 32,
+      "n": 128
+    },
+    {
+      "capacity": 119,
+      "max_per_source": 32,
+      "n": 129
+    }
+  ],
+  "capacity_at_100": 112,
+  "extra_acquisition_needed": 0,
+  "largest_feasible_size": 116,
+  "master_total": 129,
+  "max_source": "inl",
+  "max_source_count": 42,
+  "reason": "Master may be imbalanced; capped subset capacity at100 is112 and maximal feasible N116 has cap29. No network acquisition.",
+  "source_counts": {
+    "agid": 22,
+    "anac": 8,
+    "garante_privacy": 3,
+    "giustizia": 2,
+    "inail": 1,
+    "inl": 42,
+    "inps": 10,
+    "interno": 10,
+    "mef": 10,
+    "mimit": 16,
+    "mit": 2,
+    "regione_piemonte": 2,
+    "unioncamere": 1
+  },
+  "subset_100_feasible": true
+}

@@ -17,9 +17,11 @@ def test_evaluation_cannot_start_before_unknown_pass(monkeypatch):
     monkeypatch.setattr(e,'read',lambda p:dict(passed=False))
     with pytest.raises(AssertionError,match='Unknown gate'): e.plan()
 
-def test_inadequate_pool_never_becomes_a_release_subset(monkeypatch):
+def test_inadequate_pool_never_becomes_a_release_subset(monkeypatch,tmp_path):
     import benchmarks.round17_unknown as u
     from benchmarks.unknown_release import balance
+    # The fixture must remain valid when a later round publishes a real v3.
+    monkeypatch.setattr(u,'ROOT',tmp_path)
     monkeypatch.setattr(u,'sealed',lambda:dict(freeze_git_commit='fixed'))
     monkeypatch.setattr(u,'read',lambda p:dict(confirmed_cases=[]))
     monkeypatch.setattr(u,'sha',lambda p:'fixed-hash')

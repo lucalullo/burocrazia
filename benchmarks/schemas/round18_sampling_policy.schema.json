@@ -1,0 +1,10 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["schema_version","policy_id","seed","master_may_be_imbalanced","release_minimum","minimum_sources","max_source_fraction","minimum_categories","size_rule","order","allowed_fields","forbidden_fields","independence"],
+  "properties":{
+    "schema_version":{"const":1},"policy_id":{"const":"unknown-release-sampling-v1"},"seed":{"const":20261014},
+    "master_may_be_imbalanced":{"const":true},"release_minimum":{"const":100},"minimum_sources":{"const":8},"max_source_fraction":{"const":0.25},"minimum_categories":{"const":5},
+    "allowed_fields":{"type":"array","items":{"type":"string"},"minItems":6},"forbidden_fields":{"type":"array","items":{"type":"string"},"minItems":5}
+  }
+}
