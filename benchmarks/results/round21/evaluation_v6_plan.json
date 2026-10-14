@@ -1,0 +1,690 @@
+{
+  "created_at": "2026-10-14T12:31:36.105419+00:00",
+  "filled_identities": [
+    1214,
+    1224,
+    691,
+    636,
+    1069,
+    341,
+    724,
+    1226,
+    157,
+    549,
+    613,
+    414,
+    484,
+    263,
+    611,
+    1198,
+    264,
+    1082,
+    558,
+    552
+  ],
+  "filled_variants_per_identity": 5,
+  "freeze_manifest_sha256": "28a3026dcf0b7a8ee40168d28420975a5b103dc0e4dd8db68a7d553fa2b7aa59",
+  "policy": "Fixed metadata/hash-only target40,max10/source; no dependence on unknown predictions except mandatory global gate. Up to20 PDF filler IDs prefer fields,max4/source,5 predeclared fresh synthetic variants each. No resampling after failures.",
+  "recognition_calls": 0,
+  "registry_sha256": "f759765f9560c4762a3013d44eb796c31fe488690dfa2cf3401ff353d2e64fa8",
+  "reservation_manifest_sha256": "5f2594bf1b58cbf56f05e5a91d71b2cb3b9a6871c5c2b88f527c0e0fc6c84d53",
+  "selected": [
+    {
+      "canonical_sha": "62a2e396dc3b5616cac26d1a3b1c8da12ad5924e01691fa96d67b59fe1dfe21c",
+      "document_id": 484,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 16
+    },
+    {
+      "canonical_sha": "3fc2bf6bd593ea473d50e92528cd4dd78a2a256707f8a83001d20496fd78f601",
+      "document_id": 1198,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 3
+    },
+    {
+      "canonical_sha": "195448944c991dd84a167f4f33771a3fb7200653852de9ad6d77cb60dcf033f3",
+      "document_id": 549,
+      "field_count": 14,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 10
+    },
+    {
+      "canonical_sha": "3e5d833c666a16bb2c6b4ff6c1fc34a81ba6459f7269ed30115039132fb3cc2c",
+      "document_id": 1223,
+      "field_count": 70,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 8,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 15
+    },
+    {
+      "canonical_sha": "63c9d1075f73d92869dc7891beda01804f2158f82a103d57f94631fed76fb73f",
+      "document_id": 341,
+      "field_count": 207,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 2
+    },
+    {
+      "canonical_sha": "8f00cc395e90e465c3ec3e547618aeabdb51856c0dbccb4fb4c7d326e40519d6",
+      "document_id": 556,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 4,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 10
+    },
+    {
+      "canonical_sha": "d68b38d783cd6cefd0e69d0f946e5f93a392d4b2b1cc924da299b2a0bd4721ce",
+      "document_id": 724,
+      "field_count": 453,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 8,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 2
+    },
+    {
+      "canonical_sha": "838c29c7b5993741a7ccbde8ef58f575e5baa24ea8c77ec1e6a17694e4e84448",
+      "document_id": 113,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 5
+    },
+    {
+      "canonical_sha": "041b7f480e983943b122a4764aaa218abd6a54af1f7e461e3d1864c9d2e62408",
+      "document_id": 691,
+      "field_count": 102,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 17,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 2
+    },
+    {
+      "canonical_sha": "1b0ba5de858d7106120e76fb3a7a99f9455517193fa18988e954646b55b05f13",
+      "document_id": 95,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 7,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 5
+    },
+    {
+      "canonical_sha": "604ec18cf252d3903859d50b27c74fb4c93f8d2d13ff5dca779b72ee864a6fc6",
+      "document_id": 636,
+      "field_count": 277,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 8,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 2
+    },
+    {
+      "canonical_sha": "cb75986c878b3114180660ee0b601aa8506db2f10d0209195ffef204d343dc31",
+      "document_id": 1121,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 3
+    },
+    {
+      "canonical_sha": "44a9b9838b2f654c1b5fdaf077202e8ae54ecbe4fbd8e0af36b04c9a7f88d2ce",
+      "document_id": 519,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 3,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 16
+    },
+    {
+      "canonical_sha": "d937bf692c6f46f6c4ed5a6f39aa5fa4157a8f33eab655ede981fa1fa28d7039",
+      "document_id": 264,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 3,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 5
+    },
+    {
+      "canonical_sha": "d48ba4a11797eef0ac92dd50e9dc22dab82343e43b1a18ab6de8ea0b2628b92f",
+      "document_id": 1082,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 28,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 3
+    },
+    {
+      "canonical_sha": "7956fd53291e6c4c14df1d13fe0a1f356b8b1ff879404ad0d91a906a14726f67",
+      "document_id": 1069,
+      "field_count": 210,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 28,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 3
+    },
+    {
+      "canonical_sha": "34ac13871e01de75179e400cee57fc9b25647882b778591b765e8b5d8e1f78d5",
+      "document_id": 384,
+      "field_count": 145,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 2
+    },
+    {
+      "canonical_sha": "7c30da4b2bb0c9efc560c64f047f9721595d346ef80504b2f9c82b2cc4579e87",
+      "document_id": 764,
+      "field_count": 186,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 2
+    },
+    {
+      "canonical_sha": "db2eea0e4093974856a1803892ea613ab3ea35884c5453fb32cb2fe7317b9ddc",
+      "document_id": 503,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 16
+    },
+    {
+      "canonical_sha": "de7c5782a170a95ed690d10aa1d998f303ea65dab22cf3c9863ad5cdc010b1ed",
+      "document_id": 1226,
+      "field_count": 24,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 3,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 15
+    },
+    {
+      "canonical_sha": "48900dfaab604874e2b24a7a53eb89e6238600fdca8868288ab315a5517421e6",
+      "document_id": 1214,
+      "field_count": 12,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 15
+    },
+    {
+      "canonical_sha": "051bff04ae1c7fabba11302251b68e985509d9fe01afea1942137d07eebfc1ea",
+      "document_id": 178,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 14
+    },
+    {
+      "canonical_sha": "8cc75a2c0f5df2da7dfc84f26de496a36426a47f6813d4d6e2331659fc2b7a04",
+      "document_id": 157,
+      "field_count": 54,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 15
+    },
+    {
+      "canonical_sha": "3c9ee2f15fc66b731502ce768d6b18a5c40ee6ad0ef5187ecb6f5b23e556b7f9",
+      "document_id": 552,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 10
+    },
+    {
+      "canonical_sha": "05961fae843bd72ecc563c86b1f80f3b2ca2f1e5a3d7cb4136f09868ca1d444e",
+      "document_id": 557,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 10
+    },
+    {
+      "canonical_sha": "f045a5581987dce3affacee00c27be13ac7296b94f5d78d1444e9edbd7749e70",
+      "document_id": 611,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 18
+    },
+    {
+      "canonical_sha": "c3414ec19b2cbfb22e8e8244366f2f22b12d6c9123b89779575b475600bc33f8",
+      "document_id": 263,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 11,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 5
+    },
+    {
+      "canonical_sha": "36632faa0e2eda4b2aefa592458c7a769b69d96b672dc81bc6bc129ae3329efa",
+      "document_id": 1217,
+      "field_count": 50,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 15
+    },
+    {
+      "canonical_sha": "084a88cee55b100f1b8e59e6ac9981b81bd38802e55f056f794aa3998fd20dbf",
+      "document_id": 555,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 10
+    },
+    {
+      "canonical_sha": "604835343351405f481363e48732d42219297f7f6d9f4ceb3da0bee9c1635b2c",
+      "document_id": 495,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 16
+    },
+    {
+      "canonical_sha": "ba0a8a3f68ddc740440418c79be04e9d1dd02efd4efbc936d5a70683127577c4",
+      "document_id": 1074,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 3
+    },
+    {
+      "canonical_sha": "165beec7c1f70a5e398a2e42fb0dc2a33889fe5df626e763516da54e39072343",
+      "document_id": 612,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 18
+    },
+    {
+      "canonical_sha": "da843b0f4a263823ea8209e7da0002b6e0277482d3476ffc2c5106a6cb2e17c9",
+      "document_id": 613,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 18
+    },
+    {
+      "canonical_sha": "e9b6464e465488e6cd2039a517865cbb1155b27574550834425fd149447e68c5",
+      "document_id": 558,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 10
+    },
+    {
+      "canonical_sha": "689b31a3f259daf4345ba8862ba096a5d0dcb49b21cb89577c22e0207c94f0aa",
+      "document_id": 304,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 5
+    },
+    {
+      "canonical_sha": "41c57e09391e9ff0b33d0b0567792ef6029f2c4c7efb5d9f9920d26a072cec70",
+      "document_id": 1224,
+      "field_count": 70,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 8,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 15
+    },
+    {
+      "canonical_sha": "8521c67e9d9373a2dc9cc10c055390875c9e3ec0dbf203036cd4297c2ed44be3",
+      "document_id": 496,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 16
+    },
+    {
+      "canonical_sha": "80d733d3071684a83721aa98cacc27b79b4152a3788faf67057e68fd81abc601",
+      "document_id": 175,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": false,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 14
+    },
+    {
+      "canonical_sha": "9e9e3b04cb8e14bdd7541db19983b8bf7f4050f2d6cd71fbe4234c4781640fa9",
+      "document_id": 1213,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 14
+    },
+    {
+      "canonical_sha": "3e1d02815e12989e679fe2df952958c95d72704b1cb9c295ebcfa4a54177d57b",
+      "document_id": 414,
+      "field_count": 0,
+      "fingerprint_supported": true,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "prior_eval_seen": true,
+      "prior_tuning_seen": false,
+      "reservation_reason": "Reserved after all development/canonical/safety/performance measurements. No identity tuning evidence; new representations required. No transformations/predictions until freeze.",
+      "reserved_for_v6": true,
+      "source_id": 16
+    }
+  ],
+  "selection_seed": 202610142106,
+  "source_concentration": 0.15,
+  "source_counts": {
+    "2": 6,
+    "3": 5,
+    "5": 5,
+    "10": 6,
+    "14": 3,
+    "15": 6,
+    "16": 6,
+    "18": 3
+  },
+  "transform_policy": [
+    {
+      "name": "raster_200",
+      "params": {
+        "dpi": 200,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "raster_150",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "jpeg_90",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005,
+        "quality": 90
+      }
+    },
+    {
+      "name": "jpeg_75",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005,
+        "quality": 75
+      }
+    },
+    {
+      "name": "jpeg_60",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005,
+        "quality": 60
+      }
+    },
+    {
+      "name": "grayscale",
+      "params": {
+        "dpi": 150,
+        "gray": true,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "contrast_minus20",
+      "params": {
+        "contrast": 0.8,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "blur_mild",
+      "params": {
+        "blur": 0.65,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "crop_2pct",
+      "params": {
+        "crop": 0.02,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "crop_5pct",
+      "params": {
+        "crop": 0.05,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "first_page_only",
+      "params": {
+        "first_page_only": true,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "rotation_90",
+      "params": {
+        "angle": 90,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "rotation_180",
+      "params": {
+        "angle": 180,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "rotation_270",
+      "params": {
+        "angle": 270,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    }
+  ]
+}

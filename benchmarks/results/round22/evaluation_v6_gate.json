@@ -1,0 +1,178 @@
+{
+  "actual_count": 597,
+  "expected_count": 597,
+  "filled": {
+    "FN": 5,
+    "FP": 0,
+    "TP": 95,
+    "entity_errors": 0,
+    "exact": 95,
+    "extraction_failed": 0,
+    "f1": 0.9743589743589743,
+    "family": 0,
+    "n": 100,
+    "precision": 1.0,
+    "precision_ci95": {
+      "lower": 0.9611351464605271,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 1
+    },
+    "recall": 0.95,
+    "recall_ci95": {
+      "lower": 0.8882495307680808,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 0.9784563208456319
+    },
+    "reject": 5,
+    "version_errors": 0,
+    "wrong": 0
+  },
+  "filled_generation": {
+    "attempted": 100,
+    "end_to_end_rate": 0.95,
+    "rate": 1.0,
+    "valid": 100,
+    "valid_and_correct": 95
+  },
+  "freeze_manifest_sha256": "8c2a50e2dd31dbb2110d1fc4b41ebf56c3bc5eb58f221857515c92edeec9d273",
+  "gates": {
+    "unknown_end_to_end": {
+      "actual": 1.0,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_entity_version": {
+      "actual": {
+        "entity": 0,
+        "version": 0
+      },
+      "blocking": true,
+      "passed": true
+    },
+    "v6_exact_recall": {
+      "actual": 0.9380234505862647,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_filled_generation": {
+      "actual": 1.0,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_filled_precision": {
+      "actual": 1.0,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_filled_recall": {
+      "actual": 0.95,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_precision": {
+      "actual": 1.0,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_retrieval_at1_target": {
+      "actual": 0.9932998324958124,
+      "blocking": false,
+      "passed": true
+    },
+    "v6_retrieval_at25": {
+      "actual": 1.0,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_scan_precision": {
+      "actual": 1.0,
+      "blocking": true,
+      "passed": true
+    },
+    "v6_scan_recall": {
+      "actual": 0.9333333333333333,
+      "blocking": true,
+      "passed": true
+    }
+  },
+  "identity": {
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "freeze_manifest_sha256": "8c2a50e2dd31dbb2110d1fc4b41ebf56c3bc5eb58f221857515c92edeec9d273",
+    "input_manifest_sha256": "20254f583c03be8555bce9fe025307753453ee2e7d8786284ea0da2a533f61f7",
+    "registry_sha256": "f759765f9560c4762a3013d44eb796c31fe488690dfa2cf3401ff353d2e64fa8",
+    "runner_code_sha256": "1bdf53b348c91843e9a3e6689946bef135de63f9422c8f968ac898c51c23c7c6",
+    "runtime_sha256": "c077552055c25b0bc128e1a5c607afc434fb3bd074e6da165f3d8333145abf15",
+    "semantic_source_tree": "9d08feb84dd6980ba374b3a3069d5c785e27b73c"
+  },
+  "known_recognition_calls": 597,
+  "metrics": {
+    "FN": 37,
+    "FP": 0,
+    "TP": 560,
+    "entity_errors": 0,
+    "exact": 560,
+    "extraction_failed": 0,
+    "f1": 0.9680207433016422,
+    "family": 0,
+    "n": 597,
+    "precision": 1.0,
+    "precision_ci95": {
+      "lower": 0.9931869876530032,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 1
+    },
+    "recall": 0.9380234505862647,
+    "recall_ci95": {
+      "lower": 0.9157414400337474,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 0.9547044859623082
+    },
+    "reject": 37,
+    "version_errors": 0,
+    "wrong": 0
+  },
+  "observations_sha256": "6a230f43e2e98e4633520c8de5e99075af15c51b9d5090ce7a86217b10d19afe",
+  "passed": true,
+  "retrieval": {
+    "1": 0.9932998324958124,
+    "10": 1.0,
+    "25": 1.0,
+    "5": 0.9932998324958124
+  },
+  "scan": {
+    "FN": 28,
+    "FP": 0,
+    "TP": 392,
+    "entity_errors": 0,
+    "exact": 392,
+    "extraction_failed": 0,
+    "f1": 0.9655172413793104,
+    "family": 0,
+    "n": 420,
+    "precision": 1.0,
+    "precision_ci95": {
+      "lower": 0.9902954611370455,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 1
+    },
+    "recall": 0.9333333333333333,
+    "recall_ci95": {
+      "lower": 0.9053356954475599,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 0.9534759956333497
+    },
+    "reject": 28,
+    "version_errors": 0,
+    "wrong": 0
+  },
+  "single_shot": true,
+  "unique_case_ids": 597,
+  "unknown_mix": {
+    "correct_rejects": 120,
+    "false_accepts": 0,
+    "n": 120,
+    "new_recognition_calls": 0,
+    "original_observations_sha256": "50dc1ac906d095b33a145ee27ef74c6462dca31c758d84af5671f0ee25fe2191"
+  },
+  "unknown_recognition_calls": 0
+}

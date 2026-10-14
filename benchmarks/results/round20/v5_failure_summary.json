@@ -1,0 +1,86 @@
+{
+  "cases": 665,
+  "false_accepts": 8,
+  "false_rejects": 179,
+  "historical_metrics": {
+    "v5_entity_version": {
+      "actual": {
+        "entity": 0,
+        "version": 0
+      },
+      "passed": true
+    },
+    "v5_exact_recall": {
+      "actual": 0.705511811023622,
+      "passed": false
+    },
+    "v5_filled_generation": {
+      "actual": 0.9166666666666666,
+      "passed": true
+    },
+    "v5_filled_precision": {
+      "actual": 1.0,
+      "passed": true
+    },
+    "v5_filled_recall": {
+      "actual": 1.0,
+      "passed": true
+    },
+    "v5_leakage": {
+      "actual": 0,
+      "passed": true
+    },
+    "v5_precision": {
+      "actual": 0.9824561403508771,
+      "passed": false
+    },
+    "v5_preflight": {
+      "actual": {
+        "attempted_filled": 60,
+        "filled_generation_rate": 0.9166666666666666,
+        "identities": 38,
+        "known": 635,
+        "passed": true,
+        "prepared_sha256": "7f6838286c41ba2e51b7a34d8467f835adbc3b441df6a8539722cfc635905b2c",
+        "recognition_calls": 0,
+        "scans": 504,
+        "sources": 6,
+        "unknown_mix": 30,
+        "valid_filled": 55
+      },
+      "passed": true
+    },
+    "v5_retrieval_at1": {
+      "actual": 0.9905511811023622,
+      "passed": true
+    },
+    "v5_retrieval_at25": {
+      "actual": 0.9984251968503937,
+      "passed": false
+    },
+    "v5_scan_precision": {
+      "actual": 0.9815384615384616,
+      "passed": false
+    },
+    "v5_scan_recall": {
+      "actual": 0.6329365079365079,
+      "passed": false
+    },
+    "v5_unknown_mix": {
+      "actual": 1.0,
+      "passed": true
+    }
+  },
+  "known": 635,
+  "root_causes": {
+    "OCR_degradation": 47,
+    "entity_conflict_false": 57,
+    "retrieval_miss": 1,
+    "retrieval_rank_low": 5,
+    "shared_template": 24,
+    "visual_underuse": 53
+  },
+  "truth_counts": {
+    "confirmed_expected": 665
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "actual_count": 120,
+  "confidence_interval_95": {
+    "lower": 0.9689808335812966,
+    "method": "Wilson score 95% two sided",
+    "upper": 1
+  },
+  "correct_no_match": 120,
+  "entity_errors": 0,
+  "expected_count": 120,
+  "extraction_failed": 0,
+  "false_acceptance_rate": 0.0,
+  "identity": {
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "freeze_manifest_sha256": "28a3026dcf0b7a8ee40168d28420975a5b103dc0e4dd8db68a7d553fa2b7aa59",
+    "input_manifest_sha256": "28d22c62765587e3d749772c4dfb19ac3b05d8244b4de71b8d01bc1356b82676",
+    "registry_sha256": "f759765f9560c4762a3013d44eb796c31fe488690dfa2cf3401ff353d2e64fa8",
+    "runner_code_sha256": "464bc1307f686295d960e879b9b2e23cbdb5e9993aef58e856b3c66e6f4ad3ce",
+    "runtime_sha256": "c077552055c25b0bc128e1a5c607afc434fb3bd074e6da165f3d8333145abf15",
+    "semantic_source_tree": "9d08feb84dd6980ba374b3a3069d5c785e27b73c"
+  },
+  "manifest_sha256": "28d22c62765587e3d749772c4dfb19ac3b05d8244b4de71b8d01bc1356b82676",
+  "n": 120,
+  "observations_sha256": "50dc1ac906d095b33a145ee27ef74c6462dca31c758d84af5671f0ee25fe2191",
+  "passed": true,
+  "per_source": {
+    "aci": {
+      "confidence_interval_95": {
+        "lower": 0.20654931437723745,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 1,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 1,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "agid": {
+      "confidence_interval_95": {
+        "lower": 0.7719046276458016,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 13,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 13,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "anac": {
+      "confidence_interval_95": {
+        "lower": 0.7719046276458016,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 13,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 13,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "garante_privacy": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "giustizia": {
+      "confidence_interval_95": {
+        "lower": 0.5655175352168251,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 5,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 5,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "inail": {
+      "confidence_interval_95": {
+        "lower": 0.6755924351161198,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 8,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 8,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "inl": {
+      "confidence_interval_95": {
+        "lower": 0.7719046276458016,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 13,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 13,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "inps": {
+      "confidence_interval_95": {
+        "lower": 0.5101091635454027,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 4,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 4,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "interno": {
+      "confidence_interval_95": {
+        "lower": 0.5655175352168251,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 5,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 5,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "lavoro": {
+      "confidence_interval_95": {
+        "lower": 0.4385029682449546,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 3,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 3,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mef": {
+      "confidence_interval_95": {
+        "lower": 0.6096657120978346,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 6,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 6,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mimit": {
+      "confidence_interval_95": {
+        "lower": 0.7411670330319684,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 11,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 11,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "mit": {
+      "confidence_interval_95": {
+        "lower": 0.7224672001371107,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 10,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 10,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "regione_piemonte": {
+      "confidence_interval_95": {
+        "lower": 0.7719046276458016,
+        "method": "Wilson score 95% two sided",
+        "upper": 0.9999999999999999
+      },
+      "correct_no_match": 13,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 13,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    },
+    "unioncamere": {
+      "confidence_interval_95": {
+        "lower": 0.7575059933447592,
+        "method": "Wilson score 95% two sided",
+        "upper": 1
+      },
+      "correct_no_match": 12,
+      "entity_errors": 0,
+      "extraction_failed": 0,
+      "false_acceptance_rate": 0.0,
+      "n": 12,
+      "rejection_rate": 1.0,
+      "version_errors": 0,
+      "wrong_document_match": 0,
+      "wrong_family_match": 0
+    }
+  },
+  "recognition_calls": 120,
+  "rejection_rate": 1.0,
+  "scope": "First and only fresh unknown4 predictions on the sealed v7 runtime. Extraction failure is never credited as correct rejection. No tuning/relabel/replay.",
+  "selection": {
+    "counts_per_source": {
+      "aci": 1,
+      "agid": 13,
+      "anac": 13,
+      "garante_privacy": 3,
+      "giustizia": 5,
+      "inail": 8,
+      "inl": 13,
+      "inps": 4,
+      "interno": 5,
+      "lavoro": 3,
+      "mef": 6,
+      "mimit": 11,
+      "mit": 10,
+      "regione_piemonte": 13,
+      "unioncamere": 12
+    },
+    "document_types": {
+      "avviso_bando": 19,
+      "circolare": 12,
+      "decreto": 32,
+      "delibera_determina": 24,
+      "guida_manuale": 25,
+      "relazione_piano": 8
+    },
+    "entities": 18,
+    "max_concentration": 0.10833333333333334,
+    "previously_recognized": 0,
+    "sources": 15,
+    "total": 120,
+    "type_groups": 6,
+    "unversioned": 120,
+    "versioned": 0,
+    "with_code": 0,
+    "without_code": 120
+  },
+  "status": "complete",
+  "unique_case_ids": 120,
+  "version_errors": 0,
+  "wrong_accepts": [],
+  "wrong_document_match": 0,
+  "wrong_family_match": 0
+}

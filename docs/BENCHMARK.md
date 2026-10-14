@@ -1,3 +1,19 @@
+# Release candidate 0.7.0-rc1 — Round 23
+
+La preparazione della release conserva il motore e tutti i risultati Round 22. Non riesegue V6 o unknown v4. V5 originale è storico indipendente del vecchio motore; replay V5/development sono contaminati dal tuning. Evidenza release: unknown v4 single-shot Round 21 e V6 single-shot Round 22; canonical, safety e performance sono controlli tecnici locali distinti, non nuovi held-out. Versione candidata 0.7.0-rc1, schema 610, stable pubblica v0.6.1. CI e pubblicazione sono registrate nel [report Round 23](ROUND23_REPORT.md). Le sezioni seguenti conservano lo stato osservato al termine di ciascun round.
+
+# Round22 — READY LOCALLY
+
+Motore v7 invariato;unknown4 originale120/120 preservato senza replay. Generation100/100(40native/60static). V6 fresca597noti/40ID/8fonti: P100.0000%,R93.8023%,scan R93.3333%,filled R95.0000%;wrong0,errori ente/versione0/0,retrieval25100.0000%. Canonical1007/1007,safety FA0,coverage86.5285%,p95post186.0883ms,full tests889/0/3. Gate falliti `[]`. V5 storica e dev separati. Pubblico0.6.1/schema610,CI esterna pending. [Report Round22](ROUND22_REPORT.md). Sezioni successive storiche.
+
+# Round 21 — NOT READY
+
+Development v7: P100%,R90,3937%,scan R88,2937%,filled100%,0FA confermati. Pool639ID/8fonti. Fresh unknown v4:120/120,15fonti,0FA. V6: non eseguita; preflight generazione/leakage fallito. Gate falliti: `['v6_generation_and_leakage', 'fresh_v6_evaluation']`. Canonical1007/1007,coverage86,5285%,p95mediano176,6788ms,full test878/0/3. V5 storica P98,2456%,R70,5512%,scan R63,2937% preservata. Pubblico0.6.1/schema610,CI esterna pending. [Report Round21](ROUND21_REPORT.md). Sezioni successive storiche.
+
+# Round 20 — NOT READY
+
+V5 indipendente storica: P98.2456%, R70.5512%, scan R63.2937%,5 gate falliti. Replay **development** v6: P100.0000%, R85.3543%, scan R81.9444%, filled R100.0000%; 0 false accept confermati. Canonical1007/1007,coverage86.5285%,p95 mediano123.6941ms,test856/0/3. Pool V6 fresco316ID/4fonti: STOP, unknown v4 e V6 non eseguite. Unknown v3 storico non valida v6. Pubblico0.6.1/schema610. [Report Round 20](ROUND20_REPORT.md). Sezioni successive storiche.
+
 # Round19 — NOT READY
 
 Pool359 ID/6 fonti; V5single-shot635 noti/504scan/55filled/30unknownmix. Mediana p95198.6201ms; test834/0/3. Freezeaa81678 e unknownv3 116/116 preservati. [Report Round19](ROUND19_REPORT.md). Gate falliti: v5_exact_recall, v5_precision, v5_retrieval_at25, v5_scan_precision, v5_scan_recall. Le sezioni successive sono storiche.

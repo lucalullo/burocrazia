@@ -1,6 +1,16 @@
 # Registro delle modifiche
 
-## Non rilasciato — candidata 0.7.0, 11 ottobre 2026
+## 0.7.0-rc1 — 14 ottobre 2026
+
+- RC pre-1.0: versione candidata nei metadata; stable pubblica v0.6.1 preservata, schema 610 invariato. Nessun LLM o cloud API nel runtime locale.
+- Firme locali deterministiche e page-level matching; decision policy v7 congelata nel Round 22. Migliore copertura delle identità con file: 1002/1158 (86,53%); le prove della 0.6.1 restano storiche e non sono un denominatore direttamente equivalente.
+- Robustezza su scansioni e moduli compilati: V6 single-shot 560/597 exact, precisione 100%, recall 93,80%, scan 93,33%, filled 95%; generazione compilati 100/100.
+- Truth policy e contamination registry versionati; V5 originale preservata e replay development distinti. Unknown v4 single-shot 120/120, senza replay Round 22/23.
+- Safety: 705 negativi confermati, zero false accept; veto ente/versione, ambiguità e limiti parser conservati. Canonical 1007/1007; i mismatch storici non sono riscritti.
+- Warm recognition: mediana di sette p95 186,09 ms; suite Round 22 889 pass/0 fail/3 skip. Family matching sperimentale e non sufficientemente validato.
+- Release-only audit, README IT/EN e CI: nessuna modifica del recognition engine nel Round 23. Dettagli e limiti in [release notes](docs/RELEASE_NOTES_v0.7.0-rc1.md).
+
+## Storico Round 4 — candidata 0.7.0, 11 ottobre 2026
 
 La versione software resta 0.6.1. Il Round 4 conserva i corpus precedenti e richiede una nuova valutazione indipendente; risultati correnti e gate esterni sono in `docs/BENCHMARK.md` e `docs/ROUND4_REPORT.md`. Nessun tag o release.
 

@@ -1,0 +1,2497 @@
+{
+  "excluded": "All ignored venv/cache/work/private checkpoints/logs/temp DB/dist archives; no official binaries added",
+  "files": [
+    {
+      "binary": false,
+      "bytes": 1483,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": ".github/workflows/tests.yml",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "bb8aa1ef02c10ed0d42a10977da6f22b0af172883d8a2903ad63e383932507d1"
+    },
+    {
+      "binary": false,
+      "bytes": 823,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": ".gitignore",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "67ef9fd83a75a12b8b674b5aae2f9a8bc68ed6d935fad4844143364dcdb7b5f7"
+    },
+    {
+      "binary": false,
+      "bytes": 3974,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "AGENTS.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "7d7beeebf10655f49eff3197e75c98af2d6f3864baf143a55c4e8ae9d15b7148"
+    },
+    {
+      "binary": false,
+      "bytes": 8647,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "CHANGELOG.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "621719dace96ef0934bd896e16206ffd16cef97004541d32aaad85d5b5c0bd0f"
+    },
+    {
+      "binary": false,
+      "bytes": 14053,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "README.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "818bc2f002960cfb4c3f6cf44c60e82de7da0d2fc2d4d7bf7d6cf226ba3eda2d"
+    },
+    {
+      "binary": false,
+      "bytes": 13988,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "README_EN.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "7ce20bc7e4c211de4850df813a364cad318dbb28e192e6b954ef379999ac3b1e"
+    },
+    {
+      "binary": false,
+      "bytes": 47626,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/latest_summary.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "3bd239a9a55f1407b2410a9eeac99a5556b14d38456b970a9bb1dc3ee56cc5c1"
+    },
+    {
+      "binary": false,
+      "bytes": 25954,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/BENCHMARK.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "bef131ef653ab2c630e8143cdd3ebd873c62fd56c3facb1cb70321cdc3a29387"
+    },
+    {
+      "binary": false,
+      "bytes": 40192,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/release_gates.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5bc5524ca4620f224040c8cd926d5841988e4eb5dcf365909e83f195ddab43d5"
+    },
+    {
+      "binary": false,
+      "bytes": 295,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "pyproject.toml",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "7d2617a3f0b2c5682f253df33920443dc64546636d62919b406ca5fae0196f9b"
+    },
+    {
+      "binary": false,
+      "bytes": 69955,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/package_candidate.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "9181e1d8e679eba9652c99d0f4e8d40113794ee82b525dca5f1a29f724a8b3b2"
+    },
+    {
+      "binary": false,
+      "bytes": 55895,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "src/recognize.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "21dd9566db2ed544d045d08ced72a450908189e3d5be3d1b8acc24d24a2d0802"
+    },
+    {
+      "binary": false,
+      "bytes": 8158,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round16.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "c5cda458f1b0fc51dff30d4ee2c20b56f8cf9a1e13016602e183025e5f7529ce"
+    },
+    {
+      "binary": false,
+      "bytes": 1856,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round17.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "c52c9e61623cf085cfa527de60fd09f18ec183baa3df51bdf5b013b588064e21"
+    },
+    {
+      "binary": false,
+      "bytes": 2134,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round18.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "14dedc28e076ea61725c9fc9f028b04251b6a4e2f2f5ed1fdcbc5a5aeca63ee9"
+    },
+    {
+      "binary": false,
+      "bytes": 2106,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round19.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "23921f1a25702cbe774a4c17d67c930be280518032d16fd1b549ae8c81554b9e"
+    },
+    {
+      "binary": false,
+      "bytes": 17401,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round8.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "b98154bfd702e630971deaf237a54b4ad748cb12738bcc478b5b5de569b9c89e"
+    },
+    {
+      "binary": false,
+      "bytes": 473,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "CHANGELOG_CANDIDATE.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "da7e409c6fea4048591dc1f4e06903b7f6cd2c3cd7dedf9d4d69645ff3228368"
+    },
+    {
+      "binary": false,
+      "bytes": 804,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "README_CANDIDATE_EN.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5c11b0c8e973781eb986302af552ab384fb1eae5378bccee6452ccc01a76b98b"
+    },
+    {
+      "binary": false,
+      "bytes": 830,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "README_CANDIDATE_IT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "26d64c4854dd6378050ea6f3f85ace6f9fbd60329043644446cb2e40ba8e1ea3"
+    },
+    {
+      "binary": false,
+      "bytes": 700,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/historical_seals.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "014e6c1b1e9cdb2f53fec1f8f5b2c80c4b1f074d8d200d2ab8f50b91b5c8d240"
+    },
+    {
+      "binary": false,
+      "bytes": 369311,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/manifests/official_unknown_release_v4.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "28d22c62765587e3d749772c4dfb19ac3b05d8244b4de71b8d01bc1356b82676"
+    },
+    {
+      "binary": false,
+      "bytes": 369312,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/manifests/v6_reserved_identity_pool.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5f2594bf1b58cbf56f05e5a91d71b2cb3b9a6871c5c2b88f527c0e0fc6c84d53"
+    },
+    {
+      "binary": false,
+      "bytes": 11268775,
+      "classification": "MUST COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/reference/benchmark_contamination_registry_v5.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "db6eb6bcdc46c7fa89501338606874d6b079ad83adc593558d3fb6d4a78df8c7"
+    },
+    {
+      "binary": false,
+      "bytes": 11337236,
+      "classification": "MUST COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/reference/benchmark_contamination_registry_v6.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5c9cf11d9de06c4108ed4bac7fa8d506faa5092960b205b5b34e856734850fe9"
+    },
+    {
+      "binary": false,
+      "bytes": 11997038,
+      "classification": "MUST COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/reference/benchmark_contamination_registry_v7.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "f759765f9560c4762a3013d44eb796c31fe488690dfa2cf3401ff353d2e64fa8"
+    },
+    {
+      "binary": false,
+      "bytes": 3613,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/reference/filled_generation_policy_v2.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "303eb7d925918d2f0346d61ff598cb7b50901999aa791d241026351819fe0732"
+    },
+    {
+      "binary": false,
+      "bytes": 960416,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/reference/v5_truth_adjudication_v1.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "a5a10acf7d03634652b0a98dc4ca8ea9f30ce5c3f58a836cd27fc9a393e2ce2d"
+    },
+    {
+      "binary": false,
+      "bytes": 28202,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/baseline_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f0e903790b1319e0b232b59108246af48cc4358b91bbc82fc762c312b93fc443"
+    },
+    {
+      "binary": false,
+      "bytes": 5810,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/calibration_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4e144a56d46a1055df7abcc616fdc95800d1388274c3665dea598487837a6031"
+    },
+    {
+      "binary": false,
+      "bytes": 5490,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/calibration_v6_initial_retry.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "1c71544e29fed3c83d4d8979a9b7056576c2f3a2478737629e6dccb321f58dff"
+    },
+    {
+      "binary": false,
+      "bytes": 5233,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/calibration_v6_safety_final.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f732d2fa94b19b50a270620c4cf70c31f13dcf40c2a0965f4157a17e34ec1dd8"
+    },
+    {
+      "binary": false,
+      "bytes": 9740,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/coverage.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d1c3bb1bb5d6b4853276ed3567c73f506c3f6eeb27496632a79bfbe541babd99"
+    },
+    {
+      "binary": false,
+      "bytes": 8411,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/development_breakdown.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "08715db9938e190ab17d31300552e467b160680b158607a495bbb1cf4bcd857a"
+    },
+    {
+      "binary": false,
+      "bytes": 1914425,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/development_inputs_manifest.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8e7121a210ec423b9bed6e232aa0ea47ec38931d2adebdd28c96cc67b218b43d"
+    },
+    {
+      "binary": false,
+      "bytes": 10517871,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/development_observations_v6_initial_retry.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "5ddffacf98b553f6da1e17819d91f918b1cbd03ef763421782ac87944e0a93b6"
+    },
+    {
+      "binary": false,
+      "bytes": 10567044,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/development_observations_v6_safety_final.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f47810129ac6cdcd2be5a1e5382f6649437c70730a402914c738407091a0d085"
+    },
+    {
+      "binary": false,
+      "bytes": 3470260,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/development_regression_v5_after_fix.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b9ec652d65e1160174c376a10a140ddf37d51227debeb839b6fae2da223b133b"
+    },
+    {
+      "binary": false,
+      "bytes": 3445516,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/development_regression_v5_after_fix_v6_initial_retry.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "479c5494013655b50c7c6ade6cdd961cb27189fade0744be5ec983193f21498d"
+    },
+    {
+      "binary": false,
+      "bytes": 3470260,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/development_regression_v5_after_fix_v6_safety_final.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b9ec652d65e1160174c376a10a140ddf37d51227debeb839b6fae2da223b133b"
+    },
+    {
+      "binary": false,
+      "bytes": 295,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/development_safety.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "7447a92fec4dcc0e81ee615437e21a4c05031c2c63cafa0bff4a8b885e679686"
+    },
+    {
+      "binary": false,
+      "bytes": 298,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/end_to_end_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bb868127c34752447fe49d8bed78f19f126c201ea2cf71cf5e6fad6d659ccd37"
+    },
+    {
+      "binary": false,
+      "bytes": 6511,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/evidence_locks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "087d6b95cc69e6f70f5e94eab8241f5681d95acc9c1e01ed570a2f5f9b6e9635"
+    },
+    {
+      "binary": false,
+      "bytes": 298,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/filled_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bb868127c34752447fe49d8bed78f19f126c201ea2cf71cf5e6fad6d659ccd37"
+    },
+    {
+      "binary": false,
+      "bytes": 4065,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/final_checks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "016a2bfc97cc7eb5383dacfa73846d59905aeeaa2a863418e71f320d40cec61b"
+    },
+    {
+      "binary": false,
+      "bytes": 410,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/final_tests.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "1c81ab3de4d7b60b12c0a810f3523605c18a95d2fa305b25e37b8ea419380e55"
+    },
+    {
+      "binary": false,
+      "bytes": 579294,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/hard_negatives_development.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "ade5941a54314c841e3c2e91634283d9d7ad6cffabf3b57aceb16a70ee278118"
+    },
+    {
+      "binary": false,
+      "bytes": 11928,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/historical_independent_v5_round19.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a3b438aee86f0dabf107be3107c3d50a2427ca8d4a9a8d25a742a1b520b5c7d6"
+    },
+    {
+      "binary": false,
+      "bytes": 2356415,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round20/historical_regression_fast.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d14137e0cefe17ddc00719ba7b740cdc5ad198488f0c73d17ce2eaa7c081afdc"
+    },
+    {
+      "binary": false,
+      "bytes": 3676,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/input_safety.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "773e83a66302c8621bdc13f73afd92b41bf9239700b971b2289d1df062c519da"
+    },
+    {
+      "binary": false,
+      "bytes": 2371,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/page_limit_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "01513bf135005dc83c6a95089de80f10a330a51ac053e0c6a14f8f9e1552b473"
+    },
+    {
+      "binary": false,
+      "bytes": 450734,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/performance_stability.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "9b9b2686b9ac29c292a797811a201e633412b5ac0acb647958518f5950d2f1bb"
+    },
+    {
+      "binary": false,
+      "bytes": 540,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/pre_freeze_gate.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8250c5f83c462004d45975b78c9f873bb55265da30eb276a744efbe34442a285"
+    },
+    {
+      "binary": false,
+      "bytes": 506066,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/release_gate_fast.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "75fd10e19e2d07eb3595a706ebbb859d08fe375d439e3ea0f394c56596fccc3d"
+    },
+    {
+      "binary": false,
+      "bytes": 298,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/retrieval_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bb868127c34752447fe49d8bed78f19f126c201ea2cf71cf5e6fad6d659ccd37"
+    },
+    {
+      "binary": false,
+      "bytes": 298,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/robustness_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bb868127c34752447fe49d8bed78f19f126c201ea2cf71cf5e6fad6d659ccd37"
+    },
+    {
+      "binary": false,
+      "bytes": 298,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/scan_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bb868127c34752447fe49d8bed78f19f126c201ea2cf71cf5e6fad6d659ccd37"
+    },
+    {
+      "binary": false,
+      "bytes": 1969,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/technical_attempt_history.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a9a86c84ad52ae5f4a5d41ead7071125710a6cb44eef26714e852b0159947ed2"
+    },
+    {
+      "binary": false,
+      "bytes": 298,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/unknown_v4_not_run.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bb868127c34752447fe49d8bed78f19f126c201ea2cf71cf5e6fad6d659ccd37"
+    },
+    {
+      "binary": false,
+      "bytes": 71941,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/unknown_v4_preflight.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b966450e30823f16ee98997dfb3a8eb7e17f6700c4acc0e47ab0884052c9fa0d"
+    },
+    {
+      "binary": false,
+      "bytes": 557059,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_failure_audit.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8aaf8fd7d4b77a93189198e2f99b1ffe490050ef65bef8c3a99f3bef8cad8f8b"
+    },
+    {
+      "binary": false,
+      "bytes": 1867,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_failure_summary.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "cf97eb4c1bd6b42d16878560c698673a846719b2f25ebf78af58ce8c3d236df1"
+    },
+    {
+      "binary": false,
+      "bytes": 7239,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_false_accepts.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "e2a62777b88a7f5fc7bfa589892a795c31f9ab4c5e89e24abd47c76a4c8cf5cd"
+    },
+    {
+      "binary": false,
+      "bytes": 148663,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_false_rejects.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f9c48a5a2fb9d9058fb5e2d1680ccd98e0d1685a5fd83eae10adc35c3de15de9"
+    },
+    {
+      "binary": false,
+      "bytes": 20349,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_retrieval_diagnostics.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4411817a4858ee0741796b579b26225ceeac3479a2b46e9a92c5a13f3c48204d"
+    },
+    {
+      "binary": false,
+      "bytes": 6490,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_source_breakdown.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b1c90578dcbcec55b24b2e41b4c43723f20b9834c7f9324b1aac9508540ce49b"
+    },
+    {
+      "binary": false,
+      "bytes": 5036,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v5_transform_breakdown.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "290f327b918aa09f667b1bbea49662db546d4f1663e9a5cc0ddb58a4092ddeb7"
+    },
+    {
+      "binary": false,
+      "bytes": 83173,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v6_pool_audit.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d16fbbff1696bbe5a44addbfe7a4befed2b93fd079e953a8201bb07ceb418e62"
+    },
+    {
+      "binary": false,
+      "bytes": 1034,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round20/v6_preflight.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "12754f9a7ae8e5109a9542b66cdb13dbd8de1b5bced8ce881b745c9cfedccb8e"
+    },
+    {
+      "binary": false,
+      "bytes": 8895,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/baseline_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "183dca1f1471841e383e1db602f8e1536a6ce06fa0a23832f80d2ca29446ad87"
+    },
+    {
+      "binary": false,
+      "bytes": 5273,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/calibration_v7.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "1b6eb9ad59bbf9f76be811e75bb278ce1eb1843addf45ff9c238b3042838def8"
+    },
+    {
+      "binary": false,
+      "bytes": 5230,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/calibration_v7_initial.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "16dd377f0896226704a8293ba0355eb7044299be3902c81b0c54f764de25312a"
+    },
+    {
+      "binary": false,
+      "bytes": 5228,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/calibration_v7_ordered.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "70e7c1ad16bd09cba2bffa210e395ea58fb5b22ef6a187ea789981acc3238b5e"
+    },
+    {
+      "binary": false,
+      "bytes": 1448686,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/canonical.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "5ba31a28252050997bc39393d86fec45aa31b7353385514d6bbbca799c3cd74d"
+    },
+    {
+      "binary": false,
+      "bytes": 9740,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/coverage.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "092480870e83e2de420e4aea2b05787e062ebf1210cdb8997226d70720fa57d9"
+    },
+    {
+      "binary": false,
+      "bytes": 67106,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/dev_false_reject_audit.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "0a73a34efaa48c8537c782ffdb42f9dc34fb6f2dedd86791172233a2c139e46c"
+    },
+    {
+      "binary": false,
+      "bytes": 1691,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/dev_retrieval_summary.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bc065afae5c70718d06194551e394db477d1f996bb24ce3e8f4c181fe3a956dd"
+    },
+    {
+      "binary": false,
+      "bytes": 1638,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/development_improvements.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d6210d656e020a9287c74879455c5431b38d0dd15dc70cccf00a979b4888e563"
+    },
+    {
+      "binary": false,
+      "bytes": 10764200,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/development_observations_v7_initial.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "924ad509b486550073d6c7c9c0469b8c50f2c44ba1f760421f220f7cbd402481"
+    },
+    {
+      "binary": false,
+      "bytes": 10767605,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/development_observations_v7_ordered.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "52f9061f9ff3bb80e7e73117b5451465cda4f8c4deebdb7a7e37bbf0f649e49c"
+    },
+    {
+      "binary": false,
+      "bytes": 3568292,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/development_regression_v5_after_fix.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4c3104087e8910ac41dc923a3e118e92eb606f42c40d5daf516f7124d42457dd"
+    },
+    {
+      "binary": false,
+      "bytes": 3564639,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/development_regression_v5_after_fix_v7_initial.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d7044052b7680eff3fffc0bb2970bd42abe03d8c1b1acc26446faf5778349a92"
+    },
+    {
+      "binary": false,
+      "bytes": 3568292,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/development_regression_v5_after_fix_v7_ordered.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4c3104087e8910ac41dc923a3e118e92eb606f42c40d5daf516f7124d42457dd"
+    },
+    {
+      "binary": false,
+      "bytes": 2312072,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/development_safety.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "44613a65dc8eeb90b74ae2cdcf69a247e439a742a71b83e11607ae263424ffa6"
+    },
+    {
+      "binary": false,
+      "bytes": 203,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/end_to_end_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a4f13031214b57e7beff5f4635cffb4dde49fd0eb6b4e0541be99cd0dc7e863e"
+    },
+    {
+      "binary": false,
+      "bytes": 8310,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_filled_generation_audit.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "11bfbc87f3e97f84aa458930491907e8e9f682c699ab986b024005b5ae012010"
+    },
+    {
+      "binary": false,
+      "bytes": 7340,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_generation_failure_summary.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a55d8ffc43ab2a4a71dab1deddc75fbd6c2c02a6218f8fbc1ba6c906cb952ede"
+    },
+    {
+      "binary": false,
+      "bytes": 288,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_generation_preflight.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "69b2c2a07298b7849d7d2dafb7250784e763f8fda6a3eb64577e0ffa757d905c"
+    },
+    {
+      "binary": false,
+      "bytes": 32828,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_generation_recovery.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "c80d658230e315af584092ea682b0e7971b874154d45a8558245c4f295236220"
+    },
+    {
+      "binary": false,
+      "bytes": 231,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_leakage.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "857e9cd3f8880d1b130de001841cda1322234df3f58ad7809f57665a84da03a1"
+    },
+    {
+      "binary": false,
+      "bytes": 27033,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_plan.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "5cd71b1dab61f33f74a02bdcd9fd88c68eccd6274b4254050eaa799cdf640b11"
+    },
+    {
+      "binary": false,
+      "bytes": 985050,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_prepared.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "3b1c72a936f8d02e7170cdcabb7ec8e3e8d44499275b84a29e4c03879d5215b7"
+    },
+    {
+      "binary": false,
+      "bytes": 245113,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evaluation_v6_representation_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "9eb20cab7f5ae4d41405ada2b13f92a52604a6f9b2c7293189165f3b127915ef"
+    },
+    {
+      "binary": false,
+      "bytes": 9445,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/evidence_locks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "fbb268a83faf8822c95a939b7ef161ff71200c05206a0f167a8f0dbbd85c3d31"
+    },
+    {
+      "binary": false,
+      "bytes": 203,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/filled_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a4f13031214b57e7beff5f4635cffb4dde49fd0eb6b4e0541be99cd0dc7e863e"
+    },
+    {
+      "binary": false,
+      "bytes": 4065,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/final_checks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8a49ef0c6f2591068a3ffe8c1811f5cdea3da281a67a5ebfe0ad3ac144945a1d"
+    },
+    {
+      "binary": false,
+      "bytes": 393,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/final_tests.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4a4cd706c513336276a6e54907d193248f2489ac74c56ac27c32f55d05bfb944"
+    },
+    {
+      "binary": false,
+      "bytes": 450,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/final_tests_on_freeze.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "e8a782fbaf13b81c1551aa645e73a58ecfb15eceb41a37c06ae9713706da5074"
+    },
+    {
+      "binary": false,
+      "bytes": 2557,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/final_validation_on_freeze.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a942265a7c7dda8d9d7cbcb33b0e04093ebdd2ea077c3d2ee9720dcf8755a28d"
+    },
+    {
+      "binary": false,
+      "bytes": 27659,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/freeze_manifest.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "28a3026dcf0b7a8ee40168d28420975a5b103dc0e4dd8db68a7d553fa2b7aa59"
+    },
+    {
+      "binary": false,
+      "bytes": 584830,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/hard_negatives_development.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f7c49e1e7e91827032c5aecf9f02d51f34cf1652dd54c04d0d8cd9a31212ed57"
+    },
+    {
+      "binary": false,
+      "bytes": 11928,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/historical_independent_v5_round19.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a3b438aee86f0dabf107be3107c3d50a2427ca8d4a9a8d25a742a1b520b5c7d6"
+    },
+    {
+      "binary": false,
+      "bytes": 2367755,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/historical_regression_fast.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "40fcd94909275fffcdf0e967f2fd3ad8aee59e8a18ce1730b992b7d5618c40f1"
+    },
+    {
+      "binary": false,
+      "bytes": 3676,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/input_safety.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "599e26267ac34fea2236a119ccaac052406175b6cbd90ed035c88071b9e7780d"
+    },
+    {
+      "binary": false,
+      "bytes": 2371,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/page_limit_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "01513bf135005dc83c6a95089de80f10a330a51ac053e0c6a14f8f9e1552b473"
+    },
+    {
+      "binary": false,
+      "bytes": 450695,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/performance_stability.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "5bb783df9a05dc4266ca5f03133f8fd1f95194bb0f39a519a85a278b08c59b94"
+    },
+    {
+      "binary": false,
+      "bytes": 722,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/pre_freeze_gate.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b4896a6ef1cf4774d72bb33d20335477da4173451115e65b88b7334c7c89fd6d"
+    },
+    {
+      "binary": false,
+      "bytes": 740,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/pre_freeze_tests.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "34da54aa26f22b0775bb9c50c9c669da9c16b245e7a689051fc184b0dbf6645d"
+    },
+    {
+      "binary": false,
+      "bytes": 506066,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/release_gate_fast.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "c7c8d4cbe784dc8f109e81759d35fa4bb3e960721dde458b622eaf9a78f5e677"
+    },
+    {
+      "binary": false,
+      "bytes": 203,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/retrieval_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a4f13031214b57e7beff5f4635cffb4dde49fd0eb6b4e0541be99cd0dc7e863e"
+    },
+    {
+      "binary": false,
+      "bytes": 203,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/robustness_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a4f13031214b57e7beff5f4635cffb4dde49fd0eb6b4e0541be99cd0dc7e863e"
+    },
+    {
+      "binary": false,
+      "bytes": 203,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/scan_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a4f13031214b57e7beff5f4635cffb4dde49fd0eb6b4e0541be99cd0dc7e863e"
+    },
+    {
+      "binary": false,
+      "bytes": 6100,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/technical_attempt_history.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "046dab6fb5e8b06c8b1756e0a4cb5afc6a2aecf4720c104209d98eb15e3b0114"
+    },
+    {
+      "binary": false,
+      "bytes": 8802,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_release_v4.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "93fb3726863293797a362a82a2c884be528eee98e47eac4de472227c181507d1"
+    },
+    {
+      "binary": false,
+      "bytes": 3837709,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/unknown_release_v4_observations.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "50dc1ac906d095b33a145ee27ef74c6462dca31c758d84af5671f0ee25fe2191"
+    },
+    {
+      "binary": false,
+      "bytes": 759,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_release_v4_started.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "e1ff93c58ee79677458b74de933622e918551a9a5112eefdf0f23d60a685d26e"
+    },
+    {
+      "binary": false,
+      "bytes": 1280948,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/unknown_v4_candidates.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b4f1205a410e5872b0091751f5b11152a77c124442a82a78bedc2a477bbb0668"
+    },
+    {
+      "binary": false,
+      "bytes": 1611,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_v4_preflight.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "cc845f815c53f3b7b9080d6d25539fd0a67d6e67a3261c9df3c3b9e31461afe6"
+    },
+    {
+      "binary": false,
+      "bytes": 944,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_v4_preflight_initial_auto.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "998aee7b603ceac0187671baa1428db53ee6ec0901a1ee5096fed01df35a95fd"
+    },
+    {
+      "binary": false,
+      "bytes": 1487,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_v4_preflight_primary_initial.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "1a1294505c8cb2d51e2ebeb00dac7bde7b8756c3e82175cf768661326c4d7f6a"
+    },
+    {
+      "binary": false,
+      "bytes": 4285,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_v4_selection.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4beb7d65532ee1d83cf3eb9c068a23d3695d4af86a7b72f78c38c1b2b365f611"
+    },
+    {
+      "binary": false,
+      "bytes": 1672111,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/unknown_v4_truth_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "874ea377350d63e23c01515178081617599cac1b38dfba832313a9f65fa0b17d"
+    },
+    {
+      "binary": false,
+      "bytes": 1819847,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/unknown_v4_truth_initial_auto.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "80fb8aef483947da2c873c02f12e2d8f7807ec50bf29e2382f2ecbe339aeac3b"
+    },
+    {
+      "binary": false,
+      "bytes": 1461983,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/unknown_v4_truth_primary_initial.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "cd65949e72cce74636aeb530bc9b35dec483a929fee323fa8c8fafdd6f1a067a"
+    },
+    {
+      "binary": false,
+      "bytes": 1705755,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round21/unknown_v4_truth_primary_v2.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "9935859ef930dff2bc97ebb0628ce1d095c7eb84251754cde9bb39232736bbe8"
+    },
+    {
+      "binary": false,
+      "bytes": 957,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/unknown_v4_truth_revision_history.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b611ba5f13887cfecdde0042e9565f93bc47090a444a8e21e0d3ad8ab286dba9"
+    },
+    {
+      "binary": false,
+      "bytes": 81991,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/v6_identity_eligibility.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d1609490714823968645fbca2fd10bf08ec469c9942e16634df401732cbe4752"
+    },
+    {
+      "binary": false,
+      "bytes": 368595,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/v6_pool_prospects.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "db670ae5f8bad37437674a944c260ccce67307e50f9d7f6d7201563da26d3eeb"
+    },
+    {
+      "binary": false,
+      "bytes": 1030,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/v6_preflight.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bf3f96f8042df5bc02ad4af23d54a7a407cb58b487d9a88be84f409c762f4e5a"
+    },
+    {
+      "binary": false,
+      "bytes": 2603,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round21/v6_source_eligibility.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "d68c2575d7b86cc6fd9d72b9978b721370d7b9d13f81746d5a6d7f6977249650"
+    },
+    {
+      "binary": false,
+      "bytes": 59625,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/archive_serialization_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "ccde6c499e825fc22e2aef292f548daaef2b09424ca71bae7381b0998af1b6cd"
+    },
+    {
+      "binary": false,
+      "bytes": 197916,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/baseline_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f48b52d3610b981f54e9ed4c1374c24361545094537797229fad6fbde064e82e"
+    },
+    {
+      "binary": false,
+      "bytes": 179,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/candidate_metadata.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "9c93e0b6105d7ddab8c4a5b38b40bb9ffa12e4c24d5e92ba2a780881a6b6bd78"
+    },
+    {
+      "binary": false,
+      "bytes": 1448739,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/canonical_post_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "2cba3512916c835288775c5e4b3f469b6978cb831e2f450afe9e7918b1d68128"
+    },
+    {
+      "binary": false,
+      "bytes": 9740,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/coverage.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a9b2772c53e436f50a4ad974fb71a400a766097153c1e22eec22d8456e825dfb"
+    },
+    {
+      "binary": false,
+      "bytes": 23658874,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/end_to_end_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "89872d96dd835b7bf8b3db42476effc2c5440613ee5770147bfba68eae8839ba"
+    },
+    {
+      "binary": false,
+      "bytes": 32147,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_freeze_manifest.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8c2a50e2dd31dbb2110d1fc4b41ebf56c3bc5eb58f221857515c92edeec9d273"
+    },
+    {
+      "binary": false,
+      "bytes": 23081,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_v6_breakdown.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "9692d2c88f393d25ccefd60689e2902bf415475b9a68672f11eb16feca6151bb"
+    },
+    {
+      "binary": false,
+      "bytes": 386769,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_v6_failures.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "290019233974837532a59b61880c1ee3bf3c0d3aadd73b9bc2ad7036d5e85e70"
+    },
+    {
+      "binary": false,
+      "bytes": 4917,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_v6_gate.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a9c0c96d6ddebcefdc622e5ba034b116e0e2be11924eaed7cf24cce4161bf5c5"
+    },
+    {
+      "binary": false,
+      "bytes": 670,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_v6_leakage.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "3a36e24eeb6e457347a705c64490da916a035b9ab801f711146174e11782b9b0"
+    },
+    {
+      "binary": false,
+      "bytes": 19819668,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/evaluation_v6_observations.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "6a230f43e2e98e4633520c8de5e99075af15c51b9d5090ce7a86217b10d19afe"
+    },
+    {
+      "binary": false,
+      "bytes": 451,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_v6_preflight.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "a94bf846bafcea6a74d6d14097d7bd123a2b64f61b6828f437491da0bd01c604"
+    },
+    {
+      "binary": false,
+      "bytes": 801,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evaluation_v6_started.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "c699cdb1238fab421978166011d7651729562db83499a50e7f303afc239ff92f"
+    },
+    {
+      "binary": false,
+      "bytes": 7481,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/evidence_locks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8248cb475b128e2cf5d29018e3736221b7127a6c990240b1dc6584d368865d9a"
+    },
+    {
+      "binary": false,
+      "bytes": 1416,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/filled_failure_geometry.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "e6e7606a87d77625637aacb16af7e6e0eb4aa19364280aced208c1ad6d4ed9dc"
+    },
+    {
+      "binary": false,
+      "bytes": 15465,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/filled_generation_failure_audit.csv",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b56d11514794305c9901f3d14b2a8d3e8b585cfc89628dcc884bb31abaac969e"
+    },
+    {
+      "binary": false,
+      "bytes": 125434,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/filled_generation_inputs.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "53b32905ed875ce54d2bdec5beec90c5aaae0fd660396ad82920bddc348f7324"
+    },
+    {
+      "binary": false,
+      "bytes": 579933,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/filled_generation_v2.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "1d67f99bba9d3369d384d2835f64f008e7120d0a67db1bf6ecb187c1ac634f70"
+    },
+    {
+      "binary": false,
+      "bytes": 579509,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/filled_generation_v2_observations.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "ff4d900418fe02f213c986f3e7c540d2c845743bad8887748e3eddaa7617064e"
+    },
+    {
+      "binary": false,
+      "bytes": 209,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/filled_policy_frozen.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b5f5ba801e8af38ed56e71f8ed2e04858bb7cb3534ac8f864fde038e8443253c"
+    },
+    {
+      "binary": false,
+      "bytes": 3597523,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/filled_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "408e88225bae34837157d177b0a3273fea718cc8c6cb6f52e6618900a4e13207"
+    },
+    {
+      "binary": false,
+      "bytes": 2710,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/final_checks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "c35786ef14fce34a88d381aa8e664a8601b9745e9b3d25de9d18037370761ae4"
+    },
+    {
+      "binary": false,
+      "bytes": 504,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/final_tests.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "065819e0355b68b76a29e6dd40a76fd54800d9323be97424b356293f2f6335c8"
+    },
+    {
+      "binary": false,
+      "bytes": 14709,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/generator_change_scope.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "f5b1de1e10b7b15c2544735162e61471d2fdaf7ca81341ae5c70e760d5cc854b"
+    },
+    {
+      "binary": false,
+      "bytes": 1346,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/historical_independent_v6_round22.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "139a7c682dd0fd6785e215d90395d0bd32d72f176949c4847218cfe4a7b08a2d"
+    },
+    {
+      "binary": false,
+      "bytes": 2368022,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/historical_regression_fast.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "61df5a592892dbdc9b90d171d6523784b81f13fd79e029dbaa5e2c9df827b790"
+    },
+    {
+      "binary": false,
+      "bytes": 3676,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/input_safety.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "3b132aead5225911a03b1bac40a97eab6ce500456ec1e87ff56a1da1077c0d13"
+    },
+    {
+      "binary": false,
+      "bytes": 2371,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/page_limit_audit.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "01513bf135005dc83c6a95089de80f10a330a51ac053e0c6a14f8f9e1552b473"
+    },
+    {
+      "binary": false,
+      "bytes": 450525,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/performance_stability.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "630ed53c5a06a59c0a28c589b3ae8539d025b0f504086f24790fd3f1900ac198"
+    },
+    {
+      "binary": false,
+      "bytes": 600,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/post_v6_checks.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "cf974fe81ab34dcf425573b5894babbb733b436988e344c058f37a32812a99d8"
+    },
+    {
+      "binary": false,
+      "bytes": 4464898,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/post_v6_observations.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "5452e2a884354f1786a67ceeab12c2e6020566affac6848f3292a78ea9fe0ee0"
+    },
+    {
+      "binary": false,
+      "bytes": 9006,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/recognition_freeze_check.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "b23cbf410cd7fc910366941021b9779c57a1da1eab9ec1267acfa81788d870d9"
+    },
+    {
+      "binary": false,
+      "bytes": 505979,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/release_gate_fast.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "2b7dc589e2686b40542bdd6e0f37292ec148e1da815149fbce324642991f5a15"
+    },
+    {
+      "binary": false,
+      "bytes": 414,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/result_hash.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "c3640ac78ad2dfadcd55e6f11134ab42ab652be080e555f4debc40341097af35"
+    },
+    {
+      "binary": false,
+      "bytes": 243,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/retrieval_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "9b1f1dd520c7c8a9e1635d509414fd53134be4c5d9a77470a0211b6771dd7fba"
+    },
+    {
+      "binary": false,
+      "bytes": 19821921,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/robustness_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "95148a129067d6ab38510ac65e6bed39ed117b440f4009b78b96f3d4e2f22a2b"
+    },
+    {
+      "binary": false,
+      "bytes": 2312039,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/safety_post_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "47901e04065906dfd3ee654394f2d8a75934164ce6b102ff878a868a6e7183c2"
+    },
+    {
+      "binary": false,
+      "bytes": 13588184,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": true,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/scan_v6.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "7956fddcc2185415e57415423f4c103cc78645e3e0a9499ddaf6b8efd2e2e68c"
+    },
+    {
+      "binary": false,
+      "bytes": 4496,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/technical_attempt_history.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "25a993364102ef9c86fc1a5f1a3058e5c5ade0628c6b97e7e286b5c2ab8a8ac3"
+    },
+    {
+      "binary": false,
+      "bytes": 1206743,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": true,
+      "path": "benchmarks/results/round22/v6_representation_manifest.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "20254f583c03be8555bce9fe025307753453ee2e7d8786284ea0da2a533f61f7"
+    },
+    {
+      "binary": false,
+      "bytes": 2257,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/visual_review_inputs.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "69aa9a7eba833c186d1d5ddeba44e9364a01d6cd10191ce502fe932f83bb5f6a"
+    },
+    {
+      "binary": false,
+      "bytes": 756,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round22/visual_review_result.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "bdf529fa18f3430a1c1c5b49d43182e145f1820de053ceba18a320caf2e3858e"
+    },
+    {
+      "binary": false,
+      "bytes": 55702,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/initial_inventory.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "4e3f9eca37f1785096a44f82235f4130ae4db372d14e83988cc70d33fbf3400c"
+    },
+    {
+      "binary": false,
+      "bytes": 229643,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/legacy_ci_reference.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "c67fb936a63b0f12972efb3e509d2069baad184ccebf026bd17064f6aa352476"
+    },
+    {
+      "binary": false,
+      "bytes": 3022,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/precommit_validation.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "e619b2e4ae7b407ec64c286a0146deba306d21b9663e54762c8bf932030a0ba9"
+    },
+    {
+      "binary": false,
+      "bytes": 24003,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/recognition_freeze_verification.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "77ffd1730a300e1d70fdf1aabeb4173d8d128bb21f7d99799eb1249c82d68c75"
+    },
+    {
+      "binary": false,
+      "bytes": 401,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/secret_scan.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "da9e3611f04b8d7071fa00429b47d34a5f02e4a64275ece8097d1d675080f983"
+    },
+    {
+      "binary": false,
+      "bytes": 104648,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/tracking_inventory.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "8e411035bb5e7ea3d38d8643aefb793807b81b08d8973d9b3940cf903004edc2"
+    },
+    {
+      "binary": false,
+      "bytes": 247447,
+      "classification": "SHOULD COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/results/round23/version_occurrences.json",
+      "reason": "Public synthetic/official-source metadata, immutable observations and audit; evidence locks require exact retained files",
+      "sha256": "6fffa6c5195d21d87d24e34415826429518915ba801ea672e6025ea03c45fd29"
+    },
+    {
+      "binary": false,
+      "bytes": 7311,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round20_calibrate.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "4425764550443507c35a0e5ee770a16bc2f63da6133358ec4c9c3932b30ef48a"
+    },
+    {
+      "binary": false,
+      "bytes": 2321,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round20_gates.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "81d9d1965703f6b2dd6de530c4d2fadd475869d657a207e20297c40c41156851"
+    },
+    {
+      "binary": false,
+      "bytes": 8332,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round20_performance.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "243a32e86c5e843b0d433312e563c97a80b385d35f243f06314213003b5f86b1"
+    },
+    {
+      "binary": false,
+      "bytes": 7704,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round20_prepare.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "bb9aa43aa06dcfbdd6fb509d83f588fbf4f98ff5cde614256fbdd58cc009bcee"
+    },
+    {
+      "binary": false,
+      "bytes": 5747,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round21_calibrate.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "4dc8f58de2085463282753c01a8334510318a4aac86d222ff1872c1dc76dc2b1"
+    },
+    {
+      "binary": false,
+      "bytes": 2321,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round21_gates.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "c6b1585a7f3a19c5c300fbd3f2d41f0c4bc5a19d3a0d866b9572e2c95fb4eb9a"
+    },
+    {
+      "binary": false,
+      "bytes": 8332,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round21_performance.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "4f22e22cdb6641c157714da7acef52c4952629eac4eda9274635deffc22a599b"
+    },
+    {
+      "binary": false,
+      "bytes": 18889,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round21_release.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "3ad88a611a0098044d99d3eb221036a596a423f5b1d444acd74c1711e2f387f8"
+    },
+    {
+      "binary": false,
+      "bytes": 10498,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round22_fill.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "72b847db2d00c5d29b21a77624ac3f4af9dc9a674a50555b4f41be0551cde2c3"
+    },
+    {
+      "binary": false,
+      "bytes": 854,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round22_performance.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "b6aef7418074dfad7ef760c45559bc29e12e8c21d9439cbb7146ac0559d5dde0"
+    },
+    {
+      "binary": false,
+      "bytes": 4211,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round22_post.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "c4d6b3dce2fbe1573d359e72b98e472554b3aa84c551a047bfb504e6a4772307"
+    },
+    {
+      "binary": false,
+      "bytes": 12187,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round22_prepare.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "d5bddf752b51a3158de5c3cafaa1fc4f260027bccce33cd89bd80465fda1cfb8"
+    },
+    {
+      "binary": false,
+      "bytes": 11056,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/round22_release.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "a0cac15f1f3ba9d08ee7aa24b682744d567bfe9fab8bb15c3bb16a1f52526200"
+    },
+    {
+      "binary": false,
+      "bytes": 1432,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "benchmarks/schemas/round21_observations.schema.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "d652047a85b5f673496e71bec0979ecdd88f3c19d4efd0d4061e542f9d715898"
+    },
+    {
+      "binary": false,
+      "bytes": 1020,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "data/recognition_profiles/fingerprint_decision_v6.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "6111853da8c0fee57650395839f674e30f90774bf97465a769d918b694b97742"
+    },
+    {
+      "binary": false,
+      "bytes": 1102,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "data/recognition_profiles/fingerprint_decision_v7.json",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "410b19049b368d8b74a0ea1c80798db68737a23ab4164d4364062aad56d75c5b"
+    },
+    {
+      "binary": false,
+      "bytes": 6842,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/CONTINUITA_OPERATIVA.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "d42ac723c0acff900fcd00b271dce2b8c421729fcb58459735a56fb745a2ce92"
+    },
+    {
+      "binary": false,
+      "bytes": 3352,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/DECISION_POLICY_V6.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "e836f65d50460f316b2f4f2b7c73ecaf2a3e9cfea9d06cf1adb5786016169b73"
+    },
+    {
+      "binary": false,
+      "bytes": 4733,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/DECISION_POLICY_V7.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "89ebd60beb4704a92b10935de162a0a05327f93a8f29805b723622d35b72c2f6"
+    },
+    {
+      "binary": false,
+      "bytes": 3992,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/RELEASE_NOTES_v0.7.0-rc1.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "2c2c932ead926741866ec3c5f3d9039bf28fa2dc5944c3928ab57e859096f45a"
+    },
+    {
+      "binary": false,
+      "bytes": 1591,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND20_BASELINE_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "1460b30316b08f124cf1778ca5c50afb1dcb289a8c2fb166587285f18a7e02f2"
+    },
+    {
+      "binary": false,
+      "bytes": 10778,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND20_REPORT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "bfe7bda4143656d6dcd401fba2e9c74438476e4ac3347d5630774c25d81d228e"
+    },
+    {
+      "binary": false,
+      "bytes": 1709,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND20_V5_FAILURE_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "8b244dc93a6dcbd78d8cc42f9510df0be301e4b62393b5a91a6f8c55848b2f39"
+    },
+    {
+      "binary": false,
+      "bytes": 1189,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND21_BASELINE_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "1afc4bb8bc25fe831a86bd608a51a5f35ad375ceacd975912a9a07d866bfca04"
+    },
+    {
+      "binary": false,
+      "bytes": 3175,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND21_EVALUATION_PROTOCOL.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "2f3e6c444e8d21f10b787b8db7340fda156bf6e274cfdfe812b0d56cbdda21b6"
+    },
+    {
+      "binary": false,
+      "bytes": 11975,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND21_REPORT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "f4191dfe248b1571ba45420d7029aff03bb53f3e1df09d8147c913ddf521cef3"
+    },
+    {
+      "binary": false,
+      "bytes": 4466,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND21_V6_SOURCE_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "f74db6bcaaf77130a03dc1173ec656bb01b45085164009a636fed7f70f91e602"
+    },
+    {
+      "binary": false,
+      "bytes": 2719,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND22_BASELINE_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "dcc4094f010ac54354a171a196615e641e07531420ecec8bd661d2fc230dad62"
+    },
+    {
+      "binary": false,
+      "bytes": 1231,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND22_FILLED_GENERATION_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "190ca197f535f7114d12ab403a9d824baa652c1c7a15b1a1c0738c454be12868"
+    },
+    {
+      "binary": false,
+      "bytes": 15843,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND22_REPORT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "79985c8b94b14f948d28756e7e634164aba903fc3f7baa366b397bf4b525c67c"
+    },
+    {
+      "binary": false,
+      "bytes": 3274,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND23_RELEASE_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "6002c4fe6ace6e8a9162cab2ff732e205e480da238fe9480b87d9591219eab24"
+    },
+    {
+      "binary": false,
+      "bytes": 1539,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND23_REPORT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "8becf98f31cc9c174a180f7234b83ba458c3d286441d193623bdb8c74b69d539"
+    },
+    {
+      "binary": false,
+      "bytes": 41255,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "docs/ROUND23_TRACKING_AUDIT.md",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "98ee9e8bc2d48927da969794682403f7e5aeca61c76bf756efd3591b9c87aef1"
+    },
+    {
+      "binary": false,
+      "bytes": 7509,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "maintenance/round21_unknown_acquire.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "4093ba29905ebd80d74e266e20bd067059b928a44c3639a88bfcd97d18ba65e5"
+    },
+    {
+      "binary": false,
+      "bytes": 5479,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_baseline.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "a5436a58ae2cdff7641d9366ef4b01a5ccc042124655071c7275b5837e336354"
+    },
+    {
+      "binary": false,
+      "bytes": 3715,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_checks.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "f8daef417b4b194114661f2832ed226b84706469d805d936d21fd2bd4c791603"
+    },
+    {
+      "binary": false,
+      "bytes": 1555,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_common.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "134cb4ab064a50a39ca7fe2e26fd804661b0331ba92ba6d1680ff3443c4802d6"
+    },
+    {
+      "binary": false,
+      "bytes": 11826,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_failure_audit.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "293f5ba92fd6cf941f37500a7608fb6434a6537efd36df7e6b87ab3cd07f5f40"
+    },
+    {
+      "binary": false,
+      "bytes": 26299,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_finish.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "116f9c64e5c0777918500eb6ea2b9473cfdf9cb642507defc31a63a2ef2cb639"
+    },
+    {
+      "binary": false,
+      "bytes": 6443,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_package_verifier.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5bb31d9c3bbecd1b75f2b970e8fd5c78de49a3622d734dd853badaa1e0108b8f"
+    },
+    {
+      "binary": false,
+      "bytes": 7566,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_registry.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "dbbe047f71995d40f1a26172459a8411d57fbf1ce4bbcddc35a06f76244172ae"
+    },
+    {
+      "binary": false,
+      "bytes": 1875,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round20_unknown_preflight.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "0c9e31ec97f936c71aafadeb72aacafcfbef6143b57236eac05ff329c528106f"
+    },
+    {
+      "binary": false,
+      "bytes": 4999,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_audits.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5ad70d1372dd3586342cc83611a8095f87d0ad881fca59cddbd343fc4c33a4bc"
+    },
+    {
+      "binary": false,
+      "bytes": 4533,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_baseline.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "c387483113432aaaa9bee8a9eebcb1cc91b05581797a19a53f06f3fe629dd509"
+    },
+    {
+      "binary": false,
+      "bytes": 3715,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_checks.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "0d4869417c29ce76a58f3ec60a4e870af8489f8c5e2e4bf687ba953612630ea7"
+    },
+    {
+      "binary": false,
+      "bytes": 3170,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_common.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "1bbf35b85b747b2066b858880aee672a6c42e945870da72c0d191e2bc68bc717"
+    },
+    {
+      "binary": false,
+      "bytes": 25345,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_finish.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "cc3199a46a47c84a3dadcbb415278cff92c87abd9d7640ca2363abfde503e9a9"
+    },
+    {
+      "binary": false,
+      "bytes": 4784,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_freshness.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "70996bd8c5ce598bbbadb14d238c36005dc185fc9b6414a1cc4f8162c1f86d37"
+    },
+    {
+      "binary": false,
+      "bytes": 6486,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_generation_resume.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "0b637482a08e92ed863e713f5ece0eb08a8bb71831f6e36cc8c8987222d57933"
+    },
+    {
+      "binary": false,
+      "bytes": 9086,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_package_verifier.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "f3248e1af669df78b7c34eb7a01de7ac668378bff7bd12cb378700d51edca85a"
+    },
+    {
+      "binary": false,
+      "bytes": 12536,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_prerequisites.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "b7f4d2b70e3c46e3a771e8a357c32c3e2eb1c8317a5f6219c17c76448c3dd863"
+    },
+    {
+      "binary": false,
+      "bytes": 10277,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_sources.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "3b784e1322bfc8c12418691224c4597c1d8eeebb9fb46c21c1d3dd48a10b36d3"
+    },
+    {
+      "binary": false,
+      "bytes": 8259,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_unknown_truth.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "0e2dab14584f07afdb720904996d2602dfe9fc2bb5fdaa598012c6c6b2aabc68"
+    },
+    {
+      "binary": false,
+      "bytes": 3557,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round21_validate_final.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "7b500fdd1ca11f87915f2d0a1f3b6d179d6e01907f0a08bcc392d66c1c282a06"
+    },
+    {
+      "binary": false,
+      "bytes": 7699,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round22_baseline.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "9dc1c5aac8d629b2b0b47569e38498706944efbfde983a9a3bbef1e9311bb779"
+    },
+    {
+      "binary": false,
+      "bytes": 4504,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round22_common.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "cb9b151fc18f3725b447e546036da04904936362b70005ac4b9c4cad9314128c"
+    },
+    {
+      "binary": false,
+      "bytes": 31957,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round22_finish.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5b9fa4a9d09174a422053a6ea86b96a134a17a594e515059e099194b3176206a"
+    },
+    {
+      "binary": false,
+      "bytes": 10527,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round22_package_verifier.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "c53791739477ae2dcd30e7c3482ea995aefdd7bc31d98934a8100ce076f8fd96"
+    },
+    {
+      "binary": false,
+      "bytes": 1682,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round22_snapshot.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "8cb004690ee0d6f08e9bb54180c2463ac7b02605201ccf48e1745ad59d69ec89"
+    },
+    {
+      "binary": false,
+      "bytes": 6097,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round22_validate_final.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "044b93a2004e4828ce3469cb112bb1f915d4081bef4a9dc4d1815a33e619161a"
+    },
+    {
+      "binary": false,
+      "bytes": 1107,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round23_checkout.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "89ea7529e5aab959f4a8605447e2c5c287e117fb86ec3c025a80fedc1819a980"
+    },
+    {
+      "binary": false,
+      "bytes": 2768,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round23_ci.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "600c72078c3dd78cd3af808e2652ca30e72723b8990465985c1829a37803ea8a"
+    },
+    {
+      "binary": false,
+      "bytes": 11400,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "scripts/round23_release.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "5385d6bb13857bf2d942f35d58275428d77cfad6280af2b2184b76dcb0bd1945"
+    },
+    {
+      "binary": false,
+      "bytes": 12192,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "src/fingerprint_decision_v6.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "4a7bad59ef1bfc4d306bd3d01d561dabf50e7e8b9befc3ed9032a7cfb09a46bd"
+    },
+    {
+      "binary": false,
+      "bytes": 17603,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "src/fingerprint_decision_v7.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "9748594384cd435e8e14359525ef6e32f7a69ea533b51b388c29ab901d8e0c34"
+    },
+    {
+      "binary": false,
+      "bytes": 4021,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round20.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "07da8b67dcd138cb741d65ef96031339d2500fba943749017f96cd8a5e205d15"
+    },
+    {
+      "binary": false,
+      "bytes": 4240,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round21.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "a078ca48444b276c56cdedbbfe4eca42f4061b21baf6bcbad9cc312fadb9112b"
+    },
+    {
+      "binary": false,
+      "bytes": 1917,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round21_release.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "04784ebd6297a09cd3e7e65e5684ca556c4cbe2d060e85a8e70356c1c1cff27b"
+    },
+    {
+      "binary": false,
+      "bytes": 5391,
+      "classification": "MUST COMMIT",
+      "over_10_MB": false,
+      "over_1_MB": false,
+      "path": "tests/test_round22_generator.py",
+      "reason": "Runtime/policy/test/reproduction harness or release documentation",
+      "sha256": "bbd548bca8130ceae2120227fae4a4acaf989415b00205d90c5dda5ad1113088"
+    }
+  ],
+  "large_file_policy": "Large JSONs are retained scientific provenance, not downloaded resources. No file >=100 MB; no new binary/database/index.",
+  "total_bytes": 225028798
+}

@@ -1,0 +1,762 @@
+{
+  "by_source": {
+    "10": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 110,
+      "entity_errors": 0,
+      "exact": 110,
+      "extraction_failed": 0,
+      "f1": 0.995475113122172,
+      "family": 0,
+      "n": 111,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9662560647018358,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "recall": 0.990990990990991,
+      "recall_ci95": {
+        "lower": 0.950726667364727,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9984079145129328
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "14": {
+      "FN": 0,
+      "FP": 0,
+      "TP": 6,
+      "entity_errors": 0,
+      "exact": 6,
+      "extraction_failed": 0,
+      "f1": 1.0,
+      "family": 0,
+      "n": 6,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.6096657120978346,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 1.0,
+      "recall_ci95": {
+        "lower": 0.6096657120978346,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "15": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 115,
+      "entity_errors": 0,
+      "exact": 115,
+      "extraction_failed": 0,
+      "f1": 0.9956709956709957,
+      "family": 0,
+      "n": 116,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9676757685506868,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "recall": 0.9913793103448276,
+      "recall_ci95": {
+        "lower": 0.9527801658718213,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9984766122233615
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "16": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 62,
+      "entity_errors": 0,
+      "exact": 62,
+      "extraction_failed": 0,
+      "f1": 0.9841269841269841,
+      "family": 0,
+      "n": 64,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9416559278986275,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "recall": 0.96875,
+      "recall_ci95": {
+        "lower": 0.8930270822904169,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9913878616538281
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "18": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 56,
+      "entity_errors": 0,
+      "exact": 56,
+      "extraction_failed": 0,
+      "f1": 0.9824561403508771,
+      "family": 0,
+      "n": 58,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9358060632812366,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.9655172413793104,
+      "recall_ci95": {
+        "lower": 0.8827085453568732,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9904920716688347
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "2": {
+      "FN": 7,
+      "FP": 0,
+      "TP": 109,
+      "entity_errors": 0,
+      "exact": 109,
+      "extraction_failed": 0,
+      "f1": 0.9688888888888889,
+      "family": 0,
+      "n": 116,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9659570262486751,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.9396551724137931,
+      "recall_ci95": {
+        "lower": 0.8806600390550563,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9704644466090546
+      },
+      "reject": 7,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "3": {
+      "FN": 20,
+      "FP": 0,
+      "TP": 45,
+      "entity_errors": 0,
+      "exact": 45,
+      "extraction_failed": 0,
+      "f1": 0.8181818181818182,
+      "family": 0,
+      "n": 65,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9213484012671117,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.6923076923076923,
+      "recall_ci95": {
+        "lower": 0.5720235708527267,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.7911296863307898
+      },
+      "reject": 20,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "5": {
+      "FN": 4,
+      "FP": 0,
+      "TP": 57,
+      "entity_errors": 0,
+      "exact": 57,
+      "extraction_failed": 0,
+      "f1": 0.9661016949152542,
+      "family": 0,
+      "n": 61,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9368611651470209,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9344262295081968,
+      "recall_ci95": {
+        "lower": 0.8431719832010424,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9742062955104335
+      },
+      "reject": 4,
+      "version_errors": 0,
+      "wrong": 0
+    }
+  },
+  "by_transform": {
+    "blur_mild": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 28,
+      "entity_errors": 0,
+      "exact": 28,
+      "extraction_failed": 0,
+      "f1": 0.9655172413793104,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8793566952341543,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9333333333333333,
+      "recall_ci95": {
+        "lower": 0.7867654163738308,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9815229762087295
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "contrast_minus20": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 29,
+      "entity_errors": 0,
+      "exact": 29,
+      "extraction_failed": 0,
+      "f1": 0.9830508474576272,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8830302015002593,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.9666666666666667,
+      "recall_ci95": {
+        "lower": 0.8332960900859082,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9940914096183874
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "crop_2pct": {
+      "FN": 3,
+      "FP": 0,
+      "TP": 27,
+      "entity_errors": 0,
+      "exact": 27,
+      "extraction_failed": 0,
+      "f1": 0.9473684210526315,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8754449702581328,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9,
+      "recall_ci95": {
+        "lower": 0.7437891742081593,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9654001112526658
+      },
+      "reject": 3,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "crop_5pct": {
+      "FN": 6,
+      "FP": 0,
+      "TP": 24,
+      "entity_errors": 0,
+      "exact": 24,
+      "extraction_failed": 0,
+      "f1": 0.8888888888888888,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8620237953250198,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.8,
+      "recall_ci95": {
+        "lower": 0.6269430358685175,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9049489282271013
+      },
+      "reject": 6,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "digital_canonical_derivative": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 38,
+      "entity_errors": 0,
+      "exact": 38,
+      "extraction_failed": 0,
+      "f1": 0.9743589743589743,
+      "family": 0,
+      "n": 40,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.908190131774416,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "recall": 0.95,
+      "recall_ci95": {
+        "lower": 0.8349612263085903,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9861793326138516
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "digital_normalized": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 35,
+      "entity_errors": 0,
+      "exact": 35,
+      "extraction_failed": 0,
+      "f1": 0.9722222222222222,
+      "family": 0,
+      "n": 37,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.9010990076755959,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "recall": 0.9459459459459459,
+      "recall_ci95": {
+        "lower": 0.822953456491869,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9850490231668423
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_0": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 19,
+      "entity_errors": 0,
+      "exact": 19,
+      "extraction_failed": 0,
+      "f1": 0.9743589743589743,
+      "family": 0,
+      "n": 20,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8318207759473837,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.95,
+      "recall_ci95": {
+        "lower": 0.763868806553258,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9911185511992047
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_1": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 19,
+      "entity_errors": 0,
+      "exact": 19,
+      "extraction_failed": 0,
+      "f1": 0.9743589743589743,
+      "family": 0,
+      "n": 20,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8318207759473837,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.95,
+      "recall_ci95": {
+        "lower": 0.763868806553258,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9911185511992047
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_2": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 19,
+      "entity_errors": 0,
+      "exact": 19,
+      "extraction_failed": 0,
+      "f1": 0.9743589743589743,
+      "family": 0,
+      "n": 20,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8318207759473837,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.95,
+      "recall_ci95": {
+        "lower": 0.763868806553258,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9911185511992047
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_3": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 19,
+      "entity_errors": 0,
+      "exact": 19,
+      "extraction_failed": 0,
+      "f1": 0.9743589743589743,
+      "family": 0,
+      "n": 20,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8318207759473837,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.95,
+      "recall_ci95": {
+        "lower": 0.763868806553258,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9911185511992047
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "filled_4": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 19,
+      "entity_errors": 0,
+      "exact": 19,
+      "extraction_failed": 0,
+      "f1": 0.9743589743589743,
+      "family": 0,
+      "n": 20,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8318207759473837,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.95,
+      "recall_ci95": {
+        "lower": 0.763868806553258,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9911185511992047
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "first_page_only": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 29,
+      "entity_errors": 0,
+      "exact": 29,
+      "extraction_failed": 0,
+      "f1": 0.9830508474576272,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8830302015002593,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.9666666666666667,
+      "recall_ci95": {
+        "lower": 0.8332960900859082,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9940914096183874
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "grayscale": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 28,
+      "entity_errors": 0,
+      "exact": 28,
+      "extraction_failed": 0,
+      "f1": 0.9655172413793104,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8793566952341543,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9333333333333333,
+      "recall_ci95": {
+        "lower": 0.7867654163738308,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9815229762087295
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "jpeg_60": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 29,
+      "entity_errors": 0,
+      "exact": 29,
+      "extraction_failed": 0,
+      "f1": 0.9830508474576272,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8830302015002593,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.9666666666666667,
+      "recall_ci95": {
+        "lower": 0.8332960900859082,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9940914096183874
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "jpeg_75": {
+      "FN": 0,
+      "FP": 0,
+      "TP": 30,
+      "entity_errors": 0,
+      "exact": 30,
+      "extraction_failed": 0,
+      "f1": 1.0,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8864866068260312,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "recall": 1.0,
+      "recall_ci95": {
+        "lower": 0.8864866068260312,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999999
+      },
+      "reject": 0,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "jpeg_90": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 28,
+      "entity_errors": 0,
+      "exact": 28,
+      "extraction_failed": 0,
+      "f1": 0.9655172413793104,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8793566952341543,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9333333333333333,
+      "recall_ci95": {
+        "lower": 0.7867654163738308,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9815229762087295
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "raster_150": {
+      "FN": 1,
+      "FP": 0,
+      "TP": 29,
+      "entity_errors": 0,
+      "exact": 29,
+      "extraction_failed": 0,
+      "f1": 0.9830508474576272,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8830302015002593,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 1
+      },
+      "recall": 0.9666666666666667,
+      "recall_ci95": {
+        "lower": 0.8332960900859082,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9940914096183874
+      },
+      "reject": 1,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "raster_200": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 28,
+      "entity_errors": 0,
+      "exact": 28,
+      "extraction_failed": 0,
+      "f1": 0.9655172413793104,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8793566952341543,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9333333333333333,
+      "recall_ci95": {
+        "lower": 0.7867654163738308,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9815229762087295
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "rotation_180": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 28,
+      "entity_errors": 0,
+      "exact": 28,
+      "extraction_failed": 0,
+      "f1": 0.9655172413793104,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8793566952341543,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9333333333333333,
+      "recall_ci95": {
+        "lower": 0.7867654163738308,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9815229762087295
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "rotation_270": {
+      "FN": 3,
+      "FP": 0,
+      "TP": 27,
+      "entity_errors": 0,
+      "exact": 27,
+      "extraction_failed": 0,
+      "f1": 0.9473684210526315,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8754449702581328,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9,
+      "recall_ci95": {
+        "lower": 0.7437891742081593,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9654001112526658
+      },
+      "reject": 3,
+      "version_errors": 0,
+      "wrong": 0
+    },
+    "rotation_90": {
+      "FN": 2,
+      "FP": 0,
+      "TP": 28,
+      "entity_errors": 0,
+      "exact": 28,
+      "extraction_failed": 0,
+      "f1": 0.9655172413793104,
+      "family": 0,
+      "n": 30,
+      "precision": 1.0,
+      "precision_ci95": {
+        "lower": 0.8793566952341543,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9999999999999998
+      },
+      "recall": 0.9333333333333333,
+      "recall_ci95": {
+        "lower": 0.7867654163738308,
+        "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+        "upper": 0.9815229762087295
+      },
+      "reject": 2,
+      "version_errors": 0,
+      "wrong": 0
+    }
+  },
+  "failure_count": 37,
+  "scope": "Post-result descriptive diagnostics only. No tuning;fresh V6 is immutable historical independent evidence for any later round."
+}

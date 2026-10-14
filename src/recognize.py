@@ -26,7 +26,7 @@ from src.models import (
 
 MIN_CONFIDENCE = 70.0
 MIN_SCORE_MARGIN = 5.0
-RULES_VERSION = "deterministic-11-fingerprint-decision-v5"
+RULES_VERSION = "deterministic-13-fingerprint-decision-v7"
 
 # Evidence points for the MVP. They are intentionally centralized and are not a
 # scientifically calibrated probability model.
@@ -931,6 +931,8 @@ def catalog_revision(
         "fingerprint_decision_v3": __import__('src.fingerprint_decision_v3',fromlist=['revision']).revision(),
         "document_fingerprints_v3": __import__('src.fingerprint_v3',fromlist=['revision']).revision(),
         "fingerprint_decision_v5": __import__('src.fingerprint_decision_v5',fromlist=['revision']).revision(),
+        "fingerprint_decision_v6": __import__('src.fingerprint_decision_v6',fromlist=['revision']).revision(),
+        "fingerprint_decision_v7": __import__('src.fingerprint_decision_v7',fromlist=['revision']).revision(),
         "technical_features": feature_revision(),
         "safety_profiles": profile_revision(),
         "documents": sorted((
@@ -970,7 +972,7 @@ def recognize_catalog(
         if page_context is None:
             from src.fingerprint_pages import RequestPages,field_signature
             page_context=RequestPages((text,),field_set=field_signature(form_field_names))
-        from src.fingerprint_decision_v5 import match as match_fingerprint
+        from src.fingerprint_decision_v7 import match as match_fingerprint
         fingerprint_result=match_fingerprint(text,document_list,file_sha256=file_sha256,
             pages=page_context,field_names=form_field_names,reference=reference_full_scan,diagnostics=fingerprint_diagnostics)
     elif fingerprint_index_v2().records:
@@ -1011,10 +1013,13 @@ def recognize_catalog(
     family_result=page_context.memo(family_key,metadata_family) if page_context is not None else metadata_family()
     # A known template with an unreadable revision cannot become another exact
     # version through the metadata fallback after a fingerprint refusal.
-    dominant=fingerprint_diagnostics.get('dominant_content_candidate')
+    dominant=fingerprint_diagnostics.get('dominant_content_candidate') or fingerprint_diagnostics.get('corroborated_content_candidate')
     if document_result.recognized and document_result.document is not None and dominant is not None and dominant!=document_result.document.id:
         fingerprint_diagnostics['metadata_veto']='metadata_content_conflict'
         document_result=RecognitionResult(False,0.0,reason='Metadati in conflitto con una firma testuale dominante: identità specifica rifiutata.',conflicts=('metadata_content_conflict',),candidate_ids=document_result.candidate_ids)
+    if document_result.recognized and fingerprint_diagnostics.get('tier')=='D_ambiguous':
+        fingerprint_diagnostics['metadata_veto']='fingerprint_ambiguity'
+        document_result=RecognitionResult(False,0.0,reason='Firma documentale ambigua: i soli metadati non risolvono l’identità.',conflicts=('fingerprint_ambiguity',),candidate_ids=document_result.candidate_ids)
     if document_result.recognized and document_result.document is not None:
         version=document_result.document.versione or ''
         if re.fullmatch(r'\d+(?:[.]\d+)+',version) and not re.search(
@@ -1022,7 +1027,7 @@ def recognize_catalog(
             document_result=RecognitionResult(False,0.0,reason='Revisione del modello non leggibile.',
                 conflicts=('missing_model_revision',),candidate_ids=document_result.candidate_ids)
     if not document_result.recognized and fingerprint_diagnostics:
-        policy='fingerprint-decision-v5' if fingerprint_index_v3().records else 'fingerprint-decision-v3'
+        policy='fingerprint-decision-v7' if fingerprint_index_v3().records else 'fingerprint-decision-v3'
         document_result=__import__('dataclasses').replace(document_result,reason=document_result.reason+' ['+policy+':'+str(fingerprint_diagnostics.get('reason_code') or fingerprint_diagnostics.get('tier'))+']')
     diagnostics = {
         "document_score_margin": document_result.score_margin,

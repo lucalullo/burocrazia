@@ -1,0 +1,35 @@
+{
+  "attempts": [
+    {
+      "explanation": "Preparation stopped at existing PDF100-page safety limit; next attempt records unsupported extraction and reuses cached public inputs.",
+      "log": "round20-development-preparation.log",
+      "log_sha256": "f1e27ab31f8257a657c9d13f7611ff68fb8eee70555240afc55ce47ae25a910a"
+    },
+    {
+      "explanation": "New unit fixture omitted required AdministrativeDocument fields; fixture corrected, assertions unchanged.",
+      "log": "round20-targeted-tests.log",
+      "log_sha256": "49100bf105a5c0aaa0613a9daa523d1add8ee16473cc031beb5b87b6a2034149"
+    },
+    {
+      "explanation": "Targeted recheck:64 passed.",
+      "log": "round20-targeted-tests-second.log",
+      "log_sha256": "cabac70eea15974545f019f26cf244fd702367c71e14d39dc4ee64912fef3e3e"
+    },
+    {
+      "explanation": "849 passed/1 failed/3 skipped: old Round8 test monkeypatched v5 although v6 is active. Test target changed to v6, safety assertion unchanged.",
+      "log": "round20-full-tests-initial.log",
+      "log_sha256": "b9782debd02ece45c3a2231a799b8a0ff675c20de351f2a52e41176e24e0e53a"
+    },
+    {
+      "explanation": "Development runner omitted category in evaluate_case adapter. Zero durable observations; invocation count before failure not recoverable. Runner fixed, distinct retry journal and log; no independent evaluation involved.",
+      "log": "round20-development-v6-initial.log",
+      "log_sha256": "ea49933ad66c2d471e6a9c1ac67e712b687378a7b99fd6bdf6b1149afa34efbe"
+    },
+    {
+      "explanation": "Final five-rule policy targeted check:23 passed/35 deselected, including the original metadata-content veto assertion.",
+      "log": "round20-final-policy-targeted.log",
+      "log_sha256": "d9a89dd5e3a9a8971503bc82d28408aa2d97de559cb182bca5ea0dd248959cc5"
+    }
+  ],
+  "scope": "All logs and partial work preserved locally. These tooling failures are separate from final engine measurements; no historical result rewritten."
+}

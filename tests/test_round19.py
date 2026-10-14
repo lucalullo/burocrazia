@@ -12,7 +12,11 @@ def pdf_fixture():
         return pdf.tobytes(no_new_id=True)
 
 def test_existing_semantic_freeze_is_reused():
-    assert sealed()['freeze_git_commit'].startswith('aa81678')
+    from benchmarks.historical_seals import verify_engine_at
+    from scripts.round19_common import read
+    f=read('benchmarks/results/round18/freeze_manifest.json')
+    assert f['freeze_git_commit'].startswith('aa81678')
+    verify_engine_at(f['freeze_git_commit'],f['engine_files_sha256'])
 
 def test_scan_seed_changes_actual_pixels_and_is_repeatable():
     from PIL import Image,ImageChops

@@ -1,8 +1,6 @@
-<!-- round9-current -->
-Round 9 **NOT READY**; public version remains 0.6.1, schema 610. Two historical false accepts repaired; canonical 979/979. File coverage 81.26%; 68 confirmed unknowns from four sources, below the required size/diversity. Warm recognition p95 187.76 ms (250 ms target). No engine freeze or independent v5 evaluation. See the [Round 9 report](docs/ROUND9_REPORT.md).
-<!-- /round9-current -->
-
 # BurOCRazia
+
+Release candidate **0.7.0-rc1** · schema **610** · public stable **v0.6.1**.
 
 **Making Italian bureaucracy easier to understand.**
 
@@ -256,7 +254,24 @@ See [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Round 7 candidate **NOT READY**; public software remains 0.6.1. Catalog: 1,216 real identities, 1,212 operational, with no new identities. Fingerprint coverage is 941/1212 (77.64%) overall and 941/1158 (81.26%) for documents with files. Canonical recognition is 979/979; robustness is 183/372 and scans are 134/280. Only 9/50 AcroForms were generated; all 41 generation failures remain in the denominator. Recognition p95 is 444.65 ms. R6 is now development data. See [BENCHMARK.md](docs/BENCHMARK.md) and [ROUND7_REPORT.md](docs/ROUND7_REPORT.md) for gates and limitations. External CI is pending.
+Candidate **0.7.0-rc1**, pre-1.0; schema 610. The public stable remains **v0.6.1**. Recognition v7 has been frozen since Round 22: local deterministic fingerprints, page-level matching and cautious rejection. Family matching remains **experimental / insufficiently validated**.
+
+| Local RC benchmark, Round 22 | Result |
+| --- | ---: |
+| Independent single-shot V6 | 560/597 exact, precision 100%, recall 93.80% |
+| Scan recall / filled recall | 93.33% / 95% |
+| Filled generation | 100/100 |
+| Single-shot unknown v4, Round 21 | 120/120 correct rejections |
+| Entity / version errors | 0 / 0 |
+| Retrieval @1 / @25 | 99.33% / 100% |
+| Canonical / safety | 1007/1007; 705 confirmed negatives, 0 false accepts |
+| Warm recognition, median of seven p95 runs | 186.09 ms |
+| Round 22 full suite | 889 pass, 0 fail, 3 skip |
+| File-backed identity coverage | 1002/1158 (86.53%) |
+
+These are local experiments on official templates and synthetic transformations with real OCR, not certification of accuracy on field scans. No legal or personalized advice; this RC is not certified for sensitive production. Official documents may evolve; OCR depends on Tesseract and input quality. Original V5 remains historical independent evidence for the former engine; later replays are tuning-contaminated development. V6 and unknown v4 are not rerun during release preparation.
+
+Protocols, denominators and limits: [BENCHMARK.md](docs/BENCHMARK.md), [ROUND22_REPORT.md](docs/ROUND22_REPORT.md), [release notes](docs/RELEASE_NOTES_v0.7.0-rc1.md). CI and publication status: [ROUND23_REPORT.md](docs/ROUND23_REPORT.md).
 
 ## Tests
 
@@ -329,7 +344,7 @@ For catalog data and third-party materials, see [DATA_NOTICE.md](DATA_NOTICE.md)
 
 Created by [Luca Lullo](https://github.com/lucalullo).
 
-## Round 7 — NOT READY
+## Historical: Round 7 — NOT READY
 
 Decision policy v3 and retrieval v2 were frozen before the fresh evaluation: 372 planned attempts, 331 generated representations across 42 identities, 280 scan-like cases, and 9/50 generated AcroForms (41 generation failures). Coverage is 77.64% overall and 81.26% for documents with files. Canonical recognition is 979/979; exact recall is 49.19% for robustness, 47.86% for scans, and 14.00% for filled attempts. Failures stay in the planned denominator. Exact precision is 100% on emitted matches. Historical unknown rejection is 100.00%, using previously calibrated cases. Family recognition remains insufficiently validated (0/16 evaluable families). Recognition p95 is 444.65 ms; index size is 39832045 bytes.
 

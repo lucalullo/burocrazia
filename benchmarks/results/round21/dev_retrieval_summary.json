@@ -1,0 +1,67 @@
+{
+  "V5_development_false_rejects": {
+    "n": 93,
+    "retrieval": {
+      "1": {
+        "count": 87,
+        "fraction": 0.9354838709677419
+      },
+      "10": {
+        "count": 92,
+        "fraction": 0.989247311827957
+      },
+      "25": {
+        "count": 92,
+        "fraction": 0.989247311827957
+      },
+      "5": {
+        "count": 92,
+        "fraction": 0.989247311827957
+      }
+    }
+  },
+  "V5_root_causes": {
+    "candidate_rank1_but_margin": 21,
+    "char_overlap_high_but_unused": 7,
+    "extraction_noise": 27,
+    "first_page_partial": 3,
+    "other": 3,
+    "scan_OCR_low": 21,
+    "shared_template": 1,
+    "visual_support_high_but_unused": 10
+  },
+  "all_confirmed_false_rejects": {
+    "n": 170,
+    "retrieval": {
+      "1": {
+        "count": 159,
+        "fraction": 0.9352941176470588
+      },
+      "10": {
+        "count": 169,
+        "fraction": 0.9941176470588236
+      },
+      "25": {
+        "count": 169,
+        "fraction": 0.9941176470588236
+      },
+      "5": {
+        "count": 169,
+        "fraction": 0.9941176470588236
+      }
+    }
+  },
+  "original_observations_sha256": "f47810129ac6cdcd2be5a1e5382f6649437c70730a402914c738407091a0d085",
+  "policy": "Existing page retrieval retained. Expected_id is diagnostic truth only and must never influence runtime acceptance. Missing/unmeasured channel values remain null; visual0 may mean not rendered.",
+  "recognition_calls": 0,
+  "root_causes": {
+    "candidate_rank1_but_margin": 61,
+    "char_overlap_high_but_unused": 15,
+    "extraction_noise": 29,
+    "first_page_partial": 3,
+    "other": 3,
+    "scan_OCR_low": 35,
+    "shared_template": 6,
+    "visual_support_high_but_unused": 18
+  }
+}

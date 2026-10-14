@@ -5,6 +5,7 @@ __pycache__/
 *.log
 .env
 .env.*
+.codex-context/
 !.env.example
 data/*.db*
 data/*.backup*
@@ -26,6 +27,7 @@ tmp*/
 
 reports/
 benchmark-results.json
+benchmark-release-results/
 .pytest_tmp*/
 collaudo-*/
 maintenance/cache/

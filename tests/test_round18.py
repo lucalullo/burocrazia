@@ -7,7 +7,10 @@ from benchmarks.unknown_release import balance
 
 def master():return read('benchmarks/results/round17/unknown_v3_truth_audit.json')['confirmed_cases']
 
-def test_round18_entire_engine_and_catalog_remain_frozen():invariant()
+def test_round18_entire_engine_and_catalog_remain_frozen():
+    from benchmarks.historical_seals import verify_engine_at
+    f=read('benchmarks/results/round18/freeze_manifest.json')
+    verify_engine_at(f['freeze_git_commit'],f['engine_files_sha256'])
 
 def test_imbalanced_master_has_a_maximal_balanced_release_subset():
     b=balance(master());assert b['max_concentration']>.25

@@ -1,0 +1,658 @@
+{
+  "differences": [
+    {
+      "archive_sha256": "83e18ebb016de4f6f0692dc7765c608cd95a9a8b4183790d9dd71c6196dce151",
+      "path": ".gitattributes",
+      "prior_Round21_Git_blob_sha256": "b0a08c3b31839453ab89fc1bfff42ca1becf56fa56bf4e817460aba6b9fd3e9d",
+      "prior_Round21_archive_sha256": "83e18ebb016de4f6f0692dc7765c608cd95a9a8b4183790d9dd71c6196dce151",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "903a1e349e059dc9c641063a06c2ee796b428b308ee3bf174b31b4aa5c1b5467"
+    },
+    {
+      "archive_sha256": "98e26ed5520cd289537c48f33fecb9378c00f7596f9813006038f03f45df2875",
+      "path": "benchmarks/results/baseline_v0.6.1_development.json",
+      "prior_Round21_Git_blob_sha256": "98e26ed5520cd289537c48f33fecb9378c00f7596f9813006038f03f45df2875",
+      "prior_Round21_archive_sha256": "98e26ed5520cd289537c48f33fecb9378c00f7596f9813006038f03f45df2875",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "aa12d1b4fa76b5d4d305974048bf964b0189c46e9e0456ae264fa7bd220943fd"
+    },
+    {
+      "archive_sha256": "918139deab04e3dbe2c8fc0deadddf0a9e4fef0e97ea6f2fa8db3d7c6cf3f177",
+      "path": "benchmarks/results/baseline_v061/catalog_coverage.json",
+      "prior_Round21_Git_blob_sha256": "918139deab04e3dbe2c8fc0deadddf0a9e4fef0e97ea6f2fa8db3d7c6cf3f177",
+      "prior_Round21_archive_sha256": "918139deab04e3dbe2c8fc0deadddf0a9e4fef0e97ea6f2fa8db3d7c6cf3f177",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "b8f803e66d73ff3a9af93c4be643b0e87b54909fc1ac0bb27731c96cb15dec6b"
+    },
+    {
+      "archive_sha256": "c5de79824a2e1af307f926f8ad9af91fcad8ba335720e640c6387af9296bf802",
+      "path": "benchmarks/results/baseline_v061/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "c5de79824a2e1af307f926f8ad9af91fcad8ba335720e640c6387af9296bf802",
+      "prior_Round21_archive_sha256": "c5de79824a2e1af307f926f8ad9af91fcad8ba335720e640c6387af9296bf802",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "3a5eb03f54402a827d6967eedc7d43393a435bfabbb514e878a0aad5e8dc2326"
+    },
+    {
+      "archive_sha256": "c2f3837fd08d16d14d991d175cace48caa42d6eeac0d65ebc85579e1dbc2fde4",
+      "path": "benchmarks/results/baseline_v061/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "c2f3837fd08d16d14d991d175cace48caa42d6eeac0d65ebc85579e1dbc2fde4",
+      "prior_Round21_archive_sha256": "c2f3837fd08d16d14d991d175cace48caa42d6eeac0d65ebc85579e1dbc2fde4",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "94be41aa46effa0f9f7d429a185702e2758fb6285b66d831f62dc035254d7e5b"
+    },
+    {
+      "archive_sha256": "13cde1c37028fcbf535f481629a75201ac379387c02bceeb61f59efb5a2266a5",
+      "path": "benchmarks/results/baseline_v061/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "13cde1c37028fcbf535f481629a75201ac379387c02bceeb61f59efb5a2266a5",
+      "prior_Round21_archive_sha256": "13cde1c37028fcbf535f481629a75201ac379387c02bceeb61f59efb5a2266a5",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "04f063328fc4a72e4e4f9647636d9e31a0df6ffe9c7d8b7a0f113244d0aaa9a5"
+    },
+    {
+      "archive_sha256": "e89fbfdb75ae8ebaab1b1522e69c36e7d5023a92bb039f9617fb0f650d30559e",
+      "path": "benchmarks/results/candidate/catalog_coverage.json",
+      "prior_Round21_Git_blob_sha256": "e89fbfdb75ae8ebaab1b1522e69c36e7d5023a92bb039f9617fb0f650d30559e",
+      "prior_Round21_archive_sha256": "e89fbfdb75ae8ebaab1b1522e69c36e7d5023a92bb039f9617fb0f650d30559e",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "082059ae36c01bf5cb795f736476ffcdcbe2c15646efd4f9ee9a343a1d179ea2"
+    },
+    {
+      "archive_sha256": "7754eaeae8686c1df2ac5de3f90cb0ab8e78c319401c0b2ba0cf9bd654b60582",
+      "path": "benchmarks/results/candidate/development_legacy.json",
+      "prior_Round21_Git_blob_sha256": "7754eaeae8686c1df2ac5de3f90cb0ab8e78c319401c0b2ba0cf9bd654b60582",
+      "prior_Round21_archive_sha256": "7754eaeae8686c1df2ac5de3f90cb0ab8e78c319401c0b2ba0cf9bd654b60582",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "2b4bf0bfb0c47df9cae7956efcf1a42b9ec795a2226fd91aabff202adc1b41e6"
+    },
+    {
+      "archive_sha256": "a6110ff16352565b189a040fc9addf24f5fc1379da97a8c183461a5a89fb0808",
+      "path": "benchmarks/results/candidate/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "a6110ff16352565b189a040fc9addf24f5fc1379da97a8c183461a5a89fb0808",
+      "prior_Round21_archive_sha256": "a6110ff16352565b189a040fc9addf24f5fc1379da97a8c183461a5a89fb0808",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "a70c28b8d78b5268838605605e52da45885069e70342f05d713a642a25b4433f"
+    },
+    {
+      "archive_sha256": "b1b0488bd508f2e5341fd8de5b2386fd893932fccb4bcebd4949d0e2bff635db",
+      "path": "benchmarks/results/candidate/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "b1b0488bd508f2e5341fd8de5b2386fd893932fccb4bcebd4949d0e2bff635db",
+      "prior_Round21_archive_sha256": "b1b0488bd508f2e5341fd8de5b2386fd893932fccb4bcebd4949d0e2bff635db",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "e910cc637805d98140249a2c0111806b0c429e1303d43838b189d32ce910e1ad"
+    },
+    {
+      "archive_sha256": "d95ea1411830cd590f6aeb78f7e11962e2ff445e1721631fdff0e67cf3c06d52",
+      "path": "benchmarks/results/candidate/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "d95ea1411830cd590f6aeb78f7e11962e2ff445e1721631fdff0e67cf3c06d52",
+      "prior_Round21_archive_sha256": "d95ea1411830cd590f6aeb78f7e11962e2ff445e1721631fdff0e67cf3c06d52",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "3cb26d9c1086ebd52f9ccd21009ded044b3e4065b6939b9d53acff6be70bcca5"
+    },
+    {
+      "archive_sha256": "7a6051ed7a57d13b132cda1c30da2711a176ac9a236f9a43da8f62564b9e3589",
+      "path": "benchmarks/results/canonical_rejections_round2.csv",
+      "prior_Round21_Git_blob_sha256": "7a6051ed7a57d13b132cda1c30da2711a176ac9a236f9a43da8f62564b9e3589",
+      "prior_Round21_archive_sha256": "7a6051ed7a57d13b132cda1c30da2711a176ac9a236f9a43da8f62564b9e3589",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "312525df7fd9eb974221e1d0ad42dfa6fd9a8b2860f6be89486b737a20ead3ae"
+    },
+    {
+      "archive_sha256": "8f899dfc489f4ed72e144cea2e4aead5d7526c8ffa29e949a75c8b6fa7843d52",
+      "path": "benchmarks/results/ocr_synthetic_v1.json",
+      "prior_Round21_Git_blob_sha256": "8f899dfc489f4ed72e144cea2e4aead5d7526c8ffa29e949a75c8b6fa7843d52",
+      "prior_Round21_archive_sha256": "8f899dfc489f4ed72e144cea2e4aead5d7526c8ffa29e949a75c8b6fa7843d52",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "0916b982208dc3dab9ebb0fd289cc6ce1bd02f45cf90fa2f6c50a829a4593e3a"
+    },
+    {
+      "archive_sha256": "0d636e0ec59d0499e26be7ce2600f213fdb01968778087e2c69fed7eeeefb761",
+      "path": "benchmarks/results/official_documents_v1.json",
+      "prior_Round21_Git_blob_sha256": "0d636e0ec59d0499e26be7ce2600f213fdb01968778087e2c69fed7eeeefb761",
+      "prior_Round21_archive_sha256": "0d636e0ec59d0499e26be7ce2600f213fdb01968778087e2c69fed7eeeefb761",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "a38fa972f601752be5751363a786891025e640eafe1865268f494eb1c1d9f623"
+    },
+    {
+      "archive_sha256": "e173d0fd60877d9e8ee2f8e89c491342bee9ca223db417fbbb3109631a2ddcb3",
+      "path": "benchmarks/results/round2/baseline_audit.json",
+      "prior_Round21_Git_blob_sha256": "e173d0fd60877d9e8ee2f8e89c491342bee9ca223db417fbbb3109631a2ddcb3",
+      "prior_Round21_archive_sha256": "e173d0fd60877d9e8ee2f8e89c491342bee9ca223db417fbbb3109631a2ddcb3",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "08ad5191270fac7412389d826cc3597fcf2bcb265607f9cc1b84f88ed806bc48"
+    },
+    {
+      "archive_sha256": "09bce7450285480e61f6f5e9fedae8618dd0ecc9096ba687f19a405e99c9af7c",
+      "path": "benchmarks/results/round2/final/catalog_coverage.json",
+      "prior_Round21_Git_blob_sha256": "09bce7450285480e61f6f5e9fedae8618dd0ecc9096ba687f19a405e99c9af7c",
+      "prior_Round21_archive_sha256": "09bce7450285480e61f6f5e9fedae8618dd0ecc9096ba687f19a405e99c9af7c",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "92570b6bf6aa5a09272b500164e51e24ba0d363e22656bbf17b2f92655634173"
+    },
+    {
+      "archive_sha256": "e1f7e7119bbcb4a6bd5142d570303c6ff8f6be0e5e5e8e07a9eac9addc79f8b8",
+      "path": "benchmarks/results/round2/final/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "e1f7e7119bbcb4a6bd5142d570303c6ff8f6be0e5e5e8e07a9eac9addc79f8b8",
+      "prior_Round21_archive_sha256": "e1f7e7119bbcb4a6bd5142d570303c6ff8f6be0e5e5e8e07a9eac9addc79f8b8",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "66487023ac86d55dcc7f767cd8617c127016c8e60abc4a0540c06cc373db46be"
+    },
+    {
+      "archive_sha256": "c8c5d2e823524784ee1afe4175c393cff1ec38705530713523d4e20abad4370e",
+      "path": "benchmarks/results/round2/final/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "c8c5d2e823524784ee1afe4175c393cff1ec38705530713523d4e20abad4370e",
+      "prior_Round21_archive_sha256": "c8c5d2e823524784ee1afe4175c393cff1ec38705530713523d4e20abad4370e",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "4c83f202120c0631787d355f77fb9eec559ad0cac268226320f907ccf35bd4cd"
+    },
+    {
+      "archive_sha256": "e20e50677294665628f4db9c661d6c6451f856423803fc81a4b5bc982e91acda",
+      "path": "benchmarks/results/round2/final/hard_negatives_v2.json",
+      "prior_Round21_Git_blob_sha256": "e20e50677294665628f4db9c661d6c6451f856423803fc81a4b5bc982e91acda",
+      "prior_Round21_archive_sha256": "e20e50677294665628f4db9c661d6c6451f856423803fc81a4b5bc982e91acda",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "3c3c57eaa930e3dce952afa4800dd6c8168565acac08137f46b531082171b9d8"
+    },
+    {
+      "archive_sha256": "782bc5230bd6b84fd8736f00e4918d2cc7007206370d673779cb459ac5c67461",
+      "path": "benchmarks/results/round2/final/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "782bc5230bd6b84fd8736f00e4918d2cc7007206370d673779cb459ac5c67461",
+      "prior_Round21_archive_sha256": "782bc5230bd6b84fd8736f00e4918d2cc7007206370d673779cb459ac5c67461",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "fb5d2df6388fac3ae4ffc7b419ae0c7eb096e69f01b3f6b2caaaf64c30482896"
+    },
+    {
+      "archive_sha256": "a944441159f7e8f9446a76947799e79b037ce52e647b62d483a43b172acc3a23",
+      "path": "benchmarks/results/round2/final/release_locked_v2.json",
+      "prior_Round21_Git_blob_sha256": "a944441159f7e8f9446a76947799e79b037ce52e647b62d483a43b172acc3a23",
+      "prior_Round21_archive_sha256": "a944441159f7e8f9446a76947799e79b037ce52e647b62d483a43b172acc3a23",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "290b00151469263f61c2f18d92302f5af1101291b85d32735021969eae5934df"
+    },
+    {
+      "archive_sha256": "2f15c0e3046bcfec622b3a54db5da07786cc80aa9d2719e974b2ad091462a85e",
+      "path": "benchmarks/results/round2/legacy_regression.json",
+      "prior_Round21_Git_blob_sha256": "2f15c0e3046bcfec622b3a54db5da07786cc80aa9d2719e974b2ad091462a85e",
+      "prior_Round21_archive_sha256": "2f15c0e3046bcfec622b3a54db5da07786cc80aa9d2719e974b2ad091462a85e",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "8998bd6be1195ed6041f6840e9ba3f8d49b5746f671e6acfb6233c3560f54152"
+    },
+    {
+      "archive_sha256": "f3efd5c5dcbf3b1d013120d40de74f82235b6a28f14eda98cf3075240bd76b16",
+      "path": "benchmarks/results/round2/locked_failure_details.json",
+      "prior_Round21_Git_blob_sha256": "f3efd5c5dcbf3b1d013120d40de74f82235b6a28f14eda98cf3075240bd76b16",
+      "prior_Round21_archive_sha256": "f3efd5c5dcbf3b1d013120d40de74f82235b6a28f14eda98cf3075240bd76b16",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "5b4c37361f4395364a4f4f87a9f368157329c4e8255937b7547308cba9c7ab99"
+    },
+    {
+      "archive_sha256": "0e070145ab00b17a74819f4b952cfc422f53cc4d676f8b54c4c16ed92f5f4b1c",
+      "path": "benchmarks/results/round2/ocr_legacy_gate.json",
+      "prior_Round21_Git_blob_sha256": "0e070145ab00b17a74819f4b952cfc422f53cc4d676f8b54c4c16ed92f5f4b1c",
+      "prior_Round21_archive_sha256": "0e070145ab00b17a74819f4b952cfc422f53cc4d676f8b54c4c16ed92f5f4b1c",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "6a760b19fcbb75b77599621617ff51e32c5ce3fe93a3fa9ee71766695587d373"
+    },
+    {
+      "archive_sha256": "3c3bb8ca41d82e52d9db3d586dcc214b4565e09b476f62ac89fe737e2d6c3545",
+      "path": "benchmarks/results/round2/ocr_synthetic_v1.json",
+      "prior_Round21_Git_blob_sha256": "3c3bb8ca41d82e52d9db3d586dcc214b4565e09b476f62ac89fe737e2d6c3545",
+      "prior_Round21_archive_sha256": "3c3bb8ca41d82e52d9db3d586dcc214b4565e09b476f62ac89fe737e2d6c3545",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "585e0a43627e826a5076fbbfc41666f48a2ef4a52bb02a8179f40db178ad93c7"
+    },
+    {
+      "archive_sha256": "e6acdc35d7229ea9dd4d432c6d0d6e042a7b5fcaf2f9d5e81d8f52c39379e9ed",
+      "path": "benchmarks/results/round2/ocr_synthetic_v2.json",
+      "prior_Round21_Git_blob_sha256": "e6acdc35d7229ea9dd4d432c6d0d6e042a7b5fcaf2f9d5e81d8f52c39379e9ed",
+      "prior_Round21_archive_sha256": "e6acdc35d7229ea9dd4d432c6d0d6e042a7b5fcaf2f9d5e81d8f52c39379e9ed",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "bce44534cd023d6dc87b348d4ab823cf8570bee011dfc79bb91c3af4c22bc005"
+    },
+    {
+      "archive_sha256": "9ff3ce7fb84fe8b6c5ef53058dddd6c9d4030c3dd3914f95c1c65478951d9111",
+      "path": "benchmarks/results/round2/official_acquisition.json",
+      "prior_Round21_Git_blob_sha256": "9ff3ce7fb84fe8b6c5ef53058dddd6c9d4030c3dd3914f95c1c65478951d9111",
+      "prior_Round21_archive_sha256": "9ff3ce7fb84fe8b6c5ef53058dddd6c9d4030c3dd3914f95c1c65478951d9111",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "a03ef1d7e0f6fa031c86527e9e25d16553240223807f771c4f7bad82c1d7b399"
+    },
+    {
+      "archive_sha256": "5b289aa00a310eafe50abfdcfc3c2a89ed2e6fb814415676014de3df2d71a3b2",
+      "path": "benchmarks/results/round2/official_documents_v2.json",
+      "prior_Round21_Git_blob_sha256": "5b289aa00a310eafe50abfdcfc3c2a89ed2e6fb814415676014de3df2d71a3b2",
+      "prior_Round21_archive_sha256": "5b289aa00a310eafe50abfdcfc3c2a89ed2e6fb814415676014de3df2d71a3b2",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "da010f99737e6543501c46c39f5baa56b316067e4a8ae26cf8425f7b7d0adaac"
+    },
+    {
+      "archive_sha256": "bc32b70e14657c17ac993f760e8adf1cbc3c41eb4f2e594c874f17f850705353",
+      "path": "benchmarks/results/round2/official_documents_v2_before_safety_fix.json",
+      "prior_Round21_Git_blob_sha256": "bc32b70e14657c17ac993f760e8adf1cbc3c41eb4f2e594c874f17f850705353",
+      "prior_Round21_archive_sha256": "bc32b70e14657c17ac993f760e8adf1cbc3c41eb4f2e594c874f17f850705353",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "62bbfc44fe9c46b633a2beaf18a78edddccfed588ba51f37a7a2bfe94d2803a3"
+    },
+    {
+      "archive_sha256": "21efbf16913e5b804258049f5b66ffd00b14fdf904b996e72717892e669dca61",
+      "path": "benchmarks/results/round2/profile_before.json",
+      "prior_Round21_Git_blob_sha256": "21efbf16913e5b804258049f5b66ffd00b14fdf904b996e72717892e669dca61",
+      "prior_Round21_archive_sha256": "21efbf16913e5b804258049f5b66ffd00b14fdf904b996e72717892e669dca61",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "ef5a4a8dca0824680be715f5c0986e8a5ad6601c3e7f1924287cb881415a2af7"
+    },
+    {
+      "archive_sha256": "87aa824e99b533094a5c52f6202d51b8375d7b145559ba8dc3f225173b4207b5",
+      "path": "benchmarks/results/round3/family_opportunities.csv",
+      "prior_Round21_Git_blob_sha256": "87aa824e99b533094a5c52f6202d51b8375d7b145559ba8dc3f225173b4207b5",
+      "prior_Round21_archive_sha256": "87aa824e99b533094a5c52f6202d51b8375d7b145559ba8dc3f225173b4207b5",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "826ac5332687a2b78408f576769daedc7c23c688ea4986ffde942c948b2fecf3"
+    },
+    {
+      "archive_sha256": "2a79f06c8d2d41a62b6efcb4ceb3859d70626ea2f2008afa82da04d7a2239ab9",
+      "path": "benchmarks/results/round3/final/catalog_coverage.json",
+      "prior_Round21_Git_blob_sha256": "2a79f06c8d2d41a62b6efcb4ceb3859d70626ea2f2008afa82da04d7a2239ab9",
+      "prior_Round21_archive_sha256": "2a79f06c8d2d41a62b6efcb4ceb3859d70626ea2f2008afa82da04d7a2239ab9",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "e2dccbcd696b0457cfd65290f62e22444a48a6640c8d7ed7e3ca286c267bf1a0"
+    },
+    {
+      "archive_sha256": "cb6bc0c0b276ce3e24668e03e37cea8d5aa77c5f55c7345da9d111615e8f941a",
+      "path": "benchmarks/results/round3/final/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "cb6bc0c0b276ce3e24668e03e37cea8d5aa77c5f55c7345da9d111615e8f941a",
+      "prior_Round21_archive_sha256": "cb6bc0c0b276ce3e24668e03e37cea8d5aa77c5f55c7345da9d111615e8f941a",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "b32c068343885245ebbab71b98567b9732693998d4240ce7b1731051b6073c18"
+    },
+    {
+      "archive_sha256": "1fe7a33471dfa5ca2cd8e281e87a8ea3fbdf51a5aad887965c65473e637b3dd6",
+      "path": "benchmarks/results/round3/final/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "1fe7a33471dfa5ca2cd8e281e87a8ea3fbdf51a5aad887965c65473e637b3dd6",
+      "prior_Round21_archive_sha256": "1fe7a33471dfa5ca2cd8e281e87a8ea3fbdf51a5aad887965c65473e637b3dd6",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "2245a9ca5e979c86b72d037350918b6a8976a3bff38504170b06bd0ab5b6c2a8"
+    },
+    {
+      "archive_sha256": "dd50e5d1eb40490e64911ea5c1b97abeab3c85199a1ee11de766e4d2e6e07484",
+      "path": "benchmarks/results/round3/final/hard_negatives_v2.json",
+      "prior_Round21_Git_blob_sha256": "dd50e5d1eb40490e64911ea5c1b97abeab3c85199a1ee11de766e4d2e6e07484",
+      "prior_Round21_archive_sha256": "dd50e5d1eb40490e64911ea5c1b97abeab3c85199a1ee11de766e4d2e6e07484",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "304c9bbd60c1a32c8e7f9bdecfa23fca6bdf9c39517faa5bfbe9c4ba6810cf9f"
+    },
+    {
+      "archive_sha256": "39446ed9edb294bdadf42248c6553669cd8d5434d0e7d4fa6d176d1ec7f63cdf",
+      "path": "benchmarks/results/round3/final/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "39446ed9edb294bdadf42248c6553669cd8d5434d0e7d4fa6d176d1ec7f63cdf",
+      "prior_Round21_archive_sha256": "39446ed9edb294bdadf42248c6553669cd8d5434d0e7d4fa6d176d1ec7f63cdf",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "cfd6aa956fe8c41bfab4b77657c148c10f89874b5a0510aca731334ac916a767"
+    },
+    {
+      "archive_sha256": "c196d8e18efc4dc77a21a38544e3879201726c14be88d7cf8b2964436f9de19e",
+      "path": "benchmarks/results/round3/final/release_locked_v2.json",
+      "prior_Round21_Git_blob_sha256": "c196d8e18efc4dc77a21a38544e3879201726c14be88d7cf8b2964436f9de19e",
+      "prior_Round21_archive_sha256": "c196d8e18efc4dc77a21a38544e3879201726c14be88d7cf8b2964436f9de19e",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "d34dbd7f6907474747473593e64576e1cc2851c1943055d12c46301ae8d5b520"
+    },
+    {
+      "archive_sha256": "c3a433bd88a84cdabb2889e84d6a5d10d4e9f131dd29133244073d07bd41a20d",
+      "path": "benchmarks/results/round3/ocr_legacy_gate.json",
+      "prior_Round21_Git_blob_sha256": "c3a433bd88a84cdabb2889e84d6a5d10d4e9f131dd29133244073d07bd41a20d",
+      "prior_Round21_archive_sha256": "c3a433bd88a84cdabb2889e84d6a5d10d4e9f131dd29133244073d07bd41a20d",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "b43fc1da96beffbef0b34ef1ccd73ea712903ff32161a04f89c9ff0bd0bc7ddf"
+    },
+    {
+      "archive_sha256": "28b178e4512db09f7ac6143af85a58a5928efae1fcd6f2f245f44981e1876d22",
+      "path": "benchmarks/results/round3/ocr_synthetic_v2.json",
+      "prior_Round21_Git_blob_sha256": "28b178e4512db09f7ac6143af85a58a5928efae1fcd6f2f245f44981e1876d22",
+      "prior_Round21_archive_sha256": "28b178e4512db09f7ac6143af85a58a5928efae1fcd6f2f245f44981e1876d22",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "c37d6cd7c2d0dd364ee4f7725b856bf9e693d1a8eedc470f671f29e193347da1"
+    },
+    {
+      "archive_sha256": "7f146e2875c47ee04ee310ce34fecbe07628347644b23cff8de12dce7ce9811d",
+      "path": "benchmarks/results/round3/official_positive_audit.csv",
+      "prior_Round21_Git_blob_sha256": "7f146e2875c47ee04ee310ce34fecbe07628347644b23cff8de12dce7ce9811d",
+      "prior_Round21_archive_sha256": "7f146e2875c47ee04ee310ce34fecbe07628347644b23cff8de12dce7ce9811d",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "882dcbd5e4a4b1f0ef7915dd76046b08481d9835697654de71f0bf6a1c383dad"
+    },
+    {
+      "archive_sha256": "d3c27f602a672c64529a0800aed65dd7a92cbe9392546155f8f874cf819856c1",
+      "path": "benchmarks/results/round4/final/catalog_coverage.json",
+      "prior_Round21_Git_blob_sha256": "d3c27f602a672c64529a0800aed65dd7a92cbe9392546155f8f874cf819856c1",
+      "prior_Round21_archive_sha256": "d3c27f602a672c64529a0800aed65dd7a92cbe9392546155f8f874cf819856c1",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "2ea3a04241db1e50751520bb6f31e61999999ab3aecc6bfea226059f90d44cea"
+    },
+    {
+      "archive_sha256": "20f9d24cb17003c62b828dd74a6f2bb576cb9575a7a24afbc22723bcec45712b",
+      "path": "benchmarks/results/round4/final/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "20f9d24cb17003c62b828dd74a6f2bb576cb9575a7a24afbc22723bcec45712b",
+      "prior_Round21_archive_sha256": "20f9d24cb17003c62b828dd74a6f2bb576cb9575a7a24afbc22723bcec45712b",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "20547abcc2fee97d10185f416ba94a3f3934a93057fa9c8715e6c41688089f82"
+    },
+    {
+      "archive_sha256": "c1cb1557b688234482ba7ce4624787b96e50830c64cffa01663bc3d96a4a0fcb",
+      "path": "benchmarks/results/round4/final/family_release_v3.json",
+      "prior_Round21_Git_blob_sha256": "c1cb1557b688234482ba7ce4624787b96e50830c64cffa01663bc3d96a4a0fcb",
+      "prior_Round21_archive_sha256": "c1cb1557b688234482ba7ce4624787b96e50830c64cffa01663bc3d96a4a0fcb",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "39a40c0fa7096689b1cf308bf04dd6d7fbf637f3948469d5b9de3dfe54fb1f87"
+    },
+    {
+      "archive_sha256": "876d69a083ef51317d4415f42a5136394791985d64a63849cdb16d2f7de8336a",
+      "path": "benchmarks/results/round4/final/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "876d69a083ef51317d4415f42a5136394791985d64a63849cdb16d2f7de8336a",
+      "prior_Round21_archive_sha256": "876d69a083ef51317d4415f42a5136394791985d64a63849cdb16d2f7de8336a",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "49fd8af14156dde4e084c72d684e725f33361ad75a87ef77a2fcdd64f878fd0f"
+    },
+    {
+      "archive_sha256": "5ff8a4c67911833537ae9edcad86344f79716defdda4652eb3971b5d5a6c670c",
+      "path": "benchmarks/results/round4/final/hard_negatives_v2.json",
+      "prior_Round21_Git_blob_sha256": "5ff8a4c67911833537ae9edcad86344f79716defdda4652eb3971b5d5a6c670c",
+      "prior_Round21_archive_sha256": "5ff8a4c67911833537ae9edcad86344f79716defdda4652eb3971b5d5a6c670c",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "873455355c0a08d1e1a175dae812c0872105e0deb35c4fb1e0f23cbc705b5a5c"
+    },
+    {
+      "archive_sha256": "c40d6ee8a666416200e42f06a9c3c0b68cd7524d38005711fef03507bac61aa9",
+      "path": "benchmarks/results/round4/final/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "c40d6ee8a666416200e42f06a9c3c0b68cd7524d38005711fef03507bac61aa9",
+      "prior_Round21_archive_sha256": "c40d6ee8a666416200e42f06a9c3c0b68cd7524d38005711fef03507bac61aa9",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "6dfd2e809911eaf8b66362c8daee42b4ca8c77778b6640b080290f940fcb0717"
+    },
+    {
+      "archive_sha256": "44433bcabc9e1f2d4ded47fc05c0a4e539b8554506a89bccd2270e91c7193c95",
+      "path": "benchmarks/results/round4/final/release_locked_v2.json",
+      "prior_Round21_Git_blob_sha256": "44433bcabc9e1f2d4ded47fc05c0a4e539b8554506a89bccd2270e91c7193c95",
+      "prior_Round21_archive_sha256": "44433bcabc9e1f2d4ded47fc05c0a4e539b8554506a89bccd2270e91c7193c95",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "215580a24db2407c419880d1326ce343fd77ba57f4c23e62b0878e5170b12111"
+    },
+    {
+      "archive_sha256": "1c853310110e5907436a49800cd22dc522f2cbac23293ee5b3e9891bc23d85fe",
+      "path": "benchmarks/results/round4/memory.json",
+      "prior_Round21_Git_blob_sha256": "1c853310110e5907436a49800cd22dc522f2cbac23293ee5b3e9891bc23d85fe",
+      "prior_Round21_archive_sha256": "1c853310110e5907436a49800cd22dc522f2cbac23293ee5b3e9891bc23d85fe",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "bc78786b227a7b6cc4056dc9a91ddf6eaa9250e3270df96e427af9bdcaf74164"
+    },
+    {
+      "archive_sha256": "275ac9b129343cf31160005423a693916afe2e21a81317cba195c6cdf9563cd1",
+      "path": "benchmarks/results/round4/ocr_legacy_gate.json",
+      "prior_Round21_Git_blob_sha256": "275ac9b129343cf31160005423a693916afe2e21a81317cba195c6cdf9563cd1",
+      "prior_Round21_archive_sha256": "275ac9b129343cf31160005423a693916afe2e21a81317cba195c6cdf9563cd1",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "f9f6ecd15c0c0e3b7f377cabfab290b22d011ca99df08e7c699c512531a9e043"
+    },
+    {
+      "archive_sha256": "ee4e1d64c795a05f0fdd0d26f6585f87597071e7dc1a0b71cc6c7fe48e188d31",
+      "path": "benchmarks/results/round4/ocr_synthetic_v2.json",
+      "prior_Round21_Git_blob_sha256": "ee4e1d64c795a05f0fdd0d26f6585f87597071e7dc1a0b71cc6c7fe48e188d31",
+      "prior_Round21_archive_sha256": "ee4e1d64c795a05f0fdd0d26f6585f87597071e7dc1a0b71cc6c7fe48e188d31",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "143a1c80de6dac9bdfb0c524f36da300b52d277352280da5a07eb02cb7b563a8"
+    },
+    {
+      "archive_sha256": "ae212c2c9ecd3d21fb4e725572047d2ae7d9f6697287696687df90abdc965934",
+      "path": "benchmarks/results/round6/development_compat_v2.json",
+      "prior_Round21_Git_blob_sha256": "ae212c2c9ecd3d21fb4e725572047d2ae7d9f6697287696687df90abdc965934",
+      "prior_Round21_archive_sha256": "ae212c2c9ecd3d21fb4e725572047d2ae7d9f6697287696687df90abdc965934",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "3e88715c23de3a08f78b3abf604d2a22e1412e7b183d95566e2d208c04761dd7"
+    },
+    {
+      "archive_sha256": "9004d6f38ec88307139af2c2c6250a49854a1d866754a45cd29fd035f50ae42b",
+      "path": "benchmarks/results/round6/evaluation_locks.json",
+      "prior_Round21_Git_blob_sha256": "9004d6f38ec88307139af2c2c6250a49854a1d866754a45cd29fd035f50ae42b",
+      "prior_Round21_archive_sha256": "9004d6f38ec88307139af2c2c6250a49854a1d866754a45cd29fd035f50ae42b",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "cd382beb87cb4b6bf72ab2c455d7a0570db0a97b13a64f21dba9a6540ed95f34"
+    },
+    {
+      "archive_sha256": "34a5622cbe6873f36d4e32c387ece44517bf04f04b60976024655783e00da1cb",
+      "path": "benchmarks/results/round6/final/catalog_coverage.json",
+      "prior_Round21_Git_blob_sha256": "34a5622cbe6873f36d4e32c387ece44517bf04f04b60976024655783e00da1cb",
+      "prior_Round21_archive_sha256": "34a5622cbe6873f36d4e32c387ece44517bf04f04b60976024655783e00da1cb",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "ad66c9a2f349b3759c24b09d7771bb3e17ac38a1b9140bec7b63bbc9a196390c"
+    },
+    {
+      "archive_sha256": "0289bab91671584b8e6eccb8adc18226e905a229398bfb4cd772cdb8397d46f3",
+      "path": "benchmarks/results/round6/final/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "0289bab91671584b8e6eccb8adc18226e905a229398bfb4cd772cdb8397d46f3",
+      "prior_Round21_archive_sha256": "0289bab91671584b8e6eccb8adc18226e905a229398bfb4cd772cdb8397d46f3",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "d01c26d3a74e6fc651aa671c621e1b64205857582163d4245ecd2aa6cd38a34b"
+    },
+    {
+      "archive_sha256": "5c50a82c0be5882f53d4a89cf8546b71f92abb045740a405b21791108b9bfd26",
+      "path": "benchmarks/results/round6/final/family_release_v3.json",
+      "prior_Round21_Git_blob_sha256": "5c50a82c0be5882f53d4a89cf8546b71f92abb045740a405b21791108b9bfd26",
+      "prior_Round21_archive_sha256": "5c50a82c0be5882f53d4a89cf8546b71f92abb045740a405b21791108b9bfd26",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "12edfb36b2ad5f614d8a77aed474c5845f7f42b65712fb1d30f7c3f7b6a7cbf5"
+    },
+    {
+      "archive_sha256": "9c4b1d344b2c75f84f8d94ef1396ef387852233ac695f2f7ae283df9ee699418",
+      "path": "benchmarks/results/round6/final/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "9c4b1d344b2c75f84f8d94ef1396ef387852233ac695f2f7ae283df9ee699418",
+      "prior_Round21_archive_sha256": "9c4b1d344b2c75f84f8d94ef1396ef387852233ac695f2f7ae283df9ee699418",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "7c48a78b38a44455c7e1f2a2d06c410b2e0a39367e907f75260c8f5ae7cf456c"
+    },
+    {
+      "archive_sha256": "3f0200ed6c413bd588da5871f7675601dbfa879a86c1a2e18e8d210caf14ff06",
+      "path": "benchmarks/results/round6/final/hard_negatives_v2.json",
+      "prior_Round21_Git_blob_sha256": "3f0200ed6c413bd588da5871f7675601dbfa879a86c1a2e18e8d210caf14ff06",
+      "prior_Round21_archive_sha256": "3f0200ed6c413bd588da5871f7675601dbfa879a86c1a2e18e8d210caf14ff06",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "e19fd56efcdae7e458e974aae6ac9a72b916fc06f851b9c1addb5c22e9802163"
+    },
+    {
+      "archive_sha256": "068d47a352ab1a2093d2322a757fc90bb613030c84bb149796fe48b817ef9a7f",
+      "path": "benchmarks/results/round6/final/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "068d47a352ab1a2093d2322a757fc90bb613030c84bb149796fe48b817ef9a7f",
+      "prior_Round21_archive_sha256": "068d47a352ab1a2093d2322a757fc90bb613030c84bb149796fe48b817ef9a7f",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "0baf5ba040b7579cf716fd356836a1b9b3cbdfb22a3600e5127813e36827e671"
+    },
+    {
+      "archive_sha256": "bc68773c64abae2ffc0f1226f5709863c3279729d306fb2624111547524536af",
+      "path": "benchmarks/results/round6/final/release_locked_v2.json",
+      "prior_Round21_Git_blob_sha256": "bc68773c64abae2ffc0f1226f5709863c3279729d306fb2624111547524536af",
+      "prior_Round21_archive_sha256": "bc68773c64abae2ffc0f1226f5709863c3279729d306fb2624111547524536af",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "17ae061661462c1eb01b33a0e8eda4ee5962e7788a74c3a133d3f9f12431013d"
+    },
+    {
+      "archive_sha256": "03202a9f51374a8bb1f8846bec07266ce3fb476e7888a72fb8467337e7997cb3",
+      "path": "benchmarks/results/round6/ocr_legacy_gate.json",
+      "prior_Round21_Git_blob_sha256": "03202a9f51374a8bb1f8846bec07266ce3fb476e7888a72fb8467337e7997cb3",
+      "prior_Round21_archive_sha256": "03202a9f51374a8bb1f8846bec07266ce3fb476e7888a72fb8467337e7997cb3",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "cc08153e6356a1f9513057d5cb25fdb79c3a9668dc22db86d669f844d08f5c4f"
+    },
+    {
+      "archive_sha256": "f818c1630ca6e3f9ac98c80ecc0e7ebb101657e17c5ad4a4f09b868ed79083e1",
+      "path": "benchmarks/results/round6/ocr_synthetic_v2.json",
+      "prior_Round21_Git_blob_sha256": "f818c1630ca6e3f9ac98c80ecc0e7ebb101657e17c5ad4a4f09b868ed79083e1",
+      "prior_Round21_archive_sha256": "f818c1630ca6e3f9ac98c80ecc0e7ebb101657e17c5ad4a4f09b868ed79083e1",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "b0591d7ac430cf1756fbb3db050bf9f626b382811d9e2aa894aa2c1ad096d60f"
+    },
+    {
+      "archive_sha256": "bf633385064ce06b22441187b380bda4aa0bd7643f6e203beb88f0c089d9af75",
+      "path": "benchmarks/results/round6/preflight/development_regression.json",
+      "prior_Round21_Git_blob_sha256": "bf633385064ce06b22441187b380bda4aa0bd7643f6e203beb88f0c089d9af75",
+      "prior_Round21_archive_sha256": "bf633385064ce06b22441187b380bda4aa0bd7643f6e203beb88f0c089d9af75",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "3c65e7c63412f66e66ad318360484d758d07215af838e4d5d82c1c2f82bb8a17"
+    },
+    {
+      "archive_sha256": "efc3a679c1474506595d11edee40eed11a413bc52edf4470b52eb2b1d27433c1",
+      "path": "benchmarks/results/round6/preflight/family_release_v3.json",
+      "prior_Round21_Git_blob_sha256": "efc3a679c1474506595d11edee40eed11a413bc52edf4470b52eb2b1d27433c1",
+      "prior_Round21_archive_sha256": "efc3a679c1474506595d11edee40eed11a413bc52edf4470b52eb2b1d27433c1",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "33bf94a2c7d5c3827827cbe314f770765fd113f6ad269e6fe98b64af1fa06f81"
+    },
+    {
+      "archive_sha256": "e24b0f61963f1d60c1c91225f68ffc84cdcade42269e409f847436e0f2b9f1e7",
+      "path": "benchmarks/results/round6/preflight/hard_negatives_v1.json",
+      "prior_Round21_Git_blob_sha256": "e24b0f61963f1d60c1c91225f68ffc84cdcade42269e409f847436e0f2b9f1e7",
+      "prior_Round21_archive_sha256": "e24b0f61963f1d60c1c91225f68ffc84cdcade42269e409f847436e0f2b9f1e7",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "21e694b74df64a55b2db004056aad4000a6450906242b1946473662fd8e5ef7d"
+    },
+    {
+      "archive_sha256": "d6463f551132225daf80fac441df1addda55c0c455ac0e8360fc9453eea475c9",
+      "path": "benchmarks/results/round6/preflight/hard_negatives_v2.json",
+      "prior_Round21_Git_blob_sha256": "d6463f551132225daf80fac441df1addda55c0c455ac0e8360fc9453eea475c9",
+      "prior_Round21_archive_sha256": "d6463f551132225daf80fac441df1addda55c0c455ac0e8360fc9453eea475c9",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "1ed6e633dcaa376f5f03e5e2c8cb95c8fcecaef632df7a97a91d8b3d9cfe6c36"
+    },
+    {
+      "archive_sha256": "0aba41f6d65ba6df295c513a2404b3142347e9266ecdc82c15f3ab0c4b8d0004",
+      "path": "benchmarks/results/round6/preflight/release_locked_v1.json",
+      "prior_Round21_Git_blob_sha256": "0aba41f6d65ba6df295c513a2404b3142347e9266ecdc82c15f3ab0c4b8d0004",
+      "prior_Round21_archive_sha256": "0aba41f6d65ba6df295c513a2404b3142347e9266ecdc82c15f3ab0c4b8d0004",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "a54857239bde81debcf366dee46f0ba3d84b4fad96f15acd214c1f480994933a"
+    },
+    {
+      "archive_sha256": "8930aa0684c19776e4ec8f214e9ba570198791f4e702df0560234debab69160c",
+      "path": "benchmarks/results/round6/preflight/release_locked_v2.json",
+      "prior_Round21_Git_blob_sha256": "8930aa0684c19776e4ec8f214e9ba570198791f4e702df0560234debab69160c",
+      "prior_Round21_archive_sha256": "8930aa0684c19776e4ec8f214e9ba570198791f4e702df0560234debab69160c",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "38c7ae59547ffb3d230a4b1e6d92bfc00edf2296d802f2d62b59d9d11e69fa7b"
+    },
+    {
+      "archive_sha256": "6a3a19cb80871fe9ebbdce477bc3c2fe830aa83c4eeab5d19fc90bbb9ac72136",
+      "path": "benchmarks/results/round6/rejection_diagnostics.json",
+      "prior_Round21_Git_blob_sha256": "6a3a19cb80871fe9ebbdce477bc3c2fe830aa83c4eeab5d19fc90bbb9ac72136",
+      "prior_Round21_archive_sha256": "6a3a19cb80871fe9ebbdce477bc3c2fe830aa83c4eeab5d19fc90bbb9ac72136",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "ce5a3f0ce15e1f22afae314826da88a22741ac023694c5e3295092c50dfe7deb"
+    },
+    {
+      "archive_sha256": "fec377a7644a44661a34b6fa6d4e82863bd7a4689b4165015eddf375358f6d6c",
+      "path": "data/acquisition_plan.json",
+      "prior_Round21_Git_blob_sha256": "fec377a7644a44661a34b6fa6d4e82863bd7a4689b4165015eddf375358f6d6c",
+      "prior_Round21_archive_sha256": "fec377a7644a44661a34b6fa6d4e82863bd7a4689b4165015eddf375358f6d6c",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "292bc67d27d42827d587b3def6cd4a1cddde12cf7812ede320cd41190c898d61"
+    },
+    {
+      "archive_sha256": "5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d",
+      "path": "data/catalog_manifest.json",
+      "prior_Round21_Git_blob_sha256": "5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d",
+      "prior_Round21_archive_sha256": "5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "4649cf9029225906b0f881ac6c1cb6b4418b7cf417c5391b517fa371798eb7cc"
+    },
+    {
+      "archive_sha256": "235be41f2b5ea12a0113c49fb91adda0b111fcf8158ae6c8f3d390d20153e1a0",
+      "path": "docs/ROUND4_REPORT.md",
+      "prior_Round21_Git_blob_sha256": "235be41f2b5ea12a0113c49fb91adda0b111fcf8158ae6c8f3d390d20153e1a0",
+      "prior_Round21_archive_sha256": "235be41f2b5ea12a0113c49fb91adda0b111fcf8158ae6c8f3d390d20153e1a0",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "4d2f02feebdb89290dc3eef1b3f78ccaa1852f079988dc1be4db73e8371bdc8f"
+    },
+    {
+      "archive_sha256": "6b0841cf0dd06211c1fd688f62a7eef1e956fd12caab12196290a7460ece0bab",
+      "path": "docs/local_checks_round3.json",
+      "prior_Round21_Git_blob_sha256": "6b0841cf0dd06211c1fd688f62a7eef1e956fd12caab12196290a7460ece0bab",
+      "prior_Round21_archive_sha256": "6b0841cf0dd06211c1fd688f62a7eef1e956fd12caab12196290a7460ece0bab",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "7687622cf1fae6751505cba5ad2b9a822ebca9a4da3bd6e94470689464d0309c"
+    },
+    {
+      "archive_sha256": "9ef03dbb892d139a01563439fc1211f341624d0f3fb21654597232f3091c4b65",
+      "path": "docs/observation_history_round2.json",
+      "prior_Round21_Git_blob_sha256": "9ef03dbb892d139a01563439fc1211f341624d0f3fb21654597232f3091c4b65",
+      "prior_Round21_archive_sha256": "9ef03dbb892d139a01563439fc1211f341624d0f3fb21654597232f3091c4b65",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "7ea69c3f52a5fd037d264f238fac8408ad56c9baa76fa6586e372478b836c50a"
+    },
+    {
+      "archive_sha256": "83a120796fd2d523b169be09ec533dc979c76cd2273a17c456ddb494c2cc44c3",
+      "path": "docs/snapshot_history_validation.json",
+      "prior_Round21_Git_blob_sha256": "83a120796fd2d523b169be09ec533dc979c76cd2273a17c456ddb494c2cc44c3",
+      "prior_Round21_archive_sha256": "83a120796fd2d523b169be09ec533dc979c76cd2273a17c456ddb494c2cc44c3",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "fa18eea3397215f475fb43919e39068f1694b952002ab278f7bf21954cfb18d8"
+    },
+    {
+      "archive_sha256": "16635c34cf2fa21bd2f03d6f648f5a69b1c971dec7da955e04ce2ee1662a773a",
+      "path": "docs/source_census.json",
+      "prior_Round21_Git_blob_sha256": "16635c34cf2fa21bd2f03d6f648f5a69b1c971dec7da955e04ce2ee1662a773a",
+      "prior_Round21_archive_sha256": "16635c34cf2fa21bd2f03d6f648f5a69b1c971dec7da955e04ce2ee1662a773a",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "f54ef116edca46fb0ed2b0a1ac01912be2f78cba146afdcd1f147bcdab7c0ba9"
+    },
+    {
+      "archive_sha256": "0c0e26d2f888661ae520779f4c64de931723db00f4100c1d51a1401a4f9a30e8",
+      "path": "maintenance/census_initial.json",
+      "prior_Round21_Git_blob_sha256": "0c0e26d2f888661ae520779f4c64de931723db00f4100c1d51a1401a4f9a30e8",
+      "prior_Round21_archive_sha256": "0c0e26d2f888661ae520779f4c64de931723db00f4100c1d51a1401a4f9a30e8",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "bdcbf6ac377ae9a22967beb39371c456f8e898d0335d437b4d0ae917c869400d"
+    },
+    {
+      "archive_sha256": "55b6aed2ad600f1daa7b8b5403decba0ccec4aac06607682a58dcb21d8f97eab",
+      "path": "maintenance/sources.json",
+      "prior_Round21_Git_blob_sha256": "55b6aed2ad600f1daa7b8b5403decba0ccec4aac06607682a58dcb21d8f97eab",
+      "prior_Round21_archive_sha256": "55b6aed2ad600f1daa7b8b5403decba0ccec4aac06607682a58dcb21d8f97eab",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "0008a21e1f5c5b6ef01472af458e806bf575ecf8deed2e9cc902e30d3f4f9430"
+    },
+    {
+      "archive_sha256": "bbf0108ce9f23e166741ee9125dc21ea00d604688564deae562ac905607a6f45",
+      "path": "scripts/round4_report.py",
+      "prior_Round21_Git_blob_sha256": "bbf0108ce9f23e166741ee9125dc21ea00d604688564deae562ac905607a6f45",
+      "prior_Round21_archive_sha256": "bbf0108ce9f23e166741ee9125dc21ea00d604688564deae562ac905607a6f45",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "ac9b26ca0bbe31f78252c0f248e3669eacb03c1e9a075e98a962b5ea4e9953c6"
+    },
+    {
+      "archive_sha256": "491c4b86a53f2b44104e17103102f06e2c47b3bfdd9814430306bb6cf88864e3",
+      "path": "scripts/round5_full.ps1",
+      "prior_Round21_Git_blob_sha256": "7dfb74e2aac601ef538a435092009a018e19922b6b4f3e6c633736481cd08638",
+      "prior_Round21_archive_sha256": "491c4b86a53f2b44104e17103102f06e2c47b3bfdd9814430306bb6cf88864e3",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "7dfb74e2aac601ef538a435092009a018e19922b6b4f3e6c633736481cd08638"
+    },
+    {
+      "archive_sha256": "bb0669828bdfe5039e782e1e3a40904d3d74f432d95370606b216e3cc6a6a72b",
+      "path": "scripts/round6_full.ps1",
+      "prior_Round21_Git_blob_sha256": "7a84ee0ff00072aee285be12df4afb5554409daa38430d8b08385e8c3a597c8c",
+      "prior_Round21_archive_sha256": "bb0669828bdfe5039e782e1e3a40904d3d74f432d95370606b216e3cc6a6a72b",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "7a84ee0ff00072aee285be12df4afb5554409daa38430d8b08385e8c3a597c8c"
+    },
+    {
+      "archive_sha256": "be9e7f23d798e98fddf5224123e0ab6e50b001d70bc97dfc7b0749c466f22b6d",
+      "path": "scripts/setup_ocr_windows.ps1",
+      "prior_Round21_Git_blob_sha256": "476b38f1a5b03609a055c8aae9725e7e7d77cf1bbd7d6440750a6e3671c8e5df",
+      "prior_Round21_archive_sha256": "be9e7f23d798e98fddf5224123e0ab6e50b001d70bc97dfc7b0749c466f22b6d",
+      "reason": "Preexisting Git/physical/archive LF,CRLF or mixed line endings. Local bytes unchanged from entry;new archive byte-identical to prior Round21 archive and all three are identical after CRLF-to-LF comparison. No local file normalized.",
+      "workspace_sha256": "476b38f1a5b03609a055c8aae9725e7e7d77cf1bbd7d6440750a6e3671c8e5df"
+    }
+  ],
+  "original_failed_package_sha256": "381b3cad17244607770fe5b44d3db76d909b2d68f4880a047811bc473c34becf",
+  "passed": true,
+  "preserved_failed_attempt": "dist/attempts/round22-package-initial-381b3cad17244607770fe5b44d3db76d909b2d68f4880a047811bc473c34becf.zip",
+  "prior_archive_sha256": "1d80711c777f253c9796814939fcd42974592dcf027d0a6944fc6dfc8c2bc5e3",
+  "prior_source_tree": "88f5eb5e16068914dd179af1deb642b4c27a209e",
+  "scope": "Only exact preexisting line-ending differences proved against immutable Round21 archive/Git tree are allowed. Frozen corpus and semantic-file hashes are independently verified without normalization."
+}

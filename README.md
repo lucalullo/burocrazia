@@ -1,12 +1,6 @@
-<!-- round9-current -->
-Software 0.6.1/schema 610. Canonical 979/979, due falsi accept riparati; 68 unknown confermati, corpus insufficiente. Copertura file 81.26%; warm recognition p95 187.76 ms (target 250 ms). V5 non selezionata/eseguita: prerequisiti freeze non raggiunti. R8 v4 originale 50/356 immutata, solo diagnostica storica. Dettagli nel [rapporto Round 9](docs/ROUND9_REPORT.md). Le sezioni Round 8 seguenti sono storiche.
-<!-- /round9-current -->
-
-<!-- round8-current -->
-Round 8 **NOT READY**, software 0.6.1: copertura file 81.26%; canonical 979/979. **Evaluation v4 INCOMPLETA: 50/356 osservazioni salvate dopo errore di scrittura; nessuna ripetizione.** Sole metriche descrittive parziali: exact 36/50, scan 25/39, compilati 5/5; non qualificano i gate principali. Generazione compilati 50/50. p95 350.13 ms. Truth e gate nel [rapporto Round 8](docs/ROUND8_REPORT.md). Due accettazioni contro NO storici ambigui restano bloccanti. R6/R7 sono sviluppo; family insufficiently validated; unknown soltanto storico; CI esterna pending.
-<!-- /round8-current -->
-
 # BurOCRazia
+
+Release candidate **0.7.0-rc1** · schema **610** · stable pubblica **v0.6.1**.
 
 **Capire la burocrazia, più chiaramente.**
 
@@ -260,7 +254,24 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 
 ## Benchmark
 
-Candidata Round 7 **NOT READY**, software pubblico 0.6.1. Catalogo: 1.216 identità reali, 1.212 operative, zero nuove identità. Copertura firme: 941/1212 (77.64%), con file 941/1158 (81.26%); canonical 979/979; robustness 183/372 e scansioni 134/280. AcroForm generati 9/50, 41 fallimenti di generazione inclusi. p95 444.65 ms. R6 è ora development. Gate, denominatori e limiti in [BENCHMARK.md](docs/BENCHMARK.md) e [ROUND7_REPORT.md](docs/ROUND7_REPORT.md). CI esterna non eseguita.
+Candidata **0.7.0-rc1**, pre-1.0; schema 610. La stable pubblica resta **v0.6.1**. Il motore v7 è congelato dal Round 22: fingerprint deterministici locali, confronto per pagina e rifiuti prudenti. Family matching resta **sperimentale / insufficientemente validato**.
+
+| Benchmark locale RC Round 22 | Risultato |
+| --- | ---: |
+| V6 indipendente single-shot | 560/597 exact, precisione 100%, recall 93,80% |
+| Scan recall / filled recall | 93,33% / 95% |
+| Generazione compilati | 100/100 |
+| Unknown v4 single-shot Round 21 | 120/120 rifiuti corretti |
+| Errori ente / versione | 0 / 0 |
+| Retrieval @1 / @25 | 99,33% / 100% |
+| Canonical / safety | 1007/1007; 705 negativi confermati, 0 false accept |
+| Warm recognition, mediana di sette p95 | 186,09 ms |
+| Suite Round 22 | 889 pass, 0 fail, 3 skip |
+| Copertura identità con file | 1002/1158 (86,53%) |
+
+Sono prove locali su template ufficiali e trasformazioni sintetiche con OCR reale, non certificazioni di accuratezza su scansioni raccolte sul campo. Nessuna consulenza legale o personalizzata; RC non certificata per produzione con dati sensibili. I documenti ufficiali possono evolvere; OCR dipende da Tesseract e qualità dell'input. V5 originale rimane storico indipendente del vecchio motore; i replay successivi sono development contaminato dal tuning. V6 e unknown v4 non vengono rieseguiti nella preparazione della release.
+
+Protocolli, denominatori e limiti: [BENCHMARK.md](docs/BENCHMARK.md), [ROUND22_REPORT.md](docs/ROUND22_REPORT.md), [release notes](docs/RELEASE_NOTES_v0.7.0-rc1.md). Stato CI e pubblicazione: [ROUND23_REPORT.md](docs/ROUND23_REPORT.md).
 
 ## Test
 
@@ -333,7 +344,7 @@ Per i dati del catalogo e i materiali di terze parti, consulta [DATA_NOTICE.md](
 
 Creato da [Luca Lullo](https://github.com/lucalullo).
 
-## Round 7 — NOT READY
+## Storico: Round 7 — NOT READY
 
 Decision policy v3, retrieval v2 e nuova evaluation dopo freeze: 372 tentativi, 331 rappresentazioni generate su 42 identità, 280 scan-like, 9/50 AcroForm generati (41 fallimenti). Copertura 77.64% totale e 81.26% con file; canonical 979/979; richiamo robustness 49.19%, scansioni 47.86%, compilati 14.00% sul piano completo. Rifiuto unknown storico 100.00%; famiglie 0/16 valutabili, capacità non sufficientemente validata. p95 444.65 ms; indice 39832045 byte. Precisione exact 100% sui match emessi. La QA dei compilati mostra errori semantici e testo tagliato: nessuna validità amministrativa o qualità finale dei moduli rivendicata.
 

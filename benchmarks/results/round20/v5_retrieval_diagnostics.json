@@ -1,0 +1,914 @@
+{
+  "cases": [
+    {
+      "case_id": "R19V5-1001-blur_mild",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1001-contrast_minus20",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-crop_2pct",
+      "rank": 4,
+      "root_cause": "retrieval_rank_low"
+    },
+    {
+      "case_id": "R19V5-1001-crop_5pct",
+      "rank": 2,
+      "root_cause": "retrieval_rank_low"
+    },
+    {
+      "case_id": "R19V5-1001-first_page_only",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-grayscale",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-jpeg_60",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1001-jpeg_75",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1001-jpeg_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-raster_150",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-raster_200",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-rotation_180",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-rotation_270",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1001-rotation_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-blur_mild",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1006-contrast_minus20",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-crop_2pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1006-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1006-first_page_only",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-grayscale",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-jpeg_60",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-jpeg_75",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-jpeg_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-raster_150",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1006-raster_200",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1006-rotation_180",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-rotation_270",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1006-rotation_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1061-blur_mild",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-1061-crop_5pct",
+      "rank": 4,
+      "root_cause": "retrieval_rank_low"
+    },
+    {
+      "case_id": "R19V5-1061-jpeg_60",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-1061-jpeg_75",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-1061-raster_200",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-1102-contrast_minus20",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1102-crop_2pct",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1102-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-1102-jpeg_60",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1102-jpeg_75",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1102-raster_200",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-1136-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-279-blur_mild",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-contrast_minus20",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-crop_2pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-crop_5pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-first_page_only",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-grayscale",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-jpeg_60",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-jpeg_75",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-jpeg_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-raster_150",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-raster_200",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-rotation_180",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-rotation_270",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-279-rotation_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-blur_mild",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-contrast_minus20",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-crop_2pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-crop_5pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-first_page_only",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-grayscale",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-jpeg_60",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-jpeg_75",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-jpeg_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-raster_150",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-raster_200",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-rotation_180",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-rotation_270",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-280-rotation_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-blur_mild",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-contrast_minus20",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-crop_2pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-crop_5pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-first_page_only",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-grayscale",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-jpeg_60",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-jpeg_75",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-jpeg_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-raster_150",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-raster_200",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-rotation_180",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-rotation_270",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-281-rotation_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-blur_mild",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-contrast_minus20",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-crop_2pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-crop_5pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-first_page_only",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-grayscale",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-jpeg_60",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-jpeg_75",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-jpeg_90",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-raster_150",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-raster_200",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-286-rotation_180",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-402-contrast_minus20",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-crop_2pct",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-crop_5pct",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-first_page_only",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-grayscale",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-jpeg_90",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-raster_150",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-raster_200",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-rotation_180",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-rotation_270",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-402-rotation_90",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-433-crop_5pct",
+      "rank": 1,
+      "root_cause": "shared_template"
+    },
+    {
+      "case_id": "R19V5-433-raster_200",
+      "rank": 5,
+      "root_cause": "retrieval_rank_low"
+    },
+    {
+      "case_id": "R19V5-436-crop_2pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-436-rotation_270",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-472-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-475-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-475-jpeg_75",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-528-crop_2pct",
+      "rank": 1,
+      "root_cause": "entity_conflict_false"
+    },
+    {
+      "case_id": "R19V5-708-blur_mild",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-contrast_minus20",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-crop_2pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-first_page_only",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-grayscale",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-jpeg_60",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-jpeg_75",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-jpeg_90",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-raster_150",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-raster_200",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-rotation_180",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-rotation_270",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-708-rotation_90",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-blur_mild",
+      "rank": 2,
+      "root_cause": "retrieval_rank_low"
+    },
+    {
+      "case_id": "R19V5-713-contrast_minus20",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-crop_2pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-first_page_only",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-grayscale",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-jpeg_60",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-jpeg_75",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-jpeg_90",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-raster_150",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-raster_200",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-rotation_180",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-rotation_270",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-713-rotation_90",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-717-blur_mild",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-717-contrast_minus20",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-717-raster_200",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-717-rotation_180",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-766-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-796-blur_mild",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-contrast_minus20",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-crop_2pct",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-crop_5pct",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-first_page_only",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-grayscale",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-jpeg_60",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-jpeg_75",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-jpeg_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-raster_150",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-raster_200",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-rotation_180",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-rotation_270",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-796-rotation_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-blur_mild",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-contrast_minus20",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-crop_2pct",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-802-first_page_only",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-grayscale",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-jpeg_60",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-jpeg_75",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-jpeg_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-raster_150",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-rotation_180",
+      "rank": null,
+      "root_cause": "retrieval_miss"
+    },
+    {
+      "case_id": "R19V5-802-rotation_270",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-802-rotation_90",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-91-crop_5pct",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    },
+    {
+      "case_id": "R19V5-912-blur_mild",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-912-crop_2pct",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-912-crop_5pct",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-912-jpeg_60",
+      "rank": 1,
+      "root_cause": "visual_underuse"
+    },
+    {
+      "case_id": "R19V5-938-grayscale",
+      "rank": 1,
+      "root_cause": "OCR_degradation"
+    }
+  ],
+  "false_rejects": 179,
+  "policy": "Top1+reject: decision;top25 but not1: scoring/alignment;outside25: retrieval/OCR. Do not broaden retrieval for a decision refusal.",
+  "rank_counts": {
+    "1": 173,
+    "2": 2,
+    "4": 2,
+    "5": 1,
+    "missing": 1
+  },
+  "recall_at_k": {
+    "1": 0.9905511811023622,
+    "10": 0.9984251968503937,
+    "25": 0.9984251968503937,
+    "5": 0.9984251968503937
+  }
+}

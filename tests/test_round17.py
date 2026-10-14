@@ -3,7 +3,9 @@ import pytest
 from scripts.round17_common import invariant, ROOT
 
 def test_round17_preserves_entire_round16_engine_dataset_and_truth():
-    invariant()
+    from benchmarks.historical_seals import verify_engine_at
+    from scripts.round17_common import read
+    verify_engine_at('19807fabafcfe186f14a87f659adb77478e0bcdb',read('benchmarks/results/round16/freeze_manifest.json')['engine_files_sha256'])
 
 def test_unknown_v3_cannot_start_with_another_freeze(monkeypatch):
     import benchmarks.round17_unknown as u

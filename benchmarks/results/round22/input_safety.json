@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "case_id": "IS15-U14-0cf371a00bd16303",
+      "crash": false,
+      "error": "Il PDF supera il limite di 100 pagine.",
+      "input_sha256": "0cf371a00bd16303fd75d5bf4db107dd2033a8e8c297dcac65337fabac248f19",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-U14-2223cfdb5154ea58",
+      "crash": false,
+      "error": "Il PDF supera il limite di 100 pagine.",
+      "input_sha256": "2223cfdb5154ea585dd44444f5093d0eba7f2325ebb185da2113d91479480bcb",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-U14-3a58df37879b0998",
+      "crash": false,
+      "error": "Il PDF supera il limite di 100 pagine.",
+      "input_sha256": "3a58df37879b0998121de5f3b5363c7d9a686c51b3a923e941920ab10a91dc7f",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-U14-b597730bdb485d2e",
+      "crash": false,
+      "error": "Il PDF supera il limite di 100 pagine.",
+      "input_sha256": "b597730bdb485d2edc692f0d788b3652862a26cc2a1950519581205e23309a68",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-oversized",
+      "crash": false,
+      "error": "Il file supera il limite di 20 MiB per caricamento.",
+      "input_sha256": "eea32cdd1a9ba428d8f7b457a359a5b78e871d511745b8f6ba1958fd7413bf85",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-unsupported",
+      "crash": false,
+      "error": "Formato non supportato. Carica un file PDF, DOCX, TXT, JPG, JPEG o PNG.",
+      "input_sha256": "9b8db510ef42b8ed54a3712636fda55a4f8cfcd5493e20b74ab00cd4f3979f2d",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-text-limit",
+      "crash": false,
+      "error": "Il testo estratto supera il limite di 1.000.000 di caratteri.",
+      "input_sha256": "d9a1d26cc37ec1c2b30ef695b80f3bbc1db931e8ad3b96fe2e8abdb3afaf01f3",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-mime",
+      "crash": false,
+      "error": "Il tipo MIME dichiarato non corrisponde al formato del file.",
+      "input_sha256": "982d9e3eb996f559e633f4d194def3761d909f5a3b647d1a851fead67c32c9d1",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    },
+    {
+      "case_id": "IS15-zip-traversal",
+      "crash": false,
+      "error": "Il DOCX contiene percorsi non validi o elementi duplicati.",
+      "input_sha256": "778b28661146cbaeb70d8d4da2a36208b7aefb8b33ada1ee60085bf927266434",
+      "no_false_document_result": true,
+      "recognition_calls": 0,
+      "rejected_safely": true,
+      "result": null,
+      "temp_residue": []
+    }
+  ],
+  "manifest_sha256": "edbbd445f4902cc9a648875360a18adf2084ed1453b31377a4b6744e2e1f3cbe",
+  "measured_at": "2026-10-14T13:31:26.051019+00:00",
+  "n": 9,
+  "passed": true,
+  "safe_rejects": 9,
+  "schema_version": 1
+}

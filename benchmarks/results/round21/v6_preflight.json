@@ -1,0 +1,52 @@
+{
+  "capacity_only": true,
+  "counts_per_source": {
+    "10": 8,
+    "14": 3,
+    "15": 12,
+    "16": 52,
+    "18": 3,
+    "2": 302,
+    "3": 231,
+    "5": 28
+  },
+  "filled_capacity": 60,
+  "identities": 639,
+  "max_concentration": 0.4726134585289515,
+  "passed": true,
+  "recognition_calls": 0,
+  "representation_capacity": 9906,
+  "requirements": {
+    "fills": {
+      "actual": 60,
+      "minimum": 50,
+      "passed": true
+    },
+    "identities": {
+      "actual": 639,
+      "minimum": 30,
+      "passed": true
+    },
+    "representations": {
+      "actual": 9906,
+      "minimum": 400,
+      "passed": true
+    },
+    "scans": {
+      "actual": 8568,
+      "minimum": 200,
+      "passed": true
+    },
+    "sources": {
+      "actual": 8,
+      "minimum": 6,
+      "passed": true
+    }
+  },
+  "reserved_manifest_created": true,
+  "reserved_manifest_sha256": "5f2594bf1b58cbf56f05e5a91d71b2cb3b9a6871c5c2b88f527c0e0fc6c84d53",
+  "scan_capacity": 8568,
+  "sources": 8,
+  "transform_calls": 0,
+  "valid_filled_generated": 0
+}

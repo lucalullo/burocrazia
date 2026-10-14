@@ -1,0 +1,15 @@
+{
+  "all_revisions_before_freeze": true,
+  "final_truth_sha256": "874ea377350d63e23c01515178081617599cac1b38dfba832313a9f65fa0b17d",
+  "initial_auto_sha256": "80fb8aef483947da2c873c02f12e2d8f7807ec50bf29e2382f2ecbe339aeac3b",
+  "initial_primary_sha256": "cd65949e72cce74636aeb530bc9b35dec483a929fee323fa8c8fafdd6f1a067a",
+  "primary_v2_sha256": "9935859ef930dff2bc97ebb0628ce1d095c7eb84251754cde9bb39232736bbe8",
+  "reasons": [
+    "Exclude all known catalog cache resources, including missing active fingerprints.",
+    "Require document-kind heading/official local label corroboration, never body citation alone.",
+    "Exclude form heading before a normative instrument unless previously confirmed unobserved master truth.",
+    "Distinguish explicit primary issuer from institutional source provenance.",
+    "Conservatively deduplicate exact normalized first2000-char openings against prior/canonical and fresh master."
+  ],
+  "recognition_calls": 0
+}

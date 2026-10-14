@@ -20,3 +20,7 @@ Round 2 conserva v1 e pubblica v2 con motivazioni esplicite; non sostituire le m
 - Non aggiungere file personali, database di lavoro, temporanei, credenziali o export editoriali a Git. Aggiorna lo snapshot pubblico soltanto con provenance e confronto delle righe.
 - Esegui `python -m pytest -q`, verifica catalogo e benchmark dopo modifiche. Distingui test sintetici, OCR reale, validazione editoriale e collaudo su piattaforme.
 - Non dichiarare completato un requisito privo di prova. Aggiorna documentazione e limiti della release quando il comportamento cambia.
+
+## Continuità operativa permanente
+
+Applica [CONTINUITA_OPERATIVA.md](docs/CONTINUITA_OPERATIVA.md). Prosegui le attività ordinarie già autorizzate senza conferme intermedie; mantieni checkpoint privati aggiornati in `.codex-context/` dopo ogni passaggio significativo e prima delle operazioni lunghe. A ogni ripresa verifica Git, processi, output e hash prima di eseguire, evitando duplicati e sovrascritture. Preserva anche tentativi negativi e protocolli congelati. Non promettere riprese dopo arresti o quote se il meccanismo ufficiale non le garantisce. Rispetta pause, held-out, quote e approvazioni; nessun aggiramento. Nessun commit, push, tag, pubblicazione, servizio a pagamento o operazione distruttiva senza autorizzazione specifica dell'utente. La conclusione scientifica NOT READY con gate invariati e prove complete è distinta da un'interruzione tecnica.

@@ -77,12 +77,13 @@ def test_grayscale_rotation_commutes_with_original_signature(mode,size):
 def test_only_two_performance_functions_differ_from_round15():
     if not (ROOT/'.git').exists():pytest.skip('Historical Git source required')
     from scripts.round16_common import BASE
+    freeze=__import__('json').loads((ROOT/'benchmarks/results/round16/freeze_manifest.json').read_bytes())['freeze_git_commit']
     for path,allowed in [('src/fingerprint_v3.py','features'),('src/fingerprint_pages.py','image_signature')]:
-        old=ast.parse(subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT));new=ast.parse((ROOT/path).read_bytes())
+        old=ast.parse(subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT));new=ast.parse(subprocess.check_output(['git','show',freeze+':'+path],cwd=ROOT))
         def other(tree):return [ast.dump(n,include_attributes=False) for n in tree.body if not isinstance(n,ast.FunctionDef) or n.name!=allowed]
         assert other(old)==other(new)
     for path in ['src/recognize.py','src/extract.py','src/fingerprint_decision_v5.py','src/fingerprint_decision_v4.py','src/title_evidence.py','data/recognition_profiles/fingerprint_decision_v5.json','data/recognition_features.json','benchmarks/reference/reference_truth_v3.json']:
-        assert (ROOT/path).read_bytes()==subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT)
+        assert subprocess.check_output(['git','show',freeze+':'+path],cwd=ROOT)==subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT)
 
 def test_seven_run_median_gate_does_not_promote_preferences_to_blockers():
     from benchmarks.round16_performance import stability

@@ -1,0 +1,58 @@
+{
+  "N": 266,
+  "balanced_capacity": {
+    "N": 266,
+    "max_concentration_upper_bound": 0.24812030075187969,
+    "per_source_capacity": {
+      "aci": 1,
+      "agid": 43,
+      "anac": 50,
+      "garante_privacy": 3,
+      "giustizia": 7,
+      "inail": 9,
+      "inl": 41,
+      "inps": 7,
+      "interno": 10,
+      "lavoro": 3,
+      "mef": 25,
+      "mimit": 12,
+      "mit": 12,
+      "regione_piemonte": 22,
+      "unioncamere": 21
+    },
+    "sources": 15
+  },
+  "candidate_pool_sha256": "b4f1205a410e5872b0091751f5b11152a77c124442a82a78bedc2a477bbb0668",
+  "counts_per_source": {
+    "aci": 1,
+    "agid": 43,
+    "anac": 50,
+    "garante_privacy": 3,
+    "giustizia": 7,
+    "inail": 9,
+    "inl": 41,
+    "inps": 7,
+    "interno": 10,
+    "lavoro": 3,
+    "mef": 25,
+    "mimit": 12,
+    "mit": 12,
+    "regione_piemonte": 22,
+    "unioncamere": 21
+  },
+  "master_N": 266,
+  "master_max_concentration": 0.18796992481203006,
+  "max_concentration": 0.24812030075187969,
+  "passed": true,
+  "recognition_calls": 0,
+  "requirements": {
+    "concentration": true,
+    "count": true,
+    "input_supported": true,
+    "no_contamination": true,
+    "sources": true
+  },
+  "scope": "Fresh never-predicted master; preflight proves balanced subset capacity without selecting any release IDs. Actual deterministic selection is after freeze and must satisfy the same limits.",
+  "sources": 15,
+  "truth_audit_sha256": "cd65949e72cce74636aeb530bc9b35dec483a929fee323fa8c8fafdd6f1a067a"
+}

@@ -1,0 +1,103 @@
+{
+  "benchmark_schemas_valid": true,
+  "candidate_version": "0.7.0-rc1",
+  "canonical": {
+    "exact": 1007,
+    "n": 1007,
+    "scope": "Hash-bound original Round22 post-V6 observations; no replay"
+  },
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "ci_adapter_local": {
+    "legacy_exit": 1,
+    "new_V6_calls": 0,
+    "new_unknown4_calls": 0,
+    "passed": true,
+    "recognition_freeze": true,
+    "reports": {
+      "development_regression.json": {
+        "cases": 35,
+        "historical_mismatches": 2,
+        "unchanged": true
+      },
+      "family_release_v3.json": {
+        "cases": 161,
+        "historical_mismatches": 0,
+        "unchanged": true
+      },
+      "hard_negatives_v1.json": {
+        "cases": 30,
+        "historical_mismatches": 0,
+        "unchanged": true
+      },
+      "hard_negatives_v2.json": {
+        "cases": 100,
+        "historical_mismatches": 0,
+        "unchanged": true
+      },
+      "release_locked_v1.json": {
+        "cases": 69,
+        "historical_mismatches": 10,
+        "unchanged": true
+      },
+      "release_locked_v2.json": {
+        "cases": 69,
+        "historical_mismatches": 0,
+        "unchanged": true
+      }
+    }
+  },
+  "ci_adapter_log_sha256": "ee629c064ea6f5b71c007f98e0424ca9c4ecda4bf7662ed57f57d8d73ac54d5b",
+  "compileall": true,
+  "failures": 0,
+  "full_pytest": {
+    "failed": 0,
+    "log_sha256": "1b0aa44154d0e26aa915fdb9240e330e3081e9f98b87f6a6b3f2bdb4be7168e5",
+    "passed": 889,
+    "scope": "Complete local Windows suite before RC commit; three OS privilege/FIFO skips",
+    "seconds": 485.15,
+    "skipped": 3
+  },
+  "migration": {
+    "idempotent": true,
+    "row_counts_unchanged": true,
+    "schema": 610
+  },
+  "new_V6_calls": 0,
+  "new_unknown4_calls": 0,
+  "package": {
+    "original_verifier_passed": true,
+    "protected_files": 1554,
+    "scope": "Original Round22 package fully verified at entry, before authorized README/metadata edits; CRC and all evidence locks rechecked",
+    "sha256": "bc9e3aa49b1c05b2a773f4c605e1b79569ec21a0339fab6adef42dac8de27f26"
+  },
+  "safety": {
+    "false_accepts": 0,
+    "n": 705,
+    "scope": "Hash-bound original Round22 post-V6 observations; no replay"
+  }
+}
