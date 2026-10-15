@@ -1,0 +1,391 @@
+{
+  "schema_version": 3,
+  "identity": {
+    "commit": "649e61cccc4de4380e0fbade3d0894d977da7b2f",
+    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+    "code_sha256": "731439dc9adb68502b070320bb661d8ca47d70ddad894ed6c120f625bf5e1f67",
+    "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
+    "seed": 2026101207,
+    "executed_at": "2026-10-12T08:26:21.079254+00:00"
+  },
+  "summary": {
+    "cases": 0,
+    "passed": 0,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    }
+  },
+  "cases": [],
+  "families_total": 16,
+  "families_evaluable": 0,
+  "splits": {
+    "14": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "13": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "3": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "5": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "4": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "1": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "2": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "12": {
+      "development_identities": [],
+      "held_out_identities": [
+        167
+      ],
+      "evaluable": false
+    },
+    "11": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "10": {
+      "development_identities": [],
+      "held_out_identities": [
+        143
+      ],
+      "evaluable": false
+    },
+    "7": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "9": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "6": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "8": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "15": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "16": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    }
+  },
+  "per_family": {},
+  "macro": {
+    "family_precision": null,
+    "family_recall": null,
+    "family_f1": null
+  },
+  "exploratory_cases": [
+    {
+      "id": "FH7-167",
+      "group": "document:167",
+      "category": "family_identity_holdout",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 7.4,
+      "provenance": {
+        "document_id": 167,
+        "sha256": "085b42dcf427488cb834c4a5df2633a4d6a007e1f959c54803d2b55ceceb1d82"
+      },
+      "representation": "official_original",
+      "family_evaluable": false
+    },
+    {
+      "id": "FH7-143",
+      "group": "document:143",
+      "category": "family_identity_holdout",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 5.618,
+      "provenance": {
+        "document_id": 143,
+        "sha256": "f117643130e2109211dada6d0d938ce9761d4334761a8be48fa4ad8497c5be53"
+      },
+      "representation": "official_original",
+      "family_evaluable": false
+    }
+  ],
+  "exploratory_summary": {
+    "cases": 2,
+    "passed": 1,
+    "failed": 1,
+    "metrics": {
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "family_f1": {
+        "numerator": 2,
+        "denominator": 3,
+        "value": 0.6666666666666666
+      },
+      "exact_document_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 1,
+        "NO_MATCH": 1
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 6.509,
+      "p95": 7.3109,
+      "p99": null
+    }
+  },
+  "false_accepts": 0,
+  "capability_status": "not_sufficiently_validated",
+  "limitations": "Retrospective split; no new family phrases, no exact fingerprints in family scoring. Fewer than five evaluable families does not block known-document RC; family capability remains unvalidated. Historical synthetic hard negatives reported separately.",
+  "counts": {
+    "exact": 0,
+    "family": 0,
+    "reject": 0,
+    "wrong": 0,
+    "extraction_failed": 0
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "numerator": 0,
+      "denominator": 0
+    },
+    "5": {
+      "numerator": 0,
+      "denominator": 0
+    },
+    "10": {
+      "numerator": 0,
+      "denominator": 0
+    },
+    "25": {
+      "numerator": 0,
+      "denominator": 0
+    }
+  },
+  "by_transformation": {},
+  "by_source": {},
+  "by_format": {}
+}

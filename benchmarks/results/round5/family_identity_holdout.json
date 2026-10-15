@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "code_sha256": "8b93a7d9eb5909c74bc111541cc9985589194d70a1391d594647969ff946240e",
+    "fingerprint_sha256": "56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2",
+    "seed": 20261011,
+    "executed_at": "2026-10-11T20:12:05.051763+00:00"
+  },
+  "independent_identity_generalization": false,
+  "summary": {
+    "cases": 1,
+    "passed": 0,
+    "failed": 1,
+    "metrics": {
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "exact_document_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 1
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": null
+    }
+  },
+  "cases": [
+    {
+      "id": "FH-143",
+      "group": "document:143",
+      "category": "family_identity_holdout",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "source_id": 15,
+      "provenance": {
+        "document_id": 143,
+        "sha256": "0b8f4336f6f19609a078eaa3716e96e1318208cc45bd24be1f6c66271e5a500c",
+        "family_id": 10,
+        "url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo.pdf",
+        "source_id": 15
+      },
+      "representation": "official_original"
+    }
+  ],
+  "splits": {
+    "14": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "13": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "3": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "5": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "4": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "1": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "2": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "12": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "11": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "10": {
+      "development_identities": [],
+      "held_out_identities": [
+        143
+      ],
+      "evaluable": false
+    },
+    "7": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "9": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "6": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "8": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "15": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    },
+    "16": {
+      "development_identities": [],
+      "held_out_identities": [],
+      "evaluable": false
+    }
+  },
+  "per_family": {
+    "10": {
+      "cases": 1,
+      "passed": 0,
+      "failed": 1,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 1
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": null
+      }
+    }
+  },
+  "macro": {
+    "family_precision": null,
+    "family_recall": 0.0,
+    "family_f1": 0.0
+  },
+  "families_evaluable": 0,
+  "families_tested": 1,
+  "train_identities": 0,
+  "held_out_identities": 1,
+  "pattern_build": "Pre-existing verified family phrases unchanged from Round 4; held-out IDs never used to build new family patterns or scored via exact fingerprints.",
+  "limitations": "Retrospective split of previously inspected official identities; insufficient prospective independent family evidence. Families without catalog/file evidence remain unevaluated.",
+  "counts": {
+    "exact": 0,
+    "family": 0,
+    "reject": 1,
+    "wrong": 0,
+    "extraction_failed": 0
+  }
+}

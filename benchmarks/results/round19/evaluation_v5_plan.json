@@ -1,0 +1,492 @@
+{
+  "created_at": "2026-10-14T07:15:15.832562+00:00",
+  "filled_identities": [
+    796,
+    802,
+    1136,
+    846,
+    1061,
+    279,
+    280,
+    286,
+    912,
+    436,
+    433,
+    470
+  ],
+  "freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+  "method": "Metadata/hash-only round robin,target50,max10/source,max2DOCX;12 PDF fillers prefer fields,max3/source. No predictions. Distinct per-case seed adds0.05% scan pixels with +/-2 intensity; no metadata-only freshness for scans. Digital derivatives rebuild PDF objects/XML; normalization flattens widgets/canonicalizes XML. Filled variants1419..1423 are new synthetic values.",
+  "preferred_max": 0.3,
+  "preflight_sha256": "25bcfedfb87b127a86d72cbd722ac5581f0d0fb5acd426811b37032a4deac20d",
+  "registry_sha256": "67d187bf6139495486d0d7b5fe7e1cb3258310d07bd52d04b39420f0bfd32fa3",
+  "sampling_max": 0.35,
+  "selected": [
+    {
+      "document_id": 796,
+      "field_count": 38,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "a30dbfcbd4837635737ebbf73d2318025f8bacc12635bcdfc818253dc39fdeb1",
+      "source_id": 2
+    },
+    {
+      "document_id": 802,
+      "field_count": 73,
+      "mime_type": "application/pdf",
+      "pages": 3,
+      "sha256": "88b05fd728ca8354a0d20e11c0e98c79b88694be13e14b7419af85db8bbb4a92",
+      "source_id": 2
+    },
+    {
+      "document_id": 1136,
+      "field_count": 177,
+      "mime_type": "application/pdf",
+      "pages": 4,
+      "sha256": "38bf1724f11232ebda80ffcfd82c626a27eccba29b3a410de2d3d8d02ee0c7ae",
+      "source_id": 3
+    },
+    {
+      "document_id": 1205,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "f2a5604728ee2cc25ffa1586e3d1e992f989d0efe051468fcd2366a716129d8a",
+      "source_id": 3
+    },
+    {
+      "document_id": 846,
+      "field_count": 132,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "sha256": "396b1fcf53b989cae0650e3ce9259e982ff418bd41095cfabe2805aefbe15434",
+      "source_id": 2
+    },
+    {
+      "document_id": 938,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "60902341a8dd8a365ec629567ebb4315dd86c8988fc91f9ad99cd93da7f4df8e",
+      "source_id": 3
+    },
+    {
+      "document_id": 436,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "86ea7b0373bc364df90d064c27b6e5b6adef9b97e7948bae2e0d06a80894a1c2",
+      "source_id": 16
+    },
+    {
+      "document_id": 1052,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "b48a0489e5e1497b7e9ee58199fb76daa8aa14a067f41dada3564e64c2258698",
+      "source_id": 3
+    },
+    {
+      "document_id": 708,
+      "field_count": 192,
+      "mime_type": "application/pdf",
+      "pages": 7,
+      "sha256": "2d17b752a9b6c0179da67761bccca1bf6428412f350a6198e74d319968b04949",
+      "source_id": 2
+    },
+    {
+      "document_id": 1006,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "638ddb9fd6d266bd43701484021087eaac89e48498bb38a68d58b4cee88cb1d8",
+      "source_id": 3
+    },
+    {
+      "document_id": 1001,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "d51d11b9deedd1dd6209fb1518484c08920faedaf7f5720229b8c52e54de7d5d",
+      "source_id": 3
+    },
+    {
+      "document_id": 1061,
+      "field_count": 121,
+      "mime_type": "application/pdf",
+      "pages": 14,
+      "sha256": "384e28c8a87f30c00f6c97771949a876849b44722db5728664fddecb08a6ad35",
+      "source_id": 3
+    },
+    {
+      "document_id": 279,
+      "field_count": 18,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "5dc83b58cc7d1b6f13eab0a9344560a4e7b1e759eda5d0d8598cf042cad11349",
+      "source_id": 5
+    },
+    {
+      "document_id": 280,
+      "field_count": 18,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "3adb6f53662a10acb7c0c08fd8ab1a1fbad3c6d32dff690fefbeb2c5f167c26e",
+      "source_id": 5
+    },
+    {
+      "document_id": 286,
+      "field_count": 16,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+      "source_id": 5
+    },
+    {
+      "document_id": 912,
+      "field_count": 210,
+      "mime_type": "application/pdf",
+      "pages": 7,
+      "sha256": "2f2b2ca336df212874f0e3b1cb761b4f0ec7b99648a89d3499638253820c2155",
+      "source_id": 3
+    },
+    {
+      "document_id": 433,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "6f539cef5ab4feb09ecae0b32ee1de50fb672baeb3e6b2e058c75d6de53ca5b4",
+      "source_id": 16
+    },
+    {
+      "document_id": 834,
+      "field_count": 507,
+      "mime_type": "application/pdf",
+      "pages": 8,
+      "sha256": "d40cf5a1ce27e8de0f9bd0b5fc436e67f062b8a20b11ea890215861d5a353b47",
+      "source_id": 2
+    },
+    {
+      "document_id": 281,
+      "field_count": 18,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "87032637f847684823e36b2a22a3ae2cafcffdfd709a9f57c33ad8abf540393e",
+      "source_id": 5
+    },
+    {
+      "document_id": 1178,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 8,
+      "sha256": "397e93e2a09de04ff006ed66b1daa2d12140f3df3eca8c77f4531d92f8d96299",
+      "source_id": 3
+    },
+    {
+      "document_id": 180,
+      "field_count": 0,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "sha256": "1892a5f42140ba4c601de0f1a96e05e1a215bdedfd7541b392d919ae7afd40b6",
+      "source_id": 14
+    },
+    {
+      "document_id": 470,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "2ca16f057b76d6ddc2e66e17042c398cab9c5ca79f887930f1bfc84a7d3196ee",
+      "source_id": 16
+    },
+    {
+      "document_id": 766,
+      "field_count": 182,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "sha256": "4a403febd70c3a6367dcf44fa051587380bd52047d804169a3e0931fb6b7f55d",
+      "source_id": 2
+    },
+    {
+      "document_id": 475,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "494a1af9beec60ce4fd98b1e67a50e45ba0655a8b5e23b13e367d4a2e07cb69b",
+      "source_id": 16
+    },
+    {
+      "document_id": 713,
+      "field_count": 189,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "sha256": "c12d449ea3d1a61731e748df74d6f316899391b1c83cbe816d99c17c413c8a8e",
+      "source_id": 2
+    },
+    {
+      "document_id": 472,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "1de974ab50a7aff25c0a9e2fcc47cc1a47b0a773526a5d6efdd67e354a5f6276",
+      "source_id": 16
+    },
+    {
+      "document_id": 443,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "be40307dcd1d2f773ad35b635a084be4e15ea0640ea7f751145b8146790e0c49",
+      "source_id": 16
+    },
+    {
+      "document_id": 1102,
+      "field_count": 458,
+      "mime_type": "application/pdf",
+      "pages": 9,
+      "sha256": "560355bbe9332405995025a16c81993894984b3300d40aba4e23f5070a62ced3",
+      "source_id": 3
+    },
+    {
+      "document_id": 616,
+      "field_count": 0,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": 1,
+      "sha256": "4595c74360a83ca7dde40c935fd9fea9fde7accb1b618f6bb131498f36a5adc2",
+      "source_id": 19
+    },
+    {
+      "document_id": 857,
+      "field_count": 204,
+      "mime_type": "application/pdf",
+      "pages": 6,
+      "sha256": "fe30b7f021d8fcc3695a2daa13acf0c3774fd193ef7b12dba0290bf95fab671b",
+      "source_id": 2
+    },
+    {
+      "document_id": 869,
+      "field_count": 80,
+      "mime_type": "application/pdf",
+      "pages": 7,
+      "sha256": "91052b96ad8f78ee5522f368d3009f629e752198aa218419803b50e1c7255ae7",
+      "source_id": 2
+    },
+    {
+      "document_id": 717,
+      "field_count": 208,
+      "mime_type": "application/pdf",
+      "pages": 13,
+      "sha256": "325dd7e82d5f988f8a81837125eb5b9212999a1334f59e2325d14d776be62aaf",
+      "source_id": 2
+    },
+    {
+      "document_id": 402,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "db4dc548da1d0d39e16a9dfb32d2466c48f08110fe54563672a1d225acddce05",
+      "source_id": 16
+    },
+    {
+      "document_id": 408,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "dafbb1afe203c9ec7ec9df20b354a17d6b98ee8b168aa89b4f62a8c35381ac17",
+      "source_id": 16
+    },
+    {
+      "document_id": 91,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 1,
+      "sha256": "d2c930cdbe4c5b113061daed6e324b2b9339b61064f1195fc4d4ccb8dc4375b4",
+      "source_id": 5
+    },
+    {
+      "document_id": 469,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "a72dd72c0d5fc29dfd594c1d5f426e144cbd3308b1ffd1141cf73dc35e528e15",
+      "source_id": 16
+    },
+    {
+      "document_id": 528,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "e9ee329e03f4912c504f96eb36f89359b00f77a163171503026389005820c912",
+      "source_id": 16
+    },
+    {
+      "document_id": 89,
+      "field_count": 0,
+      "mime_type": "application/pdf",
+      "pages": 2,
+      "sha256": "fc525d13e66b1e79b7974a11f82e25dbbd18dd85fe624cd876370679e9c4e5eb",
+      "source_id": 5
+    }
+  ],
+  "selection_seed": 2026101419,
+  "source_concentration": 0.2631578947368421,
+  "source_counts": {
+    "2": 10,
+    "3": 10,
+    "5": 6,
+    "14": 1,
+    "16": 10,
+    "19": 1
+  },
+  "source_policy_sha256": "c5b8ccc10fd379a09635fe975629d2a6fce96842acedfbb1b921ccbf8fe0c14d",
+  "strata_counts": {
+    "coded": {
+      "False": 28,
+      "True": 10
+    },
+    "entity": {
+      "Garante per la protezione dei dati personali": 1,
+      "INAIL": 10,
+      "INPS": 10,
+      "Ministero del Lavoro": 6,
+      "Tribunale di Venezia": 10,
+      "Unioncamere": 1
+    },
+    "format": {
+      "application/pdf": 36,
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 2
+    },
+    "page_count_bucket": {
+      "1": 14,
+      "2-5": 12,
+      "6+": 12
+    },
+    "versioned": {
+      "False": 20,
+      "True": 18
+    }
+  },
+  "transform_policy": [
+    {
+      "name": "raster_200",
+      "params": {
+        "dpi": 200,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "raster_150",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "jpeg_90",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005,
+        "quality": 90
+      }
+    },
+    {
+      "name": "jpeg_75",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005,
+        "quality": 75
+      }
+    },
+    {
+      "name": "jpeg_60",
+      "params": {
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005,
+        "quality": 60
+      }
+    },
+    {
+      "name": "grayscale",
+      "params": {
+        "dpi": 150,
+        "gray": true,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "contrast_minus20",
+      "params": {
+        "contrast": 0.8,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "blur_mild",
+      "params": {
+        "blur": 0.65,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "crop_2pct",
+      "params": {
+        "crop": 0.02,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "crop_5pct",
+      "params": {
+        "crop": 0.05,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "first_page_only",
+      "params": {
+        "first_page_only": true,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "rotation_90",
+      "params": {
+        "angle": 90,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "rotation_180",
+      "params": {
+        "angle": 180,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    },
+    {
+      "name": "rotation_270",
+      "params": {
+        "angle": 270,
+        "dpi": 150,
+        "noise_amplitude": 2,
+        "noise_fraction": 0.0005
+      }
+    }
+  ]
+}

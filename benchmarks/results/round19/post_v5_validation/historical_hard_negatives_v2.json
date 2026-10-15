@@ -1,0 +1,3084 @@
+{
+  "cases": [
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H000",
+      "id": "hard_negatives_v2:H000",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:no_candidate] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "96fce8589725ff8c76f2fc8bb86f7aab78cb4564484e782772f79e7f137b9e4b",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H001",
+      "id": "hard_negatives_v2:H001",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:no_candidate] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "59632ce04e663200c5231ce6d1acb49a4f82f309dd13fa145303d500c229b16f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H002",
+      "id": "hard_negatives_v2:H002",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H003",
+      "id": "hard_negatives_v2:H003",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H004",
+      "id": "hard_negatives_v2:H004",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H005",
+      "id": "hard_negatives_v2:H005",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "d7df6939a4a0262ca7e01b0d85738fcf5c2e2b66f0403da7cb183a7a7bfad662",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H006",
+      "id": "hard_negatives_v2:H006",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "12dff88465303ae8e47c72ea287bd9dd060f540d532ded003dfae49aa622f3b3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H007",
+      "id": "hard_negatives_v2:H007",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "ff57465099881ed25738bc0873d91a9cd6c111f54b64cf0ca0b7db3b53ce4ca8",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H008",
+      "id": "hard_negatives_v2:H008",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Ente incompatibile con le famiglie candidate.",
+      "signature_sha256": "8ae407ddf64ca992ee151daf74ef4a8483fe7c068307be0714e52e8734d9f078",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H009",
+      "id": "hard_negatives_v2:H009",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "7ada8b6fdc8252e6312c63f0a8d4587c844952faa68a9dc9a78c4c8aa8dd6b29",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H010",
+      "id": "hard_negatives_v2:H010",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "fe97d3b068f22bdf49a4833d9b67e32986d39ef5e93e8544ca784f86c63cd39a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H011",
+      "id": "hard_negatives_v2:H011",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "ce37cf17f3e98e9c48336d4b74e005e6f2ed5de510d166ad24b891c9296595ed",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H012",
+      "id": "hard_negatives_v2:H012",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "7dbc19aa5cf04397bdbb1e2948d3ceb7e5c05704a88dd42a1cc39570439cc0b0",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H013",
+      "id": "hard_negatives_v2:H013",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "eef880366bfa781cdecefc7b9399215d0fc8b8b5c052bcf1749516373885f388",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H014",
+      "id": "hard_negatives_v2:H014",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "eef880366bfa781cdecefc7b9399215d0fc8b8b5c052bcf1749516373885f388",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H015",
+      "id": "hard_negatives_v2:H015",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "64e47481f2871026aea5bb56f386d7445e559ff37d171e6119556e2b4fee33d2",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H016",
+      "id": "hard_negatives_v2:H016",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "09d9756f1f4a423e961ba99b0bc299a2476c023ecdb59cd6e07c51fdd9495121",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H017",
+      "id": "hard_negatives_v2:H017",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "09d9756f1f4a423e961ba99b0bc299a2476c023ecdb59cd6e07c51fdd9495121",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H018",
+      "id": "hard_negatives_v2:H018",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H019",
+      "id": "hard_negatives_v2:H019",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "e61a3023af3917b48d5d6a1a175835dab91427bef35bc409336a1d7231087d0c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H020",
+      "id": "hard_negatives_v2:H020",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H021",
+      "id": "hard_negatives_v2:H021",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H022",
+      "id": "hard_negatives_v2:H022",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H023",
+      "id": "hard_negatives_v2:H023",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H024",
+      "id": "hard_negatives_v2:H024",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "aebf7438cd703fc7f95de696d7e042f9dcd671bfb19ec6bb45f09749c2b7adbe",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H025",
+      "id": "hard_negatives_v2:H025",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "d3123598ae27c4de7c15eec61edc93646fb75e4493cdd23ab4f2143ae014b459",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H026",
+      "id": "hard_negatives_v2:H026",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "dbc0c485e57d3fb2cb502afa2a30d1c6e7ae0a5109259ac1ce7afa94e38b7d38",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H027",
+      "id": "hard_negatives_v2:H027",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "5906f2c1fd9aa89802ac69c0dedb97a5b4802c46f6902af95b246f210272da4d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H028",
+      "id": "hard_negatives_v2:H028",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "09d9756f1f4a423e961ba99b0bc299a2476c023ecdb59cd6e07c51fdd9495121",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:H029",
+      "id": "hard_negatives_v2:H029",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "dfa976777e3b57336837b77fcec3e538c734efe6a989cc88893abea26094eeed",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-031",
+      "id": "hard_negatives_v2:HN2-031",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "79504057a8ddfaf24102fda836a63fed943f5de1e94538b0edef40974ac0caf6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-032",
+      "id": "hard_negatives_v2:HN2-032",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "14d2578bd513a309479d72e38fc1baf4255420d35f5fbaa56fd56c70cc5c0a50",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-033",
+      "id": "hard_negatives_v2:HN2-033",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "a217d9be2d67659092aef6b19f0b72692a575c45676253cd59373619ac28b6ba",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-034",
+      "id": "hard_negatives_v2:HN2-034",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "20877e5e4947b0df4e118e9538bcdddd816b0686d6d0d2f6b4ef51980f0b3ba2",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-035",
+      "id": "hard_negatives_v2:HN2-035",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "a9bd15fad436a2dd6cb781c0aa759dc69de028807840fae8c9dcebcad6fa534f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-036",
+      "id": "hard_negatives_v2:HN2-036",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "79504057a8ddfaf24102fda836a63fed943f5de1e94538b0edef40974ac0caf6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-037",
+      "id": "hard_negatives_v2:HN2-037",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "b628fc87eca50ee3128b458550df3201cc038fcc2455fd7cd1ea508229faa5d0",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-038",
+      "id": "hard_negatives_v2:HN2-038",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "65a3680a0c073c63dfb11de74b63206bb035e957ce26ad43109df5c155e8d11d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-039",
+      "id": "hard_negatives_v2:HN2-039",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "65a3680a0c073c63dfb11de74b63206bb035e957ce26ad43109df5c155e8d11d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-040",
+      "id": "hard_negatives_v2:HN2-040",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "5cffcd6e1f72cafbaff5dd802e6e8f18df382a860106d616298681cc12b148e2",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-041",
+      "id": "hard_negatives_v2:HN2-041",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "65a3680a0c073c63dfb11de74b63206bb035e957ce26ad43109df5c155e8d11d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-042",
+      "id": "hard_negatives_v2:HN2-042",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "65a3680a0c073c63dfb11de74b63206bb035e957ce26ad43109df5c155e8d11d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-043",
+      "id": "hard_negatives_v2:HN2-043",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "65a3680a0c073c63dfb11de74b63206bb035e957ce26ad43109df5c155e8d11d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-044",
+      "id": "hard_negatives_v2:HN2-044",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "65a3680a0c073c63dfb11de74b63206bb035e957ce26ad43109df5c155e8d11d",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-045",
+      "id": "hard_negatives_v2:HN2-045",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-046",
+      "id": "hard_negatives_v2:HN2-046",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-047",
+      "id": "hard_negatives_v2:HN2-047",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-048",
+      "id": "hard_negatives_v2:HN2-048",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-049",
+      "id": "hard_negatives_v2:HN2-049",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-050",
+      "id": "hard_negatives_v2:HN2-050",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-051",
+      "id": "hard_negatives_v2:HN2-051",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "250aea5f870485a75cc416f15dcb4f65e47c4414c4eaa9c173d23d0c468cf173",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-052",
+      "id": "hard_negatives_v2:HN2-052",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "c084fdbea8b132b354d4b971c132ca05c7e04eba6fb80893130b63123d45f0f3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-053",
+      "id": "hard_negatives_v2:HN2-053",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "c084fdbea8b132b354d4b971c132ca05c7e04eba6fb80893130b63123d45f0f3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-054",
+      "id": "hard_negatives_v2:HN2-054",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "2d6e07626bc9e4b8450f8ee43885a6514818bb5eef5d67c439b19a329fb40f27",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-055",
+      "id": "hard_negatives_v2:HN2-055",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "c084fdbea8b132b354d4b971c132ca05c7e04eba6fb80893130b63123d45f0f3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-056",
+      "id": "hard_negatives_v2:HN2-056",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "bf7bd52bf7cb65194c5012018da5e1989168d51a21f10c0956467eb7012479bf",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-057",
+      "id": "hard_negatives_v2:HN2-057",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "614ff58379dc62d22a91402cdade4d6fcc0337a038a2ae13cbbf599282aa494f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-058",
+      "id": "hard_negatives_v2:HN2-058",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "e669712afdba12731eb97abc4b151a82a08bfaf4c7bd7655b332e436698df750",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-059",
+      "id": "hard_negatives_v2:HN2-059",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "e0a8c757def43bd53d5167e8244f454796df09bbf1bdedf9ae521af85f2b7543",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-060",
+      "id": "hard_negatives_v2:HN2-060",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "3c543a4b873dd86d8948e870d889bb8d02c8e0d617a27e335e51ac2028ba7344",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-061",
+      "id": "hard_negatives_v2:HN2-061",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "a7adc126555cda1aee3fa901339ef75578d44fc98ff8c859d99b383be978551a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-062",
+      "id": "hard_negatives_v2:HN2-062",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "2feadb08830ef33b3112d140cec84bbedbd03d7e357c5b6d0904726d8756aefc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-063",
+      "id": "hard_negatives_v2:HN2-063",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "d8a6dae3915cd3bbe186e847bf4054384c6dec0b818a8d4a9b66457f0e822a9c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-064",
+      "id": "hard_negatives_v2:HN2-064",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "c613c5b0650fad3b2e2178d4073fec465765cdc43826bf7dcc80ebe6612050e1",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-065",
+      "id": "hard_negatives_v2:HN2-065",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "a534b62c8acd1bd8d67fb7625330d9b4625437ea240edbcab14796c2cd3541b2",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-066",
+      "id": "hard_negatives_v2:HN2-066",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fec13af663894229457a1216add917eb931a47032449b3fea8dbde20649e14a6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-067",
+      "id": "hard_negatives_v2:HN2-067",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fec13af663894229457a1216add917eb931a47032449b3fea8dbde20649e14a6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-068",
+      "id": "hard_negatives_v2:HN2-068",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "8c5eca8c16f0bbf6add2c915ea6c28721ecb7e7c7f620b1270c34e055b3da696",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-069",
+      "id": "hard_negatives_v2:HN2-069",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fec13af663894229457a1216add917eb931a47032449b3fea8dbde20649e14a6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-070",
+      "id": "hard_negatives_v2:HN2-070",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fec13af663894229457a1216add917eb931a47032449b3fea8dbde20649e14a6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-071",
+      "id": "hard_negatives_v2:HN2-071",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fec13af663894229457a1216add917eb931a47032449b3fea8dbde20649e14a6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-072",
+      "id": "hard_negatives_v2:HN2-072",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fec13af663894229457a1216add917eb931a47032449b3fea8dbde20649e14a6",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-073",
+      "id": "hard_negatives_v2:HN2-073",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "e2b3194dc97a9244014486b01ae347efb73800b66ea83593f58b7dbeb167c516",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-074",
+      "id": "hard_negatives_v2:HN2-074",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "368356bba02ec9b7afa2da48b3f51811c0f042792e59764b42b1b78165599a49",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-075",
+      "id": "hard_negatives_v2:HN2-075",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "76ad93a0cf265b5e83a2db2556f96aba1661c54ac364f4062f6def4d6e15b986",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-076",
+      "id": "hard_negatives_v2:HN2-076",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "3fe92467671bdd01c05db3ef5ad345387fcfa998227fc1bf1fcc3e9139522799",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-077",
+      "id": "hard_negatives_v2:HN2-077",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "20016d6ef5296658d692fe0258ae12ec26c761b11614b2646459ee8374bcd611",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-078",
+      "id": "hard_negatives_v2:HN2-078",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "a047e49d9de3e41f97836cec36f9acd090e406f799cacd2bb9026e957952c186",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-079",
+      "id": "hard_negatives_v2:HN2-079",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "b5b2557be9686b54f341ab6358ddab047f7af0e67139c10eb6f2a780a49418cb",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-080",
+      "id": "hard_negatives_v2:HN2-080",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "1d406c32a496fdb34e3419ada8080c5d98cc9cd4fe7515489fad7b41def23f70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-081",
+      "id": "hard_negatives_v2:HN2-081",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "1d406c32a496fdb34e3419ada8080c5d98cc9cd4fe7515489fad7b41def23f70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-082",
+      "id": "hard_negatives_v2:HN2-082",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "fde6472e934b56b49231393300179e38782b4186935d4e1ebd24fa0ea4ab7c44",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-083",
+      "id": "hard_negatives_v2:HN2-083",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "1d406c32a496fdb34e3419ada8080c5d98cc9cd4fe7515489fad7b41def23f70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-084",
+      "id": "hard_negatives_v2:HN2-084",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "1d406c32a496fdb34e3419ada8080c5d98cc9cd4fe7515489fad7b41def23f70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-085",
+      "id": "hard_negatives_v2:HN2-085",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "1d406c32a496fdb34e3419ada8080c5d98cc9cd4fe7515489fad7b41def23f70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-086",
+      "id": "hard_negatives_v2:HN2-086",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "1d406c32a496fdb34e3419ada8080c5d98cc9cd4fe7515489fad7b41def23f70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-087",
+      "id": "hard_negatives_v2:HN2-087",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "33914426f25648b0b68a8ed69d951af91e9e32e3678ded114fc2f33fa9349409",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-088",
+      "id": "hard_negatives_v2:HN2-088",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "33914426f25648b0b68a8ed69d951af91e9e32e3678ded114fc2f33fa9349409",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-089",
+      "id": "hard_negatives_v2:HN2-089",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "8950f3acab264c24be163fb8e804ceb9f81641b04429e09e30b49036503f0279",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-090",
+      "id": "hard_negatives_v2:HN2-090",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "33914426f25648b0b68a8ed69d951af91e9e32e3678ded114fc2f33fa9349409",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-091",
+      "id": "hard_negatives_v2:HN2-091",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "2ac9f2cdbd80bb501a194f9a3633cb94e8761f8d5e06f849e390b1f14d5cc6b1",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-092",
+      "id": "hard_negatives_v2:HN2-092",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "33914426f25648b0b68a8ed69d951af91e9e32e3678ded114fc2f33fa9349409",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-093",
+      "id": "hard_negatives_v2:HN2-093",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "33914426f25648b0b68a8ed69d951af91e9e32e3678ded114fc2f33fa9349409",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-094",
+      "id": "hard_negatives_v2:HN2-094",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "247265ce19780d88a202dd76275b83f2718a11b26d51be7fd5d6c3c04c04be8f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-095",
+      "id": "hard_negatives_v2:HN2-095",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "247265ce19780d88a202dd76275b83f2718a11b26d51be7fd5d6c3c04c04be8f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-096",
+      "id": "hard_negatives_v2:HN2-096",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "548e19e957caf28fee8bd0d6c78f82cc15f35542878bab15494539631cac49dc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-097",
+      "id": "hard_negatives_v2:HN2-097",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "247265ce19780d88a202dd76275b83f2718a11b26d51be7fd5d6c3c04c04be8f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-098",
+      "id": "hard_negatives_v2:HN2-098",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "817e8572ac981eb7c1fe10f99d7b2736d56ff8a5532be653904e59c29bcc76a5",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-099",
+      "id": "hard_negatives_v2:HN2-099",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "247265ce19780d88a202dd76275b83f2718a11b26d51be7fd5d6c3c04c04be8f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "hard_negatives_v2",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "hard_negatives_v2:HN2-100",
+      "id": "hard_negatives_v2:HN2-100",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. [fingerprint-decision-v5:insufficient_channels] Intestazione informativa: famiglia non attribuita.",
+      "signature_sha256": "247265ce19780d88a202dd76275b83f2718a11b26d51be7fd5d6c3c04c04be8f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "identity": {
+    "code_sha256": "db690156a3e3121645fcb322b0604167579515c77895e0d1fa6e794563885d5b",
+    "commit": "b3bd9cc61c6af15e8b3ad9958d6e40dcf34a683b",
+    "executed_at": "2026-10-14T07:30:22.066356+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "seed": 2026101208
+  },
+  "scope": "Frozen original expectations retained; uncertain mismatches are not confirmed identity errors.",
+  "summary": {
+    "cases": 100,
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 100
+      }
+    },
+    "failed": 0,
+    "latency_ms": {},
+    "metrics": {
+      "document_f1": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "document_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "denominator": 100,
+        "numerator": 100,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "denominator": 100,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "useful_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      }
+    },
+    "passed": 100
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "registry_id", "cases"],
+  "properties": {
+    "schema_version": {"const": 3},
+    "registry_id": {"const": "reference-truth-v3-round15"},
+    "cases": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["case_id", "historical_expected", "adjudicated_status", "expected_document_id", "expected_family_id", "official_evidence", "evidence_date", "confidence", "release_gate_eligible", "notes"],
+        "allOf": [
+          {
+            "if": {"properties": {"adjudicated_status": {"enum": ["ambiguous_truth", "insufficient_official_evidence"]}}},
+            "then": {"properties": {"release_gate_eligible": {"const": false}, "expected_document_id": {"type": "null"}, "expected_family_id": {"type": "null"}}}
+          }
+        ],
+        "properties": {
+          "case_id": {"type": "string", "pattern": "^U14-[a-f0-9]{16}$"},
+          "historical_expected": {"const": "NO_MATCH"},
+          "adjudicated_status": {"enum": ["confirmed_unknown", "actually_catalog_document", "actually_supported_family", "ambiguous_truth", "obsolete_or_replaced", "insufficient_official_evidence"]},
+          "expected_document_id": {"type": ["integer", "null"]},
+          "expected_family_id": {"type": ["integer", "null"]},
+          "official_evidence": {"type": "object", "minProperties": 1},
+          "evidence_date": {"type": "string", "format": "date-time"},
+          "confidence": {"enum": ["confirmed", "ambiguous", "insufficient"]},
+          "release_gate_eligible": {"type": "boolean"},
+          "notes": {"type": "string", "minLength": 20}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "base_reference_truth_v3_sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7",
+  "confidence_policy": {
+    "ambiguous": "excluded_from_release_gate; historical mismatch always visible",
+    "confirmed": "included_in_release_gate; exclusion is an error",
+    "historical_only": "historical_report_only",
+    "insufficient": "excluded_from_release_gate",
+    "obsolete": "excluded until independently requalified with a new version and actual evidence; historical results retained"
+  },
+  "created_at": "2026-10-13T18:13:29.317166+00:00",
+  "domains": [
+    "official_adjudication",
+    "technical_canonical_binding",
+    "synthetic_safety_contract",
+    "parser_limit_contract"
+  ],
+  "gate_scope": "Confirmed diagnostic release-fast regression; not independent unknown/known robustness evaluation. Freshness governed separately by contamination registry.",
+  "historical_policy": "Compare every frozen original expectation, retain all mismatches including EX02/EX03 and locked-v1 contradictions. Never rewrite historical expected.",
+  "policy_id": "release-truth-policy-v1",
+  "registry": "benchmarks/reference/reference_truth_v3_round16_addendum.json",
+  "registry_sha256": "ca3819fba1e8ccf0281e9bc5e81feae8be75634fe2e982d953c98fa3b9507f2c",
+  "schema_version": 1
+}

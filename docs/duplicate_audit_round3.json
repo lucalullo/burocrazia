@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "identity_groups": 3,
+  "shared_resource_groups": 8,
+  "groups": [
+    {
+      "kind": "identity",
+      "ids": [
+        81,
+        182,
+        183,
+        184,
+        230
+      ],
+      "classification": "variante",
+      "notes": "Stesso codice aggregato, titoli e risorse diversi; il codice da solo non determina identità.",
+      "records": [
+        {
+          "id": 81,
+          "ente": "Agenzia delle Entrate",
+          "codice": "F24",
+          "titolo_ufficiale": "F24",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/250689/Modello+di+versamento+unificato+-+F24+Ordinario_i+Modello+F24+%282%29.pdf/b773b043-a490-82de-550a-eda75246efa0?t=1372409604419"
+        },
+        {
+          "id": 182,
+          "ente": "Agenzia delle Entrate",
+          "codice": "F24",
+          "titolo_ufficiale": "F24 Enti pubblici",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/344093/Provvedimento+del+1122015+F24+EP_modello+F24Enti+pubblici+2016.pdf/a0f6d784-07e3-ea22-3d65-6e772f5035ad"
+        },
+        {
+          "id": 183,
+          "ente": "Agenzia delle Entrate",
+          "codice": "F24",
+          "titolo_ufficiale": "F24 Semplificato",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251039/Modello+F24+Semplificato+nuovo_F24+semplificato_mod.pdf/d9a07dd2-cb18-36b6-ecee-b648087604a6?t=1372415501789"
+        },
+        {
+          "id": 184,
+          "ente": "Agenzia delle Entrate",
+          "codice": "F24",
+          "titolo_ufficiale": "F24 crediti Pubbliche Amministrazioni",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251292/modello+F24+PP+AA_Modello+F24_crediti+PPAA.pdf/4a086d0c-61cb-0ae8-0e3b-d5a3108ecdaa?t=1391429095261"
+        },
+        {
+          "id": 230,
+          "ente": "Agenzia delle Entrate",
+          "codice": "F24",
+          "titolo_ufficiale": "F24 Elementi identificativi (c.d. Elide)",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251856/Modello+F24+identificativi+nuovo_Modello+F24+elementi+identif.pdf/0f618835-9fe0-7c8e-47a3-3bec74b8571d?t=1318491835426"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "identity",
+      "ids": [
+        132,
+        152
+      ],
+      "classification": "variante",
+      "notes": "Stesso codice aggregato, titoli e risorse diversi; il codice da solo non determina identità.",
+      "records": [
+        {
+          "id": 132,
+          "ente": "Ispettorato Nazionale del Lavoro",
+          "codice": "INL-17",
+          "titolo_ufficiale": "Accesso civico semplice e generalizzato. Servizi Ufficio Relazioni con il Pubblico",
+          "versione": null,
+          "download_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-1-Istanza-accesso-civico-semplice_new.pdf"
+        },
+        {
+          "id": 152,
+          "ente": "Ispettorato Nazionale del Lavoro",
+          "codice": "INL-17",
+          "titolo_ufficiale": "Accesso documentale",
+          "versione": null,
+          "download_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-Istanza-accesso-documentale-redacted_new.pdf"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "identity",
+      "ids": [
+        314,
+        399
+      ],
+      "classification": "vero duplicato strutturale",
+      "notes": "Stesso ente, codice, versione e URL; titoli linguistici diversi. Nessuna equivalenza sostanziale di contenuto dedotta senza file.",
+      "records": [
+        {
+          "id": 314,
+          "ente": "INPS",
+          "codice": "SC80",
+          "titolo_ufficiale": "Domestic work relationship: claim and deed of commitment for the deferred payment of contributions in the administrative phase (in Italian)",
+          "versione": "2.6",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/sc80/IT/SC80_Ist_Dilaz_LD.pdf"
+        },
+        {
+          "id": 399,
+          "ente": "INPS",
+          "codice": "SC80",
+          "titolo_ufficiale": "Rapporto di lavoro domestico - Domanda e atto di impegno per il pagamento dilazionato di contributi in fase amministrativa",
+          "versione": "2.6",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/sc80/IT/SC80_Ist_Dilaz_LD.pdf"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        79,
+        229,
+        230
+      ],
+      "classification": "stessa risorsa per identità diverse",
+      "notes": "Condivisione URL accertata. Possibile allegato condiviso o errore import; legittimità sostanziale da revisionare.",
+      "records": [
+        {
+          "id": 79,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Versamento del superbollo",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251856/Modello+F24+identificativi+nuovo_Modello+F24+elementi+identif.pdf/0f618835-9fe0-7c8e-47a3-3bec74b8571d?t=1318491835426"
+        },
+        {
+          "id": 229,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Ecotassa",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251856/Modello+F24+identificativi+nuovo_Modello+F24+elementi+identif.pdf/0f618835-9fe0-7c8e-47a3-3bec74b8571d?t=1318491835426"
+        },
+        {
+          "id": 230,
+          "ente": "Agenzia delle Entrate",
+          "codice": "F24",
+          "titolo_ufficiale": "F24 Elementi identificativi (c.d. Elide)",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251856/Modello+F24+identificativi+nuovo_Modello+F24+elementi+identif.pdf/0f618835-9fe0-7c8e-47a3-3bec74b8571d?t=1318491835426"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        174,
+        177,
+        178,
+        179,
+        180
+      ],
+      "classification": "stessa risorsa per identità diverse",
+      "notes": "Condivisione URL accertata. Possibile allegato condiviso o errore import; legittimità sostanziale da revisionare.",
+      "records": [
+        {
+          "id": 174,
+          "ente": "Garante per la protezione dei dati personali",
+          "codice": null,
+          "titolo_ufficiale": "ATTESTAZIONE DI CONFORMITÀ (art. 7, comma 5, Reg. Garante 1/2019)",
+          "versione": null,
+          "download_url": "https://www.garanteprivacy.it/garante/document?ID=7219673"
+        },
+        {
+          "id": 177,
+          "ente": "Garante per la protezione dei dati personali",
+          "codice": null,
+          "titolo_ufficiale": "VIDEOSORVEGLIANZA",
+          "versione": null,
+          "download_url": "https://www.garanteprivacy.it/garante/document?ID=7219673"
+        },
+        {
+          "id": 178,
+          "ente": "Garante per la protezione dei dati personali",
+          "codice": null,
+          "titolo_ufficiale": "CONCESSIONE DEL PATROCINIO",
+          "versione": null,
+          "download_url": "https://www.garanteprivacy.it/garante/document?ID=7219673"
+        },
+        {
+          "id": 179,
+          "ente": "Garante per la protezione dei dati personali",
+          "codice": null,
+          "titolo_ufficiale": "LOCALIZZAZIONE IN PAESI TERZI DELL'ATTIVITA' DI CALL CENTER",
+          "versione": null,
+          "download_url": "https://www.garanteprivacy.it/garante/document?ID=7219673"
+        },
+        {
+          "id": 180,
+          "ente": "Garante per la protezione dei dati personali",
+          "codice": null,
+          "titolo_ufficiale": "ACCESSO AI DOCUMENTI AMMINISTRATIVI PRESSO L’UFFICIO DEL GARANTE",
+          "versione": null,
+          "download_url": "https://www.garanteprivacy.it/garante/document?ID=7219673"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        248,
+        251,
+        252
+      ],
+      "classification": "stessa risorsa per identità diverse",
+      "notes": "Condivisione URL accertata. Possibile allegato condiviso o errore import; legittimità sostanziale da revisionare.",
+      "records": [
+        {
+          "id": 248,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Contratto di comodato",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8797481/RAP_mod.pdf/d6247712-e8f0-12eb-1660-087f11c27a22?t=1770288105547"
+        },
+        {
+          "id": 251,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Contratto preliminare di compravendita",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8797481/RAP_mod.pdf/d6247712-e8f0-12eb-1660-087f11c27a22?t=1770288105547"
+        },
+        {
+          "id": 252,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Verbale di distribuzione utili – Modello RAP",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8797481/RAP_mod.pdf/d6247712-e8f0-12eb-1660-087f11c27a22?t=1770288105547"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        249,
+        250
+      ],
+      "classification": "stessa risorsa per identità diverse",
+      "notes": "Condivisione URL accertata. Possibile allegato condiviso o errore import; legittimità sostanziale da revisionare.",
+      "records": [
+        {
+          "id": 249,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Contratto di locazione di beni immobili – Cedolare secca",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9390371/RLI_modello.pdf/0a161bc4-3dab-04d5-08fe-ef0e8c3cd9cf?t=1760958301757"
+        },
+        {
+          "id": 250,
+          "ente": "Agenzia delle Entrate",
+          "codice": null,
+          "titolo_ufficiale": "Contratto di locazione o affitto di beni immobili – RLI",
+          "versione": null,
+          "download_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9390371/RLI_modello.pdf/0a161bc4-3dab-04d5-08fe-ef0e8c3cd9cf?t=1760958301757"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        311,
+        621
+      ],
+      "classification": "variante di versione",
+      "notes": "Stesso URL/codice, versioni diverse. Il contenuto corrente non prova il contenuto storico; nessuna sostituzione inventata.",
+      "records": [
+        {
+          "id": 311,
+          "ente": "INPS",
+          "codice": "SR06",
+          "titolo_ufficiale": "Indennità di malattia, di cui all'articolo 8, comma 10 della legge 81 del 2017 (legge 335 del 1995)",
+          "versione": "2.2",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/sr06/IT/SR06_DEG_OSP_GEST_SEP.pdf"
+        },
+        {
+          "id": 621,
+          "ente": "INPS",
+          "codice": "SR06",
+          "titolo_ufficiale": "Indennità di malattia, di cui all'articolo 8, comma 10 della legge 81 del 2017",
+          "versione": "2.15",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/sr06/IT/SR06_DEG_OSP_GEST_SEP.pdf"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        314,
+        399
+      ],
+      "classification": "vero duplicato strutturale",
+      "notes": "Stesso ente, codice, versione e URL; titoli linguistici diversi. Nessuna equivalenza sostanziale di contenuto dedotta senza file.",
+      "records": [
+        {
+          "id": 314,
+          "ente": "INPS",
+          "codice": "SC80",
+          "titolo_ufficiale": "Domestic work relationship: claim and deed of commitment for the deferred payment of contributions in the administrative phase (in Italian)",
+          "versione": "2.6",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/sc80/IT/SC80_Ist_Dilaz_LD.pdf"
+        },
+        {
+          "id": 399,
+          "ente": "INPS",
+          "codice": "SC80",
+          "titolo_ufficiale": "Rapporto di lavoro domestico - Domanda e atto di impegno per il pagamento dilazionato di contributi in fase amministrativa",
+          "versione": "2.6",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/sc80/IT/SC80_Ist_Dilaz_LD.pdf"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        315,
+        623
+      ],
+      "classification": "variante di versione",
+      "notes": "Stesso URL/codice, versioni diverse. Il contenuto corrente non prova il contenuto storico; nessuna sostituzione inventata.",
+      "records": [
+        {
+          "id": 315,
+          "ente": "INPS",
+          "codice": "AP160",
+          "titolo_ufficiale": "Fondo di solidarietà bilaterale per la Filiera delle Telecomunicazioni - Domanda di assegno straordinario",
+          "versione": "1.1",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/ap160/IT/AP160_AssegnoStraordinario.pdf"
+        },
+        {
+          "id": 623,
+          "ente": "INPS",
+          "codice": "AP160",
+          "titolo_ufficiale": "Fondo di solidarietà bilaterale per la Filiera delle Telecomunicazioni - Domanda di assegno straordinario",
+          "versione": "1.2",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/ap160/IT/AP160_AssegnoStraordinario.pdf"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    },
+    {
+      "kind": "shared_resource",
+      "ids": [
+        331,
+        728
+      ],
+      "classification": "variante di versione",
+      "notes": "Stesso URL/codice, versioni diverse. Il contenuto corrente non prova il contenuto storico; nessuna sostituzione inventata.",
+      "records": [
+        {
+          "id": 331,
+          "ente": "INPS",
+          "codice": "EN025",
+          "titolo_ufficiale": "Assegno temporaneo integrativo - Gestione Assistenza Magistrale",
+          "versione": "1.6",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/en025/IT/EN025_AssegnoTemporaneoIntegrativo.pdf"
+        },
+        {
+          "id": 728,
+          "ente": "INPS",
+          "codice": "EN025",
+          "titolo_ufficiale": "Supplementary temporary allowance - Teachers and School Managers Assistance Scheme (in Italian)",
+          "versione": "1.5",
+          "download_url": "https://www.inps.it/content/dam/inps-site/moduli/en025/IT/EN025_AssegnoTemporaneoIntegrativo.pdf"
+        }
+      ],
+      "action": "Preserve identifiers and provenance; prudent ambiguity refusal, no automatic merge or revocation."
+    }
+  ],
+  "rejected_documents": [
+    {
+      "id": 429,
+      "ente": "Tribunale di Venezia",
+      "titolo_ufficiale": "Contributo Unificato-Obbligo pagamento",
+      "stato_verifica": "rifiutato"
+    },
+    {
+      "id": 1077,
+      "ente": "INAIL",
+      "titolo_ufficiale": "Faq - all. 1 alla nota del 24 dicembre 2020",
+      "stato_verifica": "rifiutato"
+    },
+    {
+      "id": 1081,
+      "ente": "INAIL",
+      "titolo_ufficiale": "Faq tecniche - Riduzione tasso medio per prevenzione anno 2022",
+      "stato_verifica": "rifiutato"
+    },
+    {
+      "id": 1091,
+      "ente": "INAIL",
+      "titolo_ufficiale": "Faq interventi del modello OT23 /2027",
+      "stato_verifica": "rifiutato"
+    }
+  ],
+  "rejection_events": [
+    {
+      "id": 1,
+      "entity_type": "document",
+      "entity_id": 429,
+      "object_version": "non dichiarata",
+      "decision": "rifiutato",
+      "previous_status": "da_verificare",
+      "new_status": "rifiutato",
+      "reviewer": "Codex - audit tecnico automatico Round 2",
+      "reviewed_at": "2026-10-11T11:59:03+00:00",
+      "notes": "Rifiuto tecnico automatico Codex Round 2, non revisione umana né revoca ufficiale. Il PDF è una spiegazione delle modifiche all art.14 TU115/02 e dell obbligo di pagamento; non contiene un modulo autonomo da compilare. Identità, metadati e provenienza conservati. Evidenza: https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoObbligo_pagamento.pdf; SHA-256 5ac25ccbbd7e2291e50966bae831977383b7bfe65d1b468f97dde0ca46cd607a; benchmark OR2-145.",
+      "before_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://tribunale-venezia.giustizia.it/it/moduli.page?item=3\", \"download_url\": \"https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoObbligo_pagamento.pdf\", \"ente\": \"Tribunale di Venezia\", \"fonte_url\": \"https://tribunale-venezia.giustizia.it/it/moduli.page?item=3\", \"id\": 429, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 16, \"stato_verifica\": \"da_verificare\", \"titolo_ufficiale\": \"Contributo Unificato-Obbligo pagamento\", \"versione\": null}",
+      "after_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://tribunale-venezia.giustizia.it/it/moduli.page?item=3\", \"download_url\": \"https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoObbligo_pagamento.pdf\", \"ente\": \"Tribunale di Venezia\", \"fonte_url\": \"https://tribunale-venezia.giustizia.it/it/moduli.page?item=3\", \"id\": 429, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 16, \"stato_verifica\": \"rifiutato\", \"titolo_ufficiale\": \"Contributo Unificato-Obbligo pagamento\", \"versione\": null}"
+    },
+    {
+      "id": 2,
+      "entity_type": "document",
+      "entity_id": 1077,
+      "object_version": "non dichiarata",
+      "decision": "rifiutato",
+      "previous_status": "da_verificare",
+      "new_status": "rifiutato",
+      "reviewer": "Codex - audit tecnico automatico Round 2",
+      "reviewed_at": "2026-10-11T12:10:30+00:00",
+      "notes": "Rifiuto tecnico automatico Codex Round 2, non revisione umana né revoca ufficiale. La voce ufficiale è esplicitamente una FAQ, non un modello autonomo da compilare. Classificazione basata sull elenco, senza attribuire un hash del file non acquisito. Titolo: Faq - all. 1 alla nota del 24 dicembre 2020; fonte https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2021--ot23-.html; download https://www.inail.it/content/dam/inail-hub-site/documenti/2020/12/OT23%202021%20All1%20FAQ%20agg%2022-12-2020,0.pdf; SHA-256 risposta elenco 897a2c85ace3c80a90b51f396711debae2cffa442479a8519feecfa5eb97f688; osservazione 2026-10-11T10:00:50.959899+00:00.",
+      "before_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2021--ot23-.html\", \"download_url\": \"https://www.inail.it/content/dam/inail-hub-site/documenti/2020/12/OT23%202021%20All1%20FAQ%20agg%2022-12-2020,0.pdf\", \"ente\": \"INAIL\", \"fonte_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2021--ot23-.html\", \"id\": 1077, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 3, \"stato_verifica\": \"da_verificare\", \"titolo_ufficiale\": \"Faq - all. 1 alla nota del 24 dicembre 2020\", \"versione\": null}",
+      "after_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2021--ot23-.html\", \"download_url\": \"https://www.inail.it/content/dam/inail-hub-site/documenti/2020/12/OT23%202021%20All1%20FAQ%20agg%2022-12-2020,0.pdf\", \"ente\": \"INAIL\", \"fonte_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2021--ot23-.html\", \"id\": 1077, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 3, \"stato_verifica\": \"rifiutato\", \"titolo_ufficiale\": \"Faq - all. 1 alla nota del 24 dicembre 2020\", \"versione\": null}"
+    },
+    {
+      "id": 3,
+      "entity_type": "document",
+      "entity_id": 1081,
+      "object_version": "2022",
+      "decision": "rifiutato",
+      "previous_status": "da_verificare",
+      "new_status": "rifiutato",
+      "reviewer": "Codex - audit tecnico automatico Round 2",
+      "reviewed_at": "2026-10-11T12:10:30+00:00",
+      "notes": "Rifiuto tecnico automatico Codex Round 2, non revisione umana né revoca ufficiale. La voce ufficiale è esplicitamente una FAQ, non un modello autonomo da compilare. Classificazione basata sull elenco, senza attribuire un hash del file non acquisito. Titolo: Faq tecniche - Riduzione tasso medio per prevenzione anno 2022; fonte https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2022--ot23-.html; download https://www.inail.it/content/dam/inail-hub-site/documenti/2021/10/OT23%202022%20All1%20FAQ%20tecniche%20Contarp%201-10-2021.pdf; SHA-256 risposta elenco ea668c26350cc94680a41a5301df1621ca32e065805d39d9f532e42aff2c33df; osservazione 2026-10-11T10:00:51.654145+00:00.",
+      "before_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2022--ot23-.html\", \"download_url\": \"https://www.inail.it/content/dam/inail-hub-site/documenti/2021/10/OT23%202022%20All1%20FAQ%20tecniche%20Contarp%201-10-2021.pdf\", \"ente\": \"INAIL\", \"fonte_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2022--ot23-.html\", \"id\": 1081, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 3, \"stato_verifica\": \"da_verificare\", \"titolo_ufficiale\": \"Faq tecniche - Riduzione tasso medio per prevenzione anno 2022\", \"versione\": \"2022\"}",
+      "after_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2022--ot23-.html\", \"download_url\": \"https://www.inail.it/content/dam/inail-hub-site/documenti/2021/10/OT23%202022%20All1%20FAQ%20tecniche%20Contarp%201-10-2021.pdf\", \"ente\": \"INAIL\", \"fonte_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2022--ot23-.html\", \"id\": 1081, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 3, \"stato_verifica\": \"rifiutato\", \"titolo_ufficiale\": \"Faq tecniche - Riduzione tasso medio per prevenzione anno 2022\", \"versione\": \"2022\"}"
+    },
+    {
+      "id": 4,
+      "entity_type": "document",
+      "entity_id": 1091,
+      "object_version": "non dichiarata",
+      "decision": "rifiutato",
+      "previous_status": "da_verificare",
+      "new_status": "rifiutato",
+      "reviewer": "Codex - audit tecnico automatico Round 2",
+      "reviewed_at": "2026-10-11T12:10:30+00:00",
+      "notes": "Rifiuto tecnico automatico Codex Round 2, non revisione umana né revoca ufficiale. La voce ufficiale è esplicitamente una FAQ, non un modello autonomo da compilare. Classificazione basata sull elenco, senza attribuire un hash del file non acquisito. Titolo: Faq interventi del modello OT23 /2027; fonte https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2027--ot23.html; download https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/09/OT23%202027%20%20FAQ.pdf; SHA-256 risposta elenco 14c54376124fb29784f607a99cda05b943a2be283240d769c7c5d10e72fe2f52; osservazione 2026-10-11T10:00:56.611105+00:00.",
+      "before_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2027--ot23.html\", \"download_url\": \"https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/09/OT23%202027%20%20FAQ.pdf\", \"ente\": \"INAIL\", \"fonte_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2027--ot23.html\", \"id\": 1091, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 3, \"stato_verifica\": \"da_verificare\", \"titolo_ufficiale\": \"Faq interventi del modello OT23 /2027\", \"versione\": null}",
+      "after_json": "{\"categoria\": null, \"codice\": null, \"data_pubblicazione\": null, \"data_rilevazione\": \"2026-10-11\", \"descrizione_ufficiale\": null, \"detail_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2027--ot23.html\", \"download_url\": \"https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/09/OT23%202027%20%20FAQ.pdf\", \"ente\": \"INAIL\", \"fonte_url\": \"https://www.inail.it/portale/it/atti-e-documenti/moduli-e-modelli/assicurazione/moduli-assicurazione/premio-assicurativo/riduzione-del-tasso-medio-per-prevenzione---anno-2027--ot23.html\", \"id\": 1091, \"parole_chiave\": [], \"significato_semplice\": null, \"source_id\": 3, \"stato_verifica\": \"rifiutato\", \"titolo_ufficiale\": \"Faq interventi del modello OT23 /2027\", \"versione\": null}"
+    }
+  ],
+  "rejected_provenance_count": 4,
+  "automatic_merges": 0
+}

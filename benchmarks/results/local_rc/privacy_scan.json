@@ -1,0 +1,72 @@
+{
+  "classified_false_positives": [
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 16188,
+      "path": "benchmarks/results/round16/unknown_v3_candidates.json"
+    },
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 38204,
+      "path": "benchmarks/results/round16/unknown_v3_candidates.json"
+    },
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 56138,
+      "path": "benchmarks/results/round16/unknown_v3_candidates.json"
+    },
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 16188,
+      "path": "benchmarks/results/round16/unknown_v3_candidates_wave1.json"
+    },
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 16188,
+      "path": "benchmarks/results/round16/unknown_v3_candidates_wave2.json"
+    },
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 38204,
+      "path": "benchmarks/results/round16/unknown_v3_candidates_wave2.json"
+    },
+    {
+      "classification": "Public institutional malformed href retained as immutable rejected-fetch provenance; not an operator path, never fetched/opened",
+      "kind": "private_path",
+      "line": 12760,
+      "path": "benchmarks/results/round17/unknown_v3_candidates.json"
+    },
+    {
+      "classification": "Unchanged public synthetic PDF encryption fixture password, not an authentication credential",
+      "kind": "secret_assignment",
+      "line": 75,
+      "path": "tests/test_extraction_safety.py"
+    }
+  ],
+  "confirmed_secrets": 0,
+  "excluded_ignored_verified": [
+    ".codex-context/CHECKPOINT.json",
+    "reports/local-rc-full-tests.log",
+    "dist/test.zip",
+    "data/private.db",
+    "benchmarks/cache/x.pdf",
+    "benchmarks/work/x.pdf"
+  ],
+  "findings": [],
+  "improper_local_paths": 0,
+  "new_official_resource_binaries": 0,
+  "pack_scope": "Selected original public Git source proofs only; no official resource corpus or working DB",
+  "packed_historical_objects_scanned": 113,
+  "packed_object_findings": [],
+  "passed": true,
+  "scanned_bytes": 820628194,
+  "scanned_files": 1636,
+  "source_paths_not_embedded": true,
+  "unnecessary_private_data": 0
+}

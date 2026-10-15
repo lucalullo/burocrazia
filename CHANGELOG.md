@@ -1,5 +1,28 @@
 # Registro delle modifiche
 
+## 0.7.0-rc1 — 14 ottobre 2026
+
+Release candidate pre-1.0; la stable pubblica resta v0.6.1 e lo schema SQLite resta 610.
+
+### Affidabilità
+
+- catalogo ampliato da 389 a 1216 record reali, con 12 enti, 19 fonti e provenienze conservate; copertura delle identità con file 1002/1158 (86,53%);
+- fingerprint deterministici locali, confronto per pagina e decision policy v7; rifiuti prudenti e veto per conflitti di ente/versione;
+- robustezza su scansioni e compilati verificata senza modificare il motore dopo il congelamento;
+- truth e contamination policy versionate; V5 originale storico, replay development e nuovi single-shot tenuti distinti;
+- protezioni parser, persistenza e rendering dei dati conservate; nessun LLM o API cloud nel runtime locale.
+
+### Interfaccia
+
+- risultati statici delle valutazioni disponibili nella sezione Benchmark;
+- funzionamento su loopback e OCR Tesseract locale; family matching sperimentale e insufficientemente validato.
+
+### Validazione
+
+V6 indipendente: **560/597 exact**, precisione **100%**, recall **93,80%**; scan recall **93,33%**, filled recall **95%**, generazione compilati **100/100**. Retrieval@1 **99,33%**, @25 **100%**; errori ente/versione **0/0**. Unknown v4 single-shot **120/120**; canonical **1007/1007**; safety **705 negativi, 0 false accept**. Mediana di sette p95 warm **186,09 ms**; suite RC di riferimento **889 pass, 0 fail, 3 skip**.
+
+Benchmark locali su template ufficiali e trasformazioni sintetiche con OCR reale, non certificazione. V6 e unknown v4 restano congelati senza replay. Dettagli in [docs/BENCHMARK.md](docs/BENCHMARK.md) e [release notes](docs/RELEASE_NOTES_v0.7.0-rc1.md).
+
 ## 0.6.1 — 5 settembre 2026
 
 Release di consolidamento e rifinitura dell'MVP locale.

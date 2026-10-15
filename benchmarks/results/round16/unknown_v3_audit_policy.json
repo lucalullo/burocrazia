@@ -1,0 +1,16 @@
+{
+  "declared_at": "2026-10-13T19:02:02.103803+00:00",
+  "form_identity_exclusion": true,
+  "freeze_commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+  "head_character_limit": 2000,
+  "max_classification_bytes": 20971520,
+  "max_classification_pages": 100,
+  "minimum_title_overlap": 4,
+  "minimum_title_support": 0.5,
+  "near_fingerprint_min_overlap": 0.85,
+  "near_unknown_char4_jaccard": 0.8,
+  "near_unknown_token_jaccard": 0.8,
+  "note": "Truth similarity excludes near duplicates; it is a direct sketch overlap, not recognition confidence/ranking. No recognize or decision function is called before final selection.",
+  "selection_seed": 2026101316,
+  "source_quota": 20
+}

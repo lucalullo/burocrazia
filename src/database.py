@@ -18,7 +18,7 @@ from src.sources import create_sources_table, seed_initial_sources
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB_PATH = Path(os.environ.get("BUROCRAZIA_DB_PATH", PROJECT_ROOT / "data" / "burocrazia.db"))
-SCHEMA_VERSION = 600
+SCHEMA_VERSION = 610
 
 DOCUMENTS_TABLE_TEMPLATE = """
 CREATE TABLE IF NOT EXISTS {table_name} (
@@ -297,6 +297,8 @@ def create_schema(connection: sqlite3.Connection) -> None:
     create_families_table(connection)
     create_provenance_table(connection)
     backfill_document_provenance(connection)
+    from src.observation_history import create_observation_tables
+    create_observation_tables(connection)
     from src.local_packages import create_local_package_tables
     from src.local_resources import create_local_resources_table
     create_local_package_tables(connection)

@@ -1,0 +1,472 @@
+{
+  "grid": [
+    {
+      "index": 0,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "3",
+          "aggregation": "max",
+          "containment": false
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 407,
+      "known": 532
+    },
+    {
+      "index": 1,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "3",
+          "aggregation": "max",
+          "containment": false
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 382,
+      "known": 532
+    },
+    {
+      "index": 2,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "3",
+          "aggregation": "max",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 428,
+      "known": 532
+    },
+    {
+      "index": 3,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "3",
+          "aggregation": "max",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 404,
+      "known": 532
+    },
+    {
+      "index": 4,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "3",
+          "aggregation": "top2",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 428,
+      "known": 532
+    },
+    {
+      "index": 5,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "3",
+          "aggregation": "top2",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 404,
+      "known": 532
+    },
+    {
+      "index": 6,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": false
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 405,
+      "known": 532
+    },
+    {
+      "index": 7,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": false
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 380,
+      "known": 532
+    },
+    {
+      "index": 8,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 423,
+      "known": 532
+    },
+    {
+      "index": 9,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "max",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 399,
+      "known": 532
+    },
+    {
+      "index": 10,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "top2",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 423,
+      "known": 532
+    },
+    {
+      "index": 11,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "4",
+          "aggregation": "top2",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 399,
+      "known": 532
+    },
+    {
+      "index": 12,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "5",
+          "aggregation": "max",
+          "containment": false
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 403,
+      "known": 532
+    },
+    {
+      "index": 13,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "5",
+          "aggregation": "max",
+          "containment": false
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 378,
+      "known": 532
+    },
+    {
+      "index": 14,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "5",
+          "aggregation": "max",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 428,
+      "known": 532
+    },
+    {
+      "index": 15,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "5",
+          "aggregation": "max",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 403,
+      "known": 532
+    },
+    {
+      "index": 16,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.8,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "5",
+          "aggregation": "top2",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 428,
+      "known": 532
+    },
+    {
+      "index": 17,
+      "configuration": {
+        "rules_version": "fingerprint-decision-v4",
+        "thresholds": {
+          "digital": 0.9,
+          "ocr": 0.85,
+          "chars": 0.65,
+          "visual": 0.88,
+          "anchors": 0.25,
+          "margin": 0.04,
+          "overlap": 16,
+          "top_k": 25,
+          "field_text": 0.75
+        },
+        "settings": {
+          "char_ngram": "5",
+          "aggregation": "top2",
+          "containment": true
+        }
+      },
+      "false_accepts": 0,
+      "wrong_known": 1,
+      "exact": 403,
+      "known": 532
+    }
+  ]
+}

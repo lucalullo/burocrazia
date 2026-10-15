@@ -1,0 +1,107 @@
+{
+  "policy": "First-evaluation failures retained unchanged; input labels require a future separate adjudication, never post-hoc rescoring of this holdout.",
+  "wrong_accepted": [
+    {
+      "case_id": "OH1-033",
+      "official_url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-28-1-Proposta-conferimento-onorificenza-stella-al-merito-del-lavoro-3.pdf",
+      "file_sha256": "c071bd66b20e83ceb84b608a92c8ab02a8460aa89914ce23e6d5c519c242db58",
+      "title": "Modulo INL 28-1 Proposta conferimento onorificenza stella al merito del lavoro",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1222,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 142,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "case_id": "OH1-047",
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoModello_Agenzia_entrate.pdf",
+      "file_sha256": "77103e6ff8dbcc93ba612b00875a0daf80bf1e4b04aeebff92c0aa5712b6c933",
+      "title": "Contributo Unificato-Modello Agenzia entrate",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 428,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 77,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "case_id": "OH1-055",
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/12/20SM%202026%20All%204%20Retribuzioni%20medie%20giornaliere%20per%20grande%20gruppo%20di%20lavorazione%202026.pdf",
+      "file_sha256": "897e243d86f67cc17c1aa4be239a39ffc44919b3c344123e4bfee6660e63cea9",
+      "title": "Retribuzioni medie giornaliere per grande gruppo di lavorazione anno 2026",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1054,
+        "entity": "INAIL",
+        "version": "2026"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1193,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "case_id": "OH1-063",
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/01/20SM%202022%20All%201%20Comunicazione%20tasso%20applicabile%20anno%202022.pdf",
+      "file_sha256": "3101f656f2550b0795391b824f9b3337f218fcad9fe84845a4bf4e3424b781a4",
+      "title": "Facsimile della comunicazione alle ditte del tasso applicabile anno 2022",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1202,
+        "entity": "INAIL",
+        "version": "2022"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 989,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "case_id": "OH1-098",
+      "official_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaDichiarazione_di_assenso_alla_nomina_tutore.pdf",
+      "file_sha256": "389a8dde8a0082c90ac5b31ec11daa1003f84289a9fefae6abd8e5fc950843d1",
+      "title": "Tutela-Dichiarazione di assenso alla nomina tutore",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 534,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 441,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      }
+    }
+  ],
+  "extraction_failures": [
+    {
+      "id": "OH1-168",
+      "status": "extraction_failed",
+      "reason": "Il PDF supera il limite di 100 pagine."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "path": "benchmarks/results/round7/ocr_legacy_gate.json",
+      "before_sha256": "68eb9c382894f508f75b4f6eee962dc69e066ee2adc9448e571f4d96dfc6f952",
+      "after_sha256": "52c9101538dabe21d2ad125104182a64f3cb25c6e7575743eededf233ccf89b3",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/ocr_synthetic_v2.json",
+      "before_sha256": "0eeaf6e0ce3f57a34befd75978147bec81b9749c6f74161cf7a4df3046fb303b",
+      "after_sha256": "c02836d4bc679d4faa16e62262a167201a0eb7761cf4cdc24abeb3c3e889b4e4",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/catalog_coverage.json",
+      "before_sha256": "6a6c4aa0a9c02f25aa35e86967bc7fdf514a7e4b1a4598addec51ad1888077b3",
+      "after_sha256": "0953d2992211bca316ca768e0afae37ccd473af487ab869c5dc80ad20d2d5aeb",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/development_regression.json",
+      "before_sha256": "d6a60e72bbaaf084784174f8315d9b139ee372cf3db6d1afa8f824f35868d837",
+      "after_sha256": "8cdc5c3e917ab6842db0cc3107618ec0fa7a8bf53f9005b95afcf089b7ee8d27",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/family_release_v3.json",
+      "before_sha256": "d32df8c9e2c80e83a4b28deb0bc90a87ad0624061833c1accbbcb40fc3c05f28",
+      "after_sha256": "0eff039dc1a5f997b1486043d42695efbbe599f3c7e606c1370a2b7794a7917c",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/hard_negatives_v1.json",
+      "before_sha256": "af05fef3c57584382f2fdb3429817affe605c45a48aef43ed1e2da14ebb37c35",
+      "after_sha256": "9851e9d3c5de907b8965662bf9110eb0675c5e495f2e09a7702aa6e8f2a71952",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/hard_negatives_v2.json",
+      "before_sha256": "487baaf1b72b271d1b20b4d2b1b89e773cf97a6d37710fa2e5959ae63686a1b9",
+      "after_sha256": "fe6d1c0c22bfe0b2babc0995cd3b6b972eff072ca52008539db95ffc8c731ac1",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/release_locked_v1.json",
+      "before_sha256": "4689f0f9b6189595a00f38f096f24f223fff8dc3a66fbff79ab54ef8adf7b2fb",
+      "after_sha256": "dca2a951c417d806910183a1e91a888300ff35eefb2eecc82b09b06e539e23fa",
+      "observations_unchanged": true
+    },
+    {
+      "path": "benchmarks/results/round7/final/release_locked_v2.json",
+      "before_sha256": "3e42679fd57a8236c7ad0de2cf83e08172aef7e2ed5405e85f5131a2126a38a7",
+      "after_sha256": "184d54551606b243839abfe87fe3e7a822ba07da455effc1f8110bb839eba971",
+      "observations_unchanged": true
+    }
+  ],
+  "scope": "LF serialization before commit/archive; JSON values and observations unchanged. Immutable calibration/profile already LF."
+}

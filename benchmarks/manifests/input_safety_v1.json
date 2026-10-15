@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "SHA256": "0cf371a00bd16303fd75d5bf4db107dd2033a8e8c297dcac65337fabac248f19",
+      "case_id": "IS15-U14-0cf371a00bd16303",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "100 pagine",
+      "filename": "official.pdf",
+      "kind": "official_pdf_over100pages",
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_marcatura_documenti_normativi.pdf",
+      "pages": 218,
+      "size_bytes": 2403268
+    },
+    {
+      "SHA256": "2223cfdb5154ea585dd44444f5093d0eba7f2325ebb185da2113d91479480bcb",
+      "case_id": "IS15-U14-2223cfdb5154ea58",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "100 pagine",
+      "filename": "official.pdf",
+      "kind": "official_pdf_over100pages",
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/decreto_abilitaz_sost_FASE2_5450PF.pdf",
+      "pages": 275,
+      "size_bytes": 2721570
+    },
+    {
+      "SHA256": "3a58df37879b0998121de5f3b5363c7d9a686c51b3a923e941920ab10a91dc7f",
+      "case_id": "IS15-U14-3a58df37879b0998",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "100 pagine",
+      "filename": "official.pdf",
+      "kind": "official_pdf_over100pages",
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/20260112-Manuale%20DenunciaComunicazione%20infortunio%20telematica%201.28.pdf",
+      "pages": 217,
+      "size_bytes": 7683839
+    },
+    {
+      "SHA256": "b597730bdb485d2edc692f0d788b3652862a26cc2a1950519581205e23309a68",
+      "case_id": "IS15-U14-b597730bdb485d2e",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "100 pagine",
+      "filename": "official.pdf",
+      "kind": "official_pdf_over100pages",
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2024-12/Guida_operativa_sulle_serie_di_dati_di_elevato_valore.pdf",
+      "pages": 166,
+      "size_bytes": 1518876
+    },
+    {
+      "SHA256": "eea32cdd1a9ba428d8f7b457a359a5b78e871d511745b8f6ba1958fd7413bf85",
+      "case_id": "IS15-oversized",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "20 MiB",
+      "filename": "limit.txt",
+      "generator": {
+        "count": 20971521,
+        "repeat_byte": 65
+      },
+      "kind": "synthetic_upload_over20MiB",
+      "size_bytes": 20971521
+    },
+    {
+      "SHA256": "9b8db510ef42b8ed54a3712636fda55a4f8cfcd5493e20b74ab00cd4f3979f2d",
+      "case_id": "IS15-unsupported",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "Formato non supportato",
+      "filename": "input.exe",
+      "generator": {
+        "hex": "4d5a"
+      },
+      "kind": "unsupported_format",
+      "size_bytes": 2
+    },
+    {
+      "SHA256": "d9a1d26cc37ec1c2b30ef695b80f3bbc1db931e8ad3b96fe2e8abdb3afaf01f3",
+      "case_id": "IS15-text-limit",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "1.000.000",
+      "filename": "limit.txt",
+      "generator": {
+        "count": 1000001,
+        "repeat_byte": 65
+      },
+      "kind": "synthetic_text_over1Mcharacters",
+      "size_bytes": 1000001
+    },
+    {
+      "SHA256": "982d9e3eb996f559e633f4d194def3761d909f5a3b647d1a851fead67c32c9d1",
+      "case_id": "IS15-mime",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "MIME",
+      "filename": "input.txt",
+      "generator": {
+        "hex": "74657874"
+      },
+      "kind": "mime_mismatch",
+      "mime": "application/pdf",
+      "size_bytes": 4
+    },
+    {
+      "SHA256": "778b28661146cbaeb70d8d4da2a36208b7aefb8b33ada1ee60085bf927266434",
+      "case_id": "IS15-zip-traversal",
+      "expected": "safe_extraction_rejection",
+      "expected_error": "percorsi non validi",
+      "filename": "input.docx",
+      "generator": {
+        "compression": "stored",
+        "payload": "<r/>",
+        "zip_path": "../outside.xml"
+      },
+      "kind": "docx_unsafe_path",
+      "size_bytes": 130
+    }
+  ],
+  "manifest_id": "input-safety-v1",
+  "page_limit_contract_sha256": "01513bf135005dc83c6a95089de80f10a330a51ac053e0c6a14f8f9e1552b473",
+  "schema_version": 1,
+  "scope": "Unsupported-limit safety, never unknown recognition accuracy."
+}

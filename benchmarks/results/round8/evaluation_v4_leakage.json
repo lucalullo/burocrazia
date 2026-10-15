@@ -1,0 +1,595 @@
+{
+  "identity_overlap": [],
+  "resource_sha_overlap": [],
+  "url_overlap": [],
+  "title_code_version_or_near_template_overlap": [],
+  "prohibited_leakage": 0,
+  "excluded_resources": [
+    {
+      "document_id": 1003,
+      "sha256": "c4b7b9288e22a29331d93c68a4fb8696aa2e87390d931ae17a29b714d706f215",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 15,
+      "sha256": "f84314fa1270101d583510a1fd09d8f69ec024ee0e13ada6689c9a05c6b39356",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 661,
+      "sha256": "9d3d97ff0bd884ad70e5a4f27dad61659732f84757103277e11bab7232c54517",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 134,
+      "sha256": "9f1276c7682527493426872bc6cd8d84f1258fd4eedf1d5f9635853aa9284916",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 20,
+      "sha256": "5d12d758ac8cf172364bc2b98c67d15649884e05beb84afa1857510682172d2e",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 353,
+      "sha256": "348ffd879f92e5b686f03d91d3eee01a8015b17f6310597c9a8c8402be60f67d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 138,
+      "sha256": "8540d3ef0fc4da1ac53d95db7834f8adfaeca2f6fdb6950bc75d440c7ddd0218",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 12,
+      "sha256": "a5c6aec59372d5b33decc6f9afd25805e570bf16099c4e12b1eb939736aa0eca",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 861,
+      "sha256": "a5ea0e688ae7ddd40fd908bf7bbb8f79c6d88dfd740c3c5ee2c4f28abc80c8f2",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 307,
+      "sha256": "6b55775b85f6f84b63d6d31de1a1f42c81f692e99b907a81056e90ce05d2bf7f",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 19,
+      "sha256": "507cd9ee81708b38568521fb0934a9b11ba1ada45bbada37413d8a432b51f3dc",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 403,
+      "sha256": "e7eb3a33aad8ea78423e42d14adf009c8e31e38f3bae11e5add8386ed4c013d1",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 387,
+      "sha256": "4a88a0618887fe0ccdf104df0ad002c04ad24802f3d119dbd280846a3e2b52ad",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 83,
+      "sha256": "9ac2e201d98e12571085a50537fbcddd7d647798ccbc573d4facea3ced4ba2a0",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 322,
+      "sha256": "58d77916307e7981dd20739b620b700658c470d803e5107e7f15cd27f96e4a91",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 847,
+      "sha256": "9b364013de9f5dd00c7b8050561b23ac8485d376301df46022c07e3b6800a978",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 14,
+      "sha256": "8c14b8f69a5a429a4d5419598c42e2d5a9c44076f487d8c4a1cc93f601d58e2b",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 138,
+      "sha256": "d39825bd81956a671ae7038f2b4de262523327dca619df308a9d1a6c4e3c3ab0",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "6a66694cfd5b5fda275d0bcb49054d6bbfd996b8b39b16c53cf13851da1afe9d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 82,
+      "sha256": "7a6b05a1223d7f565ba3b841b83750b370f7cdbc437765984e0fc1393ff148b0",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "d782a5993112b97913bde2687ca3fda1e4437509fa38a5171ab016305d4ae38d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 867,
+      "sha256": "09a594628cc629563e0cd144ffc21718866930e5074fcaefd9974eee2a53ecad",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 159,
+      "sha256": "98c6c45ab4f12998e49df424371ce8694abb032adf609d44f7dbde98bf1e1eb8",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 1037,
+      "sha256": "d7a4dc37ba5d1318ef19e49358b4372e923731aaa2387904e8aa81ab27afba2c",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 550,
+      "sha256": "3500858fcbc4610bbf3973b8871a81fcb910b440723ecb9f6507a1c615b9b568",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 132,
+      "sha256": "90e11d93b4f8412b7a9568ac91cfdfab5cb08776f1d817951d3bf1f9b724227f",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 120,
+      "sha256": "421325b572cbffdf36e7ba7e62714037242a17999e27ce4e7f63ca185d828ec6",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 132,
+      "sha256": "25ab47fe6f1cd9bc0a912f3540cbf269a901f7721e776e929816398df42560a4",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "0b8f4336f6f19609a078eaa3716e96e1318208cc45bd24be1f6c66271e5a500c",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 752,
+      "sha256": "170a864f3a8c31a856d5ecfb15e14e9db413e6a683b16537b8e1fa9f759e1b5a",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "0b8d188ac513ae1e73b68fd4872cec6489725c934602365cccf408e5d46a6592",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 97,
+      "sha256": "07b47e854a3a35529b2ea83a8ca24fbf8074277eba29f58c74360915e2a82094",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 133,
+      "sha256": "c613a0b82f6bca2f3ec87ec89edf83764c16e7352ca6d672bbe7d853607cc84c",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 526,
+      "sha256": "9bdc3eecbc4826a9d9192770d5d39d523025b4068de15f0c19a814ebd45d96f3",
+      "reason": "near_title_code_template"
+    },
+    {
+      "document_id": 392,
+      "sha256": "3a9eb1e095fc3c89bc6ff91989fad89248ed7eb524ebbe9515d9f0ef5187f6ac",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 508,
+      "sha256": "0a6f89b32c2fa5d1fc5fd267f3497af6a22852f8d37b9d8c13a049ed2590091d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 675,
+      "sha256": "69ced1c6a78e1f1c29b39b3f809f1211f9b0426a599cd4e4fc468dd9b39de8d9",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 591,
+      "sha256": "1acdda1da4d40538bcde88afc057bf49e5059e4f96ceec83fc30a9ddb0665a93",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 539,
+      "sha256": "3299be738968cc5bb4003c07107afdd6ba118a0a2d71ca27ab2b711915de6455",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "35f549fd9a83d8ffc5b0dc527d8f25928e143f497b6447e16ed76b46f8ec7b08",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 507,
+      "sha256": "bc2bd1fb3f766c25130722bc6616659e7de290aeab1b750ac19d6a25c25eadf4",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 84,
+      "sha256": "330c173752061da425b8f457008a0379b8aa342360e1676734dbf53cf22eed89",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 482,
+      "sha256": "06406c98ad50b9321ef5eb460ec93a751ce620cdc18cfd616d7cac3c4e5b51b4",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 885,
+      "sha256": "94d806fd265c504ce51175f754e1d13f176ff7ce68a98c425a2c7a2f58f333a0",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 1165,
+      "sha256": "bd16a8c4e8c41f42b13d539a34da0964daf03988655aedec1cc09a944b700be4",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 839,
+      "sha256": "cf6bbbda13a67cf1fea6a2afaa0c79edd1317d33ca63d9efe8077710fb7ca09f",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 546,
+      "sha256": "c9b79bd50e8f685e31baed6055f5d406a697c037efe0b8bf61ce452d1d5b1fe4",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 838,
+      "sha256": "04cb9f58bea6101f10387dd79c8403d568f0a801899c9ba61f94eeabfe5ee36c",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 601,
+      "sha256": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 109,
+      "sha256": "aef0fbd6c7db7a020a6ea57a46ec75841d18e8964a049395e94bda613a1584f9",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 672,
+      "sha256": "e309b8beb60abaaf7164d2d2a880da917e2aafb9549efd55c368416eff3e9846",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 673,
+      "sha256": "6345481fca33e4bc0c07a7f3b98e43fd9aae4de45b7a69d4e761884bf1caf427",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 306,
+      "sha256": "43c233fcbe656448e772ff194327b7a30c6bd19345d0f0550a94557a1275b0bc",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 755,
+      "sha256": "96fadf15ce0ec62f67a7c4ac070cb99d20b4a368ccc9918cc863ccc93881c7e1",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 1055,
+      "sha256": "fd7a619dcb4310189673c76b2b1b98d4cd21dcce9dae706bc222d0c33c3aae3e",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 18,
+      "sha256": "3dc37b4ef2ffe6cced1c3b2de8dfdf057003e83e88e3c4b45052e907d04c148a",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 156,
+      "sha256": "148bb6354b87829980589831f53520b150a181147b0bcd4d988e6c083af2d0d2",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 28,
+      "sha256": "29905946c83c6923d94c614856c8cbd6c727bf552a399430136bdf7624813a1b",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "f117643130e2109211dada6d0d938ce9761d4334761a8be48fa4ad8497c5be53",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 753,
+      "sha256": "9ed1599404aecfc8bca3a1e7dc8c6cf8392dedb696a68ceedec38ac2600c1a91",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 155,
+      "sha256": "b9cacd95a8a91481541edbfcd0790b9564d908d45a38f88a8b6908fb3d78a3d0",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 143,
+      "sha256": "2697fbfb0bfbdf30a7eec7c9b20f5490835b256b2706870cbba54c3f9836764c",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 945,
+      "sha256": "0d3e8bcf3494f93dd568e40065e70e79319f473d9830073416a208c1d3448424",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 703,
+      "sha256": "d05c47e0b2301c79124eb81eacd95dd32a2874a294253ee0704d69f34b45434a",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 966,
+      "sha256": "aaf9df742c3fe04d810683295bac0ae9c7af43af5bc8b5a633a00357e5d0e2c5",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 368,
+      "sha256": "3dfd5fd1a4ed9c5977f1801fb33bd8b57daaf701a22ecc75763818cee187169d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 136,
+      "sha256": "e12ff374e5855b27b64f7987ed57891d820059b46ef356bb4b1312307e6477c5",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 149,
+      "sha256": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 893,
+      "sha256": "b183da6a9fbd91aafe4e3f24ad16c8e77a628222abce5018a3d608ceafcc8596",
+      "reason": "near_title_code_template"
+    },
+    {
+      "document_id": 1209,
+      "sha256": "32ed35ee2299b89ffa3e3f2f7871ef0855acd7d680a333af9e974bef748d1e08",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 1055,
+      "sha256": "7b7f82bc5f37f7ac4651409c3de0643708312d7130d6041216ad9973a8e58f1d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 405,
+      "sha256": "1e282e799088d39e797b719ff08f97395156affaa2172d2c728eb17cca4fad84",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 580,
+      "sha256": "f9641392e96898dd8ff2e61ee07bf1146f746cf6a02fdc24c484e8454f4df5af",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 17,
+      "sha256": "6155d3b6d9cd7ebb697e7b99b7adde6f77198be9f755f2acddc0542ffae4746a",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 116,
+      "sha256": "78f9e58f5b7e3dcc01daae84501a5fd8387ce55f0e7d06343cc6c6d6a90a1bd7",
+      "reason": "near_aggregate_template"
+    },
+    {
+      "document_id": 589,
+      "sha256": "1e654659cb25b0a8f8f0541feba52434f5632572be105f1d5912fc87be28c98d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 16,
+      "sha256": "19179a5fa038ff7af83d9201124460ddad80ebcc9e8d7a5ed398a02a392fdb9f",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 1002,
+      "sha256": "b31cbd991783715e70d011ec0b4b4a4fff8f96069587d37bf96431b849a48849",
+      "reason": "near_title_code_template"
+    },
+    {
+      "document_id": 835,
+      "sha256": "52b4eb765f60998a46b6b2f90f67653f5e64d394ccf96235417b303ff01ad515",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 85,
+      "sha256": "db1db202efc324bcbf55179404407f93e8f95792399734e6f806bc75b3943ba6",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 446,
+      "sha256": "1e64d3be419f08acdce2a46ec19f8be8a0c5e4941178d4127b58a2598790e28a",
+      "reason": "near_title_code_template"
+    },
+    {
+      "document_id": 119,
+      "sha256": "d548ec20a5f697653a1d87412359f66fb93815fc32ac14826fbf5983536fdc6b",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 908,
+      "sha256": "c87769b343ef86573ffdc4a3e482a7761071c007530b2ee7e08730e042f123bc",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 786,
+      "sha256": "4f6c3dac9c6fbccfd7a4b6ab3f9b2f9e729c14af2f84e55b6cf7f752fe5e8318",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 490,
+      "sha256": "d6b80c7d1114541f6716383ba15737ba11e919543ca8ae3f2a32c39ccefea433",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 816,
+      "sha256": "3ba20e0afa3aabd71a4209c4997a4dcda389ce35f3a726269caf5217ad736f77",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "e145a81ab8f2e11bc9ebf23dc21c4afec5f8d80f9369c8120753bdadfa55708b",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 86,
+      "sha256": "73894e0fe018ffee4738e8547a2f6d82088f6724bc85e9a1bb4adc7be0d24172",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 137,
+      "sha256": "01a067afdd20a952130d6a1b09b2394e12359ece5394757083ab9c013c2d78f2",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 1168,
+      "sha256": "f67c6f71436594ab2714a76a6caa5458479b8645e7a049afeb987aa7b07c2d86",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 637,
+      "sha256": "6a022d16015f252c8c5c89e62e0e9dbc00cc612e0ddff0c1227de33b3f4632cf",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 614,
+      "sha256": "860ffd3d62e143e447eedaec468e5abcceebdb3e1edae45b3233f928b08e48d4",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 465,
+      "sha256": "0e75bbd8d5af367d9203346db609e3b84db4da2dbc814aefd68cfd5b01b2ca44",
+      "reason": "near_title_code_template"
+    },
+    {
+      "document_id": 520,
+      "sha256": "24c8ba72419a914fe58d4f71f2956d030e2fc8d89b07d04203cbe4934baaf489",
+      "reason": "near_title_code_template"
+    },
+    {
+      "document_id": 316,
+      "sha256": "cdd39a56c13801fcaf74b3b9107894d642fac3303254d48824178477fcbe2c34",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 323,
+      "sha256": "4fb9e0f91198bf4de54384146b574b0b3e160a1c312ef9944e373c43d2ec674c",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 167,
+      "sha256": "085b42dcf427488cb834c4a5df2633a4d6a007e1f959c54803d2b55ceceb1d82",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 11,
+      "sha256": "dd0abd0ff5298b1561fb7f03174cee77e6c2b09666402114fd958a2c49d04f6d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "8df104f4374b30b920ed6b40c00caad064b4ca9df059686721e93a1a514c0786",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 890,
+      "sha256": "3aa942406a1bdda7230218202128619198bbee806a707919f1364f58b967cf61",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 134,
+      "sha256": "9221cf83b22ec8dc5c9f525a898cc16e26e06e3989439c8efba959d893ce598d",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 143,
+      "sha256": "161b67eafe4276faf7532bc59da3558770ac6199dde7caba2cfcc6372cfaf51a",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 809,
+      "sha256": "b0600ca65a072d2f7516726e63054e800902b52e378e336bd54e41217e13ac21",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 143,
+      "sha256": "701db1edcf2ad912faa532fd8ab407327a104b83115ed01c379571c5bb3079ea",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 754,
+      "sha256": "d31e378c694d9bcece3069b483c1d8611362d40bea151907828cc9ce4e0cc84e",
+      "reason": "near_acroform_field_template"
+    },
+    {
+      "document_id": 681,
+      "sha256": "03b3b796bc6b7032a50774d2ffce360184305db13325ac89569b29c1254bd6df",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 27,
+      "sha256": "7b46d429e19085ae18a2eb7d6d9b64705ab70445214854cb3867de581f6bdacf",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 480,
+      "sha256": "2dde26489b43e889637ead922f054c6bee1854d648e3e052c1b35e07c39a7363",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 13,
+      "sha256": "bffdc3526732d68651764092a41fcd1eb87160af0f69b892fd137beb7a2e4bdf",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 290,
+      "sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 257,
+      "sha256": "588bf78c0cb2ef581ff0fe33ca9f59dd3829ea0da11b3468117a25cd6cfe0f96",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 345,
+      "sha256": "a389899e2ac3fbdfe46ec0e43f1d4089d69f355adbea6160b2c47f41adff1883",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 1055,
+      "sha256": "b850444964066b6db1273a6eb98590c019f041df2884d2e054d5ae0058e414ae",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 615,
+      "sha256": "49e68bd2832ca1a00917b4046b0fdd091cc6aeac6de1e4c23cf696f0c855545e",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 610,
+      "sha256": "05814843c01143c9a35cc2d8c07133850af481755e7a7c80e1054d1a4a8a916b",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 135,
+      "sha256": "61c9fd52d0af69bd1fdabed958d730ac648e537abc3ce1fb4e0b9337d5f76187",
+      "reason": "identity_overlap"
+    },
+    {
+      "document_id": 305,
+      "sha256": "be25e1707311bcc87fe204a3ba64dc2f15e521ab20805f605ae6c09a257e64b7",
+      "reason": "identity_overlap"
+    }
+  ],
+  "rule": "Same code+issuer any version; normalized title/code/version; title ratio>=92 with compatible code/version; field-set Jaccard>=.90 (>=8 fields); aggregate Jaccard>=.85 (>=24 hashes)."
+}

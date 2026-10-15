@@ -1,0 +1,20 @@
+{
+  "phase": "Before plan/start/case evaluation",
+  "error": "pypdf AES backend absent",
+  "resolution": "Copied existing bundled cryptography/cffi packages into ignored benchmark dependencies; no network or runtime-code change",
+  "cryptography": "50.0.2",
+  "cffi": "2.1.1",
+  "freeze": {
+    "commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
+    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+    "code_sha256": "f0a9547f017f63dd8d6109956fcd437a8c75bbba4f76f979432f251897807585",
+    "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
+    "seed": 2026101207,
+    "executed_at": "2026-10-12T08:32:29.138677+00:00",
+    "profile_sha256": "ebf7e4444f040afe0e560f5b04c6767f7d40cd73f2dc9a866321e8d62208e0a8",
+    "calibration_sha256": "ac7fab53652cd7218b33d62baada736ef0de51d91a8882ddafd49062f47c6064",
+    "calibration_reference_fix_sha256": "52ea8a5f62e2725ed914ef9f2e03eb9fd065c5a483c89d7f20189666518b4319"
+  },
+  "evaluation_cases_processed": 0,
+  "initial_log_sha256": "78a46ccf865154454cb9cccd0db361421f96852a0245eade7305d2016924f0e9"
+}

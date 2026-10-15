@@ -13,8 +13,17 @@ OFFICIAL_DOMAIN_ALLOWLIST: dict[str, tuple[str, ...]] = {
     "inl": ("ispettorato.gov.it",),
     "mit": ("mit.gov.it",),
     "funzione_pubblica": ("funzionepubblica.gov.it",),
-    "aci": ("aci.it",),
+    "aci": ("aci.it", "aci.gov.it", "t-acigov.serviziaci.it"),
     "garante_privacy": ("garanteprivacy.it",),
+    "interno": ("interno.gov.it",),
+    "giustizia": ("giustizia.it",),
+    "salute": ("salute.gov.it",),
+    "mimit": ("mimit.gov.it",),
+    "mef": ("mef.gov.it",),
+    "anac": ("anticorruzione.it",),
+    "agid": ("agid.gov.it",),
+    "unioncamere": ("unioncamere.gov.it",),
+    "polizia": ("poliziadistato.it",),
 }
 
 SOURCE_KEY_BY_ENTITY = {
@@ -29,6 +38,16 @@ SOURCE_KEY_BY_ENTITY = {
     "dipartimento della funzione pubblica": "funzione_pubblica",
     "aci / pra": "aci",
     "garante per la protezione dei dati personali": "garante_privacy",
+    "ministero dell'interno": "interno",
+    "ministero della giustizia": "giustizia",
+    "tribunale di venezia": "giustizia",
+    "ministero della salute": "salute",
+    "ministero delle imprese e del made in italy": "mimit",
+    "ministero dell'economia e delle finanze / rgs": "mef",
+    "autorità nazionale anticorruzione": "anac",
+    "agenzia per l'italia digitale": "agid",
+    "unioncamere": "unioncamere",
+    "polizia di stato": "polizia",
 }
 
 

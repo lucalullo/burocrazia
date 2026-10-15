@@ -1,0 +1,150 @@
+{
+  "cases": [
+    {
+      "category": "old_false_accept",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "document_id": 1222,
+        "match_type": "DOCUMENT_MATCH"
+      },
+      "family_correct": false,
+      "group": "old_false_accept:OH1-033",
+      "id": "old_false_accept:OH1-033",
+      "input_sha256": "c071bd66b20e83ceb84b608a92c8ab02a8460aa89914ce23e6d5c519c242db58",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": 1222,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "File ufficiale canonico identico.",
+      "signature_sha256": "d91d8b8baa5b39251a749f0697bbfe6c524ac925c345096f1d4d30cf194f3761",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "old_false_accept",
+      "conflicts": [],
+      "correct": false,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "document_id": 428,
+        "match_type": "DOCUMENT_MATCH"
+      },
+      "family_correct": false,
+      "group": "old_false_accept:OH1-047",
+      "id": "old_false_accept:OH1-047",
+      "input_sha256": "77103e6ff8dbcc93ba612b00875a0daf80bf1e4b04aeebff92c0aa5712b6c933",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "Evidenze insufficienti per identificare un documento specifico. [fingerprint-decision-v5:insufficient_channels] Evidenze insufficienti per identificare una famiglia.",
+      "signature_sha256": "d5457f268e1a330a3a7e2375d58cdba71e16b0612fd26de194052e42f23954ef",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "old_false_accept",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "document_id": 1054,
+        "match_type": "DOCUMENT_MATCH"
+      },
+      "family_correct": false,
+      "group": "old_false_accept:OH1-055",
+      "id": "old_false_accept:OH1-055",
+      "input_sha256": "897e243d86f67cc17c1aa4be239a39ffc44919b3c344123e4bfee6660e63cea9",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": 1054,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "2026"
+      },
+      "reason": "File ufficiale canonico identico.",
+      "signature_sha256": "e9c41b6f07cad596eaa189d1ca61f615374ccb7fb10249aae78e85fd2529f04e",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "old_false_accept",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "document_id": 1202,
+        "match_type": "DOCUMENT_MATCH"
+      },
+      "family_correct": false,
+      "group": "old_false_accept:OH1-063",
+      "id": "old_false_accept:OH1-063",
+      "input_sha256": "3101f656f2550b0795391b824f9b3337f218fcad9fe84845a4bf4e3424b781a4",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": 1202,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": "2022"
+      },
+      "reason": "File ufficiale canonico identico.",
+      "signature_sha256": "af1c01266b6602e7cea24c48bd6bce38c1138024509be0cad50f63149ee973e3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "old_false_accept",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": true,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "document_id": 534,
+        "match_type": "DOCUMENT_MATCH"
+      },
+      "family_correct": false,
+      "group": "old_false_accept:OH1-098",
+      "id": "old_false_accept:OH1-098",
+      "input_sha256": "389a8dde8a0082c90ac5b31ec11daa1003f84289a9fefae6abd8e5fc950843d1",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": 534,
+        "entity": "Tribunale di Venezia",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "File ufficiale canonico identico.",
+      "signature_sha256": "aef1f21f62204dd97e94a81133c086e06092a427437b3856a0eddeae355755c2",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "passed": false
+}

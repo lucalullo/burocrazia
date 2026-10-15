@@ -1,0 +1,26 @@
+{
+  "observed_error": "Both failures are WinError5 at unchanged os.replace of package staging folders, in workspace-contained temporary directories. Cause beyond the observed sharing/access error not established.",
+  "first": {
+    "test": "test_imported_resource_symlinks_are_rejected",
+    "seconds": 641.21,
+    "skipped": 2,
+    "failed": 1,
+    "passed": 810,
+    "log_sha256": "3084478a65508fcd61688db58de5a51df83652b67120fee6876d428199a23a7d"
+  },
+  "final_environment": "Native Windows user temporary directory, fresh unused base. No runtime IO changes, no performance reruns, no prior result erased.",
+  "isolated_native_temp_packages": {
+    "log_sha256": "d025f85d5059668eea3f23cc7b84c6ce59997bd13d11eb98e113dd224772f9f8",
+    "skipped": 3,
+    "passed": 24,
+    "failed": 0
+  },
+  "second": {
+    "test": "test_text_material_is_inert_and_tampering_is_rejected",
+    "seconds": 640.96,
+    "skipped": 3,
+    "failed": 1,
+    "passed": 809,
+    "log_sha256": "4207e74f6ce7c83d8e7c157c5c215a14d13b7c71ec2d6db47e2e118f9847f9f1"
+  }
+}

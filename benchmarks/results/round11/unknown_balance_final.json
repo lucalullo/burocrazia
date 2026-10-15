@@ -1,0 +1,105 @@
+{
+  "classification_counts": {
+    "ambiguous": 103,
+    "confirmed_unknown": 125,
+    "duplicate_catalog_resource": 8,
+    "possible_family_match": 7,
+    "unsupported_truth": 5
+  },
+  "master": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "giustizia": 2,
+      "inail": 16,
+      "interno": 14,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 45,
+      "mit": 3,
+      "regione_piemonte": 2
+    },
+    "document_types": {
+      "atto_indirizzo": 1,
+      "circolare": 39,
+      "comunicato": 1,
+      "decreto": 28,
+      "delibera": 2,
+      "direttiva": 2,
+      "domanda": 3,
+      "guida": 31,
+      "istruzioni": 3,
+      "manuale": 7,
+      "modulo": 3,
+      "regolamento": 5
+    },
+    "entities": 10,
+    "max_concentration": 0.36,
+    "previously_recognized": 75,
+    "sources": 10,
+    "total": 125,
+    "type_groups": 12,
+    "unversioned": 97,
+    "versioned": 28,
+    "with_code": 21,
+    "without_code": 104
+  },
+  "near_resource_edges": [
+    [
+      "U9-b8a854a3f9a52e62",
+      "U9-c8eaf32a7f9bd5c1"
+    ],
+    [
+      "U9-e6086d3eeebab78d",
+      "U9-090b64ee0b8f170f"
+    ],
+    [
+      "U11-79d9444a2c968bff",
+      "U11-a333ee0ddbe6973e"
+    ]
+  ],
+  "new_confirmed": 18,
+  "release": {
+    "counts_per_source": {
+      "agid": 15,
+      "anac": 9,
+      "giustizia": 2,
+      "inail": 16,
+      "interno": 14,
+      "lavoro": 6,
+      "mef": 13,
+      "mimit": 25,
+      "mit": 3,
+      "regione_piemonte": 2
+    },
+    "document_types": {
+      "atto_indirizzo": 1,
+      "circolare": 29,
+      "comunicato": 1,
+      "decreto": 22,
+      "delibera": 2,
+      "direttiva": 1,
+      "domanda": 3,
+      "guida": 31,
+      "istruzioni": 3,
+      "manuale": 7,
+      "modulo": 3,
+      "regolamento": 2
+    },
+    "entities": 10,
+    "max_concentration": 0.23809523809523808,
+    "previously_recognized": 55,
+    "sources": 10,
+    "total": 105,
+    "type_groups": 12,
+    "unversioned": 78,
+    "versioned": 27,
+    "with_code": 16,
+    "without_code": 89
+  },
+  "release_dev_group_disjoint": true,
+  "release_dev_sha_disjoint": true,
+  "release_recognition_calls": 0,
+  "selection_seed": 2026101311,
+  "source_cap": 25
+}

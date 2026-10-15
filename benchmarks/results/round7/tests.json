@@ -1,0 +1,24 @@
+{
+  "passed": 690,
+  "failed": 0,
+  "skipped": 3,
+  "seconds": 337.74,
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "log_sha256": "8e1bb8eaa0b6f56a64a30ecb9aa1041588c2caf97af34435907bf9cb0f8baf11",
+  "initial_attempt": {
+    "passed": 687,
+    "failed": 3,
+    "skipped": 3,
+    "seconds": 151.36,
+    "log_sha256": "da1469e8e3abc9cc787bd27272f322c7b9205ddc4b316615a39921f99610f84c",
+    "resolution": "Only full-scan reference diagnostics differed. Runtime production outcomes unchanged; append-only reference fix proof and complete successful rerun retained."
+  },
+  "post_report_checks": {
+    "passed": 113,
+    "failed": 0,
+    "seconds": 19.55,
+    "log_sha256": "9e0f873ee728b728e3ada9e419a2bb45ca05b2d734096087d91df2d25b11c13d",
+    "scope": "Repeated targeted UI/benchmark/fingerprint/round7 checks after static result update; not additional distinct tests."
+  }
+}

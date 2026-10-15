@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "benchmarks/manifests/official_holdout_v2.json": "601b62abacd72886132fff1fa8d402016a591be7a266e73ac1dd217649de0d69",
+    "benchmarks/results/round4/official_holdout_v2.json": "08f237f62fd1e3f668dc9a052f78f30fd181d5baa47375a5d0701879e0f44e8a",
+    "benchmarks/results/round4/holdout_v2_leakage.json": "c16e8d098245f9c9013cdd8c7563e12be2d587595b352c3d93ccc809d671f0bc",
+    "benchmarks/results/round4/engine_freeze.json": "136551927d07c2ee9e76ebafde16b6b232af1456fb1684784efe4ee3889834d9"
+  },
+  "policy": "Immutable first v2 evaluation. If release gates fail, historical in Round 5; use fresh v3."
+}

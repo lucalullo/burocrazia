@@ -1,0 +1,354 @@
+{
+  "amended_at": "2026-10-11T13:52:16.885155+00:00",
+  "initial_manifest_sha256": "057316ef7451a9ab49af0c7fa74dc3584e92af2cdc1af169bf2a2a815797c28f",
+  "final_manifest_sha256": "ca460b1873c33f59b8953b092f990c857614cc9d8f8783d7970353d9dc8170e5",
+  "negative_count": 50,
+  "network_requests": 60,
+  "attempts": [
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/20260112-Manuale%20DenunciaComunicazioneInfortunio%20Telematica%20Navigazione%201.6.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "Risposta oltre 8 MiB."
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/12/Istruzioni%20per%20la%20compilazione%20del%20modello%201031.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "b6f769fda91cf267715961744a79d2c79bd1797d0228fe387d2cd2970b0a2c4d"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DecretodirettorialericonoscimentoSEIMETSrls8-3-21.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "262bcaa1a31e25a38f8fe5f5420a13ead3c3d415301f6df35f2d7e3b47a2d9e6"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Regolamento_2019-320-EU.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7f24b4f2ceab6a5975619ba728e482dec9f04c5f3553e22a663a1df520781a7d"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/CELEX_32017R1354_IT_TXT.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "b7d6090c4810a814a157b6aaa5c0edf5b2273a02b5e2ada3e7a105a2cf810499"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_2_2024_SMM.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "73783dc7491967485a51405747dda77f77fe6249fe83aaa1d035c0aae5cbebc5"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/RTTE_decreto_15_luglio_2015.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "460a0d9670e24f0476888866d999b0c3ca0095c25dcad803e4de5437b1bd5baf"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_Direttoriale_28_ottobre_2024_-_Autorizzazione_OCE_srl.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a136a9eecd18092dadfc9c0373e067911b0a3811c35dec68f6c5450815331be9"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circ.6_29-7-2021_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "59d1bf1324f81df3fd65b61b5bf83a30f1e244e3ef0f44eeab297c88d94010bf"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/disciplina-tecnica-smm/2025/circolare-01-2025.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "3ab37e12bd239d0eb970cc768ad94a7b80ce691f2c2cd22ba756e01edfa629bc"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/disciplina-tecnica-smm/2025/circolare_prot._2025-3.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "0dfa2c74f7241cbe72a34043cf43d69c3e3b1b727c8e752ec6c6608f01f548ac"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/decreto_rinnovo_MARE.PDF",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7f1668b636497304ab243ebe5898fbe59a76cbc298523f768cb756c7d219d1a2"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/01/20SM%202022%20All%203%20Guida%20alla%20lettura,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "df0b6fdab6a192f18e6e4899d47e364777d01982a28c0e55b3f992a8365aea6d"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_1_2024_SMM.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "b6f4b46497ebab782d66d8fc208ec3845c4a733c1987dbfbf7d571f2fef91f84"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/ammtrasparente/documenti/2015/10/ucm_122393,0.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "robots: percorso non consentito."
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Regolamneto_2023-2444.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "964cf09a42b63784015206386dc38847162814c44a2c9eff7a1551163105309d"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/ucm_209388.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "afb03715117219c4589afba26d197f7a99074efdbbf1679ad3285b50c1db84b7"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2018/11/MODULO%20RLS%20MARITTIMI%20-%20istruzioni.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "4bfcc7c4bf37127cb16678353e1d85ab41449fa13f83cbc44dce1a2f83110169"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_Revoca_autorizzazione_Direttiva_2014-53-UE_per_EUROFINS_PODUCT_TESTING_ITALY_Srl.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "36e0ba463fd0f08ac69ca58d00c1f94bbc843593c2427b2511059c77b0e100d6"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETO_Interdirettoriale_x_EMC__cambio_ragione_sociale_Kiwa_Creivem_SrL.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "96d66f5914a2b26037270ccc59e2dbadc58773e990e48a898c653b979defdb1b"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/altra-modulistica/2026/04/Subappalti%20istruzioni%20DL%2036_2023.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "e03f5533cee18499fe48ba009ec2771846d655d2ea221feaaecd2c6804913be2"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Dir-1999-05-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "012d2c4cdf0549f95815a1aab3849ca0ecfcc7ac32360f984f21c00d68ae350f"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/RTTE_decreto_20_ottobre_2015.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "975fe26aa4c7eb8ebcd490e2c1fe9629bdc5cd77410b5460ac35aa0b5be9e2f5"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_Inter._ON_2014-30_-_Elettra_S.r.l._7-12-2020_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "ad462db43b56887517310e4a9ed222055f5e602a84ae76eee64002e9a02666f7"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto__Interd-CELAB_OONN_autorizzazione_2014-30-UE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "dc9b00312b27a0ab1812aeb9dff23cfd1e62622bde1027cb32f4a5211f9aee11"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/DECRETO_Int._ON_EMC__Elettra_signed.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "14845e54ccdfca4773abb1a712541d7331d4ac815ffef931c2b685e266156a69"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Regolamento-CE-N-765-2008.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7ff5763c5be17c76d478566eceb1ec2e8189965261c9a3d9c3793dd5fe217bca"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DecretodirettorialericonoscimentoFondazioneCaboto10-3-21.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a8bbe7bb20b8a8ed7f4927eccad43fe83652a2001c9cd663052f0a54e7f98de9"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Direttiva_2012_35_CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "b5c4461782232972e4471f2c0eb69be21db31603c397220c6df282a3056d4c1e"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Direttiva_2012_35_CE.pdf",
+      "source_key": "mimit",
+      "status": "duplicate_or_leakage_excluded"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/FAQ_Avviso_Asse_I_integrate.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "aff98a4413ca6d78d226bd31be4ffde244e22026bcdd8e8914c31bbdd17377f2"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/decreto_direttoriale_di_rinnovo_di_idoneit%C3%A0_ad_IMAT.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7f436a51a5d48d9a7958d6d0924d43d1a918f7256cc92c231b1317d95ba46305"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/disciplina-tecnica-smm/2025/circolare_prot._2025-2.pdf",
+      "source_key": "mimit",
+      "status": "duplicate_or_leakage_excluded"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_del_29_Aprile_2024_Rinnovo_CTI.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "45aefab97701c2bfd1a1095b4c5841abc62b486ff95a06ec8471a599153fd719"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_direttoriale_Elettra_rinnovo_autorizzazione.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "245dde3c9a2c4e64a8969c6b8f535ba22dce4e57efe277d0656e74aae73afb23"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2020/12/20SM%202021%20All%203%20Guida%20alla%20lettura,0.pdf",
+      "source_key": "inail",
+      "status": "duplicate_or_leakage_excluded"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_8.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "edd3e27017f93038c9bdd1b8d4f0d1cf636f9f8af8f2e4687d3a00d41092a7b7"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/ALL%202.pdf.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "090b64ee0b8f170fd8b19bb61cb83065a184d4b4dc1869a371ae039abb79b485"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM%2011-4-2016%20Eurofins%20transizione%202014-30-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "eca194505e36747c3829ac7c59d353c47c20d3093e604fe8a3be776737169b30"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Circolare_SNG_SNG_1-4-2017.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "bcdadce0216518179ff1f2c512a66b19b6c60dae9216f3ba70270b5f834c3015"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/07/All2%20OT23%202026%20Guida%20al%20modello_ger-DE.pdf",
+      "source_key": "inail",
+      "status": "duplicate_or_leakage_excluded"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2019/04/2%20-%20Guida%20alla%20lettura%20del%20modello%2020SM.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "e65c731cc35e42c487896c66ed16fbf8c527af3e535a101d973d18979f610a9f"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_direttoriale_7_giugno_2016-Autorizzazione_NEMKO_per_direttiva_2014-53-UE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "d3469fd1b33d1f7ddf5e091a6a98f263a5d8a85968dbb8c9b9285c4876f08b38"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decereto_dirett_aggiornamento_ON_RED___IMQ_2022.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "88de6062119918c43fbc7b202dcdd6e29d50d0f806cd9638ac6ba5f478a79c09"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2025/riduzione-del-tasso-medio-per-prevenzione---anno-2024-(ot23)/OT23%202024%20All3%20Guida%20alla%20compilazione.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "a26d7837daa34f8896bdbe31aaec2f344739a8936d6afcae5af681a1f019a2cb"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/All%20%20Istruzioni%20per%20la%20compilazione%20del%20modulo%20cartaceo%20di%20denuncia%20mp%20-%20silicosi%20asbestosi.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "b1fd7e3b7e7a8602ee66e84e98accedc845ac63a8f70a513a3d77ffa77413c83"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-prevenzione/2026/01/20260112-Manuale%20Comunicazione%20Infortunio%20Telematica%201.10.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "c9b5e05ad974705eae506e4a555634da68ec62319449c1447848bb34faab902c"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-prevenzione/2024/06/Manuale%20Ricerca%20certificati%20medici%20online%20V1_1.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "a3e3fbe130d599a3f57b56575b5c4c01d6579bade0520d22bba27a41f37398df"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/Guida%20Modulo%20OT24.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "436885c3d16ce3faa715416c12cd9d94a5c88649f50ad7a16447c42430a8c214"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/normativa/comunicazioni/Decreto_Elettra_ON_RED.pdf",
+      "source_key": "mimit",
+      "status": "duplicate_or_leakage_excluded"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decero_Interdirettoriale_ON_EMC_-_NEMKO_SpA_18-11-2020.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "f851b069c958d6b68774b64874aa0a4ad501fd420ddeafbea9d9f278ec580fe2"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/10/Istruzioni%20per%20la%20compilazione%20Mod%2001%20Ret_Nav.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "22053f6a5505407567da3729943d84f181d2aa330031765bf57081a87f941109"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/10/Istruzioni%20per%20la%20compilazione%20Mod%2001%20Ret_Nav.pdf",
+      "source_key": "inail",
+      "status": "duplicate_or_leakage_excluded"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/All%20Istruz%20per%20la%20compilazione%20della%20denuncia%20di%20inf%204bis%20RA%20Nav.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "2aca1e0543ed8452148949c122a856a1b9459b796e3b9be38ce453b1a63f21da"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare_13_luglio_2022_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "abe865ed2e9d3eeb2abe5b1d25e80e9314621378e4826879c9de5922d4862f1d"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DM-275-2002-10-30.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "c7849224a185497d1ee16db18692c2a0cfaf863c67ff44de35c6aac0d8a37848"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM%2011-4-2016%20ECM%20transizione%202014-30-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "11c9bbf6fec0d4ce3a5e94a88e8b11a513741d33cab7b865f90be259856d35dd"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circ._07-2024.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "748d20b26b640d7178b560b700fad3e48c3c3ae732bac3dd82ee70bf54a3dd25"
+    }
+  ],
+  "no_holdout_text_read": true,
+  "no_recognition_run": true,
+  "reason": "Initial positive queue exhausted its acquisition budget before reaching the separate negative queue; complete the predefined negative sample before any evaluation. No blocked source is retried."
+}

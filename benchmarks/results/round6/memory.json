@@ -1,0 +1,30 @@
+{
+  "identity": {
+    "code_sha256": "e5394464ce1255ddd34f5167d4018fde63a6eee0872928346534a0048f271bd5",
+    "runtime_sha256": "4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08",
+    "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+    "seed": 20261012,
+    "executed_at": "2026-10-12T06:47:04.214647+00:00"
+  },
+  "fingerprints": {
+    "disk_bytes": 27182244,
+    "index_bytes": 39852804,
+    "resources": 987,
+    "identities": 948
+  },
+  "rss": {
+    "before_warm_bytes": 284905472,
+    "after_warm_bytes": 286887936,
+    "samples": [
+      286887936,
+      286924800,
+      286932992,
+      286932992,
+      286867456,
+      286867456,
+      286867456
+    ],
+    "growth_after_warm_bytes": 45056
+  },
+  "scope": "Fresh process. Warm inference excludes extraction/OCR and visual generation (reported per case). Index is recursive Python records, arrays, postings, IDF weights; RSS is entire process, not additive. No upload-feature cache."
+}

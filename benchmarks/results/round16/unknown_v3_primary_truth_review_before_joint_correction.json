@@ -1,0 +1,1691 @@
+{
+  "automatic_audit": "benchmarks/results/round16/unknown_v3_truth_audit_auto_675a65ad0de8.json",
+  "automatic_audit_sha256": "675a65ad0de81bcfd16f97d467e59150da2e3ea46920e90e843312e1fce8855a",
+  "cases": [
+    {
+      "case_id": "U16-0087a418503ba5fb",
+      "document_type": "regolamento",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "0087a418503ba5fb1b91b42b5faf3aad698371981b46aaf0dc7715b054d2e00b",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Organizzazione/organigramma/354%20dt%20dg%20n.%20354%204%20mag%202021%20determina%20approvazione%20regolamento_po.pdf",
+      "opening_sha256": "dd238364504e1c785986a055fbfe9ee3c4682c1fce71715b6b1d3eb0b14a1e99",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "regolamento",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-034ce8ef90e48f87",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Presidente del Consiglio dei Ministri",
+      "input_sha256": "034ce8ef90e48f87dfb4e3db8d56af074ed63556548646ad861d871599e18548",
+      "notes": [
+        "Literal primary issuing authority, not hosting AGID cited in the body."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2025-10/DPCM_di_approvazione_del_Piano_Triennale_2024-2026_Aggiornamento_2026.pdf",
+      "opening_sha256": "1dbf85155bfe9cd2c548a82c90d62fef36147bd975ee42c92520827e759ede5d",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-03f0e4412be15e44",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "03f0e4412be15e44471fcb31752a2a8bb3d7be66e49beccd5a20fa646daa5efd",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Forma_Circolare_28_19102017.pdf",
+      "opening_sha256": "7c940ea51ec153f65ec77511de6a91b478f101a5e5762f0952247e5aa7290cb3",
+      "previous_entity": "Ragioneria Generale dello Stato",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-04774885d351cc0c",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell’Interno",
+      "input_sha256": "04774885d351cc0cef241f9a96c6f5b64e4b0ece85406d3b318fbe21d2033906",
+      "notes": [
+        "First-page graphic heading literally Ministero dell’Interno, Gabinetto del Ministro. Citation of Prefettura in body is not issuer; local rendered header contact sheet inspected."
+      ],
+      "official_url": "https://www.interno.gov.it/sites/default/files/2024-07/circ._scorrimento_graduatoria_-_spiagge_sicure_2024.pdf",
+      "opening_sha256": "00c2a5b9903ad506f4fe76f4194a9c43df1e81b66bd2fab2fb7e3b19a4e8720f",
+      "previous_entity": "respinta dalla Prefettura competente, ovvero le eventuali somme residue, sono assegnate – ove possibile - agli altri Comuni che seguono in graduatoria l’ultimo comune beneficiario.",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-06b154ccd1b54b28",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "06b154ccd1b54b28be87de7682a93d5aa8d069f3ee240086c606b2aac2e381cc",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/decreto_sospensione_2587PF_19PG.pdf",
+      "opening_sha256": "a70939c6179e1891022cfd784472be4387a90d991684551d0958dd6e0e8828f2",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-08118adf64bd4187",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministro per l’innovazione tecnologica e la digitalizzazione",
+      "input_sha256": "08118adf64bd4187c3026fdddbdf1333aa9f5d442b3d068cda7353da431c91d9",
+      "notes": [
+        "Literal ministerial issuing role in primary heading."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/2020616_MID%200002737%20P-G-Direttiva%20AgID_def-signed%20All%201.pdf",
+      "opening_sha256": "6cab23ed50c2547cdfe34ebb10e3dffbdd2453faa47e90e43ffd5aa1ff210ac0",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-0a418860180bbc19",
+      "document_type": "regolamento",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "0a418860180bbc192d1e8167b4ec6bca9f7545e9907d7de9715bc9b0fa242414",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Disposizioni_generali/Atti_generali/189%20-%20DT%20DG%20n.%20189%20%20-%2022%20lug%202016%20-%20Approvazione%20modifiche%20regolamento%20SPID.pdf",
+      "opening_sha256": "6799ee421a6f23fd9c7ff53c51eb77af31e0776ee1d3e820e1c8998ed73705d0",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "regolamento",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-0ad3862d2c6ebf68",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "0ad3862d2c6ebf6834161d76ee6de209ba80e5796c5afea513a42b21ef2079fa",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Com_.-58_2-canc-soc.pdf",
+      "opening_sha256": "e135b61ea345bf3e18eed6ea68bec0f205593a7db328c78c7e0e2db01af663d5",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-0c01274f959de360",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "0c01274f959de360146b538470d27d9fc12d32fae1f0c70b9ff4d26c1a1398f6",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/DM_Contributo_Fondo_Broker_2026_rev_GAB_signed-nf.pdf",
+      "opening_sha256": "58f7ab4f591a9113c71ce31473967289750d5c1df9dc26fb678c93e755c70e10",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-0c71ee4de32cb73a",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Presidente del Consiglio dei Ministri",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "0c71ee4de32cb73a17834409911b0dbad2d0ef90f6b189ac70bc60ac4d7dd36c",
+      "notes": [
+        "Literal primary issuing authority, not hosting AGID cited in the body."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/default/files/repository_files/dpcm_12_gennaio_2024_approvazione_piano_triennale_2024-2026.pdf",
+      "opening_sha256": "0b2240b9481041ad0baf847f7f3a01bd94d58ae84331f89850271b9eabfe56fd",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-034ce8ef90e48f87",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-0d36947577dd8d3b",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INAIL",
+      "input_sha256": "0d36947577dd8d3b6e91d2a3873ad4d7c7f0d2f95a11a079d339bda98f766d4d",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/circolari/2026/06/Allegato%204.pdf",
+      "opening_sha256": "c13a349b5cb0c7febab704e892e95b8b757c00bb9d69291eb958992816a0e34c",
+      "previous_entity": "INAIL",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-1011ef2e21307511",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "1011ef2e21307511c0a9741ad66375054f1bef806fedbe6f0bed45ef57e5942c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202022-2024/o_1g6q93druog21o37be01po519a7g.pdf",
+      "opening_sha256": "9c40d302fc64073290076f6fee26f7a3ce7fcb57903ee42e86c9945ea68d4c13",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-1217c6003f432da5",
+      "document_type": "istanza",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "1217c6003f432da5db769fa4b5e14fe87b889ccc45e49e310511c1cdcdf64594",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule.",
+        "Independent form qualification: accreditation of training providers, not reviewer registration/exam/traineeship/cancellation. All15 MEF/RGS catalog identities594..608 inspected; different purpose and title, no code/fingerprint/family match. A cited decreto is not this form’s primary type."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/FORMA_Istanza_accreditamento_2018.docx",
+      "opening_sha256": "641b2493fcc199995f25f0ddccc11f40a18c6116e4938883821560081d173021",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-1889d008b9006df2",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "1889d008b9006df29e3cfa449454b583b6c49e155970ece0cc65653471cd19fc",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/2026/Poster_contributi_datori_lavoro_domestico.pdf",
+      "opening_sha256": "4dc69065121b3b9fa23b80e61830104ff5d1f803557e36d9f78ba79d21152579",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-18d6f7bb8ce188ba",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "18d6f7bb8ce188ba977395cff29fe221874a9a9c715551d7ce9f8733a4505155",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2025/INPS_Template_Flyer_Servizi-VERBALI_SANITARI_video_audio%20guida-v2rev6_marzo2025.pdf",
+      "opening_sha256": "a0bbc84110298b4418240891924f42a0e92431a70b6970f537778712cf00367e",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-1bb21c7672331d0f",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "1bb21c7672331d0f539cf16793b2249862b9709e14cf75093ea86c6b3a4cdc00",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/2024_0000139.pdf",
+      "opening_sha256": "5e28466d780ea18abb00ca43736f2eae1c0ae42e607ab541b9501c475672fd1a",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-24d37752e2dfff43",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "24d37752e2dfff43dfb0b24aa065156321ab29523fde23441fc8fe247fd03086",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/Tech_e_Biomedical_-_DM_Approvazione_Nuovo_Statuto_16072026-nf.pdf",
+      "opening_sha256": "27df26d02770e0f9ecef195192f010a5d7c0603a66faa4efe0a7fece757cea7c",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-28fcf82c8048cc02",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "28fcf82c8048cc02e8ba6baeea3f9a62adf18fb120bc539879663963379be7b3",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Circolare-n.-3-del-17-gennaio-2022.pdf",
+      "opening_sha256": "d435eafdee5096dec23cb3c0df2e2b221240b7cc5e263217688f41cb56ed7cc4",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-29598d388ff268cd",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "29598d388ff268cd4b58efe1e45bc40d8ac6bcd5d19a7f8ba89b27ee37b27eed",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Guida_in_6%20passi_per_i%20beneficiari_di_Assegno_sociale.pdf",
+      "opening_sha256": "7acaa22d6c6adeddcda80a7eb594426ec1be9e11b8b970ef790d57398f3b66fc",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-2b48b115d86999f6",
+      "document_type": "regolamento",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "2b48b115d86999f656244af6aee6980df86fef9605325caaaa97531b66725ce4",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Disposizioni_generali/Atti_generali/atti_di_organizzazione/479%20DT%20DG%20n.%20479%20-%206%20nov%202020%20-%20Determinazione%20approvazione%20regolamento%20assunzioni%20a%20t.d.%2020201105%20(003).pdf",
+      "opening_sha256": "c08eaf8c64763a555356958d829a6b52097d4b2298f482b877b6791d366edfc0",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "regolamento",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-2b9e01e915ca49f0",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ministero dell’Interno",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "2b9e01e915ca49f062c132240fc258f7a84b229a6ebf0a816213473d0d459e86",
+      "notes": [
+        "First-page graphic heading literally Ministero dell’Interno, Gabinetto del Ministro. Citation of Prefettura in body is not issuer; local rendered header contact sheet inspected."
+      ],
+      "official_url": "https://www.interno.gov.it/sites/default/files/2024-07/circ._scorrimento_graduatoria_-_spiagge_sicure_2024_-_arenzano_-_policoro.pdf",
+      "opening_sha256": "48c591c93aa4ee69a8587ef3dc5cf1655befb50934270387ab93162d6ae6084a",
+      "previous_entity": "respinta dalla Prefettura competente, ovvero le eventuali somme residue, sono assegnate – ove possibile - agli altri Comuni che seguono in graduatoria l’ultimo comune beneficiario.",
+      "previous_type": "circolare",
+      "representative_case_id": "U16-04774885d351cc0c",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-2bce4221f0139ecf",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "2bce4221f0139ecf91bccc97a06dbe9762ee82f7cc315f3b71705540ceaa5d41",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-9-del-13022019-organizzazione-degli-uffici-della-sede-centrale.pdf",
+      "opening_sha256": "c46cc852a5b97e21cf393a25c6be34f7df5a4d9c10b79a33b42083de165aaa3b",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-2d428d5bbccbca1c",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ministro per l’innovazione tecnologica e la transizione digitale",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "2d428d5bbccbca1c2ba578cffc6428083d683cf651debf8a57650b34d75fb061",
+      "notes": [
+        "Literal ministerial issuing role in primary heading."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/default/files/repository_files/dm24-02-2022-approvazionepianotriennaleinformaticapa2021-2023.pdf",
+      "opening_sha256": "38b07d2066fb85635cc3207ac37db175f329c34e1ba5a8583e7be774308a872e",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-034ce8ef90e48f87",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-2f7e592b28bb7abd",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "2f7e592b28bb7abd8373cbd57e13fbc0d4d23859ae0872419961f16e11918b56",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Poster_a_colori_per_pensionati_destinatari_di_sollecito_Dichiarazione_RED_campagna_solleciti_2022_anno_reddito_2021.pdf",
+      "opening_sha256": "ee2f74666c7cb956dc5f5cb525ebe9b9d47d33f1b665c699a35204d7a7cfd226",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-3896ed6121e9831a",
+      "document_type": "convenzione",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "3896ed6121e9831adf4c387720d24da1faa4adcb908c3071fb422d74aa25fd43",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule.",
+        "Independent form qualification: template agreement for reviewer training providers, absent from complete MEF/RGS catalog594..608. Cited statute does not make it a decree."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/FORMA_2019_Schema_convenzione_enti_accreditati_2019v_1.docx",
+      "opening_sha256": "fbb3cb824fb94b19086a5dea6d6a818eb97f817e0566f17ce85eb19c9265ea60",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-3c6e359af62a31a0",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "3c6e359af62a31a0417219c9d359fe2da9926126b41984d6bf1fbdd0bb2d75b6",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202026-2028/Decreto%20n.%2010%20del%2029%20gennaio%202026.pdf",
+      "opening_sha256": "b483f7c8501d1603e0b75eb9564d5e4c6899630f9840695074f4f8a42bb71351",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-3ec70852d78edefc",
+      "document_type": "istruzioni",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "3ec70852d78edefca658fecb5f5ed19e0b736105c3123d1c0406590d59a8c81c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/146849359/Istruzioni+Trasmissione+segnalazioni+-+All.+n.+2+modificato+e+integrato+con+Del.479.2025.pdf/e35725b6-160b-ab9b-5edb-a7a0a5348d77?t=1765544421427",
+      "opening_sha256": "328f26c6f2d432841aeb83ba0045d53f59bad2e195001e807fe9caf779fa259d",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "istruzioni",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-3f91967026351dbf",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "3f91967026351dbfce658ea63f846e8a5f8ee9f91db0a9492e22b8313ec82362",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/DM_6_agosto_2026-nf.pdf",
+      "opening_sha256": "34ed86b0920f521d2c59185f5a7bcc2ed52bab066269800f50bb7c9d3068553e",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-401762217665c39f",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "401762217665c39fbbc5941c77d80d90da03820db00a79579147ec72f1626713",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/CIRCOLARE_GIORNATA_MADE_IN_ITALY_-_2027_-_AGG_-_nf.pdf",
+      "opening_sha256": "49e934516d34ee558e86e93b9fd21e8ade3b87795daadcfd6fc6c9c0f2b544df",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-41a91efed50b85e4",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Infrastrutture e dei Trasporti",
+      "input_sha256": "41a91efed50b85e4505ca21fdad04bc692fbf28874a792bc12c7fd9b35927096",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2023/12/DECRETO-297-del-17-novembre-2023.pdf",
+      "opening_sha256": "74cd7d8f1d533bddabc6ccee3478746f388028efc0725dc569902f126885c55c",
+      "previous_entity": "Ministero delle Infrastrutture e dei Trasporti",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-433516d1cc584407",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "433516d1cc58440726f0bbee824983b5d3cf2759acf55353dc9ad63172f0939f",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/Fondazione_Tech_e_Biomedical_-_Nuovo_Statuto_2026.pdf",
+      "opening_sha256": "951265fe5b0dcd7b73f901cf84460639ec1681370dcd444bc9e8400217f2b331",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-44f7de20a6029268",
+      "document_type": "delibera",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dello Sviluppo Economico",
+      "input_sha256": "44f7de20a6029268e9fd91368f2786dcc30564ec3f928c4f569a1def8c4ef050",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/Determina-approvazione-graduatoria-7gen20.pdf",
+      "opening_sha256": "62de956792fafb149c18eea7a8ff67bb6a6fee3c8d1b0df159ae9e326eb9f8e0",
+      "previous_entity": "Ministero dello Sviluppo Economico",
+      "previous_type": "delibera",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-45f3649ad7a5a687",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "45f3649ad7a5a68786d1b688a02e20af4b830dd3fb91a902083294f73dfd4432",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee%20guida%20sull%27accessibilit%C3%A0%20degli%20strumenti%20informatici%20-%20Soggetti%20privati.pdf",
+      "opening_sha256": "28fa8f4d7920980c2f96e71f2f628054cd551980687038c862c4a39bf8c740d6",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-465e383a91455faf",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "465e383a91455faff3a7c83e153d43a0869f8a0ab1f3f33ee631dfd4579c286b",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202026-2028/Tabella%2010%20-%20I%20agg.%2010-03-2026/inl.INL.Decreti_DIRGE_INL(R).0000032.10-03-2026.pdf",
+      "opening_sha256": "ef97d3150c289d83ac39bc625b9b97787cf3ff779c1f57d24f196a0e0bf44755",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-46846930b96eaecc",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "46846930b96eaecc73e6366a9beec2f7b812a84a91313e8ca5155c9b590f775d",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202023-2025/o_1gvh0lll41ihq1l5f1qarhlv8ffg.pdf",
+      "opening_sha256": "d4a7a962ede1b744672bbb6c3e202a1f8a86b1f3647fc9d58497557e2915a5ae",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-47a9d04ee54b1bb7",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "47a9d04ee54b1bb795ace9bb544ae8e57fc47e119784a376d82c275f3ed64db5",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n17-del-28-giugno-2017-Adozione-Piano-triennale-formazione-INL-signed.pdf",
+      "opening_sha256": "8fd044c00c7e8711aab64b9ce7033782dd89503750cd4df90720e395eeb3e7c7",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-514a368efff26f26",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "514a368efff26f26e77908315f1551c3a8ec5b05203024225badff1eb842f8f3",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-8-del-13022019-modifica-artt-2-e-6-del-dpcm-23022016(1).pdf",
+      "opening_sha256": "b70a35f0769e5c7ff4d529be8de6f9dab1f5677e1a12244c052b307b2655a28f",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-55c289d4d0adc7af",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "55c289d4d0adc7afa5221bb07c4c0537530faf7f96f9919a5150f9ab38aea187",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Circolare_del_7_settembre_2026_n_15.pdf",
+      "opening_sha256": "418274ddf5fb5780ab8453d2a2fb4d473115498fce11b5bcb750a124c94522bc",
+      "previous_entity": "Ragioneria Generale dello Stato",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-5712d240b2d79eaf",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dello Sviluppo Economico",
+      "input_sha256": "5712d240b2d79eaff0efa67ffb31ace2ffce9c32c5cd5faf816f3e5ee0893403",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/Allegato_A_DM_SINFI_subacqueo_28_08_26.pdf",
+      "opening_sha256": "610e850fa362a9cc58c9afbbf838a31f5308fcc353c27a9ac3dba5d7dd4a0ee3",
+      "previous_entity": "Ministero dello Sviluppo Economico",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-592a4d94134a6abf",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "592a4d94134a6abf9dd83d175b8a169ea26e588367bde9c9b3d74124e011f01c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/2025/VideoGuida_INPS_ADI_servizi_sociali.pdf",
+      "opening_sha256": "9815c348a986379107e135faf2318614b4dfcff6aa92ed65d0939bc340b14af4",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-592c2ce40b15657f",
+      "document_type": "nota",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero della Giustizia",
+      "input_sha256": "592c2ce40b15657fa4753191ff3b3ae94b4eb53fad514272763260f050c81a5c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.giustizia.it/cmsresources/cms/documents/pnrr_tool_fraud_risk_assess_relazione_giu2025.pdf",
+      "opening_sha256": "201ba928a1e7a8d2b9316df9b3bd41ca1aa274bbaf55000559b9c81fd1aadea2",
+      "previous_entity": "Ministero della Giustizia",
+      "previous_type": "nota",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-59d9e3add216094b",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "59d9e3add216094b64aa251512af6181828b664b338d1134d373484ecd51ff9b",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/allegati/mimit_10-02-2026_-_CIRCOLARE_13V_-_Semestrali-nf.pdf",
+      "opening_sha256": "b0d8b547a8caa3515da9ccaff7cdc357f1c1bd6aa5021538dc9c25df7677cf59",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-5c27141106338c45",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "5c27141106338c450d204960a03616986662a6c3c1e6322d632a2af6df603800",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/testo_consolidato_della_circolare_n._0317421_07.08.2019.pdf",
+      "opening_sha256": "2dd99937488b9c5625665cfae39e47d5ed0ffebde8e253e89fefd6531386f445",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-5deaf06e831cdf3c",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Presidente del Consiglio dei Ministri",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "5deaf06e831cdf3cc0ab7582986f098ee10efb03226abe71c3554817a13a5760",
+      "notes": [
+        "Literal primary issuing authority, not hosting AGID cited in the body."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2025-01/DPCM_di_approvazione_del_Piano_Triennale_2024-2026_Aggiornamento_2025.pdf",
+      "opening_sha256": "f1da0abafd4d80262f1c4d054c5f68859910f3c197fcea3466a0137681c5cf80",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-034ce8ef90e48f87",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-5e6358e4da7b15c8",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "5e6358e4da7b15c83395320db9211a15c60e6d5bbc8cf29f636c556015ecba7e",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/146849359/Del.+n.+311+del+12+luglio+2023+-+LLGG+WB+vers.+unitaria+modificata+con+Del.479-26.11.25rev.16.12.pdf/c593a399-43e5-78f9-bceb-0f407c4e7d41?t=1765894076822",
+      "opening_sha256": "ce4f10bb2475b1c43a0e11774a95eb3e1ec1ca3db2c99000cca7b8567f9fc0b3",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-5eb81b84cd594a55",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell’Interno",
+      "input_sha256": "5eb81b84cd594a55272076132a36303317f4a9a3dbf5786a1496321c3d0c2cc8",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.interno.gov.it/sites/default/files/2024-04/circolare_terra_dei_fuochi_4.pdf",
+      "opening_sha256": "47be7e3a02998160aa6b69a871ebc54c2c4b03e642b9b7e856b3a4ab48f69b2c",
+      "previous_entity": "Ministero dell’Interno",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-624988878bfdd82f",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero della Giustizia",
+      "input_sha256": "624988878bfdd82f83f4b116ef4a154f068333d149bfa558c1e9aefad300896a",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.giustizia.it/cmsresources/cms/documents/allegato_decreto_interministeriale_9mar2023.pdf",
+      "opening_sha256": "176526b5a86229e233a3b3ea6ec6670901498ac91a229bc329993a989cd52ca5",
+      "previous_entity": "Ministero della Giustizia",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-62e39b47275cd0bc",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "62e39b47275cd0bc617f5004c4f640d73919792e76ed2269ba1a18c664104c81",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Circolare-formazione-2024-firmata.pdf",
+      "opening_sha256": "24168782bb0a68050e848bdafd08a57a9fcd7d638c094d16f5fb5eaba6f6515b",
+      "previous_entity": "Ragioneria Generale dello Stato",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-66e0005e6497f9e6",
+      "document_type": "regolamento",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "66e0005e6497f9e60413b6667b2bec59765174c1adb774ecadaa4525b4e5227e",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Disposizioni_generali/Atti_generali/atti_di_organizzazione/Regolamento%20Tempo%20determinato%202020.11.05%20(003).pdf",
+      "opening_sha256": "31eaebc35774e13711c8b5e0369ecb186992140db195c735470182740092c1f0",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "regolamento",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-68d74af3fc0e7772",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "68d74af3fc0e77729dfbf95c0b83002b30ba948405d9ed39abfb7324734b9e49",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Com_.-51_-canc-1-soc_GU172026.pdf",
+      "opening_sha256": "bf47175f6fb73fe2c41916a28d93dbcc3575863d31087b0ba73c0060e8efb1b8",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-0ad3862d2c6ebf68",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-696f3f3c6f3f2f16",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "696f3f3c6f3f2f16b09b5fa0c5a58d6208ad548c90a71ae0974ddef8e20d5a5d",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Organizzazione/organigramma/598%20DT%20DG%20n.%20598%20del%208%20nov%202021%20-%20Adozione%20LG%20Punto%20di%20accesso%20telematico%20ai%20servizi%20della%20PA.pdf",
+      "opening_sha256": "4764f9cb8283b6ad2ecc28c5ac50edaf0f9aff95cf79b375dc8066ba859f7b16",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-6a9173aaf13c8f0a",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "6a9173aaf13c8f0abf74b509f4287870bffbffcb79398b57b050381315c03c8c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/flyer_Naspi.pdf",
+      "opening_sha256": "d948c141c4eabce29f949e23056bcfe5fe0d120748186dfcee8605d9d90e8b25",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-6d478ba8f6ed68e3",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "6d478ba8f6ed68e3c22cf0ed982c7955270dd9392998662e876cc59f8be6a752",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/Decreto-direttoriale-n-525-del-2-ottobre-2017-Decreto-delega-per-firma.pdf",
+      "opening_sha256": "4747668c32805db29e72759c02794b2df236975d122ceeff59cde9768795bde1",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-6ef0bfab93605822",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "6ef0bfab936058227f1699af919cd3a356fa6017ab594dce0443e042f8753b27",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-4-2016-Graduazione-Posizioni-Dirigenziali-II-Fascia-Uffici-Territoriali.pdf",
+      "opening_sha256": "dcbbc7f2af1a96f796399269be44d02878ea33b57484ce56aca25082fc934e43",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-6fbf4ca847686aba",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Infrastrutture e dei Trasporti",
+      "input_sha256": "6fbf4ca847686aba8df25b4460d60a5d433cb52ca2f154614c58afe437502013",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://lavoromarittimo.mit.gov.it/wp-content/uploads/2024/12/Nuova-Procedura-Quesiti_32132.09-12-2024.pdf",
+      "opening_sha256": "22de247e0a2352582a6bf1f5099f58946ab125b168702b5467d03cf549cd3f18",
+      "previous_entity": "Ministero delle Infrastrutture e dei Trasporti",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-71017808173cb6ef",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Regione Piemonte",
+      "input_sha256": "71017808173cb6ef121dfd5def2bdbd296bd6deb7c8846f40d88f2602e3d72c5",
+      "notes": [
+        "Literal Regole di compilazione:30/37-page usage guide, not the application or a decree merely cited in the title."
+      ],
+      "official_url": "https://servizi.regione.piemonte.it/media/2337/download?attachment",
+      "opening_sha256": "8023f9ea53ed23b9e71828a114a6afaccc95e06c12d6187f041aec39420c6af2",
+      "previous_entity": "Regione Piemonte",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-7181cf5ba05d2367",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell’Interno",
+      "input_sha256": "7181cf5ba05d2367be177dd384af9b9a1e905b78201a1e1c2aec924bd212b98b",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://libertaciviliimmigrazione.dlci.interno.gov.it/sites/default/files/2025-04/111_bis.pdf",
+      "opening_sha256": "382764a1fc7dd9e814940dc4addbf2c89455a1bc1e9a587762106a3aedca2b5c",
+      "previous_entity": "Ministero dell’Interno",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-72713796a79406b7",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "72713796a79406b7a1b8a649f469be7cc34365b35b40c9c17b1effc44620e476",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/circolare-n.-37-del-12-nov-2024-formazione-ESG.pdf",
+      "opening_sha256": "724c5a291bb79ed97febeb3969612900b14fbafac7b4f71570d3f8e3a324c764",
+      "previous_entity": "Ragioneria Generale dello Stato",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-72a4d97a7d308145",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "72a4d97a7d308145f9e4a2641ebff7c8fee3193c88de4d2a29a1371786ab5990",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-3-2017-ProvvedimentoGraduazioneUfficiCentrali.pdf",
+      "opening_sha256": "0fa59c8da1ba541537b3bec61448c2c63856ecf040000f4a7909c53521116ad8",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-6ef0bfab93605822",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-7702a716e7d836fb",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "7702a716e7d836fb0643ec7592e4524b746d83c336ac733fe90e1c98cac70abc",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/Com_.-54_decreto-cancellazione-n.-1pg_GU312026.pdf",
+      "opening_sha256": "549f3b0c8e8a4ea57580dbd05190997435504ae8aa60dcbde5daad64bd1413ed",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-0ad3862d2c6ebf68",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-78ce4c50c3ee6b4b",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "78ce4c50c3ee6b4b9145466bc71c76c8fff8d160ccb81508f5069b9900c45595",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/DM_microlesioni_2026_def_signed-nf.pdf",
+      "opening_sha256": "b2169cde813ac706175b6e942c1374f95f6f0cdd523757009f70a63e6c9be6ee",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-7ba99cce1ef78146",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "7ba99cce1ef78146d9772b459ab81395bd9c1715ea29700df14a084d606931a6",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202024-2026/o_1hrors9ji1top1en11khq18re1j93q.pdf",
+      "opening_sha256": "a37fdda48ecffe6aae5bf4cb295a9c9871e78107dcd165c4f66cb07017986f1c",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-7bc8a5d5bfca43ef",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "7bc8a5d5bfca43ef9622d3653013650ae4cb5c3483ec2060a820af2c1776c23c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/Circolare_obbligo_assicurativo_monopattini_2026_-nf.pdf",
+      "opening_sha256": "a4fa6142d6ad04f08e672d6a0c31eeeb932d851f09f3370a07efe6ba65e1756d",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-7deb6ba14e8740d6",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "7deb6ba14e8740d647ff317de54bb027d3b92617702fa5919f8a3311bb0e0a85",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-18-del-20062018-Adozione-Piano-triennale-formazione-INL-2018-2020.pdf",
+      "opening_sha256": "7f072d7d16320ec6b413679861ccdf92115948870872836a8fe61bb50195ff7a",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-8220ff1233bc828a",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "8220ff1233bc828aa47cc61d102677b90d1be755d83178b4f139514c0f1523b0",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/circolare_n._544_del_24_febbraio_2026.pdf",
+      "opening_sha256": "96188af93140b26a9755e14befca434350b20aeca58d9e2c7f8716b620110c00",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-82500b1dc576cfc1",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell'Economia e delle Finanze / RGS",
+      "input_sha256": "82500b1dc576cfc1e1fa326c25e77bb99afbed7f4a6a3f9c672f909ded279ec8",
+      "notes": [
+        "Official revisionelegale.rgs.mef.gov.it resource and RGS/IGF departmental content; compound issuer spelling matches existing catalog, not a new alias or runtime rule."
+      ],
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/rev_cIRCOLARE_3_DICEMBRE_23.pdf",
+      "opening_sha256": "7a1fbdd62d202cd9188e2edac7353e87b14199e891f9fa2ad919dead9079c566",
+      "previous_entity": "Ministero dell’Economia e delle Finanze",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-83d4b269e550666d",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell’Interno",
+      "input_sha256": "83d4b269e550666d94d11cd178edb72294a71a869285fd6f3c33ad5282d4885e",
+      "notes": [
+        "First-page graphic heading literally Ministero dell’Interno, Gabinetto del Ministro. Citation of Prefettura in body is not issuer; local rendered header contact sheet inspected."
+      ],
+      "official_url": "https://www.interno.gov.it/sites/default/files/2024-07/circolare_03_07_2024.pdf",
+      "opening_sha256": "677905ca1592d9cc093f2dfe38abd43d25708e1cf10cd2da40c3b83f8bcddf6c",
+      "previous_entity": "presentare apposita domanda alla Prefettura territorialmente competente entro il prossimo 30 settembre.",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-9043373eef2c585a",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "9043373eef2c585a9ffc09739fa4a156603d27e4abe189b8399eaf7d150f95e8",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee%20Guida%20sull%27accessibilit%C3%A0%20degli%20strumenti%20informatici%20-%20PA.pdf",
+      "opening_sha256": "3a009b92d2d32f96133cc541a8c4c8ce55998bfc2b3162016760e77cfbbe8007",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-914544cb27635305",
+      "document_type": "delibera",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "914544cb276353059c5985e4023fe52c4c58fee8d21ea12eedd810d42b4a24e8",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/2733112/Delibera+n.+185+del+13+aprile+2022.pdf/cddbe0ec-d872-e187-3727-a7b9c4391718?t=1650544475823",
+      "opening_sha256": "56272ac96938f79308252d40c93ce25cb21bd0d353612fdc9e61e55370a7e259",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "delibera",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-919ac066262ba3b2",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Presidente del Consiglio dei Ministri",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "919ac066262ba3b28cf0f4a17d57aafe2ccaadc5604e9e2962f48756eec69c7d",
+      "notes": [
+        "Literal primary issuing authority, not hosting AGID cited in the body."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/default/files/repository_files/decreto_adozione_piano_triennale_2022-2024.pdf",
+      "opening_sha256": "482d42380d44ff04845761fd46193549cd3b7cc85c194aacceae9dc170d55e5d",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-034ce8ef90e48f87",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-91b0f6082d3bf2d8",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Unioncamere",
+      "input_sha256": "91b0f6082d3bf2d8269c0c211fcec9cd73e4af52e51f22b474fe219ccebe7c62",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.unioncamere.gov.it/sites/default/files/articoli/2022-03/linee%20guida%20OIV.pdf",
+      "opening_sha256": "0374fde7c56811730ce3748de1870ed117b74845efb35072a159d14133f85db3",
+      "previous_entity": "Unioncamere",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-9cc12ce840ecb6ff",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "9cc12ce840ecb6ff80b5b43a493cf3ab191cba7499c6c61aea67f6c3dd318c30",
+      "notes": [
+        "Current literal primary heading; historical Ministry name occurs only in cited previous legislation."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/DM_6_agosto_2026-nf.pdf",
+      "opening_sha256": "c82279bbcff050de42c94fb5365f1ba8f9e29e1f306ce7c5fefe6b4aa70ac2e2",
+      "previous_entity": "Ministero dello Sviluppo Economico",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-9d0bce77c977e677",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "9d0bce77c977e67768a587e42dabbd9924265ee96a641418fe9e226b2b72caf8",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/Circolare-monopattini-24-04-2026.pdf",
+      "opening_sha256": "0706f92c7548abdb899e7902439e5a24576b709d579524ee2053839f7447c4ef",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-9e43e7f25a66c86d",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "9e43e7f25a66c86d0b164b97cf162747b0101ddafbfb407a77c7f50eb0078d8a",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/Circolare_chiarimenti_cds_agroindustriali_22012026-nf.pdf",
+      "opening_sha256": "2430d241ca26d4c374916423e4f8099e2d0c0b9cc39bc6e08b808bbb4aac3cea",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-9ec936935412613b",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "9ec936935412613bc050504f7b27583c26fee135cb1689d4661c1f0b9c3993e1",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/376473797/Revisione+del+regolamento+sull%E2%80%99esercizio+del+potere+sanzionatorio+dell%E2%80%99Autorit%C3%A0+in+materia+di+contratti+pubblici+di+cui+al+decreto+legislativo+31+marzo+2023+n.36+-+Del.+n.210+-+25.5.2026.pdf/4e2d0620-5b97-0be8-c7cf-f4aad564bf78?t=1781167681050",
+      "opening_sha256": "983a97c960bfb6acf033d9e72f313f25a998f1f6f819e21ea867ae5fb8ea548d",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-a3773a93b4918e00",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "a3773a93b4918e00d900c7add56b8b4e2af20ecb15c790f2c933c5cc1678d45d",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2022/02/Allegati/3055_CS_Video-guida-pensioni.pdf",
+      "opening_sha256": "d7deaa0cb39f82d946c82546739b052ee2937809175e292ae279e375d27dc6ff",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-a44e0b2c4dc6621c",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Regione Piemonte",
+      "input_sha256": "a44e0b2c4dc6621c6b3fc2d7be66bcfe8f4f4488b02a74cb21ff9211b3c2f127",
+      "notes": [
+        "Literal Regole di compilazione:30/37-page usage guide, not the application or a decree merely cited in the title."
+      ],
+      "official_url": "https://servizi.regione.piemonte.it/media/2336/download?attachment",
+      "opening_sha256": "56c2555e3470345266ca09dc67be013523704d8d76fcf7f2b1f35d649e0728f7",
+      "previous_entity": "Regione Piemonte",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-a5c12c672c57af99",
+      "document_type": "comunicazione",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ministero dello Sviluppo Economico",
+      "input_sha256": "a5c12c672c57af99748a2dccff8b4f8a76693482431c7fe06d832e96351f93f1",
+      "notes": [
+        "Official2019 draft convention has the same MSE department, address, fiscal code80230390587, CIPE65/2015 and fund purpose as canonical582 schema2020. Counterparty Proponente vs Comune differs. Exact identity equivalence not established; cannot label a related prior version confirmed unknown. Both DOCX primary openings inspected before predictions."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/Allegato%201%20Schema%20di%20Convenzione%205.8.2019.docx",
+      "opening_sha256": "827d9546018de12678288795f465f18136f1f061ea33668311be1ecf576ec38e",
+      "previous_entity": "Ministero dello Sviluppo Economico",
+      "previous_type": "comunicazione",
+      "relation_evidence": {
+        "basis": "Both actual DOCX openings compared; same issuer/department/agency fiscal code/fund, different counterparty and2019/2020 resource editions. No exact equivalence or confirmed unknown asserted.",
+        "candidate_url": "https://www.mimit.gov.it/images/stories/documenti/Allegato%201%20Schema%20di%20Convenzione%205.8.2019.docx",
+        "canonical_sha256": "9b2c0ad3cb6881bc7b6ca373fb101dea7bd58927c64525ceb6ec430f20158039",
+        "canonical_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/documenti/Allegato_1_Convenzione_17-02-2020_V01.docx",
+        "catalog_document_id": 582
+      },
+      "truth_status": "ambiguous_catalog_relation"
+    },
+    {
+      "case_id": "U16-a7681bf22a185134",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero dell’Interno",
+      "input_sha256": "a7681bf22a1851345ea269a63b92b4ba455be47941d470d0fe012759213b15db",
+      "notes": [
+        "First-page graphic heading literally Ministero dell’Interno, Gabinetto del Ministro. Citation of Prefettura in body is not issuer; local rendered header contact sheet inspected."
+      ],
+      "official_url": "https://www.interno.gov.it/sites/default/files/2024-11/circolare_truffe_anziani_2024.pdf",
+      "opening_sha256": "fefe160e2724ec06d2acced0048fed34e91329bb50e6a49a0e5ab39c3540145b",
+      "previous_entity": "apposita istanza alla Prefettura competente, unendo alla domanda un progetto, destinato a concludersi entro il 30 novembre 2025, esplicativo delle iniziative che si intendono porre in",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-aded7826cfb751c0",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "aded7826cfb751c01a8fff6c804c5d392cb10effd713a1e293f2b2a18700b189",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202024-2026/o_1hntalomq18l3b4c12fov8j1bds14.pdf",
+      "opening_sha256": "a13264171aedf6a47c67e5a818ecce2af89d9216a4b4b4231b8b2d39e7b1260a",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-af10c1698081dbb3",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "af10c1698081dbb3daafe1afe3b9fc80979f34b4d4addbba5c79e44e41f2b516",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202025-2027/o_1il3910k1105l1v484ou7nn4msg.pdf",
+      "opening_sha256": "232da3cebe585188e869c3d02ec63c444638907ce54651aaf7d2b16c5935857e",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-afa8952e71adbb7a",
+      "document_type": "informativa",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "afa8952e71adbb7ae53190312644f608221885e33457cb097581456d779f5f92",
+      "notes": [
+        "Primary privacy notice; a cited EU Regulation is not its document type."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Altri%20contenuti/Prevenzione%20della%20Corruzione/whistleblowing/Informativa%20whistleblowing.pdf",
+      "opening_sha256": "306d77c12c45e8b32fe322f3388944c95634706fe4e3a81a525d174f7e347706",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "regolamento",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-b155cb39ab9f2fce",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "b155cb39ab9f2fce42aef2fb4fbb64cd8efdd4cc99bfee22560f3158ece95d79",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/Decreto-direttoriale-n-6-del-12-02-2019-rapporto-mq-addetto-immobili.pdf",
+      "opening_sha256": "097805e8c076151508769a622bfb00b2d51cf3f103d096866a9447f2e78237b7",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-b6907d3e46b977da",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "b6907d3e46b977da52c683c656fb968532869c07f3fb85b4ad2e997465dea9d6",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/19263312/FAQ+-+Linee+guida+Qualificazione+Stazioni+appaltanti+-+12.05.2022.pdf/f8cf65b4-86d8-f4da-4a59-8a95f4c59637?t=1652349946177",
+      "opening_sha256": "6cb28f000a6896eb5cf63d52bf4974700e64191360c16ac922aaed348e7625ab",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-b9841024eb09d1ad",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Agenzia per l’Italia Digitale",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "b9841024eb09d1ad10dd7de7caa909fae0065219f4cfbf33be35e5e5ec7c162e",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/DPCM17luglio2020_approvazionepianotriennaleinformaticaPA2020-2022.pdf",
+      "opening_sha256": "9fb1c77a0a6b6e7e516daa3ab1de005c78630bf46dd0d2e44032cea485086fef",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-034ce8ef90e48f87",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-ba73c647664f912b",
+      "document_type": "circolare",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ministero delle Imprese e del Made in Italy",
+      "input_sha256": "ba73c647664f912ba9356edb5bd9a237ee7e81ea1f8c2e16d937df94cdbcb1f9",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/normativa/allegati/Circolare-0062972-31-08-2026-nf.pdf",
+      "opening_sha256": "83e8d24f9ce1d6efffa6ce1c7c2f0138854e47ad4d177029909dc34b96096cd0",
+      "previous_entity": "Ministero delle Imprese e del Made in Italy",
+      "previous_type": "circolare",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c00b52f57a957e53",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per la Cybersicurezza Nazionale / Garante per la protezione dei dati personali",
+      "input_sha256": "c00b52f57a957e533077db4dc7a370f8927f6a3862f3c29f5198eb0d95620bb4",
+      "notes": [
+        "ACN literal cover and official attachment title ACN-GPDP establish joint publishers; a single hosting-entity label was incomplete."
+      ],
+      "official_url": "https://www.garanteprivacy.it/documents/10160/0/ACN-GPDP+Linee+Guida+Conservazione+Password.pdf/79535ac6-3e6d-4bcf-600f-220d9eddb6e6?version=1.1",
+      "opening_sha256": "f912553fea3f9678aa19e488470e9df48db7847d2b68b97c8895f17808efc1e6",
+      "previous_entity": "Garante per la protezione dei dati personali",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c157d958a5f870f1",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "c157d958a5f870f12f1075007003f2aebefee6f9147906e09104cb1454f3ae9c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202022-2024/o_1ge6m292t10rl1ahj1ln81t14rrrh.pdf",
+      "opening_sha256": "008860031a54785897b9d7f810cc17f2f149f8d1ca5835671d3f5e39c4c620e8",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c217f475e273f420",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "c217f475e273f420e78431138c650e2bc2a8d5c34ea4ea068c003e803fca7a63",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Disposizioni_generali/Atti_generali/157%20DT%20DG%20n.%20157%20-23%20mar%202020%20-%20sottosc.ne%20elettronica%20-art.%2020%20CAD.pdf",
+      "opening_sha256": "0bacbabef367c97c594365cf1ec988f688ad0d5f8d65766abc9a68e030a399c5",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c31f6e60c8ce6baa",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Garante per la protezione dei dati personali",
+      "input_sha256": "c31f6e60c8ce6baa2edf5d34f052ef73bd0136e4923c18639f0889465c4e8a3f",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.garanteprivacy.it/documents/10160/0/LINEE+GUIDA+COOKIE+E+ALTRI+STRUMENTI+DI+TRACCIAMENTO+-+SCHEDA+DI+SINTESI.pdf/8d97e88f-2213-5e5f-97fe-805eaeb41af3?version=4.0",
+      "opening_sha256": "ce22128c356cec2bee837fda8ff6742bc6705cb66415e4110d6e792ae2c6db44",
+      "previous_entity": "Garante per la protezione dei dati personali",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c492280fe45b6160",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "c492280fe45b6160f9d88050d3db733e4438321ce0af1efe54636e521298b8a1",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-11-2016-CriteriConferimentoIncarichiDirigenziali.pdf",
+      "opening_sha256": "4725888b8ed101c639fce54b06386b4d6aee8e0c3e70afcbf6945b9ce78a8b84",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c6082e246a8ce57a",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "c6082e246a8ce57ad38010d109bba9aff35091bf1d88d3d8093f90ae070b4762",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202025-2027/o_1iituar6adeq17251tafg4i1056g.pdf",
+      "opening_sha256": "17f400c67375795f9a14ab3e6bd45a401c7feaa0093b0c06e5fa56e02d3db702",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-c9c1beb6e0f77ab8",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "c9c1beb6e0f77ab8287082f2ab5ac68a048152cd2f9b0aeff880c5ae7cdc456d",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Disposizioni_generali/Atti_generali/atti_di_organizzazione/15_-_DT_DG_n._15_-_26_gen_2018_-_Istituzione_Ufficio_del_difensore_civico_per_il_digitale.pdf",
+      "opening_sha256": "fb14ea3e05844a8bbfb328edd840b11b9c0da27c82e7ffddf44f3de86dc1028c",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-d387e9b359869ae4",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "d387e9b359869ae4f61a0d80a2379a334d91b457a885a288f64c074345e46125",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-7-2016-ProvvedimentoOrganizzazioneStrutturaCentraleIspettorato.pdf",
+      "opening_sha256": "094e3be093add82d9d893b646a55578403229c4706e06e93a5a54f18c5309e08",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-d68d578039b79a34",
+      "document_type": "comunicazione",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "d68d578039b79a34db6cb267cae3840e10d6c5240d74c2fec3f6fc5b28590f0c",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2025-04/Allegato%203%20Prodotti_assistivi_comunicazione_classe_22.pdf",
+      "opening_sha256": "7be30f6dc8617b896f12a83baa8114023cba0356c496f1334f20eba7092ba8d9",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "comunicazione",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-d7e5783a28cd717a",
+      "document_type": "delibera",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ministero dello Sviluppo Economico",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "d7e5783a28cd717a940d351cf973f91d4c0fb75cf2c964c7a6c7e4688f346175",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.mimit.gov.it/images/stories/documenti/Determina_approvazione_graduatoria_CDT_dicembre_2020.pdf",
+      "opening_sha256": "01c1a28fc11a1647b1f26925708301630855cd3cd3fe40f0e100d48fbf4fc763",
+      "previous_entity": "Ministero dello Sviluppo Economico",
+      "previous_type": "delibera",
+      "representative_case_id": "U16-44f7de20a6029268",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-dc795c8f247e983a",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "dc795c8f247e983a905a4add861b93718731e2176d64e4c4baf8fc4573d4b7e8",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/146849359/6.+Approfondimenti+ambito+oggettivo+%E2%80%93+Le+violazioni+%C2%A7+2.1.pdf/5d797463-e103-e628-24d9-4978d5a20371?t=1689329633737",
+      "opening_sha256": "c27bc056d98aa931d938baeda73a131e4b47a3c0e0beb9a47fd90edf93530030",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-deea55dcf77da213",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "deea55dcf77da213d27e6a31c76613932c3105708f73c64394eb33a417458157",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/2733112/Delibera+n.+441+del+28+settembre+2022+-+Linee+guida+qualificazione+stazioni+appaltanti+e%C2%A0centrali+di+committenza_.pdf/3a13d82f-a753-c837-60db-c2785eb0c4a4?t=1665149762110",
+      "opening_sha256": "6c7da974eb496e2acd199da2ba453e93edcdc15a0ea3f5db8afb37e013ae7438",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-df5764a620c93bc1",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "INPS",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "df5764a620c93bc11c6fcfbc860103b801a0edc3b3c8c526b77df7083aae4bca",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Poster_a_colori_per_pensionati_destinatari_sollecito_Dichiarazione_RED_campagna_solleciti_2021_anno_reddito_2020.pdf",
+      "opening_sha256": "df9cdd34d56a9840ac3c95494efeb7603902678722729737aaf2d00c6d714ca5",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "representative_case_id": "U16-2f7e592b28bb7abd",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-e1f6890997e33c0b",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "input_sha256": "e1f6890997e33c0b5b5c38d2499df2c924b7fe005171e3586f19ff51d5cbe314",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/PIAO/TRIENNIO%202024-2026/o_1i9b919221pqurfoois41fsgg.pdf",
+      "opening_sha256": "d79b805f6462b2db5bfb00db6843ea16e4778fbec936f8e9bc4bc53e3e567400",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-e3daf43c8dc20a90",
+      "document_type": "regolamento",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "e3daf43c8dc20a90381e496199c3747678f24966b8ec1911116fd38a1647b240",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Organizzazione/organigramma/Regolamento%20criteri%20po%20post%20confronto%20rev%2015.4.2021_ultima%20versione.pdf",
+      "opening_sha256": "9a524a87d06eb676da9154b7359af08885ead33f9c7f7ad945e7ee86a89c9b4f",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "regolamento",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-e5c2c57438ca3ff7",
+      "document_type": "delibera",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Autorità Nazionale Anticorruzione",
+      "input_sha256": "e5c2c57438ca3ff7f59d925dd1af05fb7cd2573b9a427d673f9addf1611bc33b",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.anticorruzione.it/documents/91439/121342/Delibera+n.+141+del+30+marzo+2022.pdf/2cd4aa88-8120-1c9e-c1c9-8f633fd2fae6?t=1648723697923",
+      "opening_sha256": "dc5063955b0dd9f52f0197906419a8e9e4ae340d471d4b8d34aeeccb7642bfe0",
+      "previous_entity": "Autorità Nazionale Anticorruzione",
+      "previous_type": "delibera",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-e6c77f014ba33920",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "e6c77f014ba3392014736a4936905c14e9dc9467633ff15b526d619be702e7af",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Poster_Assegno_sociale.pdf",
+      "opening_sha256": "22a2e61c4738656408c4ee88a091d31414be88c2a8142cd73d1114b0882b020b",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-e7272960785bb0e6",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "e7272960785bb0e60e08cd0d3f799b319f5d70082ee38042922f17d08ca1c036",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.agid.gov.it/media/agid/file_archive/Organizzazione/organigramma/580%20DT%20DG%20n%20580%20-%2027%20ott%202021%20-%20Riorganizzazione.pdf",
+      "opening_sha256": "6e6512ca8437d2ba1fb64d0e21e3e55091cba59b54e0b603ea8e71548dd7c549",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "decreto",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-ecefa8c6722ba7f9",
+      "document_type": "modello",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "Agenzia per l’Italia Digitale",
+      "input_sha256": "ecefa8c6722ba7f9a39132df6896c86006347c19d762e3899a23113d92f13573",
+      "notes": [
+        "Independent form qualification: AGID accessibility self-assessment; no AGID document identity exists in the unchanged complete catalog. Literal heading and official issuer, no technical-near/family/code relation."
+      ],
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2025-04/Allegato%202%20Modello_di_autovalutazione.pdf",
+      "opening_sha256": "57f69fd7eae0702907da530fb4fdc312c8fe6b9a81908f86810db0928dd03825",
+      "previous_entity": "Agenzia per l’Italia Digitale",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-f5f2c8571bb00645",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "f5f2c8571bb00645521fbd4789e061d9b79c080d0c6d0c9d2ab8474e9ba5a10a",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Brochure_SFL.pdf",
+      "opening_sha256": "5d716126a637ef84731a43092028e0cdc7a060f98e7a5ae49490a527b407b0da",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-f9953c2d1e344ada",
+      "document_type": "guida",
+      "eligible_for_fresh_benchmark": true,
+      "entity": "INPS",
+      "input_sha256": "f9953c2d1e344ada2fe7aa7ca6b31f81afa27bdbc981b9dfc2042f6358b39149",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2025/flyer_INPSfacile.pdf",
+      "opening_sha256": "32d3b62f919e63a5214daeeeab5e686425554c271ad8e37e8b59c65c26a5823d",
+      "previous_entity": "INPS",
+      "previous_type": "guida",
+      "truth_status": "confirmed_unknown"
+    },
+    {
+      "case_id": "U16-fb3e3422175448ef",
+      "document_type": "decreto",
+      "eligible_for_fresh_benchmark": false,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "independence_exclusion": "Existing technical-near component; one SHA-ordered representative only, no scores.",
+      "input_sha256": "fb3e3422175448efcf28e76473e54474857d1715c1e3d0614529118b73a5f632",
+      "notes": [
+        "Official primary identity/title/receipt and existing negative catalog/code/family/technical-near checks reviewed; no recognition scores used."
+      ],
+      "official_url": "https://trasparenza.ispettorato.gov.it/media/ispettorato/file_archive/Atti%20amministrativi%20generali/DD-n-36-2017-Riorganizzazione-Uffici-Sede-Centrale-INL.pdf",
+      "opening_sha256": "f7e95187f4ed8919150edf0bd4421ee404bd1b347c99e07963697ee96418c89f",
+      "previous_entity": "Ispettorato Nazionale del Lavoro",
+      "previous_type": "decreto",
+      "representative_case_id": "U16-d387e9b359869ae4",
+      "truth_status": "confirmed_unknown"
+    }
+  ],
+  "catalog_seed_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+  "counts": {
+    "automatically_qualified": 108,
+    "confirmed_independent": 95,
+    "near_component_exclusions": 12,
+    "unresolved": 1
+  },
+  "criteria": "Primary issuer/title override body citations; independently qualify form identity against complete catalog; exclude unresolved relation to582; one representative per existing near-resource component, lexical SHA. These are truth/independence qualifications before any selection or prediction, not runtime rules or score-based exclusions.",
+  "freeze_commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+  "recognition_calls": 0,
+  "reviewed_at": "2026-10-13T19:52:16.283003+00:00",
+  "reviewer": "Codex technical benchmark audit; no human editorial verification attributed",
+  "schema_version": 1,
+  "script_sha256": "4c6f9f2e11cb774d86a5b1407bbab0b83b134ef8002b23ce1a7e8faa934fadd9",
+  "visual_primary_evidence": {
+    "clip_pdf_points": [
+      0,
+      0,
+      600,
+      300
+    ],
+    "input_case_ids": [
+      "U16-04774885d351cc0c",
+      "U16-2b9e01e915ca49f0",
+      "U16-83d4b269e550666d",
+      "U16-a7681bf22a185134"
+    ],
+    "interpretation": "All four literal graphic headings read Ministero dell’Interno, Gabinetto del Ministro. Images public benchmark-only and ignored; raw PDF SHA are in each reviewed case.",
+    "page": 1,
+    "render_scale": 1.5,
+    "rendered_contact_sheet_sha256": "8265dc040c16f8c8ce5a8b595a1828e7483b6517e0ffd5694839ad5223433639"
+  }
+}

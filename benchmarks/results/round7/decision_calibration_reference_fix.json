@@ -1,0 +1,20 @@
+{
+  "original_calibration_sha256": "ac7fab53652cd7218b33d62baada736ef0de51d91a8882ddafd49062f47c6064",
+  "original_runtime_sha256": "3f9bcc338df5a07bfc69e4d07cb3c36c3f4ad0fdd96a216551e810babcebb631",
+  "reconstructed_original_runtime_sha256": "3f9bcc338df5a07bfc69e4d07cb3c36c3f4ad0fdd96a216551e810babcebb631",
+  "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+  "profile_sha256": "ebf7e4444f040afe0e560f5b04c6767f7d40cd73f2dc9a866321e8d62208e0a8",
+  "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
+  "production_branch_changed": false,
+  "full_tests": {
+    "passed": 690,
+    "failed": 0,
+    "skipped": 3,
+    "seconds": 337.74,
+    "log_sha256": "8e1bb8eaa0b6f56a64a30ecb9aa1041588c2caf97af34435907bf9cb0f8baf11"
+  },
+  "source_change": "Only diagnostic retrieval view for reference=True normalized to the indexed view. With reference=False the same rows, candidates and reason are used. No thresholds, scores, acceptance, entity/version constraints or input bytes changed.",
+  "proof": "Exact source replacement verified and every other runtime byte matched calibration commit/profile; complete public-catalog/corpus differential tests compare all result fields including reasons.",
+  "original_matcher_sha256": "1f22fdd4ae9425b8493fc9ec7005164ea8e93d7aff028208f1a7cd457f1f297d",
+  "current_matcher_sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+}

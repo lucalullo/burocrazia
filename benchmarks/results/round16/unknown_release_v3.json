@@ -1,0 +1,52 @@
+{
+  "freeze_commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+  "n": null,
+  "passed": false,
+  "reason": "Campione indipendente insufficiente: 95/100 casi obbligatori. Nessuna predizione avviata.",
+  "recognition_calls": 0,
+  "selection": {
+    "counts_per_source": {
+      "agid": 16,
+      "anac": 8,
+      "garante_privacy": 2,
+      "giustizia": 2,
+      "inail": 1,
+      "inl": 20,
+      "inps": 10,
+      "interno": 5,
+      "mef": 10,
+      "mimit": 16,
+      "mit": 2,
+      "regione_piemonte": 2,
+      "unioncamere": 1
+    },
+    "document_types": {
+      "circolare": 17,
+      "comunicazione": 1,
+      "convenzione": 1,
+      "decreto": 39,
+      "delibera": 3,
+      "guida": 23,
+      "informativa": 1,
+      "istanza": 1,
+      "istruzioni": 1,
+      "modello": 1,
+      "nota": 1,
+      "regolamento": 5,
+      "specifiche_tecniche": 1
+    },
+    "entities": 18,
+    "max_concentration": 0.21052631578947367,
+    "previously_recognized": 0,
+    "sources": 13,
+    "total": 95,
+    "type_groups": 13,
+    "unversioned": 88,
+    "versioned": 7,
+    "with_code": 16,
+    "without_code": 79
+  },
+  "status": "not_run",
+  "wrong_document_match": null,
+  "wrong_family_match": null
+}

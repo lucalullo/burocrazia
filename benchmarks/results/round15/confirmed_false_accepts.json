@@ -1,0 +1,38 @@
+{
+  "adjudication_sha256": "3fdb391e1ef8b8d1efde9f17cf63cbc19968076cf9428c4ffc9889090685ab75",
+  "cases": [
+    {
+      "action": "No engine tuning from unresolved annual identity; retain ambiguity and exclude from release gates.",
+      "adjudicated_truth": "ambiguous_truth",
+      "case_id": "U14-5f0c017c3d56e6c5",
+      "is_ambiguous": true,
+      "is_confirmed_false_accept": false,
+      "is_truth_error": false,
+      "predicted_document": 1147,
+      "root_cause_if_false": null
+    },
+    {
+      "action": "No engine tuning from unresolved annual identity; retain ambiguity and exclude from release gates.",
+      "adjudicated_truth": "ambiguous_truth",
+      "case_id": "U14-c1fc4765c01dcd62",
+      "is_ambiguous": true,
+      "is_confirmed_false_accept": false,
+      "is_truth_error": false,
+      "predicted_document": 1147,
+      "root_cause_if_false": null
+    },
+    {
+      "action": "Generalize explicit heading wrappers before informational-resource rejection; add regression without case-specific IDs/URLs.",
+      "adjudicated_truth": "confirmed_unknown",
+      "case_id": "U14-d6e51fa8e7f88431",
+      "is_ambiguous": false,
+      "is_confirmed_false_accept": true,
+      "is_truth_error": false,
+      "predicted_document": 615,
+      "root_cause_if_false": "Metadata fallback informational-heading gate recognizes Regolamento only at line start; Bozza di Regolamento bypasses it and shared legal title tokens become identity evidence."
+    }
+  ],
+  "completed_at": "2026-10-13T12:27:14.349620+00:00",
+  "confirmed_false_accepts": 1,
+  "schema_version": 1
+}

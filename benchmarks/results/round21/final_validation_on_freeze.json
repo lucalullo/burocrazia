@@ -1,0 +1,55 @@
+{
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "checked_at": "2026-10-14T12:42:44.217355+00:00",
+  "compile_pass": true,
+  "final_tests_sha256": "e8a782fbaf13b81c1551aa645e73a58ecfb15eceb41a37c06ae9713706da5074",
+  "freeze_manifest_sha256": "28a3026dcf0b7a8ee40168d28420975a5b103dc0e4dd8db68a7d553fa2b7aa59",
+  "github_ci": "external_pending",
+  "migration": {
+    "foreign_key_violations": [],
+    "idempotent": true,
+    "integrity": "ok",
+    "row_counts_unchanged": true,
+    "schema": 610
+  },
+  "passed": true,
+  "retained_measured_gates_sha256": {
+    "canonical": "5ba31a28252050997bc39393d86fec45aa31b7353385514d6bbbca799c3cd74d",
+    "coverage": "092480870e83e2de420e4aea2b05787e062ebf1210cdb8997226d70720fa57d9",
+    "development_safety": "44613a65dc8eeb90b74ae2cdcf69a247e439a742a71b83e11607ae263424ffa6",
+    "final_checks": "8a49ef0c6f2591068a3ffe8c1811f5cdea3da281a67a5ebfe0ad3ac144945a1d",
+    "hard_negatives_development": "f7c49e1e7e91827032c5aecf9f02d51f34cf1652dd54c04d0d8cd9a31212ed57",
+    "historical_regression_fast": "40fcd94909275fffcdf0e967f2fd3ad8aee59e8a18ce1730b992b7d5618c40f1",
+    "input_safety": "599e26267ac34fea2236a119ccaac052406175b6cbd90ed035c88071b9e7780d",
+    "performance_stability": "5bb783df9a05dc4266ca5f03133f8fd1f95194bb0f39a519a85a278b08c59b94",
+    "release_gate_fast": "c7c8d4cbe784dc8f109e81759d35fa4bb3e960721dde458b622eaf9a78f5e677"
+  },
+  "runtime_sha256": "c077552055c25b0bc128e1a5c607afc434fb3bd074e6da165f3d8333145abf15",
+  "schemas_valid": true,
+  "scope": "Current compile/catalog/migration and full pytest on freeze. Existing canonical/safety/input/performance/diagnostic evidence is bound to identical frozen runtime/data; no redundant recognition replay or repeated timing. Historical regression exit1 remains intentional evidence, not a falsely declared success."
+}

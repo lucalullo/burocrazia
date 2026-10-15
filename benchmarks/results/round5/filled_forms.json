@@ -1,0 +1,859 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "code_sha256": "8b93a7d9eb5909c74bc111541cc9985589194d70a1391d594647969ff946240e",
+    "fingerprint_sha256": "56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2",
+    "seed": 20261011,
+    "executed_at": "2026-10-11T20:14:32.897776+00:00"
+  },
+  "independent_identity_generalization": false,
+  "summary": {
+    "cases": 14,
+    "passed": 10,
+    "failed": 4,
+    "metrics": {
+      "document_precision": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 10,
+        "denominator": 14,
+        "value": 0.7142857142857143
+      },
+      "document_f1": {
+        "numerator": 20,
+        "denominator": 24,
+        "value": 0.8333333333333334
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 10,
+        "denominator": 14,
+        "value": 0.7142857142857143
+      },
+      "useful_coverage": {
+        "numerator": 10,
+        "denominator": 14,
+        "value": 0.7142857142857143
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 4,
+        "denominator": 14,
+        "value": 0.2857142857142857
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 10,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 4
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 31.563,
+      "p95": 364.1173,
+      "p99": null
+    }
+  },
+  "cases": [
+    {
+      "id": "FP-886-filled",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 40.019,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 24,
+          "noninteractive_overlay": false
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "ca863a3db728a0a111d9225c504902bfe4505b68544a552cc8f0436fb59d3d34",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 20.26779999869177,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9941",
+        "header_containment:0.8750"
+      ],
+      "acroform_fields_filled": 24
+    },
+    {
+      "id": "FP-1181-filled",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 30.463,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "153a5603fa172e14f332aa57b5f80ed44473562a05a42771d668aaf2db83dccf",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 20.423599999048747,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9938",
+        "header_containment:1.0000"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-286-filled",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "1961"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 452.271,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 16,
+          "noninteractive_overlay": false
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "b1fcd2516f32ee837b625996d1f823bb5c5bc5fcfc846c6cab5949782604a722",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 18.605199999001343,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [],
+      "acroform_fields_filled": 16
+    },
+    {
+      "id": "FP-290-filled",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "generation_failed": true,
+      "generation_error": "Filled AcroForm canonical value mismatch.",
+      "extraction_failed": false,
+      "used_ocr": false,
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-549-filled",
+      "group": "document:549",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 549,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "provenance": {
+        "canonical_sha256": "195448944c991dd84a167f4f33771a3fb7200653852de9ad6d77cb60dcf033f3",
+        "canonical_url": "https://www.mimit.gov.it/images/stories/moduli/DOMANDA_ESAME_LRC-SRC_2024.pdf",
+        "source_id": 10,
+        "document_id": 549,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "generation_failed": true,
+      "generation_error": "Filled AcroForm canonical value mismatch.",
+      "extraction_failed": false,
+      "used_ocr": false,
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-559-filled",
+      "group": "document:559",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 559,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 559,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 40.497,
+      "provenance": {
+        "canonical_sha256": "cac1d1083881e04a663f049e4e0b236cf7ed5d030d8423238acba5d51e70ee95",
+        "canonical_url": "https://www.mimit.gov.it/images/stories/digitale/All._a_Mod_5_-_Modelli_relativi_a_procedura_rev_13-3-25.pdf",
+        "source_id": 10,
+        "document_id": 559,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "452e781d1f0e0826e99f47731d8e2ea89418236da60bb2e6f509e91ae05f09a8",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 61.37529999978142,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9961",
+        "header_containment:0.9825"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-586-filled",
+      "group": "document:586",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 586,
+        "family_id": null,
+        "entity": "Dipartimento della Funzione Pubblica",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 586,
+        "family_id": null,
+        "entity": "Dipartimento della Funzione Pubblica",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 48.897,
+      "provenance": {
+        "canonical_sha256": "ab64e018f11b95b47e77be4dc9bcf118f915bc5d1253d243de428d54994fae60",
+        "canonical_url": "https://www.funzionepubblica.gov.it/media/ounfq1oo/modulo_scia_strutture_extra_alberghiere_definitivo_4_4_2024.pdf",
+        "source_id": 12,
+        "document_id": 586,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "7922ca7a0c2664f487f0742471ddae0edecdd0b38ab8e230abba775720992108",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 53.66239999966638,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9980",
+        "header_containment:0.9278"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-591-filled",
+      "group": "document:591",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 591,
+        "family_id": null,
+        "entity": "Dipartimento della Funzione Pubblica",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 591,
+        "family_id": null,
+        "entity": "Dipartimento della Funzione Pubblica",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 13.629,
+      "provenance": {
+        "canonical_sha256": "1acdda1da4d40538bcde88afc057bf49e5059e4f96ceec83fc30a9ddb0665a93",
+        "canonical_url": "https://www.funzionepubblica.gov.it/media/cb2pwxar/3-modulo_schedaanagrafica_definitivo_4_aprile_2024.pdf",
+        "source_id": 12,
+        "document_id": 591,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "405305de2461c927193d560fcd541d2bf2db87b2760bc6a265735d4da44c28ef",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 19.969099999798345,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9961",
+        "header_containment:0.9710"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-152-filled",
+      "group": "document:152",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 152,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 152,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 35.936,
+      "provenance": {
+        "canonical_sha256": "504e8c1d6055b5b70d09e6a5d8224184cbcd0f487707678375eea4dfa7e2cf1a",
+        "canonical_url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-Istanza-accesso-documentale-redacted_new.pdf",
+        "source_id": 15,
+        "document_id": 152,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 52,
+          "noninteractive_overlay": false
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "4c50a7be7665902fd3aaaa06a89263734e8d244a0afb2bc1f03b73285477b187",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 35.00230000099691,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9871",
+        "header_containment:0.7539"
+      ],
+      "acroform_fields_filled": 52
+    },
+    {
+      "id": "FP-149-filled",
+      "group": "document:149",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 149,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 316.65,
+      "provenance": {
+        "canonical_sha256": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956",
+        "canonical_url": "https://www.ispettorato.gov.it/files/2025/05/Modello-comunicazione-art.-26-comma-7-bis-D.Lgs_.-n.-151-2015-2.pdf",
+        "source_id": 15,
+        "document_id": 149,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 43,
+          "noninteractive_overlay": false
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "84901941d209803cbeee51eb5f7bdc4681fe2ad6466ab9460dc3753c2cb105ef",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 1765.0445999988733,
+      "used_ocr": true,
+      "extraction_method": "pdf_mixed",
+      "signals": [],
+      "acroform_fields_filled": 43
+    },
+    {
+      "id": "FP-439-filled",
+      "group": "document:439",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 439,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 439,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 30.116,
+      "provenance": {
+        "canonical_sha256": "a7e011f1e42a3ce0c4cf85e88bb88496486460b90bf0dd85f37c797bf2ba9d6d",
+        "canonical_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CuratelaAutorizzazione_vendita_bene_immobile.pdf",
+        "source_id": 16,
+        "document_id": 439,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "751836ec2cc837beacac9fd668a33dd8b38195cac77191dfc978db4f93c932a2",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 10.156599999390892,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9894",
+        "header_containment:0.9412"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-471-filled",
+      "group": "document:471",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 471,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 471,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 32.663,
+      "provenance": {
+        "canonical_sha256": "50dcc9c4f13e66dadf9b1b764015b73e198433241cbc4b51815b509753e08247",
+        "canonical_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/MinoriAutorizzazione_vendita_immobili.pdf",
+        "source_id": 16,
+        "document_id": 471,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "4473ce3e2ec40eb0af56c6076d0ccce1f1c0fbde859f1efcbaa340691cfe31a3",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 15.171500001088134,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9917",
+        "header_containment:1.0000"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-601-filled",
+      "group": "document:601",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 601,
+        "family_id": null,
+        "entity": "Ministero dell'Economia e delle Finanze / RGS",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 601,
+        "family_id": null,
+        "entity": "Ministero dell'Economia e delle Finanze / RGS",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 18.282,
+      "provenance": {
+        "canonical_sha256": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99",
+        "canonical_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/mb01.pdf",
+        "source_id": 17,
+        "document_id": 601,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "f1d052df33a050b70acf727200adb8d55a76ac21b48611fdcd267cea4e3e1b86",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 10.119700000359444,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:1.0000",
+        "header_containment:1.0000"
+      ],
+      "acroform_fields_filled": 0
+    },
+    {
+      "id": "FP-609-filled",
+      "group": "document:609",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 609,
+        "family_id": null,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 609,
+        "family_id": null,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 19.513,
+      "provenance": {
+        "canonical_sha256": "a8751783340746b544ee1b6e968f5e29999c343c68649f1526163664e2836496",
+        "canonical_url": "https://www.anticorruzione.it/documents/91439/127902/A.1+Modulo+richiesta+accesso+civico+al+RPCT.pdf/38456e1f-e009-e5c1-d782-4f4c01a38268?t=1739631415153",
+        "source_id": 18,
+        "document_id": 609,
+        "expected_family": null,
+        "transform_params": {
+          "fictitious_only": true,
+          "acroform_fields_filled": 0,
+          "noninteractive_overlay": true
+        },
+        "seed": 20261011
+      },
+      "representation": "filled",
+      "input_sha256": "fea33d46a3a0a55521ab99971f5331f4d9edfcc0f26aec7ad4b4d4394dcb4bb7",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 17.45859999937238,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.9920",
+        "header_containment:1.0000"
+      ],
+      "acroform_fields_filled": 0
+    }
+  ],
+  "interactive_forms": 4,
+  "limits": "Actual widgets filled when present; otherwise footer overlay is a weaker filled-content perturbation and is explicitly labelled.",
+  "counts": {
+    "exact": 10,
+    "family": 0,
+    "reject": 4,
+    "wrong": 0,
+    "extraction_failed": 0
+  }
+}

@@ -1,0 +1,4761 @@
+{
+  "cases": [
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR01-P1",
+      "id": "family_release_v3:FR01-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "41e46fe4c6b642fd90fedf338ce8f728ecfec73054ea677722e4d91497e34ef3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR01-P2",
+      "id": "family_release_v3:FR01-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "41e46fe4c6b642fd90fedf338ce8f728ecfec73054ea677722e4d91497e34ef3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR01-P3",
+      "id": "family_release_v3:FR01-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "41e46fe4c6b642fd90fedf338ce8f728ecfec73054ea677722e4d91497e34ef3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR01-P4",
+      "id": "family_release_v3:FR01-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "41e46fe4c6b642fd90fedf338ce8f728ecfec73054ea677722e4d91497e34ef3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR01-P5",
+      "id": "family_release_v3:FR01-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 1,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "41e46fe4c6b642fd90fedf338ce8f728ecfec73054ea677722e4d91497e34ef3",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR01-N1",
+      "id": "family_release_v3:FR01-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR01-N2",
+      "id": "family_release_v3:FR01-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR01-N3",
+      "id": "family_release_v3:FR01-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR01-N4",
+      "id": "family_release_v3:FR01-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR01-N5",
+      "id": "family_release_v3:FR01-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR02-P1",
+      "id": "family_release_v3:FR02-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "5b6af3868f133fbf922078da013c2246cbfd0098a767cef80192db6939210a38",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR02-P2",
+      "id": "family_release_v3:FR02-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "5b6af3868f133fbf922078da013c2246cbfd0098a767cef80192db6939210a38",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR02-P3",
+      "id": "family_release_v3:FR02-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "5b6af3868f133fbf922078da013c2246cbfd0098a767cef80192db6939210a38",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR02-P4",
+      "id": "family_release_v3:FR02-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "5b6af3868f133fbf922078da013c2246cbfd0098a767cef80192db6939210a38",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR02-P5",
+      "id": "family_release_v3:FR02-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 2,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "5b6af3868f133fbf922078da013c2246cbfd0098a767cef80192db6939210a38",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR02-N1",
+      "id": "family_release_v3:FR02-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR02-N2",
+      "id": "family_release_v3:FR02-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR02-N3",
+      "id": "family_release_v3:FR02-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR02-N4",
+      "id": "family_release_v3:FR02-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR02-N5",
+      "id": "family_release_v3:FR02-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR03-P1",
+      "id": "family_release_v3:FR03-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4330a71259b70f8d6410448c1e179a245cabbd2f1591ffc05bc7baa32a1fdbe9",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR03-P2",
+      "id": "family_release_v3:FR03-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4330a71259b70f8d6410448c1e179a245cabbd2f1591ffc05bc7baa32a1fdbe9",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR03-P3",
+      "id": "family_release_v3:FR03-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4330a71259b70f8d6410448c1e179a245cabbd2f1591ffc05bc7baa32a1fdbe9",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR03-P4",
+      "id": "family_release_v3:FR03-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4330a71259b70f8d6410448c1e179a245cabbd2f1591ffc05bc7baa32a1fdbe9",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR03-P5",
+      "id": "family_release_v3:FR03-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 3,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4330a71259b70f8d6410448c1e179a245cabbd2f1591ffc05bc7baa32a1fdbe9",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR03-N1",
+      "id": "family_release_v3:FR03-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR03-N2",
+      "id": "family_release_v3:FR03-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR03-N3",
+      "id": "family_release_v3:FR03-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR03-N4",
+      "id": "family_release_v3:FR03-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR03-N5",
+      "id": "family_release_v3:FR03-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR04-P1",
+      "id": "family_release_v3:FR04-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "13d7ccbda9ab1506851e8c2cd0970f20c070ced62451b83f387338f39fb4454a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR04-P2",
+      "id": "family_release_v3:FR04-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "13d7ccbda9ab1506851e8c2cd0970f20c070ced62451b83f387338f39fb4454a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR04-P3",
+      "id": "family_release_v3:FR04-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "13d7ccbda9ab1506851e8c2cd0970f20c070ced62451b83f387338f39fb4454a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR04-P4",
+      "id": "family_release_v3:FR04-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "13d7ccbda9ab1506851e8c2cd0970f20c070ced62451b83f387338f39fb4454a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR04-P5",
+      "id": "family_release_v3:FR04-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 4,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "13d7ccbda9ab1506851e8c2cd0970f20c070ced62451b83f387338f39fb4454a",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR04-N1",
+      "id": "family_release_v3:FR04-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR04-N2",
+      "id": "family_release_v3:FR04-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR04-N3",
+      "id": "family_release_v3:FR04-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR04-N4",
+      "id": "family_release_v3:FR04-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR04-N5",
+      "id": "family_release_v3:FR04-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR05-P1",
+      "id": "family_release_v3:FR05-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "d99db905c4c449cd1c41869096bdbaaaefa58e1c2714bcaac2f8e6935eb38d70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR05-P2",
+      "id": "family_release_v3:FR05-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "d99db905c4c449cd1c41869096bdbaaaefa58e1c2714bcaac2f8e6935eb38d70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR05-P3",
+      "id": "family_release_v3:FR05-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "d99db905c4c449cd1c41869096bdbaaaefa58e1c2714bcaac2f8e6935eb38d70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR05-P4",
+      "id": "family_release_v3:FR05-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "d99db905c4c449cd1c41869096bdbaaaefa58e1c2714bcaac2f8e6935eb38d70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR05-P5",
+      "id": "family_release_v3:FR05-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "family_id": 5,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "d99db905c4c449cd1c41869096bdbaaaefa58e1c2714bcaac2f8e6935eb38d70",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR05-N1",
+      "id": "family_release_v3:FR05-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR05-N2",
+      "id": "family_release_v3:FR05-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR05-N3",
+      "id": "family_release_v3:FR05-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR05-N4",
+      "id": "family_release_v3:FR05-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR05-N5",
+      "id": "family_release_v3:FR05-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR06-P1",
+      "id": "family_release_v3:FR06-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "797e74f9ec6fa8f7cc7d678526bb922a19589ffb4c97aad6a1be994f222c7722",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR06-P2",
+      "id": "family_release_v3:FR06-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "797e74f9ec6fa8f7cc7d678526bb922a19589ffb4c97aad6a1be994f222c7722",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR06-P3",
+      "id": "family_release_v3:FR06-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "797e74f9ec6fa8f7cc7d678526bb922a19589ffb4c97aad6a1be994f222c7722",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR06-P4",
+      "id": "family_release_v3:FR06-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "797e74f9ec6fa8f7cc7d678526bb922a19589ffb4c97aad6a1be994f222c7722",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR06-P5",
+      "id": "family_release_v3:FR06-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 6,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "797e74f9ec6fa8f7cc7d678526bb922a19589ffb4c97aad6a1be994f222c7722",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR06-N1",
+      "id": "family_release_v3:FR06-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR06-N2",
+      "id": "family_release_v3:FR06-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR06-N3",
+      "id": "family_release_v3:FR06-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR06-N4",
+      "id": "family_release_v3:FR06-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR06-N5",
+      "id": "family_release_v3:FR06-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR07-P1",
+      "id": "family_release_v3:FR07-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "c004ec5b6df781e17d4e8a0e8759fdcff84fd9c6937ec6b1aab724ba7c374073",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR07-P2",
+      "id": "family_release_v3:FR07-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "c004ec5b6df781e17d4e8a0e8759fdcff84fd9c6937ec6b1aab724ba7c374073",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR07-P3",
+      "id": "family_release_v3:FR07-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "c004ec5b6df781e17d4e8a0e8759fdcff84fd9c6937ec6b1aab724ba7c374073",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR07-P4",
+      "id": "family_release_v3:FR07-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "c004ec5b6df781e17d4e8a0e8759fdcff84fd9c6937ec6b1aab724ba7c374073",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR07-P5",
+      "id": "family_release_v3:FR07-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 7,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "c004ec5b6df781e17d4e8a0e8759fdcff84fd9c6937ec6b1aab724ba7c374073",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR07-N1",
+      "id": "family_release_v3:FR07-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR07-N2",
+      "id": "family_release_v3:FR07-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR07-N3",
+      "id": "family_release_v3:FR07-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR07-N4",
+      "id": "family_release_v3:FR07-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR07-N5",
+      "id": "family_release_v3:FR07-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR08-P1",
+      "id": "family_release_v3:FR08-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "cf9edeafdec365276bf51875d8042063a0f1e7ad9db26c4786a2d66ce64220bc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR08-P2",
+      "id": "family_release_v3:FR08-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "cf9edeafdec365276bf51875d8042063a0f1e7ad9db26c4786a2d66ce64220bc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR08-P3",
+      "id": "family_release_v3:FR08-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "cf9edeafdec365276bf51875d8042063a0f1e7ad9db26c4786a2d66ce64220bc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR08-P4",
+      "id": "family_release_v3:FR08-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "cf9edeafdec365276bf51875d8042063a0f1e7ad9db26c4786a2d66ce64220bc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR08-P5",
+      "id": "family_release_v3:FR08-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 8,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "cf9edeafdec365276bf51875d8042063a0f1e7ad9db26c4786a2d66ce64220bc",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR08-N1",
+      "id": "family_release_v3:FR08-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR08-N2",
+      "id": "family_release_v3:FR08-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR08-N3",
+      "id": "family_release_v3:FR08-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR08-N4",
+      "id": "family_release_v3:FR08-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR08-N5",
+      "id": "family_release_v3:FR08-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR09-P1",
+      "id": "family_release_v3:FR09-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "7fced937b7722a99213040ebc153261611ed1d01970282a89ba78a0ecfe9eb91",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR09-P2",
+      "id": "family_release_v3:FR09-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "7fced937b7722a99213040ebc153261611ed1d01970282a89ba78a0ecfe9eb91",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR09-P3",
+      "id": "family_release_v3:FR09-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "7fced937b7722a99213040ebc153261611ed1d01970282a89ba78a0ecfe9eb91",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR09-P4",
+      "id": "family_release_v3:FR09-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "7fced937b7722a99213040ebc153261611ed1d01970282a89ba78a0ecfe9eb91",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR09-P5",
+      "id": "family_release_v3:FR09-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "family_id": 9,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "7fced937b7722a99213040ebc153261611ed1d01970282a89ba78a0ecfe9eb91",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR09-N1",
+      "id": "family_release_v3:FR09-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR09-N2",
+      "id": "family_release_v3:FR09-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR09-N3",
+      "id": "family_release_v3:FR09-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR09-N4",
+      "id": "family_release_v3:FR09-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR09-N5",
+      "id": "family_release_v3:FR09-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR10-P1",
+      "id": "family_release_v3:FR10-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "bf14389858f04fb149e1d4e040c30935545560bc9c2f3fdcf5f497ce849c2f3c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR10-P2",
+      "id": "family_release_v3:FR10-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "bf14389858f04fb149e1d4e040c30935545560bc9c2f3fdcf5f497ce849c2f3c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR10-P3",
+      "id": "family_release_v3:FR10-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "bf14389858f04fb149e1d4e040c30935545560bc9c2f3fdcf5f497ce849c2f3c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR10-P4",
+      "id": "family_release_v3:FR10-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "bf14389858f04fb149e1d4e040c30935545560bc9c2f3fdcf5f497ce849c2f3c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR10-P5",
+      "id": "family_release_v3:FR10-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "family_id": 10,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "bf14389858f04fb149e1d4e040c30935545560bc9c2f3fdcf5f497ce849c2f3c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR10-N1",
+      "id": "family_release_v3:FR10-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR10-N2",
+      "id": "family_release_v3:FR10-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR10-N3",
+      "id": "family_release_v3:FR10-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR10-N4",
+      "id": "family_release_v3:FR10-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR10-N5",
+      "id": "family_release_v3:FR10-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR11-P1",
+      "id": "family_release_v3:FR11-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "3d049d09d95d32f622caca17053e1322f27a3f65b0a3c0ed6913ed580ac8bf7f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR11-P2",
+      "id": "family_release_v3:FR11-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "3d049d09d95d32f622caca17053e1322f27a3f65b0a3c0ed6913ed580ac8bf7f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR11-P3",
+      "id": "family_release_v3:FR11-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "3d049d09d95d32f622caca17053e1322f27a3f65b0a3c0ed6913ed580ac8bf7f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR11-P4",
+      "id": "family_release_v3:FR11-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "3d049d09d95d32f622caca17053e1322f27a3f65b0a3c0ed6913ed580ac8bf7f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR11-P5",
+      "id": "family_release_v3:FR11-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 11,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "3d049d09d95d32f622caca17053e1322f27a3f65b0a3c0ed6913ed580ac8bf7f",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR11-N1",
+      "id": "family_release_v3:FR11-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR11-N2",
+      "id": "family_release_v3:FR11-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR11-N3",
+      "id": "family_release_v3:FR11-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR11-N4",
+      "id": "family_release_v3:FR11-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR11-N5",
+      "id": "family_release_v3:FR11-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR12-P1",
+      "id": "family_release_v3:FR12-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "299304530b8c1413849373622f897fc713558d3f455df1bf1e8beb84d9a75bda",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR12-P2",
+      "id": "family_release_v3:FR12-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "299304530b8c1413849373622f897fc713558d3f455df1bf1e8beb84d9a75bda",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR12-P3",
+      "id": "family_release_v3:FR12-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "299304530b8c1413849373622f897fc713558d3f455df1bf1e8beb84d9a75bda",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR12-P4",
+      "id": "family_release_v3:FR12-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "299304530b8c1413849373622f897fc713558d3f455df1bf1e8beb84d9a75bda",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR12-P5",
+      "id": "family_release_v3:FR12-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "family_id": 12,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "299304530b8c1413849373622f897fc713558d3f455df1bf1e8beb84d9a75bda",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR12-N1",
+      "id": "family_release_v3:FR12-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR12-N2",
+      "id": "family_release_v3:FR12-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR12-N3",
+      "id": "family_release_v3:FR12-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR12-N4",
+      "id": "family_release_v3:FR12-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR12-N5",
+      "id": "family_release_v3:FR12-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR13-P1",
+      "id": "family_release_v3:FR13-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "f95d93473ab7dae1956ce8efeb2f4136f4e10fe2e9fbdeb4310af0fac2b0be8c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR13-P2",
+      "id": "family_release_v3:FR13-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "f95d93473ab7dae1956ce8efeb2f4136f4e10fe2e9fbdeb4310af0fac2b0be8c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR13-P3",
+      "id": "family_release_v3:FR13-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "f95d93473ab7dae1956ce8efeb2f4136f4e10fe2e9fbdeb4310af0fac2b0be8c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR13-P4",
+      "id": "family_release_v3:FR13-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "f95d93473ab7dae1956ce8efeb2f4136f4e10fe2e9fbdeb4310af0fac2b0be8c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR13-P5",
+      "id": "family_release_v3:FR13-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 13,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "f95d93473ab7dae1956ce8efeb2f4136f4e10fe2e9fbdeb4310af0fac2b0be8c",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR13-N1",
+      "id": "family_release_v3:FR13-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR13-N2",
+      "id": "family_release_v3:FR13-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR13-N3",
+      "id": "family_release_v3:FR13-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR13-N4",
+      "id": "family_release_v3:FR13-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR13-N5",
+      "id": "family_release_v3:FR13-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR14-P1",
+      "id": "family_release_v3:FR14-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "91ee2fd78e82c132290d8e3b99c002c3a6d36e32c3d58ca53b34301eb07161ab",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR14-P2",
+      "id": "family_release_v3:FR14-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "91ee2fd78e82c132290d8e3b99c002c3a6d36e32c3d58ca53b34301eb07161ab",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR14-P3",
+      "id": "family_release_v3:FR14-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "91ee2fd78e82c132290d8e3b99c002c3a6d36e32c3d58ca53b34301eb07161ab",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR14-P4",
+      "id": "family_release_v3:FR14-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "91ee2fd78e82c132290d8e3b99c002c3a6d36e32c3d58ca53b34301eb07161ab",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": true,
+      "expected": {
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR14-P5",
+      "id": "family_release_v3:FR14-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Agenzia delle Entrate",
+        "family_id": 14,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "91ee2fd78e82c132290d8e3b99c002c3a6d36e32c3d58ca53b34301eb07161ab",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR14-N1",
+      "id": "family_release_v3:FR14-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR14-N2",
+      "id": "family_release_v3:FR14-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR14-N3",
+      "id": "family_release_v3:FR14-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR14-N4",
+      "id": "family_release_v3:FR14-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR14-N5",
+      "id": "family_release_v3:FR14-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR15-P1",
+      "id": "family_release_v3:FR15-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Polizia Locale / Ente locale",
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "fbabf9d62704fcd67edb525ad80769e7c3361984b354dd8c63f5d0c43a5e0aee",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR15-P2",
+      "id": "family_release_v3:FR15-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Polizia Locale / Ente locale",
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "fbabf9d62704fcd67edb525ad80769e7c3361984b354dd8c63f5d0c43a5e0aee",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR15-P3",
+      "id": "family_release_v3:FR15-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Polizia Locale / Ente locale",
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "fbabf9d62704fcd67edb525ad80769e7c3361984b354dd8c63f5d0c43a5e0aee",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR15-P4",
+      "id": "family_release_v3:FR15-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Polizia Locale / Ente locale",
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "fbabf9d62704fcd67edb525ad80769e7c3361984b354dd8c63f5d0c43a5e0aee",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR15-P5",
+      "id": "family_release_v3:FR15-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Polizia Locale / Ente locale",
+        "family_id": 15,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "fbabf9d62704fcd67edb525ad80769e7c3361984b354dd8c63f5d0c43a5e0aee",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR15-N1",
+      "id": "family_release_v3:FR15-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR15-N2",
+      "id": "family_release_v3:FR15-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR15-N3",
+      "id": "family_release_v3:FR15-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR15-N4",
+      "id": "family_release_v3:FR15-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR15-N5",
+      "id": "family_release_v3:FR15-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR16-P1",
+      "id": "family_release_v3:FR16-P1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Regione / Ente regionale",
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4c2707c9504b4f45e964536db6505f8aef889644e828e3bba8af57178eed3324",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR16-P2",
+      "id": "family_release_v3:FR16-P2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Regione / Ente regionale",
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4c2707c9504b4f45e964536db6505f8aef889644e828e3bba8af57178eed3324",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR16-P3",
+      "id": "family_release_v3:FR16-P3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Regione / Ente regionale",
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4c2707c9504b4f45e964536db6505f8aef889644e828e3bba8af57178eed3324",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR16-P4",
+      "id": "family_release_v3:FR16-P4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Regione / Ente regionale",
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4c2707c9504b4f45e964536db6505f8aef889644e828e3bba8af57178eed3324",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH"
+      },
+      "family_correct": true,
+      "group": "family_release_v3:FR16-P5",
+      "id": "family_release_v3:FR16-P5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": "Regione / Ente regionale",
+        "family_id": 16,
+        "match_type": "FAMILY_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "4c2707c9504b4f45e964536db6505f8aef889644e828e3bba8af57178eed3324",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR16-N1",
+      "id": "family_release_v3:FR16-N1",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR16-N2",
+      "id": "family_release_v3:FR16-N2",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR16-N3",
+      "id": "family_release_v3:FR16-N3",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR16-N4",
+      "id": "family_release_v3:FR16-N4",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:FR16-N5",
+      "id": "family_release_v3:FR16-N5",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "134203e371f49d540c401994e025eb2a1949e185d6fbe650bfa205b5936261af",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "family_release_v3",
+      "conflicts": [],
+      "correct": true,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "family_release_v3:R061",
+      "id": "family_release_v3:R061",
+      "input_sha256": null,
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": null,
+        "entity": null,
+        "family_id": null,
+        "match_type": "NO_MATCH",
+        "version": null
+      },
+      "reason": "",
+      "signature_sha256": "32895df39aaaf390d18d1a8f131a0bdd227b938e5c8d858b05f64d1c55662430",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "identity": {
+    "code_sha256": "04f215706ae4af918fb66cc657b266466d1d00ea2b36455a79cb0e338a5e3652",
+    "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+    "executed_at": "2026-10-13T18:23:40.881946+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "seed": 2026101208
+  },
+  "scope": "Frozen original expectations retained; uncertain mismatches are not confirmed identity errors.",
+  "summary": {
+    "cases": 161,
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 80,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 81
+      }
+    },
+    "failed": 0,
+    "latency_ms": {},
+    "metrics": {
+      "document_f1": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "document_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "denominator": 70,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "exact_document_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "denominator": 160,
+        "numerator": 160,
+        "value": 1.0
+      },
+      "family_precision": {
+        "denominator": 80,
+        "numerator": 80,
+        "value": 1.0
+      },
+      "family_recall": {
+        "denominator": 80,
+        "numerator": 80,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "denominator": 80,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "denominator": 81,
+        "numerator": 81,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "denominator": 81,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "useful_coverage": {
+        "denominator": 80,
+        "numerator": 80,
+        "value": 1.0
+      },
+      "version_year_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      }
+    },
+    "passed": 161
+  }
+}

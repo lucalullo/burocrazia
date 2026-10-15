@@ -1,0 +1,38 @@
+{
+  "rules_version": "fingerprint-decision-v7",
+  "thresholds": {
+    "digital": 0.9,
+    "ocr": 0.8,
+    "chars": 0.65,
+    "visual": 0.88,
+    "anchors": 0.25,
+    "margin": 0.04,
+    "overlap": 16,
+    "top_k": 25,
+    "field_text": 0.75,
+    "conflict_content": 0.9,
+    "conflict_chars": 0.8,
+    "conflict_anchors": 0.5,
+    "conflict_margin": 0.1,
+    "scan_char": 0.85,
+    "scan_ocr": 0.5,
+    "scan_visual": 0.94,
+    "scan_anchor": 0.25,
+    "multi_page_average": 0.9,
+    "multi_page_margin": 0.08
+  },
+  "settings": {
+    "char_ngram": "3",
+    "aggregation": "max",
+    "containment": true
+  },
+  "scope": "Round21 development only. Original global v6 thresholds and margins unchanged. Rank1 multichannel corroboration, bounded exclusive heading and strict layout; no truth-ID dependency. Explicit issuer/year/revision conflicts preserved. No reserved input predictions before freeze.",
+  "conditional": {
+    "strict_visual": 0.98,
+    "heading_min_terms": 6,
+    "heading_disambiguation_terms": 3,
+    "heading_coverage": 0.94,
+    "heading_window": 45,
+    "heading_chars": 1200
+  }
+}

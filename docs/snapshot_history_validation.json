@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "before_sha256": "658b0ea235ecc7078b252ae0211e0f1c8b17dbcea3bb7c15400887c7146e4947",
+  "after_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+  "old_tables_rows_compared": {
+    "sources": 19,
+    "documents": 1226,
+    "document_explanations": 3,
+    "entities": 2499,
+    "document_provenance": 1216,
+    "document_families": 16,
+    "review_events": 1,
+    "package_imports": 1,
+    "package_import_attempts": 2,
+    "local_resources": 0,
+    "schema_migrations": 2,
+    "document_observations": 1078,
+    "document_replacements": 0
+  },
+  "documented_status_rejections": [
+    429,
+    1077,
+    1081,
+    1091
+  ],
+  "validation": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "applied": true
+}

@@ -1,0 +1,19 @@
+{
+  "exact_equivalence": true,
+  "intersection_arrays": {
+    "p50": 0.0209,
+    "p95": 55.395
+  },
+  "intersection_tuples": {
+    "p50": 0.0159,
+    "p95": 44.8819
+  },
+  "query_count": 53,
+  "reference_arrays": {
+    "p50": 0.033,
+    "p95": 80.409
+  },
+  "reference_bytes": 54455205,
+  "scope": "Development page-scoring microbenchmark only, not the warm recognition gate. Dense canonical hash queries plus historical synthetic inputs; no persisted query features.",
+  "tuple_bytes": 94028149
+}

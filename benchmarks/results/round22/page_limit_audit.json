@@ -1,0 +1,55 @@
+{
+  "audited_at": "2026-10-13T12:27:13.220590+00:00",
+  "benchmark_contract_before_round14": {
+    "documented_paths": [
+      "README.md",
+      "docs/ESTRAZIONE.md"
+    ],
+    "product_limit": true,
+    "round14_classification_preflight_missing": true,
+    "round14_denominator_remains": 114
+  },
+  "conclusion": "Preexisting product limit. Future unknown classification admits supported input only; separate input-safety benchmark covers unsupported limits. Historical107/114 is unchanged.",
+  "existed_before_round14_selection": true,
+  "first_commit_or_evidence": "059c3168041dbd0fb33a7fba89dee22f4d0b1968 2026-09-06T07:50:41+02:00 Upload BurOCRazia",
+  "limit_pages": 100,
+  "other_preexisting_limits": {
+    "docx_compression_ratio": 200,
+    "docx_member_bytes": 10485760,
+    "docx_members": 2000,
+    "docx_total_bytes": 52428800,
+    "extracted_text_characters": 1000000,
+    "upload_bytes": 20971520
+  },
+  "round14_oversized_cases": [
+    {
+      "case_id": "U14-0cf371a00bd16303",
+      "error": "ExtractionError: Il PDF supera il limite di 100 pagine.",
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2024-06/Linee_guida_marcatura_documenti_normativi.pdf",
+      "pages": 218,
+      "source": "agid"
+    },
+    {
+      "case_id": "U14-2223cfdb5154ea58",
+      "error": "ExtractionError: Il PDF supera il limite di 100 pagine.",
+      "official_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/decreti/decreto_abilitaz_sost_FASE2_5450PF.pdf",
+      "pages": 275,
+      "source": "mef"
+    },
+    {
+      "case_id": "U14-3a58df37879b0998",
+      "error": "ExtractionError: Il PDF supera il limite di 100 pagine.",
+      "official_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/20260112-Manuale%20DenunciaComunicazione%20infortunio%20telematica%201.28.pdf",
+      "pages": 217,
+      "source": "inail"
+    },
+    {
+      "case_id": "U14-b597730bdb485d2e",
+      "error": "ExtractionError: Il PDF supera il limite di 100 pagine.",
+      "official_url": "https://www.agid.gov.it/sites/agid/files/2024-12/Guida_operativa_sulle_serie_di_dati_di_elevato_valore.pdf",
+      "pages": 166,
+      "source": "agid"
+    }
+  ],
+  "runtime_behavior": "ExtractionError before page extraction/OCR/recognition when page_count>100; readable error, no document result."
+}

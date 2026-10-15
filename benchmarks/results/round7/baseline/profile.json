@@ -1,0 +1,287 @@
+{
+  "index_load_ms": 1959.8407000003135,
+  "cases": 51,
+  "top": [
+    {
+      "file": "recognize.py",
+      "line": 923,
+      "function": "recognize_catalog",
+      "calls": 51,
+      "own_seconds": 0.038000700000000005,
+      "cumulative_seconds": 16.8965925
+    },
+    {
+      "file": "recognize.py",
+      "line": 622,
+      "function": "recognize_document",
+      "calls": 42,
+      "own_seconds": 0.035348700000000004,
+      "cumulative_seconds": 9.3077109
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sorted>",
+      "calls": 347,
+      "own_seconds": 0.1545166,
+      "cumulative_seconds": 8.121353000000001
+    },
+    {
+      "file": "recognize.py",
+      "line": 670,
+      "function": "<genexpr>",
+      "calls": 50948,
+      "own_seconds": 0.0827339,
+      "cumulative_seconds": 7.754805900000001
+    },
+    {
+      "file": "recognize.py",
+      "line": 444,
+      "function": "_score_candidate",
+      "calls": 50906,
+      "own_seconds": 4.2972148,
+      "cumulative_seconds": 7.672072000000001
+    },
+    {
+      "file": "fingerprint_match_v2.py",
+      "line": 45,
+      "function": "match",
+      "calls": 51,
+      "own_seconds": 0.014704400000000001,
+      "cumulative_seconds": 6.9399474
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 128,
+      "function": "similarities",
+      "calls": 16,
+      "own_seconds": 0.1390651,
+      "cumulative_seconds": 5.8798602
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sum>",
+      "calls": 151701,
+      "own_seconds": 1.3211196,
+      "cumulative_seconds": 5.179882200000001
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 133,
+      "function": "<genexpr>",
+      "calls": 3966921,
+      "own_seconds": 1.0869822,
+      "cumulative_seconds": 2.2610154000000002
+    },
+    {
+      "file": "recognize.py",
+      "line": 107,
+      "function": "normalize_text",
+      "calls": 156092,
+      "own_seconds": 0.3522789,
+      "cumulative_seconds": 1.6285816000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'get' of 'dict' objects>",
+      "calls": 4494424,
+      "own_seconds": 1.3207992000000002,
+      "cumulative_seconds": 1.3207992000000002
+    },
+    {
+      "file": "__init__.py",
+      "line": 179,
+      "function": "sub",
+      "calls": 317488,
+      "own_seconds": 0.21188120000000002,
+      "cumulative_seconds": 1.1061922
+    },
+    {
+      "file": "recognize.py",
+      "line": 392,
+      "function": "_annual_version_evidence",
+      "calls": 50906,
+      "own_seconds": 0.18526610000000002,
+      "cumulative_seconds": 0.9421738000000001
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 22,
+      "function": "features",
+      "calls": 51,
+      "own_seconds": 0.057875800000000005,
+      "cumulative_seconds": 0.9410776000000001
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 29,
+      "function": "<genexpr>",
+      "calls": 210867,
+      "own_seconds": 0.16485450000000001,
+      "cumulative_seconds": 0.7231281
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 97,
+      "function": "overlap",
+      "calls": 13244,
+      "own_seconds": 0.018470300000000002,
+      "cumulative_seconds": 0.6986165000000001
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 135,
+      "function": "<genexpr>",
+      "calls": 3966921,
+      "own_seconds": 0.624761,
+      "cumulative_seconds": 0.624761
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 19,
+      "function": "h",
+      "calls": 233396,
+      "own_seconds": 0.2881936,
+      "cumulative_seconds": 0.6193965
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.any>",
+      "calls": 69712,
+      "own_seconds": 0.0707575,
+      "cumulative_seconds": 0.6025467
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.max>",
+      "calls": 131413,
+      "own_seconds": 0.10891940000000001,
+      "cumulative_seconds": 0.5970039
+    },
+    {
+      "file": "__init__.py",
+      "line": 280,
+      "function": "_compile",
+      "calls": 418770,
+      "own_seconds": 0.3498044,
+      "cumulative_seconds": 0.5819123
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 99,
+      "function": "visual_similarity",
+      "calls": 21427,
+      "own_seconds": 0.0141562,
+      "cumulative_seconds": 0.5604698
+    },
+    {
+      "file": "recognize.py",
+      "line": 658,
+      "function": "<genexpr>",
+      "calls": 5766,
+      "own_seconds": 0.029710800000000002,
+      "cumulative_seconds": 0.50339
+    },
+    {
+      "file": "recognize.py",
+      "line": 660,
+      "function": "<genexpr>",
+      "calls": 5766,
+      "own_seconds": 0.028272000000000002,
+      "cumulative_seconds": 0.5010489
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 101,
+      "function": "<genexpr>",
+      "calls": 339439,
+      "own_seconds": 0.43436020000000003,
+      "cumulative_seconds": 0.4874295
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 134,
+      "function": "<genexpr>",
+      "calls": 256433,
+      "own_seconds": 0.4254276,
+      "cumulative_seconds": 0.47433050000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'sub' of 're.Pattern' objects>",
+      "calls": 317488,
+      "own_seconds": 0.4522608,
+      "cumulative_seconds": 0.4522647
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 121,
+      "function": "candidates",
+      "calls": 16,
+      "own_seconds": 0.0009339000000000001,
+      "cumulative_seconds": 0.44179820000000003
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 97,
+      "function": "<genexpr>",
+      "calls": 2124413,
+      "own_seconds": 0.430074,
+      "cumulative_seconds": 0.430074
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'update' of 'set' objects>",
+      "calls": 912,
+      "own_seconds": 0.0015765,
+      "cumulative_seconds": 0.4279002
+    },
+    {
+      "file": "recognize.py",
+      "line": 467,
+      "function": "<genexpr>",
+      "calls": 18059,
+      "own_seconds": 0.3190523,
+      "cumulative_seconds": 0.4115803
+    },
+    {
+      "file": "<string>",
+      "line": 2,
+      "function": "__hash__",
+      "calls": 397158,
+      "own_seconds": 0.2900299,
+      "cumulative_seconds": 0.4082372
+    },
+    {
+      "file": "fingerprint_v2.py",
+      "line": 126,
+      "function": "<genexpr>",
+      "calls": 40,
+      "own_seconds": 0.017144100000000002,
+      "cumulative_seconds": 0.3884116
+    },
+    {
+      "file": "__init__.py",
+      "line": 209,
+      "function": "findall",
+      "calls": 14831,
+      "own_seconds": 0.0126564,
+      "cumulative_seconds": 0.37827190000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'split' of 'str' objects>",
+      "calls": 153558,
+      "own_seconds": 0.36197870000000004,
+      "cumulative_seconds": 0.36197870000000004
+    }
+  ],
+  "scope": "Warm recognition only; extraction and visual prepared before profiling. cProfile overhead means these are diagnostic, not release latency."
+}

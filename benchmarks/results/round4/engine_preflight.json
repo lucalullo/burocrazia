@@ -1,0 +1,27 @@
+{
+  "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+  "code_sha256": "ccc4d83641c6d9be148fa29f65034a5cbfef9cee5eda202d21fb95ef4745dc82",
+  "tests": {
+    "passed": 584,
+    "failed": 0,
+    "skipped": 3,
+    "seconds": 605.49,
+    "python": "3.12.10",
+    "environment": "Windows-11-10.0.26300-SP0",
+    "log_sha256": "a760a3cd2be8c0f646f19f7ae8e4250cf6baa3e29e04fae7bd515b10590f9fd1",
+    "skip_reasons": [
+      "Windows: symlink senza privilegio",
+      "Windows: due FIFO non disponibili"
+    ]
+  },
+  "performance_guard": true,
+  "five_blockers_safe": true,
+  "historical_wrong_accepted": 0,
+  "locked_v2": "69/69",
+  "hard_negatives": "100/100",
+  "family_v3": "161/161",
+  "ocr": "7/7 legacy, 14/14 synthetic v2",
+  "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+  "independent_holdout": "not acquired or evaluated yet",
+  "policy": "Freeze only after complete local verification; independent results may still fail release gates."
+}

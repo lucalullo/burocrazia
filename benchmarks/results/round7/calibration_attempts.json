@@ -1,0 +1,13 @@
+{
+  "initial_attempt": {
+    "status": "failed_before_freeze",
+    "positive_inputs_processed": 320,
+    "positive_raw_not_saved_on_initial_failure": true,
+    "log_sha256": "1984f7a61c71d7900dc75cfb4adec67c008315d2942ef369fbec0dc28e1f3e1a",
+    "scope_error": "Family isolation negatives were applied to full pipeline; family fallback was also counted as wrong exact identity. Two source-contract controls triggered the stop."
+  },
+  "final_attempt": {
+    "status": "frozen",
+    "scope": "130 full-pipeline hard negatives +137 historical official unknowns +81 isolated family controls; every grid outcome compared with actual runtime. No recognition-policy change between attempts; only calibration accounting and source-contract handling corrected."
+  }
+}

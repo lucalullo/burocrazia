@@ -1,0 +1,35 @@
+{
+  "author": "Codex technical audit",
+  "common_page_evidence": [
+    {
+      "common_page": 2,
+      "document_id": 617,
+      "signature_sha256": "ff6184cb2b0f33b3c769a9f840d173830fa41f73058763a4f5a0bf4f892b7091"
+    },
+    {
+      "common_page": 2,
+      "document_id": 618,
+      "signature_sha256": "bad48f60f399e8c1d23f268fb284e2f6d98ccfb567a557641ee1c1d324e7731f"
+    },
+    {
+      "common_page": 2,
+      "document_id": 619,
+      "signature_sha256": "6be114082fa9ebe3d61c1e0202029a361cccdc1a23b5941318a6c50924b52674"
+    }
+  ],
+  "dataset_sha256_after": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+  "dataset_sha256_before": "d10650139b16d9809f3a08d7065572e4536e4a1094a710039de0ae1888ea423c",
+  "definition_sha256": "7d13aa4fcc7e6b3bb86a2d43c3e8ec203d6628f86cf9e43291176affb2b6c037",
+  "document_ids": [
+    617,
+    618,
+    619
+  ],
+  "observed_at": "2026-10-13T10:03:06.746973+00:00",
+  "prior_cross_wrong": {
+    "617": 618,
+    "619": 618
+  },
+  "reason": "Three different request forms share page2 fingerprint statistics; that page cannot prove an exact request identity. All three bindings explicitly shared/ambiguous. Prior observations preserved.",
+  "wrong_after": []
+}

@@ -1,0 +1,1740 @@
+{
+  "schema_version": 1,
+  "purpose": "Minimal immutable original Git source proofs required by historical tests; no refs/branches/history imported into destination .git",
+  "objects": [
+    "04364ccbd85ca11ac47580b84418be5a9bf521ae",
+    "08c86481c71260254d8de1459237e70f5e66a42d",
+    "0a3ee6ad1c8edf79a983910f1c7a151ce75dceda",
+    "0ad4873932af80f7a460f30209d39f884c1c521a",
+    "0e6f0a4926333b9133e691e7bc1e18b3e236b43b",
+    "10e0cbfbb17f615630dda500b80647f0eeb48eac",
+    "135d3feec4b5224ccd7c8beb143e26121dfae8d4",
+    "13d3e8b8984ba11f0f7493e347fac473a9ce3dc6",
+    "15f6bbe40d7c53e79fbc1f5be84579150fe587be",
+    "1687bdc5ea0e317661085f268e1250d43f0b5a35",
+    "18a383e694728b943f549e2c0d154b92872d434e",
+    "190b629caf3d487934d2cee06e9b6851ed3f03f3",
+    "1923dffafa6e0c1840a0bdc3ffd4e8c468846498",
+    "19807fabafcfe186f14a87f659adb77478e0bcdb",
+    "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+    "1a904567b3ef968b410f74a8e193833473496e6f",
+    "1cc4e3942e87837f79bbeeb63704eaee76fc17f9",
+    "1f5085c6998dcc60a4be6c0fb13fcaa32ec6a6b0",
+    "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+    "21b03039002275b83ef76145a746a6c8340a32b3",
+    "22717d14bd488d02ea1139349c26f91fa9d2f41c",
+    "228b2c5c3742747a9a63d43ff323bbe6f08c471c",
+    "2569517356fc8710013572d9fc462044db3095d8",
+    "2d4bfa9ff78401d2df7366e0cff1b662bae75226",
+    "3224a63ee2cee71ffe62677b9e1c2ea921d96d6e",
+    "32d497c79ce7d5df4c2528a5e2549362187da7f4",
+    "369871564f40cf39072a3c76e56a2284f5ef8517",
+    "36cd411580791bfa8112345337f2f7a1b67a06f2",
+    "393a72e2277249d7220eaa59752a1d44239653f9",
+    "3b4bf3f695d4556520bd8843e61ac2385dcdf96b",
+    "3bd5ab243efbb8f083e940eebd60e3e8a0e00c9b",
+    "3dba85b6ed189e95983b9233e00dcb2bc0e6168f",
+    "3eda2f03200a114848f34b5e6168529a2901ade6",
+    "3efb1b8195e26e0636856b8f7c80f48928b27661",
+    "403b3d50661a5d231eb4a13b6c222cce2c9e701c",
+    "40e2de9a8631c4dce5960202e03d8eaa8079997b",
+    "41d752db269a51289d331e563867c19bc1ba0f7b",
+    "425fa010063692d5d8ed090431068ad014d86ee6",
+    "4351824248d8aa445801982761d1e769ef205417",
+    "4376c0252f9c036b3be06ea7918f4de5fd39c2c6",
+    "4458c0a2dc060b739fb99d305b3fe13549a2ea9e",
+    "460f59172ef4b9275a312a1599c8d7ce15e96a45",
+    "47297d63451ac685ce15cd6f6378a924c4b0c51d",
+    "4755bd8cfaf9a708629f0cc5a5f8cd3d1fdb2142",
+    "498c1982f8d698c068bd33e6a749b458d6c1a1db",
+    "4b2afe899c63d2c8d629e6245ce2617149148500",
+    "4c39ca7e6f8622d194ccb7a0a7a8d6a022c4cf2e",
+    "4fc9db75f18bcbc647afad3d901e3547651f14ef",
+    "504d74157c77299eacd98c7af7a7cc78305e3dc5",
+    "539ba511d0f09ad12c639f298db66fb83422aba9",
+    "56a406db0282733d6928a4d68d5f9e9a781ace2b",
+    "584d47f8635a6078dc85d3b6acb6667be33bde71",
+    "5e6bf847597ad791666d309a4f8c8d7ed671e9fc",
+    "60f56292ea508ac16afa6fbdbaf58186c468dd63",
+    "6339122b47d51ef0c357d4e6a7a1179b51abf199",
+    "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+    "6a2fc1aa90cab5a05c4d361e56aba22f9f307c2c",
+    "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+    "717beb955e7243fafb0f5173df22ada8907c90b5",
+    "731f3ae6559f0cc48a5dce84ff4a427d0e3fb17e",
+    "7381f0c65c38e87530a9d4489e11a014cf78f7d8",
+    "74686142252f34dd886158d7f59f6cbb550cc07c",
+    "75dc7e59d4f497339558538ff5ecc9e785634634",
+    "77bbe149a52102d5ca42743702c5b39f5a475326",
+    "7cbb039b8423af444f291a4d2846b52c77b5ec4d",
+    "7ef36d1f9af5b73208ef2cab8e51cb78929fda13",
+    "8199d4888a84cb0c315831316570356e10e56e37",
+    "84d72c9d4fd9ab39493c18127e9f9120ee069173",
+    "898d685c5dd6c754a25e39d615af6a24589ed5ca",
+    "8d7f7a7bb7f252957f20c23f052bd1fca245d427",
+    "8db36c16f6de9d16befa5006fb719065217b30ea",
+    "8ff73164239af21fc9ab833253da5f196dc854ae",
+    "9105584d6b30ac03c6be25185ae70444ffe40c63",
+    "9f9a5881c449629e8f5c1dbc2edd45c903ebbfec",
+    "a187c732e51c794ad024a2244ad67efd1f0afba1",
+    "a22fb1920893e547d09862bebc9ba0fa046986fa",
+    "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+    "a5a0b36f34f72a416e0dc8da4c9831adcd3253aa",
+    "a650cdb3da014d6506f36c605d3999e5d8101d22",
+    "aa48343947f6e8befe76d747c763d1603c6f0038",
+    "aa6c77133b9210c88d6d0979ef23c97337c27bd2",
+    "aa816782b075c8a27eabb7492d080d1c26fa3119",
+    "aa8eecc7c56572c41a74a306488f7c839bac4e8e",
+    "ab4a5e78f33c2a70ba1f1cd07f826f3c1cbadcf7",
+    "acd988f1cd30e13d15897d37c69a158ef52c4412",
+    "afb092a068d65bf202d8e2a3137194322caa11df",
+    "b3f03f299058e6afe29a95299f2389f60ecba899",
+    "b93c72a6e195e868a45ac8ec27a22137a55e8fb7",
+    "bb5ebf9164d92388e03ad81dd9d7e55ea2c9cdb7",
+    "bc3bb49330a30e7d592a5e76f549cf5f518c9b87",
+    "c5de14af4c9831faeb45060d9f28374bcf3881bf",
+    "c69f01c6431d1b02ce8ab0ea7d92e40d985e87c7",
+    "c76a6f24c7f103eeb251256e1ed1b2240dd1d095",
+    "ccc9ac9616dc7875a5cae3d3268c35cb8c0537b4",
+    "cd904adf33513ac7393edf856c0431755638df30",
+    "cf4b4c4ed3dfdab58b58f4fe2ce540101aaa89b1",
+    "d39103d0673b8690816df1f9a3a4499a46f94f45",
+    "e09877508e404421df974cd1bc5c3fdf261f5390",
+    "e870eec3e323214ca424a0bf4755994c3328b3e0",
+    "eb282a1be6a0ba9db7c0d4942c1b41ac62ec9c90",
+    "edfb0c8d0ea0f413f7f43c060c3bdb9c567b758e",
+    "ee7d214b6142bc94ba7a29831f19ec40c91c1596",
+    "efbdf796a33e4596755c5222e673046c749aefb5",
+    "f014701dea096dc467e1f36c25cd61b8f0b8d0c6",
+    "f20e253babba19d41dedc3763cda3ebaf9daa719",
+    "f2badf757c0b8ae4b615502f8a4a4654e1b71d0d",
+    "f45107beb65430c0654b5a9a4cac9bc123a4ad97",
+    "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+    "f92cca0dceec15178b29e6c93445d739145ef586",
+    "f9e1fa06821907da53f75417555bd3cbdd50c7d0",
+    "fbc3283fa1b7169cc5c9e373777f1e05a33f9995",
+    "fe15696ca840d2977b62dd36d93dd5c77c6e0a53",
+    "fe92c573be2c353c020221db3c7848b4577cb17a"
+  ],
+  "proofs": [
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "app.py",
+      "blob": "1923dffafa6e0c1840a0bdc3ffd4e8c468846498",
+      "bytes": 52852,
+      "sha256": "feb1b9df793d9dda817d9e80b572b6ac18cb093821159ee81c30010ab55d73ad"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/fingerprint_support_definition_v1.json",
+      "blob": "04364ccbd85ca11ac47580b84418be5a9bf521ae",
+      "bytes": 2804,
+      "sha256": "7d13aa4fcc7e6b3bb86a2d43c3e8ec203d6628f86cf9e43291176affb2b6c037"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/reference_truth_v1.json",
+      "blob": "0e6f0a4926333b9133e691e7bc1e18b3e236b43b",
+      "bytes": 56789,
+      "sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/reference_truth_v2.json",
+      "blob": "acd988f1cd30e13d15897d37c69a158ef52c4412",
+      "bytes": 1541769,
+      "sha256": "2b7805bf622ccae617830a5e159f756c47132b426a24acf12f1d575e53ac8fec"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/reference_truth_v2_round10_addendum.json",
+      "blob": "eb282a1be6a0ba9db7c0d4942c1b41ac62ec9c90",
+      "bytes": 92645,
+      "sha256": "8d3312ab87003325dc2e7f9691c88c0714db8b216f2a98c38ddfe33b9debab3c"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/reference_truth_v2_round11_addendum.json",
+      "blob": "40e2de9a8631c4dce5960202e03d8eaa8079997b",
+      "bytes": 72898,
+      "sha256": "08289c607e7a4eccb32fd3cec04b93b38c8cbff794c2b2e31398eca30f97d3df"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/reference_truth_v3.json",
+      "blob": "afb092a068d65bf202d8e2a3137194322caa11df",
+      "bytes": 18171,
+      "sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/reference_truth_v3_round16_addendum.json",
+      "blob": "8d7f7a7bb7f252957f20c23f052bd1fca245d427",
+      "bytes": 995265,
+      "sha256": "ca3819fba1e8ccf0281e9bc5e81feae8be75634fe2e982d953c98fa3b9507f2c"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "benchmarks/reference/release_truth_policy_v1.json",
+      "blob": "10e0cbfbb17f615630dda500b80647f0eeb48eac",
+      "bytes": 1295,
+      "sha256": "bc48cc12747f364ffbd90ca93565124c48ae0bb3b9686983efd058370203ab41"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/catalog_manifest.json",
+      "blob": "f014701dea096dc467e1f36c25cd61b8f0b8d0c6",
+      "bytes": 1116,
+      "sha256": "5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/catalog_seed.sqlite3",
+      "blob": "8ff73164239af21fc9ab833253da5f196dc854ae",
+      "bytes": 3575808,
+      "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/document_recognition_fingerprints.json",
+      "blob": "9f9a5881c449629e8f5c1dbc2edd45c903ebbfec",
+      "bytes": 12188225,
+      "sha256": "56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/document_recognition_fingerprints.schema.json",
+      "blob": "4b2afe899c63d2c8d629e6245ce2617149148500",
+      "bytes": 5508,
+      "sha256": "bc6cebc7bd407ce9791e4b3c3947a6ed23d7596cd31ff79056a15abc9190c5c2"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/document_recognition_fingerprints_v2.json",
+      "blob": "8199d4888a84cb0c315831316570356e10e56e37",
+      "bytes": 27493120,
+      "sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/document_recognition_fingerprints_v2.schema.json",
+      "blob": "460f59172ef4b9275a312a1599c8d7ce15e96a45",
+      "bytes": 5304,
+      "sha256": "da1d4b6a88d117bb5dba06e0be7102c5e45df1250cb3fc4de94adc0238e1e265"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/document_recognition_fingerprints_v3.json",
+      "blob": "3224a63ee2cee71ffe62677b9e1c2ea921d96d6e",
+      "bytes": 52221672,
+      "sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/document_recognition_fingerprints_v3.schema.json",
+      "blob": "3dba85b6ed189e95983b9233e00dcb2bc0e6168f",
+      "bytes": 10755,
+      "sha256": "2b4d6064b21630b646efa73ce7c9e461bbd1a7d8ff10c804ec47e222c8fb25b1"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_profiles/fingerprint_decision_v3.json",
+      "blob": "84d72c9d4fd9ab39493c18127e9f9120ee069173",
+      "bytes": 1181,
+      "sha256": "ebf7e4444f040afe0e560f5b04c6767f7d40cd73f2dc9a866321e8d62208e0a8"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_profiles/fingerprint_decision_v4.json",
+      "blob": "6a2fc1aa90cab5a05c4d361e56aba22f9f307c2c",
+      "bytes": 583,
+      "sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_profiles/fingerprint_v2.json",
+      "blob": "7ef36d1f9af5b73208ef2cab8e51cb78929fda13",
+      "bytes": 1289,
+      "sha256": "b125d46396f0992112cc42f897698ee7fed5e076294eaa79f38c288581415c69"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_profiles/safety_v1.json",
+      "blob": "7381f0c65c38e87530a9d4489e11a014cf78f7d8",
+      "bytes": 675,
+      "sha256": "4e33658b89fc14f19f1b5c7a94d12daf86399e55655b8b7ed1329dacfe0ef316"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "data/recognition_profiles/schema.json",
+      "blob": "36cd411580791bfa8112345337f2f7a1b67a06f2",
+      "bytes": 994,
+      "sha256": "e68ae2c53973d6fd99db5ecb527bfab81bf2450aea6799c1861f0f13acf58439"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "run.py",
+      "blob": "0a3ee6ad1c8edf79a983910f1c7a151ce75dceda",
+      "bytes": 1292,
+      "sha256": "bab1c0011bb58b329a83dd5826633da901104b7fe57587e758b174796cd7f471"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/__init__.py",
+      "blob": "aa8eecc7c56572c41a74a306488f7c839bac4e8e",
+      "bytes": 40,
+      "sha256": "9ebc1cae496e14171296f907ff1a219a8c34e602583195f708c0dd446c089526"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/benchmark_display.py",
+      "blob": "1cc4e3942e87837f79bbeeb63704eaee76fc17f9",
+      "bytes": 2670,
+      "sha256": "ca5ac5fce2479346b822f33ed84d7998739cfdbe05f01db45de09dad0488849f"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/bootstrap.py",
+      "blob": "a22fb1920893e547d09862bebc9ba0fa046986fa",
+      "bytes": 2261,
+      "sha256": "c96400f99602836f6d7efe70c2f417fb8e01dbd417ec6c6dd5d1a259f5d895b6"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/catalog_metrics.py",
+      "blob": "4458c0a2dc060b739fb99d305b3fe13549a2ea9e",
+      "bytes": 8907,
+      "sha256": "0451aed291126fc6473d4d148478d900d9402a16c340b1370273b03b4fec1889"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/catalog_quality.py",
+      "blob": "f2badf757c0b8ae4b615502f8a4a4654e1b71d0d",
+      "bytes": 4966,
+      "sha256": "a557a734fb6fe3c6f271b70d14d66fd3727eafadf9ecc4e3db6c7f31777d3aad"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/database.py",
+      "blob": "3b4bf3f695d4556520bd8843e61ac2385dcdf96b",
+      "bytes": 19850,
+      "sha256": "c6492349b33a949929672a1b3f5beb3b69184579fd9f317ca6c8aee5b3eff46e"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/document_fingerprints.py",
+      "blob": "0ad4873932af80f7a460f30209d39f884c1c521a",
+      "bytes": 11594,
+      "sha256": "224c46821008eb2fcc370a191806799665534c481762c4a2028fc5fa9694cf08"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/enrichment.py",
+      "blob": "75dc7e59d4f497339558538ff5ecc9e785634634",
+      "bytes": 10982,
+      "sha256": "82423b156c9cfe3bccd13668ac068932950c7e47271796bb794242f2640ec997"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/entities.py",
+      "blob": "41d752db269a51289d331e563867c19bc1ba0f7b",
+      "bytes": 3220,
+      "sha256": "e693d4f5f55f70a40e65f24cae4efb67e85f44b8ecd3c8d85ea0354e43eaf456"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/explanations.py",
+      "blob": "c76a6f24c7f103eeb251256e1ed1b2240dd1d095",
+      "bytes": 26368,
+      "sha256": "e88a3438e2b066d2abe4738251b2cd148f77114ee61e1490c10f8c970d50d49c"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/families.py",
+      "blob": "135d3feec4b5224ccd7c8beb143e26121dfae8d4",
+      "bytes": 21828,
+      "sha256": "8962acbad0d1a72319fe3a5cf8b0abf89d70032b788e1fcb93dc82242ef13537"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_decision_v3.py",
+      "blob": "4376c0252f9c036b3be06ea7918f4de5fd39c2c6",
+      "bytes": 4301,
+      "sha256": "0033f3468d400a358a9fd04941219f03c87ccd7784c639b2704815657b438047"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_match.py",
+      "blob": "aa6c77133b9210c88d6d0979ef23c97337c27bd2",
+      "bytes": 3768,
+      "sha256": "531dbf070f908f0308630434db6bf23b50f29589079e2d08dd6d14247cbeec74"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_match_v2.py",
+      "blob": "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+      "bytes": 6652,
+      "sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_pages.py",
+      "blob": "efbdf796a33e4596755c5222e673046c749aefb5",
+      "bytes": 4855,
+      "sha256": "aa21f016608745149a30cbbca5e04158ba4c455d06ec7c9209d06766740cce9f"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_v2.py",
+      "blob": "edfb0c8d0ea0f413f7f43c060c3bdb9c567b758e",
+      "bytes": 11105,
+      "sha256": "cfc4181bfab1ef52380e25925cecbcd4f9134ea30405d4c6331beb2c3c6802c7"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_v3.py",
+      "blob": "15f6bbe40d7c53e79fbc1f5be84579150fe587be",
+      "bytes": 16723,
+      "sha256": "0fc71c132a3f3a0adff20538cfbfdf29548c5b7e36e7ab63a839ea79b19fca42"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/fingerprint_visual.py",
+      "blob": "6339122b47d51ef0c357d4e6a7a1179b51abf199",
+      "bytes": 1560,
+      "sha256": "b3421f76f43bdf5e843474532882e79bab224f65e76b40be4366fc73273c1256"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/__init__.py",
+      "blob": "731f3ae6559f0cc48a5dce84ff4a427d0e3fb17e",
+      "bytes": 75,
+      "sha256": "24ffadde1e259d2d7e2f9f225a1618e970141ac60baadad11f54f4dc54af6615"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/ade.py",
+      "blob": "584d47f8635a6078dc85d3b6acb6667be33bde71",
+      "bytes": 17075,
+      "sha256": "a20d9b907b8b6899a7001723d250c4966585c7534a612e0781fd2163420dcc0a"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/ader.py",
+      "blob": "3bd5ab243efbb8f083e940eebd60e3e8a0e00c9b",
+      "bytes": 19184,
+      "sha256": "5c4c03622606454eea2e1655d5a9bcd927edc61b3563cd03f6e384c43f5a9393"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/common.py",
+      "blob": "ab4a5e78f33c2a70ba1f1cd07f826f3c1cbadcf7",
+      "bytes": 4221,
+      "sha256": "326d3c4fbff82c666cdb8f18577b58a7fcbe815deee8fdbf99e0c2bf6880beba"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/garante.py",
+      "blob": "1f5085c6998dcc60a4be6c0fb13fcaa32ec6a6b0",
+      "bytes": 15664,
+      "sha256": "2643af09dd8fd3ee758f650c1e9eae23104a750b612814cf733fb205b1865fa5"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/inail.py",
+      "blob": "c5de14af4c9831faeb45060d9f28374bcf3881bf",
+      "bytes": 13106,
+      "sha256": "ca27f3ddf5c3ee7e69568dae2cbe63a4044b445f175fa068da313a725c766ffb"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/inl.py",
+      "blob": "18a383e694728b943f549e2c0d154b92872d434e",
+      "bytes": 19511,
+      "sha256": "fe89faf1a27f05aa9d8e369546526f8f2212355100c97852bf7a53d86bf7f50b"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/inps.py",
+      "blob": "4351824248d8aa445801982761d1e769ef205417",
+      "bytes": 20923,
+      "sha256": "a2a34596eda32f6fb6d2c85da91459562095cce7d21d626fff407c9f2b2eb23e"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/ipa.py",
+      "blob": "7cbb039b8423af444f291a4d2846b52c77b5ec4d",
+      "bytes": 9254,
+      "sha256": "31c5f2ba4267270fad978c2576b6a2b1a8586c445626c5b8b3bcab408b48a4ef"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/importers/lavoro.py",
+      "blob": "f20e253babba19d41dedc3763cda3ebaf9daa719",
+      "bytes": 17392,
+      "sha256": "1bbfb917ab22873f018dac82f0a57ad4a1341452fe4876a457efef15a94fb4cc"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/local_packages.py",
+      "blob": "e09877508e404421df974cd1bc5c3fdf261f5390",
+      "bytes": 36688,
+      "sha256": "8db9af089ac5db9de6039a7ccd47d1d6024453662ef892c66bcc089eb1a4c495"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/local_resources.py",
+      "blob": "1687bdc5ea0e317661085f268e1250d43f0b5a35",
+      "bytes": 7488,
+      "sha256": "6b4bf30bc6c990f7e9ea86907fb5f4231857f107c0cac286cab799a2868f1f8e"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/models.py",
+      "blob": "cf4b4c4ed3dfdab58b58f4fe2ce540101aaa89b1",
+      "bytes": 4256,
+      "sha256": "be61bab88edc9a48067d66072a8b45e6def29ba5daab032c8bd15cccd62bb755"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/observation_history.py",
+      "blob": "a187c732e51c794ad024a2244ad67efd1f0afba1",
+      "bytes": 3581,
+      "sha256": "27d93e3ed18638c605157855e6d513e48b89e495d6bb106152a9c3df36f8640f"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/ocr.py",
+      "blob": "21b03039002275b83ef76145a746a6c8340a32b3",
+      "bytes": 15580,
+      "sha256": "0c3922a4563132a8ea771211e4e1445e3839b3a543b4b38412205cf47327fec8"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/official_urls.py",
+      "blob": "8db36c16f6de9d16befa5006fb719065217b30ea",
+      "bytes": 3554,
+      "sha256": "468139d11facb9450dbbbef41e3aefa278889920310297dbb46d5e32051c8a54"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/offline.py",
+      "blob": "c69f01c6431d1b02ce8ab0ea7d92e40d985e87c7",
+      "bytes": 1391,
+      "sha256": "32f4bc65b2c9538602e7d84df18c91bb019acfd6123fd89a298e2adb3d2cdea7"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/offline_transport.py",
+      "blob": "bb5ebf9164d92388e03ad81dd9d7e55ea2c9cdb7",
+      "bytes": 593,
+      "sha256": "c66acc3a24a9ac1e2ca28710f4be28617085be0c5f4d33f308ba832612033793"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/provenance.py",
+      "blob": "aa48343947f6e8befe76d747c763d1603c6f0038",
+      "bytes": 3737,
+      "sha256": "1e3eabe193ac6eb2f4cbaa10a7cef962c0976708055ead7d5814a700882aa822"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/recognition_profiles.py",
+      "blob": "403b3d50661a5d231eb4a13b6c222cce2c9e701c",
+      "bytes": 1749,
+      "sha256": "ba705f39f66c28f955e52897595ac77a490b9dee90b96323aa9fa238bdf1c78b"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/recognize.py",
+      "blob": "32d497c79ce7d5df4c2528a5e2549362187da7f4",
+      "bytes": 55230,
+      "sha256": "b8ed07efc89373f6259e128831dc19dd14aedd4c43c2dac6b5bd1042af3bad95"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/review.py",
+      "blob": "898d685c5dd6c754a25e39d615af6a24589ed5ca",
+      "bytes": 10290,
+      "sha256": "a26b05b96f7052b0b1bbfb2563bcab9e724581983b86cccace69a2e027449cd2"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/review_export.py",
+      "blob": "fbc3283fa1b7169cc5c9e373777f1e05a33f9995",
+      "bytes": 2828,
+      "sha256": "2a7923bb8bc7a47db5aac7508206c6c30468baa8ce749fb9614f185a6adf4eb0"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/sources.py",
+      "blob": "228b2c5c3742747a9a63d43ff323bbe6f08c471c",
+      "bytes": 20699,
+      "sha256": "e637f2491d1be0c4c54117af3afe74f36447806e3d8b4ca1542ce12d2db1cfa6"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/technical_anchors.py",
+      "blob": "4755bd8cfaf9a708629f0cc5a5f8cd3d1fdb2142",
+      "bytes": 1833,
+      "sha256": "ea2516ea7193134309fbd409c70f22c4eb25180b5a4c4e02b06ada1c885d7e03"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/text_quality.py",
+      "blob": "717beb955e7243fafb0f5173df22ada8907c90b5",
+      "bytes": 1093,
+      "sha256": "bae96cd4fedb9b132a416c6e00c263b143f4b25252d534151c630bf61e791d3e"
+    },
+    {
+      "reference": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "data/catalog_seed.sqlite3",
+      "blob": "8ff73164239af21fc9ab833253da5f196dc854ae",
+      "bytes": 3575808,
+      "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/fingerprint_match_v2.py",
+      "blob": "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+      "bytes": 6652,
+      "sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/fingerprint_pages.py",
+      "blob": "56a406db0282733d6928a4d68d5f9e9a781ace2b",
+      "bytes": 4645,
+      "sha256": "22c2dba81a5f823adf47b83f1788716247954daf381977112642fb1d359651ec"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/fingerprint_v3.py",
+      "blob": "f45107beb65430c0654b5a9a4cac9bc123a4ad97",
+      "bytes": 16525,
+      "sha256": "d0b30d7e935499b21b4e7a637f6c2539df0ed425ac507f4ef207ca5d912d1a73"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/recognize.py",
+      "blob": "2569517356fc8710013572d9fc462044db3095d8",
+      "bytes": 55038,
+      "sha256": "96c089d9eed17e35dc4a49e3ef820dcdfc0cfa79c4a0814b5639846e38348196"
+    },
+    {
+      "reference": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "commit": "19883ba6a1e0e7360716aa0d9bba5ecb52a569eb",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/fingerprint_match_v2.py",
+      "blob": "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+      "bytes": 6652,
+      "sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/fingerprint_pages.py",
+      "blob": "56a406db0282733d6928a4d68d5f9e9a781ace2b",
+      "bytes": 4645,
+      "sha256": "22c2dba81a5f823adf47b83f1788716247954daf381977112642fb1d359651ec"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/fingerprint_v3.py",
+      "blob": "f45107beb65430c0654b5a9a4cac9bc123a4ad97",
+      "bytes": 16525,
+      "sha256": "d0b30d7e935499b21b4e7a637f6c2539df0ed425ac507f4ef207ca5d912d1a73"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/recognize.py",
+      "blob": "2569517356fc8710013572d9fc462044db3095d8",
+      "bytes": 55038,
+      "sha256": "96c089d9eed17e35dc4a49e3ef820dcdfc0cfa79c4a0814b5639846e38348196"
+    },
+    {
+      "reference": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "commit": "425fa010063692d5d8ed090431068ad014d86ee6",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "498c198",
+      "commit": "498c1982f8d698c068bd33e6a749b458d6c1a1db",
+      "path": "data/catalog_seed.sqlite3",
+      "blob": "8ff73164239af21fc9ab833253da5f196dc854ae",
+      "bytes": 3575808,
+      "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "benchmarks/reference/reference_truth_v3.json",
+      "blob": "afb092a068d65bf202d8e2a3137194322caa11df",
+      "bytes": 18171,
+      "sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/fingerprint_pages.py",
+      "blob": "efbdf796a33e4596755c5222e673046c749aefb5",
+      "bytes": 4855,
+      "sha256": "aa21f016608745149a30cbbca5e04158ba4c455d06ec7c9209d06766740cce9f"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/fingerprint_v3.py",
+      "blob": "15f6bbe40d7c53e79fbc1f5be84579150fe587be",
+      "bytes": 16723,
+      "sha256": "0fc71c132a3f3a0adff20538cfbfdf29548c5b7e36e7ab63a839ea79b19fca42"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/recognize.py",
+      "blob": "32d497c79ce7d5df4c2528a5e2549362187da7f4",
+      "bytes": 55230,
+      "sha256": "b8ed07efc89373f6259e128831dc19dd14aedd4c43c2dac6b5bd1042af3bad95"
+    },
+    {
+      "reference": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "commit": "68a3d7e31996a578b403f5bd815a06218b3a6e95",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "data/catalog_seed.sqlite3",
+      "blob": "8ff73164239af21fc9ab833253da5f196dc854ae",
+      "bytes": 3575808,
+      "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/fingerprint_match_v2.py",
+      "blob": "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+      "bytes": 6652,
+      "sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/fingerprint_pages.py",
+      "blob": "56a406db0282733d6928a4d68d5f9e9a781ace2b",
+      "bytes": 4645,
+      "sha256": "22c2dba81a5f823adf47b83f1788716247954daf381977112642fb1d359651ec"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/fingerprint_v3.py",
+      "blob": "b3f03f299058e6afe29a95299f2389f60ecba899",
+      "bytes": 14751,
+      "sha256": "8630092092f0f87fe22614095dee01517e155cd026c11cea3f619b3bcf9d4a48"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/recognize.py",
+      "blob": "2569517356fc8710013572d9fc462044db3095d8",
+      "bytes": 55038,
+      "sha256": "96c089d9eed17e35dc4a49e3ef820dcdfc0cfa79c4a0814b5639846e38348196"
+    },
+    {
+      "reference": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "commit": "77bbe149a52102d5ca42743702c5b39f5a475326",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "app.py",
+      "blob": "1923dffafa6e0c1840a0bdc3ffd4e8c468846498",
+      "bytes": 52852,
+      "sha256": "feb1b9df793d9dda817d9e80b572b6ac18cb093821159ee81c30010ab55d73ad"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/fingerprint_support_definition_v1.json",
+      "blob": "04364ccbd85ca11ac47580b84418be5a9bf521ae",
+      "bytes": 2804,
+      "sha256": "7d13aa4fcc7e6b3bb86a2d43c3e8ec203d6628f86cf9e43291176affb2b6c037"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/reference_truth_v1.json",
+      "blob": "0e6f0a4926333b9133e691e7bc1e18b3e236b43b",
+      "bytes": 56789,
+      "sha256": "84db17e65718a995cd4ac1218339c7453a9fa19e7957aa7548653a94db8a4dfa"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/reference_truth_v2.json",
+      "blob": "acd988f1cd30e13d15897d37c69a158ef52c4412",
+      "bytes": 1541769,
+      "sha256": "2b7805bf622ccae617830a5e159f756c47132b426a24acf12f1d575e53ac8fec"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/reference_truth_v2_round10_addendum.json",
+      "blob": "eb282a1be6a0ba9db7c0d4942c1b41ac62ec9c90",
+      "bytes": 92645,
+      "sha256": "8d3312ab87003325dc2e7f9691c88c0714db8b216f2a98c38ddfe33b9debab3c"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/reference_truth_v2_round11_addendum.json",
+      "blob": "40e2de9a8631c4dce5960202e03d8eaa8079997b",
+      "bytes": 72898,
+      "sha256": "08289c607e7a4eccb32fd3cec04b93b38c8cbff794c2b2e31398eca30f97d3df"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/reference_truth_v3.json",
+      "blob": "afb092a068d65bf202d8e2a3137194322caa11df",
+      "bytes": 18171,
+      "sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/reference_truth_v3_round16_addendum.json",
+      "blob": "8d7f7a7bb7f252957f20c23f052bd1fca245d427",
+      "bytes": 995265,
+      "sha256": "ca3819fba1e8ccf0281e9bc5e81feae8be75634fe2e982d953c98fa3b9507f2c"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "benchmarks/reference/release_truth_policy_v1.json",
+      "blob": "10e0cbfbb17f615630dda500b80647f0eeb48eac",
+      "bytes": 1295,
+      "sha256": "bc48cc12747f364ffbd90ca93565124c48ae0bb3b9686983efd058370203ab41"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/catalog_manifest.json",
+      "blob": "f014701dea096dc467e1f36c25cd61b8f0b8d0c6",
+      "bytes": 1116,
+      "sha256": "5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/catalog_seed.sqlite3",
+      "blob": "8ff73164239af21fc9ab833253da5f196dc854ae",
+      "bytes": 3575808,
+      "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/document_recognition_fingerprints.json",
+      "blob": "9f9a5881c449629e8f5c1dbc2edd45c903ebbfec",
+      "bytes": 12188225,
+      "sha256": "56279630f94c5a5e7457e082e5c238a9b9c38ca8be64c5e42f2f6d27214117a2"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/document_recognition_fingerprints.schema.json",
+      "blob": "4b2afe899c63d2c8d629e6245ce2617149148500",
+      "bytes": 5508,
+      "sha256": "bc6cebc7bd407ce9791e4b3c3947a6ed23d7596cd31ff79056a15abc9190c5c2"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/document_recognition_fingerprints_v2.json",
+      "blob": "8199d4888a84cb0c315831316570356e10e56e37",
+      "bytes": 27493120,
+      "sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/document_recognition_fingerprints_v2.schema.json",
+      "blob": "460f59172ef4b9275a312a1599c8d7ce15e96a45",
+      "bytes": 5304,
+      "sha256": "da1d4b6a88d117bb5dba06e0be7102c5e45df1250cb3fc4de94adc0238e1e265"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/document_recognition_fingerprints_v3.json",
+      "blob": "3224a63ee2cee71ffe62677b9e1c2ea921d96d6e",
+      "bytes": 52221672,
+      "sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/document_recognition_fingerprints_v3.schema.json",
+      "blob": "3dba85b6ed189e95983b9233e00dcb2bc0e6168f",
+      "bytes": 10755,
+      "sha256": "2b4d6064b21630b646efa73ce7c9e461bbd1a7d8ff10c804ec47e222c8fb25b1"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_profiles/fingerprint_decision_v3.json",
+      "blob": "84d72c9d4fd9ab39493c18127e9f9120ee069173",
+      "bytes": 1181,
+      "sha256": "ebf7e4444f040afe0e560f5b04c6767f7d40cd73f2dc9a866321e8d62208e0a8"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_profiles/fingerprint_decision_v4.json",
+      "blob": "6a2fc1aa90cab5a05c4d361e56aba22f9f307c2c",
+      "bytes": 583,
+      "sha256": "0fa46ebc4b9c9c723a31c23683898bd46f949a9ca20fef4ca2bbef70bf031a47"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_profiles/fingerprint_v2.json",
+      "blob": "7ef36d1f9af5b73208ef2cab8e51cb78929fda13",
+      "bytes": 1289,
+      "sha256": "b125d46396f0992112cc42f897698ee7fed5e076294eaa79f38c288581415c69"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_profiles/safety_v1.json",
+      "blob": "7381f0c65c38e87530a9d4489e11a014cf78f7d8",
+      "bytes": 675,
+      "sha256": "4e33658b89fc14f19f1b5c7a94d12daf86399e55655b8b7ed1329dacfe0ef316"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "data/recognition_profiles/schema.json",
+      "blob": "36cd411580791bfa8112345337f2f7a1b67a06f2",
+      "bytes": 994,
+      "sha256": "e68ae2c53973d6fd99db5ecb527bfab81bf2450aea6799c1861f0f13acf58439"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "run.py",
+      "blob": "0a3ee6ad1c8edf79a983910f1c7a151ce75dceda",
+      "bytes": 1292,
+      "sha256": "bab1c0011bb58b329a83dd5826633da901104b7fe57587e758b174796cd7f471"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/__init__.py",
+      "blob": "aa8eecc7c56572c41a74a306488f7c839bac4e8e",
+      "bytes": 40,
+      "sha256": "9ebc1cae496e14171296f907ff1a219a8c34e602583195f708c0dd446c089526"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/benchmark_display.py",
+      "blob": "1cc4e3942e87837f79bbeeb63704eaee76fc17f9",
+      "bytes": 2670,
+      "sha256": "ca5ac5fce2479346b822f33ed84d7998739cfdbe05f01db45de09dad0488849f"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/bootstrap.py",
+      "blob": "a22fb1920893e547d09862bebc9ba0fa046986fa",
+      "bytes": 2261,
+      "sha256": "c96400f99602836f6d7efe70c2f417fb8e01dbd417ec6c6dd5d1a259f5d895b6"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/catalog_metrics.py",
+      "blob": "4458c0a2dc060b739fb99d305b3fe13549a2ea9e",
+      "bytes": 8907,
+      "sha256": "0451aed291126fc6473d4d148478d900d9402a16c340b1370273b03b4fec1889"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/catalog_quality.py",
+      "blob": "f2badf757c0b8ae4b615502f8a4a4654e1b71d0d",
+      "bytes": 4966,
+      "sha256": "a557a734fb6fe3c6f271b70d14d66fd3727eafadf9ecc4e3db6c7f31777d3aad"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/database.py",
+      "blob": "3b4bf3f695d4556520bd8843e61ac2385dcdf96b",
+      "bytes": 19850,
+      "sha256": "c6492349b33a949929672a1b3f5beb3b69184579fd9f317ca6c8aee5b3eff46e"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/document_fingerprints.py",
+      "blob": "0ad4873932af80f7a460f30209d39f884c1c521a",
+      "bytes": 11594,
+      "sha256": "224c46821008eb2fcc370a191806799665534c481762c4a2028fc5fa9694cf08"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/enrichment.py",
+      "blob": "75dc7e59d4f497339558538ff5ecc9e785634634",
+      "bytes": 10982,
+      "sha256": "82423b156c9cfe3bccd13668ac068932950c7e47271796bb794242f2640ec997"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/entities.py",
+      "blob": "41d752db269a51289d331e563867c19bc1ba0f7b",
+      "bytes": 3220,
+      "sha256": "e693d4f5f55f70a40e65f24cae4efb67e85f44b8ecd3c8d85ea0354e43eaf456"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/explanations.py",
+      "blob": "c76a6f24c7f103eeb251256e1ed1b2240dd1d095",
+      "bytes": 26368,
+      "sha256": "e88a3438e2b066d2abe4738251b2cd148f77114ee61e1490c10f8c970d50d49c"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/families.py",
+      "blob": "135d3feec4b5224ccd7c8beb143e26121dfae8d4",
+      "bytes": 21828,
+      "sha256": "8962acbad0d1a72319fe3a5cf8b0abf89d70032b788e1fcb93dc82242ef13537"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_decision_v3.py",
+      "blob": "4376c0252f9c036b3be06ea7918f4de5fd39c2c6",
+      "bytes": 4301,
+      "sha256": "0033f3468d400a358a9fd04941219f03c87ccd7784c639b2704815657b438047"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_match.py",
+      "blob": "aa6c77133b9210c88d6d0979ef23c97337c27bd2",
+      "bytes": 3768,
+      "sha256": "531dbf070f908f0308630434db6bf23b50f29589079e2d08dd6d14247cbeec74"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_match_v2.py",
+      "blob": "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+      "bytes": 6652,
+      "sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_pages.py",
+      "blob": "efbdf796a33e4596755c5222e673046c749aefb5",
+      "bytes": 4855,
+      "sha256": "aa21f016608745149a30cbbca5e04158ba4c455d06ec7c9209d06766740cce9f"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_v2.py",
+      "blob": "edfb0c8d0ea0f413f7f43c060c3bdb9c567b758e",
+      "bytes": 11105,
+      "sha256": "cfc4181bfab1ef52380e25925cecbcd4f9134ea30405d4c6331beb2c3c6802c7"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_v3.py",
+      "blob": "15f6bbe40d7c53e79fbc1f5be84579150fe587be",
+      "bytes": 16723,
+      "sha256": "0fc71c132a3f3a0adff20538cfbfdf29548c5b7e36e7ab63a839ea79b19fca42"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/fingerprint_visual.py",
+      "blob": "6339122b47d51ef0c357d4e6a7a1179b51abf199",
+      "bytes": 1560,
+      "sha256": "b3421f76f43bdf5e843474532882e79bab224f65e76b40be4366fc73273c1256"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/__init__.py",
+      "blob": "731f3ae6559f0cc48a5dce84ff4a427d0e3fb17e",
+      "bytes": 75,
+      "sha256": "24ffadde1e259d2d7e2f9f225a1618e970141ac60baadad11f54f4dc54af6615"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/ade.py",
+      "blob": "584d47f8635a6078dc85d3b6acb6667be33bde71",
+      "bytes": 17075,
+      "sha256": "a20d9b907b8b6899a7001723d250c4966585c7534a612e0781fd2163420dcc0a"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/ader.py",
+      "blob": "3bd5ab243efbb8f083e940eebd60e3e8a0e00c9b",
+      "bytes": 19184,
+      "sha256": "5c4c03622606454eea2e1655d5a9bcd927edc61b3563cd03f6e384c43f5a9393"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/common.py",
+      "blob": "ab4a5e78f33c2a70ba1f1cd07f826f3c1cbadcf7",
+      "bytes": 4221,
+      "sha256": "326d3c4fbff82c666cdb8f18577b58a7fcbe815deee8fdbf99e0c2bf6880beba"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/garante.py",
+      "blob": "1f5085c6998dcc60a4be6c0fb13fcaa32ec6a6b0",
+      "bytes": 15664,
+      "sha256": "2643af09dd8fd3ee758f650c1e9eae23104a750b612814cf733fb205b1865fa5"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/inail.py",
+      "blob": "c5de14af4c9831faeb45060d9f28374bcf3881bf",
+      "bytes": 13106,
+      "sha256": "ca27f3ddf5c3ee7e69568dae2cbe63a4044b445f175fa068da313a725c766ffb"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/inl.py",
+      "blob": "18a383e694728b943f549e2c0d154b92872d434e",
+      "bytes": 19511,
+      "sha256": "fe89faf1a27f05aa9d8e369546526f8f2212355100c97852bf7a53d86bf7f50b"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/inps.py",
+      "blob": "4351824248d8aa445801982761d1e769ef205417",
+      "bytes": 20923,
+      "sha256": "a2a34596eda32f6fb6d2c85da91459562095cce7d21d626fff407c9f2b2eb23e"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/ipa.py",
+      "blob": "7cbb039b8423af444f291a4d2846b52c77b5ec4d",
+      "bytes": 9254,
+      "sha256": "31c5f2ba4267270fad978c2576b6a2b1a8586c445626c5b8b3bcab408b48a4ef"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/importers/lavoro.py",
+      "blob": "f20e253babba19d41dedc3763cda3ebaf9daa719",
+      "bytes": 17392,
+      "sha256": "1bbfb917ab22873f018dac82f0a57ad4a1341452fe4876a457efef15a94fb4cc"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/local_packages.py",
+      "blob": "e09877508e404421df974cd1bc5c3fdf261f5390",
+      "bytes": 36688,
+      "sha256": "8db9af089ac5db9de6039a7ccd47d1d6024453662ef892c66bcc089eb1a4c495"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/local_resources.py",
+      "blob": "1687bdc5ea0e317661085f268e1250d43f0b5a35",
+      "bytes": 7488,
+      "sha256": "6b4bf30bc6c990f7e9ea86907fb5f4231857f107c0cac286cab799a2868f1f8e"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/models.py",
+      "blob": "cf4b4c4ed3dfdab58b58f4fe2ce540101aaa89b1",
+      "bytes": 4256,
+      "sha256": "be61bab88edc9a48067d66072a8b45e6def29ba5daab032c8bd15cccd62bb755"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/observation_history.py",
+      "blob": "a187c732e51c794ad024a2244ad67efd1f0afba1",
+      "bytes": 3581,
+      "sha256": "27d93e3ed18638c605157855e6d513e48b89e495d6bb106152a9c3df36f8640f"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/ocr.py",
+      "blob": "21b03039002275b83ef76145a746a6c8340a32b3",
+      "bytes": 15580,
+      "sha256": "0c3922a4563132a8ea771211e4e1445e3839b3a543b4b38412205cf47327fec8"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/official_urls.py",
+      "blob": "8db36c16f6de9d16befa5006fb719065217b30ea",
+      "bytes": 3554,
+      "sha256": "468139d11facb9450dbbbef41e3aefa278889920310297dbb46d5e32051c8a54"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/offline.py",
+      "blob": "c69f01c6431d1b02ce8ab0ea7d92e40d985e87c7",
+      "bytes": 1391,
+      "sha256": "32f4bc65b2c9538602e7d84df18c91bb019acfd6123fd89a298e2adb3d2cdea7"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/offline_transport.py",
+      "blob": "bb5ebf9164d92388e03ad81dd9d7e55ea2c9cdb7",
+      "bytes": 593,
+      "sha256": "c66acc3a24a9ac1e2ca28710f4be28617085be0c5f4d33f308ba832612033793"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/provenance.py",
+      "blob": "aa48343947f6e8befe76d747c763d1603c6f0038",
+      "bytes": 3737,
+      "sha256": "1e3eabe193ac6eb2f4cbaa10a7cef962c0976708055ead7d5814a700882aa822"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/recognition_profiles.py",
+      "blob": "403b3d50661a5d231eb4a13b6c222cce2c9e701c",
+      "bytes": 1749,
+      "sha256": "ba705f39f66c28f955e52897595ac77a490b9dee90b96323aa9fa238bdf1c78b"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/recognize.py",
+      "blob": "32d497c79ce7d5df4c2528a5e2549362187da7f4",
+      "bytes": 55230,
+      "sha256": "b8ed07efc89373f6259e128831dc19dd14aedd4c43c2dac6b5bd1042af3bad95"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/review.py",
+      "blob": "898d685c5dd6c754a25e39d615af6a24589ed5ca",
+      "bytes": 10290,
+      "sha256": "a26b05b96f7052b0b1bbfb2563bcab9e724581983b86cccace69a2e027449cd2"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/review_export.py",
+      "blob": "fbc3283fa1b7169cc5c9e373777f1e05a33f9995",
+      "bytes": 2828,
+      "sha256": "2a7923bb8bc7a47db5aac7508206c6c30468baa8ce749fb9614f185a6adf4eb0"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/sources.py",
+      "blob": "228b2c5c3742747a9a63d43ff323bbe6f08c471c",
+      "bytes": 20699,
+      "sha256": "e637f2491d1be0c4c54117af3afe74f36447806e3d8b4ca1542ce12d2db1cfa6"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/technical_anchors.py",
+      "blob": "4755bd8cfaf9a708629f0cc5a5f8cd3d1fdb2142",
+      "bytes": 1833,
+      "sha256": "ea2516ea7193134309fbd409c70f22c4eb25180b5a4c4e02b06ada1c885d7e03"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/text_quality.py",
+      "blob": "717beb955e7243fafb0f5173df22ada8907c90b5",
+      "bytes": 1093,
+      "sha256": "bae96cd4fedb9b132a416c6e00c263b143f4b25252d534151c630bf61e791d3e"
+    },
+    {
+      "reference": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "benchmarks/reference/reference_truth_v3.json",
+      "blob": "afb092a068d65bf202d8e2a3137194322caa11df",
+      "bytes": 18171,
+      "sha256": "404eda844c1955694564f178cd77ae626f9f2e792bc220f0785e0f54cfd011e7"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "data/recognition_features.json",
+      "blob": "f58ebf39ed0ebac25534f001143d4ff3de5160ba",
+      "bytes": 58908,
+      "sha256": "7f058e6b54d230e2b54779580268f8f063654d1bbd14442ac7ef8e3ab900b5f6"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "data/recognition_profiles/fingerprint_decision_v5.json",
+      "blob": "9105584d6b30ac03c6be25185ae70444ffe40c63",
+      "bytes": 695,
+      "sha256": "a482397a0f3b2a882fd20cb7ac0af2d19bde69ed7f105da9b7443b2fdb5edcfe"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/extract.py",
+      "blob": "a470ecf2acfdffce3f0b7e28546a9a75885c0137",
+      "bytes": 16665,
+      "sha256": "344bbacef54974654f32cbea360ce3e44d0ad198a36e2b4131782bc33c3e2ac9"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/fingerprint_decision_v4.py",
+      "blob": "1fc9e8a983dc969ec6bd14ed851855c0e02f3dc4",
+      "bytes": 9707,
+      "sha256": "e28ef74394aa5992f53e0a2278b06b643db5025b628ae62e8ecf183930de22d9"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/fingerprint_decision_v5.py",
+      "blob": "539ba511d0f09ad12c639f298db66fb83422aba9",
+      "bytes": 1440,
+      "sha256": "428fd8024b7ecd5aef7fcee389a162c008a7e4da2ecf68bb238a41b7be2308c9"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/fingerprint_match_v2.py",
+      "blob": "6fa12bcb25e71a996a9d64b5893eece336fcc29a",
+      "bytes": 6652,
+      "sha256": "6893e4c745475b736ca3aa0b1059122f4e2b42b447f45cbe695c98a77f8fc8e0"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/fingerprint_pages.py",
+      "blob": "56a406db0282733d6928a4d68d5f9e9a781ace2b",
+      "bytes": 4645,
+      "sha256": "22c2dba81a5f823adf47b83f1788716247954daf381977112642fb1d359651ec"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/fingerprint_v3.py",
+      "blob": "f45107beb65430c0654b5a9a4cac9bc123a4ad97",
+      "bytes": 16525,
+      "sha256": "d0b30d7e935499b21b4e7a637f6c2539df0ed425ac507f4ef207ca5d912d1a73"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/recognize.py",
+      "blob": "32d497c79ce7d5df4c2528a5e2549362187da7f4",
+      "bytes": 55230,
+      "sha256": "b8ed07efc89373f6259e128831dc19dd14aedd4c43c2dac6b5bd1042af3bad95"
+    },
+    {
+      "reference": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+      "path": "src/title_evidence.py",
+      "blob": "fe92c573be2c353c020221db3c7848b4577cb17a",
+      "bytes": 3794,
+      "sha256": "98b503b28d7522077133c8af9a0ce81164166dadf4c475f5e0ff0a42407c29ae"
+    },
+    {
+      "reference": "f9e1fa0",
+      "commit": "f9e1fa06821907da53f75417555bd3cbdd50c7d0",
+      "path": "data/catalog_seed.sqlite3",
+      "blob": "8ff73164239af21fc9ab833253da5f196dc854ae",
+      "bytes": 3575808,
+      "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+    }
+  ],
+  "files": {
+    "objects/pack/pack-db9cf576dde7d3f471f61d5df2f47d7392b34979.pack": {
+      "sha256": "d60e29fbf5743b6c2d6d486b175a160c1128e0e1d7693321e994e81ea352dbd6",
+      "bytes": 22067019
+    },
+    "objects/pack/pack-db9cf576dde7d3f471f61d5df2f47d7392b34979.idx": {
+      "sha256": "919d1bddfa79e944094403247e428c6e46717750250b8ee822dc5741c682d566",
+      "bytes": 4236
+    }
+  },
+  "contains": "Only selected public project commit/tree/blob objects: original source code, public catalog snapshots, fingerprints/profiles/reference truth. No official resource corpus, auth, private checkpoint or working DB."
+}

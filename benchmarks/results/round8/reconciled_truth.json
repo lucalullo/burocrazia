@@ -1,0 +1,385 @@
+{
+  "schema_version": 4,
+  "identity": {
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T13:15:31.255886+00:00"
+  },
+  "summary": {
+    "cases": 2,
+    "passed": 2,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "document_f1": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "useful_coverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 2,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": null
+    }
+  },
+  "cases": [
+    {
+      "id": "R066",
+      "group": "family:10",
+      "category": "family",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "reconciled_historical"
+    },
+    {
+      "id": "R068",
+      "group": "family:12",
+      "category": "family",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "label_status": "confirmed",
+      "representation": "reconciled_historical"
+    }
+  ],
+  "scope": "Only official_truth_confirmed registry rows enter this truth gate.",
+  "counts": {
+    "exact": 2,
+    "family": 0,
+    "reject": 0,
+    "wrong": 0,
+    "extraction_failed": 0
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "numerator": 0,
+      "denominator": 2
+    },
+    "5": {
+      "numerator": 0,
+      "denominator": 2
+    },
+    "10": {
+      "numerator": 0,
+      "denominator": 2
+    },
+    "25": {
+      "numerator": 0,
+      "denominator": 2
+    }
+  },
+  "by_transformation": {
+    "reconciled_historical": {
+      "cases": 2,
+      "passed": 2,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": null
+      }
+    }
+  },
+  "by_source": {
+    "unlabelled": {
+      "cases": 2,
+      "passed": 2,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": null
+      }
+    }
+  }
+}

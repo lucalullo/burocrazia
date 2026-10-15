@@ -1,0 +1,4983 @@
+{
+  "schema_version": 4,
+  "identity": {
+    "commit": "b0e24476db23bb479dadb7f2957d34419d02c9d0",
+    "runtime_sha256": "18433e4e471c2bd64ed3a30ec5c400785e0936b39c5952f7f4464df56253ce82",
+    "code_sha256": "b2ebeed5d2c7d374b3c45e8016ecc028f40e41b9978f400ea1e831dbf3d35479",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T13:14:53.134233+00:00"
+  },
+  "summary": {
+    "cases": 161,
+    "passed": 161,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "document_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "numerator": 80,
+        "denominator": 80,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 80,
+        "denominator": 80,
+        "value": 1.0
+      },
+      "family_f1": {
+        "numerator": 160,
+        "denominator": 160,
+        "value": 1.0
+      },
+      "exact_document_coverage": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "useful_coverage": {
+        "numerator": 80,
+        "denominator": 80,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 81,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 81,
+        "denominator": 81,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 80,
+        "value": 0.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 70,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 80,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 81
+      }
+    },
+    "latency_ms": {
+      "p50": 0.842,
+      "p95": 2.932,
+      "p99": 3.4238
+    }
+  },
+  "cases": [
+    {
+      "id": "FR01-P1",
+      "group": "family:1",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.986,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-P2",
+      "group": "family:1",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.852,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-P3",
+      "group": "family:1",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.81,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-P4",
+      "group": "family:1",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.814,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-P5",
+      "group": "family:1",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.805,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-N1",
+      "group": "family:1",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.648,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-N2",
+      "group": "family:1",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.047,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-N3",
+      "group": "family:1",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.932,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-N4",
+      "group": "family:1",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.058,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR01-N5",
+      "group": "family:1",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.708,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-P1",
+      "group": "family:2",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.859,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-P2",
+      "group": "family:2",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.853,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-P3",
+      "group": "family:2",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.851,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-P4",
+      "group": "family:2",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.856,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-P5",
+      "group": "family:2",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.842,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-N1",
+      "group": "family:2",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.672,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-N2",
+      "group": "family:2",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.047,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-N3",
+      "group": "family:2",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.955,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-N4",
+      "group": "family:2",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.336,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR02-N5",
+      "group": "family:2",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.742,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-P1",
+      "group": "family:3",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.82,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-P2",
+      "group": "family:3",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.806,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-P3",
+      "group": "family:3",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.803,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-P4",
+      "group": "family:3",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.907,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-P5",
+      "group": "family:3",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.846,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-N1",
+      "group": "family:3",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.731,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-N2",
+      "group": "family:3",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.049,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-N3",
+      "group": "family:3",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 3.221,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-N4",
+      "group": "family:3",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.297,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR03-N5",
+      "group": "family:3",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.689,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-P1",
+      "group": "family:4",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.807,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-P2",
+      "group": "family:4",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.783,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-P3",
+      "group": "family:4",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.792,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-P4",
+      "group": "family:4",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.779,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-P5",
+      "group": "family:4",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.79,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-N1",
+      "group": "family:4",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.612,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-N2",
+      "group": "family:4",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.044,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-N3",
+      "group": "family:4",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.88,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-N4",
+      "group": "family:4",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.264,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR04-N5",
+      "group": "family:4",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.665,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-P1",
+      "group": "family:5",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.851,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-P2",
+      "group": "family:5",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.84,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-P3",
+      "group": "family:5",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.838,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-P4",
+      "group": "family:5",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.833,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-P5",
+      "group": "family:5",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.846,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-N1",
+      "group": "family:5",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.67,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-N2",
+      "group": "family:5",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.049,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-N3",
+      "group": "family:5",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.83,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-N4",
+      "group": "family:5",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.316,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR05-N5",
+      "group": "family:5",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.744,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-P1",
+      "group": "family:6",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.785,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-P2",
+      "group": "family:6",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.778,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-P3",
+      "group": "family:6",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.792,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-P4",
+      "group": "family:6",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.772,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-P5",
+      "group": "family:6",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.778,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-N1",
+      "group": "family:6",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.61,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-N2",
+      "group": "family:6",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.043,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-N3",
+      "group": "family:6",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.82,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-N4",
+      "group": "family:6",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.066,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR06-N5",
+      "group": "family:6",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.667,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-P1",
+      "group": "family:7",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.898,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-P2",
+      "group": "family:7",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.879,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-P3",
+      "group": "family:7",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.88,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-P4",
+      "group": "family:7",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.864,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-P5",
+      "group": "family:7",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.871,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-N1",
+      "group": "family:7",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.71,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-N2",
+      "group": "family:7",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.045,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-N3",
+      "group": "family:7",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.886,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-N4",
+      "group": "family:7",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.349,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR07-N5",
+      "group": "family:7",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.772,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-P1",
+      "group": "family:8",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.842,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-P2",
+      "group": "family:8",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.851,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-P3",
+      "group": "family:8",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.82,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-P4",
+      "group": "family:8",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.805,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-P5",
+      "group": "family:8",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.815,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-N1",
+      "group": "family:8",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.658,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-N2",
+      "group": "family:8",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.044,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-N3",
+      "group": "family:8",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.932,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-N4",
+      "group": "family:8",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.147,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR08-N5",
+      "group": "family:8",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.732,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-P1",
+      "group": "family:9",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.92,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-P2",
+      "group": "family:9",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.905,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-P3",
+      "group": "family:9",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.909,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-P4",
+      "group": "family:9",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.327,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-P5",
+      "group": "family:9",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.944,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-N1",
+      "group": "family:9",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.723,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-N2",
+      "group": "family:9",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.048,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-N3",
+      "group": "family:9",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 3.045,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-N4",
+      "group": "family:9",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.359,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR09-N5",
+      "group": "family:9",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.853,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-P1",
+      "group": "family:10",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.162,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-P2",
+      "group": "family:10",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.119,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-P3",
+      "group": "family:10",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.13,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-P4",
+      "group": "family:10",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.91,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-P5",
+      "group": "family:10",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.783,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-N1",
+      "group": "family:10",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.635,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-N2",
+      "group": "family:10",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.045,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-N3",
+      "group": "family:10",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.899,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-N4",
+      "group": "family:10",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.064,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR10-N5",
+      "group": "family:10",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.672,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-P1",
+      "group": "family:11",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.806,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-P2",
+      "group": "family:11",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.768,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-P3",
+      "group": "family:11",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.736,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-P4",
+      "group": "family:11",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.74,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-P5",
+      "group": "family:11",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.735,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-N1",
+      "group": "family:11",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.606,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-N2",
+      "group": "family:11",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.041,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-N3",
+      "group": "family:11",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 2.929,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-N4",
+      "group": "family:11",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.075,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR11-N5",
+      "group": "family:11",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.684,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-P1",
+      "group": "family:12",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.904,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-P2",
+      "group": "family:12",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.882,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-P3",
+      "group": "family:12",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.865,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-P4",
+      "group": "family:12",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.87,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-P5",
+      "group": "family:12",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.983,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-N1",
+      "group": "family:12",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.761,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-N2",
+      "group": "family:12",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.052,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-N3",
+      "group": "family:12",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 3.041,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-N4",
+      "group": "family:12",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.26,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR12-N5",
+      "group": "family:12",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.09,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-P1",
+      "group": "family:13",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.186,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-P2",
+      "group": "family:13",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.12,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-P3",
+      "group": "family:13",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.164,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-P4",
+      "group": "family:13",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.11,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-P5",
+      "group": "family:13",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.213,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-N1",
+      "group": "family:13",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.644,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-N2",
+      "group": "family:13",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.051,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-N3",
+      "group": "family:13",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 4.344,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-N4",
+      "group": "family:13",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.321,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR13-N5",
+      "group": "family:13",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.865,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-P1",
+      "group": "family:14",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.844,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-P2",
+      "group": "family:14",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.787,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-P3",
+      "group": "family:14",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.741,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-P4",
+      "group": "family:14",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.703,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-P5",
+      "group": "family:14",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.72,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-N1",
+      "group": "family:14",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.604,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-N2",
+      "group": "family:14",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.05,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-N3",
+      "group": "family:14",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 3.178,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-N4",
+      "group": "family:14",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.183,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR14-N5",
+      "group": "family:14",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.653,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-P1",
+      "group": "family:15",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 15,
+        "entity": "Polizia Locale / Ente locale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.823,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-P2",
+      "group": "family:15",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 15,
+        "entity": "Polizia Locale / Ente locale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.811,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-P3",
+      "group": "family:15",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 15,
+        "entity": "Polizia Locale / Ente locale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.815,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-P4",
+      "group": "family:15",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 15,
+        "entity": "Polizia Locale / Ente locale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.885,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-P5",
+      "group": "family:15",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 15,
+        "entity": "Polizia Locale / Ente locale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.974,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-N1",
+      "group": "family:15",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.828,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-N2",
+      "group": "family:15",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.106,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-N3",
+      "group": "family:15",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 3.728,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-N4",
+      "group": "family:15",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.574,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR15-N5",
+      "group": "family:15",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.839,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-P1",
+      "group": "family:16",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 16,
+        "entity": "Regione / Ente regionale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.954,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-P2",
+      "group": "family:16",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 16,
+        "entity": "Regione / Ente regionale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.934,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-P3",
+      "group": "family:16",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 16,
+        "entity": "Regione / Ente regionale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.105,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-P4",
+      "group": "family:16",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 16,
+        "entity": "Regione / Ente regionale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.891,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-P5",
+      "group": "family:16",
+      "category": "family_positive",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 16,
+        "entity": "Regione / Ente regionale",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.905,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-N1",
+      "group": "family:16",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.796,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-N2",
+      "group": "family:16",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.05,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-N3",
+      "group": "family:16",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 3.031,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-N4",
+      "group": "family:16",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 1.643,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "FR16-N5",
+      "group": "family:16",
+      "category": "family_negative",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.847,
+      "label_status": "historical_only",
+      "truth_status": "historical_expected_preserved",
+      "representation": "synthetic_historical"
+    },
+    {
+      "id": "R061",
+      "group": "family:4",
+      "category": "family",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "",
+      "conflicts": [],
+      "matching_ms": 0.703,
+      "label_status": "ambiguous",
+      "truth_status": "ambiguous",
+      "representation": "synthetic_historical"
+    }
+  ],
+  "scope": "Original locked expectations unchanged, historical diagnostic and safety contract; no unsupported labels promoted to confirmed.",
+  "counts": {
+    "exact": 0,
+    "family": 80,
+    "reject": 81,
+    "wrong": 0,
+    "extraction_failed": 0
+  },
+  "candidate_recall_at_k": {
+    "1": {
+      "numerator": 0,
+      "denominator": 161
+    },
+    "5": {
+      "numerator": 0,
+      "denominator": 161
+    },
+    "10": {
+      "numerator": 0,
+      "denominator": 161
+    },
+    "25": {
+      "numerator": 0,
+      "denominator": 161
+    }
+  },
+  "by_transformation": {
+    "synthetic_historical": {
+      "cases": 161,
+      "passed": 161,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_f1": {
+          "numerator": 160,
+          "denominator": 160,
+          "value": 1.0
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 81,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 81,
+          "denominator": 81,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 80,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 80,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 81
+        }
+      },
+      "latency_ms": {
+        "p50": 0.842,
+        "p95": 2.932,
+        "p99": 3.4238
+      }
+    }
+  },
+  "by_source": {
+    "unlabelled": {
+      "cases": 161,
+      "passed": 161,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_f1": {
+          "numerator": 160,
+          "denominator": 160,
+          "value": 1.0
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 81,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 81,
+          "denominator": 81,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 80,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 80,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 81
+        }
+      },
+      "latency_ms": {
+        "p50": 0.842,
+        "p95": 2.932,
+        "p99": 3.4238
+      }
+    }
+  }
+}

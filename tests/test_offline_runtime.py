@@ -18,7 +18,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_first_start_preserves_entire_catalog_and_second_start_preserves_local_edits(tmp_path):
     path = prepare_database(tmp_path / "catalog.db")
     with sqlite3.connect(path) as db:
-        assert db.execute("SELECT count(*) FROM documents").fetchone()[0] == 399
+        manifest=json.loads((ROOT/'data/catalog_manifest.json').read_text(encoding='utf-8'))
+        assert db.execute("SELECT count(*) FROM documents").fetchone()[0] == manifest['tables']['documents']
         assert db.execute("SELECT count(*) FROM entities").fetchone()[0] == 2499
         assert db.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
         assert not db.execute("PRAGMA foreign_key_check").fetchall()

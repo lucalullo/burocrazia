@@ -1,0 +1,118 @@
+{
+  "seed": 20261011,
+  "selection": "SHA(document_id) order within source; fixed before representations are evaluated.",
+  "canonical_document_ids": [
+    886,
+    1181,
+    286,
+    290,
+    549,
+    559,
+    586,
+    591,
+    152,
+    149,
+    439,
+    471,
+    601,
+    609
+  ],
+  "transforms": [
+    [
+      "raster_150",
+      {
+        "dpi": 150
+      }
+    ],
+    [
+      "raster_200",
+      {
+        "dpi": 200
+      }
+    ],
+    [
+      "grayscale",
+      {
+        "dpi": 150,
+        "gray": true
+      }
+    ],
+    [
+      "jpeg_60",
+      {
+        "dpi": 150,
+        "quality": 60
+      }
+    ],
+    [
+      "jpeg_75",
+      {
+        "dpi": 150,
+        "quality": 75
+      }
+    ],
+    [
+      "jpeg_90",
+      {
+        "dpi": 150,
+        "quality": 90
+      }
+    ],
+    [
+      "blur",
+      {
+        "dpi": 150,
+        "blur": 0.65
+      }
+    ],
+    [
+      "low_contrast",
+      {
+        "dpi": 150,
+        "contrast": 0.65
+      }
+    ],
+    [
+      "crop_margins",
+      {
+        "dpi": 150,
+        "crop": 0.01
+      }
+    ],
+    [
+      "rotate_90",
+      {
+        "dpi": 150,
+        "angle": 90
+      }
+    ],
+    [
+      "rotate_180",
+      {
+        "dpi": 150,
+        "angle": 180
+      }
+    ],
+    [
+      "rotate_270",
+      {
+        "dpi": 150,
+        "angle": 270
+      }
+    ],
+    [
+      "resize_down_up",
+      {
+        "dpi": 150,
+        "resize": 0.7
+      }
+    ],
+    [
+      "first_page_only",
+      {
+        "first_page_only": true
+      }
+    ]
+  ],
+  "scope": "First canonical page transformed; representation holdout only. No official file/image is redistributed."
+}

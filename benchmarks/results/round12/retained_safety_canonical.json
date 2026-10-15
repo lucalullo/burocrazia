@@ -1,0 +1,42 @@
+{
+  "canonical_counts": {
+    "exact": 980,
+    "extraction_failed": 0,
+    "family": 0,
+    "reject": 0,
+    "wrong": 0
+  },
+  "canonical_sha256": "8b2e3a800c97bf20a3253cd9becf0ac11e039b67abef7509a53b968ed10ceef3",
+  "false_accepts": 0,
+  "fingerprint_sha256": "064b69aea6180ad1a696dc32a65cc3597a5540fefc136a0f8f77e4b665ed3152",
+  "historical_no": 241,
+  "historical_safety_sha256": "bbb7d35389ef962176b0ff8b50fc75b1255ccf38bb3a3fb9e91cb5fd52697971",
+  "old_five_passed": true,
+  "post_unknown_rerun": false,
+  "r061": {
+    "document_id": null,
+    "entity": null,
+    "family_id": null,
+    "match_type": "NO_MATCH",
+    "version": null
+  },
+  "round8_two": {
+    "EX02MISSINGREV": {
+      "document_id": null,
+      "entity": null,
+      "family_id": null,
+      "match_type": "NO_MATCH",
+      "version": null
+    },
+    "EX03MISSINGREV": {
+      "document_id": null,
+      "entity": null,
+      "family_id": null,
+      "match_type": "NO_MATCH",
+      "version": null
+    }
+  },
+  "runtime_sha256": "386a2a837feae25a974b0ca6f5044c05208651d0ed79ceafb634f2ebcdef8df2",
+  "scope": "No post-unknown rerun: coverage failed before unknown execution. Prior measured evidence retained only because catalog, runtime and fingerprint bytes are identical. Infrastructure code hash differs and is reported separately.",
+  "status": "retained_round11_unchanged_runtime_and_data"
+}

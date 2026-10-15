@@ -1,0 +1,1424 @@
+{
+  "schema_version": 1,
+  "target_positives": 150,
+  "downloaded_positives": 150,
+  "downloaded_negatives": 12,
+  "source_counts": {
+    "mimit": 23,
+    "mef": 1,
+    "anac": 1,
+    "inail": 27,
+    "funzione_pubblica": 9,
+    "giustizia": 30,
+    "inl": 30,
+    "lavoro": 29
+  },
+  "source_concentration": 0.2,
+  "attempts": [
+    {
+      "url": "https://www.mimit.gov.it/images/stories/recuperi/Comunicazioni/DM-2003-05-28.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "1039ecbcc90632337c65a5d6913688fcf4a3c4ebec34d63d2d8aa805e2f60bde"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/dm_19_11_77.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "1cb487354c6b35ba6aa8bb0035fce4b73209f7d2c0701f392de33149d6cb5927"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/direttiva_2022-2380_3.3.a.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "6732d48327fb28c12767b6ed845c0868f05b45cad2b16e7253a3af972bda41f0"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/compatibilità_elettromagnetica/All.1_DECRETO_Int._ON_EMC__EMC_Def.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 41: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/normativa/comunicazioni/Decreto_Kiwa_ON_EMC.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "d4c61169d4203dc3f765f729ded667b197a641b7b5968bbe8f16d7aae8ac2931"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Decreto_IMQ_ON_EMC.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "6cba57246d51fee45e07974ac4fa7a839d7c5b2f367bb6ccdff055c00658a7ca"
+    },
+    {
+      "url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Tutorial_PROTAUTO_09.04.2026.pdf",
+      "source_key": "mef",
+      "status": "downloaded",
+      "sha256": "a3505b5615edc39a203e5491896034ffde7bf018af5b952e3c03bd95eaeba148"
+    },
+    {
+      "url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/Guida.pdf",
+      "source_key": "mef",
+      "status": "downloaded",
+      "sha256": "9fb8dcc458dfa0aeec498c69188d35fbe0ae9086a4f9fec9cbb22e29fb3ce271"
+    },
+    {
+      "url": "https://www.anticorruzione.it/documents/91439/123100/Comunicato+del+Presidente+del+27+aprile+2017.pdf/db614e5d-1573-8077-999c-b06d6e36af4d?t=1585652106983",
+      "source_key": "anac",
+      "status": "downloaded",
+      "sha256": "22155ee991988bad873592753a271d27c0e26e7ed3093990d1162f9c7291984d"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-prevenzione/2025/07/20250716-Manuale%20Gestione%20eventi%20lesivi_v3.0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "6e4598c5c23fd3bebc7b8b09cf5b8e920bc9c459e767b622105e1b3c093700de"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/02/20250206-Manuale%20Dati%20retributivi%20lavoratore%20a%20tempo%20parziale_V2.1.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "3be60198cf40ecf76305d186ce42e4f727a553ad7ab646fa06beaedcf155eca3"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/02/20250206-Manuale%20Dati%20retributivi%20lavoratore%20a%20tempo%20pieno_V2.1.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "ceb9fe5e5782b44fafe0ba6eb30e4aa36d5a84a8da48f66e562de63799819426"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/07/20250716-Manuale%20Infortunio%20durante%20spostamento%20in%20attualita%20di%20lavoro%20o%20itinere_V3.0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "c4f4522088e1fde1e568aa9c4e39e7441102d34d51af92eb598cd1dc26527766"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5021916/74BIS_modello.pdf/d7ca3dcc-9211-353d-e802-e7e04b2a3f03?t=1764949456304",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "HTTP 403; nessun aggiramento."
+    },
+    {
+      "url": "https://www.anticorruzione.it/documents/91439/127902/A.1+Modulo+richiesta+accesso+civico+al+RPCT.pdf/38456e1f-e009-e5c1-d782-4f4c01a38268?t=1739631415153",
+      "source_key": "anac",
+      "status": "downloaded",
+      "sha256": "a8751783340746b544ee1b6e968f5e29999c343c68649f1526163664e2836496"
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/mg5joyoq/5-modulo_notificasanitaria_definitivo_4_aprile_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "326c6f31fab904c04fd150a32e45eab3e0528da18cc5b39db823caa88e2119d5"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriSostituzione_tutore_del_minore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "8546d9d4dc01b2af66de717f44ee880dcc947c66be4dd740c6cbd846389d6a84"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/12/All%203%20Modulo%20Domanda%20Autorità%20di%20sistema%20portuale%20Fondo%20amianto%20porti%202021%202022%20CORRETTO.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 86: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-3-Dichiarazione-sostitutiva-per-marca-da-bollo_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "d58f9ff87c04788c3936728cf4130aae09ece230cf427f24bb71a701909b41d3"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/usa-ci263-it-usa-1/IT/CI263_IT_USA1.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Indennit%C3%A0%20di%20malattia%20per%20i%20lavoratori%20del%20trasporto%20pubblico%20locale%2C%20anno%20di%20competenza%202021/COMUNICATO-TPL-2022.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "a3cdfc80b8e696f3d7d30433f763492820a3842968fab9da7a115a116efccfe3"
+    },
+    {
+      "url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/mb01.pdf",
+      "source_key": "mef",
+      "status": "downloaded",
+      "sha256": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_EQUIPOLLENZA.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "d9e5841c2ae49f80111a52bb4385e2ab45ae19ab27217ecdf277c0c478e38ea1"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9708410/AGEDC001_46523_2026_3103_Modello.pdf/cbffc77a-ffcd-c40e-0e03-a849d7284824?t=1770385367548",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/zq4fei4x/modulo_variazioni_in_comunicazione_strutture_ricettive_definitivo_4_aprile_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "63f0843db58770596a7126a43d42990a0b053baa879a2c48c5ea778b15c61201"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriRinuncia_incarico_tutore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "f32d2f58690d8ee735e1f14be4588b07517b5928789fc64ef388e07a69b2f58d"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2017/01/Mod%20retribuzioni%20settore%20navigazione%20-%20certificati%20diversi%20nave%20e%20ruolo%20unico.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "75252dc3f8cc56636af2d1ef93ebf407b4a6330a2d84ec8ef305c9d1cebbff28"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-29-2-Istanza-duplicato-formato-word-patentino-generatori-vapore_new-1.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "23b5650a730c18fea32b753f0640c467d705acf62e0e62a5061c9c3d42937e0b"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/_ci520/IT/CI520_Red_Est_Ita.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/temi-e-priorita-salute-e-sicurezza/focus/ma-dichiarazione-sostitutiva-marca-da-bollo.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "5b824fe2d9115e8347df14b24bc36bb082fd202b779a0d756dbf428e32fd47ed"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Allegato_4_-_Piano_di_protezione.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a1c336c5aea33b7f654eede8404cd94f819122e4e7ea4cb111f2c0481d62450e"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251540/Modello+F24+Accise+nuovo_Modello+F24+accise.pdf/5408f260-4c38-d72f-5aeb-64d177e24844?t=1372413037711",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/m0zndk12/2-modulo_strutture_alberghiere_definitivo_4_aprile_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "d3acecd1e2771ef7f2da366b15b37c5b82b38faff68fc16e604de813120e7a8b"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/MinoriAutorizzazione_per_accettare_risarcimento_danni.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "101778c0831f48c763f5bd60f4d01a785e15d69634fc66b9ed78ec19c58beae9"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/Modulo%20domanda%20Agricoltura.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "34d98305780f068aeb7797f2ce7ea59bf0215a1d9d961ad132e19a270de16b23"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-14-Istanza-costituzione-collegio-conciliazione-arbitrato_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "61c9fd52d0af69bd1fdabed958d730ac648e537abc3ce1fb4e0b9337d5f76187"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap125/IT/AP125_DomRiscRicongPeriodiContributivi.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_DUPLICATO.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "3500858fcbc4610bbf3973b8871a81fcb910b440723ecb9f6507a1c615b9b568"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/278453/Modello+AA5_6_AA5_mod_giugno.pdf/eab48915-6538-18c1-7c19-2cdb1aa7081b?t=1779097518533",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/ps2b15sv/modulo_scia_variazioni_in_comunicazione_agenzie_di_viaggi_definitivo_4_4_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "bb6666c5dcaa9395a377bb5e06ed2d056203b60dea1827e4f9c076a500852620"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CuratelaModello_delega.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "5cd38006dbf1bd999999bb38de390f2c45ec2f9f5fbebe44abb721e4ea3bdff1"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/10/mod_quadro_t2,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "b83ab6c583a7430698bb7bd73ea86d0038992083e9093f8d66766f120be0e942"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-10-Istanza-autorizzazione-minori-lavoro-spettacolo.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "186767f16e15418dad3db924cb12c0d6e02dacfa6b395270282783ae4f83dc75"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/e118/IT/E_118.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/CIGS%20-%20presentazione%20istanze%20imprese%20operanti%20in%20aree%20di%20crisi%20industriale%20complessa/AS-10-modulo-istanza-CIGS.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "34f27f71d8c2559e4bb3ffab3a5bc051390a1556ab94e32a46afb90b1c9c0f3b"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/allegati/documenti/Allegato_1_Convenzione_17-02-2020_V01.docx",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "9b2c0ad3cb6881bc7b6ca373fb101dea7bd58927c64525ceb6ec430f20158039"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_modello_2026.pdf/79852270-fa9d-6d73-e84e-99afe4015b1f?t=1772183715319",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/cb2pwxar/3-modulo_schedaanagrafica_definitivo_4_aprile_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "1acdda1da4d40538bcde88afc057bf49e5059e4f96ceec83fc30a9ddb0665a93"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/19adsestinguerelibrettodirisparmio_2.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "1e282e799088d39e797b719ff08f97395156affaa2172d2c728eb17cca4fad84"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2021/11/Contributi%20associativi%20Facsimile%20istanza%20stipula%20convenzione%20legge%20311-1973%20(1).pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "c87769b343ef86573ffdc4a3e482a7761071c007530b2ee7e08730e042f123bc"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-21-1-Istanza-tentativo-conciliazione-lavoratore.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "4f0d44daf741c2d52a9e9ddde94c13c64632eea845bacf06abdf5f33558a7733"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ci536/IT/CI536_MD-IT_213_Raport_medical.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/temi-e-priorita-previdenza/focus/enasarco-rap-l-78-02082022.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "9b36d3596cf26d7182beb342ed0de0d8a0a9bd9a4d9eb7f74d3386954ba8c390"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/All._a_Mod_5_-_Modelli_relativi_a_procedura_rev_13-3-25.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "cac1d1083881e04a663f049e4e0b236cf7ed5d030d8423238acba5d51e70ee95"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/2635368/2020+08+06+istanzaaccessodocumentale.pdf/0a68088d-cbc8-c7a0-57cb-8e825d5dc595",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/t0fjbe5g/4-modulo_comunicazione_variazioni-_scheda_anagrafica_definitivo_4aprile2024_post_osservazioni.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "c51858d799c129b83846393e38f50a6d2b9401042f120875ab884ef5b344dea3"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Ricorso_per_Separazione_consensuale.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "70b55bea09eb7333446d65a27fdf6c513ed1615768ff1a75b3854a8e8b622bf4"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/Mod%20autocertificazione%20riduzione%20edile.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "9ec33f4b32981f95765d11690b12d500fc07eafb7b6f6b82721bf0bec99e3fa2"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-21-Istanza-tentativo-conciliazione-datore-lavoro.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "0e5325917cb7b3fd852b825613851f0e8cb97beff20ba182d91f5da5c6a8bbab"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/sc63/IT/SC63_AbServTelem_Ass.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/ISEE/ISEE-DSU-Mini.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "9a91eac602449884f8e9027f6bfe00b82b7edbbcfa7dbbe03753e38c37b00dc6"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Allegato_n_2_ex_9.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "71af1fbe106836510bf74262b1bb0b22c3ff9668392739d724656b02394cd9dd"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9771798/770_mod_2026.pdf/e4585379-7a3a-7bb4-a131-2451a078bf95?t=1772197095342",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/5dmbpxqh/modulo_scia_agenzie_di_viaggio_definitivo_4_aprile_2024-2.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "65913c507dfb5809cf12e2d0415ac955dfe407b70feaf2dae110473593bb01cb"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Richiesta_di_applicazione_del_prezzo_valore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "d70136414f086dccef2633a58ee53802c52a44ed68f2c127b93bde45c0c855ae"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/mod_101_RA_Nav_12012026.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "11f2bc95eeb3875dadfb8beec1881b0be49339b85cf0eda226ddb547ceb7541c"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-2-R-riesame-accesso-civico-generalizzato_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "a0e93e8dabb76fa5693f5e1f9a831242c27dbadfc3f5c95c6027ba9c18f15e78"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap160/IT/AP160_AssegnoStraordinario.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Medici%20autorizzati%2C%20iscrizione%20elenco/MA-Dichiarazione-sostitutiva-per-marca-da-bollo.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "2322cc151988b78b2e9e6c547f60ab8f4127b5b7cf1e5b558f3f88d28ddca8f2"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/specifiche_tecniche/allegato_1_st_763-27_versione_1.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "4963c2533964891556c499345ee0b49c4e423cecaee2cf61dbb217d5ff564dad"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8711494/Modello+Successione.pdf/88520cc9-d27e-71f2-de07-8cd6f2a2953a?t=1739469952199",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/shhldftz/1-modulo-strutture-aria-aperta_definitivo_4_aprile_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "1e654659cb25b0a8f8f0541feba52434f5632572be105f1d5912fc87be28c98d"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaAutorizzazione_vendita_bene_immobile.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "107dbd40cef5fb008c00bdcbaec7af8b1db7bdf945cc86c58881c398dac1fa5b"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/02/OT23%202022%20All%201%20Modello%20aggiornato%204-2-2022.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "b60b4e88d5c6a9dcf6beed1c8c7175d2a286e01ed79b7d6dc8c4219d79502144"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-7-Istanza-autorizzazione-adibizione-minori-lavorazioni-turni-scacchi.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "b9cacd95a8a91481541edbfcd0790b9564d908d45a38f88a8b6908fb3d78a3d0"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/e303-4/IT/E_303_4.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20nuclei%20familiari/minori-accolti-Modello-3-copertura-sanitaria.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "edd7fb09910e2e30e33d938a7a1be842a8e619efe79bc43aca80d60cd0af528f"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/specifiche_tecniche/st_763-1_allegato_1_versione_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "0f95afb9a7085977b4963ff3fea7218e53ffd275d36a61ed7b10bfd59243c8b7"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/204723/modello+2T+-+semplificato.pdf/c113cdad-b9f7-35e9-3289-9ff976357680?t=1735911991559",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://www.funzionepubblica.gov.it/media/ounfq1oo/modulo_scia_strutture_extra_alberghiere_definitivo_4_4_2024.pdf",
+      "source_key": "funzione_pubblica",
+      "status": "downloaded",
+      "sha256": "ab64e018f11b95b47e77be4dc9bcf118f915bc5d1253d243de428d54994fae60"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoAutocertificazione_esenzione.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "c78bbc22f636724faf309ce3c01ced46fbf08cb6704f8c51991873618c30c4de"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2021/09/mod_190_E_2021(1).pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "8028ea9dc419f6a1a8b2c2e2d2c8214f125ec7d9f1e11daf51b9acf41ae038d3"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/INL-32-Modulo-richiesta-colloquio-online.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "132ae21dfe283ecc9bcf4323a94c5b540bd6f09e64fa9c7645b6fe20f1f96f26"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/aa10/IT/AA10_Rich_delega_genitori_ID.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/8%5E%20procedura%20di%20salvaguardia/LS-6-Mancato-accoglimento-istanza.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "9f1375f7ff5af27c2f0372843aebda69cd284a303cb74d92bc9647a7076682a4"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/rete_satellitare_autocertificazione.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "6acd2c1dbd07f118b67b5ab81268f561282aa86351c827706c2779b320b31785"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/344123/Provvedimento+del+6+novembre+consolidato+designazione_designazione_modello_23112015.pdf/7e2ebb9b-db0e-2691-a0e2-ff6abb28d4db?t=1448286157021",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Registro_StampaRichiesta_iscrizione_registro_stampa.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "c59438c2b27f4c078db7a017503ab7e395e866a5b03e96f5684a1ae772662a7a"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084730,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "d7d0e50db4862f368c7ce38e592377bfbc155e6378e3481992b3e707ed7289bb"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/INL-1.4-Autodichiarazione-Marca-da-Bollo-INL_.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "36ea0ea98d7d644c03754d68ec5b190f9b2eb0ba13316be8d75e922b6d3eb0a1"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap112/IT/AP112_DomandaAssegnoStraodinarioFondoSolidarietaTrento.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/temi-e-priorita-previdenza/focus/epap-plur-l-72-30112022.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "ebbb9df31264e56d39df7e1f433ad6e74ad6bdd0952922d7e374af8360d24e60"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Autorizzazioni_temporanee_uso_frequenze/RICHIESTA_USO_TEMPORANEO_SRD_BANDA_COLLETTIVA_RADIOMICROFONI_E_DECT_2025.docx",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "945c34d67069f5b7d99451c08608c7edbbd373d77ba956bd4b3fde191013e969"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/3141732/ISD_mod_2021.pdf/9c90d135-bb9b-cce5-1885-0db171263d19?t=1764949995351",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Modulo_antiriciclaggio_persona_giuridica.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "d96a57ef82feb76a07f988150e7bd1b5c5413fcd4443889f3a65c266e634658d"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2022/05/Riduzione%20L147-2013%20primo%20biennio%20Agricoltura-Modulo%20di%20domanda-tedesco.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "9eec08c288dc2192a75acde42c2ac7be408291e92deadadd61ca0e0f343fec84"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-20-Istanza-tentativo-conciliazione-licenziamento-giustificato-motivo-oggettivo.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "1776f85b54be085ed9658486048487ad9e0a638ca2447eb9ad507f940dd13c6b"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/sr61/IT/SR61_ANF_NN.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/delibera_ndeg_dg1942019-3.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "54d147285670a8ad344aab8a944faaa693d07346e404918cdf9db9d74e3e68b6"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/specifiche_tecniche/ST_763-4_Allegato_3_versione_1.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "4642445578ec9661f1d427d153d778f17b1b5d3911afeb33c56ac76379033c37"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/6072789/Comunicazione+cessazione+depositari_mod.pdf/e266d943-2cb0-e2e0-7632-9d9b458bce48?t=1742281742445",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/mod_r__stampato_permesso_di_colloquio_richiesto_da_interessato.docx",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "b622a65464462b99a073fd9a04f80fe392f236fe1c5ba00d9e2389d51b118cc9"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/12/Questionario-Autovalutazione-OT24-edit,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "a7e5ea7e8edbd17610db49f412c5008703a8a87beb254dcbac09e66031a5a691"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/03/Modulo-INL-3-24032025-Istanza-attestato-conducente-extracomunitari_agg-edit3.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "bbada0476aa7ff6b13245ba99a9a2bcc29b7e5d07ee4d31711add7f8e4934343"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap15/IT/AP15_Mod_Red.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Indennit%C3%A0%20in%20favore%20dei%20lavoratori%20del%20call-center%20anno%202019/AS-6-1-call-center-indennita-2019-modello-autodichiarazione-sositutiva.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "d548ec20a5f697653a1d87412359f66fb93815fc32ac14826fbf5983536fdc6b"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_aeronautico/Richiesta_duplicato_certificato_RTFA_rev3.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "f0ef8c99cc58f16df05846fc333b2e8ccd728c08e2b823a0fc6775317fc62f3f"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/236326/8_Ric_rimb_TV_Energia_mod+%283%29.pdf/5cfa8636-073b-9848-6a2b-fc8efabef2cd?t=1564763954791",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaRinuncia_eredit.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "342f59bb13e867a724eb07309ea0ae845a49f4351b7a69a8385a6859240fd152"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/ammtrasparente/documenti/diritto-di-accesso/Mod.%20AC%20potere%20sost%20Rpct%20Reader.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "robots: percorso non consentito."
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-13-Istanza-autorizzazione-frazionamento-riposo-settimanale-lavoratori-spettacolo.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "98c6c45ab4f12998e49df424371ce8694abb032adf609d44f7dbde98bf1e1eb8"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ci528/IT/CI528_IT-MD_213_Perizia_medica.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Delega%20richiesta%20CIGS/Delega-CIGS.PDF",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "d7074232915c277a461cfe8b9cb0a4375040e936cb6ca86f170913760fa6bc14"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/Allegato__6.1.3_-Richiesta_di_cancellazione_MMSI_per_Unità_navali_gestite_da_Accounting_Autority_rev_3.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 84: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9771542/EnC+Modello+2026.pdf/30e8d03d-bcf1-3ec1-cb41-881399cb4bc0?t=1780652478514",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Atto_Notorio_per_uso_Matrimonio_1.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "9d0fcdda92f48c1e09fec4b32312194e3a8d828cc94ec8c99deaf9990843e7a1"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/ucm_096364,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "7e5377fa8c4a9e30f5ccafec3706409524feed2ce175daf7e6a509db4263a874"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-19-Istanza-superamento-durata-contratto-tempo-determinato_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "d39825bd81956a671ae7038f2b4de262523327dca619df308a9d1a6c4e3c3ab0"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/gp07_mut/IT/GP07_Mut_LiquidazioneNF.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Commissioni%20di%20certificazione%2C%20iscrizione%20all%27albo/Domanda-di-iscrizione-albo-commissioni-certificazione.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "653c0d8f9a40249051a73c1aba3b0cf23fc0b40bff6b1d3cc847cc237761f4f0"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/rete_satellitare_autocerti_camera_commercio.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "96de718f2dfd119ab26bfd334fc88e2cebc12a5633fdbff14259d4b14dcc1883"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/244484/Modello+INTRA+13_Intra_13+modello.pdf/3f583244-6015-8126-fc2b-8f1ec0eb626d?t=1318512216972",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/MinoriAutorizzazione_vendita_immobili.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "50dcc9c4f13e66dadf9b1b764015b73e198433241cbc4b51815b509753e08247"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_portstg_115205,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "cab5cd9514a8b49da68dc3b6817802f58b7a8f1792b9f3eba7cce7c74df6de1a"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-16-Istanza-pagamento-indennita-soccorso-alpino-speleologico_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "01a067afdd20a952130d6a1b09b2394e12359ece5394757083ab9c013c2d78f2"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/mv54/IT/MV54_RichiestaAccessoCivicoGenerico.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20Enti%20e%20Associazioni/Minori-accolti-ALLEGATO-5-2019.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "31db6c78ce3720ae4b8f9ded1dfbbfd4247888eebbcc7b8bb26fa4188ffc4e0d"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_RINNOVO_GMDSS.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "c9b79bd50e8f685e31baed6055f5d406a697c037efe0b8bf61ce452d1d5b1fe4"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/2707545/deposito_titoli_mod.pdf/dba2fdcb-ea00-6a4c-f410-9a638bf6e0d4?t=1742281098998",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriAutorizzazione_acquisto_immobili.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "f05ef8138d7142771238e70389a5007c8659ae5a4f3a78072637c2f7a8097478"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/07/allegato-1-modello-OT23-2027.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "3d58a4ca76b1ffe30252943a7ebcf4770d4d8c36be5bb5f8c16a09b216b3ef42"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/05/Modello-comunicazione-art.-26-comma-7-bis-D.Lgs_.-n.-151-2015-2.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/jersey-ci103-i-g-b-4-r-a-105/IT/CI103_IGB4_ra105.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Medici%20autorizzati%2C%20esame%20abilitazione%20per%20iscrizione%20elenco/Modulo-domanda-esame-abilitazione-iscrizione-elenco-medici-autorizzati.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "82b2c2fecd772d85e3ddcd06be2b7242761c459c4822001d0ed36037028173d6"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/Allegato__7.2_-_Istanza_MMSI_per_stazione_costiera_gestite_da_Società_rev._2.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 95: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/251039/Modello+F24+Semplificato+nuovo_F24+semplificato_mod.pdf/d9a07dd2-cb18-36b6-ecee-b648087604a6?t=1372415501789",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/MinoriAutorizzazione_acquisto_immobili.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "b67a56e3206b660e9a628c1643d7bfc4691a48a3cb5f00419aee5232710160e7"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/ammtrasparente/documenti/diritto-di-accesso/Mod.%20Ad-reader.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "robots: percorso non consentito."
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "0b8f4336f6f19609a078eaa3716e96e1318208cc45bd24be1f6c66271e5a500c"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/5%20per%20mille%2C%20richiesta%20di%20reiscrizione/Modello-rendiconto-5-per-mille.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "330c173752061da425b8f457008a0379b8aa342360e1676734dbf53cf22eed89"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Allegato_3_-_Modello_di_condivisione.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "f9641392e96898dd8ff2e61ee07bf1146f746cf6a02fdc24c484e8454f4df5af"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/281010/Modello+opzione+Iva++contratti+locazione_modello_Com_opzioneIVA2.pdf/5fded6f5-fbec-94d8-13b9-97fc9aba2a2b?t=1375113247584",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriAccettare_eredit_con_beneficio_inventario.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "652d226bfd4d4c56cdbdd5cec67ed212f55c69968a6a42027358cb4fb5ffbee2"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2017/04/ModB626-2_reader,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "310fc3b6cdc70ed3899ec2081cd4bdb12406524015cd12e2277848ae91cce6c6"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/INL-29-Modulo-istanza-ammissione-esami-conduttori-generatori-vapore-16082022_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "c613a0b82f6bca2f3ec87ec89edf83764c16e7352ca6d672bbe7d853607cc84c"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap111/IT/AP111_LiquidazioneUnaTantumSportAss.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/temi-e-priorita-salute-e-sicurezza/focus/modulo-domanda-iscrizione-elenco-medici-autorizzati.pdf-0",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "f3aae3df0be20874b6561c664b3a6c2a50a944f7299d99d43f8f4a278c890223"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/allegati/documenti/Allegato_3_Proposta_Progettuale_17-02-2020_V01.docx",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "99e5642e1d8bf8f876d3f612b7a4e67cbc8e2a30bb04303792f24af6e2e6ece4"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9874755/CIM+ZES+Agricola+mod.pdf/e72fd115-a5ef-5385-81a4-734c29806527?t=1774444886545",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Ricorso_per_ammortamento_titoli.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "1af6ae9b6f5441c89bda4166989976aa05365c16e299cb67cbac4ba5334cd63e"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/mod-abilitazione-durc-2021,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "dacf3ebd26714e040cb0f13e413aea13067ed2d309c27c1d76cdd60e7deb15fd"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-22-Deferimento-via-arbitrale-controversia-a-commissione-di-conciliazione.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "dfdbf73bd878b05d3d103e91bd7072b5ea119a4ed49561f506b0b67b520007dd"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/tf030/IT/TF030_previdenza_InadelLiquidazioneIndennita.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Esperti%20qualificati%2C%20iscrizione%20elenco/EQ-Dichiarazione-sostitutiva-per-marca-da-bollo.pdf",
+      "source_key": "lavoro",
+      "status": "duplicate_content",
+      "sha256": "2322cc151988b78b2e9e6c547f60ab8f4127b5b7cf1e5b558f3f88d28ddca8f2"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/allegati/incentivi/5g/Allegato_A_bozzaFideiussione.docx",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "6492162910e1cee28af84df2de3530de389b3216e01599a87735dc21add6b570"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/244265/Modello+Iva+26_IVA_26_mod+DEF.pdf/34e9118a-c124-07ef-0d6f-af281961525e?t=1291732977260",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CuratelaDichiarazione_di_assenso_alla_nomina_curatore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "d381cc78680785454db4f4c541a03b838113b025c782dcc391f657af9fb4999c"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/Modulo%20D-DichiarazioneCumulo_ISI%20agricoltura2016.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "566cf9c7d6151f1eb98f436ce67c958ba1470f446066c2d8bdbaf245e58c2479"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-25-Istanza-certificazione-appalto-subappalto-ambienti-confinati.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "bdc9d9394c49dbaba53c2236a45c7a6b6bf79c91cb5848028a8c9472eac167f9"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/usa-ci264-us-italy-1/IT/CI264_USA_IT1.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20nuclei%20familiari/minori-accolti-Modello-1-domanda.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "4b68f6c2c77c827adaeb332310f49cb19843c113268c264b59b2e511161f2e82"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/specifiche_tecniche/ST_763-4_allegato_1_versione_13.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "f03737432ea0e8e054897837598e92ab8bee82f16f618a0b23797ff14b24236c"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9354272/730+opposizione+spese+sanitarie_2026.pdf/d1ee3400-6c69-8b92-d441-8880b0531f15?t=1765980195305",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaAutorizzazione_incassare_somme.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "896400a261b6e556b70c6d5dcf358ccea88b102cabd74bf0876fee82d422e46e"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2025/12/20SM%202026%20All%202%20Modello%2020SM%202026.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "1c282ac92ad4b860b6a17d9385d52a47042576f82d1e2d593aa9267ebed8265e"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-21-2-Istanza-tentativo-conciliazione-congiunta.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "75f4a5bc660b2bf1fbe185ec8492c26aee143e384cebd11bf9fb5a70c04dac7f"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/sr192/IT/SR192_DomAss_IntSalar_FondiSolid.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/ISEE/Istruzioni-alla-compilazione.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "c4a7ed3679f1509e15ff14cfed12329dce1200d8ee8ac99d4007ff28ce510a4a"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/specifiche_tecniche/ST_763-23_Allegato_1_versione_1.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "c0987d92220c7af1cddf84987ce485de5eb0e6ebcd9079a19a28029c4474555a"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/294032/Modello+Iva+presentazione+garanzia_Modello+Cauzioni.pdf/a963ee06-1af5-1d78-7a7d-ab3f74efa392?t=1435329942418",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriModello_delega.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "8b3245d9e7f83415f9249ade8b1942726513e186d856d5d8168504db03aa0c07"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-8-Istanza-autorizzazione-riduzione-riposo-intermedio-minori.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "148bb6354b87829980589831f53520b150a181147b0bcd4d988e6c083af2d0d2"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/e118_all/IT/E_118_all.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Minori%20accolti%2C%20documentazione%20progetti%20nuclei%20familiari/minori-accolti-Modello-2-foglio-dati.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "f5549d532ad96669393be9a1114c08831a882a867bba08e7ac50e9b330814172"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/Allegato__6.1.2_-Istanza_Acquisizione_MMSI_per_Unità_navali_gestite_da_Accounting_Autority_rev._2.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 78: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/293180/Rich_accred-PF+2025.pdf/8c2b7c9e-5763-20bb-756e-aa29832807d6?t=1764935505336",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/9adsvenditaimmobili_3.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "bf7e22899fc1cf00fceb5dae2353ee974d71906916e4cd98e5d950a98134d7df"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/altra-modulistica/2025/12/Allegato%204%20-%20Dichiarazione%20CCNL.docx",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "85c4a980a8065316094c7af9cf0519ab94e3c3cad47a57b1fa75a60a04c2c07a"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/Modulo-INL-27-Istanza-pagamento-rateale-ordinanza-ingiunzione.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "0a1777232991c4ae0071db37d61f38ee8ec9486b659e9402d14eb290bc04c93a"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/e126/IT/E_126.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Istanza%20di%20interpello/Modulo-per-istanza-di-interpello.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "85002bc3c062691ce178e02f5df82800ecc68b680d2b7bdc68eadf9e5f5ed5e4"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/Allegato__10b_Istanza_MMSI_per_parent_ship_gestite_da_armatore-società_rev2.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 96: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/274681/nuovo+mod+AA7+10_AA7_10+modello+27.05.2015+giugno.pdf/c59ee91f-5d56-7625-1794-4a143518adbb?t=1749732509597",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Tutela_MinoriAutorizzazione_vendita_bene_immobile.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "fb321252be8c23e70558d7c80ec109dc60b9583f67dee9bb7f7063d4ff5c9bef"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2021/09/DURC%20modulo%20richiesta%20abilitazione%20SOA%20(agg29-9-21).pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "18122db25a5f0bbc916a9752f2d6c76a424e589dc6617a759120cd65252c6803"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-11-1-Istanza-interdizione-senza-informativa_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "9f1276c7682527493426872bc6cd8d84f1258fd4eedf1d5f9635853aa9284916"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap62/IT/AP62_ANF_BANCA_B559.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/documenti/all.-1-domanda-di-anticipo.docx",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "cf53caca03694919a5f01ba32f2872b6e09c90c7146445d6f9f0d89c14a8c8c5"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/DOMANDA_ESAME_GOC-ROC_2024.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "25239e5446bd4643221f1f8903a1e1f40dd912fcbedc9e5b6a47b17375ebd0f3"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/296903/Provvedimento+12032019+Comunicazione+730+4_Modello.pdf/ef15cadb-005d-b363-a9dc-a8d51742026b?t=1742281087754",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/2adsiscrizionearuolo_5.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "e29acb39a717d7f43c68dcd4ca7763ef9b518ffb62fb724a1fa033563d45ff18"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_169686,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "c6388f64111c53ff1dfa508c7bea4904bd5f1f477ae794a1e14702d9a60b42b3"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-2-Istanza-certificato-abilitazione-centralinista-non-vedente-2505201_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "17b5cc487f9fd8a927aa792fbde84eae42493d922b5ebb7a25571f23d22cfd84"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/sr131/IT/SR131_TFR_cessionari.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/8%5E%20procedura%20di%20salvaguardia/LS-2-Dichiarazione-sostitutiva-certificazione-lett-d.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "ea13fa9f84005bc7f04d265974aeed7864e12b2c1fe16ac87448af6dad3949cb"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/allegati/documenti/Allegato_2_Domanda_di_partecipazione_18-02-2020.docx",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "569085b0b1ab799efd18d615fb8f0f37a82c9d59041c962b3290ff807707e9cd"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/249919/Allegato_1A_Modulo_adesione.2026-2029.docx/88420a47-bc53-d239-8dae-8928d7f87e3f?t=1779955070721",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CopieRichiesta_copie_sentenza.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "c618fa9f0aefe3378b506477c3f8b93823dc068d7493cd0cc0923075ddddb8da"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2017/04/ModB626-4_reader,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "5a76285367d46d1cc8dfbc2dd39e3900ec22eb475d909fc5dc75cfdb22b92b69"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/INL-1-Istanza-Videosorveglianza-Telecamere.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "d65639cd59a64ab5100bedeea20e2d94fecb372ba1edc107da10ef93483189cf"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ci537/IT/CI537_IT-JPN-1_DPensInvGiappone.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Estensione%20del%20congedo%20di%20maternit%C3%A0/Modulo-congedo-per-lavoratore.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "d976d58bc959db71543bb594909962fc5e9ed76cefbb934281f5cbada4194dbe"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/rete_satellitare_dichiarazione_offerta_al_pubblico.pdf",
+      "source_key": "mimit",
+      "status": "duplicate_content",
+      "sha256": "71af1fbe106836510bf74262b1bb0b22c3ff9668392739d724656b02394cd9dd"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/286729/Modello+per+la+comunicazione+dei+dati+rilevanti+ai+fini+fiscali+da+parte+degli+Enti+associativi_Modello+enti+associativi.pdf/d67c56bc-3046-8a17-3897-a6065785245f?t=1318510191433",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoObbligo_pagamento.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "5ac25ccbbd7e2291e50966bae831977383b7bfe65d1b468f97dde0ca46cd607a"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084752,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "e2eae6ab7b54e21145d1a058fa3e0cda875f1499f795c637264b32159c9c0dd3"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2023/01/INL-33-Istanza-di-revoca-del-provvedimento-di-sospensione-1.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "645a17fae238198df6f49a1f5e382324926763cdf5326739ea780c0f0df207a8"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/aa06/IT/AA06_AbServTelem_Soc_Cartolarizz.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/temi-e-priorita-previdenza/focus/enpaf-far-l-155-30112022-1.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "809a6f9d0de71d60ceff34d764b079bbb86854af74803cc680b1cd743a9495f7"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_RINNOVO_NO_GDM.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "8bd8d9b167f012b018ac555a52b4ee4e1d7175e29c8332b751eae8110953cc2a"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/250258/Modello+f23_nuovof23c.pdf/fbd03214-6929-7d39-f559-be891255e833?t=1310657517075",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CuratelaAutorizzazione_vendita_beni_mobili.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "38c0d78237dc18e7ad351015268df3008beb68f54407a5084b200526c225117b"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_169819,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "c641d7c664ca3242cae46e3adbde9c851c4812cc72488360353d083aadcf13e4"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-1-1-Istanza-accesso-civico-semplice_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "25ab47fe6f1cd9bc0a912f3540cbf269a901f7721e776e929816398df42560a4"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/monaco-ci142-m-i-c1/IT/CI142_M_I_C1.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Contratto%20di%20Solidariet%C3%A0%20Espansiva/AS-11-Modulo-CDS-espansivo.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "588bf78c0cb2ef581ff0fe33ca9f59dd3829ea0da11b3468117a25cd6cfe0f96"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/Allegato__6.1.1_-_Istanza_MMSI_per_Unità_navali_gestite_da_Accounting_Autority_rev.2.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 66: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/2384307/Modello+di+Comunicazione+Conto+Energia.pdf/084155d3-fa20-c4eb-17fa-49b19fe728ae?t=1742281102423",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/TutelaRinuncia_incarico_tutore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "cb6f4cfdc7759593f4cbe1ca9561500a2daf5a9b4d31c54964570a2af4908822"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/02/ucm_120024,0.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "e4bce3b39fa9accfe009df51f1fd3e7bd7097211d7e6aa972e46f00d74c3f4c8"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/02/Modulo-INL-12-Modello-richiesta-on-line-convalida.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "c8af8e2e08d7a1b1dae5c88526bb50ce904ec273055c970f756a2bfaf4668b60"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/e104/IT/E_104.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/8%5E%20procedura%20di%20salvaguardia/LS-5-Accoglimento-istanza.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "31240866c2264b96204ac59b0d628054922ce601368b204be300f74bc1a708f4"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/moduli/Allegato__9.1_-_Istanza_MMSI_per_AtoN_gestite_da_Società_rev_2.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "'ascii' codec can't encode character '\\xe0' in position 82: ordinal not in range(128)"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/2362217/DI_modello_2020.pdf/a37ed097-5bfa-ae81-ec4c-e8b4bfc77033?t=1742281102951",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "Fonte già bloccata in questa sessione."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/n4.dichsostitutiva_1.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "a81a638b993b92fcd28f5bbdf65b5ea99a2762b64f47f24672077251f1e5865a"
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/10/ucm_087462.pdf",
+      "source_key": "inail",
+      "status": "downloaded",
+      "sha256": "2c361cf33b39de3e268c7ef38f2f71ce5b18d6be91a96550cf0d34026cde8838"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-17-Istanza-accesso-documentale-redacted_new.pdf",
+      "source_key": "inl",
+      "status": "downloaded",
+      "sha256": "504e8c1d6055b5b70d09e6a5d8224184cbcd0f487707678375eea4dfa7e2cf1a"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap152/IT/AP152_DichRespLavGraveInv_CredCoop.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Resource is not the declared file format"
+    },
+    {
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Enti%20Pubblici/Modulo-Richiesta-Patrocinio-Ente-Pubblico.pdf",
+      "source_key": "lavoro",
+      "status": "downloaded",
+      "sha256": "c64ea462a3b541ee05370461c53ebbe9b68fd8af99e0bef77b8a3d26e8c02a2b"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_marittimo/link-MMSI-ago25.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "029ccdad105d3faaf5ebd496fa41c09c667809398a244cada3ada9f514d5ec6d"
+    }
+  ],
+  "manifest_sha256": "db59cbbbcad0cd2bdc4ab04e2e731955b2fa6ecdeda1263bb3deeaaab89d0d61"
+}

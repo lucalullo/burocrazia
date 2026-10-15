@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "executed_at": "2026-10-11T12:39:06.415084+00:00",
+  "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+  "baseline_real_documents": 389,
+  "real_documents": 1216,
+  "new_documents": 827,
+  "growth_percent": 212.5964,
+  "demo_documents": 10,
+  "families": 16,
+  "sources": 19,
+  "covered_issuers": 12,
+  "ipa_entities": 2499,
+  "by_entity": {
+    "Agenzia delle Entrate": 122,
+    "Autorità Nazionale Anticorruzione": 7,
+    "Dipartimento della Funzione Pubblica": 9,
+    "Garante per la protezione dei dati personali": 17,
+    "INAIL": 350,
+    "INPS": 359,
+    "Ispettorato Nazionale del Lavoro": 46,
+    "Ministero del Lavoro": 102,
+    "Ministero dell'Economia e delle Finanze / RGS": 15,
+    "Ministero delle Imprese e del Made in Italy": 42,
+    "Tribunale di Venezia": 143,
+    "Unioncamere": 4
+  },
+  "by_category": {
+    "(assente)": 670,
+    "Abilitazione ai servizi online": 16,
+    "Agevolazioni": 17,
+    "Altro": 9,
+    "Benefici": 3,
+    "Certificazioni e autorizzazioni": 12,
+    "Comunicazioni": 16,
+    "Contenzioso": 6,
+    "Dichiarazioni": 28,
+    "Fabbricati e Terreni": 17,
+    "Istanze": 15,
+    "Minori": 2,
+    "Modulistica e servizi online": 16,
+    "Pagamenti": 15,
+    "Registrazione Contratti / Atti": 5,
+    "Richieste di intervento": 1,
+    "Rimborsi": 9,
+    "aree:assegnazione-e-abilitazione-pin": 34,
+    "aree:assicurato-pensionato": 48,
+    "aree:assicurato-pensionato; aree:aziende-e-contributi; aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-pensionistiche": 2,
+    "aree:assicurato-pensionato; aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-creditizie-e-sociali": 2,
+    "aree:assicurato-pensionato; aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-creditizie-e-sociali; aree:gestione-fondi-gruppo-poste-italiane": 1,
+    "aree:assicurato-pensionato; aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-pensionistiche; aree:gestione-lavoratori-spettacolo-e-sport/assicurato-pensionato": 1,
+    "aree:assicurato-pensionato; aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-pensionistiche; aree:gestione-lavoratori-spettacolo-e-sport/assicurato-pensionato; aree:gestione-fondi-gruppo-poste-italiane": 1,
+    "aree:assicurato-pensionato; aree:gestione-fondi-gruppo-poste-italiane": 5,
+    "aree:assicurato-pensionato; aree:gestione-lavoratori-spettacolo-e-sport/assicurato-pensionato": 1,
+    "aree:assicurato-pensionato; aree:prestazioni-a-sostegno-del-reddito": 1,
+    "aree:aziende-e-contributi": 17,
+    "aree:convenzioni-internazionali": 97,
+    "aree:convenzioni-internazionali; aree:unione-europea": 3,
+    "aree:gestione-dipendenti-pubblici/enti-e-amministrazioni": 2,
+    "aree:gestione-dipendenti-pubblici/fondo-psmsad; aree:gestione-lavoratori-spettacolo-e-sport/fondo-psmsad": 2,
+    "aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-creditizie-e-sociali": 6,
+    "aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-creditizie-e-sociali; aree:gestione-fondi-gruppo-poste-italiane": 2,
+    "aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-pensionistiche": 4,
+    "aree:gestione-dipendenti-pubblici/iscritto-pensionato/tfs-tfr-e-previdenza-complementare": 3,
+    "aree:gestione-fondi-gruppo-poste-italiane": 14,
+    "aree:moduli-vari": 22,
+    "aree:moduli-vari; aree:gestione-dipendenti-pubblici/iscritto-pensionato/prestazioni-creditizie-e-sociali": 1,
+    "aree:prestazioni-a-sostegno-del-reddito": 48,
+    "aree:prestazioni-a-sostegno-del-reddito; aree:unione-europea; aree:moduli-vari": 1,
+    "aree:unione-europea": 41
+  },
+  "by_source": {
+    "2": 359,
+    "3": 350,
+    "4": 122,
+    "5": 102,
+    "10": 42,
+    "12": 9,
+    "14": 17,
+    "15": 46,
+    "16": 143,
+    "17": 15,
+    "18": 7,
+    "19": 4
+  },
+  "fields": {
+    "codice": {
+      "present": 429,
+      "missing": 787
+    },
+    "categoria": {
+      "present": 546,
+      "missing": 670
+    },
+    "descrizione_ufficiale": {
+      "present": 496,
+      "missing": 720
+    },
+    "versione": {
+      "present": 513,
+      "missing": 703
+    },
+    "data_pubblicazione": {
+      "present": 359,
+      "missing": 857
+    },
+    "download_url": {
+      "present": 1161,
+      "missing": 55
+    },
+    "fonte_url": {
+      "present": 1216,
+      "missing": 0
+    }
+  },
+  "structural_provenance": 1216,
+  "pending_editorial": 1212,
+  "verified_documents": 0,
+  "local_official_files": 0,
+  "resource_observations": 1078,
+  "distinct_observed_resource_urls": 1181,
+  "withdrawn_automatically": 0,
+  "superseded_automatically": 0,
+  "all_baseline_rows_unchanged": true,
+  "duplicate_identity_groups": [
+    [
+      81,
+      182,
+      183,
+      184,
+      230
+    ],
+    [
+      132,
+      152
+    ],
+    [
+      314,
+      399
+    ]
+  ],
+  "shared_download_url_groups": [
+    [
+      79,
+      229,
+      230
+    ],
+    [
+      174,
+      177,
+      178,
+      179,
+      180
+    ],
+    [
+      248,
+      251,
+      252
+    ],
+    [
+      249,
+      250
+    ],
+    [
+      311,
+      621
+    ],
+    [
+      314,
+      399
+    ],
+    [
+      315,
+      623
+    ],
+    [
+      331,
+      728
+    ]
+  ],
+  "round1_real_documents": 1216,
+  "round2_new_identities": 0,
+  "active_real_documents": 1212,
+  "rejected_real_documents": 4,
+  "technical_observations": 1078,
+  "technical_rejection_events": 4,
+  "source_concentration": 0.29523026315789475,
+  "round3_new_identities": 0,
+  "round3_new_verified_families": 0,
+  "round3_catalog_unchanged": true
+}

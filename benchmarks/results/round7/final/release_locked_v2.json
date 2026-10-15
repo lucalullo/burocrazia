@@ -1,0 +1,3494 @@
+{
+  "schema_version": 2,
+  "executed_at": "2026-10-12T08:21:51.026381+00:00",
+  "corpus_id": "burocrazia-release-locked-v2",
+  "split": "release_locked",
+  "synthetic": true,
+  "purpose": "Revisione esplicita di 10 attese v1: 6 intestazioni generiche, 2 emittenti incompatibili, 2 identità specifiche. Corpus pubblico di sviluppo, non indipendente.",
+  "identity": {
+    "corpus_sha256": "58ddd13cce1243d56cf30fc24161a18549f12ea33fbbcaf0fefe309956301613",
+    "catalog_file_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "catalog_semantic_sha256": "sha256:a3406d27ebe4bd7a857d3432ae7704b5618e9c198b1b30d9528993f5bbce9762",
+    "rules_version": "deterministic-9-fingerprint-decision-v3",
+    "code_sha256": "95bea08dada836298ddfd7bb71c949cd8656e43e09d8eeb9e6f252df688e5ddc",
+    "git_commit": "649e61cccc4de4380e0fbade3d0894d977da7b2f",
+    "working_tree_dirty": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "system": "Windows",
+    "machine": "AMD64",
+    "rapidfuzz": "3.14.6"
+  },
+  "catalog": {
+    "real_documents": 1216,
+    "demo_documents": 10,
+    "families": 16
+  },
+  "summary": {
+    "cases": 69,
+    "passed": 69,
+    "failed": 0,
+    "metrics": {
+      "document_precision": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "document_f1": {
+        "numerator": 112,
+        "denominator": 112,
+        "value": 1.0
+      },
+      "family_precision": {
+        "numerator": 5,
+        "denominator": 5,
+        "value": 1.0
+      },
+      "family_recall": {
+        "numerator": 5,
+        "denominator": 5,
+        "value": 1.0
+      },
+      "family_f1": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "exact_document_coverage": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "useful_coverage": {
+        "numerator": 61,
+        "denominator": 61,
+        "value": 1.0
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 0,
+        "denominator": 61,
+        "value": 0.0
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 61,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 56,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 56,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 5,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 8
+      }
+    },
+    "latency_ms": {
+      "p50": 48.841,
+      "p95": 72.4338,
+      "p99": null
+    }
+  },
+  "by": {
+    "source": {
+      "Agenzia delle Entrate": {
+        "cases": 10,
+        "passed": 10,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 10,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 44.175,
+          "p95": 53.951,
+          "p99": null
+        }
+      },
+      "Agenzia delle Entrate-Riscossione": {
+        "cases": 3,
+        "passed": 3,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 1,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 2
+          }
+        },
+        "latency_ms": {
+          "p50": 49.159,
+          "p95": 61.1209,
+          "p99": null
+        }
+      },
+      "Garante per la protezione dei dati personali": {
+        "cases": 12,
+        "passed": 12,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 7,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 1,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 4
+          }
+        },
+        "latency_ms": {
+          "p50": 46.829,
+          "p95": 65.1748,
+          "p99": null
+        }
+      },
+      "INAIL": {
+        "cases": 10,
+        "passed": 10,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 16,
+            "denominator": 16,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 8,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 2
+          }
+        },
+        "latency_ms": {
+          "p50": 46.8295,
+          "p95": 55.1847,
+          "p99": null
+        }
+      },
+      "INPS": {
+        "cases": 10,
+        "passed": 10,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 10,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 61.1395,
+          "p95": 77.6841,
+          "p99": null
+        }
+      },
+      "Ispettorato Nazionale del Lavoro": {
+        "cases": 11,
+        "passed": 11,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 11,
+            "denominator": 11,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 11,
+            "denominator": 11,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 11,
+            "denominator": 11,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 11,
+            "denominator": 11,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 11,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 11,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 11,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 11,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 49.687,
+          "p95": 55.383,
+          "p99": null
+        }
+      },
+      "Ministero del Lavoro": {
+        "cases": 10,
+        "passed": 10,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 10,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 46.44,
+          "p95": 54.543,
+          "p99": null
+        }
+      },
+      "Ministero delle Infrastrutture e dei Trasporti": {
+        "cases": 3,
+        "passed": 3,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "document_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_precision": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "useful_coverage": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 3,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 52.024,
+          "p95": 56.8633,
+          "p99": null
+        }
+      }
+    },
+    "category": {
+      "coded": {
+        "cases": 20,
+        "passed": 20,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 40,
+            "denominator": 40,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 20,
+            "denominator": 20,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 20,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 20,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 20,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 20,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          }
+        },
+        "latency_ms": {
+          "p50": 53.3325,
+          "p95": 75.0531,
+          "p99": null
+        }
+      },
+      "family": {
+        "cases": 9,
+        "passed": 9,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 4,
+            "denominator": 4,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 2,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 5,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 2
+          }
+        },
+        "latency_ms": {
+          "p50": 50.609,
+          "p95": 71.6564,
+          "p99": null
+        }
+      },
+      "uncoded": {
+        "cases": 40,
+        "passed": 40,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 34,
+            "denominator": 34,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 34,
+            "denominator": 34,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 68,
+            "denominator": 68,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 34,
+            "denominator": 34,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 34,
+            "denominator": 34,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 34,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 34,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 34,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 34,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 6
+          }
+        },
+        "latency_ms": {
+          "p50": 45.954,
+          "p95": 56.4143,
+          "p99": null
+        }
+      }
+    },
+    "noise": {
+      "clean": {
+        "cases": 39,
+        "passed": 39,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 29,
+            "denominator": 29,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 29,
+            "denominator": 29,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 58,
+            "denominator": 58,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "family_recall": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "family_f1": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "exact_document_coverage": {
+            "numerator": 29,
+            "denominator": 29,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 34,
+            "denominator": 34,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 5,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 34,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 34,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 29,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 29,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 5,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 5
+          }
+        },
+        "latency_ms": {
+          "p50": 49.159,
+          "p95": 73.0395,
+          "p99": null
+        }
+      },
+      "layout": {
+        "cases": 30,
+        "passed": 30,
+        "failed": 0,
+        "metrics": {
+          "document_precision": {
+            "numerator": 27,
+            "denominator": 27,
+            "value": 1.0
+          },
+          "document_recall": {
+            "numerator": 27,
+            "denominator": 27,
+            "value": 1.0
+          },
+          "document_f1": {
+            "numerator": 54,
+            "denominator": 54,
+            "value": 1.0
+          },
+          "family_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "family_f1": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "exact_document_coverage": {
+            "numerator": 27,
+            "denominator": 27,
+            "value": 1.0
+          },
+          "useful_coverage": {
+            "numerator": 27,
+            "denominator": 27,
+            "value": 1.0
+          },
+          "unknown_false_acceptance_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "unknown_correct_rejection_rate": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "supported_rejection_rate": {
+            "numerator": 0,
+            "denominator": 27,
+            "value": 0.0
+          },
+          "entity_error_rate": {
+            "numerator": 0,
+            "denominator": 27,
+            "value": 0.0
+          },
+          "version_year_error_rate": {
+            "numerator": 0,
+            "denominator": 27,
+            "value": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "DOCUMENT_MATCH": {
+            "DOCUMENT_MATCH": 27,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "FAMILY_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 0
+          },
+          "NO_MATCH": {
+            "DOCUMENT_MATCH": 0,
+            "FAMILY_MATCH": 0,
+            "NO_MATCH": 3
+          }
+        },
+        "latency_ms": {
+          "p50": 48.697,
+          "p95": 67.8534,
+          "p99": null
+        }
+      }
+    }
+  },
+  "macro_by_source": {
+    "document_precision": 1.0,
+    "document_recall": 1.0,
+    "document_f1": 1.0,
+    "family_precision": 1.0,
+    "family_recall": 1.0,
+    "family_f1": 1.0,
+    "exact_document_coverage": 1.0,
+    "useful_coverage": 1.0,
+    "unknown_false_acceptance_rate": 0.0,
+    "unknown_correct_rejection_rate": 1.0,
+    "supported_rejection_rate": 0.0,
+    "entity_error_rate": 0.0,
+    "version_year_error_rate": 0.0
+  },
+  "cases": [
+    {
+      "id": "R000",
+      "group": "document:32",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 32,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 32,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 39.548,
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R001",
+      "group": "document:32",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 32,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 32,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 36.878,
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R002",
+      "group": "document:33",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 33,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 33,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 33.537,
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R003",
+      "group": "document:33",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 33,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 33,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 33.166,
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R004",
+      "group": "document:34",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 34,
+        "entity": "Agenzia delle Entrate",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 34,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 47.78,
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R005",
+      "group": "document:34",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 34,
+        "entity": "Agenzia delle Entrate",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 34,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2023"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 45.534,
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R006",
+      "group": "document:35",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 35,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 35,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 44.009,
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R007",
+      "group": "document:35",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 35,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 35,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 44.577,
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R008",
+      "group": "document:36",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 36,
+        "entity": "Agenzia delle Entrate",
+        "version": "2025"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 36,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2025"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 44.341,
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R009",
+      "group": "document:36",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 36,
+        "entity": "Agenzia delle Entrate",
+        "version": "2025"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 36,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": "2025"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 59.0,
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R010",
+      "group": "document:165",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 43.527,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R011",
+      "group": "document:165",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 47.201,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R012",
+      "group": "document:166",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 53.389,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R013",
+      "group": "document:166",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 45.799,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R014",
+      "group": "document:167",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 41.579,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R015",
+      "group": "document:167",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 51.624,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R016",
+      "group": "document:168",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 168,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 168,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 46.457,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R017",
+      "group": "document:168",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 168,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 168,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 44.46,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R018",
+      "group": "document:169",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 169,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 169,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 51.076,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R019",
+      "group": "document:169",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 169,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 169,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 54.85,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R020",
+      "group": "document:16",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 41.869,
+      "source": "INAIL",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R021",
+      "group": "document:16",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 40.577,
+      "source": "INAIL",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R022",
+      "group": "document:17",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 17,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 17,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 43.757,
+      "source": "INAIL",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R023",
+      "group": "document:17",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 17,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 17,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 46.704,
+      "source": "INAIL",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R024",
+      "group": "document:18",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 46.109,
+      "source": "INAIL",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R025",
+      "group": "document:18",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 51.889,
+      "source": "INAIL",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R026",
+      "group": "document:19",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 19,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 19,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 53.774,
+      "source": "INAIL",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R027",
+      "group": "document:19",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 19,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 19,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 46.955,
+      "source": "INAIL",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R028",
+      "group": "document:20",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 51.149,
+      "source": "INAIL",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R029",
+      "group": "document:20",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 56.339,
+      "source": "INAIL",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R030",
+      "group": "document:14",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 14,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 14,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 74.79,
+      "source": "INPS",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R031",
+      "group": "document:14",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 14,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 14,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 71.817,
+      "source": "INPS",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R032",
+      "group": "document:15",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 15,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 15,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 72.845,
+      "source": "INPS",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R033",
+      "group": "document:15",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 15,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 15,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.0"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 80.052,
+      "source": "INPS",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R034",
+      "group": "document:305",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 305,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 305,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 50.189,
+      "source": "INPS",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R035",
+      "group": "document:305",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 305,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 305,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 59.27,
+      "source": "INPS",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R036",
+      "group": "document:306",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 306,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 306,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 49.213,
+      "source": "INPS",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R037",
+      "group": "document:306",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 306,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 306,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "1.10"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 63.009,
+      "source": "INPS",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R038",
+      "group": "document:307",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 307,
+        "entity": "INPS",
+        "version": "2.4"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 307,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.4"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 55.622,
+      "source": "INPS",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R039",
+      "group": "document:307",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 307,
+        "entity": "INPS",
+        "version": "2.4"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 307,
+        "family_id": null,
+        "entity": "INPS",
+        "version": "2.4"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 54.693,
+      "source": "INPS",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R040",
+      "group": "document:134",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 134,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 134,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 49.687,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R041",
+      "group": "document:134",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 134,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 134,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 49.544,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R042",
+      "group": "document:135",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 135,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 135,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 47.89,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R043",
+      "group": "document:135",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 135,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 135,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 50.528,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R044",
+      "group": "document:136",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 57.401,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R045",
+      "group": "document:136",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 48.612,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R046",
+      "group": "document:137",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 137,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 137,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 53.3,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R047",
+      "group": "document:137",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 137,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 137,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 53.365,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R048",
+      "group": "document:138",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 138,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 138,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 48.841,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R049",
+      "group": "document:138",
+      "category": "coded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 138,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 138,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 47.34,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R050",
+      "group": "document:82",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 82,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 82,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 47.302,
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R051",
+      "group": "document:82",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 82,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 82,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 42.552,
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R052",
+      "group": "document:83",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 83,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 83,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 43.57,
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R053",
+      "group": "document:83",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 83,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 83,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 48.782,
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R054",
+      "group": "document:84",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 49.733,
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R055",
+      "group": "document:84",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 57.846,
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R056",
+      "group": "document:85",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 85,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 85,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 50.506,
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R057",
+      "group": "document:85",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 85,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 85,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 38.312,
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R058",
+      "group": "document:86",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 86,
+        "entity": "Ministero del Lavoro",
+        "version": "2025"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 86,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2025"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 38.192,
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R059",
+      "group": "document:86",
+      "category": "uncoded",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 86,
+        "entity": "Ministero del Lavoro",
+        "version": "2025"
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 86,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": "2025"
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 45.578,
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R060",
+      "group": "family:3",
+      "category": "family",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "contesto indipendente della famiglia assente"
+      ],
+      "matching_ms": 47.827,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R061",
+      "group": "family:4",
+      "category": "family",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "contesto indipendente della famiglia assente"
+      ],
+      "matching_ms": 62.45,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R062",
+      "group": "family:5",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 49.159,
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R063",
+      "group": "family:6",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 45.411,
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R064",
+      "group": "family:7",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 57.401,
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R065",
+      "group": "family:9",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 52.024,
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R066",
+      "group": "family:10",
+      "category": "family",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 50.609,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R067",
+      "group": "family:11",
+      "category": "family",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "observed": {
+        "match_type": "FAMILY_MATCH",
+        "document_id": null,
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": true,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Famiglia sostenuta da evidenze proprie; ente specifico e versione non sono attribuiti. Evidenze insufficienti per identificare un documento specifico.",
+      "conflicts": [],
+      "matching_ms": 43.108,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    },
+    {
+      "id": "R068",
+      "group": "family:12",
+      "category": "family",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 77.794,
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "prefiltered_candidates": 1226
+    }
+  ],
+  "performance": {
+    "catalog_load_ms": 11.013,
+    "catalog_feature_prepare_ms": 493.481,
+    "index_build_ms": null,
+    "index": "full_scan_with_catalog_metadata_cache",
+    "peak_traced_python_bytes": 9080654,
+    "metadata_cache_max_entries": 4096,
+    "memory_scope": "one recognition with cold catalog metadata cache, Python allocations only; excludes native heap and catalog loading",
+    "catalog_size": 1226
+  },
+  "bootstrap": null
+}

@@ -1,0 +1,321 @@
+{
+  "added_active_identities": [
+    175,
+    589
+  ],
+  "baseline_round6": {
+    "active_resources": 987,
+    "by_source": {
+      "ade": {
+        "file_backed_operational_docs": 90,
+        "fingerprinted_all_operational_docs": 0,
+        "fingerprinted_file_backed_docs": 0,
+        "missing_reasons": {
+          "robots_or_policy_block": 122
+        },
+        "operational_docs_total": 122
+      },
+      "anac": {
+        "file_backed_operational_docs": 7,
+        "fingerprinted_all_operational_docs": 7,
+        "fingerprinted_file_backed_docs": 7,
+        "missing_reasons": {},
+        "operational_docs_total": 7
+      },
+      "funzione_pubblica": {
+        "file_backed_operational_docs": 9,
+        "fingerprinted_all_operational_docs": 8,
+        "fingerprinted_file_backed_docs": 8,
+        "missing_reasons": {
+          "source_changed": 1
+        },
+        "operational_docs_total": 9
+      },
+      "garante_privacy": {
+        "file_backed_operational_docs": 10,
+        "fingerprinted_all_operational_docs": 4,
+        "fingerprinted_file_backed_docs": 4,
+        "missing_reasons": {
+          "detail_page_only": 6,
+          "download_url_html": 6,
+          "http_404": 1
+        },
+        "operational_docs_total": 17
+      },
+      "giustizia": {
+        "file_backed_operational_docs": 142,
+        "fingerprinted_all_operational_docs": 126,
+        "fingerprinted_file_backed_docs": 126,
+        "missing_reasons": {
+          "shared_resource": 4,
+          "source_changed": 8,
+          "unsupported_mime": 4
+        },
+        "operational_docs_total": 142
+      },
+      "inail": {
+        "file_backed_operational_docs": 347,
+        "fingerprinted_all_operational_docs": 308,
+        "fingerprinted_file_backed_docs": 308,
+        "missing_reasons": {
+          "detail_page_only": 5,
+          "extraction_failure": 10,
+          "robots_or_policy_block": 5,
+          "shared_resource": 9,
+          "source_changed": 2,
+          "unsupported_mime": 8
+        },
+        "operational_docs_total": 347
+      },
+      "inl": {
+        "file_backed_operational_docs": 45,
+        "fingerprinted_all_operational_docs": 43,
+        "fingerprinted_file_backed_docs": 43,
+        "missing_reasons": {
+          "detail_page_only": 2,
+          "shared_resource": 1
+        },
+        "operational_docs_total": 46
+      },
+      "inps": {
+        "file_backed_operational_docs": 359,
+        "fingerprinted_all_operational_docs": 351,
+        "fingerprinted_file_backed_docs": 351,
+        "missing_reasons": {
+          "shared_resource": 8
+        },
+        "operational_docs_total": 359
+      },
+      "lavoro": {
+        "file_backed_operational_docs": 102,
+        "fingerprinted_all_operational_docs": 74,
+        "fingerprinted_file_backed_docs": 74,
+        "missing_reasons": {
+          "extraction_failure": 13,
+          "shared_resource": 2,
+          "source_changed": 2,
+          "unsupported_mime": 11
+        },
+        "operational_docs_total": 102
+      },
+      "mef": {
+        "file_backed_operational_docs": 1,
+        "fingerprinted_all_operational_docs": 1,
+        "fingerprinted_file_backed_docs": 1,
+        "missing_reasons": {
+          "detail_page_only": 14
+        },
+        "operational_docs_total": 15
+      },
+      "mimit": {
+        "file_backed_operational_docs": 42,
+        "fingerprinted_all_operational_docs": 25,
+        "fingerprinted_file_backed_docs": 25,
+        "missing_reasons": {
+          "extraction_failure": 1,
+          "shared_resource": 2,
+          "source_changed": 6,
+          "unsupported_mime": 8
+        },
+        "operational_docs_total": 42
+      },
+      "unioncamere": {
+        "file_backed_operational_docs": 4,
+        "fingerprinted_all_operational_docs": 1,
+        "fingerprinted_file_backed_docs": 1,
+        "missing_reasons": {
+          "unsupported_mime": 3
+        },
+        "operational_docs_total": 4
+      }
+    },
+    "canonical_resources": 1015,
+    "coverage_all": 0.7821782178217822,
+    "coverage_file_backed": 0.8186528497409327,
+    "denominator_classes": {
+      "file_backed_document": 1158,
+      "metadata_only_document": 54
+    },
+    "denominator_policy": "A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.",
+    "dynamic_service_docs": 0,
+    "file_backed_operational_docs": 1158,
+    "fingerprinted_all_operational_docs": 948,
+    "fingerprinted_file_backed_docs": 948,
+    "metadata_only_docs": 54,
+    "missing_reason_breakdown": {
+      "detail_page_only": 27,
+      "download_url_html": 6,
+      "extraction_failure": 24,
+      "http_404": 1,
+      "robots_or_policy_block": 127,
+      "shared_resource": 26,
+      "source_changed": 19,
+      "unsupported_mime": 34
+    },
+    "network_requests": 669,
+    "new_catalog_identities": 0,
+    "newly_fingerprinted_missing_v1": 582,
+    "operational_docs_total": 1212,
+    "quarantined_resources": 28,
+    "retained_v1_identities": 366,
+    "v1_ids_without_active_v2": [
+      152,
+      536,
+      921
+    ]
+  },
+  "by_source": {
+    "ade": {
+      "file_backed_operational_docs": 90,
+      "fingerprinted_all_operational_docs": 0,
+      "fingerprinted_file_backed_docs": 0,
+      "missing_reasons": {
+        "robots_or_policy_block": 122
+      },
+      "operational_docs_total": 122
+    },
+    "anac": {
+      "file_backed_operational_docs": 7,
+      "fingerprinted_all_operational_docs": 7,
+      "fingerprinted_file_backed_docs": 7,
+      "missing_reasons": {},
+      "operational_docs_total": 7
+    },
+    "funzione_pubblica": {
+      "file_backed_operational_docs": 9,
+      "fingerprinted_all_operational_docs": 6,
+      "fingerprinted_file_backed_docs": 6,
+      "missing_reasons": {
+        "shared_resource": 3
+      },
+      "operational_docs_total": 9
+    },
+    "garante_privacy": {
+      "file_backed_operational_docs": 10,
+      "fingerprinted_all_operational_docs": 4,
+      "fingerprinted_file_backed_docs": 4,
+      "missing_reasons": {
+        "detail_page_only": 6,
+        "download_url_html": 4,
+        "http_404": 1,
+        "shared_resource": 2
+      },
+      "operational_docs_total": 17
+    },
+    "giustizia": {
+      "file_backed_operational_docs": 142,
+      "fingerprinted_all_operational_docs": 126,
+      "fingerprinted_file_backed_docs": 126,
+      "missing_reasons": {
+        "canonical_identity_or_extraction_failure": 8,
+        "shared_resource": 4,
+        "unsupported_mime": 4
+      },
+      "operational_docs_total": 142
+    },
+    "inail": {
+      "file_backed_operational_docs": 347,
+      "fingerprinted_all_operational_docs": 304,
+      "fingerprinted_file_backed_docs": 304,
+      "missing_reasons": {
+        "canonical_identity_or_extraction_failure": 2,
+        "detail_page_only": 5,
+        "robots_or_policy_block": 5,
+        "shared_resource": 13,
+        "unsupported_mime": 18
+      },
+      "operational_docs_total": 347
+    },
+    "inl": {
+      "file_backed_operational_docs": 45,
+      "fingerprinted_all_operational_docs": 43,
+      "fingerprinted_file_backed_docs": 43,
+      "missing_reasons": {
+        "detail_page_only": 2,
+        "shared_resource": 1
+      },
+      "operational_docs_total": 46
+    },
+    "inps": {
+      "file_backed_operational_docs": 359,
+      "fingerprinted_all_operational_docs": 351,
+      "fingerprinted_file_backed_docs": 351,
+      "missing_reasons": {
+        "shared_resource": 8
+      },
+      "operational_docs_total": 359
+    },
+    "lavoro": {
+      "file_backed_operational_docs": 102,
+      "fingerprinted_all_operational_docs": 74,
+      "fingerprinted_file_backed_docs": 74,
+      "missing_reasons": {
+        "canonical_identity_or_extraction_failure": 2,
+        "shared_resource": 2,
+        "unsupported_mime": 24
+      },
+      "operational_docs_total": 102
+    },
+    "mef": {
+      "file_backed_operational_docs": 1,
+      "fingerprinted_all_operational_docs": 1,
+      "fingerprinted_file_backed_docs": 1,
+      "missing_reasons": {
+        "detail_page_only": 14
+      },
+      "operational_docs_total": 15
+    },
+    "mimit": {
+      "file_backed_operational_docs": 42,
+      "fingerprinted_all_operational_docs": 24,
+      "fingerprinted_file_backed_docs": 24,
+      "missing_reasons": {
+        "canonical_identity_or_extraction_failure": 6,
+        "shared_resource": 3,
+        "unsupported_mime": 9
+      },
+      "operational_docs_total": 42
+    },
+    "unioncamere": {
+      "file_backed_operational_docs": 4,
+      "fingerprinted_all_operational_docs": 1,
+      "fingerprinted_file_backed_docs": 1,
+      "missing_reasons": {
+        "unsupported_mime": 3
+      },
+      "operational_docs_total": 4
+    }
+  },
+  "coverage_all": 0.7772277227722773,
+  "coverage_file_backed": 0.8134715025906736,
+  "denominator_policy": "Round6 file-backed classification preserved; new supported actual files only add. No failed/blocked file removed.",
+  "denominator_scope": "Fixed Round7 1212 operational / 1158 file-backed; no denominator redefinition.",
+  "dynamic_service_docs": 0,
+  "file_backed_operational_docs": 1158,
+  "fingerprinted_all_operational_docs": 942,
+  "fingerprinted_file_backed_docs": 942,
+  "future_retrievable_gate_applied": false,
+  "lost_active_identities": [
+    166,
+    584,
+    586,
+    587,
+    590,
+    1150,
+    1184,
+    1187,
+    1196
+  ],
+  "metadata_only_docs": 54,
+  "missing_reasons": {
+    "canonical_identity_or_extraction_failure": 18,
+    "detail_page_only": 27,
+    "download_url_html": 4,
+    "http_404": 1,
+    "robots_or_policy_block": 127,
+    "shared_resource": 36,
+    "unsupported_mime": 58
+  },
+  "operational_docs_total": 1212,
+  "recovered": 1
+}

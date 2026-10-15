@@ -1,0 +1,14 @@
+{
+  "baseline_commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+  "differences": [
+    {
+      "archive_equals_baseline_git": true,
+      "archive_sha256": "5c201eadfcf8fac96f85e7928a2beb8edebec3826689784693d8a39bbd14801d",
+      "freeze_sha256": "4649cf9029225906b0f881ac6c1cb6b4418b7cf417c5391b517fa371798eb7cc",
+      "only_crlf_lf": true,
+      "path": "data/catalog_manifest.json",
+      "workspace_sha256": "4649cf9029225906b0f881ac6c1cb6b4418b7cf417c5391b517fa371798eb7cc"
+    }
+  ],
+  "scope": "Preexisting workspace CRLF versus unchanged original Git LF; no source, data or frozen workspace bytes modified."
+}

@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "d747d0ff663bbf5ac89f5ba1de71d2cdce22018c",
+  "baseline_code_sha256": "5bf35112ec0ee6fd600c65e9891a4ac0c2c0d6661b3cdc3d5b99257537047da5",
+  "candidate_code_sha256": "84f2381cde8c0a39b9fbca4f0b228b84842a841eadb8a7f468323540153d50a2",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "warmup_cases": 35,
+  "iterations": 6,
+  "order": "alternate per case and iteration",
+  "summary": {
+    "baseline": {
+      "n": 210,
+      "p50": 49.2871,
+      "p95": 72.3086
+    },
+    "candidate": {
+      "n": 210,
+      "p50": 50.8552,
+      "p95": 75.6706
+    }
+  },
+  "rounds": [
+    {
+      "baseline": {
+        "p50": 50.7291,
+        "p95": 70.8234
+      },
+      "candidate": {
+        "p50": 52.0095,
+        "p95": 69.3506
+      }
+    },
+    {
+      "baseline": {
+        "p50": 52.2954,
+        "p95": 77.5071
+      },
+      "candidate": {
+        "p50": 47.7935,
+        "p95": 81.565
+      }
+    },
+    {
+      "baseline": {
+        "p50": 49.2109,
+        "p95": 66.9886
+      },
+      "candidate": {
+        "p50": 46.7813,
+        "p95": 66.3129
+      }
+    },
+    {
+      "baseline": {
+        "p50": 49.3942,
+        "p95": 72.9258
+      },
+      "candidate": {
+        "p50": 56.181,
+        "p95": 77.8788
+      }
+    },
+    {
+      "baseline": {
+        "p50": 48.2358,
+        "p95": 57.8654
+      },
+      "candidate": {
+        "p50": 49.9006,
+        "p95": 65.3492
+      }
+    },
+    {
+      "baseline": {
+        "p50": 48.9465,
+        "p95": 66.3651
+      },
+      "candidate": {
+        "p50": 46.4654,
+        "p95": 64.0991
+      }
+    }
+  ],
+  "ratios": {
+    "p50": 1.0318156272128,
+    "p95": 1.0464951610181914
+  },
+  "catalog_load_ms": {
+    "baseline": 9.85709999804385,
+    "candidate": 9.891399997286499
+  },
+  "warm_python_peak_bytes": {
+    "baseline": 299649,
+    "candidate": 880599
+  },
+  "memory_scope": "one warm recognition; Python allocations only; catalog metadata caches already prepared",
+  "functions": [
+    {
+      "function": "recognize_catalog",
+      "calls": 35,
+      "self_seconds": 0.016101,
+      "cumulative_seconds": 2.9715637000000004
+    },
+    {
+      "function": "recognize_document",
+      "calls": 35,
+      "self_seconds": 0.0115034,
+      "cumulative_seconds": 2.6889726
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 42457,
+      "self_seconds": 0.041489700000000004,
+      "cumulative_seconds": 2.6210720000000003
+    },
+    {
+      "function": "_score_candidate",
+      "calls": 42422,
+      "self_seconds": 1.5637815000000002,
+      "cumulative_seconds": 2.5795823
+    },
+    {
+      "function": "_annual_version_evidence",
+      "calls": 42422,
+      "self_seconds": 0.0910355,
+      "cumulative_seconds": 0.30855360000000004
+    },
+    {
+      "function": "normalize_text",
+      "calls": 20975,
+      "self_seconds": 0.0418398,
+      "cumulative_seconds": 0.1899442
+    },
+    {
+      "function": "catalog_revision",
+      "calls": 35,
+      "self_seconds": 0.0024481000000000004,
+      "cumulative_seconds": 0.14357540000000002
+    },
+    {
+      "function": "_local_entity_conflict",
+      "calls": 10339,
+      "self_seconds": 0.010317300000000001,
+      "cumulative_seconds": 0.12131230000000001
+    },
+    {
+      "function": "recognize_document_family",
+      "calls": 35,
+      "self_seconds": 0.006647,
+      "cumulative_seconds": 0.11375320000000001
+    },
+    {
+      "function": "_is_distinctive_title",
+      "calls": 42422,
+      "self_seconds": 0.0326412,
+      "cumulative_seconds": 0.08318500000000001
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 595,
+      "self_seconds": 0.0005889000000000001,
+      "cumulative_seconds": 0.08115990000000001
+    },
+    {
+      "function": "_score_family",
+      "calls": 560,
+      "self_seconds": 0.0056075000000000005,
+      "cumulative_seconds": 0.080571
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 15051,
+      "self_seconds": 0.06621540000000001,
+      "cumulative_seconds": 0.07810210000000001
+    },
+    {
+      "function": "_generic_version_context",
+      "calls": 6358,
+      "self_seconds": 0.0165158,
+      "cumulative_seconds": 0.0642711
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 94466,
+      "self_seconds": 0.031574500000000005,
+      "cumulative_seconds": 0.0478745
+    },
+    {
+      "function": "_contains_phrase",
+      "calls": 4301,
+      "self_seconds": 0.0036092000000000003,
+      "cumulative_seconds": 0.0392978
+    },
+    {
+      "function": "_heading_entities",
+      "calls": 70,
+      "self_seconds": 0.0029885000000000003,
+      "cumulative_seconds": 0.0330266
+    },
+    {
+      "function": "_detect_entities",
+      "calls": 82,
+      "self_seconds": 0.0016840000000000002,
+      "cumulative_seconds": 0.0328327
+    },
+    {
+      "function": "_annual_family_alias",
+      "calls": 560,
+      "self_seconds": 0.0008109,
+      "cumulative_seconds": 0.022022200000000002
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 10339,
+      "self_seconds": 0.0085114,
+      "cumulative_seconds": 0.016212400000000002
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 598,
+      "self_seconds": 0.0006631,
+      "cumulative_seconds": 0.0159292
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 42945,
+      "self_seconds": 0.0150565,
+      "cumulative_seconds": 0.0150565
+    },
+    {
+      "function": "_annual_model_years",
+      "calls": 595,
+      "self_seconds": 0.0020229000000000002,
+      "cumulative_seconds": 0.0117677
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 1377,
+      "self_seconds": 0.0062889,
+      "cumulative_seconds": 0.008831400000000001
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 42424,
+      "self_seconds": 0.0064646,
+      "cumulative_seconds": 0.0064646
+    },
+    {
+      "function": "<lambda>",
+      "calls": 42422,
+      "self_seconds": 0.0049122,
+      "cumulative_seconds": 0.0049122
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 42945,
+      "self_seconds": 0.004350000000000001,
+      "cumulative_seconds": 0.004350000000000001
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 42597,
+      "self_seconds": 0.0043132000000000005,
+      "cumulative_seconds": 0.0043132000000000005
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 42945,
+      "self_seconds": 0.004306,
+      "cumulative_seconds": 0.004306
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 82,
+      "self_seconds": 0.00022960000000000002,
+      "cumulative_seconds": 0.0035933000000000002
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 215,
+      "self_seconds": 0.00016920000000000002,
+      "cumulative_seconds": 0.0030382
+    },
+    {
+      "function": "_is_incidental_reference",
+      "calls": 194,
+      "self_seconds": 0.0002719,
+      "cumulative_seconds": 0.0025653
+    },
+    {
+      "function": "_annual_model_is_mentioned",
+      "calls": 70,
+      "self_seconds": 0.0001717,
+      "cumulative_seconds": 0.0024082
+    },
+    {
+      "function": "_informational_heading",
+      "calls": 70,
+      "self_seconds": 0.00028710000000000004,
+      "cumulative_seconds": 0.002176
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 78,
+      "self_seconds": 3.76e-05,
+      "cumulative_seconds": 0.0006859
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 78,
+      "self_seconds": 4.83e-05,
+      "cumulative_seconds": 0.0006632000000000001
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 156,
+      "self_seconds": 8.81e-05,
+      "cumulative_seconds": 0.00034090000000000005
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 140,
+      "self_seconds": 0.00010250000000000001,
+      "cumulative_seconds": 0.0003284
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 595,
+      "self_seconds": 0.0002101,
+      "cumulative_seconds": 0.0002101
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 140,
+      "self_seconds": 5.520000000000001e-05,
+      "cumulative_seconds": 0.0001533
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 130,
+      "self_seconds": 6.65e-05,
+      "cumulative_seconds": 0.00010590000000000001
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 595,
+      "self_seconds": 9.82e-05,
+      "cumulative_seconds": 9.82e-05
+    },
+    {
+      "function": "<lambda>",
+      "calls": 560,
+      "self_seconds": 6.96e-05,
+      "cumulative_seconds": 6.96e-05
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 52,
+      "self_seconds": 4.25e-05,
+      "cumulative_seconds": 6.730000000000001e-05
+    },
+    {
+      "function": "<genexpr>",
+      "calls": 33,
+      "self_seconds": 7.9e-06,
+      "cumulative_seconds": 7.9e-06
+    }
+  ],
+  "decision": "Retained full scan: repeated metadata/year analysis, not fuzzy candidate enumeration, dominated the initial profile. Both latency ratios must pass before expansion; no shortlist or index equivalence claim.",
+  "stage_timings": {
+    "normalization_ms": 105.28920000000001,
+    "entity_detection_ms": 17.9323,
+    "candidate_scoring_inclusive_ms": 1566.9026000000001,
+    "candidate_generation": "full enumeration, no shortlist",
+    "family_matching_ms": 64.2784,
+    "title_similarity_ms": 420.30040012832615,
+    "generic_similarity_ms": 186.19979993309244,
+    "similarity_calls": {
+      "title_similarity": 42406,
+      "generic_similarity": 42422
+    },
+    "note": "Inclusive stage times overlap and must not be summed. Instrumentation adds overhead; release latency uses the separate uninstrumented paired run.",
+    "cases": 35
+  }
+}

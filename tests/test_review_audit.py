@@ -111,7 +111,8 @@ def test_migration_backup_is_idempotent_and_does_not_invent_reviews(tmp_path):
         create_schema(connection)
         assert list_documents(connection) == before
         assert list_review_events(connection) == []
-        assert connection.execute("PRAGMA user_version").fetchone()[0] == 600
+        from src.database import SCHEMA_VERSION
+        assert connection.execute("PRAGMA user_version").fetchone()[0] == SCHEMA_VERSION
         assert connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
         assert connection.execute("PRAGMA foreign_key_check").fetchall() == []
     backups = list((tmp_path / "backups").glob("*.db"))

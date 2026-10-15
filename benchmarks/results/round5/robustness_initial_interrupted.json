@@ -1,0 +1,2632 @@
+{
+  "cases": [
+    {
+      "id": "FP-886-raster_150",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_150",
+      "input_sha256": "55460190dcfb8187a6e6f7a54a2be2c02728e25f583205b84685d41fe6f8846b",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 40.91650000009395,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-raster_200",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 200
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_200",
+      "input_sha256": "aa6db51c36901b467e910ae4bdef8d16b9b72ee921192e71307e641f97e447b9",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 48.752499999864085,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-grayscale",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "gray": true
+        },
+        "seed": 20261011
+      },
+      "representation": "grayscale",
+      "input_sha256": "0b621beb416d42dcedcbabdea2fb5a6d6d72dce114020c61719c0fb99f40fa61",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 30.126800000289222,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-jpeg_60",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 60
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_60",
+      "input_sha256": "a67fc81159461cc178451ee3d6dd5e31c3ca4137ae1fb2831ecf46ab7f94d168",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 38.09889999956795,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-jpeg_75",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 75
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_75",
+      "input_sha256": "a80afd2db9fbf81499d2385afeae2ae5270f16463ccbd1a0bcace3403b4d7ae0",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 36.68779999952676,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-jpeg_90",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_90",
+      "input_sha256": "309bc36fcad34641f65e240c58fafa9f31f4c8bd0cc6071f53e1974781d08f20",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 35.52690000014991,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-blur",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "blur": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "blur",
+      "input_sha256": "f67b6c7404dde0716d8cf1eefe6dca14876d347b12c8255d625549bd96fd6003",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 35.27470000062749,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-low_contrast",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "contrast": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "low_contrast",
+      "input_sha256": "0f0b90a9ce78573b4852069dccce9c9d1a01eb83340235606ecb129e05d99eb4",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 37.951999999677355,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-crop_margins",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "crop": 0.01
+        },
+        "seed": 20261011
+      },
+      "representation": "crop_margins",
+      "input_sha256": "6e428590746ed865a8ee634054c188d571463f079036959ff269d02e06848b36",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 34.31509999973059,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-rotate_90",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_90",
+      "input_sha256": "1092a29a6d9ac44187e0e3ab4e08268e59dd8dd2ad8ca718500accd9e8e3bd90",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 39.53980000005686,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-rotate_180",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 180
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_180",
+      "input_sha256": "6289c46ceed0a909036ab3edecd387d83bca0c671f351f4556ffc0d7905d6acf",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 34.302199999729055,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-rotate_270",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 270
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_270",
+      "input_sha256": "f652e316a8c2dcc47ee0576ee6d5003392faca371a5dfdcd30e55802b8e84cdd",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 39.08950000004552,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-resize_down_up",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "resize": 0.7
+        },
+        "seed": 20261011
+      },
+      "representation": "resize_down_up",
+      "input_sha256": "b389e3a9b5c59a747f70dc68df1f4d4360bbf081c9b87aaf71acf888bc83b39c",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 42.56069999973988,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-886-first_page_only",
+      "group": "document:886",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 886,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 1111.054,
+      "provenance": {
+        "canonical_sha256": "83c3b672bd0df1279a2e3ff84f8fc8c3f17b1cb11dce72f7399e5c7220fa7e3b",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/03/mod_codice_presidio_ospedaliero.pdf",
+        "source_id": 3,
+        "document_id": 886,
+        "expected_family": null,
+        "transform_params": {
+          "first_page_only": true
+        },
+        "seed": 20261011
+      },
+      "representation": "first_page_only",
+      "input_sha256": "0c70e08e8170a6cb9be4ffd6b0b9e611c549c6403444fbc771a095570ad8135c",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 3.0091000007814728,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": []
+    },
+    {
+      "id": "FP-1181-raster_150",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_150",
+      "input_sha256": "ecc37e0af0615b787f68cdf7a3434ff9684a4bc15dd6b233e7a7f86c5b781d46",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 54.87520000042423,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-raster_200",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 200
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_200",
+      "input_sha256": "a404258d05e596351ea2aede21e8d21199ca11bf51ed5a4ac45eb3c9d0f874c1",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 85.92919999955484,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-grayscale",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "gray": true
+        },
+        "seed": 20261011
+      },
+      "representation": "grayscale",
+      "input_sha256": "060862e337af61c40865b9e763fce0ca82a8ff31e868f2dc7a6519ae58e2a624",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 46.358699999473174,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-jpeg_60",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 60
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_60",
+      "input_sha256": "1b2f7ea343c420098b5953ef7e411790d811bc1e0adcba4fb8c243eec00e030d",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 58.70300000060524,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-jpeg_75",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 75
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_75",
+      "input_sha256": "f969784d1827b1a1281e685438d3d07cce09dc3871e9826e0ad115256f10ce37",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 57.376900000235764,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-jpeg_90",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_90",
+      "input_sha256": "65d2fb2a60b318221b4264eaf02abed1aafcdfda22d19366ececef423f38430d",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 58.742399999573536,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-blur",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "blur": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "blur",
+      "input_sha256": "d471b78805bfa9934f3cc3047100fbcceb9ff2fbf492c58185310510aa0b779c",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 64.57550000050105,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-low_contrast",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "contrast": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "low_contrast",
+      "input_sha256": "784af0b2dda83a4988fe963011d3b983b7128c089a0d5b0af5b402221394f5b9",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 64.61570000010397,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-crop_margins",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "crop": 0.01
+        },
+        "seed": 20261011
+      },
+      "representation": "crop_margins",
+      "input_sha256": "01c1fc7e66188631dfb719f075ec2f7f62dff5aa7a672637d5d80cfc34e9902f",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 63.03169999955571,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-rotate_90",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_90",
+      "input_sha256": "aac5a1779c020adf6619bb946b4ebaaf83dfd9bd29b4f84f4f87ca74e4d055a7",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 64.49110000085057,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-rotate_180",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 180
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_180",
+      "input_sha256": "686146c642592e8fc852e3cab7b67f5506e0ce44daf0702f7683e0d0255842d0",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 62.90680000074644,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-rotate_270",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 270
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_270",
+      "input_sha256": "5ce70e5b58bada5063ae397cf1fad8b09c028dfe01383af5dfa97ec4608430cd",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 73.30280000041967,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-resize_down_up",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "resize": 0.7
+        },
+        "seed": 20261011
+      },
+      "representation": "resize_down_up",
+      "input_sha256": "055fd0b76f16d5627f4c5db67dbc3185043dda04089ee620563599f6a57e6e75",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 68.06510000023991,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-1181-first_page_only",
+      "group": "document:1181",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1181,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 15.89,
+      "provenance": {
+        "canonical_sha256": "33c553efd21773b5d9045545f2daabae4c39ee97130a91c47e84f3befb59c843",
+        "canonical_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2016/07/MODULO%20E-1%20-%20Dich%20Parti%20sociali%20isi%20agricoltura2016.pdf",
+        "source_id": 3,
+        "document_id": 1181,
+        "expected_family": null,
+        "transform_params": {
+          "first_page_only": true
+        },
+        "seed": 20261011
+      },
+      "representation": "first_page_only",
+      "input_sha256": "07fc952bedc649489bd278f9a8c39325eda1a38ca7be40370d13ed1f61cadeae",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 11.437699999987672,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:0.6000",
+        "header_containment:1.0000"
+      ]
+    },
+    {
+      "id": "FP-286-raster_150",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_150",
+      "input_sha256": "4e46e40052a0d85589d25cc5cf6ef89db6dba895bcc4d81b8f02bd2a020ff68f",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 67.04779999927268,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-raster_200",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 200
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_200",
+      "input_sha256": "a5e159494c0dee6967693619197598bc3923f659d24084427dc2622a8dc5371f",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 94.65880000061588,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-grayscale",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "gray": true
+        },
+        "seed": 20261011
+      },
+      "representation": "grayscale",
+      "input_sha256": "bf08f78839e355ad608008144a5556d42a78679cc6810f4e2f24de773fc1247c",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 43.811900000036985,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-jpeg_60",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 60
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_60",
+      "input_sha256": "60fe8f76eac535d178a1c286f80f875830f38c2d85d58cd0ed2800105c87eec1",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 59.901100000388396,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-jpeg_75",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 75
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_75",
+      "input_sha256": "cc8c55c19630019a55eda27262611a627b1e81da1770f9d5ce394bf29dabfd5e",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 70.58740000047692,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-jpeg_90",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_90",
+      "input_sha256": "c68ba3d16bbdad80e9a2b54b84044b6eddac472c3b020cd2dca2c66efc7229e6",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 60.3372000005038,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-blur",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "blur": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "blur",
+      "input_sha256": "84d21bdad5acc6a6dabf58960832939f4608a5dad59a3518f05ec3697afd2169",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 65.74619999992137,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-low_contrast",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "contrast": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "low_contrast",
+      "input_sha256": "f80551d120d5c8a9eed5faed3f8a351b203ade88500ef1c06834a19b7c269ff8",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 66.06149999970512,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-crop_margins",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "crop": 0.01
+        },
+        "seed": 20261011
+      },
+      "representation": "crop_margins",
+      "input_sha256": "ba49bcff9d65900fcef819dd51b5e4161b416c812579e9663a7d94acd5fa91ff",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 57.49699999978475,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-rotate_90",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_90",
+      "input_sha256": "d3b434d6dcfcd7076f505612226745cf1cf6687714c145f87f4e32a5965462f0",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 79.33809999940422,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-rotate_180",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 180
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_180",
+      "input_sha256": "23e846becc64fe5c21b31fb614d7654b15a481fcc669c58fc03155fad8953abb",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 58.465500000238535,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-rotate_270",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 270
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_270",
+      "input_sha256": "b7ca79ad325b8af973e7459136dde0d9b63030777cbf1209cb63318138c29ad1",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 87.0535000003656,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-resize_down_up",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "resize": 0.7
+        },
+        "seed": 20261011
+      },
+      "representation": "resize_down_up",
+      "input_sha256": "1e51397b07382aeac764c2e7119d2495a8c0eac38874f2b97e84b4c5ab9d1bdf",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 71.91820000025473,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-286-first_page_only",
+      "group": "document:286",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 286,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 479.512,
+      "provenance": {
+        "canonical_sha256": "c44e87d234b8e86df5709bcf4adc672d6ba4f0b45130fac1545805531d5534c3",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/modello-richiesta-certificazione-albo-massaggiatori",
+        "source_id": 5,
+        "document_id": 286,
+        "expected_family": null,
+        "transform_params": {
+          "first_page_only": true
+        },
+        "seed": 20261011
+      },
+      "representation": "first_page_only",
+      "input_sha256": "4cd82faedca3580db3c6cd3c3fcff371da55d29637d185c0306d362ea32820cc",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 22.831700000097044,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": []
+    },
+    {
+      "id": "FP-290-raster_150",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_150",
+      "input_sha256": "ea9631250f9a5c47dda31c30a56bf3a6028f9e1c2d455345a62eb483b3a5ac6e",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 58.90260000069247,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-raster_200",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 200
+        },
+        "seed": 20261011
+      },
+      "representation": "raster_200",
+      "input_sha256": "dd9495abb4639c4ec8f720159332d246075ad2000ecc849606b35150b18847a5",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 79.02860000012879,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-grayscale",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "gray": true
+        },
+        "seed": 20261011
+      },
+      "representation": "grayscale",
+      "input_sha256": "663e83dd88a1975561319bfb8f8c84b1ff22331adf692a28a3c9c46a3927d222",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 50.23299999993469,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-jpeg_60",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 60
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_60",
+      "input_sha256": "3be18d9c251c5b83b3dc056edad4a113be14d6361f44d49a684f74b9e7d7ce90",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 58.56190000031347,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-jpeg_75",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 75
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_75",
+      "input_sha256": "f6497ef5b43a50b519e668c39a33d785da4ccc172a248e555cbe000d2626d9e9",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 50.86419999952341,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-jpeg_90",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "quality": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "jpeg_90",
+      "input_sha256": "14a83969ca2c46207450f6ee1c29829cb00b9fb7e812ac90f927ca8219f3356c",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 65.09000000005472,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-blur",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "blur": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "blur",
+      "input_sha256": "1d9b90f4b28f6ff7af73a16593d3c24af4735ad9fd6d8d30cf367b564966922a",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 80.972899999324,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-low_contrast",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "contrast": 0.65
+        },
+        "seed": 20261011
+      },
+      "representation": "low_contrast",
+      "input_sha256": "dd1e243917a5095d38631ad536b1492e54224533f4b070b6e7c89cdb8ccdba03",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 57.28809999982332,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-crop_margins",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "crop": 0.01
+        },
+        "seed": 20261011
+      },
+      "representation": "crop_margins",
+      "input_sha256": "669686645857554dae380b691810f6c8a0c6b5a20d0c35615393021842c992c9",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 68.96659999983967,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-rotate_90",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 90
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_90",
+      "input_sha256": "f50e98322cafa062978a3238dac67d2965600854b83bc78104390f09d2a10780",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 88.74720000039815,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-rotate_180",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 180
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_180",
+      "input_sha256": "b323cfa53745b632ba698617d6139f895ac5ef52dd7d0227e6ae4e0fd725237e",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 62.11619999976392,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-rotate_270",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "angle": 270
+        },
+        "seed": 20261011
+      },
+      "representation": "rotate_270",
+      "input_sha256": "ff1bd6fa407927a57ac214e81e70282080e9fbd0a6ab47d2832987cb6e16e599",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 65.5919000000722,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-resize_down_up",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Extraction failed",
+      "conflicts": [],
+      "matching_ms": 0,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "dpi": 150,
+          "resize": 0.7
+        },
+        "seed": 20261011
+      },
+      "representation": "resize_down_up",
+      "input_sha256": "587461b0a6f5a5eca9af62e633fab99dec2721a596c1235298458b0686546ecf",
+      "extraction_failed": true,
+      "extraction_error": "Il riconoscimento delle immagini richiede il componente OCR locale Tesseract, che non risulta installato o configurato.",
+      "extraction_ms": 63.589600000341306,
+      "used_ocr": false,
+      "extraction_method": null,
+      "signals": []
+    },
+    {
+      "id": "FP-290-first_page_only",
+      "group": "document:290",
+      "category": "known_identity",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 290,
+        "family_id": null,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Contenuto coerente con una firma tecnica ufficiale.",
+      "conflicts": [],
+      "matching_ms": 12.231,
+      "provenance": {
+        "canonical_sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+        "canonical_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+        "source_id": 5,
+        "document_id": 290,
+        "expected_family": null,
+        "transform_params": {
+          "first_page_only": true
+        },
+        "seed": 20261011
+      },
+      "representation": "first_page_only",
+      "input_sha256": "454d54de7ec1ad23a390821428216b437bc51e70036232bf8367bb2c1b4d7ed9",
+      "extraction_failed": false,
+      "extraction_error": null,
+      "extraction_ms": 13.652200000251469,
+      "used_ocr": false,
+      "extraction_method": "pdf_text",
+      "signals": [
+        "content_fingerprint_match",
+        "content_containment:1.0000",
+        "header_containment:1.0000"
+      ]
+    }
+  ]
+}

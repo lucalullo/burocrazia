@@ -1,0 +1,34 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows 11",
+  "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+  "pytest": {
+    "passed": 584,
+    "failed": 0,
+    "skipped": 3,
+    "seconds": 605.49,
+    "python": "3.12.10",
+    "environment": "Windows-11-10.0.26300-SP0",
+    "log_sha256": "a760a3cd2be8c0f646f19f7ae8e4250cf6baa3e29e04fae7bd515b10590f9fd1",
+    "skip_reasons": [
+      "Windows: symlink senza privilegio",
+      "Windows: due FIFO non disponibili"
+    ]
+  },
+  "temporary_bootstrap": "passed; separate temporary database, personal database untouched",
+  "catalog_verify": "passed",
+  "compileall": "passed",
+  "yaml_parse": "passed",
+  "regression": "35/35",
+  "release_fast": "passed: 35 regression, 69 locked v2, 100 negatives, 161 family v3; historical locked v1 separately reported",
+  "external": {
+    "status": "pending_external_gate",
+    "matrix": [
+      "ubuntu-latest",
+      "windows-latest",
+      "macos-latest"
+    ],
+    "python": "3.12",
+    "executed": false
+  }
+}

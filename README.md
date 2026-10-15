@@ -22,7 +22,7 @@ Un `NO_MATCH` corretto è preferibile a un falso positivo.
 
 ## Funzioni principali
 
-- riconoscimento locale di documenti amministrativi;
+- riconoscimento locale di documenti amministrativi con fingerprint deterministici e confronto per pagina;
 - estrazione testo da PDF, DOCX e TXT;
 - OCR locale con Tesseract per immagini e PDF scannerizzati;
 - autorotazione OCR a 0°, 90°, 180° e 270°;
@@ -35,23 +35,23 @@ Un `NO_MATCH` corretto è preferibile a un falso positivo.
 - esecuzione sul solo loopback locale;
 - nessun invio dei documenti a LLM, API cloud o servizi esterni nel normale flusso applicativo.
 
-## Cosa contiene la v0.6.1
+## Cosa contiene la v0.7.0-rc1
 
-Lo snapshot distribuito con la release contiene:
+Lo snapshot distribuito con questa release candidate contiene:
 
 | Contenuto | Quantità |
 | --- | ---: |
-| Record documentali reali | 389 |
+| Record documentali reali | 1216 |
 | Record dimostrativi | 10 |
 | Famiglie documentali | 16 |
-| Enti rappresentati dai documenti reali | 6 |
+| Enti rappresentati dai documenti reali | 12 |
 | Enti IPA censiti nell'inventario | 2.499 |
-| Fonti registrate e verificate | 15 |
-| Provenienze dei documenti reali | 389/389 |
+| Fonti registrate (15 verificate pregresse, 4 da verificare) | 19 |
+| Provenienze dei documenti reali | 1216/1216 |
 | Schede esplicative | 3 |
 | Materiali ufficiali locali inclusi | 0 |
 
-I 389 record reali sono presenti nel catalogo, ma non risultano automaticamente revisionati manualmente. Le 3 schede esplicative incluse sono ancora in stato di verifica.
+I 1216 record reali sono presenti nel catalogo, ma non risultano automaticamente revisionati manualmente. Le 3 schede esplicative incluse sono ancora in stato di verifica. I 4 record rifiutati conservano lo storico e sono esclusi dal matching operativo: i record reali operativi sono 1212.
 
 **Questi numeri descrivono il catalogo, non garantiscono che ogni possibile file venga riconosciuto.** Il risultato dipende dalla qualità del testo estratto e dalla presenza di evidenze sufficienti.
 
@@ -62,7 +62,13 @@ Gli enti attualmente rappresentati dai record reali sono:
 - Agenzia delle Entrate;
 - Ministero del Lavoro;
 - Ispettorato Nazionale del Lavoro;
-- Garante per la protezione dei dati personali.
+- Garante per la protezione dei dati personali;
+- MIMIT;
+- Dipartimento della Funzione Pubblica;
+- Tribunale di Venezia;
+- MEF/RGS;
+- ANAC;
+- Unioncamere.
 
 L'inventario IPA contiene inoltre 2.499 enti, ma non equivale a una copertura documentale di tutti quegli enti.
 
@@ -103,7 +109,8 @@ La navigazione principale comprende:
 - **Riconosci** - carica e analizza un documento;
 - **Catalogo** - consulta i record installati;
 - **Fonti e provenienza** - consulta le informazioni di origine;
-- **Revisione editoriale** - strumenti per la manutenzione dei contenuti.
+- **Revisione editoriale** - strumenti per la manutenzione dei contenuti;
+- **Benchmark** - consulta i risultati statici delle valutazioni.
 
 La barra laterale mostra anche un selettore **Chiaro / Scuro** e un riepilogo compatto del catalogo locale.
 
@@ -234,6 +241,27 @@ Vedi [docs/PACCHETTI_LOCALI.md](docs/PACCHETTI_LOCALI.md).
 
 ## Validazione
 
+La candidata **0.7.0-rc1** è pre-1.0, usa lo schema SQLite **610** e conserva la stable pubblica **v0.6.1**. La validazione locale RC su Windows / Python 3.12 ha registrato:
+
+| Prova | Risultato |
+| --- | ---: |
+| V6 indipendente, singola esecuzione | 560/597 exact, 40 identità, 8 fonti |
+| Precisione exact / recall exact | 100% / 93,80% |
+| Scan recall | 392/420 (93,33%) |
+| Generazione compilati / filled recall | 100/100 / 95% |
+| Retrieval @1 / @25 | 99,33% / 100% |
+| Unknown v4, singola esecuzione | 120/120 rifiuti corretti, 15 fonti |
+| Errori ente / versione | 0 / 0 |
+| Canonical | 1007/1007 |
+| Safety | 705 negativi confermati, 0 false accept |
+| Copertura delle identità con file | 1002/1158 (86,53%) |
+| Warm recognition: mediana di sette p95 | 186,09 ms |
+| Suite automatica RC di riferimento | 889 superati, 0 fallimenti, 3 saltati |
+
+V6 misura trasformazioni sintetiche di template ufficiali con OCR Tesseract reale; non equivale a scansioni raccolte sul campo. Il p95 riguarda il solo riconoscimento warm, esclusi estrazione e OCR. V5 originale rimane benchmark indipendente storico del vecchio motore; i replay successivi sono development/tuning. V6 e unknown v4 restano congelati senza nuove esecuzioni. Family matching è sperimentale e insufficientemente validato.
+
+Protocolli, denominatori e limiti in [docs/BENCHMARK.md](docs/BENCHMARK.md); novità e aggiornamento nelle [release notes](docs/RELEASE_NOTES_v0.7.0-rc1.md). Queste prove locali non certificano l'accuratezza generale o l'uso con dati sensibili, non forniscono consulenza legale o personalizzata. I documenti ufficiali possono evolvere e l'OCR dipende da Tesseract e dalla qualità dell'input.
+
 La validazione di riferimento della v0.6.1 su Windows 11 / Python 3.12 ha registrato:
 
 - **453 test superati**;
@@ -252,10 +280,11 @@ Dettagli: [docs/VALIDAZIONE.md](docs/VALIDAZIONE.md).
 ## Test
 
 ```bash
+python -m pip install -r benchmarks/requirements-round6.txt
 python -m pytest -q
 python scripts/verify_catalog.py
 python scripts/catalog_status.py
-python scripts/benchmark.py --output benchmark-results.json
+python scripts/benchmark.py --corpus tests/fixtures/benchmark_v2.json --output benchmark-results.json
 ```
 
 La CI in `.github/workflows/tests.yml` esegue i controlli su Linux, Windows e macOS con Python 3.12.
@@ -289,7 +318,8 @@ BurOCRazia/
 ## Limiti attuali
 
 - la copertura non rappresenta l'intera burocrazia italiana;
-- i 389 record reali richiedono ancora revisione editoriale;
+- il riconoscimento per famiglie è sperimentale e insufficientemente validato;
+- i 1216 record reali richiedono ancora revisione editoriale;
 - le 3 spiegazioni incluse non sono ancora validate;
 - non sono incluse copie locali dei documenti ufficiali;
 - il catalogo può diventare obsoleto perché BurOCRazia non controlla aggiornamenti online;
@@ -302,8 +332,9 @@ BurOCRazia/
 Prima di proporre una modifica:
 
 ```bash
+python -m pip install -r benchmarks/requirements-round6.txt
 python -m pytest -q
-python scripts/benchmark.py --output benchmark-results.json
+python scripts/benchmark.py --corpus tests/fixtures/benchmark_v2.json --output benchmark-results.json
 ```
 
 Le modifiche al riconoscimento devono mantenere il comportamento prudente del sistema e non ridurre artificialmente i `NO_MATCH` aumentando i falsi positivi.

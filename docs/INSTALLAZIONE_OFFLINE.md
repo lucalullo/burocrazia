@@ -1,5 +1,9 @@
 # Installazione su un computer senza Internet
 
+La candidata del 11/10/2026 mantiene Python 3.12 e il lock esistente. Il normale avvio resta `python run.py`, su loopback, senza acquisizione live. Gli strumenti `maintenance/` non sono necessari all'utente finale. Il benchmark statico nell'app non scarica file né avvia test.
+
+Per il benchmark OCR reale serve Tesseract locale configurato con `BUROCRAZIA_TESSERACT_CMD`, se non nel PATH. In sua assenza il runner registra `not_run`; questo stato non equivale a un OCR superato. I file ufficiali possono essere preparati nella cache locale fuori Git; la rete del runner è abilitata soltanto con `--allow-network`. Vedere [ACQUISITION.md](ACQUISITION.md) e [BENCHMARK.md](BENCHMARK.md).
+
 Il repository funziona localmente dopo l'installazione delle dipendenze. Per un'installazione senza rete occorre preparare i componenti su un computer con **stesso sistema operativo, architettura e Python 3.12** del destinatario.
 
 ## Preparazione
@@ -34,3 +38,7 @@ L'opzione `--no-index` impedisce a pip di cercare pacchetti online. Le librerie 
 Apri il loopback nel browser e prova: un TXT leggibile, un documento sconosciuto, un'immagine di prova, le quattro pagine, la revisione su dati sintetici e un pacchetto locale in anteprima. Controlla anche la pulizia dei temporanei dopo errore/timeout. Usa il monitor delle connessioni del sistema per contare sia accessi sia tentativi esterni del processo e del browser.
 
 Il blocco Python copre le chiamate socket del processo supportato; non è un firewall del sistema né un controllo delle estensioni del browser. Per isolare integralmente il dispositivo serve una policy di rete a livello di sistema. Non sono state prodotte immagini disco o installer completi multipiattaforma in questa consegna.
+
+## OCR Round 2
+
+Su Windows è disponibile `scripts/setup_ocr_windows.ps1 -AllowNetwork`: verifica hash del pacchetto Tesseract 5.4 e dei dati ita/eng/osd, estrae con 7-Zip nella cache locale ignorata, senza installazione globale. Senza `-AllowNetwork` usa soltanto file presenti. Eseguire nella stessa sessione `python -m benchmarks.ocr_gate` e `python -m benchmarks.files ocr --manifest benchmarks/corpora/ocr_synthetic_v2.json --output benchmarks/results/ocr-local.json`. Gli eseguibili non sono inclusi nello ZIP.

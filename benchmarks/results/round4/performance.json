@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "code_sha256": "ccc4d83641c6d9be148fa29f65034a5cbfef9cee5eda202d21fb95ef4745dc82",
+  "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "warmup": 35,
+  "iterations": 6,
+  "order": "Interleaved three engines, reverse every case/iteration",
+  "latency_ms": {
+    "baseline": {
+      "n": 210,
+      "p50": 80.6229,
+      "p95": 107.3568
+    },
+    "round2": {
+      "n": 210,
+      "p50": 74.9871,
+      "p95": 102.5382
+    },
+    "candidate": {
+      "n": 210,
+      "p50": 101.1612,
+      "p95": 133.0268
+    }
+  },
+  "ratios_to_baseline": {
+    "p50": 1.2547452398760153,
+    "p95": 1.2391092133893709
+  },
+  "ratios_to_round2": {
+    "p50": 1.349048036262237,
+    "p95": 1.2973389429500422
+  },
+  "memory": {
+    "baseline": {
+      "rss_before_warm_bytes": 29569024,
+      "rss_after_warm_bytes": 30732288,
+      "rss_samples_bytes": [
+        30732288,
+        30814208,
+        30629888,
+        30691328,
+        30703616,
+        30728192,
+        30806016,
+        30949376,
+        30887936
+      ],
+      "rss_growth_after_warm_bytes": 217088,
+      "warm_python_peak_bytes": 299669,
+      "catalog_objects_bytes": 486406,
+      "technical_index_bytes": 0,
+      "index_scope": "Title/code indexes and sparse features; recursive Python object size, excluding other legacy metadata caches"
+    },
+    "round2": {
+      "rss_before_warm_bytes": 31387648,
+      "rss_after_warm_bytes": 40271872,
+      "rss_samples_bytes": [
+        40271872,
+        39776256,
+        40452096,
+        39796736,
+        39505920,
+        39849984,
+        39694336,
+        39927808,
+        39636992
+      ],
+      "rss_growth_after_warm_bytes": 180224,
+      "warm_python_peak_bytes": 879981,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 0,
+      "index_scope": "Title/code indexes and sparse features; recursive Python object size, excluding other legacy metadata caches"
+    },
+    "candidate": {
+      "rss_before_warm_bytes": 30437376,
+      "rss_after_warm_bytes": 45760512,
+      "rss_samples_bytes": [
+        45760512,
+        46370816,
+        45563904,
+        45477888,
+        46739456,
+        46587904,
+        45633536,
+        45551616,
+        46256128
+      ],
+      "rss_growth_after_warm_bytes": 978944,
+      "warm_python_peak_bytes": 881716,
+      "catalog_objects_bytes": 1383437,
+      "technical_index_bytes": 1287273,
+      "index_scope": "Title/code indexes and sparse features; recursive Python object size, excluding other legacy metadata caches"
+    }
+  },
+  "catalog_load_ms": 10.25789999994231,
+  "index_build_ms": 526.2044000000969,
+  "memory_ratios": {
+    "rss_after_warm_bytes": 1.1362896663954434,
+    "catalog_objects_bytes": 1.0,
+    "warm_python_peak_bytes": 1.00197163347845
+  },
+  "memory_scope": "Current working set/RSS in separate fresh processes. Eight repeated warm passes; 16 MiB growth ceiling is a stability guard, not a general RAM certification.",
+  "guard_passed": true
+}

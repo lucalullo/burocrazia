@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "policy_id": "filled-generation-v2-round22",
+  "scope": "Benchmark-only generator. No recognition, score, expected identity or source dependent rules.",
+  "selection": "Preserve original Round21 selected40 identities,20 filler IDs and5 variants each,case IDs,seeds and synthetic variant numbers. No replacement or resampling.",
+  "modes": {
+    "acroform_native": "Valid canonical field tree and widgets: synthetic text/date/numeric/checkbox values,save,reopen,verify logical values,appearance and page widgets. Preserve interactive fields.",
+    "static_overlay": "No valid AcroForm: deterministic synthetic text in raster-verified blank rectangles. All existing words,ink,lines,headers,code,entity and year remain protected. Search pages in original order; same page count and geometry. No appended page,marginal canvas extension,rescaling or title rewriting.",
+    "safe_fallback": "Malformed,unsupported or unsavable AcroForm on a valid renderable PDF: preserve original bytes,flatten only existing widget appearances in output,apply the identical static policy,record fallback_from_acroform=true and error. No field-tree guessing or XML/PDF structure repair."
+  },
+  "static_parameters": {
+    "font": "helv",
+    "font_size": 7,
+    "line_height": 12,
+    "padding": 2,
+    "x_grid_points": 8,
+    "y_grid_points": 6,
+    "first_page_start_fraction": 0.30,
+    "later_page_start_fraction": 0.15,
+    "end_fraction": 0.94,
+    "side_margin_fraction": 0.04,
+    "blank_render_dpi": 72,
+    "blank_min_gray": 240,
+    "max_dark_pixels": 0,
+    "max_candidates_per_page_per_value": 15000,
+    "values_target": 7,
+    "minimum_verified_values": 1,
+    "partial_overlay": "All7 predefined values attempted in order; only independently safe fitting values are written. At least1 fully persisted value required,actual count reported. No truncation,overlap,removal or invisible/white text."
+  },
+  "synthetic_values": ["clearly fictitious name", "ZZZZZZ00A00Z000X fiscal-code marker", "fictitious address", "synthetic2030 date", "synthetic amount", "[X] synthetic checkbox", "clearly fictitious free text"],
+  "seed": "Use exact original V6 case seed and variant; row and x grid order seeded deterministically. Original successful outputs remain immutable in round21/work.",
+  "validation": {
+    "file": "Atomic write,nonempty<=20MiB,read-back SHA,reopen,no encryption,same1..100pages and geometry",
+    "values": "AcroForm updated logical /V equals reopened widget values with /AP /N. Static at least1 exact full synthetic string extracted and rendered.",
+    "template": "Original text retained. Render before/after144DPI; outside updated widget/overlay rectangles (2pointpadding),fraction of pixels differing by>8 gray units <=0.0001. Reject any larger change,never credit integrity failures.",
+    "external": "No newly introduced active URI,JavaScript,Launch,GoToR,SubmitForm,ImportData or external-file target; original official PDF references may remain inert and unchanged.",
+    "parser": "Run local application extraction safety parser without recognition. Keep limits and readable failures.",
+    "cleanup": "In-memory generator; atomic writer uses same output folder. No external files/network. Preserve completed evidence and failures; temporary partial removed only after successful atomic replace."
+  },
+  "gates": {"attempted":100,"minimum_valid":50,"minimum_success_rate":0.90,"preferred_success_rate":0.95},
+  "freeze": "Policy fixed before aggregate regeneration and before any V6 predictions; no policy/generator/selection/seed/label changes after first V6 result."
+}

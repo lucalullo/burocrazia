@@ -1,5 +1,11 @@
 # Validazione BurOCRazia 0.6.1
 
+## Candidata Round 4 — 11 ottobre 2026
+
+584 test superati, zero fallimenti, 3 skip Windows. Locked v2 69/69; OCR reale 7/7 e 14/14. Freeze e unica valutazione holdout v2 nei raw; stato **NOT_READY**, versione 0.6.1, CI esterna pendente. Risultati e limiti correnti in `ROUND4_REPORT.md`.
+
+Le sezioni seguenti conservano la validazione storica 0.6.1, senza attribuirla alla candidata.
+
 Questa pagina riassume i controlli finali eseguiti sulla candidata Windows prima della rifinitura dell'interfaccia e del repository.
 
 ## Ambiente Windows
@@ -55,3 +61,11 @@ Il collaudo non costituisce un benchmark indipendente su documenti reali e non c
 La rifinitura successiva modifica esclusivamente presentazione, documentazione e pulizia del repository. Il motore di riconoscimento, l'OCR, il catalogo, il database e le regole A01–A05 non vengono intenzionalmente modificati.
 
 Prima del tag pubblico è comunque consigliato un ultimo smoke test dell'interfaccia rifinita, in particolare del selettore Chiaro/Scuro.
+
+## Round 5 — verifica locale
+
+Fingerprint v1 minimizzate, lookup SHA e shortlist locale; nessuna nuova identità o migrazione SQL. Benchmark separati e gate non superati. Suite 615 test completa, zero falliti,3 skip. Vedi docs/ROUND5_REPORT.md.
+
+## Round 6 — NOT READY
+
+Firme v2 e benchmark separati per copertura, canonical, robustezza, compilazione, OCR, family, unknown, regressioni, memoria e latenza. Zero nuove identità; seed/schema 610 invariati. V1 e corpus storici conservati. Tutti i dati sintetici compilati sono fittizi; nessun file ufficiale o testo OCR redistribuito. Dettagli e limiti in `docs/ROUND6_REPORT.md`.

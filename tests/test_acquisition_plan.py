@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from src.database import connect_database, initialize_database
+from src.bootstrap import prepare_database
 
 
 PLAN = Path(__file__).parents[1] / "data" / "acquisition_plan.json"
@@ -12,16 +13,17 @@ PLAN = Path(__file__).parents[1] / "data" / "acquisition_plan.json"
 def test_acquisition_plan_covers_every_registered_source(tmp_path) -> None:
     plan = json.loads(PLAN.read_text(encoding="utf-8"))
     db_path = tmp_path / "sources.db"
-    initialize_database(db_path, seed_demo=True)
+    prepare_database(db_path)
     with connect_database(db_path) as connection:
         sources = {
             int(row["id"]): str(row["ente"])
             for row in connection.execute("SELECT id, ente FROM sources").fetchall()
         }
 
-    assert len(plan) == len(sources) == 15
+    manifest=json.loads((PLAN.parent/'catalog_manifest.json').read_text(encoding='utf-8'))
+    assert len(plan) == len(sources) == manifest['tables']['sources']
     assert {item["ente"] for item in plan} == set(sources.values())
-    assert len({item["source_id"] for item in plan}) == 15
+    assert len({item["source_id"] for item in plan}) == len(sources)
     assert all(isinstance(item["source_id"], int) and item["source_id"] > 0 for item in plan)
     assert all(
         {

@@ -1,0 +1,45 @@
+{
+  "classification_counts": {
+    "ambiguous": 94,
+    "confirmed_unknown": 39,
+    "duplicate_of_catalog": 8,
+    "possible_family_match": 7,
+    "unsupported_truth": 5
+  },
+  "counts_per_source": {
+    "agid": 15,
+    "anac": 9,
+    "inail": 16,
+    "lavoro": 6,
+    "mef": 13,
+    "mimit": 45,
+    "mit": 3
+  },
+  "document_types": {
+    "circolare": 28,
+    "comunicato": 1,
+    "decreto": 27,
+    "delibera": 2,
+    "direttiva": 2,
+    "guida": 31,
+    "istruzioni": 3,
+    "manuale": 6,
+    "modulo": 2,
+    "regolamento": 5
+  },
+  "entities": 7,
+  "max_concentration": 0.4205607476635514,
+  "near_resource_groups": 105,
+  "new_candidates_audited": 153,
+  "scope": "Only positively confirmed unknowns count. All68 R9 cases retained; no downsampling to improve balance. Code requires explicit document-number/protocol marker in opening800; version/year requires explicit version/revision/edition/year marker. Cited statute years do not make a document versioned; absent proof remains unversioned. R9 lexical observations preserved separately, no truth-label changes.",
+  "sources": 7,
+  "split": {
+    "unknown_dev": 75,
+    "unknown_eval": 32
+  },
+  "total_confirmed": 107,
+  "unversioned": 81,
+  "versioned": 26,
+  "with_code": 19,
+  "without_code": 88
+}

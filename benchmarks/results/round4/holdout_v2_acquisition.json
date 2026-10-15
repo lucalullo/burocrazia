@@ -1,0 +1,770 @@
+{
+  "positives": 17,
+  "negatives": 75,
+  "source_counts": {
+    "giustizia": 17
+  },
+  "network_requests": 120,
+  "closed_sources": [
+    "ade",
+    "garante_privacy",
+    "inail",
+    "inps"
+  ],
+  "attempts": [
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/modulistica-assicurazione/2026/01/20260112-Manuale%20DenunciaComunicazioneInfortunio%20Telematica%20Navigazione%201.6.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "Risposta oltre 8 MiB."
+    },
+    {
+      "url": "https://www.inail.it/content/dam/ammtrasparente/documenti/2015/10/ucm_122393,0.pdf",
+      "source_key": "inail",
+      "status": "failed",
+      "reason": "robots: percorso non consentito."
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/decreto_direttoriale_3_agosto_2016_autorizzazione_a%20_iscom.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "e4f6f5678b43b4b8e8e48ec3765ae88e61aa6d10cb4d2b16a69d03b74ebe8fda",
+      "acquired_at": "2026-10-11T18:40:40.302044+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Direttiva_SINFI_1-6-2022.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "d882acda5c75c0d1c0cd0810d147d660f6b4ff20b2c9b4fab2abc970a9c40c4b",
+      "acquired_at": "2026-10-11T18:40:48.751067+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare_03_03_2022_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a562fa7693cc133ba0f45a868b80613e4fbeb36242ca63758566dee5691c2b87",
+      "acquired_at": "2026-10-11T18:40:51.271405+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETO_Int._ON_EMC_Kiwa_Creiven_2023_rev_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a69adb6f16178853b09c987cfea35a00ddab28dbe9b1d28d7a50c5ca6ca54c1c",
+      "acquired_at": "2026-10-11T18:40:55.809933+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DecretodirettorialericonoscimentoNinoBixio_22-3-21.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "fae03033484b42cc2d5519909b170d29bfa027e03daf9f4d3e0ef2674db02aac",
+      "acquired_at": "2026-10-11T18:41:04.251232+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_marittimo/Decreto_SEIMET.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "b485f3b54445e76409b3f6ab03fa157c2f9e5d2ff29c9484fbc3aee64a69d293",
+      "acquired_at": "2026-10-11T18:41:09.106884+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_6_2023_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "15cbef31e61e88565fc406edbee4b904912cd174b858c124dec09f013349f3e6",
+      "acquired_at": "2026-10-11T18:41:12.007084+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/compatibilità_elettromagnetica/All.1_DECRETO_Int._ON_EMC__EMC_Def.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "f125206b79b641024f04a3835ecf4cb6e1752683f2fff21da7c338d3e5eab061",
+      "acquired_at": "2026-10-11T18:41:17.034270+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM%2011-4-2016%20CELAB%20transizione%202014-30-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "d3fdca7554a52c861e7e26cbd4c700df92b16f2ade56b18720350df736552875",
+      "acquired_at": "2026-10-11T18:41:18.831944+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Nuova_Guida_BLU_2022.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "88ac630c829baa5047d237593dd893e1fd3f0cc524e8793a00a64c4fd7f894e8",
+      "acquired_at": "2026-10-11T18:42:03.481799+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Circolare_1-2026_2_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "b21aac70bf763d02e302393742272e12c27b5f6035b353573344d331a0583531",
+      "acquired_at": "2026-10-11T18:42:04.758931+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto%2011%20febbraio%202013.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "d1eca1eb513826e95431502d1fa6d7d91935dc122d7f3d3904b0cf0a996e5e5e",
+      "acquired_at": "2026-10-11T18:42:16.505225+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto%2011%20febbraio%202013.pdf",
+      "source_key": "mimit",
+      "status": "duplicate_or_prior_hash",
+      "sha256": "d1eca1eb513826e95431502d1fa6d7d91935dc122d7f3d3904b0cf0a996e5e5e"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_direttoriale_Rinnovo_CTI_25-9-23.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "8d8e06d17b2387eb2fa34f8a3f046773d0265e60b8ab120fc3fcac8374e644a0",
+      "acquired_at": "2026-10-11T18:42:20.122088+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_1_2023_SMM.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "4564214885c300b6321cd77b3070151faf1c43b8f296daea749e0567f82b159f",
+      "acquired_at": "2026-10-11T18:42:22.063482+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM%2011-4-2016%20OCE%20transizione%202014-30-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "3e611fae9085534aceccef050753510dfb6928708f9d763db33b9c9113733cb8",
+      "acquired_at": "2026-10-11T18:42:22.679209+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETO_Int._ON_EMC_AP_Engineering_2023__2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "95a249fd42150e3ec71e2e188db13fc68ed83e54e815aa7887b5db6f8c5e9624",
+      "acquired_at": "2026-10-11T18:42:24.062531+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "9b5dce336d3242400a9f9ab55f8c96b83129bcc734b46ed9e01ce1907e54e6fe",
+      "acquired_at": "2026-10-11T18:42:24.762468+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/RTTE_decreto_9_aprile_2015.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "4244cb451cb8e5b6560acc4a49da6ab547b1b8e2f452398184620b9093014817",
+      "acquired_at": "2026-10-11T18:42:26.990055+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto__Interdirettoriale_4giugno2020.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "c6924d58ceed5925975d73d7d8d81f93e3620bf67ba790735a14891ce18eb996",
+      "acquired_at": "2026-10-11T18:42:28.383149+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_1.2021_-_17-1-2021_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "2fdd42ade26cea43cfb91539611051fed08737a3d12c850f23964e161fa75f71",
+      "acquired_at": "2026-10-11T18:42:29.034353+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETO_Revoca_per_Eurofins_Product_Testing_Italy_S.r.l._2014-30-UE_EMC_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "80c459591b3b9a1e03795fb6ec33087879341b887c4e9eaa41f6d972c03d8cc7",
+      "acquired_at": "2026-10-11T18:42:30.078847+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/GaraFrequenza26bassa/DM_gara_26_bassa_signed.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "63cf200504674a2b0f1be3453a2b7caba1b18e5b990ce9359afebedef2d5d79d",
+      "acquired_at": "2026-10-11T18:42:30.885311+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_ON_RED_UL_Intern_prot._0022011.05-11-2024.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "289c92cf529174ef61eb46f9ce71d2ad3876be50282b0e0a7bfbab5a4b1f8995",
+      "acquired_at": "2026-10-11T18:42:33.562200+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_CREI_Ven_OONN_autorizzazione_2014-30-UE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "aea3e075d00062cdcd55eac8bef7b643895b8b7fa96d0e1869d03e80230fd9c7",
+      "acquired_at": "2026-10-11T18:42:34.120094+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Disciplina_tecnica_servizio_mobile_marittimo_-_Circolari/Circolare.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "8f3c0b79e608e45a1d09447fa0a550a16e3bb59a126ab69468d30203eb50d776",
+      "acquired_at": "2026-10-11T18:42:35.236132+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Decreto-IMAT-2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "bb714c470326105a1686b7c6a8bc839d721b8e88307bf50dbd551dd71d255b62",
+      "acquired_at": "2026-10-11T18:42:35.981640+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_direttoriale_OCE_OONN_rinnovo_2014-30-UE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "bf2416bf3388b6a17a513e1a140fa3f088886c6e52b06d445b8d7ab948cc4e99",
+      "acquired_at": "2026-10-11T18:42:37.211980+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/FAQ-Avviso-Asse-II-2020.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "2ba46e6f1c41da4475d63b3d6efc9e9a42d462e23eee9473e18d237d7252cf26",
+      "acquired_at": "2026-10-11T18:42:38.410393+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/direttiva_2014_53_ue.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "49b0459712816f9874652aad2fcd13598ccc5dfd704fe88b3618dbb7357c193c",
+      "acquired_at": "2026-10-11T18:42:40.495238+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare_4_23-_7-08-2023.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "fa776977a30b7832d237508884350b5b4cb47eb9270f32ae0107a5e088ab47a0",
+      "acquired_at": "2026-10-11T18:42:41.367588+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_3_2024_SMM.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "28376c79882483f375f94bc0b90fbe53e16be4aec847d7c6d7c3231ba8799fe9",
+      "acquired_at": "2026-10-11T18:42:42.396878+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/dlgs-269-2001-05-09.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7d112c3a8d19cb3170ff4f6c4795a6ea15955641597b4dd5c17bdec1896de844",
+      "acquired_at": "2026-10-11T18:42:43.092807+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/decreto_19_settembre_2013_Eurofin.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "2b92315d3063a3388d2f1547438b7085083d0c9bcd59180d975b380b4aacba85",
+      "acquired_at": "2026-10-11T18:42:45.155190+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/disciplina-tecnica-smm/2025/circolare_prot.2025-4.pdf",
+      "source_key": "mimit",
+      "status": "leakage_excluded",
+      "reason": "equivalent_title_or_template"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto-Direttoriale-GMDSS-rettifica-decrerto-26-luglio-2017.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a63f75d2b0ce4ff162dc5d3033d8e3c46ba80465b87f2a3741cec0e2af3fe657",
+      "acquired_at": "2026-10-11T18:42:46.469187+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_direttoriale_del_13.03.2023_di_rinnovo_di_idoneit%C3%A0_a_W.A.T.S._S.r.l.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "fac05d21435ff444d7123ae211d497e2ce57dae824014a90c1a77ae7a8b013ab",
+      "acquired_at": "2026-10-11T18:42:49.107073+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_direttoriale_7_giugno_2016-Autorizzazione_IMQ_per_direttiva_2014-53-UE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "60b5b2fb7b8a4c735fcaa8caf840cc2759713b5e0447edad3aec935d3e9b8ef6",
+      "acquired_at": "2026-10-11T18:42:50.299728+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_interdirettoriale_sopensione_ECM_Srl_per_2014-30-UE_EMC_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "4f419282b55469f5bc26409e4558437b551d7da8438ee2f425607951162af84d",
+      "acquired_at": "2026-10-11T18:42:50.949129+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Decreto-idoneita-Lega-Navale-Italiana-Roma-2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "b7c32bf319a11b4c0289353779af4542882ac0953088908b5207af1dffa89448",
+      "acquired_at": "2026-10-11T18:42:51.667070+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Regolamento_2019-1020.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "9c9b709668f570e2cee7a1d5d92749586095636bef46015bf7c0f125d15d7c65",
+      "acquired_at": "2026-10-11T18:42:53.794770+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/Decreto%208%20gennaio%202013.pdf",
+      "source_key": "mimit",
+      "status": "failed",
+      "reason": "HTTP 404; nessun aggiramento."
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Circolare_su_codici_MMSI_e_nominativi_internazionali_TEMPORANEI_per_navi_di_nuova_costruzione.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "c496fb5d3a3a2457e1d15e72875be9b4652b12077a7d71fd35c885227b6589a1",
+      "acquired_at": "2026-10-11T18:42:56.552833+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_ON_RED_-_IMQ_-prot.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "f8a2f2af2ddece8477432c506298078e3c3f1b3fe2ebc604bd21a45f259ed13d",
+      "acquired_at": "2026-10-11T18:42:58.001293+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Circolare_7-4-2022_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "aa5e4aaf8c2376480ac126f36a2529576c170d07816d6b6913ac2275a973e9f8",
+      "acquired_at": "2026-10-11T18:42:58.513004+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/allegati/R_0000310-09-10-2026-nf.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "43362f69ed70b3743ec3714b47beb476958d96cdbfaa3e2ef829bfaba0b1c706",
+      "acquired_at": "2026-10-11T18:42:59.628216+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/mimit.AOO_DCT.REGISTRO_UFFICIALE_U_.0028295.23-12-2024.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "5c518495e555a1990d8bc40e811500c0fe983108712810af0807472b0bcd2c48",
+      "acquired_at": "2026-10-11T18:43:01.244367+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare_6-5-2021.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "8f19c14bf80e1a93c65c48d7b6d2e2b232659fb7dfe75a9ff290682e42850fa2",
+      "acquired_at": "2026-10-11T18:43:02.242491+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Decreto-WATS-2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "e993dfdc88ce978c04fb198012739a0b5010b1beaf4ca7289c2624606ee888ac",
+      "acquired_at": "2026-10-11T18:43:03.023082+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/Decreto_ECM_ON_RED.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "6b74eb9b95bc53787cd082ba9029d8efc8ff2ec81b44c667d02dd177ad95ddd7",
+      "acquired_at": "2026-10-11T18:43:04.247464+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/EMC_Decreto_29_ottobre_2015_TUV.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "a5781043beff80362ad5d85550154da6e14369f9b2d7a9dc6025e870d904a7e0",
+      "acquired_at": "2026-10-11T18:43:06.410990+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/Decreto-Lega-Navale-Italiana-Roma-2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7d9622db993993ab4b816a8dd3959d3fea57cb2d0e75e1decdb92db6014b5f9a",
+      "acquired_at": "2026-10-11T18:43:06.893896+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare_n.7_-_2021_smm.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "781afd6598223ca1bdf8536c970c9964c3f250aaaa14666e8bfdd59359a9e67c",
+      "acquired_at": "2026-10-11T18:43:08.198042+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto-Ministeriale-n-134-del-25-settembre-2018.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "914dcd4839d77aa315886d61e49bfd89245161247b3fe699ebfa8c803f4fa25f",
+      "acquired_at": "2026-10-11T18:43:10.655931+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_Inter._OCE_Dir._2014-30_2.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "66886c20d5fd76f0d5763cfff19de80b5896f2b2228f799a39178250a0ae7dda",
+      "acquired_at": "2026-10-11T18:43:11.543682+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/allegati/incentivi/5g/DECRETO_GENOVA_2019-11-22_GURI_274A.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "9c10b4bd90a7bafc575367551268871fcf977060c8bc5efa67b1339e7faa6c0a",
+      "acquired_at": "2026-10-11T18:43:17.810275+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/circolare_prot.2025-5.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "69e7b79d1f3ba55182418f0b9e6800f58a3bc3af096759575ba0acfe07d9b37c",
+      "acquired_at": "2026-10-11T18:43:18.375018+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETO_ON_RED_UL_International_2023.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "86e1114c95314fa893a190727c7b5434b4f53f563a0e1598a4c2c53ba51cfe92",
+      "acquired_at": "2026-10-11T18:43:20.358982+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETD_ON_RED_-_ECM_2024.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "65913722fcf22a61c19b429c1989ebe2656bb44f628234ba2eacb46661fe499f",
+      "acquired_at": "2026-10-11T18:43:21.695325+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/DM 26 marzo 2019 GURI n. 100-2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "0181c8932e6b84b822f1273ad37e20890decae69c46097fef5c2988a2a4cab13",
+      "acquired_at": "2026-10-11T18:43:22.110939+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/DECRETO_EUROFINS_Prodcut_testing_Italy_Direttiva_2014-30_2020_1.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "03c123ace571e4840577473e9042b7c129c0a916cbf8f66d58d910ddf8d0f7d9",
+      "acquired_at": "2026-10-11T18:43:23.694838+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/DM 5 giugno 2019 GURI n. 170-2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "ee3ccfb49740b70f1b65b4cec5b36fe2552d59e72d95124774f6fb2641ffe2da",
+      "acquired_at": "2026-10-11T18:43:26.609782+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decereto_direttoriale_Nemko-2014-53-UE_RED.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "265c3b7fa734835f56ec33addc963e261ff967db17410672169a28052f8c1bfb",
+      "acquired_at": "2026-10-11T18:43:27.908625+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_Intle_Autorizzazione_2014-30-UE_-_UL_International_2022_2.pdf",
+      "source_key": "mimit",
+      "status": "leakage_excluded",
+      "reason": "equivalent_title_or_template"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_dierttoriale_7_giugno_2016-Autorizzazione_Eurofins_Product_Testing_Italy_per_direttiva_2014-53-UE.pdf",
+      "source_key": "mimit",
+      "status": "leakage_excluded",
+      "reason": "equivalent_title_or_template"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Circolare-disciplina-rilascio-licenze-provvisorie-e-aggiornamento-licenze-definitive.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "cca56baa9fba1624c39361b2571078ddfa3fcd089c918e9237b0bb90acc4dccb",
+      "acquired_at": "2026-10-11T18:43:32.074234+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/circolare_9.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "915749ddfb63a5fa9b581961017e6a68e3c1fe9f22891732e174811fe36002a8",
+      "acquired_at": "2026-10-11T18:43:33.690641+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM%2011-4-2016%20IMQ%20transizione%202014-30-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "30e75a77de235d1700be778c25ce67aa8af1abfb6aaf86c1cc6e2cf6c2045443",
+      "acquired_at": "2026-10-11T18:43:34.635497+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/allegati/documenti/DIRETTIVA_22_NOV_2019.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "abd82e80d6b8d7e07e83cabe8dbebba9dbdee79681b72b6860d785f83779add4",
+      "acquired_at": "2026-10-11T18:43:35.165153+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/EMC_Decreto_29_ottobre_2015_EQI.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "8c548d8a65b9191845e5b26bc0e8b4ed3647e0249117aaa2c110c30fbd421049",
+      "acquired_at": "2026-10-11T18:43:37.809325+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM_3_aprile_2013.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "e3462cee18efa2ef3e07e94990067d9ce26998124b3ae2ea488657f6909c3802",
+      "acquired_at": "2026-10-11T18:43:38.592858+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/DM%2011-4-2016%20NEMKO%20transizione%202014-30-CE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "e48165c41c8bde85fa751195b3718bc8b84cd69668b16519c3935e868cc38ab0",
+      "acquired_at": "2026-10-11T18:43:39.332069+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Sorveglianza_sul_mercato_RED/DECRETO_11_Marzo_2024_Prot_0052466_CCN__integrazione_24-1-25_1.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "aed0c1b01da3e90a2b55f4cbe87d6fa82287f4c18d86e4231f0373530d8dfbf2",
+      "acquired_at": "2026-10-11T18:43:41.249662+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto-ministeriale-2-settembre-2019-Procedure-di-consultazione-e-accesso-al-SINFI.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "7fa09503e8cc6e0a30a1ed5a32011c66717368412cdf1d045aaddbf9f1787e76",
+      "acquired_at": "2026-10-11T18:43:41.685984+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/Decreto_direttoriale_sopensione_ECM_Srl_per_2014-53-UE_RED.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "fd25b4abdd4912a23f91b40b4dd3135f544151daeb22052bd9e95eafce189313",
+      "acquired_at": "2026-10-11T18:43:43.075763+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/digitale/GaraFrequenza26bassa/mimit.AOO_DCT.Provvedimenti_interni_R_.0000213.08-07-2026.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "66183dbaf3a44d70b9703b06a5c2adc07c64dddb97500d58f97c338a43cd6a72",
+      "acquired_at": "2026-10-11T18:43:45.103681+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/decreto_ministeriale_15_febbraio_2006.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "2279d0588ffb65c7707a727f877193efa035aba1169bab6a839679a465a5123b",
+      "acquired_at": "2026-10-11T18:43:45.525832+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/GU228-1965.pdf",
+      "source_key": "mimit",
+      "status": "leakage_excluded",
+      "reason": "equivalent_title_or_template"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/comunicazioni/circolare_7-2022_SMM.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "95119c3b2e4f00dffe3e98a6bc2f930f9d60b5b9b24eb9fb0283f0f8b6b4fbc7",
+      "acquired_at": "2026-10-11T18:43:51.452455+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_autorizzazione_CELAB_EMC-19-12-16.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "c1111bd7ee3a0db924497130b644fe7a337601e96414f614524ba5ec51b1b9f2",
+      "acquired_at": "2026-10-11T18:43:52.594058+00:00"
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/normativa/Decreto_direttoriale_%20ISET-OONN_rilascio2014-30-UE.pdf",
+      "source_key": "mimit",
+      "status": "downloaded",
+      "sha256": "401ebe92c0ac6fa3a8f8ab470ca34d953cd5cdc9d6f728197d588d7621962445",
+      "acquired_at": "2026-10-11T18:43:54.208895+00:00"
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5021916/74BIS_modello.pdf/d7ca3dcc-9211-353d-e802-e7e04b2a3f03?t=1764949456304",
+      "source_key": "ade",
+      "status": "failed",
+      "reason": "HTTP 403; nessun aggiramento."
+    },
+    {
+      "url": "https://www.garanteprivacy.it/garante/document?ID=9496244",
+      "source_key": "garante_privacy",
+      "status": "failed",
+      "reason": "Non-document response; close source after three, no challenge bypass."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Rinuncia_eredit__Dichiarazione_sostitutiva_di_certificazione_e_di_atto_di_notoriet.docx",
+      "source_key": "giustizia",
+      "status": "duplicate_or_prior_hash",
+      "sha256": "06460c35e5ce0cd6222c23cd104e3a0c018f6116da692d2a99ef16100b0a5eff"
+    },
+    {
+      "url": "https://www.ispettorato.gov.it/files/2025/11/INL-29.3-Istanza-riconoscimento-del-patentino-di-abilitazione-conseguito-allestero_new.pdf",
+      "source_key": "inl",
+      "status": "failed",
+      "reason": "Risposta oltre 8 MiB."
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/usa-ci263-it-usa-1/IT/CI263_IT_USA1.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Non-document response; close source after three, no challenge bypass."
+    },
+    {
+      "url": "https://www.mimit.gov.it/images/stories/documenti/rete_satellitare_dichiarazione_offerta_al_pubblico.pdf",
+      "source_key": "mimit",
+      "status": "duplicate_or_prior_hash",
+      "sha256": "71af1fbe106836510bf74262b1bb0b22c3ff9668392739d724656b02394cd9dd"
+    },
+    {
+      "url": "https://www.garanteprivacy.it/garante/document?ID=7219673",
+      "source_key": "garante_privacy",
+      "status": "failed",
+      "reason": "Non-document response; close source after three, no challenge bypass."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/IscrRuolo3Affari_Civili_non_contenziosi_1.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "84b121be1581b8379974ed09e91edebcfcd3491edfcc5caad009f5a8957c57c5",
+      "acquired_at": "2026-10-11T18:44:12.247459+00:00"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/_ci520/IT/CI520_Red_Est_Ita.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Non-document response; close source after three, no challenge bypass."
+    },
+    {
+      "url": "https://www.garanteprivacy.it/garante/document?ID=9829277",
+      "source_key": "garante_privacy",
+      "status": "failed",
+      "reason": "Non-document response; close source after three, no challenge bypass."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Dichiarazione_ex_art.179_cc.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "8f782ea32b9f6a1da407391a676b66496113ae05519ddb6c5ca6dcaa50f3fd57",
+      "acquired_at": "2026-10-11T18:44:16.391199+00:00"
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/moduli/ap125/IT/AP125_DomRiscRicongPeriodiContributivi.pdf",
+      "source_key": "inps",
+      "status": "failed",
+      "reason": "Non-document response; close source after three, no challenge bypass."
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Richiesta_attestazione_passaggio_in_giudicato_sentenza.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "1a515c4a09bfa4cb24ea44c282f9e1fb5ece8d78a6eb4993716de3b709797218",
+      "acquired_at": "2026-10-11T18:44:18.330591+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/23adsvenderebenimobili_2.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "797702a4216f57dc5c735790ac3f7e0778ad8125f27a129906503945e0e69de7",
+      "acquired_at": "2026-10-11T18:44:19.290972+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Iscrizione_a_RuoloSeparazione_consensuale.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "d3ab08fd7c2b5fcc3b1312f7caa9dd6a043920dbea4f0927672e6fe4476d41e6",
+      "acquired_at": "2026-10-11T18:44:20.107774+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Modulo_antiriciclaggio_persona_fisica.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "c7254a6dc1674bbb54291023e2406ba6f89f13f0d8b18a8f9dc2ec14b13f81bf",
+      "acquired_at": "2026-10-11T18:44:21.269650+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Dichiarazione_sostitutiva_di_certificato_godimento_diritti_civili.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "81154f1056b0d67ef438eaebb902a42d87d28da2aa70c48cfa5ac02b35d2e672",
+      "acquired_at": "2026-10-11T18:44:22.391289+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Richiesta_certificato_di_non_fallimento_1.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "e22624c90415aa9f26622f3a2c9639a47daaccd64738db65d69408c51e4279eb",
+      "acquired_at": "2026-10-11T18:44:23.288887+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/IscrRuolo1Procedimenti_Speciali_Sommari_3.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "c9862166a8359ccc77a89abd2597e6e1ac9f0a1b27754515e8ef152f1bc09285",
+      "acquired_at": "2026-10-11T18:44:24.177554+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Modulo_offerta_persona_fisica.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "06406c98ad50b9321ef5eb460ec93a751ce620cdc18cfd616d7cac3c4e5b51b4",
+      "acquired_at": "2026-10-11T18:44:25.869643+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoFallimenti.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "bd9d1098bb64efa24ea5f94ec377d3b0dc2b06a05c96d70f8eb570aa564bbed1",
+      "acquired_at": "2026-10-11T18:44:26.509325+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/6adscessazioneads_4.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "e7eb3a33aad8ea78423e42d14adf009c8e31e38f3bae11e5add8386ed4c013d1",
+      "acquired_at": "2026-10-11T18:44:27.307461+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/CuratelaSostituzione_curatore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "ea276bda98cff4dcb67ac4fe3149e19bd2eabefeb723234b5b814b21bda33bd8",
+      "acquired_at": "2026-10-11T18:44:28.209375+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Registro_StampaRichiesta_cancellazione_pubblicazione_dal_registro_dei_giornali_periodici.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "8549350b7907c3c17c0c60126f0feacc171a463bf944ac5499dda2bb7b615a34",
+      "acquired_at": "2026-10-11T18:44:29.274145+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Modulo_offerta_persona_fisica_minore.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "cc6bf510a64aaf63a09e9defd79702f516192a856ae0c5e37663a84581e42ad8",
+      "acquired_at": "2026-10-11T18:44:30.307267+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/IscrRuolo7Lavoro_Previdenza_Assistenza_Obbligatorie_5.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "a7413250bf10f820222f3def733e3a9e2e6adb52430f02cf585ec23dcfca600e",
+      "acquired_at": "2026-10-11T18:44:31.602079+00:00"
+    },
+    {
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/IscrRuolo4Espropriazioni_Immobiliari_1.pdf",
+      "source_key": "giustizia",
+      "status": "downloaded",
+      "sha256": "ec40ce83efb7ed3ce76d0a529bbf5f967e56fa549b3def525fb8eff89718aff9",
+      "acquired_at": "2026-10-11T18:44:32.128196+00:00"
+    }
+  ],
+  "complete_target": false,
+  "manifest_sha256": "601b62abacd72886132fff1fa8d402016a591be7a266e73ac1dd217649de0d69"
+}

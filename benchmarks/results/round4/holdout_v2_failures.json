@@ -1,0 +1,12 @@
+{
+  "policy": "First evaluation preserved; no engine changes or result-based relabelling.",
+  "wrong_exact": [],
+  "wrong_family": [],
+  "extraction_failures": [
+    {
+      "id": "OH2-010",
+      "status": "extraction_failed",
+      "reason": "Il PDF supera il limite di 100 pagine."
+    }
+  ]
+}

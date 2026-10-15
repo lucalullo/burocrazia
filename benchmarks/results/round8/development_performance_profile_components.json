@@ -1,0 +1,383 @@
+{
+  "identity": {
+    "commit": "36c657dc3e3009103eb32a21f197d5aaa3e453ed",
+    "runtime_sha256": "6c88bb8f8c613e95652a3066e73b0eb568dea013fa2d2f5f5ff026b97f27e0bc",
+    "code_sha256": "27024c78665a3b05f57fa13e98606824d6153981fff18370220becc148a5c3a4",
+    "fingerprint_sha256": "378d3d3ff05a91a03328d708288c7a21095e60ecb6a7755665818c010da1bfe6",
+    "seed": 2026101208,
+    "executed_at": "2026-10-12T12:08:19.101269+00:00"
+  },
+  "components": {
+    "normalization": {
+      "n": 65,
+      "p50": 0.0174,
+      "p95": 0.2188,
+      "p99": 0.2453
+    },
+    "input_fingerprint_generation": {
+      "n": 65,
+      "p50": 0.6503,
+      "p95": 37.3021,
+      "p99": 63.1948
+    },
+    "candidate_retrieval": {
+      "n": 65,
+      "p50": 0.3012,
+      "p95": 2.4892,
+      "p99": 2.6247
+    },
+    "ocr_sketch_compare": {
+      "n": 65,
+      "p50": 0.0181,
+      "p95": 13.2384,
+      "p99": 14.1937
+    },
+    "char_overlap": {
+      "n": 65,
+      "p50": 0.0268,
+      "p95": 17.9906,
+      "p99": 21.4858
+    },
+    "visual_compare": {
+      "n": 65,
+      "p50": 0.0043,
+      "p95": 2.4402,
+      "p99": 3.0556
+    },
+    "decision_fusion_inclusive": {
+      "n": 65,
+      "p50": 2.2818,
+      "p95": 310.7974,
+      "p99": 418.0551
+    },
+    "family_fallback": {
+      "n": 65,
+      "p50": 1.6026,
+      "p95": 10.6478,
+      "p99": 12.2991
+    }
+  },
+  "cprofile": [
+    {
+      "file": "recognize.py",
+      "line": 935,
+      "function": "recognize_catalog",
+      "calls": 65,
+      "own_seconds": 0.0311014,
+      "cumulative_seconds": 11.566667800000001
+    },
+    {
+      "file": "fingerprint_decision_v4.py",
+      "line": 36,
+      "function": "match",
+      "calls": 65,
+      "own_seconds": 0.0304634,
+      "cumulative_seconds": 5.5064793000000005
+    },
+    {
+      "file": "recognize.py",
+      "line": 628,
+      "function": "recognize_document",
+      "calls": 45,
+      "own_seconds": 0.0365643,
+      "cumulative_seconds": 5.4423285
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sorted>",
+      "calls": 554,
+      "own_seconds": 0.1447639,
+      "cumulative_seconds": 4.5229442
+    },
+    {
+      "file": "recognize.py",
+      "line": 679,
+      "function": "<genexpr>",
+      "calls": 54587,
+      "own_seconds": 0.057277400000000006,
+      "cumulative_seconds": 4.1916694
+    },
+    {
+      "file": "recognize.py",
+      "line": 444,
+      "function": "_score_candidate",
+      "calls": 54542,
+      "own_seconds": 1.8976572,
+      "cumulative_seconds": 4.134392
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 151,
+      "function": "similarities",
+      "calls": 41,
+      "own_seconds": 0.0703387,
+      "cumulative_seconds": 2.9216957000000003
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 134,
+      "function": "page_scores",
+      "calls": 63,
+      "own_seconds": 1.1217080000000001,
+      "cumulative_seconds": 2.6057649
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sum>",
+      "calls": 244627,
+      "own_seconds": 0.35628580000000004,
+      "cumulative_seconds": 1.440426
+    },
+    {
+      "file": "fingerprint_pages.py",
+      "line": 50,
+      "function": "visual",
+      "calls": 18,
+      "own_seconds": 0.0168986,
+      "cumulative_seconds": 1.1995982
+    },
+    {
+      "file": "recognize.py",
+      "line": 107,
+      "function": "normalize_text",
+      "calls": 159615,
+      "own_seconds": 0.26044880000000004,
+      "cumulative_seconds": 1.1913807
+    },
+    {
+      "file": "fingerprint_pages.py",
+      "line": 46,
+      "function": "queries",
+      "calls": 65,
+      "own_seconds": 0.0003598,
+      "cumulative_seconds": 1.1035324
+    },
+    {
+      "file": "fingerprint_pages.py",
+      "line": 47,
+      "function": "<genexpr>",
+      "calls": 152,
+      "own_seconds": 0.0008724000000000001,
+      "cumulative_seconds": 1.1031726000000002
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 20,
+      "function": "features",
+      "calls": 87,
+      "own_seconds": 0.0664569,
+      "cumulative_seconds": 1.1023002000000002
+    },
+    {
+      "file": "fingerprint_pages.py",
+      "line": 9,
+      "function": "image_signature",
+      "calls": 15,
+      "own_seconds": 0.053970500000000005,
+      "cumulative_seconds": 0.907633
+    },
+    {
+      "file": "__init__.py",
+      "line": 179,
+      "function": "sub",
+      "calls": 327271,
+      "own_seconds": 0.16049000000000002,
+      "cumulative_seconds": 0.8314434
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 25,
+      "function": "<genexpr>",
+      "calls": 347928,
+      "own_seconds": 0.13737470000000002,
+      "cumulative_seconds": 0.8187716
+    },
+    {
+      "file": "recognize.py",
+      "line": 392,
+      "function": "_annual_version_evidence",
+      "calls": 54542,
+      "own_seconds": 0.1410655,
+      "cumulative_seconds": 0.734429
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 18,
+      "function": "char_hash",
+      "calls": 347667,
+      "own_seconds": 0.45499930000000005,
+      "cumulative_seconds": 0.6813969000000001
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 140,
+      "function": "<genexpr>",
+      "calls": 244100,
+      "own_seconds": 0.4879176,
+      "cumulative_seconds": 0.4879176
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.any>",
+      "calls": 74923,
+      "own_seconds": 0.053946900000000006,
+      "cumulative_seconds": 0.4361873
+    },
+    {
+      "file": "__init__.py",
+      "line": 280,
+      "function": "_compile",
+      "calls": 444651,
+      "own_seconds": 0.2546582,
+      "cumulative_seconds": 0.418642
+    },
+    {
+      "file": "recognize.py",
+      "line": 666,
+      "function": "<genexpr>",
+      "calls": 7285,
+      "own_seconds": 0.0202376,
+      "cumulative_seconds": 0.3952661
+    },
+    {
+      "file": "recognize.py",
+      "line": 664,
+      "function": "<genexpr>",
+      "calls": 7285,
+      "own_seconds": 0.0204971,
+      "cumulative_seconds": 0.38584840000000004
+    },
+    {
+      "file": "fingerprint_v3.py",
+      "line": 144,
+      "function": "<genexpr>",
+      "calls": 826812,
+      "own_seconds": 0.36191120000000004,
+      "cumulative_seconds": 0.36191120000000004
+    },
+    {
+      "file": "<string>",
+      "line": 2,
+      "function": "__hash__",
+      "calls": 506819,
+      "own_seconds": 0.25975000000000004,
+      "cumulative_seconds": 0.36170820000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'sub' of 're.Pattern' objects>",
+      "calls": 327271,
+      "own_seconds": 0.3564024,
+      "cumulative_seconds": 0.3564058
+    },
+    {
+      "file": "__init__.py",
+      "line": 209,
+      "function": "findall",
+      "calls": 17038,
+      "own_seconds": 0.010360900000000001,
+      "cumulative_seconds": 0.34147750000000004
+    },
+    {
+      "file": "Image.py",
+      "line": 2358,
+      "function": "rotate",
+      "calls": 60,
+      "own_seconds": 0.0003282,
+      "cumulative_seconds": 0.31274240000000003
+    },
+    {
+      "file": "Image.py",
+      "line": 2215,
+      "function": "resize",
+      "calls": 360,
+      "own_seconds": 0.0020492,
+      "cumulative_seconds": 0.3075413
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'findall' of 're.Pattern' objects>",
+      "calls": 17042,
+      "own_seconds": 0.30445330000000004,
+      "cumulative_seconds": 0.30445330000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'resize' of 'ImagingCore' objects>",
+      "calls": 360,
+      "own_seconds": 0.3026862,
+      "cumulative_seconds": 0.3026862
+    },
+    {
+      "file": "Image.py",
+      "line": 2972,
+      "function": "transpose",
+      "calls": 45,
+      "own_seconds": 0.00019280000000000002,
+      "cumulative_seconds": 0.29106730000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'transpose' of 'ImagingCore' objects>",
+      "calls": 45,
+      "own_seconds": 0.2900824,
+      "cumulative_seconds": 0.2900824
+    },
+    {
+      "file": "recognize.py",
+      "line": 467,
+      "function": "<genexpr>",
+      "calls": 19341,
+      "own_seconds": 0.2314189,
+      "cumulative_seconds": 0.28101990000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'split' of 'str' objects>",
+      "calls": 165393,
+      "own_seconds": 0.27991910000000003,
+      "cumulative_seconds": 0.27991910000000003
+    },
+    {
+      "file": "recognize.py",
+      "line": 905,
+      "function": "catalog_revision",
+      "calls": 65,
+      "own_seconds": 0.0017172,
+      "cumulative_seconds": 0.2765538
+    },
+    {
+      "file": "recognize.py",
+      "line": 213,
+      "function": "_issuer_entities",
+      "calls": 158,
+      "own_seconds": 0.0008823,
+      "cumulative_seconds": 0.225118
+    },
+    {
+      "file": "recognize.py",
+      "line": 846,
+      "function": "recognize_document_family",
+      "calls": 45,
+      "own_seconds": 0.0080339,
+      "cumulative_seconds": 0.2193323
+    },
+    {
+      "file": "recognize.py",
+      "line": 151,
+      "function": "_contains_phrase",
+      "calls": 25223,
+      "own_seconds": 0.019589600000000002,
+      "cumulative_seconds": 0.2185204
+    }
+  ],
+  "scope": "Fresh isolated process. Warm recognition excludes extraction/OCR and pre-extraction field enumeration; includes per-request text fingerprints and lazy visual rendering. No input features retained across timed requests. Fixed51 uses the same 35 synthetic+16 official inputs as R7; scan group uses fixed sorted historical scans. Component probes are non-additive, outside the latency measure; OCR e2e is reported from evaluation raw, separately."
+}

@@ -1,0 +1,1275 @@
+{
+  "schema_version": 1,
+  "registry_id": "reference-truth-v1",
+  "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+  "scope": "Explicit adjudication of all baseline contradictions before Round8 tuning. Historical corpus bytes remain locked. Only official_truth_confirmed + confirmed entries may enter reconciled primary release gates.",
+  "groups": [
+    {
+      "group_id": "TRUTH-01",
+      "case_ids": [
+        "EX02",
+        "EX02MISSINGREV"
+      ],
+      "status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-02",
+      "case_ids": [
+        "EX03",
+        "EX03MISSINGREV"
+      ],
+      "status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-03",
+      "case_ids": [
+        "R061"
+      ],
+      "status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-04",
+      "case_ids": [
+        "R010",
+        "R011"
+      ],
+      "status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-05",
+      "case_ids": [
+        "R012",
+        "R013"
+      ],
+      "status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-06",
+      "case_ids": [
+        "R028",
+        "R029"
+      ],
+      "status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-07",
+      "case_ids": [
+        "R060"
+      ],
+      "status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-08",
+      "case_ids": [
+        "R066"
+      ],
+      "status": "official_truth_confirmed",
+      "notes": "Full official heading and compatible issuing authority are present. R066 additionally states INL 31. Official local PDF/DOCX confirms a specific catalog identity; old family-only label was less specific."
+    },
+    {
+      "group_id": "TRUTH-09",
+      "case_ids": [
+        "R068"
+      ],
+      "status": "official_truth_confirmed",
+      "notes": "Full official heading and compatible issuing authority are present. R066 additionally states INL 31. Official local PDF/DOCX confirms a specific catalog identity; old family-only label was less specific."
+    }
+  ],
+  "cases": [
+    {
+      "group_id": "TRUTH-01",
+      "case_id": "EX02",
+      "corpus": "benchmarks/corpora/development_regression.json",
+      "input_sha256": "73f88aa71a9b4c54d04673763586815c69505569de562062a928485499e7184c",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 13,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 13,
+      "family_id": null,
+      "entity": "INPS",
+      "version_year": "1.1",
+      "official_evidence": [
+        {
+          "document_id": 13,
+          "url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+          "final_url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+          "acquired_at": "2026-10-11T11:44:50.411581+00:00",
+          "sha256": "bffdc3526732d68651764092a41fcd1eb87160af0f69b892fd137beb7a2e4bdf",
+          "catalog_title": "CERTIFICATO DI DISTACCO - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATË MBULIMI - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI543 - IT/AL 101]",
+          "code": "CI543",
+          "entity": "INPS",
+          "version": "1.1",
+          "opening_text_sha256": "4c91394c1f7b5206246fab82a0dc64c24baecd6e66351425d6d2728167178ee4",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-01",
+      "case_id": "EX02",
+      "corpus": "tests/fixtures/benchmark.json",
+      "input_sha256": "73f88aa71a9b4c54d04673763586815c69505569de562062a928485499e7184c",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 13,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 13,
+      "family_id": null,
+      "entity": "INPS",
+      "version_year": "1.1",
+      "official_evidence": [
+        {
+          "document_id": 13,
+          "url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+          "final_url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+          "acquired_at": "2026-10-11T11:44:50.411581+00:00",
+          "sha256": "bffdc3526732d68651764092a41fcd1eb87160af0f69b892fd137beb7a2e4bdf",
+          "catalog_title": "CERTIFICATO DI DISTACCO - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATË MBULIMI - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI543 - IT/AL 101]",
+          "code": "CI543",
+          "entity": "INPS",
+          "version": "1.1",
+          "opening_text_sha256": "4c91394c1f7b5206246fab82a0dc64c24baecd6e66351425d6d2728167178ee4",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-01",
+      "case_id": "EX02MISSINGREV",
+      "corpus": "tests/fixtures/benchmark_v2.json",
+      "input_sha256": "73f88aa71a9b4c54d04673763586815c69505569de562062a928485499e7184c",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 13,
+          "entity": "INPS",
+          "version": "1.1"
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 13,
+          "entity": "INPS",
+          "version": "1.1"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 13,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 13,
+          "url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+          "final_url": "https://www.inps.it/content/dam/inps-site/moduli/ci543/IT/CI543_IT-AL101_Certificato_distacco_Italia.pdf",
+          "acquired_at": "2026-10-11T11:44:50.411581+00:00",
+          "sha256": "bffdc3526732d68651764092a41fcd1eb87160af0f69b892fd137beb7a2e4bdf",
+          "catalog_title": "CERTIFICATO DI DISTACCO - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATË MBULIMI - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI543 - IT/AL 101]",
+          "code": "CI543",
+          "entity": "INPS",
+          "version": "1.1",
+          "opening_text_sha256": "4c91394c1f7b5206246fab82a0dc64c24baecd6e66351425d6d2728167178ee4",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-02",
+      "case_id": "EX03",
+      "corpus": "benchmarks/corpora/development_regression.json",
+      "input_sha256": "e7cfd3d47014b99eccdfaf0203b7c0d58776e35afc9261fb306bb0c3380f65d0",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 12,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 12,
+      "family_id": null,
+      "entity": "INPS",
+      "version_year": "1.1",
+      "official_evidence": [
+        {
+          "document_id": 12,
+          "url": "https://www.inps.it/content/dam/inps-site/moduli/ci544/IT/CI544_IT-AL103_Certificato_opzione_contr_Italia.pdf",
+          "final_url": "https://www.inps.it/content/dam/inps-site/moduli/ci544/IT/CI544_IT-AL103_Certificato_opzione_contr_Italia.pdf",
+          "acquired_at": "2026-10-11T13:44:19.129254+00:00",
+          "sha256": "a5c6aec59372d5b33decc6f9afd25805e570bf16099c4e12b1eb939736aa0eca",
+          "catalog_title": "CERTIFICATO DI OPZIONE CONTRIBUTIVA - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATA E ZGJEDHJES SË SKEMËS PËR PAGESËN E KONTRIBUTEVE - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI544 - IT/AL 103]",
+          "code": "CI544",
+          "entity": "INPS",
+          "version": "1.1",
+          "opening_text_sha256": "65768a955549c26a62b5d200488526c5f23d749ab155dc83e45da9677358ad55",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-02",
+      "case_id": "EX03",
+      "corpus": "tests/fixtures/benchmark.json",
+      "input_sha256": "e7cfd3d47014b99eccdfaf0203b7c0d58776e35afc9261fb306bb0c3380f65d0",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 12,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 12,
+      "family_id": null,
+      "entity": "INPS",
+      "version_year": "1.1",
+      "official_evidence": [
+        {
+          "document_id": 12,
+          "url": "https://www.inps.it/content/dam/inps-site/moduli/ci544/IT/CI544_IT-AL103_Certificato_opzione_contr_Italia.pdf",
+          "final_url": "https://www.inps.it/content/dam/inps-site/moduli/ci544/IT/CI544_IT-AL103_Certificato_opzione_contr_Italia.pdf",
+          "acquired_at": "2026-10-11T13:44:19.129254+00:00",
+          "sha256": "a5c6aec59372d5b33decc6f9afd25805e570bf16099c4e12b1eb939736aa0eca",
+          "catalog_title": "CERTIFICATO DI OPZIONE CONTRIBUTIVA - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATA E ZGJEDHJES SË SKEMËS PËR PAGESËN E KONTRIBUTEVE - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI544 - IT/AL 103]",
+          "code": "CI544",
+          "entity": "INPS",
+          "version": "1.1",
+          "opening_text_sha256": "65768a955549c26a62b5d200488526c5f23d749ab155dc83e45da9677358ad55",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-02",
+      "case_id": "EX03MISSINGREV",
+      "corpus": "tests/fixtures/benchmark_v2.json",
+      "input_sha256": "e7cfd3d47014b99eccdfaf0203b7c0d58776e35afc9261fb306bb0c3380f65d0",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 12,
+          "entity": "INPS",
+          "version": "1.1"
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 12,
+          "entity": "INPS",
+          "version": "1.1"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 12,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 12,
+          "url": "https://www.inps.it/content/dam/inps-site/moduli/ci544/IT/CI544_IT-AL103_Certificato_opzione_contr_Italia.pdf",
+          "final_url": "https://www.inps.it/content/dam/inps-site/moduli/ci544/IT/CI544_IT-AL103_Certificato_opzione_contr_Italia.pdf",
+          "acquired_at": "2026-10-11T13:44:19.129254+00:00",
+          "sha256": "a5c6aec59372d5b33decc6f9afd25805e570bf16099c4e12b1eb939736aa0eca",
+          "catalog_title": "CERTIFICATO DI OPZIONE CONTRIBUTIVA - ACCORDO TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI ALBANIA IN MATERIA DI SICUREZZA SOCIALE / CERTIFIKATA E ZGJEDHJES SË SKEMËS PËR PAGESËN E KONTRIBUTEVE - MARRËVESHJE NDËRMJET REPUBLIKËS ITALIANE DHE REPUBLIKËS SË SHQIPËRISË NË FUSHËN E SIGURIMEVE SHOQËRORE [CI544 - IT/AL 103]",
+          "code": "CI544",
+          "entity": "INPS",
+          "version": "1.1",
+          "opening_text_sha256": "65768a955549c26a62b5d200488526c5f23d749ab155dc83e45da9677358ad55",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Official bytes confirm code/title and version 1.1, but the synthetic input omits the revision. It cannot establish that revision independently of catalog uniqueness. Both historical expectations are preserved; release truth is ambiguous."
+    },
+    {
+      "group_id": "TRUTH-03",
+      "case_id": "R061",
+      "corpus": "benchmarks/corpora/family_release_v1.json",
+      "input_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 4,
+          "entity": "Agenzia delle Entrate-Riscossione"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 4,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-03",
+      "case_id": "R061",
+      "corpus": "benchmarks/corpora/family_release_v2.json",
+      "input_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 4,
+          "entity": "Agenzia delle Entrate-Riscossione"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 4,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-03",
+      "case_id": "R061",
+      "corpus": "benchmarks/corpora/family_release_v3.json",
+      "input_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 4,
+          "entity": "Agenzia delle Entrate-Riscossione"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 4,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-03",
+      "case_id": "R061",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+      "historical_expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": 4,
+      "entity": "Agenzia delle Entrate-Riscossione",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 4,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-03",
+      "case_id": "R061",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 4,
+          "entity": "Agenzia delle Entrate-Riscossione"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 4,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-04",
+      "case_id": "R010",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "bdce508918d0551d765299215b40f326cec27a7f53efe7094a2b946e9e934613",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 165,
+      "family_id": null,
+      "entity": "Garante per la protezione dei dati personali",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 165,
+          "url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo",
+          "scope": "Catalog provenance only; official bytes unavailable, insufficient for confirmation."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-04",
+      "case_id": "R011",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "3f56445169d7fc300553e1dda13873308f5602a151c4c7a11992995a032ab2c9",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 165,
+      "family_id": null,
+      "entity": "Garante per la protezione dei dati personali",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 165,
+          "url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo",
+          "scope": "Catalog provenance only; official bytes unavailable, insufficient for confirmation."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-04",
+      "case_id": "R010",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "bdce508918d0551d765299215b40f326cec27a7f53efe7094a2b946e9e934613",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 165,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 165,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 165,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 165,
+          "url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo",
+          "scope": "Catalog provenance only; official bytes unavailable, insufficient for confirmation."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-04",
+      "case_id": "R011",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "3f56445169d7fc300553e1dda13873308f5602a151c4c7a11992995a032ab2c9",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 165,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 165,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 165,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 165,
+          "url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo",
+          "scope": "Catalog provenance only; official bytes unavailable, insufficient for confirmation."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-05",
+      "case_id": "R012",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "752b3ef9d1714b91c0089aaae771636c10915dd30e0d30f7fdb270d501cddcbf",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 166,
+      "family_id": null,
+      "entity": "Garante per la protezione dei dati personali",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 166,
+          "url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "final_url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "acquired_at": "2026-10-12T05:37:56.416333+00:00",
+          "sha256": "ebd1b2160528aa920eab3a65cf989541df28f8ffc1e5b65290d36cf7e07ac841",
+          "catalog_title": "SEGNALAZIONE",
+          "code": null,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null,
+          "opening_text_sha256": "955d84ab2bef9424022ae3db070634d59287ca3183bb02a5569deefc74930597",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-05",
+      "case_id": "R013",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "3960606d8f5cc4cfbca4ef2e613de4c08f5af76ba7070b3013604628ce81da6c",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 166,
+      "family_id": null,
+      "entity": "Garante per la protezione dei dati personali",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 166,
+          "url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "final_url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "acquired_at": "2026-10-12T05:37:56.416333+00:00",
+          "sha256": "ebd1b2160528aa920eab3a65cf989541df28f8ffc1e5b65290d36cf7e07ac841",
+          "catalog_title": "SEGNALAZIONE",
+          "code": null,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null,
+          "opening_text_sha256": "955d84ab2bef9424022ae3db070634d59287ca3183bb02a5569deefc74930597",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-05",
+      "case_id": "R012",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "752b3ef9d1714b91c0089aaae771636c10915dd30e0d30f7fdb270d501cddcbf",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 166,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 166,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 166,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 166,
+          "url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "final_url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "acquired_at": "2026-10-12T05:37:56.416333+00:00",
+          "sha256": "ebd1b2160528aa920eab3a65cf989541df28f8ffc1e5b65290d36cf7e07ac841",
+          "catalog_title": "SEGNALAZIONE",
+          "code": null,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null,
+          "opening_text_sha256": "955d84ab2bef9424022ae3db070634d59287ca3183bb02a5569deefc74930597",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-05",
+      "case_id": "R013",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "3960606d8f5cc4cfbca4ef2e613de4c08f5af76ba7070b3013604628ce81da6c",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 166,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 166,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 166,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 166,
+          "url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "final_url": "https://www.garanteprivacy.it/documents/10160/0/SCHEDA+-+Segnalazione+e+reclamo+-+Gli+strumenti+di+tutela+a+disposizione+dell%27interessato.pdf/73a9378e-1bdd-4e78-837b-2455a4280088?version=2.0",
+          "acquired_at": "2026-10-12T05:37:56.416333+00:00",
+          "sha256": "ebd1b2160528aa920eab3a65cf989541df28f8ffc1e5b65290d36cf7e07ac841",
+          "catalog_title": "SEGNALAZIONE",
+          "code": null,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null,
+          "opening_text_sha256": "955d84ab2bef9424022ae3db070634d59287ca3183bb02a5569deefc74930597",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-06",
+      "case_id": "R028",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "87ad6b1bc0f1aa12fceac155019fcf9653ce1bd28e72a44f49ea3882f8df351b",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 20,
+      "family_id": null,
+      "entity": "INAIL",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 20,
+          "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "final_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "acquired_at": "2026-10-11T19:36:22.676331+00:00",
+          "sha256": "5d12d758ac8cf172364bc2b98c67d15649884e05beb84afa1857510682172d2e",
+          "catalog_title": "Avvocati",
+          "code": null,
+          "entity": "INAIL",
+          "version": null,
+          "opening_text_sha256": "cc9ef29b7c5f75de0afbf8daa2cbad5b2124682cd7f116802a6314de75b45459",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-06",
+      "case_id": "R029",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "39b060dbf0e06daaeba85591c8466fe55aff1dcb681d095df0904cb306209b2b",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        },
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 20,
+      "family_id": null,
+      "entity": "INAIL",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 20,
+          "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "final_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "acquired_at": "2026-10-11T19:36:22.676331+00:00",
+          "sha256": "5d12d758ac8cf172364bc2b98c67d15649884e05beb84afa1857510682172d2e",
+          "catalog_title": "Avvocati",
+          "code": null,
+          "entity": "INAIL",
+          "version": null,
+          "opening_text_sha256": "cc9ef29b7c5f75de0afbf8daa2cbad5b2124682cd7f116802a6314de75b45459",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-06",
+      "case_id": "R028",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "87ad6b1bc0f1aa12fceac155019fcf9653ce1bd28e72a44f49ea3882f8df351b",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 20,
+          "entity": "INAIL",
+          "version": null
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 20,
+          "entity": "INAIL",
+          "version": null
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 20,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 20,
+          "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "final_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "acquired_at": "2026-10-11T19:36:22.676331+00:00",
+          "sha256": "5d12d758ac8cf172364bc2b98c67d15649884e05beb84afa1857510682172d2e",
+          "catalog_title": "Avvocati",
+          "code": null,
+          "entity": "INAIL",
+          "version": null,
+          "opening_text_sha256": "cc9ef29b7c5f75de0afbf8daa2cbad5b2124682cd7f116802a6314de75b45459",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-06",
+      "case_id": "R029",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "39b060dbf0e06daaeba85591c8466fe55aff1dcb681d095df0904cb306209b2b",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 20,
+          "entity": "INAIL",
+          "version": null
+        },
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 20,
+          "entity": "INAIL",
+          "version": null
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": 20,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 20,
+          "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "final_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/ucm_084744,0.pdf",
+          "acquired_at": "2026-10-11T19:36:22.676331+00:00",
+          "sha256": "5d12d758ac8cf172364bc2b98c67d15649884e05beb84afa1857510682172d2e",
+          "catalog_title": "Avvocati",
+          "code": null,
+          "entity": "INAIL",
+          "version": null,
+          "opening_text_sha256": "cc9ef29b7c5f75de0afbf8daa2cbad5b2124682cd7f116802a6314de75b45459",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Bare category or profession label is insufficient to establish a unique form/version. Official evidence distinguishes a full form heading or informational shared attachment; the short synthetic input remains ambiguous."
+    },
+    {
+      "group_id": "TRUTH-07",
+      "case_id": "R060",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "69d057ece61a60d2d91195aa81b0ce7babb239f561bb1e0bf8adf987ec3ee6f9",
+      "historical_expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "NO_MATCH"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": 3,
+      "entity": "Agenzia delle Entrate-Riscossione",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 3,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/la-guida-alla-cartella-di-pagamento/lavviso-di-presa-in-carico-e-lavviso-di-accertamento-esecutivo/cosa-sono/index.html",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-07",
+      "case_id": "R060",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "69d057ece61a60d2d91195aa81b0ce7babb239f561bb1e0bf8adf987ec3ee6f9",
+      "historical_expected": {
+        "match_type": "NO_MATCH"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 3,
+          "entity": "Agenzia delle Entrate-Riscossione"
+        }
+      ],
+      "reconciled_expected": null,
+      "document_id": null,
+      "family_id": null,
+      "entity": null,
+      "version_year": null,
+      "official_evidence": [
+        {
+          "family_id": 3,
+          "url": "https://www.agenziaentrateriscossione.gov.it/it/la-guida-alla-cartella-di-pagamento/lavviso-di-presa-in-carico-e-lavviso-di-accertamento-esecutivo/cosa-sono/index.html",
+          "scope": "Historical family source URL only. No independently inspected official source bytes proving this input label; excluded from primary release truth."
+        }
+      ],
+      "status": "ambiguous",
+      "label_status": "ambiguous",
+      "notes": "Issuer/function conflict was intentionally corrected in locked v2. Runtime safety keeps NO, but absent official source bytes this registry does not certify the label as official truth."
+    },
+    {
+      "group_id": "TRUTH-08",
+      "case_id": "R066",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "477ee2bf40a53f498d638dab2236a8b8f48dbde87190b4610073580b598ba000",
+      "historical_expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 143,
+          "entity": "Ispettorato Nazionale del Lavoro",
+          "version": null
+        }
+      ],
+      "reconciled_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "document_id": 143,
+      "family_id": 10,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 143,
+          "url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo-bengalese.pdf",
+          "final_url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo-bengalese.pdf",
+          "acquired_at": "2026-10-12T05:43:57.540666+00:00",
+          "sha256": "0b8d188ac513ae1e73b68fd4872cec6489725c934602365cccf408e5d46a6592",
+          "catalog_title": "Richiesta di intervento ispettivo",
+          "code": "INL-31",
+          "entity": "Ispettorato Nazionale del Lavoro",
+          "version": null,
+          "opening_text_sha256": "9ca342d76dc59190c27d5e87d42dc5c1318bbab47eb1075a0261f9d434f5477c",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "historical_fixture_error",
+      "label_status": "excluded_from_release_gate",
+      "notes": "Full official heading and compatible issuing authority are present. R066 additionally states INL 31. Official local PDF/DOCX confirms a specific catalog identity; old family-only label was less specific."
+    },
+    {
+      "group_id": "TRUTH-08",
+      "case_id": "R066",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "477ee2bf40a53f498d638dab2236a8b8f48dbde87190b4610073580b598ba000",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 10,
+          "entity": "Ispettorato Nazionale del Lavoro"
+        }
+      ],
+      "reconciled_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "document_id": 143,
+      "family_id": null,
+      "entity": "Ispettorato Nazionale del Lavoro",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 143,
+          "url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo-bengalese.pdf",
+          "final_url": "https://www.ispettorato.gov.it/files/2025/02/INL-31-Modulo-richiesta-di-intervento-ispettivo-bengalese.pdf",
+          "acquired_at": "2026-10-12T05:43:57.540666+00:00",
+          "sha256": "0b8d188ac513ae1e73b68fd4872cec6489725c934602365cccf408e5d46a6592",
+          "catalog_title": "Richiesta di intervento ispettivo",
+          "code": "INL-31",
+          "entity": "Ispettorato Nazionale del Lavoro",
+          "version": null,
+          "opening_text_sha256": "9ca342d76dc59190c27d5e87d42dc5c1318bbab47eb1075a0261f9d434f5477c",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "official_truth_confirmed",
+      "label_status": "confirmed",
+      "notes": "Full official heading and compatible issuing authority are present. R066 additionally states INL 31. Official local PDF/DOCX confirms a specific catalog identity; old family-only label was less specific."
+    },
+    {
+      "group_id": "TRUTH-09",
+      "case_id": "R068",
+      "corpus": "benchmarks/corpora/release_locked_v1.json",
+      "input_sha256": "f101999095a24a1be33ed46900529e23afe30362aa42b16f891be5505df680fe",
+      "historical_expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "alternative_expected": [
+        {
+          "match_type": "DOCUMENT_MATCH",
+          "document_id": 167,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null
+        }
+      ],
+      "reconciled_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "document_id": 167,
+      "family_id": 12,
+      "entity": "Garante per la protezione dei dati personali",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 167,
+          "url": "https://www.garanteprivacy.it/documents/10160/10704/MODELLO+esercizio+diritti+in+materia+di+protezione+dei+dati+personali.docx/a356cedc-77b9-4f69-b24b-dadf877bb940?version=2.0",
+          "final_url": "https://www.garanteprivacy.it/documents/10160/10704/MODELLO+esercizio+diritti+in+materia+di+protezione+dei+dati+personali.docx/a356cedc-77b9-4f69-b24b-dadf877bb940?version=2.0",
+          "acquired_at": "2026-10-12T05:37:56.943736+00:00",
+          "sha256": "085b42dcf427488cb834c4a5df2633a4d6a007e1f959c54803d2b55ceceb1d82",
+          "catalog_title": "ESERCIZIO DEI DIRITTI IN MATERIA DI PROTEZIONE DEI DATI PERSONALI",
+          "code": null,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null,
+          "opening_text_sha256": "0c8398764669935208bacc7f0c32241b5eda9d46827f8f4348aad1b3fc64ded4",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "historical_fixture_error",
+      "label_status": "excluded_from_release_gate",
+      "notes": "Full official heading and compatible issuing authority are present. R066 additionally states INL 31. Official local PDF/DOCX confirms a specific catalog identity; old family-only label was less specific."
+    },
+    {
+      "group_id": "TRUTH-09",
+      "case_id": "R068",
+      "corpus": "benchmarks/corpora/release_locked_v2.json",
+      "input_sha256": "f101999095a24a1be33ed46900529e23afe30362aa42b16f891be5505df680fe",
+      "historical_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "alternative_expected": [
+        {
+          "match_type": "FAMILY_MATCH",
+          "family_id": 12,
+          "entity": "Garante per la protezione dei dati personali"
+        }
+      ],
+      "reconciled_expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "document_id": 167,
+      "family_id": null,
+      "entity": "Garante per la protezione dei dati personali",
+      "version_year": null,
+      "official_evidence": [
+        {
+          "document_id": 167,
+          "url": "https://www.garanteprivacy.it/documents/10160/10704/MODELLO+esercizio+diritti+in+materia+di+protezione+dei+dati+personali.docx/a356cedc-77b9-4f69-b24b-dadf877bb940?version=2.0",
+          "final_url": "https://www.garanteprivacy.it/documents/10160/10704/MODELLO+esercizio+diritti+in+materia+di+protezione+dei+dati+personali.docx/a356cedc-77b9-4f69-b24b-dadf877bb940?version=2.0",
+          "acquired_at": "2026-10-12T05:37:56.943736+00:00",
+          "sha256": "085b42dcf427488cb834c4a5df2633a4d6a007e1f959c54803d2b55ceceb1d82",
+          "catalog_title": "ESERCIZIO DEI DIRITTI IN MATERIA DI PROTEZIONE DEI DATI PERSONALI",
+          "code": null,
+          "entity": "Garante per la protezione dei dati personali",
+          "version": null,
+          "opening_text_sha256": "0c8398764669935208bacc7f0c32241b5eda9d46827f8f4348aad1b3fc64ded4",
+          "scope": "Official local bytes inspected; no full text redistributed."
+        }
+      ],
+      "status": "official_truth_confirmed",
+      "label_status": "confirmed",
+      "notes": "Full official heading and compatible issuing authority are present. R066 additionally states INL 31. Official local PDF/DOCX confirms a specific catalog identity; old family-only label was less specific."
+    }
+  ],
+  "counts": {
+    "ambiguous": 25,
+    "historical_fixture_error": 2,
+    "official_truth_confirmed": 2
+  },
+  "unclassified_contradictions": 0,
+  "corpus_sha256": {
+    "benchmarks/corpora/development_regression.json": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "benchmarks/corpora/family_release_v1.json": "324e38e404eac04a51692f1152596343946d87b1c3c12fa9ee812c478f0fd644",
+    "benchmarks/corpora/family_release_v2.json": "16705612ba31a3dfb4e6c6d520ce14ef7b14f001f56174ed6e81314676b89910",
+    "benchmarks/corpora/family_release_v3.json": "d0b6225165f933c3c08088f9283760a0af6fe9e84d844ee63ba99f8651ae17be",
+    "benchmarks/corpora/hard_negatives_v1.json": "bab77cf77153c695d62895508e07c5622ca89fa67b185d2612775dba70f873db",
+    "benchmarks/corpora/hard_negatives_v2.json": "7d9d09da26ab4b82aaba9d3e4592bb036a17051b88592c9de89f897a8aea4498",
+    "benchmarks/corpora/ocr_synthetic_v1.json": "651f47c04550413e32568096e46723374ebdbbf3af9f564e50d1454d009154a1",
+    "benchmarks/corpora/ocr_synthetic_v2.json": "d3d47e8f4113830b1d51a935128e5979b61c3337481d7b99a752ce6df24c016a",
+    "benchmarks/corpora/release_locked_v1.json": "c56081c2ae1adf1741c7e2b4f1f536fc8a6d9a4c004f3b68cd850389fe4e67d9",
+    "benchmarks/corpora/release_locked_v2.json": "58ddd13cce1243d56cf30fc24161a18549f12ea33fbbcaf0fefe309956301613",
+    "tests/fixtures/benchmark.json": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "tests/fixtures/benchmark_v2.json": "7af0365fad64bf4de70e4e4a88e3c12f6a81291111154f7e155b883c501448e1"
+  }
+}

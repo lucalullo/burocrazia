@@ -1,0 +1,133 @@
+{
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "checked_at": "2026-10-14T10:59:41.340094+00:00",
+  "cli": [
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "fingerprint_v1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2dda91b9257189d8169d0b4f74bc565f859349d6ed70507f52df69eea06c8092"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v2",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "fingerprint_v2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "964eb3b7e3ffe028e53eaedc866528d68ac455de557bece06cd072c3a37cfecf"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v3",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "fingerprint_v3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "692f7198eeab96ad90764525e468da57fa582ebde150b4e5b7dd98084c12d2bb"
+    },
+    {
+      "args": [
+        "scripts/benchmark.py",
+        "--corpus",
+        "tests/fixtures/benchmark_v2.json",
+        "--output",
+        "reports/round20-compat-v2.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "compat_v2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.evaluate",
+        "--fast",
+        "--output-dir",
+        "reports/round20-legacy-fast"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "name": "legacy-fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b876f2d453cce7ff6e010d9acd151848fe8efbecb626fbf737a438c178b86c71"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.round20_gates",
+        "release-gate-fast"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "release-gate-fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ee80d80ac142d384d1046f31952a63646bf4df256082e7157f24b79768093fed"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.round20_gates",
+        "historical-regression-fast"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "name": "historical-regression-fast",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "30351f3cd7b6d9ee2652670add72ced5baafd2912d18de678f0731e942283d30"
+    }
+  ],
+  "compile_pass": true,
+  "github_ci": "external_pending",
+  "migration": {
+    "foreign_key_violations": [],
+    "idempotent": true,
+    "integrity": "ok",
+    "row_counts_unchanged": true,
+    "schema": 610
+  },
+  "passed": true,
+  "profile_v6_valid": true,
+  "raw_historical_expectations_changed": false,
+  "runtime_sha256": "549096bb454b1bcecf321791a2331018c817c2dcbaea3202e7347060db502e59",
+  "truth_schema_valid": true
+}

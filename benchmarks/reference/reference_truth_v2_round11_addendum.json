@@ -1,0 +1,1130 @@
+{
+  "base_registry_sha256": "2b7805bf622ccae617830a5e159f756c47132b426a24acf12f1d575e53ac8fec",
+  "cases": [
+    {
+      "case_id": "U11-3fe772f121f84d0f",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T19:59:33.932730+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 111,
+            "nearest_chars": 0.5948683889425141,
+            "nearest_content_score": 0.20820393612987995,
+            "nearest_digital": 0.0,
+            "official_sha256": "3fe772f121f84d0ff27734b9152dee8c218b9e487638677c94770bcd84089228",
+            "opening_sha256": "80b60267dc910c3a07a869d18d29303ac36bb35d60e23f1e7989c6df272a5512",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare 4 agosto 2026. Iniziative per la promozione della conoscenza della tragedia delle foibe e dell’esodo giuliano-dalmata nelle nuove generazioni | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T19:59:28.679969+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-4-agosto-2026-iniziative-promozione-conoscenza-tragedia-foibe-e-dellesodo-giuliano-dalmata-nelle-nuove-generazioni",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-4-agosto-2026-iniziative-promozione-conoscenza-tragedia-foibe-e-dellesodo-giuliano-dalmata-nelle-nuove-generazioni",
+                "sha256": "34cf9c54e7e65598fb798e888fbd74676753abfc38ba10bc3cc086f770895ad6",
+                "size": 74089,
+                "status": 200
+              },
+              "listing_sha256": "34cf9c54e7e65598fb798e888fbd74676753abfc38ba10bc3cc086f770895ad6",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-4-agosto-2026-iniziative-promozione-conoscenza-tragedia-foibe-e-dellesodo-giuliano-dalmata-nelle-nuove-generazioni"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8235294117647058,
+            "title_tokens_supported": 14
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:33.932730+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2026-08/circolare_4_agosto_2026_inniziative_relativa_alla_foibe.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2026-08/circolare_4_agosto_2026_inniziative_relativa_alla_foibe.pdf",
+            "sha256": "3fe772f121f84d0ff27734b9152dee8c218b9e487638677c94770bcd84089228",
+            "size": 153923,
+            "status": 200
+          },
+          "sha256": "3fe772f121f84d0ff27734b9152dee8c218b9e487638677c94770bcd84089228"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2026-08/circolare_4_agosto_2026_inniziative_relativa_alla_foibe.pdf"
+    },
+    {
+      "case_id": "U11-a333ee0ddbe6973e",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T19:59:52.415293+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 109,
+            "nearest_chars": 0.5611821446073195,
+            "nearest_content_score": 0.2597976655050735,
+            "nearest_digital": 0.09864282978502333,
+            "official_sha256": "a333ee0ddbe6973eb3d63cd411a0529972376806721e41af5f5a7de3eb36c1e0",
+            "opening_sha256": "4cbb898b3114b14c3876c5daff7f410b55b09e839b8ac92bcc49d3d6830eb66f",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare del 24 giugno 2026. Prevenzione e contrasto dell’abusivismo commerciale e della vendita di prodotti contraffatti. \"Spiagge sicure - Estate 2026\". Finanziamento iniziative | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T19:59:39.403981+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-24-giugno-2026-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2026-finanziamento",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-24-giugno-2026-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2026-finanziamento",
+                "sha256": "72aa0a65e3caa2e57d176008f4bd5b4d3da9cc117286cc52b6a92feb47468b56",
+                "size": 75479,
+                "status": 200
+              },
+              "listing_sha256": "72aa0a65e3caa2e57d176008f4bd5b4d3da9cc117286cc52b6a92feb47468b56",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-24-giugno-2026-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2026-finanziamento"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8888888888888888,
+            "title_tokens_supported": 16
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T19:59:52.415293+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2026-06/circolare_spiagge_sicure_2026.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2026-06/circolare_spiagge_sicure_2026.pdf",
+            "sha256": "a333ee0ddbe6973eb3d63cd411a0529972376806721e41af5f5a7de3eb36c1e0",
+            "size": 233533,
+            "status": 200
+          },
+          "sha256": "a333ee0ddbe6973eb3d63cd411a0529972376806721e41af5f5a7de3eb36c1e0"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2026-06/circolare_spiagge_sicure_2026.pdf"
+    },
+    {
+      "case_id": "U11-e3bf738a033afe3e",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:00:19.605795+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 1056,
+            "nearest_chars": 0.6183983646723035,
+            "nearest_content_score": 0.21643942763530621,
+            "nearest_digital": 0.0,
+            "official_sha256": "e3bf738a033afe3edba6f12e86567e151706dc9be926b753726e66d9bc892d0e",
+            "opening_sha256": "dd23d3b53c15bf769460009f78b28e6e1adc6f2c9789cb7344118ffc7fcf65e6",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare n. 14100/168(2) del 8 maggio 2026 | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:00:04.714622+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-n-141001682-8-maggio-2026",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-n-141001682-8-maggio-2026",
+                "sha256": "4a58bcdbb36513fbfe901cc71b78c6ba61d99828495ed378eb914d8a28c14284",
+                "size": 72805,
+                "status": 200
+              },
+              "listing_sha256": "4a58bcdbb36513fbfe901cc71b78c6ba61d99828495ed378eb914d8a28c14284",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-n-141001682-8-maggio-2026"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.625,
+            "title_tokens_supported": 5
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:19.605795+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2026-05/circolare_8.5.2026.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2026-05/circolare_8.5.2026.pdf",
+            "sha256": "e3bf738a033afe3edba6f12e86567e151706dc9be926b753726e66d9bc892d0e",
+            "size": 482297,
+            "status": 200
+          },
+          "sha256": "e3bf738a033afe3edba6f12e86567e151706dc9be926b753726e66d9bc892d0e"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2026-05/circolare_8.5.2026.pdf"
+    },
+    {
+      "case_id": "U11-0a444c0dcd223e35",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:00:30.248065+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 695,
+            "nearest_chars": 0.69229122450392,
+            "nearest_content_score": 0.24230192857637198,
+            "nearest_digital": 0.0,
+            "official_sha256": "0a444c0dcd223e350540e5fb7f26ed1873763197db1e6384f5f6e760d8c0ce7e",
+            "opening_sha256": "35a033bc4bdff422da79bd79a74f9b7f034f8c7836c04986ef9c0d0df90749c8",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare del 19 marzo 2026. Regolamento recante l’erogazione di misure di sostegno agli orfani dei crimini domestici e di reati di genere e alle famiglie affidatarie | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:00:24.685390+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-19-marzo-2026-regolamento-recante-lerogazione-misure-sostegno-orfani-dei-crimini-domestici-e-reati-genere-e-famiglie-affidatarie",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-19-marzo-2026-regolamento-recante-lerogazione-misure-sostegno-orfani-dei-crimini-domestici-e-reati-genere-e-famiglie-affidatarie",
+                "sha256": "f23b2601039c73d5a39cc8c3b07c438a22ca4bcc034840556f3ec47a41fee5ba",
+                "size": 74281,
+                "status": 200
+              },
+              "listing_sha256": "f23b2601039c73d5a39cc8c3b07c438a22ca4bcc034840556f3ec47a41fee5ba",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-19-marzo-2026-regolamento-recante-lerogazione-misure-sostegno-orfani-dei-crimini-domestici-e-reati-genere-e-famiglie-affidatarie"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8421052631578947,
+            "title_tokens_supported": 16
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:00:30.248065+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2026-03/orfani_circolare_alle_prefetture_19.03.2026.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2026-03/orfani_circolare_alle_prefetture_19.03.2026.pdf",
+            "sha256": "0a444c0dcd223e350540e5fb7f26ed1873763197db1e6384f5f6e760d8c0ce7e",
+            "size": 563210,
+            "status": 200
+          },
+          "sha256": "0a444c0dcd223e350540e5fb7f26ed1873763197db1e6384f5f6e760d8c0ce7e"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2026-03/orfani_circolare_alle_prefetture_19.03.2026.pdf"
+    },
+    {
+      "case_id": "U11-7629104f2f1543a6",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:01:10.711038+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 95,
+            "nearest_chars": 0.7762249694978665,
+            "nearest_content_score": 0.3081098469976114,
+            "nearest_digital": 0.0455894880739891,
+            "official_sha256": "7629104f2f1543a638d2f905dd052557f7a9fc9888365242c12b96bb58374add",
+            "opening_sha256": "27fceb8abd974326a44fd1e4b026ddf25c81198b327f9012e03d23a573b8c82c",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare 11 novembre 2025. Atto di indirizzo a valenza generale sugli incentivi alle funzioni tecniche | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:01:05.831419+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-11-novembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-11-novembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche",
+                "sha256": "827010f1827dc24555cad53303776ee5a6be64e35409deaff4b95c8c8be3ca1a",
+                "size": 75507,
+                "status": 200
+              },
+              "listing_sha256": "827010f1827dc24555cad53303776ee5a6be64e35409deaff4b95c8c8be3ca1a",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-11-novembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.9285714285714286,
+            "title_tokens_supported": 13
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:10.711038+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-11/circolare_atto_di_indirizzo_incentivi_11.10.2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-11/circolare_atto_di_indirizzo_incentivi_11.10.2025.pdf",
+            "sha256": "7629104f2f1543a638d2f905dd052557f7a9fc9888365242c12b96bb58374add",
+            "size": 340146,
+            "status": 200
+          },
+          "sha256": "7629104f2f1543a638d2f905dd052557f7a9fc9888365242c12b96bb58374add"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-11/circolare_atto_di_indirizzo_incentivi_11.10.2025.pdf"
+    },
+    {
+      "case_id": "U11-3e5e22a789f3391c",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:01:22.929325+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "atto_indirizzo",
+            "family_hits": [],
+            "nearest_catalog_id": 691,
+            "nearest_chars": 0.6741901414061107,
+            "nearest_content_score": 0.23596654949213872,
+            "nearest_digital": 0.0,
+            "official_sha256": "3e5e22a789f3391c93905a6bec3340a9cbe78ba2918679bc74edd00660cbc3b1",
+            "opening_sha256": "1d6a143b7660cd03318264c6de1d5f089e160f69a13e452e6a684458a0942c1c",
+            "source_evidence": {
+              "attachment_label": "L'allegato",
+              "context_heading": "Decreto del 12 settembre 2025. Atto di indirizzo a valenza generale sugli incentivi alle funzioni tecniche | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:01:17.780561+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/decreti-direttive-e-altri-documenti/decreto-12-settembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/decreti-direttive-e-altri-documenti/decreto-12-settembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche",
+                "sha256": "5779141af12a71ded0f6104aad0aa56e51614514971c82528e3d8874f6a96792",
+                "size": 75773,
+                "status": 200
+              },
+              "listing_sha256": "5779141af12a71ded0f6104aad0aa56e51614514971c82528e3d8874f6a96792",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/decreti-direttive-e-altri-documenti/decreto-12-settembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 15
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:22.929325+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-11/atto_di_indirizzo_a_valenza_generale_1.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-11/atto_di_indirizzo_a_valenza_generale_1.pdf",
+            "sha256": "3e5e22a789f3391c93905a6bec3340a9cbe78ba2918679bc74edd00660cbc3b1",
+            "size": 306237,
+            "status": 200
+          },
+          "sha256": "3e5e22a789f3391c93905a6bec3340a9cbe78ba2918679bc74edd00660cbc3b1"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-11/atto_di_indirizzo_a_valenza_generale_1.pdf"
+    },
+    {
+      "case_id": "U11-a5de70bb0af5ee07",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:01:27.059867+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "domanda",
+            "family_hits": [],
+            "nearest_catalog_id": 1084,
+            "nearest_chars": 0.6365975501880295,
+            "nearest_content_score": 0.301858627342362,
+            "nearest_digital": 0.14872396955310332,
+            "official_sha256": "a5de70bb0af5ee07ab5f2b6506f6aed892b7c5b3de4f9a429970aae8b2aa70e6",
+            "opening_sha256": "696390b456e29725c83b855a1b0e4cd07e2c7cff38972829d49b7a39bfdda379",
+            "source_evidence": {
+              "attachment_label": "Modello di domanda ( pdf, 170 Kb)",
+              "context_heading": "Decreto 21 settembre 2026 - Concorso straordinario, per titoli, a 350 posti di Ispettore superiore del Corpo di polizia penitenziaria",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:01:21.633268+00:00",
+                "attempts": 1,
+                "content_type": "text/html;charset=utf-8",
+                "final_url": "https://www.giustizia.it/giustizia/page/it/provvedimento_ministeriale_selezionato?contentId=SDC1521269",
+                "redirects": [],
+                "requested_url": "https://www.giustizia.it/giustizia/page/it/provvedimento_ministeriale_selezionato?contentId=SDC1521269",
+                "sha256": "caffa865d4fb8be8c29afdfca7756ae03ed77c7d46b0f028de74dd7fd0988daf",
+                "size": 71159,
+                "status": 200
+              },
+              "listing_sha256": "caffa865d4fb8be8c29afdfca7756ae03ed77c7d46b0f028de74dd7fd0988daf",
+              "listing_url": "https://www.giustizia.it/giustizia/page/it/provvedimento_ministeriale_selezionato?contentId=SDC1521269"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.625,
+            "title_tokens_supported": 10
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:27.059867+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.giustizia.it/cmsresources/cms/documents/dap_350_ispettori_superiori_21set2026_domanda.pdf",
+            "redirects": [],
+            "requested_url": "https://www.giustizia.it/cmsresources/cms/documents/dap_350_ispettori_superiori_21set2026_domanda.pdf",
+            "sha256": "a5de70bb0af5ee07ab5f2b6506f6aed892b7c5b3de4f9a429970aae8b2aa70e6",
+            "size": 170390,
+            "status": 200
+          },
+          "sha256": "a5de70bb0af5ee07ab5f2b6506f6aed892b7c5b3de4f9a429970aae8b2aa70e6"
+        }
+      ],
+      "source_url": "https://www.giustizia.it/cmsresources/cms/documents/dap_350_ispettori_superiori_21set2026_domanda.pdf"
+    },
+    {
+      "case_id": "U11-c54fb6d422c4ada9",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:01:27.956609+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "decreto",
+            "family_hits": [],
+            "nearest_catalog_id": 1071,
+            "nearest_chars": 0.6186255484829164,
+            "nearest_content_score": 0.21651894196902072,
+            "nearest_digital": 0.0,
+            "official_sha256": "c54fb6d422c4ada9a9442e8123a5e943290f97dcad11f6075db5ff7240185813",
+            "opening_sha256": "bf4dbf24fba1954a959d63bbe69ee7f1f1ea8d6f8695d83db90f95da9440c2b1",
+            "source_evidence": {
+              "attachment_label": "Il decreto",
+              "context_heading": "Decreto del 12 settembre 2025. Atto di indirizzo a valenza generale sugli incentivi alle funzioni tecniche | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:01:17.780561+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/decreti-direttive-e-altri-documenti/decreto-12-settembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/decreti-direttive-e-altri-documenti/decreto-12-settembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche",
+                "sha256": "5779141af12a71ded0f6104aad0aa56e51614514971c82528e3d8874f6a96792",
+                "size": 75773,
+                "status": 200
+              },
+              "listing_sha256": "5779141af12a71ded0f6104aad0aa56e51614514971c82528e3d8874f6a96792",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/decreti-direttive-e-altri-documenti/decreto-12-settembre-2025-atto-indirizzo-valenza-generale-sugli-incentivi-funzioni-tecniche"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8571428571428571,
+            "title_tokens_supported": 12
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:01:27.956609+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-11/dm_incentivi_12sett2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-11/dm_incentivi_12sett2025.pdf",
+            "sha256": "c54fb6d422c4ada9a9442e8123a5e943290f97dcad11f6075db5ff7240185813",
+            "size": 144715,
+            "status": 200
+          },
+          "sha256": "c54fb6d422c4ada9a9442e8123a5e943290f97dcad11f6075db5ff7240185813"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-11/dm_incentivi_12sett2025.pdf"
+    },
+    {
+      "case_id": "U11-6cba5c57d15a4f3b",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:02:39.380241+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "domanda",
+            "family_hits": [],
+            "nearest_catalog_id": 109,
+            "nearest_chars": 0.59210619070906,
+            "nearest_content_score": 0.27062108164068266,
+            "nearest_digital": 0.09864282978502333,
+            "official_sha256": "6cba5c57d15a4f3bb436cc1f652210e07dcd837acfcede088a1b23a8ae86021c",
+            "opening_sha256": "07b1b11ab2ca016b8b8e222624e04e1e78b01145cf3773d53ab0f748ec720b1d",
+            "source_evidence": {
+              "attachment_label": "Domanda di contributo",
+              "context_heading": "Circolare del 14 ottobre 2025 - Attività di prevenzione e contrasto allo spaccio di sostanze stupefacenti nei pressi degli istituti scolastici. “Scuole Sicure” 2025/2026 | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:02:27.124056+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-ottobre-2025-attivita-prevenzione-e-contrasto-allo-spaccio-sostanze-stupefacenti-nei-pressi-istituti-scolastici-scuole-sicure-20252026",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-ottobre-2025-attivita-prevenzione-e-contrasto-allo-spaccio-sostanze-stupefacenti-nei-pressi-istituti-scolastici-scuole-sicure-20252026",
+                "sha256": "7170a0bade92b6fb889fd6b068176c8e7615713b0748b7c1a6562787036efc4e",
+                "size": 77197,
+                "status": 200
+              },
+              "listing_sha256": "7170a0bade92b6fb889fd6b068176c8e7615713b0748b7c1a6562787036efc4e",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-ottobre-2025-attivita-prevenzione-e-contrasto-allo-spaccio-sostanze-stupefacenti-nei-pressi-istituti-scolastici-scuole-sicure-20252026"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:39.380241+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-10/all._2_modello_domanda_contributo.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-10/all._2_modello_domanda_contributo.pdf",
+            "sha256": "6cba5c57d15a4f3bb436cc1f652210e07dcd837acfcede088a1b23a8ae86021c",
+            "size": 130278,
+            "status": 200
+          },
+          "sha256": "6cba5c57d15a4f3bb436cc1f652210e07dcd837acfcede088a1b23a8ae86021c"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-10/all._2_modello_domanda_contributo.pdf"
+    },
+    {
+      "case_id": "U11-76ce28ed9b647097",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:02:51.725225+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 1060,
+            "nearest_chars": 0.6173179059204287,
+            "nearest_content_score": 0.2647739387244089,
+            "nearest_digital": 0.06930034330451776,
+            "official_sha256": "76ce28ed9b647097ffed75711fb0083a3e7c89204f38cb3e0749401053b3ae36",
+            "opening_sha256": "05de5ca2d83b5c71300792007979f6ce959c69561b8f17efd434bb1cc5c42453",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare del 14 ottobre 2025 - Attività di prevenzione e contrasto allo spaccio di sostanze stupefacenti nei pressi degli istituti scolastici. “Scuole Sicure” 2025/2026 | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:02:27.124056+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-ottobre-2025-attivita-prevenzione-e-contrasto-allo-spaccio-sostanze-stupefacenti-nei-pressi-istituti-scolastici-scuole-sicure-20252026",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-ottobre-2025-attivita-prevenzione-e-contrasto-allo-spaccio-sostanze-stupefacenti-nei-pressi-istituti-scolastici-scuole-sicure-20252026",
+                "sha256": "7170a0bade92b6fb889fd6b068176c8e7615713b0748b7c1a6562787036efc4e",
+                "size": 77197,
+                "status": 200
+              },
+              "listing_sha256": "7170a0bade92b6fb889fd6b068176c8e7615713b0748b7c1a6562787036efc4e",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-ottobre-2025-attivita-prevenzione-e-contrasto-allo-spaccio-sostanze-stupefacenti-nei-pressi-istituti-scolastici-scuole-sicure-20252026"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.95,
+            "title_tokens_supported": 19
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:02:51.725225+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-10/circolare_scuole_sicure_2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-10/circolare_scuole_sicure_2025.pdf",
+            "sha256": "76ce28ed9b647097ffed75711fb0083a3e7c89204f38cb3e0749401053b3ae36",
+            "size": 276667,
+            "status": 200
+          },
+          "sha256": "76ce28ed9b647097ffed75711fb0083a3e7c89204f38cb3e0749401053b3ae36"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-10/circolare_scuole_sicure_2025.pdf"
+    },
+    {
+      "case_id": "U11-f16304a82767f2f1",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:03:04.667923+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "domanda",
+            "family_hits": [],
+            "nearest_catalog_id": 109,
+            "nearest_chars": 0.5843271364196091,
+            "nearest_content_score": 0.2678984126393748,
+            "nearest_digital": 0.09864282978502333,
+            "official_sha256": "f16304a82767f2f1987806386507869c9ea7d84de008f8bf25f336e96be7a2b8",
+            "opening_sha256": "f754ed30d6ff62d863b7be41763cdb54f0123e85b22124c1d831f9f80657a18d",
+            "source_evidence": {
+              "attachment_label": "Allegato 2 - Domanda di contributo",
+              "context_heading": "Circolare del 28 luglio 2025. Prevenzione e contrasto dell’abusivismo commerciale e della vendita di prodotti contraffatti. \"Spiagge sicure - Estate 2025\". Finanziamento iniziative | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:02:56.292852+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-28-luglio-2025-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2025-finanziamento",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-28-luglio-2025-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2025-finanziamento",
+                "sha256": "7a674de9c76228d1ddbdcc910cb6b5933a791942fb6ed9d40efbbc199bf90d96",
+                "size": 77609,
+                "status": 200
+              },
+              "listing_sha256": "7a674de9c76228d1ddbdcc910cb6b5933a791942fb6ed9d40efbbc199bf90d96",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-28-luglio-2025-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2025-finanziamento"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 7
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:04.667923+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-07/all._2_modello_di_domanda_circolare_spiagge_sicure_2025_28.7.2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-07/all._2_modello_di_domanda_circolare_spiagge_sicure_2025_28.7.2025.pdf",
+            "sha256": "f16304a82767f2f1987806386507869c9ea7d84de008f8bf25f336e96be7a2b8",
+            "size": 167036,
+            "status": 200
+          },
+          "sha256": "f16304a82767f2f1987806386507869c9ea7d84de008f8bf25f336e96be7a2b8"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-07/all._2_modello_di_domanda_circolare_spiagge_sicure_2025_28.7.2025.pdf"
+    },
+    {
+      "case_id": "U11-79d9444a2c968bff",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:03:13.617863+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 109,
+            "nearest_chars": 0.5611821446073195,
+            "nearest_content_score": 0.2597976655050735,
+            "nearest_digital": 0.09864282978502333,
+            "official_sha256": "79d9444a2c968bffa8e0df5e0aaefc4f52a7363111e109597cedae49a0493b07",
+            "opening_sha256": "bd8464dea22654a87a8725c9f87c5d3337ca56baab7d0060359e066295ee8e0b",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare del 28 luglio 2025. Prevenzione e contrasto dell’abusivismo commerciale e della vendita di prodotti contraffatti. \"Spiagge sicure - Estate 2025\". Finanziamento iniziative | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:02:56.292852+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-28-luglio-2025-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2025-finanziamento",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-28-luglio-2025-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2025-finanziamento",
+                "sha256": "7a674de9c76228d1ddbdcc910cb6b5933a791942fb6ed9d40efbbc199bf90d96",
+                "size": 77609,
+                "status": 200
+              },
+              "listing_sha256": "7a674de9c76228d1ddbdcc910cb6b5933a791942fb6ed9d40efbbc199bf90d96",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-28-luglio-2025-prevenzione-e-contrasto-dellabusivismo-commerciale-e-vendita-prodotti-contraffatti-spiagge-sicure-estate-2025-finanziamento"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8333333333333334,
+            "title_tokens_supported": 15
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:13.617863+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-07/circolare_spiagge_sicure_28.7.2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-07/circolare_spiagge_sicure_28.7.2025.pdf",
+            "sha256": "79d9444a2c968bffa8e0df5e0aaefc4f52a7363111e109597cedae49a0493b07",
+            "size": 273363,
+            "status": 200
+          },
+          "sha256": "79d9444a2c968bffa8e0df5e0aaefc4f52a7363111e109597cedae49a0493b07"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-07/circolare_spiagge_sicure_28.7.2025.pdf"
+    },
+    {
+      "case_id": "U11-f83d64c4c9556ebd",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:03:24.143896+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 695,
+            "nearest_chars": 0.6677737078758084,
+            "nearest_content_score": 0.2337207977565329,
+            "nearest_digital": 0.0,
+            "official_sha256": "f83d64c4c9556ebd0ba924a902be3ffc154ab5d6311668ff657fd3a809b5b161",
+            "opening_sha256": "00ce98d802568b46734474680f8e8c2a940d73cd4497ca0a0e3b702e52232242",
+            "source_evidence": {
+              "attachment_label": "La circolare",
+              "context_heading": "Circolare del 14 marzo 2025. Regolamento recante l’erogazione di misure di sostegno agli orfani dei crimini domestici e di reati di genere e alle famiglie affidatarie | Ministero dell‘Interno",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:03:19.007061+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-marzo-2025-regolamento-recante-lerogazione-misure-sostegno-orfani-dei-crimini-domestici-e-reati-genere-e-famiglie-affidatarie",
+                "redirects": [],
+                "requested_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-marzo-2025-regolamento-recante-lerogazione-misure-sostegno-orfani-dei-crimini-domestici-e-reati-genere-e-famiglie-affidatarie",
+                "sha256": "87b2b7364d4cafc6b77d328b0d446c574508f6f3ee38dd5595fb8a3aeadda3d6",
+                "size": 74270,
+                "status": 200
+              },
+              "listing_sha256": "87b2b7364d4cafc6b77d328b0d446c574508f6f3ee38dd5595fb8a3aeadda3d6",
+              "listing_url": "https://www.interno.gov.it/it/amministrazione-trasparente/disposizioni-generali/atti-generali/atti-amministrativi-generali/circolari/circolare-14-marzo-2025-regolamento-recante-lerogazione-misure-sostegno-orfani-dei-crimini-domestici-e-reati-genere-e-famiglie-affidatarie"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8421052631578947,
+            "title_tokens_supported": 16
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:24.143896+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.interno.gov.it/sites/default/files/2025-03/orfani_circolare_prefetture_14.03.2025.pdf",
+            "redirects": [],
+            "requested_url": "https://www.interno.gov.it/sites/default/files/2025-03/orfani_circolare_prefetture_14.03.2025.pdf",
+            "sha256": "f83d64c4c9556ebd0ba924a902be3ffc154ab5d6311668ff657fd3a809b5b161",
+            "size": 611123,
+            "status": 200
+          },
+          "sha256": "f83d64c4c9556ebd0ba924a902be3ffc154ab5d6311668ff657fd3a809b5b161"
+        }
+      ],
+      "source_url": "https://www.interno.gov.it/sites/default/files/2025-03/orfani_circolare_prefetture_14.03.2025.pdf"
+    },
+    {
+      "case_id": "U11-c4bb6000be67ce61",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-12T20:03:38.444894+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 1209,
+            "nearest_chars": 0.6660626349741551,
+            "nearest_content_score": 0.23312192224095427,
+            "nearest_digital": 0,
+            "official_sha256": "c4bb6000be67ce6149177f865e2f7bfa3e0500da19699d210589b0fb79f17014",
+            "opening_sha256": "af589af72f4414ff3553f1e0809e8ebe5e2886c41bc3cca332b1b579e27f980f",
+            "source_evidence": {
+              "attachment_label": "Circuito Media sicurezza - Nuove disposizioni in tema di eventi di carattere educativo, culturale e ricreativo",
+              "context_heading": "Circolare 6 maggio 2026 - Circuito media sicurezza - Nuove disposizioni in tema di eventi di carattere educativo, culturale e ricreativo",
+              "listing_receipt": {
+                "acquired_at": "2026-10-12T20:03:31.309115+00:00",
+                "attempts": 1,
+                "content_type": "text/html;charset=utf-8",
+                "final_url": "https://www.giustizia.it/giustizia/page/it/provvedimento_ministeriale_selezionato?contentId=SDC1503255",
+                "redirects": [],
+                "requested_url": "https://www.giustizia.it/giustizia/page/it/provvedimento_ministeriale_selezionato?contentId=SDC1503255",
+                "sha256": "4f58c3ce7d35df9b34af6b3de5b9c8c4310c3489b129945faaf71ca5bb6e8f49",
+                "size": 33327,
+                "status": 200
+              },
+              "listing_sha256": "4f58c3ce7d35df9b34af6b3de5b9c8c4310c3489b129945faaf71ca5bb6e8f49",
+              "listing_url": "https://www.giustizia.it/giustizia/page/it/provvedimento_ministeriale_selezionato?contentId=SDC1503255"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 11
+          },
+          "receipt": {
+            "acquired_at": "2026-10-12T20:03:38.444894+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://www.giustizia.it/cmsresources/cms/documents/dap_circolare_6mag2026_prot0212397.pdf",
+            "redirects": [],
+            "requested_url": "https://www.giustizia.it/cmsresources/cms/documents/dap_circolare_6mag2026_prot0212397.pdf",
+            "sha256": "c4bb6000be67ce6149177f865e2f7bfa3e0500da19699d210589b0fb79f17014",
+            "size": 5167234,
+            "status": 200
+          },
+          "sha256": "c4bb6000be67ce6149177f865e2f7bfa3e0500da19699d210589b0fb79f17014"
+        }
+      ],
+      "source_url": "https://www.giustizia.it/cmsresources/cms/documents/dap_circolare_6mag2026_prot0212397.pdf"
+    },
+    {
+      "case_id": "U11-ec3bc3c9e30074a1",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-13T05:40:26.099201+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 1179,
+            "nearest_chars": 0.4953620978902833,
+            "nearest_content_score": 0.2315798257540621,
+            "nearest_digital": 0.11640618298492594,
+            "official_sha256": "ec3bc3c9e30074a1afbd648e74d6a97bfb204286155d1b49ef27d9a3c5b79ff2",
+            "opening_sha256": "431e50b277c274606971933402da3e4af2d25713d7cef6e3fd586475c91fe412",
+            "source_evidence": {
+              "attachment_label": "Circolare n. 45/2026 - Ammissione elettori esercizio del diritto di voto procedura speciale",
+              "context_heading": "",
+              "listing_receipt": {
+                "acquired_at": "2026-10-13T05:40:24.020651+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://prefettura.interno.gov.it/it/prefetture/bari/circolari-0",
+                "redirects": [],
+                "requested_url": "https://prefettura.interno.gov.it/it/prefetture/bari/circolari-0",
+                "sha256": "b688ce174bfa8a2613f5a429e539188a980d11b1c92ba39f1463cc8ac33a706f",
+                "size": 81272,
+                "status": 200
+              },
+              "listing_sha256": "b688ce174bfa8a2613f5a429e539188a980d11b1c92ba39f1463cc8ac33a706f",
+              "listing_url": "https://prefettura.interno.gov.it/it/prefetture/bari/circolari-0"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 9
+          },
+          "receipt": {
+            "acquired_at": "2026-10-13T05:40:26.099201+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://prefettura.interno.gov.it/sites/default/files/35/2026-05/circ_45_2026_ammissione_elettori_esercizio_diritto_voto_procedura_speciale.pdf",
+            "redirects": [],
+            "requested_url": "https://prefettura.interno.gov.it/sites/default/files/35/2026-05/circ_45_2026_ammissione_elettori_esercizio_diritto_voto_procedura_speciale.pdf",
+            "sha256": "ec3bc3c9e30074a1afbd648e74d6a97bfb204286155d1b49ef27d9a3c5b79ff2",
+            "size": 913596,
+            "status": 200
+          },
+          "sha256": "ec3bc3c9e30074a1afbd648e74d6a97bfb204286155d1b49ef27d9a3c5b79ff2"
+        }
+      ],
+      "source_url": "https://prefettura.interno.gov.it/sites/default/files/35/2026-05/circ_45_2026_ammissione_elettori_esercizio_diritto_voto_procedura_speciale.pdf"
+    },
+    {
+      "case_id": "U11-00615c6c909be485",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-13T05:40:28.377185+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "circolare",
+            "family_hits": [],
+            "nearest_catalog_id": 149,
+            "nearest_chars": 0.6313030507713693,
+            "nearest_content_score": 0.22095606776997923,
+            "nearest_digital": 0.0,
+            "official_sha256": "00615c6c909be485d70f95785b253dd56a6435f31f39876c5a9959c180dc0aac",
+            "opening_sha256": "a0b6d12ffb20e21235281b0c4f369eef071d6fa90f54713cfc5c921e67b000fb",
+            "source_evidence": {
+              "attachment_label": "Circolare n. 47/2026 - Agevolazioni di viaggio",
+              "context_heading": "",
+              "listing_receipt": {
+                "acquired_at": "2026-10-13T05:40:24.020651+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://prefettura.interno.gov.it/it/prefetture/bari/circolari-0",
+                "redirects": [],
+                "requested_url": "https://prefettura.interno.gov.it/it/prefetture/bari/circolari-0",
+                "sha256": "b688ce174bfa8a2613f5a429e539188a980d11b1c92ba39f1463cc8ac33a706f",
+                "size": 81272,
+                "status": 200
+              },
+              "listing_sha256": "b688ce174bfa8a2613f5a429e539188a980d11b1c92ba39f1463cc8ac33a706f",
+              "listing_url": "https://prefettura.interno.gov.it/it/prefetture/bari/circolari-0"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 1.0,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-13T05:40:28.377185+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://prefettura.interno.gov.it/sites/default/files/35/2026-05/cir_47_2026_agevolazioni-viaggio.pdf",
+            "redirects": [],
+            "requested_url": "https://prefettura.interno.gov.it/sites/default/files/35/2026-05/cir_47_2026_agevolazioni-viaggio.pdf",
+            "sha256": "00615c6c909be485d70f95785b253dd56a6435f31f39876c5a9959c180dc0aac",
+            "size": 740818,
+            "status": 200
+          },
+          "sha256": "00615c6c909be485d70f95785b253dd56a6435f31f39876c5a9959c180dc0aac"
+        }
+      ],
+      "source_url": "https://prefettura.interno.gov.it/sites/default/files/35/2026-05/cir_47_2026_agevolazioni-viaggio.pdf"
+    },
+    {
+      "case_id": "U11-b17320bfc859c0f5",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-13T05:40:32.785422+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "modulo",
+            "family_hits": [],
+            "nearest_catalog_id": 689,
+            "nearest_chars": 0.7287539297183273,
+            "nearest_content_score": 0.2706044405934061,
+            "nearest_digital": 0.031002211232685237,
+            "official_sha256": "b17320bfc859c0f50fca4af13e67476e9e67a627f16c5a4685fa7d33aff225f0",
+            "opening_sha256": "d220ad8e2aab459eec6f1b4932ffddbce3e25fda0325bad0abaf66066eb54503",
+            "source_evidence": {
+              "attachment_label": "Allegato B - Modulo di domanda e scheda progetto formato .pdf",
+              "context_heading": "",
+              "listing_receipt": {
+                "acquired_at": "2026-10-13T05:40:21.434402+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://bandi.regione.piemonte.it/contributi-finanziamenti/progetti-i-giovani-ambito-sportivo",
+                "redirects": [],
+                "requested_url": "https://bandi.regione.piemonte.it/contributi-finanziamenti/progetti-i-giovani-ambito-sportivo",
+                "sha256": "afa97fbfabc1ed10bf1b3e117fa1f6534add5d7e48df16fbe23349ab07abf13d",
+                "size": 35778,
+                "status": 200
+              },
+              "listing_sha256": "afa97fbfabc1ed10bf1b3e117fa1f6534add5d7e48df16fbe23349ab07abf13d",
+              "listing_url": "https://bandi.regione.piemonte.it/contributi-finanziamenti/progetti-i-giovani-ambito-sportivo"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8333333333333334,
+            "title_tokens_supported": 5
+          },
+          "receipt": {
+            "acquired_at": "2026-10-13T05:40:32.785422+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://bandi.regione.piemonte.it/system/files/DD%20662_2024%20-%20Allegato%20B%20-%20Modulo%20domanda%20e%20scheda%20progetto.pdf",
+            "redirects": [],
+            "requested_url": "https://bandi.regione.piemonte.it/system/files/DD%20662_2024%20-%20Allegato%20B%20-%20Modulo%20domanda%20e%20scheda%20progetto.pdf",
+            "sha256": "b17320bfc859c0f50fca4af13e67476e9e67a627f16c5a4685fa7d33aff225f0",
+            "size": 313449,
+            "status": 200
+          },
+          "sha256": "b17320bfc859c0f50fca4af13e67476e9e67a627f16c5a4685fa7d33aff225f0"
+        }
+      ],
+      "source_url": "https://bandi.regione.piemonte.it/system/files/DD%20662_2024%20-%20Allegato%20B%20-%20Modulo%20domanda%20e%20scheda%20progetto.pdf"
+    },
+    {
+      "case_id": "U11-6930978006d03a8e",
+      "confidence_status": "confirmed",
+      "corpus": "official_unknown_master_v1_round11",
+      "evidence_date": "2026-10-13T05:40:45.962211+00:00",
+      "expected_document_id": null,
+      "expected_family_id": null,
+      "expected_status": "NO_MATCH",
+      "notes": "New official attachment-context evidence, audited before predictions; no catalog/editorial promotion.",
+      "source_evidence": [
+        {
+          "audit": {
+            "catalog_code_hits": [],
+            "catalog_title_hits": [],
+            "criteria": "Actual official receipt, opening2000 content, linked official detail/attachment heading, explicit document type or formal addressed OGGETTO/CHIEDE structure; full catalog title/code, exact SHA, content-near and family exclusions. No recognition decision used.",
+            "document_type": "manuale",
+            "family_hits": [],
+            "nearest_catalog_id": null,
+            "nearest_chars": null,
+            "nearest_content_score": null,
+            "nearest_digital": null,
+            "official_sha256": "6930978006d03a8ee721250f3fcb221cb5c7c1a3cf5217a4157704caff28d1a7",
+            "opening_sha256": "a4e131a0b6be96a94ba3f2fec8b11f66853a9a355c354b010f71ed0794ef6538",
+            "source_evidence": {
+              "attachment_label": "Manuale utente Presentazione domanda FLAIDOM",
+              "context_heading": "02.05.2022VIDEO TUTORIAL - PRESENTAZIONE DOMANDA - PROCESSO DEMATERIALIZZATO",
+              "listing_receipt": {
+                "acquired_at": "2026-10-13T05:40:41.441842+00:00",
+                "attempts": 1,
+                "content_type": "text/html; charset=UTF-8",
+                "final_url": "https://servizi.regione.piemonte.it/catalogo/presentazione-domanda-flaidom",
+                "redirects": [],
+                "requested_url": "https://servizi.regione.piemonte.it/catalogo/presentazione-domanda-flaidom",
+                "sha256": "f16a73d4e9cd6ac327ecba283cc6b439cbc2df9889c3a1ef80f6dc5d61cc9d47",
+                "size": 138546,
+                "status": 200
+              },
+              "listing_sha256": "f16a73d4e9cd6ac327ecba283cc6b439cbc2df9889c3a1ef80f6dc5d61cc9d47",
+              "listing_url": "https://servizi.regione.piemonte.it/catalogo/presentazione-domanda-flaidom"
+            },
+            "source_relationship": "Official hosting authority; issuer not automatically inferred from hosting.",
+            "title_token_support": 0.8,
+            "title_tokens_supported": 4
+          },
+          "receipt": {
+            "acquired_at": "2026-10-13T05:40:45.962211+00:00",
+            "attempts": 1,
+            "content_type": "application/pdf",
+            "final_url": "https://servizi.regione.piemonte.it/media/206/download",
+            "redirects": [],
+            "requested_url": "https://servizi.regione.piemonte.it/media/206/download",
+            "sha256": "6930978006d03a8ee721250f3fcb221cb5c7c1a3cf5217a4157704caff28d1a7",
+            "size": 734999,
+            "status": 200
+          },
+          "sha256": "6930978006d03a8ee721250f3fcb221cb5c7c1a3cf5217a4157704caff28d1a7"
+        }
+      ],
+      "source_url": "https://servizi.regione.piemonte.it/media/206/download"
+    },
+    {
+      "case_id": "CANONICAL-R11-178",
+      "confidence_status": "confirmed",
+      "corpus": "official_unambiguous_canonical_round11",
+      "evidence_date": "2026-10-13T05:41:56.208354+00:00",
+      "expected_document_id": 178,
+      "expected_family_id": null,
+      "expected_status": "DOCUMENT_MATCH",
+      "notes": "Original official bytes; full catalog title and unchanged entity/version guards, no editorial verification.",
+      "source_evidence": [
+        {
+          "association": "Explicit code/full catalog title and unchanged entity/version safety guard.",
+          "receipt": {
+            "acquired_at": "2026-10-13T05:41:56.208354+00:00",
+            "attempts": 1,
+            "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "final_url": "https://www.garanteprivacy.it/documents/10160/0/Modulo+per+la+richiesta+di+concessione+del+patrocinio+e_o+l%27autorizzazione+all%27utilizzo+del+logo+istituzionale+del+Garante+per+la+protezione+dei+dati+personali.docx/869e6147-87d2-5a58-b968-b2ad987c5d4d?version=6.0&download=true",
+            "redirects": [],
+            "requested_url": "https://www.garanteprivacy.it/documents/10160/0/Modulo+per+la+richiesta+di+concessione+del+patrocinio+e_o+l%27autorizzazione+all%27utilizzo+del+logo+istituzionale+del+Garante+per+la+protezione+dei+dati+personali.docx/869e6147-87d2-5a58-b968-b2ad987c5d4d?version=6.0&download=true",
+            "sha256": "051bff04ae1c7fabba11302251b68e985509d9fe01afea1942137d07eebfc1ea",
+            "size": 21982,
+            "status": 200
+          },
+          "sha256": "051bff04ae1c7fabba11302251b68e985509d9fe01afea1942137d07eebfc1ea"
+        }
+      ],
+      "source_url": "https://www.garanteprivacy.it/documents/10160/0/Modulo+per+la+richiesta+di+concessione+del+patrocinio+e_o+l%27autorizzazione+all%27utilizzo+del+logo+istituzionale+del+Garante+per+la+protezione+dei+dati+personali.docx/869e6147-87d2-5a58-b968-b2ad987c5d4d?version=6.0&download=true"
+    }
+  ],
+  "historical_locks": {
+    "benchmarks/corpora/development_regression.json": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "benchmarks/corpora/family_release_v1.json": "324e38e404eac04a51692f1152596343946d87b1c3c12fa9ee812c478f0fd644",
+    "benchmarks/corpora/family_release_v2.json": "16705612ba31a3dfb4e6c6d520ce14ef7b14f001f56174ed6e81314676b89910",
+    "benchmarks/corpora/family_release_v3.json": "d0b6225165f933c3c08088f9283760a0af6fe9e84d844ee63ba99f8651ae17be",
+    "benchmarks/corpora/hard_negatives_v1.json": "bab77cf77153c695d62895508e07c5622ca89fa67b185d2612775dba70f873db",
+    "benchmarks/corpora/hard_negatives_v2.json": "7d9d09da26ab4b82aaba9d3e4592bb036a17051b88592c9de89f897a8aea4498",
+    "benchmarks/corpora/ocr_synthetic_v1.json": "651f47c04550413e32568096e46723374ebdbbf3af9f564e50d1454d009154a1",
+    "benchmarks/corpora/ocr_synthetic_v2.json": "d3d47e8f4113830b1d51a935128e5979b61c3337481d7b99a752ce6df24c016a",
+    "benchmarks/corpora/release_locked_v1.json": "c56081c2ae1adf1741c7e2b4f1f536fc8a6d9a4c004f3b68cd850389fe4e67d9",
+    "benchmarks/corpora/release_locked_v2.json": "58ddd13cce1243d56cf30fc24161a18549f12ea33fbbcaf0fefe309956301613",
+    "tests/fixtures/benchmark.json": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92",
+    "tests/fixtures/benchmark_v2.json": "7af0365fad64bf4de70e4e4a88e3c12f6a81291111154f7e155b883c501448e1"
+  },
+  "registry_id": "reference-truth-v2-round11-addendum",
+  "schema_version": 2,
+  "unclassified_contradictions": 0
+}

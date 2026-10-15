@@ -1,0 +1,43 @@
+{
+  "canonical_legacy_pass": true,
+  "canonical_native_pass": true,
+  "coverage_pass": true,
+  "created_at": "2026-10-13T13:18:35.747908+00:00",
+  "freeze_allowed": false,
+  "historical_safety_pass": true,
+  "identity": {
+    "code_sha256": "7e5bc92baad0fec8c24a8fed69df3cf288a68a813e941fcd1baf070f8b05ccfb",
+    "commit": "842d9d421d9b36e97930c7826a8b661561122e7e",
+    "executed_at": "2026-10-13T13:18:35.747908+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "e5e9ad58ae261506e94e5a40bcb84a7cf3031ad18fddcb57aff2155661c47dfb",
+    "seed": 2026101315
+  },
+  "input_safety_pass": true,
+  "passed": false,
+  "performance": {
+    "mandatory_gate": "Median p95 <=250ms; four of five preferred only",
+    "median_p95": 263.0707,
+    "p50": [
+      48.7097,
+      66.9108,
+      66.4942,
+      66.5482,
+      63.6686
+    ],
+    "p95": [
+      215.0934,
+      263.0707,
+      259.0395,
+      283.8871,
+      285.658
+    ],
+    "pass_count": 1,
+    "passed": false,
+    "preferred_four_of_five": false,
+    "prudent_fragile": true
+  },
+  "performance_pass": false,
+  "recognition_semantic_sha256": "e5e9ad58ae261506e94e5a40bcb84a7cf3031ad18fddcb57aff2155661c47dfb",
+  "tests_pass": true
+}

@@ -1,0 +1,32 @@
+{
+  "capacity_status": "Theoretical only; source gate failed before any fresh generation or predictions. No V6 identity selection.",
+  "counts_per_source": {
+    "2": 186,
+    "3": 124,
+    "14": 2,
+    "16": 4
+  },
+  "exclusion_counts": {
+    "Round20_calibration_identity": 101,
+    "V5_identity_seen": 38,
+    "historical_identity_seen_in_tuning": 120,
+    "historical_near_tuned_aggregate_template": 9,
+    "historical_near_tuned_field_template": 13,
+    "historical_near_tuned_title_code_version": 44,
+    "historical_not_current_canonical_verified": 17,
+    "historical_tuning_history_unresolved": 357,
+    "near_tuned_aggregate": 1,
+    "near_tuned_field_template": 1,
+    "near_tuned_identity_title_code_version": 2
+  },
+  "fill_capacity": 60,
+  "identities": 316,
+  "max_concentration": 0.5886075949367089,
+  "passed": false,
+  "recognition_calls": 0,
+  "representation_capacity": 4850,
+  "scan_capacity": 4158,
+  "source_semantics": "Historical catalog source_id, unchanged",
+  "sources": 4,
+  "valid_filled_generated": 0
+}

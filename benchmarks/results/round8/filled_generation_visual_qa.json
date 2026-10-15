@@ -1,0 +1,20 @@
+{
+  "scope": "Development only; 10 first-page variants rendered with local Poppler, contact sheet inspected and critical templates 257/316/786 inspected at full size. No semantic/legal validity or complete form filling claimed.",
+  "attempted": 50,
+  "generated": 50,
+  "reopened": 50,
+  "verified": 50,
+  "rendered_templates": 10,
+  "full_size_inspected": [
+    257,
+    316,
+    786
+  ],
+  "methods": {
+    "real_fields_pypdf_persisted": 45,
+    "seeded_blank_rectangles_overlay": 5
+  },
+  "corrections": "Checkbox Unicode exports decoded, visible printed labels preferred over misleading field names, three-part dates recognized, font autosizing persisted, unknown/narrow typed fields skipped, static widget appearances baked and text/table borders avoided.",
+  "limits": "Static overlay proves a safely perturbed known template, not semantic correspondence with every field. Some unknown fields remain blank. Synthetic dates and invalid CF explicitly artificial; generated PDFs are ignored and excluded from archive.",
+  "generation_audit_sha256": "6c7a7625e0677e3143fea12fd151320441fe35ba5be318c4a2998be944a11a30"
+}

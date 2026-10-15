@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "Versioned portability/privacy derivation of operator metadata only. Original historical hashes remain unchanged in prior baselines; original source files preserved in reference checkout. No corpus, label, V6/unknown4 observations or recognition file changes.",
+  "files": [
+    {
+      "path": "docs/ROUND18_REPORT.md",
+      "original_sha256": "2c6c0dd8505cc3625f525b67eed807a52d20c83515b5a28302605fd14f0785e3",
+      "portable_sha256": "99fb5a129f13c50ddc529d925395391d4748640c1c0bc8b42e99873fff0512e8",
+      "change": "Replace unnecessary local temporary-directory operator identifier; no metric/label/protocol/result changed"
+    },
+    {
+      "path": "scripts/round18_finish.py",
+      "original_sha256": "3fa53ca96130531b81e3b6de8018a7bc6654d128e6c30c3c97529010f74b2296",
+      "portable_sha256": "1b5171753095bfbf00d1aaf35a07b629bfd02c49134345db318dbaf8cdb77f07",
+      "change": "Replace unnecessary local temporary-directory operator identifier; no metric/label/protocol/result changed"
+    },
+    {
+      "path": "benchmarks/results/round18/initial_validation_failure.json",
+      "original_sha256": "50d78cc09c5597be0830db86781e9a5b9d285064813c9b22afa5bc9707503757",
+      "portable_sha256": "c843ee9cb6fed3013a11a26535f564d1d5afecab0c74ce3e2a458cfb8c1b01bd",
+      "change": "Replace unnecessary local temporary-directory operator identifier; no metric/label/protocol/result changed",
+      "unaffected_fields_sha256": "4faaa1546dad8c4e9bc6d1c6cf847ae05c24dad04d010594f871b8c61ef8948a"
+    },
+    {
+      "path": "scripts/round8_baseline.py",
+      "original_sha256": "fcf94d0df78561a629096b558f34f0b0d43c8e92c959e44aa01b0e4bb2473bae",
+      "portable_sha256": "8993f35b4ff876c738183d1984692dfb0f81d4a27ea981160f552fa43cfc9bbb",
+      "change": "Optional explicit prompt environment path replaces an operator-specific hardcoded location; no recognition change"
+    },
+    {
+      "path": "scripts/round20_common.py",
+      "original_sha256": "134cb4ab064a50a39ca7fe2e26fd804661b0331ba92ba6d1680ff3443c4802d6",
+      "portable_sha256": "52c4db7ce618985aa8eea99e0877e8c55bd3461fed68b86230cc28c6b6fbb5d4",
+      "change": "Validate explicit portable note derivative against unchanged original baseline hash and unaffected historical fields; all other SHA checks unchanged"
+    }
+  ]
+}

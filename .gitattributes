@@ -3,9 +3,46 @@
 *.sh text eol=lf
 *.md text eol=lf
 *.json text eol=lf
+*.csv text eol=lf
 *.toml text eol=lf
 *.yml text eol=lf
 *.txt text eol=lf
 *.bat text eol=crlf
 *.zip binary
 *.sqlite3 binary
+
+# These bytes are covered by published hashes; never translate line endings.
+/benchmarks/corpora/*.json -text
+/benchmarks/manifests/*.json -text
+/maintenance/releases/** -text
+/data/baseline_v061_rows.json -text
+
+# Preserve the exact measured tool bytes in the committed freeze/archive.
+/benchmarks/round4_performance.py -text
+/benchmarks/results/round8/*.csv -text
+/benchmarks/results/round8/*.json -text
+/benchmarks/results/round9/*.json -text
+/benchmarks/results/round9/*.csv -text
+/benchmarks/results/round10/*.json -text
+/benchmarks/results/round10/*.csv -text
+/benchmarks/results/round11/*.json -text
+/benchmarks/results/round11/*.csv -text
+/benchmarks/results/round12/*.json -text
+/benchmarks/results/round12/*.csv -text
+/benchmarks/results/round13/*.json -text
+/benchmarks/results/round13/*.csv -text
+/benchmarks/results/round14/*.json -text
+/benchmarks/results/round14/*.csv -text
+/benchmarks/results/round15/*.json -text
+/benchmarks/results/round15/*.csv -text
+/benchmarks/results/round16/*.json -text
+/benchmarks/results/round16/*.csv -text
+
+benchmarks/results/round17/*.json -text
+benchmarks/results/round17/*.csv -text
+
+benchmarks/results/round18/*.json -text
+benchmarks/results/round18/*.csv -text
+
+# Historical test proof pack/index are immutable binary fixtures.
+/tests/fixtures/historical_git_objects/objects/pack/* -text

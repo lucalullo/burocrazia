@@ -1,0 +1,4577 @@
+{
+  "schema_version": 1,
+  "status": "executed",
+  "corpus_id": "official_holdout_v2",
+  "independent": true,
+  "evaluated_at": "2026-10-11T18:47:36.086571+00:00",
+  "freeze": {
+    "schema_version": 1,
+    "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+    "catalog_sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "frozen_at": "2026-10-11T18:39:05.085178+00:00",
+    "commit": "9458c730bf5a25440850320c5f9981f19aeaf06f",
+    "policy": "Exactly one v2 evaluation after this committed freeze. No runtime, catalog or feature edits after results. A failure stays NOT_READY; next cycle needs v3."
+  },
+  "identity": {
+    "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+    "code_sha256": "ccc4d83641c6d9be148fa29f65034a5cbfef9cee5eda202d21fb95ef4745dc82",
+    "manifest_sha256": "601b62abacd72886132fff1fa8d402016a591be7a266e73ac1dd217649de0d69",
+    "catalog_semantic_sha256": "sha256:ac3bd70a5b0247831dbc95017e0a45b516fa14103bf73e30a285e96d878e5554"
+  },
+  "cases": [
+    {
+      "id": "OH2-001",
+      "group": "document:e4f6f5678b43b4b8e8e48ec3765ae88e61aa6d10cb4d2b16a69d03b74ebe8fda",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 721.142,
+      "extraction_ms": 33.203100000264385,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 6839,
+        "token_count": 1058,
+        "printable_ratio": 0.999659,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "e4f6f5678b43b4b8e8e48ec3765ae88e61aa6d10cb4d2b16a69d03b74ebe8fda"
+    },
+    {
+      "id": "OH2-002",
+      "group": "document:d882acda5c75c0d1c0cd0810d147d660f6b4ff20b2c9b4fab2abc970a9c40c4b",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 165.252,
+      "extraction_ms": 28.536499999972875,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 14373,
+        "token_count": 2185,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "d882acda5c75c0d1c0cd0810d147d660f6b4ff20b2c9b4fab2abc970a9c40c4b"
+    },
+    {
+      "id": "OH2-003",
+      "group": "document:a562fa7693cc133ba0f45a868b80613e4fbeb36242ca63758566dee5691c2b87",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 167.667,
+      "extraction_ms": 18.228999999791995,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 2816,
+        "token_count": 491,
+        "printable_ratio": 0.999604,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "a562fa7693cc133ba0f45a868b80613e4fbeb36242ca63758566dee5691c2b87"
+    },
+    {
+      "id": "OH2-004",
+      "group": "document:a69adb6f16178853b09c987cfea35a00ddab28dbe9b1d28d7a50c5ca6ca54c1c",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 166.157,
+      "extraction_ms": 20.466299999952753,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 13529,
+        "token_count": 2114,
+        "printable_ratio": 0.999914,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "a69adb6f16178853b09c987cfea35a00ddab28dbe9b1d28d7a50c5ca6ca54c1c"
+    },
+    {
+      "id": "OH2-005",
+      "group": "document:fae03033484b42cc2d5519909b170d29bfa027e03daf9f4d3e0ef2674db02aac",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 162.885,
+      "extraction_ms": 31.406300000071496,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 11333,
+        "token_count": 1706,
+        "printable_ratio": 0.999278,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "fae03033484b42cc2d5519909b170d29bfa027e03daf9f4d3e0ef2674db02aac"
+    },
+    {
+      "id": "OH2-006",
+      "group": "document:b485f3b54445e76409b3f6ab03fa157c2f9e5d2ff29c9484fbc3aee64a69d293",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 166.616,
+      "extraction_ms": 17.704800000046816,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 12940,
+        "token_count": 2018,
+        "printable_ratio": 0.999456,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "b485f3b54445e76409b3f6ab03fa157c2f9e5d2ff29c9484fbc3aee64a69d293"
+    },
+    {
+      "id": "OH2-007",
+      "group": "document:15cbef31e61e88565fc406edbee4b904912cd174b858c124dec09f013349f3e6",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 166.755,
+      "extraction_ms": 12.88780000004408,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3485,
+        "token_count": 589,
+        "printable_ratio": 0.997734,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "15cbef31e61e88565fc406edbee4b904912cd174b858c124dec09f013349f3e6"
+    },
+    {
+      "id": "OH2-008",
+      "group": "document:f125206b79b641024f04a3835ecf4cb6e1752683f2fff21da7c338d3e5eab061",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 162.32,
+      "extraction_ms": 21.86759999995047,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 13850,
+        "token_count": 2152,
+        "printable_ratio": 0.999916,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "f125206b79b641024f04a3835ecf4cb6e1752683f2fff21da7c338d3e5eab061"
+    },
+    {
+      "id": "OH2-009",
+      "group": "document:d3fdca7554a52c861e7e26cbd4c700df92b16f2ade56b18720350df736552875",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 161.403,
+      "extraction_ms": 26.15560000003825,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 9202,
+        "token_count": 1413,
+        "printable_ratio": 0.999873,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "d3fdca7554a52c861e7e26cbd4c700df92b16f2ade56b18720350df736552875"
+    },
+    {
+      "id": "OH2-010",
+      "group": "document:88ac630c829baa5047d237593dd893e1fd3f0cc524e8793a00a64c4fd7f894e8",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Qualità del testo insufficiente per il riconoscimento.",
+      "conflicts": [],
+      "matching_ms": 0.0,
+      "extraction_failed": true,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "88ac630c829baa5047d237593dd893e1fd3f0cc524e8793a00a64c4fd7f894e8"
+    },
+    {
+      "id": "OH2-011",
+      "group": "document:b21aac70bf763d02e302393742272e12c27b5f6035b353573344d331a0583531",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 183.252,
+      "extraction_ms": 14.576600000054896,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 2670,
+        "token_count": 439,
+        "printable_ratio": 0.997016,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "b21aac70bf763d02e302393742272e12c27b5f6035b353573344d331a0583531"
+    },
+    {
+      "id": "OH2-012",
+      "group": "document:d1eca1eb513826e95431502d1fa6d7d91935dc122d7f3d3904b0cf0a996e5e5e",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 355.649,
+      "extraction_ms": 7046.247000000221,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 9846,
+        "token_count": 1474,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "d1eca1eb513826e95431502d1fa6d7d91935dc122d7f3d3904b0cf0a996e5e5e"
+    },
+    {
+      "id": "OH2-013",
+      "group": "document:8d8e06d17b2387eb2fa34f8a3f046773d0265e60b8ab120fc3fcac8374e644a0",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 313.074,
+      "extraction_ms": 34.00820000024396,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 6973,
+        "token_count": 1055,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "8d8e06d17b2387eb2fa34f8a3f046773d0265e60b8ab120fc3fcac8374e644a0"
+    },
+    {
+      "id": "OH2-014",
+      "group": "document:4564214885c300b6321cd77b3070151faf1c43b8f296daea749e0567f82b159f",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 323.257,
+      "extraction_ms": 19.980500000201573,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3160,
+        "token_count": 510,
+        "printable_ratio": 0.997505,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "4564214885c300b6321cd77b3070151faf1c43b8f296daea749e0567f82b159f"
+    },
+    {
+      "id": "OH2-015",
+      "group": "document:3e611fae9085534aceccef050753510dfb6928708f9d763db33b9c9113733cb8",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 213.271,
+      "extraction_ms": 37.06830000010086,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 9219,
+        "token_count": 1424,
+        "printable_ratio": 0.999874,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "3e611fae9085534aceccef050753510dfb6928708f9d763db33b9c9113733cb8"
+    },
+    {
+      "id": "OH2-016",
+      "group": "document:95a249fd42150e3ec71e2e188db13fc68ed83e54e815aa7887b5db6f8c5e9624",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 210.078,
+      "extraction_ms": 23.512399999617628,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 12339,
+        "token_count": 1925,
+        "printable_ratio": 0.999905,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "95a249fd42150e3ec71e2e188db13fc68ed83e54e815aa7887b5db6f8c5e9624"
+    },
+    {
+      "id": "OH2-017",
+      "group": "document:9b5dce336d3242400a9f9ab55f8c96b83129bcc734b46ed9e01ce1907e54e6fe",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 225.541,
+      "extraction_ms": 17.29960000011488,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3145,
+        "token_count": 513,
+        "printable_ratio": 0.997825,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "9b5dce336d3242400a9f9ab55f8c96b83129bcc734b46ed9e01ce1907e54e6fe"
+    },
+    {
+      "id": "OH2-018",
+      "group": "document:4244cb451cb8e5b6560acc4a49da6ab547b1b8e2f452398184620b9093014817",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 174.688,
+      "extraction_ms": 5307.712700000138,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 7631,
+        "token_count": 1166,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "4244cb451cb8e5b6560acc4a49da6ab547b1b8e2f452398184620b9093014817"
+    },
+    {
+      "id": "OH2-019",
+      "group": "document:c6924d58ceed5925975d73d7d8d81f93e3620bf67ba790735a14891ce18eb996",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 172.259,
+      "extraction_ms": 16.963699999905657,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 11794,
+        "token_count": 1814,
+        "printable_ratio": 0.999901,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "c6924d58ceed5925975d73d7d8d81f93e3620bf67ba790735a14891ce18eb996"
+    },
+    {
+      "id": "OH2-020",
+      "group": "document:2fdd42ade26cea43cfb91539611051fed08737a3d12c850f23964e161fa75f71",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 174.766,
+      "extraction_ms": 18.299100000149338,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 2479,
+        "token_count": 395,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "2fdd42ade26cea43cfb91539611051fed08737a3d12c850f23964e161fa75f71"
+    },
+    {
+      "id": "OH2-021",
+      "group": "document:80c459591b3b9a1e03795fb6ec33087879341b887c4e9eaa41f6d972c03d8cc7",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 165.178,
+      "extraction_ms": 26.330400000006193,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 9067,
+        "token_count": 1401,
+        "printable_ratio": 0.999871,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "80c459591b3b9a1e03795fb6ec33087879341b887c4e9eaa41f6d972c03d8cc7"
+    },
+    {
+      "id": "OH2-022",
+      "group": "document:63cf200504674a2b0f1be3453a2b7caba1b18e5b990ce9359afebedef2d5d79d",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 172.443,
+      "extraction_ms": 10.846300000139308,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 10863,
+        "token_count": 1716,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "63cf200504674a2b0f1be3453a2b7caba1b18e5b990ce9359afebedef2d5d79d"
+    },
+    {
+      "id": "OH2-023",
+      "group": "document:289c92cf529174ef61eb46f9ce71d2ad3876be50282b0e0a7bfbab5a4b1f8995",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 320.678,
+      "extraction_ms": 19.764000000122905,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 12583,
+        "token_count": 1992,
+        "printable_ratio": 0.999907,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "289c92cf529174ef61eb46f9ce71d2ad3876be50282b0e0a7bfbab5a4b1f8995"
+    },
+    {
+      "id": "OH2-024",
+      "group": "document:aea3e075d00062cdcd55eac8bef7b643895b8b7fa96d0e1869d03e80230fd9c7",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 285.755,
+      "extraction_ms": 29.326899999887246,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 10873,
+        "token_count": 1678,
+        "printable_ratio": 0.999893,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "aea3e075d00062cdcd55eac8bef7b643895b8b7fa96d0e1869d03e80230fd9c7"
+    },
+    {
+      "id": "OH2-025",
+      "group": "document:8f3c0b79e608e45a1d09447fa0a550a16e3bb59a126ab69468d30203eb50d776",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 303.602,
+      "extraction_ms": 22.301400000287686,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3755,
+        "token_count": 606,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "8f3c0b79e608e45a1d09447fa0a550a16e3bb59a126ab69468d30203eb50d776"
+    },
+    {
+      "id": "OH2-026",
+      "group": "document:bb714c470326105a1686b7c6a8bc839d721b8e88307bf50dbd551dd71d255b62",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 274.299,
+      "extraction_ms": 13.849999999820284,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 8439,
+        "token_count": 1259,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "bb714c470326105a1686b7c6a8bc839d721b8e88307bf50dbd551dd71d255b62"
+    },
+    {
+      "id": "OH2-027",
+      "group": "document:bf2416bf3388b6a17a513e1a140fa3f088886c6e52b06d445b8d7ab948cc4e99",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 279.213,
+      "extraction_ms": 40.31720000011774,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 10384,
+        "token_count": 1592,
+        "printable_ratio": 0.999888,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "bf2416bf3388b6a17a513e1a140fa3f088886c6e52b06d445b8d7ab948cc4e99"
+    },
+    {
+      "id": "OH2-028",
+      "group": "document:2ba46e6f1c41da4475d63b3d6efc9e9a42d462e23eee9473e18d237d7252cf26",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 276.618,
+      "extraction_ms": 19.46200000020326,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 7494,
+        "token_count": 1142,
+        "printable_ratio": 0.99953,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "2ba46e6f1c41da4475d63b3d6efc9e9a42d462e23eee9473e18d237d7252cf26"
+    },
+    {
+      "id": "OH2-029",
+      "group": "document:49b0459712816f9874652aad2fcd13598ccc5dfd704fe88b3618dbb7357c193c",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 311.421,
+      "extraction_ms": 186.16210000027422,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 45,
+      "quality": {
+        "extracted_chars": 143808,
+        "token_count": 21599,
+        "printable_ratio": 0.998257,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "49b0459712816f9874652aad2fcd13598ccc5dfd704fe88b3618dbb7357c193c"
+    },
+    {
+      "id": "OH2-030",
+      "group": "document:fa776977a30b7832d237508884350b5b4cb47eb9270f32ae0107a5e088ab47a0",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 319.764,
+      "extraction_ms": 26.838799999950425,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 2814,
+        "token_count": 459,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "fa776977a30b7832d237508884350b5b4cb47eb9270f32ae0107a5e088ab47a0"
+    },
+    {
+      "id": "OH2-031",
+      "group": "document:28376c79882483f375f94bc0b90fbe53e16be4aec847d7c6d7c3231ba8799fe9",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 281.214,
+      "extraction_ms": 24.973300000056042,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3120,
+        "token_count": 505,
+        "printable_ratio": 0.997477,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "28376c79882483f375f94bc0b90fbe53e16be4aec847d7c6d7c3231ba8799fe9"
+    },
+    {
+      "id": "OH2-032",
+      "group": "document:7d112c3a8d19cb3170ff4f6c4795a6ea15955641597b4dd5c17bdec1896de844",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 283.518,
+      "extraction_ms": 67.46919999977763,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 24,
+      "quality": {
+        "extracted_chars": 57255,
+        "token_count": 8518,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "7d112c3a8d19cb3170ff4f6c4795a6ea15955641597b4dd5c17bdec1896de844"
+    },
+    {
+      "id": "OH2-033",
+      "group": "document:2b92315d3063a3388d2f1547438b7085083d0c9bcd59180d975b380b4aacba85",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 387.775,
+      "extraction_ms": 6116.824400000041,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 7728,
+        "token_count": 1178,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "2b92315d3063a3388d2f1547438b7085083d0c9bcd59180d975b380b4aacba85"
+    },
+    {
+      "id": "OH2-034",
+      "group": "document:a63f75d2b0ce4ff162dc5d3033d8e3c46ba80465b87f2a3741cec0e2af3fe657",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 438.443,
+      "extraction_ms": 10.613200000079814,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3680,
+        "token_count": 584,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "a63f75d2b0ce4ff162dc5d3033d8e3c46ba80465b87f2a3741cec0e2af3fe657"
+    },
+    {
+      "id": "OH2-035",
+      "group": "document:fac05d21435ff444d7123ae211d497e2ce57dae824014a90c1a77ae7a8b013ab",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 443.294,
+      "extraction_ms": 38.09320000027583,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 12977,
+        "token_count": 2054,
+        "printable_ratio": 0.999457,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "fac05d21435ff444d7123ae211d497e2ce57dae824014a90c1a77ae7a8b013ab"
+    },
+    {
+      "id": "OH2-036",
+      "group": "document:60b5b2fb7b8a4c735fcaa8caf840cc2759713b5e0447edad3aec935d3e9b8ef6",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 446.308,
+      "extraction_ms": 65.17489999987447,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 9050,
+        "token_count": 1390,
+        "printable_ratio": 0.999742,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "60b5b2fb7b8a4c735fcaa8caf840cc2759713b5e0447edad3aec935d3e9b8ef6"
+    },
+    {
+      "id": "OH2-037",
+      "group": "document:4f419282b55469f5bc26409e4558437b551d7da8438ee2f425607951162af84d",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 440.078,
+      "extraction_ms": 40.7788000002256,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 7430,
+        "token_count": 1130,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "4f419282b55469f5bc26409e4558437b551d7da8438ee2f425607951162af84d"
+    },
+    {
+      "id": "OH2-038",
+      "group": "document:b7c32bf319a11b4c0289353779af4542882ac0953088908b5207af1dffa89448",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 441.756,
+      "extraction_ms": 22.60440000009112,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 10324,
+        "token_count": 1551,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "b7c32bf319a11b4c0289353779af4542882ac0953088908b5207af1dffa89448"
+    },
+    {
+      "id": "OH2-039",
+      "group": "document:9c9b709668f570e2cee7a1d5d92749586095636bef46015bf7c0f125d15d7c65",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 64.49,
+      "extraction_ms": 210.0340000001779,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 44,
+      "quality": {
+        "extracted_chars": 184557,
+        "token_count": 28860,
+        "printable_ratio": 0.999727,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "9c9b709668f570e2cee7a1d5d92749586095636bef46015bf7c0f125d15d7c65"
+    },
+    {
+      "id": "OH2-040",
+      "group": "document:c496fb5d3a3a2457e1d15e72875be9b4652b12077a7d71fd35c885227b6589a1",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.855,
+      "extraction_ms": 40.98440000007031,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 5013,
+        "token_count": 732,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "c496fb5d3a3a2457e1d15e72875be9b4652b12077a7d71fd35c885227b6589a1"
+    },
+    {
+      "id": "OH2-041",
+      "group": "document:f8a2f2af2ddece8477432c506298078e3c3f1b3fe2ebc604bd21a45f259ed13d",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 406.021,
+      "extraction_ms": 32.12710000025254,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 14232,
+        "token_count": 2275,
+        "printable_ratio": 0.999918,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "f8a2f2af2ddece8477432c506298078e3c3f1b3fe2ebc604bd21a45f259ed13d"
+    },
+    {
+      "id": "OH2-042",
+      "group": "document:aa5e4aaf8c2376480ac126f36a2529576c170d07816d6b6913ac2275a973e9f8",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 316.523,
+      "extraction_ms": 22.757700000056502,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3122,
+        "token_count": 523,
+        "printable_ratio": 0.997853,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "aa5e4aaf8c2376480ac126f36a2529576c170d07816d6b6913ac2275a973e9f8"
+    },
+    {
+      "id": "OH2-043",
+      "group": "document:43362f69ed70b3743ec3714b47beb476958d96cdbfaa3e2ef829bfaba0b1c706",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 291.324,
+      "extraction_ms": 54.92679999997563,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 6,
+      "quality": {
+        "extracted_chars": 16026,
+        "token_count": 2590,
+        "printable_ratio": 0.998246,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "43362f69ed70b3743ec3714b47beb476958d96cdbfaa3e2ef829bfaba0b1c706"
+    },
+    {
+      "id": "OH2-044",
+      "group": "document:5c518495e555a1990d8bc40e811500c0fe983108712810af0807472b0bcd2c48",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 266.349,
+      "extraction_ms": 21.084999999857246,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3019,
+        "token_count": 492,
+        "printable_ratio": 0.997374,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "5c518495e555a1990d8bc40e811500c0fe983108712810af0807472b0bcd2c48"
+    },
+    {
+      "id": "OH2-045",
+      "group": "document:8f19c14bf80e1a93c65c48d7b6d2e2b232659fb7dfe75a9ff290682e42850fa2",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 273.589,
+      "extraction_ms": 22.97439999983908,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3636,
+        "token_count": 572,
+        "printable_ratio": 0.997197,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "8f19c14bf80e1a93c65c48d7b6d2e2b232659fb7dfe75a9ff290682e42850fa2"
+    },
+    {
+      "id": "OH2-046",
+      "group": "document:e993dfdc88ce978c04fb198012739a0b5010b1beaf4ca7289c2624606ee888ac",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 336.094,
+      "extraction_ms": 11.530399999628571,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 8272,
+        "token_count": 1256,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "e993dfdc88ce978c04fb198012739a0b5010b1beaf4ca7289c2624606ee888ac"
+    },
+    {
+      "id": "OH2-047",
+      "group": "document:6b74eb9b95bc53787cd082ba9029d8efc8ff2ec81b44c667d02dd177ad95ddd7",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 409.548,
+      "extraction_ms": 42.99440000022514,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 13331,
+        "token_count": 2127,
+        "printable_ratio": 0.999912,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "6b74eb9b95bc53787cd082ba9029d8efc8ff2ec81b44c667d02dd177ad95ddd7"
+    },
+    {
+      "id": "OH2-048",
+      "group": "document:a5781043beff80362ad5d85550154da6e14369f9b2d7a9dc6025e870d904a7e0",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 306.023,
+      "extraction_ms": 4907.708400000047,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 6736,
+        "token_count": 1053,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "a5781043beff80362ad5d85550154da6e14369f9b2d7a9dc6025e870d904a7e0"
+    },
+    {
+      "id": "OH2-049",
+      "group": "document:7d9622db993993ab4b816a8dd3959d3fea57cb2d0e75e1decdb92db6014b5f9a",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 268.499,
+      "extraction_ms": 10.957800000142015,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 7589,
+        "token_count": 1206,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "7d9622db993993ab4b816a8dd3959d3fea57cb2d0e75e1decdb92db6014b5f9a"
+    },
+    {
+      "id": "OH2-050",
+      "group": "document:781afd6598223ca1bdf8536c970c9964c3f250aaaa14666e8bfdd59359a9e67c",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.844,
+      "extraction_ms": 43.333999999958905,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 9028,
+        "token_count": 1463,
+        "printable_ratio": 0.997939,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "781afd6598223ca1bdf8536c970c9964c3f250aaaa14666e8bfdd59359a9e67c"
+    },
+    {
+      "id": "OH2-051",
+      "group": "document:914dcd4839d77aa315886d61e49bfd89245161247b3fe699ebfa8c803f4fa25f",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 17.897,
+      "extraction_ms": 97.49849999980142,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 27,
+      "quality": {
+        "extracted_chars": 67521,
+        "token_count": 9300,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "914dcd4839d77aa315886d61e49bfd89245161247b3fe699ebfa8c803f4fa25f"
+    },
+    {
+      "id": "OH2-052",
+      "group": "document:66886c20d5fd76f0d5763cfff19de80b5896f2b2228f799a39178250a0ae7dda",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 299.032,
+      "extraction_ms": 24.568599999838625,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 11400,
+        "token_count": 1775,
+        "printable_ratio": 0.999898,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "66886c20d5fd76f0d5763cfff19de80b5896f2b2228f799a39178250a0ae7dda"
+    },
+    {
+      "id": "OH2-053",
+      "group": "document:9c10b4bd90a7bafc575367551268871fcf977060c8bc5efa67b1339e7faa6c0a",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 406.607,
+      "extraction_ms": 9650.44059999991,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 17210,
+        "token_count": 2722,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "9c10b4bd90a7bafc575367551268871fcf977060c8bc5efa67b1339e7faa6c0a"
+    },
+    {
+      "id": "OH2-054",
+      "group": "document:69e7b79d1f3ba55182418f0b9e6800f58a3bc3af096759575ba0acfe07d9b37c",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 395.691,
+      "extraction_ms": 30.628800000158662,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 2768,
+        "token_count": 455,
+        "printable_ratio": 0.997118,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "69e7b79d1f3ba55182418f0b9e6800f58a3bc3af096759575ba0acfe07d9b37c"
+    },
+    {
+      "id": "OH2-055",
+      "group": "document:86e1114c95314fa893a190727c7b5434b4f53f563a0e1598a4c2c53ba51cfe92",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 410.73,
+      "extraction_ms": 29.534100000091712,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 11578,
+        "token_count": 1824,
+        "printable_ratio": 0.999899,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "86e1114c95314fa893a190727c7b5434b4f53f563a0e1598a4c2c53ba51cfe92"
+    },
+    {
+      "id": "OH2-056",
+      "group": "document:65913722fcf22a61c19b429c1989ebe2656bb44f628234ba2eacb46661fe499f",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 396.924,
+      "extraction_ms": 41.331000000354834,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 12611,
+        "token_count": 1981,
+        "printable_ratio": 0.999907,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "65913722fcf22a61c19b429c1989ebe2656bb44f628234ba2eacb46661fe499f"
+    },
+    {
+      "id": "OH2-057",
+      "group": "document:0181c8932e6b84b822f1273ad37e20890decae69c46097fef5c2988a2a4cab13",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 435.217,
+      "extraction_ms": 14.110900000105175,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 11488,
+        "token_count": 1798,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "0181c8932e6b84b822f1273ad37e20890decae69c46097fef5c2988a2a4cab13"
+    },
+    {
+      "id": "OH2-058",
+      "group": "document:03c123ace571e4840577473e9042b7c129c0a916cbf8f66d58d910ddf8d0f7d9",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 400.551,
+      "extraction_ms": 35.23829999994632,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 11340,
+        "token_count": 1766,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "03c123ace571e4840577473e9042b7c129c0a916cbf8f66d58d910ddf8d0f7d9"
+    },
+    {
+      "id": "OH2-059",
+      "group": "document:ee3ccfb49740b70f1b65b4cec5b36fe2552d59e72d95124774f6fb2641ffe2da",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 572.913,
+      "extraction_ms": 4798.583100000087,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 9917,
+        "token_count": 1561,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": "Text layer PDF non utilizzabile: tentativo OCR entro i limiti esistenti.",
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "ee3ccfb49740b70f1b65b4cec5b36fe2552d59e72d95124774f6fb2641ffe2da"
+    },
+    {
+      "id": "OH2-060",
+      "group": "document:265c3b7fa734835f56ec33addc963e261ff967db17410672169a28052f8c1bfb",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 424.322,
+      "extraction_ms": 71.18409999975484,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 12136,
+        "token_count": 1905,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "265c3b7fa734835f56ec33addc963e261ff967db17410672169a28052f8c1bfb"
+    },
+    {
+      "id": "OH2-061",
+      "group": "document:cca56baa9fba1624c39361b2571078ddfa3fcd089c918e9237b0bb90acc4dccb",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 298.507,
+      "extraction_ms": 7970.831999999973,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 8,
+      "quality": {
+        "extracted_chars": 6681,
+        "token_count": 945,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": "L'OCR è stato limitato alle prime 5 pagine del documento.",
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "cca56baa9fba1624c39361b2571078ddfa3fcd089c918e9237b0bb90acc4dccb"
+    },
+    {
+      "id": "OH2-062",
+      "group": "document:915749ddfb63a5fa9b581961017e6a68e3c1fe9f22891732e174811fe36002a8",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 298.623,
+      "extraction_ms": 20.860500000253523,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3377,
+        "token_count": 541,
+        "printable_ratio": 0.997983,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "915749ddfb63a5fa9b581961017e6a68e3c1fe9f22891732e174811fe36002a8"
+    },
+    {
+      "id": "OH2-063",
+      "group": "document:30e75a77de235d1700be778c25ce67aa8af1abfb6aaf86c1cc6e2cf6c2045443",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 278.673,
+      "extraction_ms": 46.08270000017001,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 9188,
+        "token_count": 1412,
+        "printable_ratio": 0.999873,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "30e75a77de235d1700be778c25ce67aa8af1abfb6aaf86c1cc6e2cf6c2045443"
+    },
+    {
+      "id": "OH2-064",
+      "group": "document:abd82e80d6b8d7e07e83cabe8dbebba9dbdee79681b72b6860d785f83779add4",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 279.397,
+      "extraction_ms": 5653.9873000001535,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 8437,
+        "token_count": 1299,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "abd82e80d6b8d7e07e83cabe8dbebba9dbdee79681b72b6860d785f83779add4"
+    },
+    {
+      "id": "OH2-065",
+      "group": "document:8c548d8a65b9191845e5b26bc0e8b4ed3647e0249117aaa2c110c30fbd421049",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 397.824,
+      "extraction_ms": 4886.221300000216,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 7329,
+        "token_count": 1144,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "8c548d8a65b9191845e5b26bc0e8b4ed3647e0249117aaa2c110c30fbd421049"
+    },
+    {
+      "id": "OH2-066",
+      "group": "document:e3462cee18efa2ef3e07e94990067d9ce26998124b3ae2ea488657f6909c3802",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 282.829,
+      "extraction_ms": 13.250200000129553,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 5336,
+        "token_count": 829,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "e3462cee18efa2ef3e07e94990067d9ce26998124b3ae2ea488657f6909c3802"
+    },
+    {
+      "id": "OH2-067",
+      "group": "document:e48165c41c8bde85fa751195b3718bc8b84cd69668b16519c3935e868cc38ab0",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 340.5,
+      "extraction_ms": 65.59459999971295,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 9211,
+        "token_count": 1414,
+        "printable_ratio": 0.999874,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "e48165c41c8bde85fa751195b3718bc8b84cd69668b16519c3935e868cc38ab0"
+    },
+    {
+      "id": "OH2-068",
+      "group": "document:aed0c1b01da3e90a2b55f4cbe87d6fa82287f4c18d86e4231f0373530d8dfbf2",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 337.182,
+      "extraction_ms": 39.87680000000182,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 6,
+      "quality": {
+        "extracted_chars": 14088,
+        "token_count": 2166,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "aed0c1b01da3e90a2b55f4cbe87d6fa82287f4c18d86e4231f0373530d8dfbf2"
+    },
+    {
+      "id": "OH2-069",
+      "group": "document:7fa09503e8cc6e0a30a1ed5a32011c66717368412cdf1d045aaddbf9f1787e76",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 318.928,
+      "extraction_ms": 14.146299999993062,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 10758,
+        "token_count": 1610,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "7fa09503e8cc6e0a30a1ed5a32011c66717368412cdf1d045aaddbf9f1787e76"
+    },
+    {
+      "id": "OH2-070",
+      "group": "document:fd25b4abdd4912a23f91b40b4dd3135f544151daeb22052bd9e95eafce189313",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 303.604,
+      "extraction_ms": 35.02900000012232,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 6581,
+        "token_count": 1009,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "fd25b4abdd4912a23f91b40b4dd3135f544151daeb22052bd9e95eafce189313"
+    },
+    {
+      "id": "OH2-071",
+      "group": "document:66183dbaf3a44d70b9703b06a5c2adc07c64dddb97500d58f97c338a43cd6a72",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 261.008,
+      "extraction_ms": 21.313499999905616,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 12059,
+        "token_count": 1917,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "66183dbaf3a44d70b9703b06a5c2adc07c64dddb97500d58f97c338a43cd6a72"
+    },
+    {
+      "id": "OH2-072",
+      "group": "document:2279d0588ffb65c7707a727f877193efa035aba1169bab6a839679a465a5123b",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 279.146,
+      "extraction_ms": 17.66749999978856,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 10346,
+        "token_count": 1581,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "2279d0588ffb65c7707a727f877193efa035aba1169bab6a839679a465a5123b"
+    },
+    {
+      "id": "OH2-073",
+      "group": "document:95119c3b2e4f00dffe3e98a6bc2f930f9d60b5b9b24eb9fb0283f0f8b6b4fbc7",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 268.504,
+      "extraction_ms": 14.441500000430096,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3332,
+        "token_count": 538,
+        "printable_ratio": 0.997284,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "95119c3b2e4f00dffe3e98a6bc2f930f9d60b5b9b24eb9fb0283f0f8b6b4fbc7"
+    },
+    {
+      "id": "OH2-074",
+      "group": "document:c1111bd7ee3a0db924497130b644fe7a337601e96414f614524ba5ec51b1b9f2",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 290.144,
+      "extraction_ms": 46.28360000015164,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 8443,
+        "token_count": 1295,
+        "printable_ratio": 0.999862,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "c1111bd7ee3a0db924497130b644fe7a337601e96414f614524ba5ec51b1b9f2"
+    },
+    {
+      "id": "OH2-075",
+      "group": "document:401ebe92c0ac6fa3a8f8ab470ca34d953cd5cdc9d6f728197d588d7621962445",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 256.08,
+      "extraction_ms": 39.829199999985576,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 9894,
+        "token_count": 1510,
+        "printable_ratio": 0.999882,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "input_sha256": "401ebe92c0ac6fa3a8f8ab470ca34d953cd5cdc9d6f728197d588d7621962445"
+    },
+    {
+      "id": "OH2-076",
+      "group": "document:453",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 453,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Ente incompatibile con le famiglie candidate.",
+      "conflicts": [
+        "ente della famiglia incompatibile"
+      ],
+      "matching_ms": 266.244,
+      "extraction_ms": 9567.357800000082,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 5,
+      "quality": {
+        "extracted_chars": 8467,
+        "token_count": 1472,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "84b121be1581b8379974ed09e91edebcfcd3491edfcc5caad009f5a8957c57c5"
+    },
+    {
+      "id": "OH2-077",
+      "group": "document:450",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 450,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 206.026,
+      "extraction_ms": 8.894099999906757,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 1,
+      "quality": {
+        "extracted_chars": 3482,
+        "token_count": 403,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "8f782ea32b9f6a1da407391a676b66496113ae05519ddb6c5ca6dcaa50f3fd57"
+    },
+    {
+      "id": "OH2-078",
+      "group": "document:491",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 491,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 491,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 292.111,
+      "extraction_ms": 6.2345000001187145,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 1,
+      "quality": {
+        "extracted_chars": 1857,
+        "token_count": 236,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "1a515c4a09bfa4cb24ea44c282f9e1fb5ece8d78a6eb4993716de3b709797218"
+    },
+    {
+      "id": "OH2-079",
+      "group": "document:420",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 420,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 420,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 305.678,
+      "extraction_ms": 12.204099999962637,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 2906,
+        "token_count": 278,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "797702a4216f57dc5c735790ac3f7e0778ad8125f27a129906503945e0e69de7"
+    },
+    {
+      "id": "OH2-080",
+      "group": "document:462",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 462,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 204.495,
+      "extraction_ms": 6.615000000238069,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 840,
+        "token_count": 131,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "d3ab08fd7c2b5fcc3b1312f7caa9dd6a043920dbea4f0927672e6fe4476d41e6"
+    },
+    {
+      "id": "OH2-081",
+      "group": "document:478",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 478,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 279.784,
+      "extraction_ms": 20.92129999982717,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 10096,
+        "token_count": 1099,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "c7254a6dc1674bbb54291023e2406ba6f89f13f0d8b18a8f9dc2ec14b13f81bf"
+    },
+    {
+      "id": "OH2-082",
+      "group": "document:451",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 451,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 209.346,
+      "extraction_ms": 1111.7793999997048,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 1,
+      "quality": {
+        "extracted_chars": 1172,
+        "token_count": 189,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "81154f1056b0d67ef438eaebb902a42d87d28da2aa70c48cfa5ac02b35d2e672"
+    },
+    {
+      "id": "OH2-083",
+      "group": "document:493",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 493,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 238.681,
+      "extraction_ms": 9.051800000179355,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 1,
+      "quality": {
+        "extracted_chars": 1442,
+        "token_count": 192,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "e22624c90415aa9f26622f3a2c9639a47daaccd64738db65d69408c51e4279eb"
+    },
+    {
+      "id": "OH2-084",
+      "group": "document:460",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 460,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Ente incompatibile con le famiglie candidate.",
+      "conflicts": [
+        "ente della famiglia incompatibile"
+      ],
+      "matching_ms": 282.384,
+      "extraction_ms": 5899.462299999868,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 4354,
+        "token_count": 742,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "c9862166a8359ccc77a89abd2597e6e1ac9f0a1b27754515e8ef152f1bc09285"
+    },
+    {
+      "id": "OH2-085",
+      "group": "document:482",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 482,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 278.869,
+      "extraction_ms": 14.429899999868212,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 3221,
+        "token_count": 487,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "06406c98ad50b9321ef5eb460ec93a751ce620cdc18cfd616d7cac3c4e5b51b4"
+    },
+    {
+      "id": "OH2-086",
+      "group": "document:427",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 427,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 158.213,
+      "extraction_ms": 6.364700000176526,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 1,
+      "quality": {
+        "extracted_chars": 747,
+        "token_count": 113,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "bd9d1098bb64efa24ea5f94ec377d3b0dc2b06a05c96d70f8eb570aa564bbed1"
+    },
+    {
+      "id": "OH2-087",
+      "group": "document:403",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 403,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 199.267,
+      "extraction_ms": 9.296499999891239,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 7212,
+        "token_count": 318,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "e7eb3a33aad8ea78423e42d14adf009c8e31e38f3bae11e5add8386ed4c013d1"
+    },
+    {
+      "id": "OH2-088",
+      "group": "document:449",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 449,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 200.82,
+      "extraction_ms": 8.2510999995975,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 2,
+      "quality": {
+        "extracted_chars": 3756,
+        "token_count": 325,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "ea276bda98cff4dcb67ac4fe3149e19bd2eabefeb723234b5b814b21bda33bd8"
+    },
+    {
+      "id": "OH2-089",
+      "group": "document:488",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 488,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 170.127,
+      "extraction_ms": 4.819999999654101,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 1,
+      "quality": {
+        "extracted_chars": 982,
+        "token_count": 118,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "8549350b7907c3c17c0c60126f0feacc171a463bf944ac5499dda2bb7b615a34"
+    },
+    {
+      "id": "OH2-090",
+      "group": "document:481",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 481,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 304.559,
+      "extraction_ms": 14.861200000268582,
+      "extraction_method": "pdf_text",
+      "used_ocr": false,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 4308,
+        "token_count": 629,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "cc6bf510a64aaf63a09e9defd79702f516192a856ae0c5e37663a84581e42ad8"
+    },
+    {
+      "id": "OH2-091",
+      "group": "document:459",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 459,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 273.415,
+      "extraction_ms": 6489.383199999793,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 4,
+      "quality": {
+        "extracted_chars": 5351,
+        "token_count": 844,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "a7413250bf10f820222f3def733e3a9e2e6adb52430f02cf585ec23dcfca600e"
+    },
+    {
+      "id": "OH2-092",
+      "group": "document:456",
+      "category": "official_holdout_v2",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 456,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 202.458,
+      "extraction_ms": 6082.909500000369,
+      "extraction_method": "ocr",
+      "used_ocr": true,
+      "page_count": 3,
+      "quality": {
+        "extracted_chars": 2422,
+        "token_count": 394,
+        "printable_ratio": 1.0,
+        "text_order_quality": "not_measurable",
+        "usable": true,
+        "extraction_warning": null
+      },
+      "extraction_warning": null,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "input_sha256": "ec40ce83efb7ed3ce76d0a529bbf5f967e56fa549b3def525fb8eff89718aff9"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "OH2-001",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-002",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-003",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-004",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-005",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-006",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-007",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-008",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-009",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-010",
+      "status": "extraction_failed",
+      "reason": "Il PDF supera il limite di 100 pagine."
+    },
+    {
+      "id": "OH2-011",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-012",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-013",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-014",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-015",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-016",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-017",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-018",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-019",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-020",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-021",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-022",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-023",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-024",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-025",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-026",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-027",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-028",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-029",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-030",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-031",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-032",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-033",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-034",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-035",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-036",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-037",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-038",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-039",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-040",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-041",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-042",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-043",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-044",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-045",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-046",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-047",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-048",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-049",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-050",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-051",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-052",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-053",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-054",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-055",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-056",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-057",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-058",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-059",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-060",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-061",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-062",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-063",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-064",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-065",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-066",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-067",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-068",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-069",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-070",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-071",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-072",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-073",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-074",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-075",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-076",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-077",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-078",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-079",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-080",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-081",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-082",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-083",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-084",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-085",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-086",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-087",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-088",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-089",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-090",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-091",
+      "status": "extracted"
+    },
+    {
+      "id": "OH2-092",
+      "status": "extracted"
+    }
+  ],
+  "summary": {
+    "cases": 92,
+    "passed": 77,
+    "failed": 15,
+    "metrics": {
+      "document_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 2,
+        "denominator": 17,
+        "value": 0.11764705882352941
+      },
+      "document_f1": {
+        "numerator": 4,
+        "denominator": 19,
+        "value": 0.21052631578947367
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 2,
+        "denominator": 17,
+        "value": 0.11764705882352941
+      },
+      "useful_coverage": {
+        "numerator": 2,
+        "denominator": 17,
+        "value": 0.11764705882352941
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 75,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 75,
+        "denominator": 75,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 15,
+        "denominator": 17,
+        "value": 0.8823529411764706
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 2,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 15
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 75
+      }
+    },
+    "latency_ms": {
+      "p50": 279.5905,
+      "p95": 440.8331,
+      "p99": null
+    }
+  },
+  "bootstrap_95": {
+    "method": "group_percentile",
+    "confidence": 0.95,
+    "repetitions": 10000,
+    "seed": 20261011,
+    "groups": 92,
+    "limits": "Intervalli descrittivi del corpus pubblico; possono degenerare con zero errori e non stimano il rischio su documenti reali.",
+    "intervals": {
+      "document_precision": [
+        1.0,
+        1.0
+      ],
+      "document_recall": [
+        0.0,
+        0.2941
+      ],
+      "document_f1": [
+        0.0,
+        0.4545
+      ],
+      "family_precision": null,
+      "family_recall": null,
+      "family_f1": null,
+      "exact_document_coverage": [
+        0.0,
+        0.2941
+      ],
+      "useful_coverage": [
+        0.0,
+        0.2941
+      ],
+      "unknown_false_acceptance_rate": [
+        0.0,
+        0.0
+      ],
+      "unknown_correct_rejection_rate": [
+        1.0,
+        1.0
+      ],
+      "supported_rejection_rate": [
+        0.7059,
+        1.0
+      ],
+      "entity_error_rate": [
+        0.0,
+        0.0
+      ],
+      "version_year_error_rate": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "positive_n": 17,
+  "negative_n": 75,
+  "sources": 1,
+  "issuers": 1,
+  "source_counts": {
+    "giustizia": 17
+  },
+  "max_source_concentration": 1.0,
+  "extraction": {
+    "success": 91,
+    "total": 92,
+    "conditional_matching": {
+      "cases": 91,
+      "passed": 76,
+      "failed": 15,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 19,
+          "value": 0.21052631578947367
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 74,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 74,
+          "denominator": 74,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 15,
+          "denominator": 17,
+          "value": 0.8823529411764706
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 15
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 74
+        }
+      },
+      "latency_ms": {
+        "p50": 279.784,
+        "p95": 440.917,
+        "p99": null
+      }
+    },
+    "end_to_end": {
+      "cases": 92,
+      "passed": 77,
+      "failed": 15,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 19,
+          "value": 0.21052631578947367
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 75,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 75,
+          "denominator": 75,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 15,
+          "denominator": 17,
+          "value": 0.8823529411764706
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 15
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 75
+        }
+      },
+      "latency_ms": {
+        "p50": 279.5905,
+        "p95": 440.8331,
+        "p99": null
+      }
+    }
+  },
+  "wrong_accepted": 0,
+  "composition": {
+    "formats": {
+      "pdf": 17
+    },
+    "coded": 0,
+    "annual": 0,
+    "scanned": 14,
+    "title_limits": "Metadata descriptive/generic classes not independently human adjudicated."
+  },
+  "limits": "Single evaluation after committed freeze. Acquisition shortfalls remain explicit. Extraction failures remain in end-to-end denominators. Metadata leakage checks do not prove all structural independence; official listing labels are not human editorial validation."
+}

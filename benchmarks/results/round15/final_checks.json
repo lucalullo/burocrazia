@@ -1,0 +1,148 @@
+{
+  "benchmark_schema_validation": true,
+  "canonical_hash_binding_integrity": true,
+  "catalog": {
+    "active_real_documents": 1212,
+    "demo_documents": 10,
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "real_documents": 1216,
+    "real_documents_without_provenance": 0,
+    "rejected_real_documents": 4,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99",
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "unverified_explanations": 3
+  },
+  "checked_at": "2026-10-13T13:13:26.392457+00:00",
+  "cli": [
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "name": "fingerprint_v1_validate",
+      "passed": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2dda91b9257189d8169d0b4f74bc565f859349d6ed70507f52df69eea06c8092"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v2",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "name": "fingerprint_v2_validate",
+      "passed": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "964eb3b7e3ffe028e53eaedc866528d68ac455de557bece06cd072c3a37cfecf"
+    },
+    {
+      "args": [
+        "-m",
+        "maintenance.build_fingerprints_v3",
+        "--validate-only"
+      ],
+      "exit_code": 0,
+      "name": "fingerprint_v3_validate",
+      "passed": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "692f7198eeab96ad90764525e468da57fa582ebde150b4e5b7dd98084c12d2bb"
+    },
+    {
+      "args": [
+        "scripts/benchmark.py",
+        "--corpus",
+        "tests/fixtures/benchmark_v2.json",
+        "--output",
+        "reports/round15-cli-compat-v2.json"
+      ],
+      "exit_code": 0,
+      "name": "compat_v2",
+      "passed": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "-m",
+        "benchmarks.evaluate",
+        "--fast",
+        "--output-dir",
+        "reports/round15-fast"
+      ],
+      "exit_code": 1,
+      "name": "release_fast",
+      "passed": false,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "62d6aa62e508f39f38fd5c5c3b1df651cd7e2b3fbda06366376fe6382d807cb8"
+    }
+  ],
+  "compile_pass": true,
+  "freeze_created": false,
+  "historical_git_blobs_verified": 434,
+  "input_safety_count_hash_valid": true,
+  "migration": {
+    "foreign_key_violations": [],
+    "integrity": "ok",
+    "row_counts_unchanged": true,
+    "schema": 610
+  },
+  "performance": {
+    "mandatory_gate": "Median p95 <=250ms; four of five preferred only",
+    "median_p95": 263.0707,
+    "p50": [
+      48.7097,
+      66.9108,
+      66.4942,
+      66.5482,
+      63.6686
+    ],
+    "p95": [
+      215.0934,
+      263.0707,
+      259.0395,
+      283.8871,
+      285.658
+    ],
+    "pass_count": 1,
+    "passed": false,
+    "preferred_four_of_five": false,
+    "prudent_fragile": true
+  },
+  "performance_runtime_binding": true,
+  "prior_archives_sha256": {
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round10.zip": "17b8c6655e44f7ea4d1025d13a7db0afb558df93c7891e4e46d5709751f8ce37",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round11.zip": "e74765d50a937360a9fb95b9b1037bed04f03456aaee999a3e4a673a204161e5",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round12.zip": "c02412796154f59d1c8d09f15816e97c8fddaec291922f6fbc20b8b4298bd7f6",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round13.zip": "02088bcd49b9b5c8ee83ffefe13e445cf298d2fdf8598719518d027ddb8b12ed",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round14.zip": "b62cae979711009529b990da2e7af79288ab2b361ff1ed1ef0098c67c8b010e2",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round8.zip": "d1b8cf63e9f4b857bccb61942e0b52e2a36badeae7213be41aca33478909752a",
+    "BurOCRazia-v0.7.0-candidate-NOT-READY-round9.zip": "4eb297530a7ab2854e1d10004fcaec6d73ddb5771810e13d9210540a865e4517"
+  },
+  "release_fast_exit": 1,
+  "release_fast_historical_failed_ids": [
+    "EX02",
+    "EX03"
+  ],
+  "release_fast_scope": "Actual nonzero exit retained, historical EX02/EX03 unchanged; not a green CLI claim.",
+  "release_predictions": 0,
+  "status": "NOT READY",
+  "truth_v3_schema_valid": true
+}

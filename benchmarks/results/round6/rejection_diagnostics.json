@@ -1,0 +1,2151 @@
+{
+  "robustness_v2": {
+    "counts": {
+      "insufficient_fusion": 19,
+      "fusion_passed_but_not_accepted": 23
+    },
+    "cases": [
+      {
+        "case_id": "FP-149-raster_200",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.5617055555953061,
+          "chars": 0.13671875,
+          "anchors": 0.171875,
+          "visual": 1.0,
+          "overlap": 43,
+          "structure": 0.27710843373493976,
+          "score": 0.440813715297653
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-jpeg_75",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.7375378254454217,
+          "chars": 0.16796875,
+          "anchors": 0.171875,
+          "visual": 0.984375,
+          "overlap": 56,
+          "structure": 0.27710843373493976,
+          "score": 0.5349798502227108
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-contrast_minus20",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.7375378254454217,
+          "chars": 0.16796875,
+          "anchors": 0.171875,
+          "visual": 0.9453125,
+          "overlap": 56,
+          "structure": 0.2650602409638554,
+          "score": 0.5310736002227108
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-crop_2pct",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.7155458449309803,
+          "chars": 0.171875,
+          "anchors": 0.1875,
+          "visual": 0.93359375,
+          "overlap": 56,
+          "structure": 0.2650602409638554,
+          "score": 0.5222260474654902
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-crop_5pct",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.8525022518658728,
+          "chars": 0.1796875,
+          "anchors": 0.203125,
+          "visual": 0.78515625,
+          "overlap": 66,
+          "structure": 0.2530120481927711,
+          "score": 0.5801573759329364
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-resize_075",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.630030999359175,
+          "chars": 0.1640625,
+          "anchors": 0.1875,
+          "visual": 0.9921875,
+          "overlap": 49,
+          "structure": 0.40963855421686746,
+          "score": 0.4833748746795875
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-first_page_only",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.734504053358571,
+          "chars": 0.1953125,
+          "anchors": 0.171875,
+          "visual": 1.0,
+          "overlap": 58,
+          "structure": 0.3012048192771084,
+          "score": 0.5418614016792855
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-raster_200",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9947322968951519,
+          "chars": 0.9765625,
+          "anchors": 0.984375,
+          "visual": 0.9921875,
+          "overlap": 190,
+          "structure": 0.7941176470588236,
+          "score": 0.988381773447576
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-raster_150",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-jpeg_90",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9787254231789938,
+          "chars": 0.96875,
+          "anchors": 0.96875,
+          "visual": 0.984375,
+          "overlap": 188,
+          "structure": 0.8235294117647058,
+          "score": 0.9753002115894969
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-jpeg_75",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.967678687959806,
+          "chars": 0.96875,
+          "anchors": 0.96875,
+          "visual": 0.98046875,
+          "overlap": 186,
+          "structure": 0.8235294117647058,
+          "score": 0.969386218979903
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-jpeg_60",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9848369423149368,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.984375,
+          "overlap": 189,
+          "structure": 0.8235294117647058,
+          "score": 0.9793325336574683
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-grayscale",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-contrast_minus20",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.967678687959806,
+          "chars": 0.96875,
+          "anchors": 0.96875,
+          "visual": 0.953125,
+          "overlap": 186,
+          "structure": 0.8235294117647058,
+          "score": 0.966651843979903
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-blur_mild",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.979313574705343,
+          "chars": 0.97265625,
+          "anchors": 0.984375,
+          "visual": 0.98828125,
+          "overlap": 188,
+          "structure": 0.7647058823529411,
+          "score": 0.9793052248526715
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-crop_2pct",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.979313574705343,
+          "chars": 0.97265625,
+          "anchors": 0.984375,
+          "visual": 0.9375,
+          "overlap": 188,
+          "structure": 0.7647058823529411,
+          "score": 0.9742270998526714
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-crop_5pct",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.6923850999799126,
+          "chars": 0.75390625,
+          "anchors": 0.8125,
+          "visual": 0.80078125,
+          "overlap": 130,
+          "structure": 0.7352941176470589,
+          "score": 0.7366222374899563
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-resize_075",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9938884808640571,
+          "chars": 0.98046875,
+          "anchors": 0.984375,
+          "visual": 0.97265625,
+          "overlap": 191,
+          "structure": 0.7941176470588236,
+          "score": 0.9869833029320286
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-rotation_90",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-rotation_180",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-rotation_270",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-raster_200",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7641998547502035,
+          "chars": 0.171875,
+          "anchors": 0.546875,
+          "visual": 0.99609375,
+          "overlap": 103,
+          "structure": 0.09763313609467461,
+          "score": 0.6067093023751018
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-raster_150",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-jpeg_90",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8503593801580239,
+          "chars": 0.171875,
+          "anchors": 0.59375,
+          "visual": 0.99609375,
+          "overlap": 114,
+          "structure": 0.09763313609467461,
+          "score": 0.656820315079012
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-jpeg_75",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.801579846772504,
+          "chars": 0.171875,
+          "anchors": 0.5625,
+          "visual": 0.99609375,
+          "overlap": 108,
+          "structure": 0.09467455621301779,
+          "score": 0.6277430483862521
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-jpeg_60",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8234471863499618,
+          "chars": 0.171875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 111,
+          "structure": 0.09171597633136097,
+          "score": 0.6410204681749809
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-grayscale",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-contrast_minus20",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.96484375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6340274667583732
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-blur_mild",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8128612911033117,
+          "chars": 0.16015625,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 109,
+          "structure": 0.09763313609467461,
+          "score": 0.6327978330516558
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-crop_2pct",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8579432057319224,
+          "chars": 0.171875,
+          "anchors": 0.59375,
+          "visual": 0.8671875,
+          "overlap": 115,
+          "structure": 0.09467455621301779,
+          "score": 0.6477216028659611
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-crop_5pct",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8579432057319224,
+          "chars": 0.171875,
+          "anchors": 0.578125,
+          "visual": 0.75,
+          "overlap": 115,
+          "structure": 0.09467455621301779,
+          "score": 0.6336591028659613
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-resize_075",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7148257711752378,
+          "chars": 0.15234375,
+          "anchors": 0.53125,
+          "visual": 0.98828125,
+          "overlap": 96,
+          "structure": 0.09763313609467461,
+          "score": 0.5740144480876189
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-first_page_only",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7117634699529384,
+          "chars": 0.20703125,
+          "anchors": 0.578125,
+          "visual": 1.0,
+          "overlap": 93,
+          "structure": 0.12426035502958577,
+          "score": 0.5943582974764692
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-rotation_90",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-rotation_180",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-rotation_270",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7299274994206147,
+          "chars": 0.16015625,
+          "anchors": 0.5625,
+          "visual": 0.99609375,
+          "overlap": 99,
+          "structure": 0.08875739644970415,
+          "score": 0.5889871872103074
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-jpeg_60",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7350133014813696,
+          "chars": 0.23046875,
+          "anchors": 0.609375,
+          "visual": 0.98046875,
+          "overlap": 102,
+          "structure": 0.25263157894736843,
+          "score": 0.6145769632406848
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-contrast_minus20",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7436755198340426,
+          "chars": 0.20703125,
+          "anchors": 0.65625,
+          "visual": 0.953125,
+          "overlap": 105,
+          "structure": 0.25263157894736843,
+          "score": 0.6173455724170213
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-blur_mild",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7404907898997113,
+          "chars": 0.2109375,
+          "anchors": 0.640625,
+          "visual": 0.9921875,
+          "overlap": 101,
+          "structure": 0.25263157894736843,
+          "score": 0.6182922699498556
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-crop_2pct",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.71624833706031,
+          "chars": 0.21875,
+          "anchors": 0.609375,
+          "visual": 0.87109375,
+          "overlap": 101,
+          "structure": 0.25263157894736843,
+          "score": 0.591327293530155
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-crop_5pct",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7189137344002704,
+          "chars": 0.21875,
+          "anchors": 0.59375,
+          "visual": 0.70703125,
+          "overlap": 101,
+          "structure": 0.25263157894736843,
+          "score": 0.5739099922001352
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-resize_075",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.6713925003766352,
+          "chars": 0.20703125,
+          "anchors": 0.5625,
+          "visual": 0.984375,
+          "overlap": 96,
+          "structure": 0.25263157894736843,
+          "score": 0.5702665626883177
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      }
+    ]
+  },
+  "scan_ocr_v2": {
+    "counts": {
+      "insufficient_fusion": 17,
+      "fusion_passed_but_not_accepted": 23
+    },
+    "cases": [
+      {
+        "case_id": "FP-149-raster_200",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.5617055555953061,
+          "chars": 0.13671875,
+          "anchors": 0.171875,
+          "visual": 1.0,
+          "overlap": 43,
+          "structure": 0.27710843373493976,
+          "score": 0.440813715297653
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-jpeg_75",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.7375378254454217,
+          "chars": 0.16796875,
+          "anchors": 0.171875,
+          "visual": 0.984375,
+          "overlap": 56,
+          "structure": 0.27710843373493976,
+          "score": 0.5349798502227108
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-contrast_minus20",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.7375378254454217,
+          "chars": 0.16796875,
+          "anchors": 0.171875,
+          "visual": 0.9453125,
+          "overlap": 56,
+          "structure": 0.2650602409638554,
+          "score": 0.5310736002227108
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-crop_2pct",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.7155458449309803,
+          "chars": 0.171875,
+          "anchors": 0.1875,
+          "visual": 0.93359375,
+          "overlap": 56,
+          "structure": 0.2650602409638554,
+          "score": 0.5222260474654902
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-crop_5pct",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.8525022518658728,
+          "chars": 0.1796875,
+          "anchors": 0.203125,
+          "visual": 0.78515625,
+          "overlap": 66,
+          "structure": 0.2530120481927711,
+          "score": 0.5801573759329364
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-149-resize_075",
+        "expected_id": 149,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 149,
+          "resource_index": 96,
+          "text": 0.630030999359175,
+          "chars": 0.1640625,
+          "anchors": 0.1875,
+          "visual": 0.9921875,
+          "overlap": 49,
+          "structure": 0.40963855421686746,
+          "score": 0.4833748746795875
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-raster_200",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9947322968951519,
+          "chars": 0.9765625,
+          "anchors": 0.984375,
+          "visual": 0.9921875,
+          "overlap": 190,
+          "structure": 0.7941176470588236,
+          "score": 0.988381773447576
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-raster_150",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-jpeg_90",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9787254231789938,
+          "chars": 0.96875,
+          "anchors": 0.96875,
+          "visual": 0.984375,
+          "overlap": 188,
+          "structure": 0.8235294117647058,
+          "score": 0.9753002115894969
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-jpeg_75",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.967678687959806,
+          "chars": 0.96875,
+          "anchors": 0.96875,
+          "visual": 0.98046875,
+          "overlap": 186,
+          "structure": 0.8235294117647058,
+          "score": 0.969386218979903
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-jpeg_60",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9848369423149368,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.984375,
+          "overlap": 189,
+          "structure": 0.8235294117647058,
+          "score": 0.9793325336574683
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-grayscale",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-contrast_minus20",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.967678687959806,
+          "chars": 0.96875,
+          "anchors": 0.96875,
+          "visual": 0.953125,
+          "overlap": 186,
+          "structure": 0.8235294117647058,
+          "score": 0.966651843979903
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-blur_mild",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.979313574705343,
+          "chars": 0.97265625,
+          "anchors": 0.984375,
+          "visual": 0.98828125,
+          "overlap": 188,
+          "structure": 0.7647058823529411,
+          "score": 0.9793052248526715
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-crop_2pct",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.979313574705343,
+          "chars": 0.97265625,
+          "anchors": 0.984375,
+          "visual": 0.9375,
+          "overlap": 188,
+          "structure": 0.7647058823529411,
+          "score": 0.9742270998526714
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-crop_5pct",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.6923850999799126,
+          "chars": 0.75390625,
+          "anchors": 0.8125,
+          "visual": 0.80078125,
+          "overlap": 130,
+          "structure": 0.7352941176470589,
+          "score": 0.7366222374899563
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-resize_075",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.9938884808640571,
+          "chars": 0.98046875,
+          "anchors": 0.984375,
+          "visual": 0.97265625,
+          "overlap": 191,
+          "structure": 0.7941176470588236,
+          "score": 0.9869833029320286
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-rotation_90",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-rotation_180",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-550-rotation_270",
+        "expected_id": 550,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 550,
+          "resource_index": 370,
+          "text": 0.973790207095749,
+          "chars": 0.97265625,
+          "anchors": 0.96875,
+          "visual": 0.98828125,
+          "overlap": 187,
+          "structure": 0.8235294117647058,
+          "score": 0.9741997910478746
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-raster_200",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7641998547502035,
+          "chars": 0.171875,
+          "anchors": 0.546875,
+          "visual": 0.99609375,
+          "overlap": 103,
+          "structure": 0.09763313609467461,
+          "score": 0.6067093023751018
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-raster_150",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-jpeg_90",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8503593801580239,
+          "chars": 0.171875,
+          "anchors": 0.59375,
+          "visual": 0.99609375,
+          "overlap": 114,
+          "structure": 0.09763313609467461,
+          "score": 0.656820315079012
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-jpeg_75",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.801579846772504,
+          "chars": 0.171875,
+          "anchors": 0.5625,
+          "visual": 0.99609375,
+          "overlap": 108,
+          "structure": 0.09467455621301779,
+          "score": 0.6277430483862521
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-jpeg_60",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8234471863499618,
+          "chars": 0.171875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 111,
+          "structure": 0.09171597633136097,
+          "score": 0.6410204681749809
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-grayscale",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-contrast_minus20",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.96484375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6340274667583732
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-blur_mild",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8128612911033117,
+          "chars": 0.16015625,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 109,
+          "structure": 0.09763313609467461,
+          "score": 0.6327978330516558
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-crop_2pct",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8579432057319224,
+          "chars": 0.171875,
+          "anchors": 0.59375,
+          "visual": 0.8671875,
+          "overlap": 115,
+          "structure": 0.09467455621301779,
+          "score": 0.6477216028659611
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-crop_5pct",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8579432057319224,
+          "chars": 0.171875,
+          "anchors": 0.578125,
+          "visual": 0.75,
+          "overlap": 115,
+          "structure": 0.09467455621301779,
+          "score": 0.6336591028659613
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-resize_075",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7148257711752378,
+          "chars": 0.15234375,
+          "anchors": 0.53125,
+          "visual": 0.98828125,
+          "overlap": 96,
+          "structure": 0.09763313609467461,
+          "score": 0.5740144480876189
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-rotation_90",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-rotation_180",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "fusion_passed_but_not_accepted",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.8176643085167462,
+          "chars": 0.16796875,
+          "anchors": 0.578125,
+          "visual": 0.99609375,
+          "overlap": 110,
+          "structure": 0.09467455621301779,
+          "score": 0.6371524667583731
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-586-rotation_270",
+        "expected_id": 586,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 586,
+          "resource_index": 392,
+          "text": 0.7299274994206147,
+          "chars": 0.16015625,
+          "anchors": 0.5625,
+          "visual": 0.99609375,
+          "overlap": 99,
+          "structure": 0.08875739644970415,
+          "score": 0.5889871872103074
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-jpeg_60",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7350133014813696,
+          "chars": 0.23046875,
+          "anchors": 0.609375,
+          "visual": 0.98046875,
+          "overlap": 102,
+          "structure": 0.25263157894736843,
+          "score": 0.6145769632406848
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-contrast_minus20",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7436755198340426,
+          "chars": 0.20703125,
+          "anchors": 0.65625,
+          "visual": 0.953125,
+          "overlap": 105,
+          "structure": 0.25263157894736843,
+          "score": 0.6173455724170213
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-blur_mild",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7404907898997113,
+          "chars": 0.2109375,
+          "anchors": 0.640625,
+          "visual": 0.9921875,
+          "overlap": 101,
+          "structure": 0.25263157894736843,
+          "score": 0.6182922699498556
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-crop_2pct",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.71624833706031,
+          "chars": 0.21875,
+          "anchors": 0.609375,
+          "visual": 0.87109375,
+          "overlap": 101,
+          "structure": 0.25263157894736843,
+          "score": 0.591327293530155
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-crop_5pct",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.7189137344002704,
+          "chars": 0.21875,
+          "anchors": 0.59375,
+          "visual": 0.70703125,
+          "overlap": 101,
+          "structure": 0.25263157894736843,
+          "score": 0.5739099922001352
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      },
+      {
+        "case_id": "FP-591-resize_075",
+        "expected_id": 591,
+        "observed": {
+          "match_type": "NO_MATCH",
+          "document_id": null,
+          "family_id": null,
+          "entity": null,
+          "version": null
+        },
+        "candidate_rank": 1,
+        "diagnostic_category": "insufficient_fusion",
+        "expected_scores": {
+          "document_id": 591,
+          "resource_index": 396,
+          "text": 0.6713925003766352,
+          "chars": 0.20703125,
+          "anchors": 0.5625,
+          "visual": 0.984375,
+          "overlap": 96,
+          "structure": 0.25263157894736843,
+          "score": 0.5702665626883177
+        },
+        "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+        "conflicts": []
+      }
+    ]
+  },
+  "scope": "Diagnostic aggregation of frozen evaluation only. Fusion eligibility is necessary, not sufficient: safety and margin may still veto. Generic runtime reasons do not prove a particular hidden veto. No thresholds or observations changed."
+}

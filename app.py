@@ -7,6 +7,7 @@ import streamlit as st
 
 from src.catalog_metrics import catalog_summary, get_catalog_metrics
 from src.bootstrap import prepare_database
+from src.benchmark_display import load_summary, metric_label
 from src.database import DEFAULT_DB_PATH, connect_database, list_documents
 from src.explanations import (
     EXPLANATION_STATUS_REJECTED, EXPLANATION_STATUS_VERIFIED, MAX_REVIEWER_NAME_LENGTH,
@@ -26,8 +27,8 @@ from src.review import (
 )
 from src.sources import list_sources
 
-NAVIGATION_AREAS = ("BurOCRazia", "Catalogo", "Fonti", "Revisione")
-NAVIGATION_LABELS = {"BurOCRazia": "Riconosci", "Catalogo": "Catalogo", "Fonti": "Fonti e provenienza", "Revisione": "Revisione editoriale"}
+NAVIGATION_AREAS = ("BurOCRazia", "Catalogo", "Fonti", "Revisione", "Benchmark")
+NAVIGATION_LABELS = {"BurOCRazia": "Riconosci", "Catalogo": "Catalogo", "Fonti": "Fonti e provenienza", "Revisione": "Revisione editoriale", "Benchmark": "Benchmark"}
 PRELIMINARY_EXPLANATION_MESSAGE = "Spiegazione preliminare non ancora revisionata"
 VERIFIED_EXPLANATION_MESSAGE = "Spiegazione revisionata"
 NO_EXPLANATION_MESSAGE = "Documento riconosciuto, ma BurOCRazia non dispone ancora di una spiegazione."
@@ -318,11 +319,21 @@ def show_document_recognition(catalog: list[AdministrativeDocument], explanation
             raise ExtractionError(f"Il file supera il limite di {MAX_UPLOAD_BYTES // (1024 * 1024)} MiB.")
         with st.spinner("Lettura locale del documento..."):
             extraction = extract_document(uploaded_file.getvalue(), uploaded_file.name, mime_type=getattr(uploaded_file, "type", None))
+            from src.fingerprint_pages import prepare
+            page_context=prepare(uploaded_file.getvalue(),uploaded_file.name,extraction)
     except ExtractionError as exc:
         st.warning("Impossibile acquisire il testo. Controlla il file o riprova con una copia leggibile.")
         st.text(str(exc))
         return
-    recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE)
+    import hashlib
+    try:
+        recognition = recognize_catalog(extraction.text, catalog, families or [], min_document_confidence=MIN_CONFIDENCE,
+            file_sha256=hashlib.sha256(uploaded_file.getvalue()).hexdigest(),
+            page_context=page_context)
+    except ExtractionError as exc:
+        st.warning('Impossibile analizzare la struttura del documento entro i limiti locali.')
+        st.text(str(exc))
+        return
     if recognition.match_type == "NO_MATCH":
         st.header("Documento non riconosciuto")
         st.text(UNKNOWN_DOCUMENT_MESSAGE)
@@ -339,6 +350,10 @@ def show_document_recognition(catalog: list[AdministrativeDocument], explanation
         linked = [item for item in explanations if item.document_id == recognition.document.id]
         show_recognized_document(recognition.document, recognition.confidence_document, linked, extraction)
     with st.expander("Segnali della decisione"):
+        method = ('File ufficiale identico' if 'official_file_sha256_exact' in recognition.document_signals
+                  else 'Firma del contenuto' if 'content_fingerprint_match' in recognition.document_signals
+                  else 'Famiglia' if recognition.match_type == 'FAMILY_MATCH' else 'Metadati')
+        st.text('Metodo: '+method)
         st.text(f"Esito: {recognition.match_type}")
         st.text("\n".join((*recognition.document_signals, *recognition.family_signals)) or "Nessun segnale sufficiente.")
         for attribute in ("reason", "catalog_revision", "rules_version", "document_score_margin", "family_score_margin", "conflicts"):
@@ -701,6 +716,81 @@ def show_theme_selector() -> None:
     )
 
 
+def show_benchmark(catalog, families):
+    from src.recognize import catalog_revision
+    from src.benchmark_display import headline_sections
+    st.subheader("Benchmark")
+    st.caption("Risultati statici; nessun test sul documento caricato.")
+    summary = load_summary(Path(__file__).resolve().parent / "benchmarks/latest_summary.json")
+    st.text("Stato candidata: " + str(summary.get("status", "non disponibile")))
+    st.text("Esecuzione: " + str(summary.get("executed_at", "non disponibile")))
+    st.text("Commit valutato: " + str(summary.get("commit", "non disponibile")))
+    st.text("Catalogo testato: " + str(summary.get("catalog_semantic_sha256", "non disponibile")))
+    st.text("Documenti reali nel catalogo testato: " + str(summary.get("catalog_count", "non disponibile")))
+    if summary.get("catalog_semantic_sha256") != catalog_revision(catalog, families):
+        st.warning("Il catalogo corrente differisce da quello valutato: i risultati non descrivono le modifiche locali.")
+    labels = {"document_precision": "Precisione documento", "document_recall": "Recall documento", "document_f1": "F1 documento",
+              "family_precision": "Precisione famiglia", "family_recall": "Recall famiglia", "family_f1": "F1 famiglia", "useful_coverage": "Copertura utile",
+              "unknown_correct_rejection_rate": "Rifiuti corretti degli sconosciuti", "unknown_false_acceptance_rate": "False accettazioni",
+              "entity_error_rate": "Errori ente", "version_year_error_rate": "Errori versione"}
+    for key,section in headline_sections(summary):
+        st.divider()
+        st.text({'independent_holdout':'Holdout ufficiale indipendente','hard_negatives':'Hard negatives',
+                 'real_ocr':'OCR reale','performance':'Performance',
+                 'known_canonical':'Documenti noti — file canonici',
+                 'known_robustness':'Documenti noti — rappresentazioni trasformate',
+                 'filled_forms':'Moduli compilati con dati fittizi',
+                 'family_identity_holdout':'Famiglie — identità escluse',
+                 'fingerprint_coverage':'Copertura delle firme tecniche',
+                 'scan_ocr':'Scansioni e OCR',
+                 'unknown_official':'Documenti ufficiali sconosciuti'}[key])
+        if key=='independent_holdout':st.text('Corpus richiesto: official_holdout_v2; v1 è storico e non promuove la release.')
+        if summary.get('benchmark_model') in ('known-family-unknown-v3','known-family-unknown-v4','known-family-unknown-v5'):
+            if key=='known_robustness':st.text('Valutazione '+summary['benchmark_model'].rsplit('-',1)[-1]+'; stato e limiti riportati sotto.')
+            if key=='unknown_official':st.text('Round 9: soltanto unknown con truth ufficiale confermata; numerosità e fonti restano gate separati.' if summary.get('benchmark_model')=='known-family-unknown-v5' else 'File sconosciuti storici, usati anche nella calibrazione: nessuna nuova validazione unknown indipendente.')
+            if key=='filled_forms':st.text('Moduli con dati fittizi: campi reali o overlay negli spazi liberi; generazione verificata separatamente dal riconoscimento.')
+        if section.get('reason'):st.text(str(section['reason']))
+        if section.get('status')=='not_run':
+            st.text('Benchmark indipendente non ancora disponibile' if key=='independent_holdout' else 'Non eseguito')
+            continue
+        if isinstance(section.get('summary'),dict):
+            st.text('Casi: '+str(section['summary'].get('cases','non disponibile')))
+            for name,label in labels.items():st.text(label+': '+metric_label(section['summary'].get('metrics',{}).get(name)))
+        if key=='real_ocr':st.text(str(section.get('result','non disponibile')))
+        if key=='fingerprint_coverage':
+            for name,label in [('operational_docs_total','Identità operative'),('file_backed_operational_docs','Identità con file'),
+                ('fingerprinted_all_operational_docs','Identità con firma'),('coverage_all','Copertura totale'),('coverage_file_backed','Copertura dei file')]:
+                value=section.get(name,'non disponibile')
+                if name.startswith('coverage_') and isinstance(value,(int,float)):value=f'{100*value:.2f}%'
+                st.text(label+': '+str(value))
+        if key=='performance':
+            if section.get('latency_ms'):
+                st.text('Latenza p50/p95 (ms): '+str(section['latency_ms'].get('p50'))+' / '+str(section['latency_ms'].get('p95')))
+                st.text('Indice fingerprint (byte): '+str(section.get('index_bytes','non disponibile')))
+            else:st.text('Rapporti p50/p95: '+str(section.get('p50_ratio'))+' / '+str(section.get('p95_ratio')))
+    if summary.get('benchmark_model') in ('known-family-unknown-v2','known-family-unknown-v3','known-family-unknown-v4','known-family-unknown-v5'):
+        family=summary.get('family_identity_holdout',{})
+        st.text('Famiglie valutabili: '+str(family.get('families_evaluable',0))+' / 16')
+        st.text('Validazione family: '+str(family.get('capability_status','non disponibile')))
+        if family.get('families_evaluable',0)<5:st.text('Il richiamo utile di release coincide con il riconoscimento esatto; capacità family non sufficientemente validata.')
+    st.text('Dettagli di sviluppo e regressione: corpus non indipendenti.')
+    for evaluation in summary["evaluations"]:
+        st.divider()
+        st.text(str(evaluation.get("name", "Valutazione")))
+        if evaluation.get("status")=="not_run":
+            st.text("Non eseguito")
+            continue
+        result = evaluation["summary"]
+        st.text("Casi: " + str(result.get("cases", "non disponibile")))
+        for key, label in labels.items():
+            st.text(label + ": " + metric_label(result.get("metrics", {}).get(key)))
+        latency = result.get("latency_ms", {})
+        st.text("Latenza p50/p95 (ms): " + str(latency.get("p50")) + " / " + str(latency.get("p95")))
+    st.text("OCR reale: " + str(summary.get("ocr_status", "non eseguito")))
+    st.text("Dettagli locali: docs/BENCHMARK.md; docs/COVERAGE.md; benchmarks/results/")
+    st.info("Il benchmark non garantisce il risultato su ogni documento reale. I risultati valgono per i corpus e l'ambiente indicati.")
+
+
 def main() -> None:
     install_network_guard()
     st.set_page_config(page_title="BurOCRazia", page_icon="📄", layout="wide", menu_items={"Get help": None, "Report a Bug": None, "About": None})
@@ -731,6 +821,8 @@ def main() -> None:
             show_document_catalog(catalog, families, explanations)
         elif selected_area == "Fonti":
             show_sources_registry(sources)
+        elif selected_area == "Benchmark":
+            show_benchmark(catalog, families)
         else:
             show_explanation_review(catalog, explanations)
     except (OSError, sqlite3.Error, ValueError) as exc:

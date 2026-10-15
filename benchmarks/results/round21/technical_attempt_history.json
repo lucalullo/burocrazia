@@ -1,0 +1,152 @@
+{
+  "V6_recognition_calls": 0,
+  "all_semantic_files_still_frozen": true,
+  "events": [
+    "v7_initial recall below gate; complete raw retained.",
+    "Unknown truth revisions all before freeze and predictions.",
+    "Frozen preparation unhandled C14NError after133 files; no V6 calls.",
+    "Recovery initial metadata guard failed before generator calls; log retained.",
+    "Recovery reused133 existing outputs unchanged, marked3 C14N and25 fill failures, no resampling.",
+    "First final validation hit a Windows SQLite cleanup lock after parsed tests; explicitly closed copied connection on retry, original temp/log retained.",
+    "Final full suite completed once on freeze; no repeat needed."
+  ],
+  "logs": {
+    "reports/round21-baseline-tests.log": {
+      "bytes": 1796,
+      "sha256": "19545bd6d9641d992c4c01ef306239a30758fb3fb6077e4f23435c957d63f34f"
+    },
+    "reports/round21-compat_v2.log": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "reports/round21-development-v7_initial.log": {
+      "bytes": 2143,
+      "sha256": "f1b4e3227d597c6a0dc8b526beccf0c19a586bb8e86190b1e72ed7f2cfbe658c"
+    },
+    "reports/round21-development-v7_ordered.log": {
+      "bytes": 2142,
+      "sha256": "551c9a5f1dfe04f3e94abf69ab949a5418cc9fd18169d546719cea8293086bc0"
+    },
+    "reports/round21-final-checks.log": {
+      "bytes": 351,
+      "sha256": "1df609f01642f27bdc00a1382c5b1a2af0c07abf8551af7bd91768383591ef20"
+    },
+    "reports/round21-final-tests.log": {
+      "bytes": 1877,
+      "sha256": "272aa9c270ee3f42edcf7a46c190aa4b3d09d9160742ff6df953004e4c289511"
+    },
+    "reports/round21-fingerprint_v1.log": {
+      "bytes": 128,
+      "sha256": "45074aef157c5b3cc75283878163e4d221c5a6c4873f0f48e669ae7eb0593607"
+    },
+    "reports/round21-fingerprint_v2.log": {
+      "bytes": 131,
+      "sha256": "efa53c08ad89605de0f46e070f4fab5eaec36994d325d61760f06e7544496823"
+    },
+    "reports/round21-fingerprint_v3.log": {
+      "bytes": 116,
+      "sha256": "6b57ca2189c995506c3981348f4462e9040f3143410107f0b888b784cbbb9787"
+    },
+    "reports/round21-freeze-tree.log": {
+      "bytes": 142,
+      "sha256": "b6a9c92727f653239f33e8e96666a045c8c30d5069c1e6be772bd4b34767d0e4"
+    },
+    "reports/round21-freeze.log": {
+      "bytes": 218,
+      "sha256": "18d3af2eeb03454142b24e0a28c096f5d7af02b2687c599d6a17169b0ce27a68"
+    },
+    "reports/round21-historical-regression-fast.log": {
+      "bytes": 141,
+      "sha256": "dddfd312d68053562f1b69bea12bf81d53bc6ef71cf9858db288671446dc5f02"
+    },
+    "reports/round21-legacy-fast.log": {
+      "bytes": 1592,
+      "sha256": "e675c923b71021755214931546d9cd855652c59f535c806b62ea870857e63a91"
+    },
+    "reports/round21-performance.log": {
+      "bytes": 912,
+      "sha256": "c0ddf1110df6845ce40ef60f4ff4f7bcfba596a101887770f643a87123433214"
+    },
+    "reports/round21-policy-targeted-heading.log": {
+      "bytes": 116,
+      "sha256": "baee5907e92fbed6a37590c8496ab5f26c4e8d193c413aae263cfdb51b51c5d1"
+    },
+    "reports/round21-policy-targeted-initial.log": {
+      "bytes": 116,
+      "sha256": "612eaf776d898114fb1f058bf4ba432c7c74c5e42bd19aef8f1513da279133ed"
+    },
+    "reports/round21-policy-targeted-ordered.log": {
+      "bytes": 116,
+      "sha256": "1c97702fe9673fdf91532602e4cb81a48f410e547d2243095541c44c8ffcab44"
+    },
+    "reports/round21-prerequisites.log": {
+      "bytes": 154,
+      "sha256": "b08cb4e0f00a23018e1967d4c1b5b8caefb63130cb568d117dc0cbc0738d1679"
+    },
+    "reports/round21-release-gate-fast.log": {
+      "bytes": 133,
+      "sha256": "bf87aaeca111d277400a620134c67265f80ec29a2f0e605113548c2a2b53f3f1"
+    },
+    "reports/round21-release-targeted.log": {
+      "bytes": 100,
+      "sha256": "1615269ab41e4cbe046b479f77b274094b0792521579286135df63c8a2586d90"
+    },
+    "reports/round21-tests-on-freeze.log": {
+      "bytes": 1879,
+      "sha256": "ae8d251f5b52ceaa6375817c1208a183584c949fd808b6876b453de9f5615783"
+    },
+    "reports/round21-unknown-acquire-cache.log": {
+      "bytes": 353,
+      "sha256": "f4556c0c1c6fc06d03984e7ea6a65f09eb7ccfe543804d4c96cee64eb0e0461a"
+    },
+    "reports/round21-unknown-freshness.log": {
+      "bytes": 384,
+      "sha256": "f1e2b1e1ed7c92f0841cb68388f179cad41c327b04c731d370815569aca7f3c9"
+    },
+    "reports/round21-unknown-selection.log": {
+      "bytes": 704,
+      "sha256": "148c0c87e7cb1354c4bc8f2c7d369f3e6c51418e89f214e1fb54e9f6f3c9ca9e"
+    },
+    "reports/round21-unknown-truth-cache.log": {
+      "bytes": 386,
+      "sha256": "985cfd2da4ec83c96b87b25f3eb08109a5e1667f70d98fb19e08ed212934dbef"
+    },
+    "reports/round21-unknown-truth-final.log": {
+      "bytes": 381,
+      "sha256": "f1f3ec4f777b7eb609a44b6d82f31486dfb8151656ad49f7ace0d269588e0bb0"
+    },
+    "reports/round21-unknown-truth-primary.log": {
+      "bytes": 383,
+      "sha256": "a21b6fa4bdd7a4f549001ef0cbf1d096b92b35e80e59625a02633769fb584846"
+    },
+    "reports/round21-unknown_release_v4.log": {
+      "bytes": 1255,
+      "sha256": "d4fda5490b671f899dedffa9f715f968cea9a2915dd3979b68860025bd614d75"
+    },
+    "reports/round21-v6-generation-resume-2.log": {
+      "bytes": 1262,
+      "sha256": "65a3e03c1ce212f3ffdb2139772a1ebca89ed50f27a274df762896357476f048"
+    },
+    "reports/round21-v6-generation-resume.log": {
+      "bytes": 777,
+      "sha256": "faca4df817e2b6d9a4adfd66b9bc06e079b7859fe96cc6329a4b55e42447abc1"
+    },
+    "reports/round21-v6-plan.log": {
+      "bytes": 181,
+      "sha256": "24b85e20a79a43a2f07ce941dc08eabe415ed66869063c41084979fe03a4d8aa"
+    },
+    "reports/round21-v6-prepare.log": {
+      "bytes": 1797,
+      "sha256": "9c0d30a185974260776aad691f59caa49270b51f8b6e39e64ba8f4cbbc7cc3a3"
+    },
+    "reports/round21-validation-on-freeze-resume.log": {
+      "bytes": 552,
+      "sha256": "8fd7fd4b4cf3a3b8c29d0cbab263c93e5f5c4aece41e09e1902c8281603dca56"
+    },
+    "reports/round21-validation-on-freeze.log": {
+      "bytes": 2255,
+      "sha256": "d61ba6070d8c265991ac444ec9a5b46eb3fa9a708f48c7852cdd0e8c50618fd1"
+    }
+  },
+  "unknown_release_recognition_calls": 120
+}

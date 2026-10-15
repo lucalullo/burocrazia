@@ -1,0 +1,30 @@
+{
+  "rules_version": "fingerprint-decision-v6",
+  "thresholds": {
+    "digital": 0.9,
+    "ocr": 0.8,
+    "chars": 0.65,
+    "visual": 0.88,
+    "anchors": 0.25,
+    "margin": 0.04,
+    "overlap": 16,
+    "top_k": 25,
+    "field_text": 0.75,
+    "conflict_content": 0.9,
+    "conflict_chars": 0.8,
+    "conflict_anchors": 0.5,
+    "conflict_margin": 0.1,
+    "scan_char": 0.85,
+    "scan_ocr": 0.5,
+    "scan_visual": 0.94,
+    "scan_anchor": 0.25,
+    "multi_page_average": 0.9,
+    "multi_page_margin": 0.08
+  },
+  "settings": {
+    "char_ngram": "3",
+    "aggregation": "max",
+    "containment": true
+  },
+  "scope": "Round20 contaminated development only. Conservative ambiguity fallback veto; weak subordinate/OCR-prefix entity labels are not contradictory known issuers; scan char+anchor+OCR+strict visual tier; corroboration from two aligned pages may resolve a shared attachment. Exact SHA, known issuer conflicts, year/revision/annex vetoes, binding and limits retained. No document/source/URL IDs in rules."
+}

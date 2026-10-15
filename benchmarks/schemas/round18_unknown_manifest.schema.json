@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["schema_version","manifest_id","selection_seed","cases","registry_sha256","truth_audit_sha256","sampling_policy_sha256","no_prediction_evidence_sha256"],
+  "properties":{
+    "schema_version":{"const":2},"manifest_id":{"const":"official-unknown-release-v3"},"selection_seed":{"const":20261014},
+    "cases":{"type":"array","minItems":100,"items":{
+      "type":"object",
+      "required":["case_id","source","entity","document_type","official_url","SHA256","truth_status","contamination_status","selection_stratum","selected_by_seed","receipt"],
+      "properties":{
+        "case_id":{"type":"string","pattern":"^U(?:16|17)-[a-f0-9]{16}$"},
+        "SHA256":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+        "truth_status":{"const":"confirmed_unknown"},"contamination_status":{"const":"fresh"},"selected_by_seed":{"const":20261014},
+        "selection_stratum":{"type":"object","required":["source","entity","type","coded","versioned"]}
+      },
+      "not":{"anyOf":[{"required":["score"]},{"required":["prediction"]},{"required":["candidate_rank"]},{"required":["outcome"]}]}
+    }}
+  }
+}

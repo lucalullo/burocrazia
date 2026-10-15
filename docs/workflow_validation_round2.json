@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "parser": "PyYAML 6.0.3 BaseLoader (syntax validation, not GitHub semantic execution)",
+  "workflows": [
+    {
+      "file": ".github/workflows/benchmark-full.yml",
+      "parsed": true,
+      "jobs": [
+        "evaluate"
+      ]
+    },
+    {
+      "file": ".github/workflows/tests.yml",
+      "parsed": true,
+      "jobs": [
+        "test"
+      ]
+    }
+  ],
+  "remote_ci_executed": false,
+  "local_release_fast": "exit 1 retained: v1 failures",
+  "matrix": "Linux/macOS/Windows configured; only Windows run locally"
+}

@@ -1,0 +1,13 @@
+{
+  "declared_at": "2026-10-13T11:22:02.919162+00:00",
+  "freeze_commit": "37a9d1f3125b9e0480d2592f479554fe5ea40a0a",
+  "head_character_limit": 2000,
+  "minimum_title_overlap": 4,
+  "minimum_title_support": 0.5,
+  "near_fingerprint_min_overlap": 0.85,
+  "near_unknown_char4_jaccard": 0.8,
+  "near_unknown_token_jaccard": 0.8,
+  "note": "Truth similarity excludes near duplicates; it is a direct sketch overlap, not recognition confidence/ranking. No recognize or decision function is called before final selection.",
+  "selection_seed": 2026101314,
+  "source_quota": 20
+}

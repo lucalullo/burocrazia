@@ -1,0 +1,34 @@
+{
+  "classification": "historical_independent_v6_round22",
+  "freeze_sha256": "8c2a50e2dd31dbb2110d1fc4b41ebf56c3bc5eb58f221857515c92edeec9d273",
+  "future_policy": "Immutable independent evidence for this exact frozen engine. Any later tuning based on these results requires a new independent evaluation;no relabel/replay/replacement of these original metrics.",
+  "original_gate_pass": true,
+  "original_metrics": {
+    "FN": 37,
+    "FP": 0,
+    "TP": 560,
+    "entity_errors": 0,
+    "exact": 560,
+    "extraction_failed": 0,
+    "f1": 0.9680207433016422,
+    "family": 0,
+    "n": 597,
+    "precision": 1.0,
+    "precision_ci95": {
+      "lower": 0.9931869876530032,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 1
+    },
+    "recall": 0.9380234505862647,
+    "recall_ci95": {
+      "lower": 0.9157414400337474,
+      "method": "Nominal Wilson95%; representation rows are correlated by40 selected identities,not a population guarantee.",
+      "upper": 0.9547044859623082
+    },
+    "reject": 37,
+    "version_errors": 0,
+    "wrong": 0
+  },
+  "original_observations_sha256": "6a230f43e2e98e4633520c8de5e99075af15c51b9d5090ce7a86217b10d19afe",
+  "recognition_semantic_sha256": "c077552055c25b0bc128e1a5c607afc434fb3bd074e6da165f3d8333145abf15"
+}

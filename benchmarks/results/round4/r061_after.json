@@ -1,0 +1,30 @@
+{
+  "id": "R061",
+  "group": "family:4",
+  "category": "family",
+  "expected": {
+    "match_type": "NO_MATCH"
+  },
+  "observed": {
+    "match_type": "NO_MATCH",
+    "document_id": null,
+    "family_id": null,
+    "entity": null,
+    "version": null
+  },
+  "correct": true,
+  "document_correct": false,
+  "family_correct": false,
+  "entity_labelled": false,
+  "entity_error": false,
+  "version_labelled": false,
+  "version_error": false,
+  "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+  "conflicts": [
+    "contesto indipendente della famiglia assente"
+  ],
+  "matching_ms": 101.016,
+  "source": "Agenzia delle Entrate-Riscossione",
+  "noise": "clean",
+  "prefiltered_candidates": 1226
+}

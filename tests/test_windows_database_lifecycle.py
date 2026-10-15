@@ -1,6 +1,7 @@
 """Keep SQLite references alive so Windows handle leaks cannot hide behind GC."""
 from contextlib import closing
 import hashlib
+import json
 from pathlib import Path
 import shutil
 import sqlite3
@@ -144,8 +145,13 @@ def test_benchmark_closes_all_handles_before_temporary_cleanup(tracked_connectio
             benchmark.run_benchmark(catalog_path=catalog)
     else:
         report = benchmark.run_benchmark(catalog_path=catalog)
-        assert report["summary"]["failed"] == 0
-        assert report["catalog"] == {"documents_real": 389, "documents_demo": 10, "families": 16}
+        # The immutable v1 corpus has two unversioned positives contradicted
+        # by v2. R9 refuses both; the handle lifecycle must still be correct.
+        failures = {c['id']: c for c in report['cases'] if not c['correct']}
+        assert set(failures) == {'EX02', 'EX03'} and report['summary']['failed'] == 2
+        assert all(c['observed']['match_type'] == 'NO_MATCH' for c in failures.values())
+        manifest=json.loads((database.PROJECT_ROOT/'data/catalog_manifest.json').read_text(encoding='utf-8'))
+        assert report["catalog"] == {"documents_real": manifest['real_documents'], "documents_demo": 10, "families": 16}
     state.assert_closed()
     assert len(cleaned) == 1
     if alternate_catalog:

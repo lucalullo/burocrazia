@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "families": [
+    {
+      "source_id": 4,
+      "ente": "Agenzia delle Entrate",
+      "nome": "Certificazione Unica",
+      "categoria": "certificazioni fiscali",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "CU"
+      ],
+      "identifying_phrases": [
+        "certificazione unica",
+        "modello CU"
+      ],
+      "official_url": "https://www.agenziaentrate.gov.it/portale/strumenti/modelli/tutti-i-modelli",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-13",
+      "created_at": "2026-08-13T17:27:41+00:00",
+      "updated_at": "2026-08-13T17:27:41+00:00",
+      "id": 14,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 4,
+      "ente": "Agenzia delle Entrate",
+      "nome": "Modello 730",
+      "categoria": "dichiarazioni",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "730",
+        "redditi"
+      ],
+      "identifying_phrases": [
+        "modello 730",
+        "dichiarazione dei redditi modello 730"
+      ],
+      "official_url": "https://www.agenziaentrate.gov.it/portale/strumenti/modelli/tutti-i-modelli",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-13",
+      "created_at": "2026-08-13T17:27:41+00:00",
+      "updated_at": "2026-08-13T17:27:41+00:00",
+      "id": 13,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 11,
+      "ente": "Agenzia delle Entrate-Riscossione",
+      "nome": "Accertamento esecutivo",
+      "categoria": "riscossione",
+      "descrizione_ufficiale": "Atto notificato direttamente dagli enti creditori che contiene l'intimazione ad adempiere al pagamento.",
+      "keywords": [
+        "avviso di presa in carico"
+      ],
+      "identifying_phrases": [
+        "avviso di accertamento esecutivo",
+        "accertamento esecutivo"
+      ],
+      "official_url": "https://www.agenziaentrateriscossione.gov.it/it/la-guida-alla-cartella-di-pagamento/lavviso-di-presa-in-carico-e-lavviso-di-accertamento-esecutivo/cosa-sono/index.html",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 3,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "Creditor/collection-agent issuer ambiguity; source evidence in locked failure analysis"
+    },
+    {
+      "source_id": 11,
+      "ente": "Agenzia delle Entrate-Riscossione",
+      "nome": "Avvisi e solleciti",
+      "categoria": "riscossione",
+      "descrizione_ufficiale": "Comunicazioni di sollecito, preavviso e avviso che Agenzia delle Entrate-Riscossione trasmette ai cittadini.",
+      "keywords": [
+        "sollecito",
+        "preavviso",
+        "avviso"
+      ],
+      "identifying_phrases": [
+        "sollecito di pagamento",
+        "preavviso di fermo",
+        "avviso di intimazione"
+      ],
+      "official_url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/avvisi-e-solleciti/index.html",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 5,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 11,
+      "ente": "Agenzia delle Entrate-Riscossione",
+      "nome": "Avviso di addebito INPS",
+      "categoria": "riscossione previdenziale",
+      "descrizione_ufficiale": "Atto notificato dall'INPS per la riscossione dei crediti previdenziali e avente valore di titolo esecutivo.",
+      "keywords": [
+        "crediti previdenziali",
+        "INPS"
+      ],
+      "identifying_phrases": [
+        "avviso di addebito inps",
+        "avviso di addebito"
+      ],
+      "official_url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 4,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "Creditor/collection-agent issuer ambiguity; source evidence in locked failure analysis"
+    },
+    {
+      "source_id": 11,
+      "ente": "Agenzia delle Entrate-Riscossione",
+      "nome": "Cartella di pagamento",
+      "categoria": "riscossione",
+      "descrizione_ufficiale": "Atto notificato da Agenzia delle Entrate-Riscossione per il recupero dei crediti affidati dagli enti creditori.",
+      "keywords": [
+        "modulo di pagamento",
+        "pagoPA"
+      ],
+      "identifying_phrases": [
+        "cartella di pagamento",
+        "agenzia delle entrate-riscossione",
+        "agente della riscossione"
+      ],
+      "official_url": "https://www.agenziaentrateriscossione.gov.it/it/la-guida-alla-cartella-di-pagamento/la-cartella-di-pagamento/",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:37:06+00:00",
+      "updated_at": "2026-08-05T06:37:06+00:00",
+      "id": 1,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 11,
+      "ente": "Agenzia delle Entrate-Riscossione",
+      "nome": "Modulo di pagamento pagoPA",
+      "categoria": "pagamenti",
+      "descrizione_ufficiale": "Modulo adottato da Agenzia delle Entrate-Riscossione per i pagamenti tramite il sistema pagoPA.",
+      "keywords": [
+        "pagoPA",
+        "modulo di pagamento"
+      ],
+      "identifying_phrases": [
+        "modulo di pagamento pagopa",
+        "nuovo modulo di pagamento pagopa",
+        "codice modulo di pagamento"
+      ],
+      "official_url": "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/Modulo-di-pagamento-pagoPA/",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 2,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 14,
+      "ente": "Garante per la protezione dei dati personali",
+      "nome": "Esercizio dei diritti privacy",
+      "categoria": "protezione dati personali",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "articoli 15 22",
+        "titolare del trattamento"
+      ],
+      "identifying_phrases": [
+        "esercizio dei diritti in materia di protezione dei dati personali",
+        "modello per l'esercizio dei diritti"
+      ],
+      "official_url": "https://www.garanteprivacy.it/home/modulistica-e-servizi-online",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-10",
+      "created_at": "2026-08-10T12:48:16+00:00",
+      "updated_at": "2026-08-10T12:48:16+00:00",
+      "id": 12,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 14,
+      "ente": "Garante per la protezione dei dati personali",
+      "nome": "Reclamo",
+      "categoria": "protezione dati personali",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "Garante",
+        "violazione"
+      ],
+      "identifying_phrases": [
+        "reclamo al Garante",
+        "modello facsimile per il reclamo"
+      ],
+      "official_url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-10",
+      "created_at": "2026-08-10T12:48:16+00:00",
+      "updated_at": "2026-08-10T12:48:16+00:00",
+      "id": 11,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 15,
+      "ente": "Ispettorato Nazionale del Lavoro",
+      "nome": "Richiesta di intervento ispettivo",
+      "categoria": "vigilanza",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "INL 31",
+        "ispettorato territoriale del lavoro"
+      ],
+      "identifying_phrases": [
+        "richiesta di intervento ispettivo",
+        "modulo INL 31"
+      ],
+      "official_url": "https://www.ispettorato.gov.it/servizio/richiesta-di-intervento-ispettivo/",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-10",
+      "created_at": "2026-08-10T12:48:16+00:00",
+      "updated_at": "2026-08-10T12:48:16+00:00",
+      "id": 10,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 7,
+      "ente": "Ministero delle Infrastrutture e dei Trasporti",
+      "nome": "Conversione patente",
+      "categoria": "motorizzazione",
+      "descrizione_ufficiale": "Procedura di sostituzione di una patente estera con un documento di guida italiano.",
+      "keywords": [
+        "patente estera",
+        "TT2112"
+      ],
+      "identifying_phrases": [
+        "conversione patente estera",
+        "domanda di conversione",
+        "ufficio motorizzazione civile"
+      ],
+      "official_url": "https://www.mit.gov.it/conversione-patente-estera",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 7,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 7,
+      "ente": "Ministero delle Infrastrutture e dei Trasporti",
+      "nome": "Immatricolazione",
+      "categoria": "motorizzazione",
+      "descrizione_ufficiale": "Famiglia delle pratiche di immatricolazione dei veicoli.",
+      "keywords": [
+        "veicolo",
+        "motorizzazione"
+      ],
+      "identifying_phrases": [
+        "domanda di immatricolazione",
+        "immatricolazione del veicolo",
+        "ufficio motorizzazione civile"
+      ],
+      "official_url": "https://mit.gov.it/come-fare-per/patenti-mezzi-e-abilitazioni",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 9,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 7,
+      "ente": "Ministero delle Infrastrutture e dei Trasporti",
+      "nome": "Patente di guida",
+      "categoria": "motorizzazione",
+      "descrizione_ufficiale": "Famiglia delle patenti per i mezzi stradali trattata nelle procedure del Ministero.",
+      "keywords": [
+        "patente",
+        "motorizzazione civile"
+      ],
+      "identifying_phrases": [
+        "patente di guida",
+        "ufficio motorizzazione civile"
+      ],
+      "official_url": "https://mit.gov.it/come-fare-per/patenti-mezzi-e-abilitazioni/patenti-mezzi-stradali",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 6,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": 7,
+      "ente": "Ministero delle Infrastrutture e dei Trasporti",
+      "nome": "Pratiche motorizzazione",
+      "categoria": "motorizzazione",
+      "descrizione_ufficiale": "Procedure e modulistica dell'area patenti, mezzi e abilitazioni del Ministero.",
+      "keywords": [
+        "pratica",
+        "motorizzazione"
+      ],
+      "identifying_phrases": [
+        "pratica di motorizzazione",
+        "ufficio motorizzazione civile"
+      ],
+      "official_url": "https://mit.gov.it/come-fare-per/patenti-mezzi-e-abilitazioni",
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-05",
+      "created_at": "2026-08-05T06:56:53+00:00",
+      "updated_at": "2026-08-05T06:56:53+00:00",
+      "id": 8,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": null,
+      "ente": "Polizia Locale / Ente locale",
+      "nome": "Verbale di violazione al Codice della Strada",
+      "categoria": "sanzioni amministrative",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "comune",
+        "comando"
+      ],
+      "identifying_phrases": [
+        "verbale di contestazione",
+        "codice della strada",
+        "polizia locale"
+      ],
+      "official_url": null,
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-13",
+      "created_at": "2026-08-13T17:27:41+00:00",
+      "updated_at": "2026-08-13T17:27:41+00:00",
+      "id": 15,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    },
+    {
+      "source_id": null,
+      "ente": "Regione / Ente regionale",
+      "nome": "Atto di accertamento tassa automobilistica regionale",
+      "categoria": "tributi regionali",
+      "descrizione_ufficiale": null,
+      "keywords": [
+        "regione",
+        "veicolo"
+      ],
+      "identifying_phrases": [
+        "atto di accertamento",
+        "tassa automobilistica regionale",
+        "omesso o irregolare versamento",
+        "irrogazione di sanzioni"
+      ],
+      "official_url": null,
+      "stato_verifica": "verificato",
+      "data_verifica": "2026-08-13",
+      "created_at": "2026-08-13T17:27:41+00:00",
+      "updated_at": "2026-08-13T17:27:41+00:00",
+      "id": 16,
+      "round2_action": "unchanged: no new automatic verification",
+      "issue": "No new independent validation"
+    }
+  ],
+  "new_families": 0,
+  "limits": "Existing families retained. No new operational family without reviewed source evidence and near-negative tests. Five family positives in v2 are a small public corpus; family fallback on official files remains zero."
+}

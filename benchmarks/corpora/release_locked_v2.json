@@ -1,0 +1,948 @@
+{
+  "schema_version": 1,
+  "corpus_id": "burocrazia-release-locked-v2",
+  "split": "release_locked",
+  "purpose": "Revisione esplicita di 10 attese v1: 6 intestazioni generiche, 2 emittenti incompatibili, 2 identità specifiche. Corpus pubblico di sviluppo, non indipendente.",
+  "synthetic": true,
+  "extraction_evaluated": false,
+  "created_at": "2026-10-11T10:01:09.972878+00:00",
+  "cases": [
+    {
+      "id": "R000",
+      "group": "document:32",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nAgevolazioni per le associazioni senza fini di lucro",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 32,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "R001",
+      "group": "document:32",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "text": "Agenzia  delle  Entrate\n\nAgevolazioni  per  le  associazioni  senza  fini  di  lucro",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 32,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "R002",
+      "group": "document:33",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nCanone TV",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 33,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "R003",
+      "group": "document:33",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "text": "Agenzia  delle  Entrate\n\nCanone  TV",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 33,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "R004",
+      "group": "document:34",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nContributo a fondo perduto per interventi edilizi 2023 detraibili al 90%\nVersione 2023",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 34,
+        "entity": "Agenzia delle Entrate",
+        "version": "2023"
+      }
+    },
+    {
+      "id": "R005",
+      "group": "document:34",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "text": "Agenzia  delle  Entrate\n\nContributo  a  fondo  perduto  per  interventi  edilizi  2023  detraibili  al  90%\n\nVersione  2023",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 34,
+        "entity": "Agenzia delle Entrate",
+        "version": "2023"
+      }
+    },
+    {
+      "id": "R006",
+      "group": "document:35",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nContributo a fondo perduto per interventi edilizi 2024\nVersione 2024",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 35,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "R007",
+      "group": "document:35",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "text": "Agenzia  delle  Entrate\n\nContributo  a  fondo  perduto  per  interventi  edilizi  2024\n\nVersione  2024",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 35,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "R008",
+      "group": "document:36",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate\nCredito d’imposta aggiuntivo per gli investimenti nella ZES unica 2025\nVersione 2025",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 36,
+        "entity": "Agenzia delle Entrate",
+        "version": "2025"
+      }
+    },
+    {
+      "id": "R009",
+      "group": "document:36",
+      "category": "uncoded",
+      "source": "Agenzia delle Entrate",
+      "noise": "layout",
+      "text": "Agenzia  delle  Entrate\n\nCredito  d’imposta  aggiuntivo  per  gli  investimenti  nella  ZES  unica  2025\n\nVersione  2025",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 36,
+        "entity": "Agenzia delle Entrate",
+        "version": "2025"
+      }
+    },
+    {
+      "id": "R010",
+      "group": "document:165",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nRECLAMO",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R011",
+      "group": "document:165",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nRECLAMO",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R012",
+      "group": "document:166",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nSEGNALAZIONE",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R013",
+      "group": "document:166",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nSEGNALAZIONE",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R014",
+      "group": "document:167",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nESERCIZIO DEI DIRITTI IN MATERIA DI PROTEZIONE DEI DATI PERSONALI",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    {
+      "id": "R015",
+      "group": "document:167",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nESERCIZIO  DEI  DIRITTI  IN  MATERIA  DI  PROTEZIONE  DEI  DATI  PERSONALI",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    {
+      "id": "R016",
+      "group": "document:168",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nCOMUNICAZIONI INDESIDERATE",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 168,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    {
+      "id": "R017",
+      "group": "document:168",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nCOMUNICAZIONI  INDESIDERATE",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 168,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    {
+      "id": "R018",
+      "group": "document:169",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nRESPONSABILE DELLA PROTEZIONE DEI DATI",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 169,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    {
+      "id": "R019",
+      "group": "document:169",
+      "category": "uncoded",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "layout",
+      "text": "Garante  per  la  protezione  dei  dati  personali\n\nRESPONSABILE  DELLA  PROTEZIONE  DEI  DATI",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 169,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    },
+    {
+      "id": "R020",
+      "group": "document:16",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nAgronomi e dottori forestali",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R021",
+      "group": "document:16",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "layout",
+      "text": "INAIL\n\nAgronomi  e  dottori  forestali",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R022",
+      "group": "document:17",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nAgrotecnici e agrotecnici laureati",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 17,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R023",
+      "group": "document:17",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "layout",
+      "text": "INAIL\n\nAgrotecnici  e  agrotecnici  laureati",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 17,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R024",
+      "group": "document:18",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nAmministratore delle utenze digitali",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R025",
+      "group": "document:18",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "layout",
+      "text": "INAIL\n\nAmministratore  delle  utenze  digitali",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R026",
+      "group": "document:19",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nAmministratori delle utenze digitali",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 19,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R027",
+      "group": "document:19",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "layout",
+      "text": "INAIL\n\nAmministratori  delle  utenze  digitali",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 19,
+        "entity": "INAIL",
+        "version": null
+      }
+    },
+    {
+      "id": "R028",
+      "group": "document:20",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "clean",
+      "text": "INAIL\nAvvocati",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R029",
+      "group": "document:20",
+      "category": "uncoded",
+      "source": "INAIL",
+      "noise": "layout",
+      "text": "INAIL\n\nAvvocati",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R030",
+      "group": "document:14",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nCI545\nCERTIFICATO DI OPZIONE CONTRIBUTIVA - ACCORDO DI SICUREZZA SOCIALE TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI MOLDOVA / CERTIFICAT PRIVIND OPȚIUNEA DE CONTRIBUȚIE - ACORD DINTRE REPUBLICA ITALIANĂ ŞI REPUBLICA MOLDOVA ÎN DOMENIUL SECURITĂŢII SOCIALE [CI545 - IT/MD 103]\nVersione 1.0",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 14,
+        "entity": "INPS",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "R031",
+      "group": "document:14",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "layout",
+      "text": "INPS\n\nCI545\n\nCERTIFICATO  DI  OPZIONE  CONTRIBUTIVA  -  ACCORDO  DI  SICUREZZA  SOCIALE  TRA  LA  REPUBBLICA  ITALIANA  E  LA  REPUBBLICA  DI  MOLDOVA  /  CERTIFICAT  PRIVIND  OPȚIUNEA  DE  CONTRIBUȚIE  -  ACORD  DINTRE  REPUBLICA  ITALIANĂ  ŞI  REPUBLICA  MOLDOVA  ÎN  DOMENIUL  SECURITĂŢII  SOCIALE  [CI545  -  IT/MD  103]\n\nVersione  1.0",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 14,
+        "entity": "INPS",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "R032",
+      "group": "document:15",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nCI546\nCERTIFICATO DI DISTACCO - ACCORDO DI SICUREZZA SOCIALE TRA LA REPUBBLICA ITALIANA E LA REPUBBLICA DI MOLDOVA / CERTIFICAT DE DETAȘARE - ACORD DINTRE REPUBLICA ITALIANĂ ŞI REPUBLICA MOLDOVA ÎN DOMENIUL SECURITĂŢII SOCIALE [CI546 - IT/MD 101]\nVersione 1.0",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 15,
+        "entity": "INPS",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "R033",
+      "group": "document:15",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "layout",
+      "text": "INPS\n\nCI546\n\nCERTIFICATO  DI  DISTACCO  -  ACCORDO  DI  SICUREZZA  SOCIALE  TRA  LA  REPUBBLICA  ITALIANA  E  LA  REPUBBLICA  DI  MOLDOVA  /  CERTIFICAT  DE  DETAȘARE  -  ACORD  DINTRE  REPUBLICA  ITALIANĂ  ŞI  REPUBLICA  MOLDOVA  ÎN  DOMENIUL  SECURITĂŢII  SOCIALE  [CI546  -  IT/MD  101]\n\nVersione  1.0",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 15,
+        "entity": "INPS",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "R034",
+      "group": "document:305",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nTF050\nModello TFR 2 – Amministrazione\nVersione 1.10",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 305,
+        "entity": "INPS",
+        "version": "1.10"
+      }
+    },
+    {
+      "id": "R035",
+      "group": "document:305",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "layout",
+      "text": "INPS\n\nTF050\n\nModello  TFR  2  –  Amministrazione\n\nVersione  1.10",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 305,
+        "entity": "INPS",
+        "version": "1.10"
+      }
+    },
+    {
+      "id": "R036",
+      "group": "document:306",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nTF040\nModello TFR1 – Amministrazione\nVersione 1.10",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 306,
+        "entity": "INPS",
+        "version": "1.10"
+      }
+    },
+    {
+      "id": "R037",
+      "group": "document:306",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "layout",
+      "text": "INPS\n\nTF040\n\nModello  TFR1  –  Amministrazione\n\nVersione  1.10",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 306,
+        "entity": "INPS",
+        "version": "1.10"
+      }
+    },
+    {
+      "id": "R038",
+      "group": "document:307",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "clean",
+      "text": "INPS\nSR73\nDichiarazione dell'assicurato in caso di infortunio sul lavoro o malattia professionale (AS1/bis)\nVersione 2.4",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 307,
+        "entity": "INPS",
+        "version": "2.4"
+      }
+    },
+    {
+      "id": "R039",
+      "group": "document:307",
+      "category": "coded",
+      "source": "INPS",
+      "noise": "layout",
+      "text": "INPS\n\nSR73\n\nDichiarazione  dell'assicurato  in  caso  di  infortunio  sul  lavoro  o  malattia  professionale  (AS1/bis)\n\nVersione  2.4",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 307,
+        "entity": "INPS",
+        "version": "2.4"
+      }
+    },
+    {
+      "id": "R040",
+      "group": "document:134",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nINL-11\nInterdizione anticipata-post partum lavoratrici madri",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 134,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R041",
+      "group": "document:134",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "text": "Ispettorato  Nazionale  del  Lavoro\n\nINL-11\n\nInterdizione  anticipata-post  partum  lavoratrici  madri",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 134,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R042",
+      "group": "document:135",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nINL-14\nCostituzione collegio di conciliazione ed arbitrato",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 135,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R043",
+      "group": "document:135",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "text": "Ispettorato  Nazionale  del  Lavoro\n\nINL-14\n\nCostituzione  collegio  di  conciliazione  ed  arbitrato",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 135,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R044",
+      "group": "document:136",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nINL-15\nCertificato di abilitazione dell’esercizio della professione di Consulente del lavoro",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R045",
+      "group": "document:136",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "text": "Ispettorato  Nazionale  del  Lavoro\n\nINL-15\n\nCertificato  di  abilitazione  dell’esercizio  della  professione  di  Consulente  del  lavoro",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R046",
+      "group": "document:137",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nINL-16\nPagamento dell’indennità di soccorso alpino e speleologico",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 137,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R047",
+      "group": "document:137",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "text": "Ispettorato  Nazionale  del  Lavoro\n\nINL-16\n\nPagamento  dell’indennità  di  soccorso  alpino  e  speleologico",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 137,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R048",
+      "group": "document:138",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nINL-19\nSuperamento della durata massima del contratto a tempo determinato",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 138,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R049",
+      "group": "document:138",
+      "category": "coded",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "layout",
+      "text": "Ispettorato  Nazionale  del  Lavoro\n\nINL-19\n\nSuperamento  della  durata  massima  del  contratto  a  tempo  determinato",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 138,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R050",
+      "group": "document:82",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nModulo TS5) - Istanza parere devoluzione Onlus\nVersione 2001",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 82,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      }
+    },
+    {
+      "id": "R051",
+      "group": "document:82",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "text": "Ministero  del  Lavoro\n\nModulo  TS5)  -  Istanza  parere  devoluzione  Onlus\n\nVersione  2001",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 82,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      }
+    },
+    {
+      "id": "R052",
+      "group": "document:83",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nModulo TS4) - Allegato 1a devoluzione Onlus\nVersione 2001",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 83,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      }
+    },
+    {
+      "id": "R053",
+      "group": "document:83",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "text": "Ministero  del  Lavoro\n\nModulo  TS4)  -  Allegato  1a  devoluzione  Onlus\n\nVersione  2001",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 83,
+        "entity": "Ministero del Lavoro",
+        "version": "2001"
+      }
+    },
+    {
+      "id": "R054",
+      "group": "document:84",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nModello-rendiconto-5-per-mille.pdf\nVersione 2007",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      }
+    },
+    {
+      "id": "R055",
+      "group": "document:84",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "text": "Ministero  del  Lavoro\n\nModello-rendiconto-5-per-mille.pdf\n\nVersione  2007",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      }
+    },
+    {
+      "id": "R056",
+      "group": "document:85",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nModulo richiesta pagamento 5 per mille\nVersione 2007",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 85,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      }
+    },
+    {
+      "id": "R057",
+      "group": "document:85",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "text": "Ministero  del  Lavoro\n\nModulo  richiesta  pagamento  5  per  mille\n\nVersione  2007",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 85,
+        "entity": "Ministero del Lavoro",
+        "version": "2007"
+      }
+    },
+    {
+      "id": "R058",
+      "group": "document:86",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "clean",
+      "text": "Ministero del Lavoro\nDichiarazione sostitutiva di certificazione\nVersione 2025",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 86,
+        "entity": "Ministero del Lavoro",
+        "version": "2025"
+      }
+    },
+    {
+      "id": "R059",
+      "group": "document:86",
+      "category": "uncoded",
+      "source": "Ministero del Lavoro",
+      "noise": "layout",
+      "text": "Ministero  del  Lavoro\n\nDichiarazione  sostitutiva  di  certificazione\n\nVersione  2025",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 86,
+        "entity": "Ministero del Lavoro",
+        "version": "2025"
+      }
+    },
+    {
+      "id": "R060",
+      "group": "family:3",
+      "category": "family",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R061",
+      "group": "family:4",
+      "category": "family",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "R062",
+      "group": "family:5",
+      "category": "family",
+      "source": "Agenzia delle Entrate-Riscossione",
+      "noise": "clean",
+      "text": "Agenzia delle Entrate-Riscossione\nAvvisi e solleciti\nsollecito di pagamento\npreavviso di fermo\navviso di intimazione",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 5,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "R063",
+      "group": "family:6",
+      "category": "family",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "clean",
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nPatente di guida\npatente di guida\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 6,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "R064",
+      "group": "family:7",
+      "category": "family",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "clean",
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nConversione patente\nconversione patente estera\ndomanda di conversione\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 7,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "R065",
+      "group": "family:9",
+      "category": "family",
+      "source": "Ministero delle Infrastrutture e dei Trasporti",
+      "noise": "clean",
+      "text": "Ministero delle Infrastrutture e dei Trasporti\nImmatricolazione\ndomanda di immatricolazione\nimmatricolazione del veicolo\nufficio motorizzazione civile",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 9,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "R066",
+      "group": "family:10",
+      "category": "family",
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "clean",
+      "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "R067",
+      "group": "family:11",
+      "category": "family",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nReclamo\nreclamo al Garante\nmodello facsimile per il reclamo",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 11,
+        "entity": "Garante per la protezione dei dati personali"
+      }
+    },
+    {
+      "id": "R068",
+      "group": "family:12",
+      "category": "family",
+      "source": "Garante per la protezione dei dati personali",
+      "noise": "clean",
+      "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      }
+    }
+  ]
+}

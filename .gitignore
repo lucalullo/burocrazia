@@ -5,6 +5,7 @@ __pycache__/
 *.log
 .env
 .env.*
+.codex-context/
 !.env.example
 data/*.db*
 data/*.backup*
@@ -26,5 +27,23 @@ tmp*/
 
 reports/
 benchmark-results.json
+benchmark-release-results/
 .pytest_tmp*/
 collaudo-*/
+maintenance/cache/
+maintenance/staging/
+benchmarks/cache/
+benchmarks/work/
+benchmarks/results/candidate-preliminary/
+benchmarks/results/engine_candidate/
+benchmarks/results/round2/candidate/
+benchmarks/results/round4/preliminary*/
+benchmarks/results/round5/*checkpoint.json
+benchmarks/results/round6/*checkpoint.json
+benchmarks/results/round7/*checkpoint.json
+
+# RC pre-commit: local projections only; retain frozen evidence and public audits.
+/benchmarks/results/local_rc/documentation_consistency.json
+/benchmarks/results/local_rc/recognition_freeze_verification.json
+/benchmarks/results/local_rc/version_consistency.json
+/tests/fixtures/historical_git_objects/objects/pack/*.rev

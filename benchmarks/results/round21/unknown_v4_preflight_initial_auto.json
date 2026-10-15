@@ -1,0 +1,34 @@
+{
+  "N": 413,
+  "candidate_pool_sha256": "b4f1205a410e5872b0091751f5b11152a77c124442a82a78bedc2a477bbb0668",
+  "counts_per_source": {
+    "aci": 1,
+    "agid": 53,
+    "anac": 60,
+    "garante_privacy": 5,
+    "giustizia": 9,
+    "inail": 12,
+    "inl": 49,
+    "inps": 15,
+    "interno": 18,
+    "lavoro": 4,
+    "mef": 112,
+    "mimit": 16,
+    "mit": 13,
+    "regione_piemonte": 22,
+    "unioncamere": 24
+  },
+  "max_concentration": 0.2711864406779661,
+  "passed": false,
+  "recognition_calls": 0,
+  "requirements": {
+    "concentration": false,
+    "count": true,
+    "input_supported": true,
+    "no_contamination": true,
+    "sources": true
+  },
+  "scope": "Fresh never-predicted resources; no release manifest or selection before freeze. Concentration must pass on the eventual deterministic balanced release subset as well.",
+  "sources": 15,
+  "truth_audit_sha256": "80fb8aef483947da2c873c02f12e2d8f7807ec50bf29e2382f2ecbe339aeac3b"
+}

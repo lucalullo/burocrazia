@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "identity": {
+    "commit": "d7af5a4fb38e117ebba5b415462dde877ed98012",
+    "runtime_sha256": "d747fe708bc204df65b84f02b40beeb544adaae56c49d4264696a4c26574aa56",
+    "code_sha256": "f0a9547f017f63dd8d6109956fcd437a8c75bbba4f76f979432f251897807585",
+    "fingerprint_sha256": "d0bd34e9d55fa7dc72708346a021c7d762ca5ba42d6cc90e280a756337ce7d26",
+    "seed": 2026101207,
+    "executed_at": "2026-10-12T08:41:39.015092+00:00"
+  },
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "catalog_load_ms": 11.882799999511917,
+  "index_build_ms": 1517.7218999997422,
+  "startup_ms": 1529.604699999254,
+  "latency_ms": {
+    "n": 306,
+    "p50": 76.3465,
+    "p95": 444.6542,
+    "p99": 525.8341
+  },
+  "warmup": 51,
+  "synthetic_cases": 35,
+  "official_known_cases": 16,
+  "fingerprints": {
+    "disk_bytes": 27493120,
+    "index_bytes": 39832045,
+    "resources": 979,
+    "identities": 941
+  },
+  "rss": {
+    "before_warm_bytes": 263462912,
+    "after_warm_bytes": 267243520,
+    "samples": [
+      267243520,
+      267251712,
+      267255808,
+      267255808,
+      267186176,
+      267186176,
+      267194368
+    ],
+    "growth_after_warm_bytes": 12288
+  },
+  "scope": "Fresh process. Warm inference excludes extraction/OCR and visual generation (reported per case). Index is recursive Python records, arrays, postings, IDF weights; RSS is entire process, not additive. No upload-feature cache.",
+  "gate_passed": false,
+  "target_passed": true,
+  "subprocess_wall_ms": 73539.34209999898
+}

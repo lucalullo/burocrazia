@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "OR2-023",
+      "url": "https://www.ispettorato.gov.it/files/2025/11/Modulo-INL-29-2-Istanza-duplicato-formato-word-patentino-generatori-vapore_new-1.pdf",
+      "sha256": "23b5650a730c18fea32b753f0640c467d705acf62e0e62a5061c9c3d42937e0b",
+      "expected": 1215,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 133,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 100.0,
+      "margin": 10.8,
+      "runner_up": {
+        "id": 1215,
+        "score": 89.2,
+        "signals": [
+          "codice esatto",
+          "similarità generale"
+        ]
+      },
+      "signals": [
+        "codice esatto",
+        "titolo",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "numeric code prefix was accepted despite a subtype suffix",
+      "final": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1215,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-023"
+    },
+    {
+      "id": "OR2-030",
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Soggetti%20Privati/Modulo-Richiesta-Patrocinio-Soggetto-Privato.pdf",
+      "sha256": "725dd63e73d2c12b4ce63c86952e582a7aaa40e673684150bf81f32a4dd3ca91",
+      "expected": 290,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 178,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 82.7,
+      "margin": 82.7,
+      "runner_up": null,
+      "signals": [
+        "titolo",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "body citation of a generic title without the proper issuer",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-030"
+    },
+    {
+      "id": "OR2-031",
+      "url": "https://www.mimit.gov.it/images/stories/documenti/radio/2024/DOMANDA_DUPLICATO.pdf",
+      "sha256": "3500858fcbc4610bbf3973b8871a81fcb910b440723ecb9f6507a1c615b9b568",
+      "expected": 550,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 544,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 88.3,
+      "margin": 88.3,
+      "runner_up": null,
+      "signals": [
+        "titolo",
+        "ente",
+        "similarità generale"
+      ],
+      "detected_entities": [
+        "ministero delle imprese e del made in italy"
+      ],
+      "root_cause": "missing distinctive acronym allowed a different certificate",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-031"
+    },
+    {
+      "id": "OR2-070",
+      "url": "https://www.ispettorato.gov.it/files/2023/01/INL-1.4-Autodichiarazione-Marca-da-Bollo-INL_.pdf",
+      "sha256": "36ea0ea98d7d644c03754d68ec5b190f9b2eb0ba13316be8d75e922b6d3eb0a1",
+      "expected": 1225,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 153,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 100.0,
+      "margin": 14.7,
+      "runner_up": {
+        "id": 1225,
+        "score": 85.3,
+        "signals": [
+          "codice esatto",
+          "similarità generale"
+        ]
+      },
+      "signals": [
+        "codice esatto",
+        "titolo",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "numeric code prefix was accepted despite a subtype suffix",
+      "final": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1225,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-070"
+    },
+    {
+      "id": "OR2-098",
+      "url": "https://www.ispettorato.gov.it/files/2025/05/Modello-comunicazione-art.-26-comma-7-bis-D.Lgs_.-n.-151-2015-2.pdf",
+      "sha256": "51d81d2e2b5bdf8ba85cdf106a62abadb1b7628528141958200e31deb8d8a956",
+      "expected": 149,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 146,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 83.4,
+      "margin": 83.4,
+      "runner_up": null,
+      "signals": [
+        "codice esatto",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "page/line boundary assembled an incidental code",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-098"
+    },
+    {
+      "id": "OR2-136",
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/2adsiscrizionearuolo_5.pdf",
+      "sha256": "e29acb39a717d7f43c68dcd4ca7763ef9b518ffb62fb724a1fa033563d45ff18",
+      "expected": 409,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 77,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 81.5,
+      "margin": 81.5,
+      "runner_up": null,
+      "signals": [
+        "titolo",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "body citation of a generic title without the proper issuer",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-136"
+    },
+    {
+      "id": "OR2-145",
+      "url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/Contributo_UnificatoObbligo_pagamento.pdf",
+      "sha256": "5ac25ccbbd7e2291e50966bae831977383b7bfe65d1b468f97dde0ca46cd607a",
+      "expected": 429,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 77,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 81.5,
+      "margin": 81.5,
+      "runner_up": null,
+      "signals": [
+        "titolo",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "body citation of a generic title without the proper issuer",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-145"
+    },
+    {
+      "id": "OR2-147",
+      "url": "https://www.ispettorato.gov.it/files/2023/01/INL-33-Istanza-di-revoca-del-provvedimento-di-sospensione-1.pdf",
+      "sha256": "645a17fae238198df6f49a1f5e382324926763cdf5326739ea780c0f0df207a8",
+      "expected": 150,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 80,
+        "family_id": null,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 82.9,
+      "margin": 82.9,
+      "runner_up": null,
+      "signals": [
+        "codice esatto",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "payment code appeared late in another form",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-147"
+    },
+    {
+      "id": "OR2-161",
+      "url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Richiesta%20Patrocinio%20da%20parte%20di%20Enti%20Pubblici/Modulo-Richiesta-Patrocinio-Ente-Pubblico.pdf",
+      "sha256": "c64ea462a3b541ee05370461c53ebbe9b68fd8af99e0bef77b8a3d26e8c02a2b",
+      "expected": 289,
+      "initial_actual": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 178,
+        "family_id": null,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "diagnostic_reference_commit": "21bede9",
+      "diagnostic_prediction_verified_equal_to_first_real_report": true,
+      "score": 82.7,
+      "margin": 82.7,
+      "runner_up": null,
+      "signals": [
+        "titolo",
+        "similarità generale"
+      ],
+      "detected_entities": [],
+      "root_cause": "body citation of a generic title without the proper issuer",
+      "final": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "regression_fixture": "tests/test_round2_recognition.py:OR2-161"
+    }
+  ],
+  "limits": "Scores/margins are a diagnostic replay of the original Round 1 scorer, with equal wrong predictions verified. The original pre-safety raw lacked confidence fields. Final and pre-safety reports remain separate."
+}

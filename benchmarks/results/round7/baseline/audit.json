@@ -1,0 +1,2418 @@
+{
+  "commit": "d3dd53bbc2e97047d7eadbe379c31bb920929c7b",
+  "branch": "codex/coverage-benchmark-v0.7.0",
+  "catalog": {
+    "integrity": "ok",
+    "foreign_key_violations": [],
+    "tables": {
+      "document_explanations": 3,
+      "document_families": 16,
+      "document_observations": 1078,
+      "document_provenance": 1216,
+      "document_replacements": 0,
+      "documents": 1226,
+      "entities": 2499,
+      "local_resources": 0,
+      "package_import_attempts": 2,
+      "package_imports": 1,
+      "review_events": 4,
+      "schema_migrations": 2,
+      "sources": 19
+    },
+    "real_documents": 1216,
+    "active_real_documents": 1212,
+    "rejected_real_documents": 4,
+    "demo_documents": 10,
+    "real_documents_without_provenance": 0,
+    "unverified_explanations": 3,
+    "sha256": "790b690123c82e1cb7bdfa67a10216284022987d50b0abbcc4a1a245785e3e99"
+  },
+  "raw": {
+    "benchmarks/results/round6/acquisition_checkpoint.json": {
+      "sha256": "f4de771316f4dd65a5c980a13e1955cc97642e80b07c4c64097e9336f5e3973c"
+    },
+    "benchmarks/results/round6/baseline/audit.json": {
+      "sha256": "24fc80c7d60b206d23e2aa3cf42da7a075715540dbd5f3641b03a29cd023a9d2"
+    },
+    "benchmarks/results/round6/calibration_checkpoint.json": {
+      "sha256": "d9709e1576de71bc3f6c64c05278b878e8249afbd8d2e9ce18a797ba3f13a739"
+    },
+    "benchmarks/results/round6/calibration_initial/calibration_observations.json": {
+      "sha256": "a300ad89b8a91c232bcf577899a5a3b267f22b56b2eebc8abdd95ab80a488411",
+      "cases": 128,
+      "passed": 80,
+      "metrics": {
+        "document_precision": {
+          "numerator": 80,
+          "denominator": 81,
+          "value": 0.9876543209876543
+        },
+        "document_recall": {
+          "numerator": 80,
+          "denominator": 128,
+          "value": 0.625
+        },
+        "document_f1": {
+          "numerator": 160,
+          "denominator": 209,
+          "value": 0.7655502392344498
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 80,
+          "denominator": 128,
+          "value": 0.625
+        },
+        "useful_coverage": {
+          "numerator": 80,
+          "denominator": 128,
+          "value": 0.625
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 47,
+          "denominator": 128,
+          "value": 0.3671875
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 81,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 1,
+          "denominator": 81,
+          "value": 0.012345679012345678
+        }
+      }
+    },
+    "benchmarks/results/round6/calibration_initial/fingerprint_calibration.json": {
+      "sha256": "3787d762f0dcef2d7907f9c4e19e2a62ef470d08623177985f55f81acccb4657"
+    },
+    "benchmarks/results/round6/calibration_initial/profile.json": {
+      "sha256": "c5dd68e63d04a8738033f2d2df93ecf37006fb5d3cc324fd99a12d1b02705219"
+    },
+    "benchmarks/results/round6/calibration_observations.json": {
+      "sha256": "f357e93dc05bdce670043a214b55fba62c1e8f4d294a422ade9cd9718f6d253b",
+      "cases": 128,
+      "passed": 47,
+      "metrics": {
+        "document_precision": {
+          "numerator": 47,
+          "denominator": 47,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 47,
+          "denominator": 128,
+          "value": 0.3671875
+        },
+        "document_f1": {
+          "numerator": 94,
+          "denominator": 175,
+          "value": 0.5371428571428571
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 47,
+          "denominator": 128,
+          "value": 0.3671875
+        },
+        "useful_coverage": {
+          "numerator": 47,
+          "denominator": 128,
+          "value": 0.3671875
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 81,
+          "denominator": 128,
+          "value": 0.6328125
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 47,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 47,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/canonical_precalibration.json": {
+      "sha256": "2918691423ee0c70dff32d3119a71024fa316b4108ca41353a1e37f8d3e70b65",
+      "cases": 987,
+      "passed": 987,
+      "metrics": {
+        "document_precision": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 1974,
+          "denominator": 1974,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 987,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 987,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 987,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/canonical_v2.json": {
+      "sha256": "2e28d3cb8f939d84bef86d3a9a50cc243285fd95876f4f64dc5ebc11dd8bba69",
+      "cases": 987,
+      "passed": 987,
+      "metrics": {
+        "document_precision": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 1974,
+          "denominator": 1974,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 987,
+          "denominator": 987,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 987,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 987,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 987,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/ci_local.json": {
+      "sha256": "1f284fb3a96859e1ae35ec31e6a216e66040cadc7924eaf89a1e98afc28b88c2"
+    },
+    "benchmarks/results/round6/cross_format_same_identity.json": {
+      "sha256": "7699c959e30ac73df4d1a2e7e965b24802380541c82d2560da108eb4ee6a0a9b",
+      "cases": 22,
+      "passed": 22,
+      "metrics": {
+        "document_precision": {
+          "numerator": 22,
+          "denominator": 22,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 22,
+          "denominator": 22,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 44,
+          "denominator": 44,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 22,
+          "denominator": 22,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 22,
+          "denominator": 22,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 22,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 22,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 22,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/development_compat_v2.json": {
+      "sha256": "3e88715c23de3a08f78b3abf604d2a22e1412e7b183d95566e2d208c04761dd7",
+      "cases": 37,
+      "passed": 37,
+      "metrics": {
+        "document_precision": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "exact_coverage": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 25,
+          "denominator": 37,
+          "value": 0.6756756756756757
+        },
+        "unknown_false_acceptance": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "unknown_correct_rejection": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "all_expected_rejections": {
+          "numerator": 12,
+          "denominator": 12,
+          "value": 1.0
+        },
+        "supported_rejection": {
+          "numerator": 0,
+          "denominator": 25,
+          "value": 0.0
+        },
+        "entity_errors": {
+          "numerator": 0,
+          "denominator": 23,
+          "value": 0.0
+        },
+        "version_errors": {
+          "numerator": 0,
+          "denominator": 11,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/evaluation_checkpoint.json": {
+      "sha256": "9e709fd33ef52f4d3feef820647323cbefa6de9bdf2c4f983e610d1d5c66c9b1"
+    },
+    "benchmarks/results/round6/evaluation_locks.json": {
+      "sha256": "cd382beb87cb4b6bf72ab2c455d7a0570db0a97b13a64f21dba9a6540ed95f34"
+    },
+    "benchmarks/results/round6/family_release.json": {
+      "sha256": "04a4b2b7050f0ddcaa934457db6fc30f137e2b0bfb5231ca42bb396680cb8af4",
+      "cases": 0,
+      "passed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/filled_acroform_v2.json": {
+      "sha256": "dcd33335b73a224517cca221bb5efc8df7764f3fe17817fcca52daba00c1ddb8",
+      "cases": 100,
+      "passed": 100,
+      "metrics": {
+        "document_precision": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 200,
+          "denominator": 200,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/filled_forms_initial_matrix.json": {
+      "sha256": "40a84babff3dce1be417d968c49e70cb11c2ea6d48a1500020cf6dcce31e4d23",
+      "cases": 120,
+      "passed": 120,
+      "metrics": {
+        "document_precision": {
+          "numerator": 120,
+          "denominator": 120,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 120,
+          "denominator": 120,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 240,
+          "denominator": 240,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 120,
+          "denominator": 120,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 120,
+          "denominator": 120,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 120,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 120,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 120,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/filled_forms_v2.json": {
+      "sha256": "569979d601157e88abb10b1c025fefde0de3609f6e389424ae036b122cd83434",
+      "cases": 170,
+      "passed": 170,
+      "metrics": {
+        "document_precision": {
+          "numerator": 170,
+          "denominator": 170,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 170,
+          "denominator": 170,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 340,
+          "denominator": 340,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 170,
+          "denominator": 170,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 170,
+          "denominator": 170,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 170,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 170,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 170,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/filled_static_overlays_v2.json": {
+      "sha256": "1cf632ca0c4b54ba35bbc80ff56687b2669fd99e14ae33b99523c3fefbc5770f",
+      "cases": 70,
+      "passed": 70,
+      "metrics": {
+        "document_precision": {
+          "numerator": 70,
+          "denominator": 70,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 70,
+          "denominator": 70,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 140,
+          "denominator": 140,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 70,
+          "denominator": 70,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 70,
+          "denominator": 70,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/filled_supplement_plan.json": {
+      "sha256": "e801f08f3b58577af7cd5056c113b669a302deda9b1402f7bfb0789db3b12095"
+    },
+    "benchmarks/results/round6/final/catalog_coverage.json": {
+      "sha256": "ad66c9a2f349b3759c24b09d7771bb3e17ac38a1b9140bec7b63bbc9a196390c",
+      "cases": 1212,
+      "passed": 1169,
+      "metrics": {
+        "document_precision": {
+          "numerator": 1169,
+          "denominator": 1169,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 1169,
+          "denominator": 1212,
+          "value": 0.9645214521452146
+        },
+        "document_f1": {
+          "numerator": 2338,
+          "denominator": 2381,
+          "value": 0.9819403611927762
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 1169,
+          "denominator": 1212,
+          "value": 0.9645214521452146
+        },
+        "useful_coverage": {
+          "numerator": 1169,
+          "denominator": 1212,
+          "value": 0.9645214521452146
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 43,
+          "denominator": 1212,
+          "value": 0.03547854785478548
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 1169,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 1169,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/final/development_regression.json": {
+      "sha256": "d01c26d3a74e6fc651aa671c621e1b64205857582163d4245ecd2aa6cd38a34b",
+      "cases": 35,
+      "passed": 33,
+      "metrics": {
+        "document_precision": {
+          "numerator": 9,
+          "denominator": 9,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 9,
+          "denominator": 11,
+          "value": 0.8181818181818182
+        },
+        "document_f1": {
+          "numerator": 18,
+          "denominator": 20,
+          "value": 0.9
+        },
+        "family_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 14,
+          "denominator": 16,
+          "value": 0.875
+        },
+        "family_f1": {
+          "numerator": 28,
+          "denominator": 30,
+          "value": 0.9333333333333333
+        },
+        "exact_document_coverage": {
+          "numerator": 9,
+          "denominator": 11,
+          "value": 0.8181818181818182
+        },
+        "useful_coverage": {
+          "numerator": 23,
+          "denominator": 25,
+          "value": 0.92
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 2,
+          "denominator": 25,
+          "value": 0.08
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 21,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 9,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/final/family_release_v3.json": {
+      "sha256": "12edfb36b2ad5f614d8a77aed474c5845f7f42b65712fb1d30f7c3f7b6a7cbf5",
+      "cases": 161,
+      "passed": 161,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_f1": {
+          "numerator": 160,
+          "denominator": 160,
+          "value": 1.0
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 81,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 81,
+          "denominator": 81,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 80,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/final/hard_negatives_v1.json": {
+      "sha256": "7c48a78b38a44455c7e1f2a2d06c410b2e0a39367e907f75260c8f5ae7cf456c",
+      "cases": 30,
+      "passed": 30,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 30,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 30,
+          "denominator": 30,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/final/hard_negatives_v2.json": {
+      "sha256": "e19fd56efcdae7e458e974aae6ac9a72b916fc06f851b9c1addb5c22e9802163",
+      "cases": 100,
+      "passed": 100,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/final/release_locked_v1.json": {
+      "sha256": "0baf5ba040b7579cf716fd356836a1b9b3cbdfb22a3600e5127813e36827e671",
+      "cases": 69,
+      "passed": 59,
+      "metrics": {
+        "document_precision": {
+          "numerator": 54,
+          "denominator": 56,
+          "value": 0.9642857142857143
+        },
+        "document_recall": {
+          "numerator": 54,
+          "denominator": 60,
+          "value": 0.9
+        },
+        "document_f1": {
+          "numerator": 108,
+          "denominator": 116,
+          "value": 0.9310344827586207
+        },
+        "family_precision": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 5,
+          "denominator": 9,
+          "value": 0.5555555555555556
+        },
+        "family_f1": {
+          "numerator": 10,
+          "denominator": 14,
+          "value": 0.7142857142857143
+        },
+        "exact_document_coverage": {
+          "numerator": 54,
+          "denominator": 60,
+          "value": 0.9
+        },
+        "useful_coverage": {
+          "numerator": 59,
+          "denominator": 69,
+          "value": 0.855072463768116
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 8,
+          "denominator": 69,
+          "value": 0.11594202898550725
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 61,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 54,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/final/release_locked_v2.json": {
+      "sha256": "17ae061661462c1eb01b33a0e8eda4ee5962e7788a74c3a133d3f9f12431013d",
+      "cases": 69,
+      "passed": 69,
+      "metrics": {
+        "document_precision": {
+          "numerator": 56,
+          "denominator": 56,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 56,
+          "denominator": 56,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 112,
+          "denominator": 112,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "family_f1": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "exact_document_coverage": {
+          "numerator": 56,
+          "denominator": 56,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 61,
+          "denominator": 61,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 61,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 61,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 56,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/fingerprint_build.json": {
+      "sha256": "4ca925cf4dbb0d5f7f4a15dc638133f8deb91248f0c6bc3c6cf148ec6b8271ce"
+    },
+    "benchmarks/results/round6/fingerprint_calibration.json": {
+      "sha256": "904dcb93d530b7f8d7df4c3009edafae26ce322e7e87a7f6dd3570447cdd8f3d"
+    },
+    "benchmarks/results/round6/fingerprint_coverage.json": {
+      "sha256": "e56c75caf43e0dd59ccdeeefef86f6119b4e02431c79a88652effe74a5abb463"
+    },
+    "benchmarks/results/round6/historical_five.json": {
+      "sha256": "0edeca0f54f7deb57f36c465b69a173528f3f7525d3584572df6b92049f39628"
+    },
+    "benchmarks/results/round6/memory.json": {
+      "sha256": "08112daf3e0b0955eb612525b4cc87a1069e2dd4edb8e7c112a15b5094371246"
+    },
+    "benchmarks/results/round6/ocr_legacy_gate.json": {
+      "sha256": "cc08153e6356a1f9513057d5cb25fdb79c3a9668dc22db86d669f844d08f5c4f"
+    },
+    "benchmarks/results/round6/ocr_synthetic_v2.json": {
+      "sha256": "b0591d7ac430cf1756fbb3db050bf9f626b382811d9e2aa894aa2c1ad096d60f",
+      "cases": 14,
+      "passed": 14,
+      "metrics": {
+        "document_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 28,
+          "denominator": 28,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/performance.json": {
+      "sha256": "5d88abfd5fba4b1545944a8e23af0a75ec1e2714c9e63e637d3c45a470541ba9"
+    },
+    "benchmarks/results/round6/preflight/development_regression.json": {
+      "sha256": "3c65e7c63412f66e66ad318360484d758d07215af838e4d5d82c1c2f82bb8a17",
+      "cases": 35,
+      "passed": 35,
+      "metrics": {
+        "document_precision": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 22,
+          "denominator": 22,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 14,
+          "denominator": 16,
+          "value": 0.875
+        },
+        "family_f1": {
+          "numerator": 28,
+          "denominator": 30,
+          "value": 0.9333333333333333
+        },
+        "exact_document_coverage": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 25,
+          "denominator": 25,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 25,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 23,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 11,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/preflight/family_release_v3.json": {
+      "sha256": "33bf94a2c7d5c3827827cbe314f770765fd113f6ad269e6fe98b64af1fa06f81",
+      "cases": 161,
+      "passed": 161,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "family_f1": {
+          "numerator": 160,
+          "denominator": 160,
+          "value": 1.0
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 80,
+          "denominator": 80,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 81,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 81,
+          "denominator": 81,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 80,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 70,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/preflight/hard_negatives_v1.json": {
+      "sha256": "21e694b74df64a55b2db004056aad4000a6450906242b1946473662fd8e5ef7d",
+      "cases": 30,
+      "passed": 30,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 30,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 30,
+          "denominator": 30,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/preflight/hard_negatives_v2.json": {
+      "sha256": "1ed6e633dcaa376f5f03e5e2c8cb95c8fcecaef632df7a97a91d8b3d9cfe6c36",
+      "cases": 100,
+      "passed": 100,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 100,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "benchmarks/results/round6/preflight/release_locked_v1.json": {
+      "sha256": "a54857239bde81debcf366dee46f0ba3d84b4fad96f15acd214c1f480994933a",
+      "cases": 69,
+      "passed": 59,
+      "metrics": {
+        "document_precision": {
+          "numerator": 54,
+          "denominator": 56,
+          "value": 0.9642857142857143
+        },
+        "document_recall": {
+          "numerator": 54,
+          "denominator": 60,
+          "value": 0.9
+        },
+        "document_f1": {
+          "numerator": 108,
+          "denominator": 116,
+          "value": 0.9310344827586207
+        },
+        "family_precision": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 5,
+          "denominator": 9,
+          "value": 0.5555555555555556
+        },
+        "family_f1": {
+          "numerator": 10,
+          "denominator": 14,
+          "value": 0.7142857142857143
+        },
+        "exact_document_coverage": {
+          "numerator": 54,
+          "denominator": 60,
+          "value": 0.9
+        },
+        "useful_coverage": {
+          "numerator": 59,
+          "denominator": 69,
+          "value": 0.855072463768116
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 8,
+          "denominator": 69,
+          "value": 0.11594202898550725
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 61,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 54,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/preflight/release_locked_v2.json": {
+      "sha256": "38c7ae59547ffb3d230a4b1e6d92bfc00edf2296d802f2d62b59d9d11e69fa7b",
+      "cases": 69,
+      "passed": 69,
+      "metrics": {
+        "document_precision": {
+          "numerator": 56,
+          "denominator": 56,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 56,
+          "denominator": 56,
+          "value": 1.0
+        },
+        "document_f1": {
+          "numerator": 112,
+          "denominator": 112,
+          "value": 1.0
+        },
+        "family_precision": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "family_recall": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "family_f1": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "exact_document_coverage": {
+          "numerator": 56,
+          "denominator": 56,
+          "value": 1.0
+        },
+        "useful_coverage": {
+          "numerator": 61,
+          "denominator": 61,
+          "value": 1.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 61,
+          "value": 0.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 61,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 56,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/rejection_diagnostics.json": {
+      "sha256": "ce5a3f0ce15e1f22afae314826da88a22741ac023694c5e3295092c50dfe7deb"
+    },
+    "benchmarks/results/round6/resource_audit.json": {
+      "sha256": "8530f8a82dc4eac7d3d445e6eea6c1cd4411f9d5f0094a7ab1f70b04b999664f"
+    },
+    "benchmarks/results/round6/resource_audit_session1.json": {
+      "sha256": "e004b84542a4a9006a2b84fb29ec7aab4f28a4238bfc69ae7f16cd9947dba353"
+    },
+    "benchmarks/results/round6/resource_audit_session2.json": {
+      "sha256": "1fdacb592a458f4b94ac94d236838e8b7b28a402282f17999ad5fd5fadc3ee81"
+    },
+    "benchmarks/results/round6/robustness_v2.json": {
+      "sha256": "09b568fc4ff8ee1205c1c0f8558cdce233acc3f4c5f98a11eca1f754698999fa",
+      "cases": 192,
+      "passed": 150,
+      "metrics": {
+        "document_precision": {
+          "numerator": 150,
+          "denominator": 150,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 150,
+          "denominator": 192,
+          "value": 0.78125
+        },
+        "document_f1": {
+          "numerator": 300,
+          "denominator": 342,
+          "value": 0.8771929824561403
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 150,
+          "denominator": 192,
+          "value": 0.78125
+        },
+        "useful_coverage": {
+          "numerator": 150,
+          "denominator": 192,
+          "value": 0.78125
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 42,
+          "denominator": 192,
+          "value": 0.21875
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 150,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 150,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/robustness_v2_plan.json": {
+      "sha256": "a6d17f29ccac6a22aa294e67a665fa557d8e47e179a64f5b099cdafae2411163"
+    },
+    "benchmarks/results/round6/scan_ocr_v2.json": {
+      "sha256": "e80552de845276420c623d9a8ca99a0d677a7b2b88b3bde2335fc20caa97352b",
+      "cases": 168,
+      "passed": 128,
+      "metrics": {
+        "document_precision": {
+          "numerator": 128,
+          "denominator": 128,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 128,
+          "denominator": 168,
+          "value": 0.7619047619047619
+        },
+        "document_f1": {
+          "numerator": 256,
+          "denominator": 296,
+          "value": 0.8648648648648649
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 128,
+          "denominator": 168,
+          "value": 0.7619047619047619
+        },
+        "useful_coverage": {
+          "numerator": 128,
+          "denominator": 168,
+          "value": 0.7619047619047619
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 40,
+          "denominator": 168,
+          "value": 0.23809523809523808
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 128,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 128,
+          "value": 0.0
+        }
+      }
+    },
+    "benchmarks/results/round6/tests.json": {
+      "sha256": "83ca34889c482d1a58104689369dba664cf2a891b56f4d26009aba1a688ea2dc"
+    },
+    "benchmarks/results/round6/unknown_official.json": {
+      "sha256": "4ce563afd0c1ca996c7ca13d374e98853f075db07357c5798e4f9fa7c4213a4b",
+      "cases": 137,
+      "passed": 137,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 137,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 137,
+          "denominator": 137,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    }
+  },
+  "coverage": {
+    "operational_docs_total": 1212,
+    "file_backed_operational_docs": 1158,
+    "fingerprinted_file_backed_docs": 948,
+    "fingerprinted_all_operational_docs": 948,
+    "dynamic_service_docs": 0,
+    "metadata_only_docs": 54,
+    "denominator_classes": {
+      "file_backed_document": 1158,
+      "metadata_only_document": 54
+    },
+    "coverage_all": 0.7821782178217822,
+    "coverage_file_backed": 0.8186528497409327,
+    "by_source": {
+      "inps": {
+        "operational_docs_total": 359,
+        "file_backed_operational_docs": 359,
+        "fingerprinted_file_backed_docs": 351,
+        "fingerprinted_all_operational_docs": 351,
+        "missing_reasons": {
+          "shared_resource": 8
+        }
+      },
+      "inail": {
+        "operational_docs_total": 347,
+        "file_backed_operational_docs": 347,
+        "fingerprinted_file_backed_docs": 308,
+        "fingerprinted_all_operational_docs": 308,
+        "missing_reasons": {
+          "shared_resource": 9,
+          "unsupported_mime": 8,
+          "source_changed": 2,
+          "robots_or_policy_block": 5,
+          "detail_page_only": 5,
+          "extraction_failure": 10
+        }
+      },
+      "ade": {
+        "operational_docs_total": 122,
+        "file_backed_operational_docs": 90,
+        "fingerprinted_file_backed_docs": 0,
+        "fingerprinted_all_operational_docs": 0,
+        "missing_reasons": {
+          "robots_or_policy_block": 122
+        }
+      },
+      "lavoro": {
+        "operational_docs_total": 102,
+        "file_backed_operational_docs": 102,
+        "fingerprinted_file_backed_docs": 74,
+        "fingerprinted_all_operational_docs": 74,
+        "missing_reasons": {
+          "source_changed": 2,
+          "extraction_failure": 13,
+          "shared_resource": 2,
+          "unsupported_mime": 11
+        }
+      },
+      "mimit": {
+        "operational_docs_total": 42,
+        "file_backed_operational_docs": 42,
+        "fingerprinted_file_backed_docs": 25,
+        "fingerprinted_all_operational_docs": 25,
+        "missing_reasons": {
+          "unsupported_mime": 8,
+          "extraction_failure": 1,
+          "shared_resource": 2,
+          "source_changed": 6
+        }
+      },
+      "funzione_pubblica": {
+        "operational_docs_total": 9,
+        "file_backed_operational_docs": 9,
+        "fingerprinted_file_backed_docs": 8,
+        "fingerprinted_all_operational_docs": 8,
+        "missing_reasons": {
+          "source_changed": 1
+        }
+      },
+      "garante_privacy": {
+        "operational_docs_total": 17,
+        "file_backed_operational_docs": 10,
+        "fingerprinted_file_backed_docs": 4,
+        "fingerprinted_all_operational_docs": 4,
+        "missing_reasons": {
+          "detail_page_only": 6,
+          "http_404": 1,
+          "download_url_html": 6
+        }
+      },
+      "inl": {
+        "operational_docs_total": 46,
+        "file_backed_operational_docs": 45,
+        "fingerprinted_file_backed_docs": 43,
+        "fingerprinted_all_operational_docs": 43,
+        "missing_reasons": {
+          "shared_resource": 1,
+          "detail_page_only": 2
+        }
+      },
+      "giustizia": {
+        "operational_docs_total": 142,
+        "file_backed_operational_docs": 142,
+        "fingerprinted_file_backed_docs": 126,
+        "fingerprinted_all_operational_docs": 126,
+        "missing_reasons": {
+          "shared_resource": 4,
+          "unsupported_mime": 4,
+          "source_changed": 8
+        }
+      },
+      "mef": {
+        "operational_docs_total": 15,
+        "file_backed_operational_docs": 1,
+        "fingerprinted_file_backed_docs": 1,
+        "fingerprinted_all_operational_docs": 1,
+        "missing_reasons": {
+          "detail_page_only": 14
+        }
+      },
+      "anac": {
+        "operational_docs_total": 7,
+        "file_backed_operational_docs": 7,
+        "fingerprinted_file_backed_docs": 7,
+        "fingerprinted_all_operational_docs": 7,
+        "missing_reasons": {}
+      },
+      "unioncamere": {
+        "operational_docs_total": 4,
+        "file_backed_operational_docs": 4,
+        "fingerprinted_file_backed_docs": 1,
+        "fingerprinted_all_operational_docs": 1,
+        "missing_reasons": {
+          "unsupported_mime": 3
+        }
+      }
+    },
+    "missing_reason_breakdown": {
+      "shared_resource": 26,
+      "unsupported_mime": 34,
+      "source_changed": 19,
+      "robots_or_policy_block": 127,
+      "detail_page_only": 27,
+      "extraction_failure": 24,
+      "http_404": 1,
+      "download_url_html": 6
+    },
+    "canonical_resources": 1015,
+    "active_resources": 987,
+    "quarantined_resources": 28,
+    "new_catalog_identities": 0,
+    "network_requests": 669,
+    "denominator_policy": "A declared download remains file-backed despite 403/404, unsupported .doc, extraction failure or shared bytes. Detail-only records become file-backed only after an actual supported attachment. No failed fetch is reclassified as a service.",
+    "retained_v1_identities": 366,
+    "newly_fingerprinted_missing_v1": 582,
+    "v1_ids_without_active_v2": [
+      152,
+      536,
+      921
+    ]
+  },
+  "performance": {
+    "schema_version": 2,
+    "identity": {
+      "code_sha256": "e5394464ce1255ddd34f5167d4018fde63a6eee0872928346534a0048f271bd5",
+      "runtime_sha256": "4c59473be34e313b119e45bca42f483ed43ffc37858a16920727a88083a10f08",
+      "fingerprint_sha256": "1e8771912268b4e46cd564d6b35ad7fd137d354ab365ae2f02751b2d37c10073",
+      "seed": 20261012,
+      "executed_at": "2026-10-12T06:47:04.214647+00:00"
+    },
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "catalog_load_ms": 9.87520000035147,
+    "index_build_ms": 1667.574400000376,
+    "startup_ms": 1677.4496000007275,
+    "latency_ms": {
+      "n": 306,
+      "p50": 112.9562,
+      "p95": 799.1129,
+      "p99": 850.1176
+    },
+    "warmup": 51,
+    "synthetic_cases": 35,
+    "official_known_cases": 16,
+    "fingerprints": {
+      "disk_bytes": 27182244,
+      "index_bytes": 39852804,
+      "resources": 987,
+      "identities": 948
+    },
+    "rss": {
+      "before_warm_bytes": 284905472,
+      "after_warm_bytes": 286887936,
+      "samples": [
+        286887936,
+        286924800,
+        286932992,
+        286932992,
+        286867456,
+        286867456,
+        286867456
+      ],
+      "growth_after_warm_bytes": 45056
+    },
+    "scope": "Fresh process. Warm inference excludes extraction/OCR and visual generation (reported per case). Index is recursive Python records, arrays, postings, IDF weights; RSS is entire process, not additive. No upload-feature cache.",
+    "gate_passed": false,
+    "target_passed": true,
+    "subprocess_wall_ms": 83219.02940000017
+  },
+  "tests": {
+    "passed": 655,
+    "failed": 0,
+    "skipped": 3,
+    "seconds": 581.88,
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "log_sha256": "bb39cdd9e3e01b1ec43114b4daa26fb135e960e69fd2d931c6e0f10ccfcfe56b",
+    "initial_attempt": {
+      "passed": 650,
+      "failed": 4,
+      "skipped": 3,
+      "seconds": 613.79,
+      "log_sha256": "8ff28f3fc9e161bd18e72d74c7f2e4f028f2d587589d400ad65a5aa2c44e5495",
+      "resolution": "Versioned development fixture adds explicit revisions to two positives and their original inputs as prudent negatives. SR211 review-history test now supplies the actual revision. No runtime, profile, frozen historical corpus or evaluation observation changed."
+    },
+    "post_guard": {
+      "passed": 7,
+      "seconds": 4.8,
+      "log_sha256": "fd7bdffbe59eb69b3bdce8684c0c6421f069dc23f45a48dedda31e2b20502d54",
+      "repeated_subset": true
+    },
+    "post_report": {
+      "passed": 71,
+      "seconds": 7.66,
+      "log_sha256": "b3632d9324b974ab1e32b999f4143a7bced47deddd748668b14bf0ba570f088e",
+      "repeated_subset": true
+    }
+  },
+  "historical_failures": [
+    {
+      "id": "EX02",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 13,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "reason": "Revisione del modello non leggibile. Evidenze insufficienti per identificare una famiglia."
+    },
+    {
+      "id": "EX03",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 12,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "reason": "Revisione del modello non leggibile. Evidenze insufficienti per identificare una famiglia."
+    }
+  ],
+  "failed_gates": [
+    {
+      "gate": "coverage_file_backed",
+      "target": ">=85%",
+      "actual": 0.8186528497409327,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "robustness_exact_recall",
+      "target": ">=90%",
+      "actual": 0.78125,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "scan_exact_recall",
+      "target": ">=85%",
+      "actual": 0.7619047619047619,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "scan_useful_recall",
+      "target": ">=95%",
+      "actual": 0.7619047619047619,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "historical_development_regression",
+      "target": "35/35 unchanged labels",
+      "actual": 33,
+      "passed": false,
+      "blocking": true
+    },
+    {
+      "gate": "warm_p95",
+      "target": "<=250ms",
+      "actual": 799.1129,
+      "passed": false,
+      "blocking": true
+    }
+  ],
+  "methodology": "Round6 evaluation is now development. Fresh identity-level evaluation required after code freeze."
+}

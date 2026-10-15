@@ -1,0 +1,36 @@
+{
+  "attempted_filled": 0,
+  "created_at": "2026-10-14T06:40:02.909761+00:00",
+  "eligible_identities": 351,
+  "eligible_records": 352,
+  "eligible_source_counts": {
+    "14": 3,
+    "16": 15,
+    "2": 195,
+    "3": 134,
+    "5": 5
+  },
+  "eligible_sources": 5,
+  "failed_gates": [
+    "fresh_known_sources"
+  ],
+  "filled_generation_rate": null,
+  "freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+  "generation_status": "not_run",
+  "identities": 36,
+  "known": 0,
+  "minimum_sources": 6,
+  "passed": false,
+  "plan_sha256": "37c9f3dc1a1c08f70609c032db014c82fbe5e723753087ce18b4b8e26a06a32e",
+  "planned_filled": 60,
+  "planned_known": 608,
+  "planned_scans": 476,
+  "planned_unknown_mix": 30,
+  "pool_audit_sha256": "819da021fa52c2ae5d4ba5cfca719a8996d7f428394c9216d4142c19742d6225",
+  "reason": "Entire eligible native/canonical-verified identity pool has only5 sources; minimum6. Stop before representation generation and v5 recognition. No contaminated identities reused.",
+  "recognition_calls": 0,
+  "scans": 0,
+  "sources": 5,
+  "unknown_mix": 0,
+  "valid_filled": 0
+}

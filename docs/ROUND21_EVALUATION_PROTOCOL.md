@@ -1,0 +1,15 @@
+# Round 21 — protocollo prima delle predizioni fresche
+
+Soglie v7 e gate immutati, sviluppo separato dalla V5 storica. Nessuna predizione di identità definitivamente riservata prima del freeze. Verifiche canoniche, suite completa e timing sono completati prima della prenotazione. La sola apparizione di una firma canonica/candidato in un diagnostico non equivale a fitting; tutti gli input effettivi di sviluppo e gli ID documentali osservati nei replay, inclusa l'ambiguità INAIL1147, sono esclusi.
+
+Il freeze usa un tree Git immutabile senza nuovo commit. HEAD è soltanto il commit di partenza; semantic_source_tree identifica i byte correnti. Runtime, profilo, dataset, registry, protocolli, truth, prerequisiti e codice dei runner sono sigillati per SHA. Il manifest del freeze viene scritto dopo lo snapshot per evitare autoreferenze. Report e risultati successivi sono aggiuntivi; nessuna modifica semantica dopo il freeze.
+
+Unknown v4: master fresco qualificato prima del freeze, zero predizioni. Dopo il freeze selezione metadata-only, seed202610142104, target120, almeno100 e8 fonti, max25% (cap prospettico24 per target120). Round-robin per fonte, poi stratificazione tipo/ente/formato/codice/versione e SHA seeded; nessun score del riconoscitore. I tentativi preliminari di classificazione automatica e tutte le successive revisioni di intestazioni/provenienza sono preservati; le label finali vengono bloccate prima delle predizioni. Ogni DOCUMENT/FAMILY su unknown è false accept; extraction failure non è rifiuto corretto. Gate>=99% rifiuti,<=1%FA,0 errori ente/versione. Se fallisce: stop, nessun replay o tuning.
+
+Solo dopo PASS unknown4: V6 seed202610142106, target40 identità fresh/riservate, almeno30/6 fonti,max10 per fonte e concentrazione<=35%. Selezione stratificata per ente/formato/codice/versione/pagine, senza informazione dalle predizioni unknown salvo il gate globale. Non si rimuovono identità in base a un errore unknown.
+
+Ogni PDF:14 trasformazioni scan predeterminate (200/150 DPI,grigio,JPEG90/75/60,blur,contrasto,crop2/5%,prima pagina,rotazioni90/180/270), più2 derivati digitali; DOCX:2 derivati strutturali. Nuovi seed cambiano realmente pixel/valori; tutti gli SHA storici e le trasformazioni equivalenti sono controllati. Filler: fino a20 PDF scelti per soli metadati,preferenza campi,max4/fonte,5 varianti sintetiche fissate; ogni tentativo fallito resta nel denominatore. Sono obbligatori>=400 noti,>=200scan,>=50compilati validi e generazione>=90% prima di qualsiasi predizione V6. Nessun resampling per correggere fallimenti di generazione.
+
+CaseJournal validato: manifest identico, expected_count, ID unici, payload SHA, checkpoint SQLite, export atomico e SHA finale. Resume soltanto dei pending con identità freeze/runtime/dataset/registry/codice/input identica. Nessun replay di una valutazione completa. Ogni errore di estrazione rimane osservato, senza sostituzioni.
+
+End-to-end: le osservazioni unknown4 già eseguite vengono combinate con V6, con zero nuove chiamate sugli unknown. Dopo V6 nessun tuning. Family rimane sperimentale e non aumenta recall exact. CI esterna pending; nessun push/tag/pubblicazione.

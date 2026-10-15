@@ -1,0 +1,159 @@
+{
+  "cases": [
+    {
+      "category": "INAIL_ambiguous",
+      "conflicts": [],
+      "correct": false,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "official_diagnostic:U14-5f0c017c3d56e6c5",
+      "id": "official_diagnostic:U14-5f0c017c3d56e6c5",
+      "input_sha256": "5f0c017c3d56e6c5ee6bc7b294b6f8c3ff4633b5d354093d3ec527db93b815a5",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": 1147,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "signature_sha256": "84709497367fac9c480eb80c4acd49465819b8c48402e13d8e46a7e7d1ceb5dd",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    },
+    {
+      "category": "INAIL_ambiguous",
+      "conflicts": [],
+      "correct": false,
+      "document_correct": false,
+      "entity_error": false,
+      "entity_labelled": false,
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "family_correct": false,
+      "group": "official_diagnostic:U14-c1fc4765c01dcd62",
+      "id": "official_diagnostic:U14-c1fc4765c01dcd62",
+      "input_sha256": "c1fc4765c01dcd6210129b2302b75a8ed2969af11e546a8f5e06b8361eb42c5e",
+      "matching_ms": 0.0,
+      "observed": {
+        "document_id": 1147,
+        "entity": "INAIL",
+        "family_id": null,
+        "match_type": "DOCUMENT_MATCH",
+        "version": null
+      },
+      "reason": "Firma per pagina: B_digital_char_identity; ente e versione compatibili.",
+      "signature_sha256": "2cd7dd96a2a12a42fb47fc3e05173faafc67b87b3c8ae658655a26bdade01001",
+      "timing_measured": false,
+      "version_error": false,
+      "version_labelled": false
+    }
+  ],
+  "identity": {
+    "code_sha256": "19fcceeb9f5decbd0b2864a8aa7eafb53ee7dc05807511ebf80643c575bd4b64",
+    "commit": "19807fabafcfe186f14a87f659adb77478e0bcdb",
+    "executed_at": "2026-10-14T06:06:26.769228+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "seed": 2026101208
+  },
+  "scope": "Frozen original expectations retained; uncertain mismatches are not confirmed identity errors.",
+  "summary": {
+    "cases": 2,
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 2,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "failed": 2,
+    "latency_ms": {},
+    "metrics": {
+      "document_f1": {
+        "denominator": 2,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "document_precision": {
+        "denominator": 2,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "document_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "entity_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_precision": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "denominator": 2,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "unknown_false_acceptance_rate": {
+        "denominator": 2,
+        "numerator": 2,
+        "value": 1.0
+      },
+      "useful_coverage": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      },
+      "version_year_error_rate": {
+        "denominator": 0,
+        "numerator": 0,
+        "value": null
+      }
+    },
+    "passed": 0
+  }
+}

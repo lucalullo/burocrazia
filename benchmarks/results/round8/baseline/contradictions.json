@@ -1,0 +1,646 @@
+{
+  "exact_text_conflicts": [
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "EX02",
+          "corpus": "benchmarks/corpora/development_regression.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 13,
+            "entity": "INPS",
+            "version": "1.1"
+          },
+          "text_sha256": "73f88aa71a9b4c54d04673763586815c69505569de562062a928485499e7184c",
+          "text": "INPS CI543 — CERTIFICATO DI DISTACCO. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale."
+        },
+        {
+          "case_id": "EX02",
+          "corpus": "tests/fixtures/benchmark.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 13,
+            "entity": "INPS",
+            "version": "1.1"
+          },
+          "text_sha256": "73f88aa71a9b4c54d04673763586815c69505569de562062a928485499e7184c",
+          "text": "INPS CI543 — CERTIFICATO DI DISTACCO. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale."
+        },
+        {
+          "case_id": "EX02MISSINGREV",
+          "corpus": "tests/fixtures/benchmark_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "73f88aa71a9b4c54d04673763586815c69505569de562062a928485499e7184c",
+          "text": "INPS CI543 — CERTIFICATO DI DISTACCO. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale."
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "EX03",
+          "corpus": "benchmarks/corpora/development_regression.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 12,
+            "entity": "INPS",
+            "version": "1.1"
+          },
+          "text_sha256": "e7cfd3d47014b99eccdfaf0203b7c0d58776e35afc9261fb306bb0c3380f65d0",
+          "text": "INPS CI544 — CERTIFICATO DI OPZIONE CONTRIBUTIVA. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale."
+        },
+        {
+          "case_id": "EX03",
+          "corpus": "tests/fixtures/benchmark.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 12,
+            "entity": "INPS",
+            "version": "1.1"
+          },
+          "text_sha256": "e7cfd3d47014b99eccdfaf0203b7c0d58776e35afc9261fb306bb0c3380f65d0",
+          "text": "INPS CI544 — CERTIFICATO DI OPZIONE CONTRIBUTIVA. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale."
+        },
+        {
+          "case_id": "EX03MISSINGREV",
+          "corpus": "tests/fixtures/benchmark_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "e7cfd3d47014b99eccdfaf0203b7c0d58776e35afc9261fb306bb0c3380f65d0",
+          "text": "INPS CI544 — CERTIFICATO DI OPZIONE CONTRIBUTIVA. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale."
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/family_release_v1.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/family_release_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/family_release_v3.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 4,
+            "entity": "Agenzia delle Entrate-Riscossione"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R010",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 165,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "bdce508918d0551d765299215b40f326cec27a7f53efe7094a2b946e9e934613",
+          "text": "Garante per la protezione dei dati personali\nRECLAMO"
+        },
+        {
+          "case_id": "R011",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 165,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "3f56445169d7fc300553e1dda13873308f5602a151c4c7a11992995a032ab2c9",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nRECLAMO"
+        },
+        {
+          "case_id": "R010",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "bdce508918d0551d765299215b40f326cec27a7f53efe7094a2b946e9e934613",
+          "text": "Garante per la protezione dei dati personali\nRECLAMO"
+        },
+        {
+          "case_id": "R011",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "3f56445169d7fc300553e1dda13873308f5602a151c4c7a11992995a032ab2c9",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nRECLAMO"
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R012",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 166,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "752b3ef9d1714b91c0089aaae771636c10915dd30e0d30f7fdb270d501cddcbf",
+          "text": "Garante per la protezione dei dati personali\nSEGNALAZIONE"
+        },
+        {
+          "case_id": "R013",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 166,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "3960606d8f5cc4cfbca4ef2e613de4c08f5af76ba7070b3013604628ce81da6c",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nSEGNALAZIONE"
+        },
+        {
+          "case_id": "R012",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "752b3ef9d1714b91c0089aaae771636c10915dd30e0d30f7fdb270d501cddcbf",
+          "text": "Garante per la protezione dei dati personali\nSEGNALAZIONE"
+        },
+        {
+          "case_id": "R013",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "3960606d8f5cc4cfbca4ef2e613de4c08f5af76ba7070b3013604628ce81da6c",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nSEGNALAZIONE"
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R028",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 20,
+            "entity": "INAIL",
+            "version": null
+          },
+          "text_sha256": "87ad6b1bc0f1aa12fceac155019fcf9653ce1bd28e72a44f49ea3882f8df351b",
+          "text": "INAIL\nAvvocati"
+        },
+        {
+          "case_id": "R029",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 20,
+            "entity": "INAIL",
+            "version": null
+          },
+          "text_sha256": "39b060dbf0e06daaeba85591c8466fe55aff1dcb681d095df0904cb306209b2b",
+          "text": "INAIL\n\nAvvocati"
+        },
+        {
+          "case_id": "R028",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "87ad6b1bc0f1aa12fceac155019fcf9653ce1bd28e72a44f49ea3882f8df351b",
+          "text": "INAIL\nAvvocati"
+        },
+        {
+          "case_id": "R029",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "39b060dbf0e06daaeba85591c8466fe55aff1dcb681d095df0904cb306209b2b",
+          "text": "INAIL\n\nAvvocati"
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R060",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 3,
+            "entity": "Agenzia delle Entrate-Riscossione"
+          },
+          "text_sha256": "69d057ece61a60d2d91195aa81b0ce7babb239f561bb1e0bf8adf987ec3ee6f9",
+          "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo"
+        },
+        {
+          "case_id": "R060",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "69d057ece61a60d2d91195aa81b0ce7babb239f561bb1e0bf8adf987ec3ee6f9",
+          "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo"
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R066",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 10,
+            "entity": "Ispettorato Nazionale del Lavoro"
+          },
+          "text_sha256": "477ee2bf40a53f498d638dab2236a8b8f48dbde87190b4610073580b598ba000",
+          "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31"
+        },
+        {
+          "case_id": "R066",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 143,
+            "entity": "Ispettorato Nazionale del Lavoro",
+            "version": null
+          },
+          "text_sha256": "477ee2bf40a53f498d638dab2236a8b8f48dbde87190b4610073580b598ba000",
+          "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31"
+        }
+      ]
+    },
+    {
+      "kind": "same_normalized_text",
+      "cases": [
+        {
+          "case_id": "R068",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 12,
+            "entity": "Garante per la protezione dei dati personali"
+          },
+          "text_sha256": "f101999095a24a1be33ed46900529e23afe30362aa42b16f891be5505df680fe",
+          "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti"
+        },
+        {
+          "case_id": "R068",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 167,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "f101999095a24a1be33ed46900529e23afe30362aa42b16f891be5505df680fe",
+          "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti"
+        }
+      ]
+    }
+  ],
+  "case_id_label_changes": [
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/family_release_v1.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/family_release_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/family_release_v3.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 4,
+            "entity": "Agenzia delle Entrate-Riscossione"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        },
+        {
+          "case_id": "R061",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "ef3830e8c715bae439422bb0a53f9acfad0cd929c70f05fb08ea3245c58eed42",
+          "text": "Agenzia delle Entrate-Riscossione\nAvviso di addebito INPS\navviso di addebito inps\navviso di addebito"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R010",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 165,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "bdce508918d0551d765299215b40f326cec27a7f53efe7094a2b946e9e934613",
+          "text": "Garante per la protezione dei dati personali\nRECLAMO"
+        },
+        {
+          "case_id": "R010",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "bdce508918d0551d765299215b40f326cec27a7f53efe7094a2b946e9e934613",
+          "text": "Garante per la protezione dei dati personali\nRECLAMO"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R011",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 165,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "3f56445169d7fc300553e1dda13873308f5602a151c4c7a11992995a032ab2c9",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nRECLAMO"
+        },
+        {
+          "case_id": "R011",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "3f56445169d7fc300553e1dda13873308f5602a151c4c7a11992995a032ab2c9",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nRECLAMO"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R012",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 166,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "752b3ef9d1714b91c0089aaae771636c10915dd30e0d30f7fdb270d501cddcbf",
+          "text": "Garante per la protezione dei dati personali\nSEGNALAZIONE"
+        },
+        {
+          "case_id": "R012",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "752b3ef9d1714b91c0089aaae771636c10915dd30e0d30f7fdb270d501cddcbf",
+          "text": "Garante per la protezione dei dati personali\nSEGNALAZIONE"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R013",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 166,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "3960606d8f5cc4cfbca4ef2e613de4c08f5af76ba7070b3013604628ce81da6c",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nSEGNALAZIONE"
+        },
+        {
+          "case_id": "R013",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "3960606d8f5cc4cfbca4ef2e613de4c08f5af76ba7070b3013604628ce81da6c",
+          "text": "Garante  per  la  protezione  dei  dati  personali\n\nSEGNALAZIONE"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R028",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 20,
+            "entity": "INAIL",
+            "version": null
+          },
+          "text_sha256": "87ad6b1bc0f1aa12fceac155019fcf9653ce1bd28e72a44f49ea3882f8df351b",
+          "text": "INAIL\nAvvocati"
+        },
+        {
+          "case_id": "R028",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "87ad6b1bc0f1aa12fceac155019fcf9653ce1bd28e72a44f49ea3882f8df351b",
+          "text": "INAIL\nAvvocati"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R029",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 20,
+            "entity": "INAIL",
+            "version": null
+          },
+          "text_sha256": "39b060dbf0e06daaeba85591c8466fe55aff1dcb681d095df0904cb306209b2b",
+          "text": "INAIL\n\nAvvocati"
+        },
+        {
+          "case_id": "R029",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "39b060dbf0e06daaeba85591c8466fe55aff1dcb681d095df0904cb306209b2b",
+          "text": "INAIL\n\nAvvocati"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R060",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 3,
+            "entity": "Agenzia delle Entrate-Riscossione"
+          },
+          "text_sha256": "69d057ece61a60d2d91195aa81b0ce7babb239f561bb1e0bf8adf987ec3ee6f9",
+          "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo"
+        },
+        {
+          "case_id": "R060",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "NO_MATCH"
+          },
+          "text_sha256": "69d057ece61a60d2d91195aa81b0ce7babb239f561bb1e0bf8adf987ec3ee6f9",
+          "text": "Agenzia delle Entrate-Riscossione\nAccertamento esecutivo\navviso di accertamento esecutivo\naccertamento esecutivo"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R066",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 10,
+            "entity": "Ispettorato Nazionale del Lavoro"
+          },
+          "text_sha256": "477ee2bf40a53f498d638dab2236a8b8f48dbde87190b4610073580b598ba000",
+          "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31"
+        },
+        {
+          "case_id": "R066",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 143,
+            "entity": "Ispettorato Nazionale del Lavoro",
+            "version": null
+          },
+          "text_sha256": "477ee2bf40a53f498d638dab2236a8b8f48dbde87190b4610073580b598ba000",
+          "text": "Ispettorato Nazionale del Lavoro\nRichiesta di intervento ispettivo\nrichiesta di intervento ispettivo\nmodulo INL 31"
+        }
+      ]
+    },
+    {
+      "kind": "same_case_id_different_expectation",
+      "cases": [
+        {
+          "case_id": "R068",
+          "corpus": "benchmarks/corpora/release_locked_v1.json",
+          "expected": {
+            "match_type": "FAMILY_MATCH",
+            "family_id": 12,
+            "entity": "Garante per la protezione dei dati personali"
+          },
+          "text_sha256": "f101999095a24a1be33ed46900529e23afe30362aa42b16f891be5505df680fe",
+          "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti"
+        },
+        {
+          "case_id": "R068",
+          "corpus": "benchmarks/corpora/release_locked_v2.json",
+          "expected": {
+            "match_type": "DOCUMENT_MATCH",
+            "document_id": 167,
+            "entity": "Garante per la protezione dei dati personali",
+            "version": null
+          },
+          "text_sha256": "f101999095a24a1be33ed46900529e23afe30362aa42b16f891be5505df680fe",
+          "text": "Garante per la protezione dei dati personali\nEsercizio dei diritti privacy\nesercizio dei diritti in materia di protezione dei dati personali\nmodello per l'esercizio dei diritti"
+        }
+      ]
+    }
+  ],
+  "scope": "All text cases in public corpora and benchmark fixtures. Case-ID changes can be intentional revised inputs and require classification; normalized-text conflicts are direct contradictions."
+}

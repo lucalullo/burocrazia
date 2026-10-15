@@ -1,0 +1,268 @@
+{
+  "sources": {
+    "14": {
+      "N": 2,
+      "exact_recall": 1.0,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": 1.0,
+      "retrieval_at1": 1.0,
+      "retrieval_at25": 1.0,
+      "scan": null
+    },
+    "16": {
+      "N": 170,
+      "exact_recall": 0.8411764705882353,
+      "extraction_success": 1.0,
+      "false_accepts": 8,
+      "false_rejects": 19,
+      "filled": {
+        "N": 10,
+        "exact_recall": 1.0,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "precision": 1.0,
+        "retrieval_at1": 1.0,
+        "retrieval_at25": 1.0
+      },
+      "precision": 0.9470198675496688,
+      "retrieval_at1": 0.9941176470588236,
+      "retrieval_at25": 1.0,
+      "scan": {
+        "N": 140,
+        "exact_recall": 0.8214285714285714,
+        "extraction_success": 1.0,
+        "false_accepts": 6,
+        "false_rejects": 19,
+        "precision": 0.9504132231404959,
+        "retrieval_at1": 0.9928571428571429,
+        "retrieval_at25": 1.0
+      }
+    },
+    "19": {
+      "N": 2,
+      "exact_recall": 1.0,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": 1.0,
+      "retrieval_at1": 1.0,
+      "retrieval_at25": 1.0,
+      "scan": null
+    },
+    "2": {
+      "N": 175,
+      "exact_recall": 0.6571428571428571,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 60,
+      "filled": {
+        "N": 15,
+        "exact_recall": 1.0,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "precision": 1.0,
+        "retrieval_at1": 1.0,
+        "retrieval_at25": 1.0
+      },
+      "precision": 1.0,
+      "retrieval_at1": 0.9885714285714285,
+      "retrieval_at25": 0.9942857142857143,
+      "scan": {
+        "N": 140,
+        "exact_recall": 0.5714285714285714,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 60,
+        "precision": 1.0,
+        "retrieval_at1": 0.9857142857142858,
+        "retrieval_at25": 0.9928571428571429
+      }
+    },
+    "3": {
+      "N": 175,
+      "exact_recall": 0.7428571428571429,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 45,
+      "filled": {
+        "N": 15,
+        "exact_recall": 1.0,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "precision": 1.0,
+        "retrieval_at1": 1.0,
+        "retrieval_at25": 1.0
+      },
+      "precision": 1.0,
+      "retrieval_at1": 0.9828571428571429,
+      "retrieval_at25": 1.0,
+      "scan": {
+        "N": 140,
+        "exact_recall": 0.6785714285714286,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 45,
+        "precision": 1.0,
+        "retrieval_at1": 0.9785714285714285,
+        "retrieval_at25": 1.0
+      }
+    },
+    "5": {
+      "N": 111,
+      "exact_recall": 0.5045045045045045,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 55,
+      "filled": {
+        "N": 15,
+        "exact_recall": 1.0,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0,
+        "precision": 1.0,
+        "retrieval_at1": 1.0,
+        "retrieval_at25": 1.0
+      },
+      "precision": 1.0,
+      "retrieval_at1": 1.0,
+      "retrieval_at25": 1.0,
+      "scan": {
+        "N": 84,
+        "exact_recall": 0.34523809523809523,
+        "extraction_success": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 55,
+        "precision": 1.0,
+        "retrieval_at1": 1.0,
+        "retrieval_at25": 1.0
+      }
+    },
+    "agid": {
+      "N": 6,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "anac": {
+      "N": 3,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "garante_privacy": {
+      "N": 2,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "giustizia": {
+      "N": 1,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "inl": {
+      "N": 6,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "inps": {
+      "N": 1,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "interno": {
+      "N": 2,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "mef": {
+      "N": 4,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "mimit": {
+      "N": 4,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    },
+    "unioncamere": {
+      "N": 1,
+      "exact_recall": null,
+      "extraction_success": 1.0,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "filled": null,
+      "precision": null,
+      "retrieval_at1": null,
+      "retrieval_at25": null,
+      "scan": null
+    }
+  }
+}

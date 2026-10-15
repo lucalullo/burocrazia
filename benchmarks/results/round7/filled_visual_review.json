@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "document_id": 97,
+      "first_page_review": "Fields visible; semantic errors: name/fiscal-code may contain dates; not administratively valid."
+    },
+    {
+      "document_id": 257,
+      "first_page_review": "Name and fictitious fiscal code visible; company name can receive fiscal code; segmented dates visibly clipped. Visual quality failed."
+    },
+    {
+      "document_id": 290,
+      "first_page_review": "Fields visible but heuristic assigns dates to multiple personal/address fields; not administratively valid."
+    }
+  ],
+  "basis": "Three exact single-shot generated PDFs SHA-verified and rendered locally with Poppler; no additional recognition or modifications.",
+  "release_quality_passed": false,
+  "redistributed": false
+}

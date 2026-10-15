@@ -1,3 +1,11 @@
+<!-- round9-current -->
+Round 9 conserva catalogo e provenienza. Distribuisce metadati, URL e ricevute di acquisizione, hash e risultati numerici di dati pubblici. I PDF/DOCX ufficiali, le immagini, il testo OCR e i compilati sintetici restano esclusi da Git e dall'archivio. Truth confermata e rifiuto corretto non attribuiscono verifiche editoriali né diritti di riuso sui documenti ufficiali. Nessuna pubblicazione della release candidata.
+<!-- /round9-current -->
+
+<!-- round8-current -->
+Round 8 conserva il catalogo e la provenienza. Redistribuisce soltanto firme hash e risultati numerici di dati pubblici; nessun file ufficiale, immagine, testo OCR o compilato sintetico incluso. Nessuna verifica editoriale attribuita automaticamente.
+<!-- /round8-current -->
+
 # Data and third-party materials notice
 
 BurOCRazia is an independent project created by Luca Lullo.
@@ -27,3 +35,33 @@ BurOCRazia is not affiliated with, endorsed by, sponsored by or operated by the
 public administrations referenced by the project.
 
 This notice is provided for project transparency and is not legal advice.
+
+The 11 October 2026 candidate adds technically acquired institutional metadata,
+not redistributed official PDF/DOC files or automatically reviewed content.
+`maintenance/releases/2026-10-11/` records the package, listing-response hashes,
+acquisition times, exclusions and resource URLs. A listing-response hash is not
+the hash of its linked document. Real-file benchmark hashes identify files kept
+only in an ignored local cache; no third-party file is licensed under this
+project's MIT License. Human editorial review remains pending.
+
+Round 2 preserves only metadata, actual acquisition receipts, hashes and technical audit decisions. The 162 official benchmark files and Tesseract binaries/language packs remain in ignored local directories. No new institutional logos or trademarks are copied. A technical rejection is explicitly attributed to Codex and is not represented as a human review or an official withdrawal.
+
+Round 5 adds versioned deterministic content fingerprints derived from verified
+official-source files: canonical SHA-256, truncated cryptographic shingle/anchor
+hashes, hashed field names, bounded sketches, feature counts and provenance.
+These signatures contain no complete text, paragraphs, images or raster pages
+and are not substitutes for the source documents. The official files and all
+transformed or fictitiously filled representations remain in ignored local
+cache/work directories. Their inclusion in technical measurements grants no
+redistribution rights. Source URLs, actual acquisition dates, hashes and reuse
+notes are recorded in `benchmarks/manifests/official_fingerprint_cache_v1.json`.
+Fingerprint generation and matching do not confer editorial verification or
+change the historical catalog provenance. See `docs/FINGERPRINTS.md`.
+
+## Round 6 — NOT READY
+
+Firme v2 e benchmark separati per copertura, canonical, robustezza, compilazione, OCR, family, unknown, regressioni, memoria e latenza. Zero nuove identità; seed/schema 610 invariati. V1 e corpus storici conservati. Tutti i dati sintetici compilati sono fittizi; nessun file ufficiale o testo OCR redistribuito. Dettagli e limiti in `docs/ROUND6_REPORT.md`.
+
+## Round 7
+
+Only hashes, public catalog metadata, real acquisition receipts and numeric/evidence benchmark outcomes are redistributed. Official files, OCR text and filled synthetic PDFs remain ignored. No identity, source, editorial verification or historical event is invented. No private upload is cached. Runtime stays local/offline/deterministic.

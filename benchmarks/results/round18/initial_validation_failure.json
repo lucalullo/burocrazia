@@ -1,0 +1,16 @@
+{
+  "cause": "Historical fixture asserted that no real v3 manifest existed. R18 legitimately creates one before freeze; fixture ROOT isolated to tmp_path. Initial full suite had already collected the old function; follow-up full suite uses corrected fixture. No engine change.",
+  "evaluation_prediction_calls": 0,
+  "failed_test": "tests/test_round17.py::test_inadequate_pool_never_becomes_a_release_subset",
+  "initial_full_log_sha256": "5df1ee54155bdd13a78507a8e5a999fc2ab8b19345d80fd6da99d592cd065347",
+  "initial_full_result": {
+    "failed": 1,
+    "passed": 828,
+    "skipped": 3
+  },
+  "targeted_default_temp_setup_error_sha256": "f926d6e886a9d34f780d20a482fc0ad2786b6d2b368c0b283cd452bdd04f7ce9",
+  "targeted_native_log_sha256": "134547ccf3204d9e8daae7170e7e63a6d1ef4bb9d3e764eebc2af22fb8eed698",
+  "targeted_native_passed": 10,
+  "temp_note": "Default pytest-of-<local-user> root produced WinError5 at fixture setup; a fresh native explicit --basetemp passed. No runtime IO change.",
+  "unknown_prediction_calls": 0
+}

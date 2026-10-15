@@ -11,13 +11,29 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: requirements-lock.txt
       - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip install -r benchmarks/requirements-round6.txt
+      - run: python scripts/round23_checkout.py
       - run: python -m pytest -q
       - run: python scripts/init_db.py
-      - run: python scripts/verify_catalog.py
-      - run: python scripts/benchmark.py --output benchmark-results.json
+      - run: python scripts/verify_catalog.py --db data/catalog_seed.sqlite3
+      - run: python -m maintenance.build_fingerprints --validate-only
+      - run: python -m maintenance.build_fingerprints_v2 --validate-only
+      - run: python -m maintenance.build_fingerprints_v3 --validate-only
+      - run: python scripts/benchmark.py --corpus tests/fixtures/benchmark_v2.json --output benchmark-results.json
+      - run: python -m compileall -q src maintenance benchmarks app.py run.py
+      - run: python scripts/round23_ci.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: benchmarks-${{ matrix.os }}
+          path: |
+            benchmark-results.json
+            benchmark-release-results/

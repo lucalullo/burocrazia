@@ -1,0 +1,86 @@
+{
+  "actual_count": 665,
+  "expected_count": 665,
+  "final_observations_sha256": "b5b469fe44b507aa473ab9ec518324413c9864c812d9561cc8d24ae1d139e3e7",
+  "freeze_commit": "aa816782b075c8a27eabb7492d080d1c26fa3119",
+  "gates": {
+    "v5_entity_version": {
+      "actual": {
+        "entity": 0,
+        "version": 0
+      },
+      "passed": true
+    },
+    "v5_exact_recall": {
+      "actual": 0.705511811023622,
+      "passed": false
+    },
+    "v5_filled_generation": {
+      "actual": 0.9166666666666666,
+      "passed": true
+    },
+    "v5_filled_precision": {
+      "actual": 1.0,
+      "passed": true
+    },
+    "v5_filled_recall": {
+      "actual": 1.0,
+      "passed": true
+    },
+    "v5_leakage": {
+      "actual": 0,
+      "passed": true
+    },
+    "v5_precision": {
+      "actual": 0.9824561403508771,
+      "passed": false
+    },
+    "v5_preflight": {
+      "actual": {
+        "attempted_filled": 60,
+        "filled_generation_rate": 0.9166666666666666,
+        "identities": 38,
+        "known": 635,
+        "passed": true,
+        "prepared_sha256": "7f6838286c41ba2e51b7a34d8467f835adbc3b441df6a8539722cfc635905b2c",
+        "recognition_calls": 0,
+        "scans": 504,
+        "sources": 6,
+        "unknown_mix": 30,
+        "valid_filled": 55
+      },
+      "passed": true
+    },
+    "v5_retrieval_at1": {
+      "actual": 0.9905511811023622,
+      "passed": true
+    },
+    "v5_retrieval_at25": {
+      "actual": 0.9984251968503937,
+      "passed": false
+    },
+    "v5_scan_precision": {
+      "actual": 0.9815384615384616,
+      "passed": false
+    },
+    "v5_scan_recall": {
+      "actual": 0.6329365079365079,
+      "passed": false
+    },
+    "v5_unknown_mix": {
+      "actual": 1.0,
+      "passed": true
+    }
+  },
+  "identity": {
+    "code_sha256": "db690156a3e3121645fcb322b0604167579515c77895e0d1fa6e794563885d5b",
+    "commit": "b3bd9cc61c6af15e8b3ad9958d6e40dcf34a683b",
+    "executed_at": "2026-10-14T07:18:55.521659+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "seed": 2026101419
+  },
+  "passed": false,
+  "single_shot": true,
+  "unique_case_ids": 665
+}

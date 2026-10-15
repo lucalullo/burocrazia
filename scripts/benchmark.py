@@ -24,6 +24,8 @@ from src.database import connect_database, list_documents
 from src.families import list_document_families
 from src.recognize import RULES_VERSION, recognize_catalog
 
+# Round 7 restores the original regression through unique code/title/issuer
+# evidence. Both frozen fixtures are still run and reported separately.
 DEFAULT_CORPUS = PROJECT_ROOT / "tests/fixtures/benchmark.json"
 OUTCOMES = ("DOCUMENT_MATCH", "FAMILY_MATCH", "NO_MATCH")
 
@@ -49,7 +51,7 @@ def load_corpus(path: str | Path) -> tuple[dict, str]:
             raise ValueError(f"Caso {case['id']}: esito atteso non valido.")
         identity = {"DOCUMENT_MATCH": "document_id", "FAMILY_MATCH": "family_id"}.get(expected["match_type"])
         if identity and (not isinstance(expected.get(identity), int) or expected[identity] < 1):
-            raise ValueError(f"Caso {case['id']}: identità attesa mancante.")
+            raise ValueError(f"Caso {case['id']}: identitÃ  attesa mancante.")
     return corpus, hashlib.sha256(raw).hexdigest()
 
 
@@ -130,7 +132,7 @@ def run_benchmark(corpus_path: str | Path = DEFAULT_CORPUS, catalog_path: str | 
             "limits": ["Casi sintetici pubblici di sviluppo: nessuna stima di generalizzazione o copertura nazionale.",
                        "Solo classificazione di testi leggibili; estrazione, OCR, spiegazioni e risorse ufficiali non sono valutati.",
                        "Demo separate dai record reali nei riepiloghi per categoria; un esito corretto non verifica editorialmente il documento.",
-                       "Sconosciuti: solo categoria unknown; i rifiuti per conflitto o ambiguità sono conteggiati separatamente. Denominatore zero: null."],
+                       "Sconosciuti: solo categoria unknown; i rifiuti per conflitto o ambiguitÃ  sono conteggiati separatamente. Denominatore zero: null."],
             "acquisition": {"evaluated": False, "input": "synthetic_readable_text", "errors": None, "formats": None, "ocr": None},
             "identity": {"corpus_sha256": corpus_hash, "catalog_source_sha256": source_hash, "catalog_semantic_sha256": catalog_hash,
                          "recognizer_catalog_revision": rules_catalog_hash, "rules_version": RULES_VERSION,
@@ -154,10 +156,11 @@ def main(argv: list[str] | None = None) -> int:
         output = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
         if args.output:
             protected = {DEFAULT_CORPUS.resolve(), args.corpus.resolve(), (PROJECT_ROOT / "data/burocrazia.db").resolve(), (PROJECT_ROOT / "data/catalog_seed.sqlite3").resolve()}
+            protected.update((PROJECT_ROOT / name).resolve() for name in ["tests/fixtures/benchmark.json","tests/fixtures/benchmark_v2.json"])
             if args.catalog:
                 protected.add(args.catalog.resolve())
             if args.output.resolve() in protected:
-                raise ValueError("Il report non può sovrascrivere corpus o database.")
+                raise ValueError("Il report non puÃ² sovrascrivere corpus o database.")
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(output, encoding="utf-8")
         else:

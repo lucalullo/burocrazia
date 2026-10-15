@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "executed_at": "2026-10-12T08:26:23.367886+00:00",
+  "real_tesseract": true,
+  "mocked": false,
+  "version": "tesseract v5.4.0.20240606",
+  "languages": [
+    "eng",
+    "ita",
+    "osd"
+  ],
+  "cases": [
+    {
+      "id": "orientation_0",
+      "passed": true,
+      "similarity": 1.0,
+      "rotation": 0,
+      "seconds": 0.8724815000005037
+    },
+    {
+      "id": "orientation_90",
+      "passed": true,
+      "similarity": 1.0,
+      "rotation": 90,
+      "seconds": 1.365987099999984
+    },
+    {
+      "id": "orientation_180",
+      "passed": true,
+      "similarity": 1.0,
+      "rotation": 180,
+      "seconds": 1.3149572999991506
+    },
+    {
+      "id": "orientation_270",
+      "passed": true,
+      "similarity": 1.0,
+      "rotation": 270,
+      "seconds": 1.1856391000001167
+    },
+    {
+      "id": "blank_pdf",
+      "passed": true,
+      "error": "Non sono riuscito a leggere abbastanza testo da questa immagine. Prova a scattare una foto più nitida, ben illuminata e senza tagliare il documento."
+    },
+    {
+      "id": "native_timeout",
+      "passed": true,
+      "timeout_seconds": 0.2
+    },
+    {
+      "id": "digital_pdf_bypass",
+      "passed": true,
+      "used_ocr": false
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "temporary_residue": [],
+  "full_gate_passed": true,
+  "traineddata_sha256": {
+    "ita": "b8f89e1e785118dac4d51ae042c029a64edb5c3ee42ef73027a6d412748d8827",
+    "eng": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "osd": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff"
+  }
+}

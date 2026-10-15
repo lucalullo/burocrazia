@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "corpus_id": "burocrazia-synthetic-text-regression-v2-2026-10-12",
+  "purpose": "Regressione sintetica del classificatore testuale; casi pubblici di sviluppo, non benchmark indipendente e non misura della copertura nazionale.",
+  "split": "development_regression",
+  "synthetic": true,
+  "extraction_evaluated": false,
+  "cases": [
+    {
+      "id": "EX01",
+      "group": "sr211",
+      "category": "exact_real",
+      "text": "INPS — SR211 — RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Versione 1.0. Esempio sintetico privo di dati personali.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 11,
+        "entity": "INPS",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "EX02V2",
+      "group": "ci543",
+      "category": "exact_real",
+      "text": "INPS CI543 — CERTIFICATO DI DISTACCO. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale. Versione 1.1.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 13,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "annotation": "New positive representation: semantic revision explicitly supplied. Original v1 remains frozen."
+    },
+    {
+      "id": "EX03V2",
+      "group": "ci544",
+      "category": "exact_real",
+      "text": "INPS CI544 — CERTIFICATO DI OPZIONE CONTRIBUTIVA. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale. Versione 1.1.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 12,
+        "entity": "INPS",
+        "version": "1.1"
+      },
+      "annotation": "New positive representation: semantic revision explicitly supplied. Original v1 remains frozen."
+    },
+    {
+      "id": "EX04",
+      "group": "f23",
+      "category": "exact_real",
+      "text": "Agenzia delle Entrate — Modello F23. Esempio sintetico del modello di pagamento, senza importi o identificativi.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 80,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "EX05",
+      "group": "f24_semplificato",
+      "category": "exact_real",
+      "text": "Agenzia delle Entrate — F24 Semplificato. Esempio sintetico del modello F24 Semplificato, privo di dati del contribuente.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 183,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "EX06",
+      "group": "730_2026",
+      "category": "exact_real",
+      "text": "Agenzia delle Entrate — MODELLO 730/2026 — REDDITI 2025. Dichiarazione sintetica priva di dati personali.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 49,
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      }
+    },
+    {
+      "id": "EX07",
+      "group": "cu_2026",
+      "category": "exact_real",
+      "text": "Agenzia delle Entrate — CERTIFICAZIONE UNICA 2026 — relativa all'anno 2025. Esempio sintetico.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 53,
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": "2026"
+      }
+    },
+    {
+      "id": "EX08",
+      "group": "inl17",
+      "category": "exact_real",
+      "text": "Ispettorato Nazionale del Lavoro — INL-17 — Accesso civico semplice e generalizzato. Servizi Ufficio Relazioni con il Pubblico.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 132,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "EX09",
+      "group": "inl29",
+      "category": "exact_real",
+      "text": "Ispettorato Nazionale del Lavoro — INL-29 — Abilitazione conduzione di generatori di vapore. Facsimile sintetico.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 133,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      }
+    },
+    {
+      "id": "DE01",
+      "group": "demo_inps",
+      "category": "demo",
+      "text": "INPS — INPS-DEMO-01 — Domanda dimostrativa di pensione. Versione demo-0.1, documento interamente dimostrativo.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1,
+        "entity": "INPS",
+        "version": "demo-0.1"
+      }
+    },
+    {
+      "id": "DE02",
+      "group": "demo_inail",
+      "category": "demo",
+      "text": "INAIL — INAIL-DEMO-01 — Denuncia dimostrativa di infortunio sul lavoro. Versione demo-0.1, nessun evento reale.",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 3,
+        "entity": "INAIL",
+        "version": "demo-0.1"
+      }
+    },
+    {
+      "id": "FA01",
+      "group": "730_2024",
+      "category": "family",
+      "text": "Agenzia delle Entrate — MODELLO 730/2024 — REDDITI 2023. Dichiarazione dei redditi modello 730, esempio sintetico.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "FA02",
+      "group": "730_2024",
+      "category": "adversarial_year",
+      "text": "REDDITI 2023\nAgenzia delle Entrate\nModello 730 / 2024\nDichiarazione dei redditi modello 730.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "FA03",
+      "group": "730_no_year",
+      "category": "family",
+      "text": "Agenzia delle Entrate — Modello 730. Dichiarazione dei redditi modello 730; annualità non riportata nell'esempio.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "FA04",
+      "group": "cu_2024",
+      "category": "family",
+      "text": "Agenzia delle Entrate — CU2024. Certificazione unica relativa all'anno 2023, esempio sintetico.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "FA05",
+      "group": "cu_no_year",
+      "category": "family",
+      "text": "Agenzia delle Entrate — Certificazione Unica — Modello CU. Annualità non indicata nel facsimile.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": null
+      }
+    },
+    {
+      "id": "FA06",
+      "group": "cu_2024",
+      "category": "ocr_noise_text",
+      "text": "Agenzia delle Entrate\nCERT1F1CAZ1ONE UN1CA 2024\nModello C U\nAnno di riferimento redditi 2023.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "FA07",
+      "group": "730_2024",
+      "category": "ocr_noise_text",
+      "text": "Agenzia delle Entrate\nM0DELL0 7 3 O / 2024\nDichiarazione dei redditi, anno fiscale 2023.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2024"
+      }
+    },
+    {
+      "id": "FA08",
+      "group": "ader_cartella",
+      "category": "family",
+      "text": "Agenzia delle Entrate-Riscossione — CARTELLA DI PAGAMENTO. Agente della riscossione. Esempio senza importi e senza codici personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 1,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FA09",
+      "group": "ader_pagopa",
+      "category": "family",
+      "text": "Agenzia delle Entrate-Riscossione — Nuovo modulo di pagamento pagoPA. Codice modulo di pagamento: campo lasciato vuoto nel facsimile.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 2,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      }
+    },
+    {
+      "id": "FA10",
+      "group": "verbale_sintetico",
+      "category": "family",
+      "text": "COMUNE DI ESEMPIO SINTETICO — COMANDO POLIZIA LOCALE. Verbale di contestazione per violazione al Codice della Strada. Nessun veicolo o destinatario reale.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 15
+      }
+    },
+    {
+      "id": "FA11",
+      "group": "tassa_sintetica",
+      "category": "family",
+      "text": "REGIONE DI ESEMPIO SINTETICO. Atto di accertamento tassa automobilistica regionale. Omesso o irregolare versamento. Irrogazione di sanzioni. Veicolo non indicato.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 16
+      }
+    },
+    {
+      "id": "FA12",
+      "group": "mit_pratica",
+      "category": "family",
+      "text": "Ministero delle Infrastrutture e dei Trasporti — Pratica di motorizzazione. Ufficio motorizzazione civile. Esempio privo di dati personali.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 8,
+        "entity": "Ministero delle Infrastrutture e dei Trasporti"
+      }
+    },
+    {
+      "id": "UN01",
+      "group": "ricetta",
+      "category": "unknown",
+      "text": "Ricetta domestica: mescolare farina e acqua, lasciare riposare l'impasto e cuocere in forno. Esempio sintetico di testo non amministrativo.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "UN02",
+      "group": "biblioteca",
+      "category": "unknown",
+      "text": "Biblioteca universitaria immaginaria. Registro interno dei prestiti dei libri, scaffale di narrativa. Scheda non presente nel catalogo del progetto.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "UN03",
+      "group": "verbale_interno",
+      "category": "unknown",
+      "text": "È stato redatto un verbale interno per la riunione del gruppo di lettura. Si discuteranno i capitoli del prossimo romanzo.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "UN04",
+      "group": "certificazione_generica",
+      "category": "unknown",
+      "text": "È disponibile una certificazione relativa al pagamento. Questo frammento generico non identifica un modulo né il suo ente.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "UN05",
+      "group": "universita_inventata",
+      "category": "unknown",
+      "text": "Università immaginaria delle Nuvole. Richiesta di prenotazione del laboratorio di astronomia didattica. Documento interamente sintetico.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "UN06",
+      "group": "agenda",
+      "category": "unknown",
+      "text": "Promemoria informale: preparare le slide per l'incontro del gruppo, controllare il proiettore e portare il quaderno degli appunti.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      }
+    },
+    {
+      "id": "AV01",
+      "group": "sr211_wrong_entity",
+      "category": "adversarial_entity",
+      "text": "INAIL — SR211 — RINUNCIA DEI BENEFICIARI ALLA CARTA ACQUISTI. Intestazione volutamente incompatibile nel caso sintetico.",
+      "expected": {
+        "match_type": "NO_MATCH",
+        "forbidden_entities": [
+          "INPS"
+        ]
+      }
+    },
+    {
+      "id": "AV02",
+      "group": "730_wrong_entity",
+      "category": "adversarial_entity",
+      "text": "Agenzia delle Entrate-Riscossione — MODELLO 730/2026. Intestazione volutamente incompatibile; facsimile sintetico.",
+      "expected": {
+        "match_type": "NO_MATCH",
+        "forbidden_entities": [
+          "Agenzia delle Entrate"
+        ]
+      }
+    },
+    {
+      "id": "AV03",
+      "group": "cu_wrong_entity",
+      "category": "adversarial_entity",
+      "text": "INAIL — Certificazione unica 2026 — Modello CU 2026. Caso sintetico con ente intenzionalmente incompatibile.",
+      "expected": {
+        "match_type": "NO_MATCH",
+        "forbidden_entities": [
+          "Agenzia delle Entrate"
+        ]
+      }
+    },
+    {
+      "id": "AV04",
+      "group": "730_future",
+      "category": "adversarial_year",
+      "text": "Agenzia delle Entrate — MODELLO 730/2027. Dichiarazione dei redditi modello 730, relativa ai redditi 2026. Annualità sintetica non catalogata.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 13,
+        "entity": "Agenzia delle Entrate",
+        "version": "2027"
+      }
+    },
+    {
+      "id": "AV05",
+      "group": "cu_multiple_years",
+      "category": "adversarial_year",
+      "text": "Agenzia delle Entrate — Certificazione Unica 2024 e Certificazione Unica 2026. Due annualità esplicite nel medesimo testo sintetico: nessun record esatto univoco.",
+      "expected": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 14,
+        "entity": "Agenzia delle Entrate",
+        "forbidden_document_versions": [
+          "2024",
+          "2026"
+        ]
+      }
+    },
+    {
+      "id": "AV06",
+      "group": "f24_ambiguous",
+      "category": "ambiguous",
+      "text": "Agenzia delle Entrate — Modello F24. Esempio sintetico del modulo, privo di dati del contribuente.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "annotation": "Il catalogo ha sei record con codice F24; il testo non distingue il modello ordinario dalle varianti. Etichetta chiarita durante il pilot sul catalogo completo, prima del congelamento del corpus di regressione."
+    },
+    {
+      "id": "EX02MISSINGREV",
+      "group": "ci543",
+      "category": "ambiguous",
+      "text": "INPS CI543 — CERTIFICATO DI DISTACCO. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "annotation": "Original v1 positive text preserved as a new negative: it contains no semantic revision. New policy label does not alter v1."
+    },
+    {
+      "id": "EX03MISSINGREV",
+      "group": "ci544",
+      "category": "ambiguous",
+      "text": "INPS CI544 — CERTIFICATO DI OPZIONE CONTRIBUTIVA. Accordo tra la Repubblica italiana e la Repubblica di Albania in materia di sicurezza sociale.",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "annotation": "Original v1 positive text preserved as a new negative: it contains no semantic revision. New policy label does not alter v1."
+    }
+  ],
+  "parent": {
+    "path": "tests/fixtures/benchmark.json",
+    "sha256": "57a8c37bc0439c173caef235740555ba5a01b8ee0fcb8afdc6a59f02bec0cd92"
+  },
+  "version_rationale": "Round 6 requires an explicit semantic model revision for metadata-only exact attribution. Historical v1 inputs, labels and results remain unchanged and separately reported. V2 supplies the revision in two positive inputs and adds their original revision-free inputs as prudent-rejection negatives; it is a development compatibility check, not independent evaluation."
+}

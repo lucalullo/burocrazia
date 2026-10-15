@@ -1,0 +1,31 @@
+{
+  "ambiguous_historical_cases": [
+    "development_regression:EX02",
+    "development_regression:EX03",
+    "U14-5f0c017c3d56e6c5",
+    "U14-c1fc4765c01dcd62"
+  ],
+  "canonical_pass": true,
+  "confirmed_safety_pass": false,
+  "coverage_pass": true,
+  "created_at": "2026-10-13T18:56:42.840218+00:00",
+  "historical_regression_status": "mismatches_retained",
+  "identity": {
+    "code_sha256": "ac1b88c6970404db0ed9b30973d33288744f8b2c8a585d072e3d10607cf2d3dd",
+    "commit": "d39103d0673b8690816df1f9a3a4499a46f94f45",
+    "executed_at": "2026-10-13T18:56:42.840218+00:00",
+    "fingerprint_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+    "runtime_sha256": "8f8a50c679a399623b9bd3964fba090d95b36608cd46e2f149f4752fd3169890",
+    "seed": 2026101208
+  },
+  "identity_correction": "EX02/EX03: INPS CI543/CI544 synthetic omitted revision, ambiguity established by truth v2. INAIL: two distinct annual resources, ambiguity established by truth v3.",
+  "input_safety_pass": true,
+  "passed": false,
+  "performance_median_p95": 244.9918,
+  "performance_pass": true,
+  "ready_to_freeze": false,
+  "release_gate_fast_pass": true,
+  "semantic_equivalence_pass": true,
+  "tests_pass": true,
+  "truth_policy_pass": true
+}

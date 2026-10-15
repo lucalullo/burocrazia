@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "OR2-017",
+    "document_id": 112,
+    "root_cause": "expected_identity_wrong",
+    "note": "Official file is explicitly COMUNICATO 2022, not a form; frozen positive remains counted.",
+    "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/Indennit%C3%A0%20di%20malattia%20per%20i%20lavoratori%20del%20trasporto%20pubblico%20locale%2C%20anno%20di%20competenza%202021/COMUNICATO-TPL-2022.pdf",
+    "sha256": "a3cdfc80b8e696f3d7d30433f763492820a3842968fab9da7a115a116efccfe3",
+    "frozen_expected_unchanged": true,
+    "reviewer": "Codex - technical content audit Round 3, not human editorial verification"
+  },
+  {
+    "case_id": "OR2-042",
+    "document_id": 110,
+    "root_cause": "expected_identity_wrong",
+    "note": "Official file describes approval of an ENASARCO board resolution, not an autonomous fillable form.",
+    "official_url": "https://www.lavoro.gov.it/temi-e-priorita-previdenza/focus/enasarco-rap-l-78-02082022.pdf",
+    "sha256": "9b36d3596cf26d7182beb342ed0de0d8a0a9bd9a4d9eb7f74d3386954ba8c390",
+    "frozen_expected_unchanged": true,
+    "reviewer": "Codex - technical content audit Round 3, not human editorial verification"
+  },
+  {
+    "case_id": "OR2-071",
+    "document_id": 108,
+    "root_cause": "expected_identity_wrong",
+    "note": "Official file describes an EPAP board resolution, not an autonomous fillable form.",
+    "official_url": "https://www.lavoro.gov.it/temi-e-priorita-previdenza/focus/epap-plur-l-72-30112022.pdf",
+    "sha256": "ebbb9df31264e56d39df7e1f433ad6e74ad6bdd0952922d7e374af8360d24e60",
+    "frozen_expected_unchanged": true,
+    "reviewer": "Codex - technical content audit Round 3, not human editorial verification"
+  },
+  {
+    "case_id": "OR2-076",
+    "document_id": 121,
+    "root_cause": "source_metadata_wrong",
+    "note": "File issuer heading is REGIONE BASILICATA, while catalog source entity is Ministero del Lavoro. Aggregator and issuer differ; safe refusal retained.",
+    "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/modulistica/delibera_ndeg_dg1942019-3.pdf",
+    "sha256": "54d147285670a8ad344aab8a944faaa693d07346e404918cdf9db9d74e3e68b6",
+    "frozen_expected_unchanged": true,
+    "reviewer": "Codex - technical content audit Round 3, not human editorial verification"
+  },
+  {
+    "case_id": "OR2-121",
+    "document_id": 261,
+    "root_cause": "expected_identity_wrong",
+    "note": "Official resource is titled Istruzioni alla compilazione and begins DSU PARTE 1 INTRODUZIONE; not the form.",
+    "official_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/ISEE/Istruzioni-alla-compilazione.pdf",
+    "sha256": "c4a7ed3679f1509e15ff14cfed12329dce1200d8ee8ac99d4007ff28ce510a4a",
+    "frozen_expected_unchanged": true,
+    "reviewer": "Codex - technical content audit Round 3, not human editorial verification"
+  },
+  {
+    "case_id": "OR2-148",
+    "document_id": 107,
+    "root_cause": "expected_identity_wrong",
+    "note": "Official file describes an ENPAF resolution, not an autonomous fillable form.",
+    "official_url": "https://www.lavoro.gov.it/temi-e-priorita-previdenza/focus/enpaf-far-l-155-30112022-1.pdf",
+    "sha256": "809a6f9d0de71d60ceff34d764b079bbb86854af74803cc680b1cd743a9495f7",
+    "frozen_expected_unchanged": true,
+    "reviewer": "Codex - technical content audit Round 3, not human editorial verification"
+  }
+]

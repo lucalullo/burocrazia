@@ -1,0 +1,17 @@
+{
+  "failed": 0,
+  "log_sha256": "fd0fa5646fd548dedce492340a419a9fdbdc906557f72b7298ab512899103718",
+  "passed": 762,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.10",
+  "scope": "Full local Windows pytest, real local Tesseract where required; one symlink-privilege and two FIFO skips. No external CI claim.",
+  "seconds": 506.06,
+  "skipped": 3,
+  "status": "passed",
+  "targeted_final": {
+    "failed": 0,
+    "log_sha256": "8e0462cecf6a3b11ca062ed36b898adcedb32a4134175e784bb4c8a2594ebd30",
+    "passed": 4,
+    "scope": "Resolver, attachment role, quota invariance, domain and negative-manifest guards; not added twice to the suite count."
+  }
+}

@@ -1,0 +1,6039 @@
+{
+  "schema_version": 1,
+  "independent": false,
+  "runtime_sha256": "fd4e96c2dec57f8e4795da814a455693a7e4b5be274b24ed18406041d63d33da",
+  "code_sha256": "ccc4d83641c6d9be148fa29f65034a5cbfef9cee5eda202d21fb95ef4745dc82",
+  "cases": [
+    {
+      "id": "OH1-001",
+      "group": "document:610",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 610,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 610,
+        "family_id": null,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 377.587,
+      "source_key": "anac",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-002",
+      "group": "document:467",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 467,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 378.071,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-003",
+      "group": "document:1150",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1150,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1150,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 410.056,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-004",
+      "group": "document:147",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 147,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 336.288,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-005",
+      "group": "document:256",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 256,
+        "entity": "Ministero del Lavoro",
+        "version": "2016"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 376.755,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-006",
+      "group": "document:554",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 554,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 554,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 427.546,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-007",
+      "group": "document:611",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 611,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 396.773,
+      "source_key": "anac",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-008",
+      "group": "document:501",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 501,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 209.561,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-009",
+      "group": "document:1214",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1214,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1214,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 391.258,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-010",
+      "group": "document:113",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 113,
+        "entity": "Ministero del Lavoro",
+        "version": "2022"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 425.36,
+      "source_key": "lavoro",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-011",
+      "group": "document:555",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 555,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 555,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 426.681,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-012",
+      "group": "document:614",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 614,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "numero allegato incompatibile"
+      ],
+      "matching_ms": 354.111,
+      "source_key": "anac",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-013",
+      "group": "document:410",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 410,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 386.889,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-014",
+      "group": "document:914",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 914,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 393.801,
+      "source_key": "inail",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-015",
+      "group": "document:151",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 151,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 151,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 311.387,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-016",
+      "group": "document:117",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 117,
+        "entity": "Ministero del Lavoro",
+        "version": "2019"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 313.747,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-017",
+      "group": "document:553",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 553,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 353.097,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-018",
+      "group": "document:612",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 612,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 612,
+        "family_id": null,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 265.437,
+      "source_key": "anac",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-019",
+      "group": "document:454",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 454,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 382.116,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-020",
+      "group": "document:1224",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1224,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1224,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 430.132,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-021",
+      "group": "document:284",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 284,
+        "entity": "Ministero del Lavoro",
+        "version": "2003"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 400.227,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-022",
+      "group": "document:558",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 558,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 558,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 415.039,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-023",
+      "group": "document:615",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 615,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 615,
+        "family_id": null,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 307.248,
+      "source_key": "anac",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-024",
+      "group": "document:1160",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1160,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1160,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 266.943,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-025",
+      "group": "document:142",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 142,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 142,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 314.751,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-026",
+      "group": "document:111",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 111,
+        "entity": "Ministero del Lavoro",
+        "version": "2020"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 478.417,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-027",
+      "group": "document:613",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 613,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 318.33,
+      "source_key": "anac",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-028",
+      "group": "document:902",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 902,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 902,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 388.829,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-029",
+      "group": "document:1223",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1223,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1223,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 388.712,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-030",
+      "group": "document:102",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 102,
+        "entity": "Ministero del Lavoro",
+        "version": "2022"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 405.861,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-031",
+      "group": "document:474",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 474,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 254.228,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-032",
+      "group": "document:1085",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1085,
+        "entity": "INAIL",
+        "version": "2024"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 449.299,
+      "source_key": "inail",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-033",
+      "group": "document:1222",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1222,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1222,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 379.194,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-034",
+      "group": "document:118",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 118,
+        "entity": "Ministero del Lavoro",
+        "version": "2019"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 209.276,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-035",
+      "group": "document:556",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 556,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 556,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 415.477,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-036",
+      "group": "document:498",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 498,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 498,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 230.478,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-037",
+      "group": "document:1126",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1126,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1126,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 385.713,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-038",
+      "group": "document:148",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 148,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 363.322,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-039",
+      "group": "document:96",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 96,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 403.927,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-040",
+      "group": "document:557",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 557,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 557,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 401.924,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-041",
+      "group": "document:455",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 455,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 435.431,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-042",
+      "group": "document:126",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 126,
+        "entity": "Ministero del Lavoro",
+        "version": "2017"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 255.895,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-043",
+      "group": "document:549",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 549,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 365.108,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-044",
+      "group": "document:945",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 945,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 434.2,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-045",
+      "group": "document:136",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 136,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 399.807,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-046",
+      "group": "document:303",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 303,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 476.191,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-047",
+      "group": "document:428",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 428,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 300.765,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-048",
+      "group": "document:1170",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1170,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 351.388,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-049",
+      "group": "document:1226",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1226,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 379.749,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-050",
+      "group": "document:263",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 263,
+        "entity": "Ministero del Lavoro",
+        "version": "2013"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 483.535,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-051",
+      "group": "document:448",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 448,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 340.613,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-052",
+      "group": "document:915",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 915,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 404.742,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-053",
+      "group": "document:157",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 157,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 157,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 314.279,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-054",
+      "group": "document:278",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 278,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 459.658,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-055",
+      "group": "document:1054",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1054,
+        "entity": "INAIL",
+        "version": "2026"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 218.557,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-056",
+      "group": "document:285",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 285,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 407.107,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-057",
+      "group": "document:535",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 535,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 356.933,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-058",
+      "group": "document:1120",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1120,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 472.319,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-059",
+      "group": "document:141",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 141,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 141,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 404.738,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-060",
+      "group": "document:492",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 492,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 305.31,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-061",
+      "group": "document:887",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 887,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 326.009,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-062",
+      "group": "document:129",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 129,
+        "entity": "Ministero del Lavoro",
+        "version": "2015"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 409.902,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-063",
+      "group": "document:1202",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1202,
+        "entity": "INAIL",
+        "version": "2022"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 432.509,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-064",
+      "group": "document:161",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 161,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 161,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 307.42,
+      "source_key": "inl",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-065",
+      "group": "document:98",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 98,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 408.718,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-066",
+      "group": "document:404",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 404,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 404,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 280.471,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-067",
+      "group": "document:1050",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1050,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 436.304,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-068",
+      "group": "document:100",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 100,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 213.819,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-069",
+      "group": "document:1175",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1175,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 340.104,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-070",
+      "group": "document:109",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 109,
+        "entity": "Ministero del Lavoro",
+        "version": "2022"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 246.923,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-071",
+      "group": "document:426",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 426,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 249.807,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-072",
+      "group": "document:1107",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1107,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 486.343,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-073",
+      "group": "document:291",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 291,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 392.047,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-074",
+      "group": "document:1056",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1056,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1056,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 213.152,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-075",
+      "group": "document:116",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 116,
+        "entity": "Ministero del Lavoro",
+        "version": "2019"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 364.423,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-076",
+      "group": "document:445",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 445,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 395.155,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-077",
+      "group": "document:1065",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1065,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 527.165,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-078",
+      "group": "document:99",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 99,
+        "entity": "Ministero del Lavoro",
+        "version": "2023"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 271.981,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-079",
+      "group": "document:1073",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1073,
+        "entity": "INAIL",
+        "version": "2020"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 503.354,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-080",
+      "group": "document:120",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 120,
+        "entity": "Ministero del Lavoro",
+        "version": "2019"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 487.436,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-081",
+      "group": "document:400",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 400,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Candidati specifici troppo vicini: identità ambigua. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 322.348,
+      "source_key": "giustizia",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-082",
+      "group": "document:1076",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1076,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 436.733,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-083",
+      "group": "document:287",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 287,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 314.178,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-084",
+      "group": "document:495",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 495,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 295.798,
+      "source_key": "giustizia",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-085",
+      "group": "document:1139",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1139,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 275.462,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-086",
+      "group": "document:128",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 128,
+        "entity": "Ministero del Lavoro",
+        "version": "2016"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 288.512,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-087",
+      "group": "document:437",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 437,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 437,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 292.11,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-088",
+      "group": "document:967",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 967,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 294.458,
+      "source_key": "inail",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-089",
+      "group": "document:276",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 276,
+        "entity": "Ministero del Lavoro",
+        "version": "2013"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 310.409,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-090",
+      "group": "document:483",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 483,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 438.803,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-091",
+      "group": "document:1129",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1129,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Ente incompatibile con le famiglie candidate.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile",
+        "ente della famiglia incompatibile",
+        "ente incompatibile"
+      ],
+      "matching_ms": 404.645,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-092",
+      "group": "document:264",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 264,
+        "entity": "Ministero del Lavoro",
+        "version": "2013"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 417.035,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-093",
+      "group": "document:461",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 461,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Ente incompatibile con le famiglie candidate.",
+      "conflicts": [
+        "ente della famiglia incompatibile"
+      ],
+      "matching_ms": 455.21,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-094",
+      "group": "document:282",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 282,
+        "entity": "Ministero del Lavoro",
+        "version": "2003"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 346.106,
+      "source_key": "lavoro",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-095",
+      "group": "document:414",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 414,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 270.657,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-096",
+      "group": "document:18",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 18,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 260.253,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-097",
+      "group": "document:304",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 304,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 347.569,
+      "source_key": "lavoro",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-098",
+      "group": "document:534",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 534,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 263.1,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-099",
+      "group": "document:1196",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1196,
+        "entity": "INAIL",
+        "version": "2017"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 422.849,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-100",
+      "group": "document:1068",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1068,
+        "entity": "INAIL",
+        "version": "2017"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 510.57,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-101",
+      "group": "document:431",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 431,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 366.068,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-102",
+      "group": "document:1070",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1070,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 469.797,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-103",
+      "group": "document:418",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 418,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 352.409,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-104",
+      "group": "document:879",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 879,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 879,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 449.13,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-105",
+      "group": "document:480",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 480,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 438.774,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-106",
+      "group": "document:927",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 927,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 390.776,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-107",
+      "group": "document:946",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 946,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 283.561,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-108",
+      "group": "document:419",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 419,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 303.943,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-109",
+      "group": "document:963",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 963,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 963,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 469.774,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-110",
+      "group": "document:487",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 487,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 308.002,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-111",
+      "group": "document:896",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 896,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 407.149,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-112",
+      "group": "document:486",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 486,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 366.562,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-113",
+      "group": "document:542",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 542,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 353.325,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-114",
+      "group": "document:942",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 942,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "matching_ms": 369.635,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-115",
+      "group": "document:1057",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1057,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1057,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 478.494,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-116",
+      "group": "document:531",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 531,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 373.278,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-117",
+      "group": "document:921",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 921,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 260.324,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-118",
+      "group": "document:1060",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1060,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 409.583,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-119",
+      "group": "document:452",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 452,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 452,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 337.109,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-120",
+      "group": "document:1097",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 1097,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 345.715,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-121",
+      "group": "document:484",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 484,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 211.236,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-122",
+      "group": "document:458",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 458,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 258.704,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-123",
+      "group": "document:430",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 430,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "annualità assente, ambigua o incompatibile"
+      ],
+      "matching_ms": 366.768,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-124",
+      "group": "document:503",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 503,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 254.963,
+      "source_key": "giustizia",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-125",
+      "group": "document:490",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 490,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 490,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 235.845,
+      "source_key": "giustizia",
+      "file_type": "docx",
+      "extraction_failed": false,
+      "extraction_method": "docx",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-126",
+      "group": "document:502",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 502,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 502,
+        "family_id": null,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 249.313,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-127",
+      "group": "document:417",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 417,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 321.953,
+      "source_key": "giustizia",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-128",
+      "group": "document:OH1-128",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 497.241,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-129",
+      "group": "document:OH1-129",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 464.073,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-130",
+      "group": "document:OH1-130",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 9.744,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-131",
+      "group": "document:OH1-131",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 8.113,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-132",
+      "group": "document:OH1-132",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 427.766,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-133",
+      "group": "document:OH1-133",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 480.319,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-134",
+      "group": "document:OH1-134",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 477.388,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-135",
+      "group": "document:OH1-135",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 433.42,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-136",
+      "group": "document:OH1-136",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 305.603,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-137",
+      "group": "document:OH1-137",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 396.757,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-138",
+      "group": "document:OH1-138",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 451.733,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-139",
+      "group": "document:OH1-139",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 13.677,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-140",
+      "group": "document:OH1-140",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 423.799,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-141",
+      "group": "document:OH1-141",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 7.421,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-142",
+      "group": "document:OH1-142",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 29.864,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-143",
+      "group": "document:OH1-143",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 5.199,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-144",
+      "group": "document:OH1-144",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 389.877,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-145",
+      "group": "document:OH1-145",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 446.594,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-146",
+      "group": "document:OH1-146",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 457.489,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-147",
+      "group": "document:OH1-147",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 450.753,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-148",
+      "group": "document:OH1-148",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 484.879,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-149",
+      "group": "document:OH1-149",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 415.957,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-150",
+      "group": "document:OH1-150",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 387.5,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-151",
+      "group": "document:OH1-151",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 407.236,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-152",
+      "group": "document:OH1-152",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 38.779,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-153",
+      "group": "document:OH1-153",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 406.621,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-154",
+      "group": "document:OH1-154",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 474.889,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-155",
+      "group": "document:OH1-155",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 451.788,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-156",
+      "group": "document:OH1-156",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 338.315,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-157",
+      "group": "document:OH1-157",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 417.29,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-158",
+      "group": "document:OH1-158",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 457.9,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-159",
+      "group": "document:OH1-159",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 440.682,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-160",
+      "group": "document:OH1-160",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 10.072,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-161",
+      "group": "document:OH1-161",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 357.253,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-162",
+      "group": "document:OH1-162",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 8.238,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "ocr",
+      "used_ocr": true
+    },
+    {
+      "id": "OH1-163",
+      "group": "document:OH1-163",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 9.943,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-164",
+      "group": "document:OH1-164",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 432.013,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-165",
+      "group": "document:OH1-165",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 393.309,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-166",
+      "group": "document:OH1-166",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 12.201,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-167",
+      "group": "document:OH1-167",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 12.149,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-168",
+      "group": "document:OH1-168",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Qualità del testo insufficiente per il riconoscimento.",
+      "conflicts": [],
+      "matching_ms": 5.081,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": true,
+      "extraction_method": null,
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-169",
+      "group": "document:OH1-169",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 12.075,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-170",
+      "group": "document:OH1-170",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 17.632,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-171",
+      "group": "document:OH1-171",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 440.597,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-172",
+      "group": "document:OH1-172",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 7.523,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-173",
+      "group": "document:OH1-173",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 13.817,
+      "source_key": "inail",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-174",
+      "group": "document:OH1-174",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 385.501,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-175",
+      "group": "document:OH1-175",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Intestazione informativa: i riferimenti a moduli non ne provano l'identità. Intestazione informativa: famiglia non attribuita.",
+      "conflicts": [
+        "risorsa informativa"
+      ],
+      "matching_ms": 13.906,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-176",
+      "group": "document:OH1-176",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 378.11,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    },
+    {
+      "id": "OH1-177",
+      "group": "document:OH1-177",
+      "category": "official_diagnostic",
+      "expected": {
+        "match_type": "NO_MATCH"
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": true,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 396.161,
+      "source_key": "mimit",
+      "file_type": "pdf",
+      "extraction_failed": false,
+      "extraction_method": "pdf_text",
+      "used_ocr": false
+    }
+  ],
+  "summary": {
+    "cases": 177,
+    "passed": 82,
+    "failed": 95,
+    "metrics": {
+      "document_precision": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 32,
+        "denominator": 127,
+        "value": 0.25196850393700787
+      },
+      "document_f1": {
+        "numerator": 64,
+        "denominator": 159,
+        "value": 0.4025157232704403
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 32,
+        "denominator": 127,
+        "value": 0.25196850393700787
+      },
+      "useful_coverage": {
+        "numerator": 32,
+        "denominator": 127,
+        "value": 0.25196850393700787
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 50,
+        "value": 0.0
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 50,
+        "denominator": 50,
+        "value": 1.0
+      },
+      "supported_rejection_rate": {
+        "numerator": 95,
+        "denominator": 127,
+        "value": 0.7480314960629921
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 32,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 32,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 32,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 95
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 50
+      }
+    },
+    "latency_ms": {
+      "p50": 377.587,
+      "p95": 478.859,
+      "p99": 505.0858
+    }
+  },
+  "extraction": {
+    "success": 176,
+    "total": 177,
+    "conditional_matching": {
+      "cases": 176,
+      "passed": 81,
+      "failed": 95,
+      "metrics": {
+        "document_precision": {
+          "numerator": 32,
+          "denominator": 32,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 32,
+          "denominator": 127,
+          "value": 0.25196850393700787
+        },
+        "document_f1": {
+          "numerator": 64,
+          "denominator": 159,
+          "value": 0.4025157232704403
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 32,
+          "denominator": 127,
+          "value": 0.25196850393700787
+        },
+        "useful_coverage": {
+          "numerator": 32,
+          "denominator": 127,
+          "value": 0.25196850393700787
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 49,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 49,
+          "denominator": 49,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 95,
+          "denominator": 127,
+          "value": 0.7480314960629921
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 32,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 32,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 32,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 95
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 49
+        }
+      },
+      "latency_ms": {
+        "p50": 377.829,
+        "p95": 478.9503,
+        "p99": 505.158
+      }
+    },
+    "end_to_end": {
+      "cases": 177,
+      "passed": 82,
+      "failed": 95,
+      "metrics": {
+        "document_precision": {
+          "numerator": 32,
+          "denominator": 32,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 32,
+          "denominator": 127,
+          "value": 0.25196850393700787
+        },
+        "document_f1": {
+          "numerator": 64,
+          "denominator": 159,
+          "value": 0.4025157232704403
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 32,
+          "denominator": 127,
+          "value": 0.25196850393700787
+        },
+        "useful_coverage": {
+          "numerator": 32,
+          "denominator": 127,
+          "value": 0.25196850393700787
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 50,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 50,
+          "denominator": 50,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 95,
+          "denominator": 127,
+          "value": 0.7480314960629921
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 32,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 32,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 32,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 95
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 50
+        }
+      },
+      "latency_ms": {
+        "p50": 377.587,
+        "p95": 478.859,
+        "p99": 505.0858
+      }
+    }
+  },
+  "corpus_id": "official_holdout_v1_historical"
+}

@@ -1,0 +1,58 @@
+{
+  "N": 213,
+  "balanced_capacity": {
+    "N": 213,
+    "max_concentration_upper_bound": 0.24882629107981222,
+    "per_source_capacity": {
+      "aci": 1,
+      "agid": 32,
+      "anac": 47,
+      "garante_privacy": 3,
+      "giustizia": 5,
+      "inail": 8,
+      "inl": 40,
+      "inps": 4,
+      "interno": 5,
+      "lavoro": 3,
+      "mef": 6,
+      "mimit": 11,
+      "mit": 10,
+      "regione_piemonte": 20,
+      "unioncamere": 18
+    },
+    "sources": 15
+  },
+  "candidate_pool_sha256": "b4f1205a410e5872b0091751f5b11152a77c124442a82a78bedc2a477bbb0668",
+  "counts_per_source": {
+    "aci": 1,
+    "agid": 32,
+    "anac": 47,
+    "garante_privacy": 3,
+    "giustizia": 5,
+    "inail": 8,
+    "inl": 40,
+    "inps": 4,
+    "interno": 5,
+    "lavoro": 3,
+    "mef": 6,
+    "mimit": 11,
+    "mit": 10,
+    "regione_piemonte": 20,
+    "unioncamere": 18
+  },
+  "master_N": 213,
+  "master_max_concentration": 0.22065727699530516,
+  "max_concentration": 0.24882629107981222,
+  "passed": true,
+  "recognition_calls": 0,
+  "requirements": {
+    "concentration": true,
+    "count": true,
+    "input_supported": true,
+    "no_contamination": true,
+    "sources": true
+  },
+  "scope": "Exact normalized native opening dedupe excludes known/prior/mirrored inputs and within-master duplicates before freeze. These are conservative exclusions; no scores/predictions, no statistical independence claim for remaining related templates. Balanced capacity is metadata-only, release IDs selected after freeze.",
+  "sources": 15,
+  "truth_audit_sha256": "874ea377350d63e23c01515178081617599cac1b38dfba832313a9f65fa0b17d"
+}

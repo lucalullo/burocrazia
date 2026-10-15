@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "corpus_id": "official-local-v1",
+  "synthetic": false,
+  "executed_at": "2026-10-11T10:58:22.101415+00:00",
+  "status": "partial",
+  "attempts": [
+    {
+      "id": "O1",
+      "status": "executed"
+    },
+    {
+      "id": "O2",
+      "status": "executed"
+    },
+    {
+      "id": "O3",
+      "status": "executed"
+    },
+    {
+      "id": "O4",
+      "status": "executed"
+    },
+    {
+      "id": "O5",
+      "status": "executed"
+    },
+    {
+      "id": "O6",
+      "status": "failed",
+      "reason": "Il PDF non è valido o non può essere letto.",
+      "receipt": {
+        "requested_url": "https://www.inps.it/content/dam/inps-site/moduli/sr196/IT/SR196_DichCG.pdf",
+        "final_url": "https://www.inps.it/content/dam/inps-site/moduli/sr196/IT/SR196_DichCG.pdf",
+        "acquired_at": "2026-10-11T10:32:42.624513+00:00",
+        "sha256": "88c0a7f93b2ed52d8e38382f53a3908518329e3a90397d6415c7021e41165c43",
+        "content_type": "application/pdf",
+        "size": 215025,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O7",
+      "status": "executed"
+    },
+    {
+      "id": "O8",
+      "status": "executed"
+    },
+    {
+      "id": "O9",
+      "status": "executed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "O1",
+      "group": "document:401",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 401,
+        "entity": "Tribunale di Venezia",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 630.572,
+      "source": "Tribunale di Venezia",
+      "noise": "official_original",
+      "extraction_ms": 8.546,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 1.239,
+      "extracted_characters": 2236,
+      "input_sha256": "9f790f523690b22d29ec6692565d1865f12d784833fa0debb4e2d011a7e68497",
+      "receipt": {
+        "requested_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/16adsaccettarerisarcimentodanni_4.pdf",
+        "final_url": "https://tribunale-venezia.giustizia.it/resources/cms/documents/16adsaccettarerisarcimentodanni_4.pdf",
+        "acquired_at": "2026-10-11T10:31:24.682459+00:00",
+        "sha256": "9f790f523690b22d29ec6692565d1865f12d784833fa0debb4e2d011a7e68497",
+        "content_type": "application/pdf",
+        "size": 146394,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O2",
+      "group": "document:544",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 544,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 544,
+        "family_id": null,
+        "entity": "Ministero delle Imprese e del Made in Italy",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 251.555,
+      "source": "Ministero delle Imprese e del Made in Italy",
+      "noise": "official_original",
+      "extraction_ms": 10.108,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 1.45,
+      "extracted_characters": 2430,
+      "input_sha256": "f0ef8c99cc58f16df05846fc333b2e8ccd728c08e2b823a0fc6775317fc62f3f",
+      "receipt": {
+        "requested_url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_aeronautico/Richiesta_duplicato_certificato_RTFA_rev3.pdf",
+        "final_url": "https://www.mimit.gov.it/images/stories/digitale/Servizio_radioelettrico_aeronautico/Richiesta_duplicato_certificato_RTFA_rev3.pdf",
+        "acquired_at": "2026-10-11T10:40:54.326219+00:00",
+        "sha256": "f0ef8c99cc58f16df05846fc333b2e8ccd728c08e2b823a0fc6775317fc62f3f",
+        "content_type": "application/pdf",
+        "size": 203559,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O3",
+      "group": "document:585",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 585,
+        "entity": "Dipartimento della Funzione Pubblica",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 1677.392,
+      "source": "Dipartimento della Funzione Pubblica",
+      "noise": "official_original",
+      "extraction_ms": 21.991,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 1.53,
+      "extracted_characters": 24785,
+      "input_sha256": "65913c507dfb5809cf12e2d0415ac955dfe407b70feaf2dae110473593bb01cb",
+      "receipt": {
+        "requested_url": "https://www.funzionepubblica.gov.it/media/5dmbpxqh/modulo_scia_agenzie_di_viaggio_definitivo_4_aprile_2024-2.pdf",
+        "final_url": "https://www.funzionepubblica.gov.it/media/5dmbpxqh/modulo_scia_agenzie_di_viaggio_definitivo_4_aprile_2024-2.pdf",
+        "acquired_at": "2026-10-11T10:31:53.293279+00:00",
+        "sha256": "65913c507dfb5809cf12e2d0415ac955dfe407b70feaf2dae110473593bb01cb",
+        "content_type": "application/pdf",
+        "size": 304271,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O4",
+      "group": "document:601",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 601,
+        "entity": "Ministero dell'Economia e delle Finanze / RGS",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 601,
+        "family_id": null,
+        "entity": "Ministero dell'Economia e delle Finanze / RGS",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 409.011,
+      "source": "Ministero dell'Economia e delle Finanze / RGS",
+      "noise": "official_original",
+      "extraction_ms": 3.805,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 1.179,
+      "extracted_characters": 2468,
+      "input_sha256": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99",
+      "receipt": {
+        "requested_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/mb01.pdf",
+        "final_url": "https://revisionelegale.rgs.mef.gov.it/area-pubblica/export/mef/resources/PDF/mb01.pdf",
+        "acquired_at": "2026-10-11T10:32:06.972509+00:00",
+        "sha256": "2bd5cedd2c5a4f1371c406a823f8dbf9e931404ede706aa3d7422cc52d412c99",
+        "content_type": "application/pdf",
+        "size": 81500,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O5",
+      "group": "document:609",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 609,
+        "entity": "Autorità Nazionale Anticorruzione",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Conflitti di ente o annualità impediscono l'identificazione specifica. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [
+        "ente incompatibile"
+      ],
+      "matching_ms": 499.645,
+      "source": "Autorità Nazionale Anticorruzione",
+      "noise": "official_original",
+      "extraction_ms": 9.872,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 2.322,
+      "extracted_characters": 3168,
+      "input_sha256": "a8751783340746b544ee1b6e968f5e29999c343c68649f1526163664e2836496",
+      "receipt": {
+        "requested_url": "https://www.anticorruzione.it/documents/91439/127902/A.1+Modulo+richiesta+accesso+civico+al+RPCT.pdf/38456e1f-e009-e5c1-d782-4f4c01a38268?t=1739631415153",
+        "final_url": "https://www.anticorruzione.it/documents/91439/127902/A.1+Modulo+richiesta+accesso+civico+al+RPCT.pdf/38456e1f-e009-e5c1-d782-4f4c01a38268?t=1739631415153",
+        "acquired_at": "2026-10-11T10:32:30.007593+00:00",
+        "sha256": "a8751783340746b544ee1b6e968f5e29999c343c68649f1526163664e2836496",
+        "content_type": "application/pdf",
+        "size": 397750,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O7",
+      "group": "document:16",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "entity": "INAIL",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 16,
+        "family_id": null,
+        "entity": "INAIL",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 399.271,
+      "source": "INAIL",
+      "noise": "official_original",
+      "extraction_ms": 5.75,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 1.581,
+      "extracted_characters": 1983,
+      "input_sha256": "19179a5fa038ff7af83d9201124460ddad80ebcc9e8d7a5ed398a02a392fdb9f",
+      "receipt": {
+        "requested_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/SO_agr_forest.pdf",
+        "final_url": "https://www.inail.it/content/dam/inail-hub-site/documenti/2015/09/SO_agr_forest.pdf",
+        "acquired_at": "2026-10-11T10:32:57.918557+00:00",
+        "sha256": "19179a5fa038ff7af83d9201124460ddad80ebcc9e8d7a5ed398a02a392fdb9f",
+        "content_type": "application/pdf",
+        "size": 194359,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O8",
+      "group": "document:84",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 84,
+        "entity": "Ministero del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "NO_MATCH",
+        "document_id": null,
+        "family_id": null,
+        "entity": null,
+        "version": null
+      },
+      "correct": false,
+      "document_correct": false,
+      "family_correct": false,
+      "entity_labelled": false,
+      "entity_error": false,
+      "version_labelled": false,
+      "version_error": false,
+      "reason": "Evidenze insufficienti per identificare un documento specifico. Evidenze insufficienti per identificare una famiglia.",
+      "conflicts": [],
+      "matching_ms": 626.983,
+      "source": "Ministero del Lavoro",
+      "noise": "official_original",
+      "extraction_ms": 22.364,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 3.329,
+      "extracted_characters": 4675,
+      "input_sha256": "330c173752061da425b8f457008a0379b8aa342360e1676734dbf53cf22eed89",
+      "receipt": {
+        "requested_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/5%20per%20mille%2C%20richiesta%20di%20reiscrizione/Modello-rendiconto-5-per-mille.pdf",
+        "final_url": "https://www.lavoro.gov.it/strumenti-e-servizi/Modulistica/Documents/5%20per%20mille%2C%20richiesta%20di%20reiscrizione/Modello-rendiconto-5-per-mille.pdf",
+        "acquired_at": "2026-10-11T10:33:00.376998+00:00",
+        "sha256": "330c173752061da425b8f457008a0379b8aa342360e1676734dbf53cf22eed89",
+        "content_type": "application/pdf",
+        "size": 739759,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    },
+    {
+      "id": "O9",
+      "group": "document:133",
+      "category": "official",
+      "expected": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 133,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "observed": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 133,
+        "family_id": null,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "correct": true,
+      "document_correct": true,
+      "family_correct": false,
+      "entity_labelled": true,
+      "entity_error": false,
+      "version_labelled": true,
+      "version_error": false,
+      "reason": "Documento sostenuto dai segnali e dai vincoli di ente e annualità.",
+      "conflicts": [],
+      "matching_ms": 812.116,
+      "source": "Ispettorato Nazionale del Lavoro",
+      "noise": "official_original",
+      "extraction_ms": 11.784,
+      "used_ocr": false,
+      "acquisition_or_generation_ms": 20.749,
+      "extracted_characters": 6396,
+      "input_sha256": "c613a0b82f6bca2f3ec87ec89edf83764c16e7352ca6d672bbe7d853607cc84c",
+      "receipt": {
+        "requested_url": "https://www.ispettorato.gov.it/files/2025/11/INL-29-Modulo-istanza-ammissione-esami-conduttori-generatori-vapore-16082022_new.pdf",
+        "final_url": "https://www.ispettorato.gov.it/files/2025/11/INL-29-Modulo-istanza-ammissione-esami-conduttori-generatori-vapore-16082022_new.pdf",
+        "acquired_at": "2026-10-11T10:33:08.431910+00:00",
+        "sha256": "c613a0b82f6bca2f3ec87ec89edf83764c16e7352ca6d672bbe7d853607cc84c",
+        "content_type": "application/pdf",
+        "size": 7324321,
+        "status": 200,
+        "redirects": [],
+        "attempts": 1
+      }
+    }
+  ],
+  "summary": {
+    "cases": 8,
+    "passed": 4,
+    "failed": 4,
+    "metrics": {
+      "document_precision": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "document_recall": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "document_f1": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "family_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "family_f1": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "exact_document_coverage": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "useful_coverage": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "unknown_false_acceptance_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unknown_correct_rejection_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "supported_rejection_rate": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "entity_error_rate": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "version_year_error_rate": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "DOCUMENT_MATCH": {
+        "DOCUMENT_MATCH": 4,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 4
+      },
+      "FAMILY_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      },
+      "NO_MATCH": {
+        "DOCUMENT_MATCH": 0,
+        "FAMILY_MATCH": 0,
+        "NO_MATCH": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 563.314,
+      "p95": 1374.5454,
+      "p99": null
+    }
+  },
+  "identity": {
+    "corpus_sha256": "21bd0bcc4248b92d8956c6f6c5dc6aa439580eaa4b4a6d336d6d85e82e7a8a78",
+    "catalog_semantic_sha256": "sha256:4cdd6bc01c433915c0cc74bf08853c8177337717e09899f5e57545c3ce6d85a7",
+    "code_sha256": "450b65e26be1150478fe16c131ea74a5df1381b5b6df84ba31a8b521167545df",
+    "rules_version": "deterministic-3",
+    "git_commit": "4f158de5ca880dd02adff7b5828821489d35bd35",
+    "catalog_file_sha256": "8db623d55bb9c17ca2488cbdd6f91b9149af872552279baae0e0e30fc2e97121"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "system": "Windows",
+    "tesseract_executable": null,
+    "pillow": "11.3.0",
+    "pymupdf": "1.28.2"
+  },
+  "limits": "Campione di convenienza; nessun testo estratto conservato. Errori di acquisizione/estrazione esclusi dalle metriche di matching e riportati negli attempts."
+}

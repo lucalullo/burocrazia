@@ -7,17 +7,40 @@ from scripts.benchmark import DEFAULT_CORPUS, PROJECT_ROOT, evaluate_case, load_
 from src.models import AdministrativeDocument, CatalogRecognitionResult, DocumentFamily
 
 
+def test_revision_policy_fixture_v2_preserves_its_historical_parent():
+    current = json.loads((PROJECT_ROOT / "tests/fixtures/benchmark_v2.json").read_text(encoding="utf-8"))
+    parent = PROJECT_ROOT / current["parent"]["path"]
+    assert hashlib.sha256(parent.read_bytes()).hexdigest() == current["parent"]["sha256"]
+    historical = json.loads(parent.read_text(encoding="utf-8"))
+    rows = {row["id"]: row for row in current["cases"]}
+    for original in historical["cases"]:
+        if original["id"] not in ("EX02", "EX03"):
+            assert rows[original["id"]] == original
+            continue
+        positive, missing = rows[original["id"] + "V2"], rows[original["id"] + "MISSINGREV"]
+        assert positive["text"] == original["text"] + " Versione 1.1."
+        assert positive["expected"] == original["expected"]
+        assert missing["text"] == original["text"] and missing["expected"] == {"match_type": "NO_MATCH"}
+
+
 def test_synthetic_corpus_preserves_catalog_and_reports_every_failure():
     seed = PROJECT_ROOT / "data/catalog_seed.sqlite3"
     before = hashlib.sha256(seed.read_bytes()).hexdigest()
     report = run_benchmark()
     assert hashlib.sha256(seed.read_bytes()).hexdigest() == before
-    assert report["catalog"] == {"documents_real": 389, "documents_demo": 10, "families": 16}
+    manifest=json.loads((PROJECT_ROOT/'data/catalog_manifest.json').read_text(encoding='utf-8'))
+    assert report["catalog"] == {"documents_real": manifest['real_documents'], "documents_demo": 10, "families": 16}
     assert report["summary"]["cases"] >= 25
     assert report["split"] == "development_regression"
     assert report["acquisition"]["evaluated"] is False
     assert report["identity"]["corpus_sha256"] == hashlib.sha256(DEFAULT_CORPUS.read_bytes()).hexdigest()
-    assert report["summary"]["failed"] == 0, {case["id"]: case["observed"] for case in report["cases"] if not case["correct"]}
+    failures={case['id']:case for case in report['cases'] if not case['correct']}
+    # Original v1 positives omit the revision; v2 retains their same text as
+    # expected NO. Preserve and report this contradiction, never relabel v1.
+    assert set(failures)=={'EX02','EX03'} and report['summary']['failed']==2
+    assert all(c['observed']['match_type']=='NO_MATCH' for c in failures.values())
+    truth=json.loads((PROJECT_ROOT/'benchmarks/reference/reference_truth_v2.json').read_bytes())
+    assert all(any(c['case_id']==key and c['confidence_status']=='ambiguous' for c in truth['cases']) for key in failures)
 
 
 def test_metrics_do_not_count_family_fallback_as_exact_or_empty_denominators_as_perfect():

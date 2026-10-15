@@ -1,0 +1,9 @@
+{
+  "current_bundle_sha256": "eaac87ac81e03ba838b52d66992db20967e8c50bbcfd88b02d894c42ab68f4bd",
+  "measured_bundle_sha256": "d10650139b16d9809f3a08d7065572e4536e4a1094a710039de0ae1888ea423c",
+  "measured_cases": 105,
+  "measured_rejection_rate": 1.0,
+  "reason": "Unknown single-shot was started prematurely before final cross-identity adjudication. Its valid observations are retained for the earlier bundle and cannot establish the prerequisite for the corrected candidate. No replay or tuning on this subset.",
+  "release_replay": false,
+  "status": "current_candidate_unmeasured"
+}

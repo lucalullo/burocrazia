@@ -1,0 +1,856 @@
+{
+  "source_key": {
+    "giustizia": {
+      "cases": 17,
+      "passed": 2,
+      "failed": 15,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 19,
+          "value": 0.21052631578947367
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_rejection_rate": {
+          "numerator": 15,
+          "denominator": 17,
+          "value": 0.8823529411764706
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 15
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        }
+      },
+      "latency_ms": {
+        "p50": 238.681,
+        "p95": 304.7828,
+        "p99": null
+      }
+    },
+    "mimit": {
+      "cases": 75,
+      "passed": 75,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 75,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 75,
+          "denominator": 75,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 75
+        }
+      },
+      "latency_ms": {
+        "p50": 285.755,
+        "p95": 442.2174,
+        "p99": null
+      }
+    }
+  },
+  "file_type": {
+    "pdf": {
+      "cases": 92,
+      "passed": 77,
+      "failed": 15,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 19,
+          "value": 0.21052631578947367
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 17,
+          "value": 0.11764705882352941
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 75,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 75,
+          "denominator": 75,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 15,
+          "denominator": 17,
+          "value": 0.8823529411764706
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 15
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 75
+        }
+      },
+      "latency_ms": {
+        "p50": 279.5905,
+        "p95": 440.8331,
+        "p99": null
+      }
+    }
+  },
+  "extraction_method": {
+    "None": {
+      "cases": 1,
+      "passed": 1,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 1
+        }
+      },
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": null
+      }
+    },
+    "ocr": {
+      "cases": 14,
+      "passed": 9,
+      "failed": 5,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 9,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 9,
+          "denominator": 9,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 5
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 9
+        }
+      },
+      "latency_ms": {
+        "p50": 290.4455,
+        "p95": 464.8141,
+        "p99": null
+      }
+    },
+    "pdf_text": {
+      "cases": 77,
+      "passed": 67,
+      "failed": 10,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 14,
+          "value": 0.2857142857142857
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 65,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 65,
+          "denominator": 65,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 10
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 65
+        }
+      },
+      "latency_ms": {
+        "p50": 279.213,
+        "p95": 440.4136,
+        "p99": null
+      }
+    }
+  },
+  "used_ocr": {
+    "False": {
+      "cases": 77,
+      "passed": 67,
+      "failed": 10,
+      "metrics": {
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "document_f1": {
+          "numerator": 4,
+          "denominator": 14,
+          "value": 0.2857142857142857
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "useful_coverage": {
+          "numerator": 2,
+          "denominator": 12,
+          "value": 0.16666666666666666
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 65,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 65,
+          "denominator": 65,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 2,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 10
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 65
+        }
+      },
+      "latency_ms": {
+        "p50": 279.213,
+        "p95": 440.4136,
+        "p99": null
+      }
+    },
+    "None": {
+      "cases": 1,
+      "passed": 1,
+      "failed": 0,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 1
+        }
+      },
+      "latency_ms": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": null
+      }
+    },
+    "True": {
+      "cases": 14,
+      "passed": 9,
+      "failed": 5,
+      "metrics": {
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "document_f1": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "family_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "family_f1": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_document_coverage": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "useful_coverage": {
+          "numerator": 0,
+          "denominator": 5,
+          "value": 0.0
+        },
+        "unknown_false_acceptance_rate": {
+          "numerator": 0,
+          "denominator": 9,
+          "value": 0.0
+        },
+        "unknown_correct_rejection_rate": {
+          "numerator": 9,
+          "denominator": 9,
+          "value": 1.0
+        },
+        "supported_rejection_rate": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "entity_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "version_year_error_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "confusion_matrix": {
+        "DOCUMENT_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 5
+        },
+        "FAMILY_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 0
+        },
+        "NO_MATCH": {
+          "DOCUMENT_MATCH": 0,
+          "FAMILY_MATCH": 0,
+          "NO_MATCH": 9
+        }
+      },
+      "latency_ms": {
+        "p50": 290.4455,
+        "p95": 464.8141,
+        "p99": null
+      }
+    }
+  }
+}

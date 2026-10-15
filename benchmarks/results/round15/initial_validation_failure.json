@@ -1,0 +1,13 @@
+{
+  "cause": "The Round13 whole-file byte invariance assertion was still applied to the current workspace after the explicitly authorized Round15 metadata-heading change.",
+  "failed": 1,
+  "failed_test": "tests/test_round13.py::test_fingerprint_scoring_and_decision_semantics_are_unchanged",
+  "log_sha256": "478dd57243917dfee42d8c25e0328c70a03a1ddfc61fca018aeac42a14e9b289",
+  "passed": 784,
+  "recorded_at": "2026-10-13T13:00:26.361870+00:00",
+  "resolution": "Audit exact Round13 final commit bytes without checkout; add current-engine AST/byte invariance outside the authorized heading function. No runtime, thresholds, corpus or performance result changes.",
+  "runtime_changed_after_performance": false,
+  "seconds": 656.61,
+  "skipped": 3,
+  "status": "failed_historical_test_scope"
+}

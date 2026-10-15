@@ -5,8 +5,8 @@
     "classificazione": "FACILE",
     "metodo": "api",
     "priorità": "alta",
-    "stato": "operativo",
-    "note": "API Open Data ufficiale verificata; inventario enti, non modulistica.",
+    "stato": "offline_legacy",
+    "note": "Runtime offline; parser legacy solo input locali. Nessun nuovo censimento IPA.",
     "importatore_esistente": true
   },
   {
@@ -15,9 +15,11 @@
     "classificazione": "FACILE",
     "metodo": "pagina_html",
     "priorità": "alta",
-    "stato": "operativo",
-    "note": "Endpoint metadati ufficiale derivato dalla pagina registrata.",
-    "importatore_esistente": true
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:06:37.937440+00:00"
   },
   {
     "ente": "INAIL",
@@ -25,9 +27,11 @@
     "classificazione": "FACILE",
     "metodo": "pagina_html",
     "priorità": "alta",
-    "stato": "operativo",
-    "note": "Pagina pubblica verificata con link diretti a PDF e DOC; solo metadati.",
-    "importatore_esistente": true
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:56.372274+00:00"
   },
   {
     "ente": "Agenzia delle Entrate",
@@ -35,9 +39,11 @@
     "classificazione": "FACILE",
     "metodo": "pagina_html",
     "priorità": "alta",
-    "stato": "operativo",
-    "note": "Raccolta ufficiale Tutti i modelli verificata; solo metadati e URL istituzionali.",
-    "importatore_esistente": true
+    "stato": "blocked",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "blocked",
+    "census_at": "2026-10-11T10:02:06.905636+00:00"
   },
   {
     "ente": "Ministero del Lavoro",
@@ -45,9 +51,11 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "media",
-    "stato": "operativo",
-    "note": "Pagina ufficiale dedicata verificata; parser coperto da fixture offline.",
-    "importatore_esistente": true
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:56.705168+00:00"
   },
   {
     "ente": "Ministero dell'Interno",
@@ -55,9 +63,11 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "media",
-    "stato": "pianificato",
-    "note": "Raccolta tematica pubblica; serve delimitare i soli record documentali.",
-    "importatore_esistente": false
+    "stato": "manual",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "manual",
+    "census_at": "2026-10-11T10:15:02.277080+00:00"
   },
   {
     "ente": "Ministero delle Infrastrutture e dei Trasporti",
@@ -65,9 +75,11 @@
     "classificazione": "MANUALE",
     "metodo": "da_studiare",
     "priorità": "alta",
-    "stato": "famiglie_disponibili",
-    "note": "Procedure e moduli distribuiti nelle singole schede; quattro famiglie ufficiali censite.",
-    "importatore_esistente": false
+    "stato": "blocked",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "blocked",
+    "census_at": "2026-10-11T10:02:17.145719+00:00"
   },
   {
     "ente": "Ministero della Giustizia",
@@ -75,8 +87,8 @@
     "classificazione": "MANUALE",
     "metodo": "da_studiare",
     "priorità": "bassa",
-    "stato": "da_studiare",
-    "note": "Moduli distribuiti tra servizi e siti degli uffici giudiziari.",
+    "stato": "offline_legacy",
+    "note": "Runtime offline; parser legacy solo input locali. Nessun nuovo censimento IPA.",
     "importatore_esistente": false
   },
   {
@@ -85,9 +97,11 @@
     "classificazione": "MANUALE",
     "metodo": "da_studiare",
     "priorità": "bassa",
-    "stato": "da_studiare",
-    "note": "Moduli distribuiti nelle schede dei singoli servizi.",
-    "importatore_esistente": false
+    "stato": "blocked",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "blocked",
+    "census_at": "2026-10-11T10:18:19.756307+00:00"
   },
   {
     "ente": "Ministero delle Imprese e del Made in Italy",
@@ -95,9 +109,11 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "media",
-    "stato": "pianificato",
-    "note": "Modulistica raggiungibile dalle tipologie di procedimento.",
-    "importatore_esistente": false
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:19:55.007799+00:00"
   },
   {
     "ente": "Agenzia delle Entrate-Riscossione",
@@ -105,9 +121,11 @@
     "classificazione": "BLOCCATO",
     "metodo": "pagina_html_manuale",
     "priorità": "alta",
-    "stato": "blocco_http_403_con_fallback_manuale",
-    "note": "Il 403 è rispettato; disponibile importazione di HTML salvato con provenienza ADER verificabile.",
-    "importatore_esistente": true
+    "stato": "blocked",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "blocked",
+    "census_at": "2026-10-11T10:02:39.205776+00:00"
   },
   {
     "ente": "Dipartimento della Funzione Pubblica",
@@ -115,9 +133,11 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "media",
-    "stato": "pianificato",
-    "note": "Pagina ufficiale sulla modulistica standardizzata, struttura da validare.",
-    "importatore_esistente": false
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:22.804250+00:00"
   },
   {
     "ente": "ACI / PRA",
@@ -125,9 +145,11 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "media",
-    "stato": "pianificato",
-    "note": "Pagina ufficiale dei modelli PRA; parser specifico ancora assente.",
-    "importatore_esistente": false
+    "stato": "blocked",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "blocked",
+    "census_at": "2026-10-11T10:03:05.063770+00:00"
   },
   {
     "ente": "Garante per la protezione dei dati personali",
@@ -135,9 +157,11 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "alta",
-    "stato": "operativo",
-    "note": "Pagina ufficiale con modulistica e servizi telematici separati dal parser.",
-    "importatore_esistente": true
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:56.771727+00:00"
   },
   {
     "ente": "Ispettorato Nazionale del Lavoro",
@@ -145,8 +169,58 @@
     "classificazione": "MEDIO",
     "metodo": "pagina_html",
     "priorità": "alta",
-    "stato": "operativo",
-    "note": "Sezioni ufficiali per lavoratori e datori; dettagli consultati sequenzialmente.",
-    "importatore_esistente": true
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": true,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:57.532979+00:00"
+  },
+  {
+    "ente": "Tribunale di Venezia",
+    "source_id": 16,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:22.789331+00:00"
+  },
+  {
+    "ente": "Ministero dell'Economia e delle Finanze / RGS",
+    "source_id": 17,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:22.807598+00:00"
+  },
+  {
+    "ente": "Autorità Nazionale Anticorruzione",
+    "source_id": 18,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:07:22.825051+00:00"
+  },
+  {
+    "ente": "Unioncamere",
+    "source_id": 19,
+    "classificazione": "MEDIO",
+    "metodo": "pagina_html",
+    "priorità": "alta",
+    "stato": "complete_for_declared_collection",
+    "note": "Runtime offline; parser legacy solo input locali. Censimento tecnico 11/10/2026; perimetro e blocchi in docs/SOURCES.md. Nessuna nuova revisione editoriale umana.",
+    "importatore_esistente": false,
+    "census_status": "complete_for_declared_collection",
+    "census_at": "2026-10-11T10:26:35.984974+00:00"
   }
 ]

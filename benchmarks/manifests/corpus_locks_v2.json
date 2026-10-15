@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "sha256": {
+    "release_locked_v2.json": "58ddd13cce1243d56cf30fc24161a18549f12ea33fbbcaf0fefe309956301613",
+    "hard_negatives_v2.json": "7d9d09da26ab4b82aaba9d3e4592bb036a17051b88592c9de89f897a8aea4498"
+  },
+  "release_v2_changes": [
+    {
+      "id": "R010",
+      "previous": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "Intestazione monolessematica insufficiente a provare identità documentale"
+    },
+    {
+      "id": "R011",
+      "previous": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 165,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "Intestazione monolessematica insufficiente a provare identità documentale"
+    },
+    {
+      "id": "R012",
+      "previous": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "Intestazione monolessematica insufficiente a provare identità documentale"
+    },
+    {
+      "id": "R013",
+      "previous": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 166,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "Intestazione monolessematica insufficiente a provare identità documentale"
+    },
+    {
+      "id": "R028",
+      "previous": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "Intestazione monolessematica insufficiente a provare identità documentale"
+    },
+    {
+      "id": "R029",
+      "previous": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 20,
+        "entity": "INAIL",
+        "version": null
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "Intestazione monolessematica insufficiente a provare identità documentale"
+    },
+    {
+      "id": "R060",
+      "previous": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 3,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "ADER è agente di riscossione; l atto è emesso rispettivamente da ADE e INPS. Non correggere dati verificati senza nuova revisione."
+    },
+    {
+      "id": "R061",
+      "previous": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 4,
+        "entity": "Agenzia delle Entrate-Riscossione"
+      },
+      "new": {
+        "match_type": "NO_MATCH"
+      },
+      "reason": "ADER è agente di riscossione; l atto è emesso rispettivamente da ADE e INPS. Non correggere dati verificati senza nuova revisione."
+    },
+    {
+      "id": "R066",
+      "previous": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 10,
+        "entity": "Ispettorato Nazionale del Lavoro"
+      },
+      "new": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 143,
+        "entity": "Ispettorato Nazionale del Lavoro",
+        "version": null
+      },
+      "reason": "Testo identifica titolo/codice di documento specifico presente; la famiglia era attesa troppo generica"
+    },
+    {
+      "id": "R068",
+      "previous": {
+        "match_type": "FAMILY_MATCH",
+        "family_id": 12,
+        "entity": "Garante per la protezione dei dati personali"
+      },
+      "new": {
+        "match_type": "DOCUMENT_MATCH",
+        "document_id": 167,
+        "entity": "Garante per la protezione dei dati personali",
+        "version": null
+      },
+      "reason": "Testo identifica titolo/codice di documento specifico presente; la famiglia era attesa troppo generica"
+    }
+  ],
+  "evidence": [
+    "https://www.garanteprivacy.it/home/modulistica-e-servizi-online",
+    "https://www.ispettorato.gov.it/servizio/richiesta-di-intervento-ispettivo/",
+    "https://www.agenziaentrateriscossione.gov.it/it/Per-saperne-di-piu/documenti-della-riscossione/accertamento-esecutivo-e-avviso-di-addebito-inps/index.html",
+    "https://www.inail.it/portale/it/inail-comunica/avvisi/avviso.2020.11.servizi-online-utilizzo-esclusivo-di-spid-cie-e-cns-per-i-primi-utenti.html"
+  ]
+}

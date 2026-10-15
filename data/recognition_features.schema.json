@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BurOCRazia sparse technical recognition features v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "version", "generator", "split", "independent", "policy", "features"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "version": {"type": "string", "minLength": 1},
+    "generator": {"const": "python -m benchmarks.build_recognition_features"},
+    "split": {"const": "official_development_v2"},
+    "independent": {"const": false},
+    "policy": {"type": "string"},
+    "features": {
+      "type": "array", "maxItems": 2000,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["document_id", "catalog_fingerprint", "anchor_tokens", "official_url", "file_sha256", "development_case", "acquired_at", "technical_only"],
+        "properties": {
+          "document_id": {"type": "integer", "minimum": 1},
+          "catalog_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "anchor_tokens": {"type": "array", "minItems": 8, "maxItems": 8, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9]{3,40}$"}},
+          "official_url": {"type": "string", "pattern": "^https://"},
+          "file_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "development_case": {"type": "string", "pattern": "^OR2-[0-9]{3}$"},
+          "acquired_at": {"type": "string", "format": "date-time"},
+          "technical_only": {"const": true}
+        }
+      }
+    }
+  }
+}
